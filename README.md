@@ -20,6 +20,16 @@ To compile and hot-reload for development run
 npm run serve
 ```
 
+## Testing
+
+This project used [Jest](https://jestjs.io/) as its main testing framework.
+
+Run tests with:
+
+```shell
+npm run test:unit
+```
+
 # Edition Guidelines
 
 The edition guidelines are built with [MkDocs](https://www.mkdocs.org/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).

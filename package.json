@@ -5,13 +5,15 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test": "vue-cli-service test:unit --watch",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@quasar/extras": "^1.4.0",
     "axios": "^0.19.1",
     "core-js": "^2.6.11",
+    "isomorphic-fetch": "^3.0.0",
     "quasar": "^1.0.0",
     "raw-loader": "^3.1.0",
     "v-runtime-template": "^1.10.0",
@@ -22,10 +24,10 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.1",
     "@vue/cli-plugin-eslint": "^3.12.1",
-    "@vue/cli-plugin-unit-mocha": "^3.12.1",
+    "@vue/cli-plugin-unit-jest": "^4.5.11",
     "@vue/cli-service": "^3.12.1",
     "@vue/eslint-config-airbnb": "^4.0.0",
-    "@vue/test-utils": "1.0.0-beta.29",
+    "@vue/test-utils": "^1.0.3",
     "babel-eslint": "^10.0.3",
     "babel-plugin-transform-imports": "1.5.0",
     "chai": "^4.1.2",
@@ -34,6 +36,7 @@
     "eslint-loader": "^3.0.3",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^5.2.3",
+    "flush-promises": "^1.0.2",
     "prettier": "^1.19.1",
     "sass": "^1.24.4",
     "sass-loader": "^7.1.0",
