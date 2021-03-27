@@ -48,7 +48,22 @@
             />
           </div>
           <div class="row">
-            <LettersText />
+            <template v-if="activeComment">
+              <q-splitter v-model="splitterModel">
+                <template v-slot:before>
+                  <LettersText />
+                </template>
+
+                <template v-slot:after>
+                  <div class="g-edition-comment">
+                    {{ activeComment }}
+                  </div>
+                </template>
+              </q-splitter>
+            </template>
+            <template v-else>
+              <LettersText />
+            </template>
           </div>
         </q-card>
       </div>
@@ -107,7 +122,8 @@ export default {
       tab: "reg",
       msDesc: "",
       supplement: "",
-      physDesc: ""
+      physDesc: "",
+      splitterModel: 75
     };
   },
   computed: {
@@ -124,6 +140,9 @@ export default {
         / .?.? ?[A-Z][a-zà-ý)]*( [a-zà-ý]*)?( [A-Z][a-zà-ý]*)?(-[A-Z][-a-zà-ý]*)?(\(\?\))?\./
       );
       return secondPart[secondPart.length - 1];
+    },
+    activeComment() {
+      return this.$store.getters.activeComment;
     }
   },
 

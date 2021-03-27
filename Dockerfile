@@ -5,7 +5,7 @@ RUN npm install
 COPY ./ .
 RUN npx vue-cli-service build --modern
 
-FROM squidfunk/mkdocs-material as build-stage-eddocs
+FROM squidfunk/mkdocs-material:4.5.0 as build-stage-eddocs
 WORKDIR /ed-docs
 COPY ./edition-docs /ed-docs
 RUN mkdocs build --clean

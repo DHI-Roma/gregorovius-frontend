@@ -15,7 +15,8 @@ export default new Vuex.Store({
     selectedRecipient: { label: "", value: "" },
     selectedPlaceReceived: { label: "", value: "" },
     selectedPlaceSent: { label: "", value: "" },
-    selectedYears: []
+    selectedYears: [],
+    activeComment: ""
   },
   mutations: {
     SET_LOADING_STATUS(state, loading) {
@@ -54,6 +55,9 @@ export default new Vuex.Store({
         default:
           break;
       }
+    },
+    SET_ACTIVE_COMMENT(state, comment) {
+      state.activeComment = comment;
     }
   },
   actions: {
@@ -112,6 +116,10 @@ export default new Vuex.Store({
 
     async setLoadingStatus({ commit }, value) {
       commit("SET_LOADING_STATUS", value);
+    },
+
+    async setActiveComment({ commit }, comment) {
+      commit("SET_ACTIVE_COMMENT", comment);
     }
   },
   getters: {
@@ -124,6 +132,7 @@ export default new Vuex.Store({
     selectedRecipient: state => state.selectedRecipient,
     selectedPlaceReceived: state => state.selectedPlaceReceived,
     selectedPlaceSent: state => state.selectedPlaceSent,
-    selectedYears: state => state.selectedYears
+    selectedYears: state => state.selectedYears,
+    activeComment: state => state.activeComment
   }
 });

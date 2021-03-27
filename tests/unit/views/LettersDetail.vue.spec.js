@@ -1,6 +1,10 @@
 import { shallowMount } from "@vue/test-utils";
 import LettersDetail from "@/views/LettersDetail.vue";
-import { itemDataRegStandard, itemDataRegNoAbstract, itemDataRegOneAbstract } from "../fixtures/item-data";
+import {
+  itemDataRegStandard,
+  itemDataRegNoAbstract,
+  itemDataRegOneAbstract
+} from "../fixtures/item-data";
 import teiHeaderFixture from "../fixtures/tei-header";
 import * as service from "../../../src/shared/service";
 

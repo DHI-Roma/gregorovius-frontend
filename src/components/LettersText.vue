@@ -6,11 +6,13 @@
 import VRuntimeTemplate from "v-runtime-template";
 import { xslt } from "@/mixins/xslt";
 import { dataService } from "@/shared";
+import CommentIcon from "@/components/CommentIcon.vue";
 
 export default {
   name: "LettersText",
   components: {
-    VRuntimeTemplate
+    VRuntimeTemplate,
+    CommentIcon
   },
   mixins: [xslt],
   data() {
@@ -42,6 +44,12 @@ export default {
 .g-edition-text {
   font-family: Cardo;
   font-size: 14pt;
+  padding: 16px;
+}
+
+.g-edition-comment {
+  font-family: Cardo;
+  font-size: 12pt;
   padding: 16px;
 }
 

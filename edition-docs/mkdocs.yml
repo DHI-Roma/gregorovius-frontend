@@ -5,7 +5,7 @@ nav:
   - Briefmetadaten:
     - 'Titel und Korrespondenzmetadaten': 'titel.md'
     - 'Korrespondenzkontext':             'korrespondenzkontext.md'
-    - 'Regesten':                           'regest.md'
+    - 'Regesten':                         'regest.md'
     - 'Überlieferung':                    'ueberlieferung.md'
     - 'Beilagen':                         'beilagen.md'
   - Brieftext:
