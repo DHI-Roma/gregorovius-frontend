@@ -91,19 +91,29 @@
     <br/>
 </xsl:template>
 
-<xsl:template match="tei:seg[@type='comment']/tei:note">
-     
-    <CommentIcon 
-        v-bind:commentId="'{./@xml:id}'" 
-        v-bind:commentText="'{.}'"
-        v-bind:commentReference="'{../tei:orig}'">
+<xsl:template match="tei:seg[@type='comment']/tei:orig">
+    <span class="g-comment-orig"
+          v-bind:class="['{../tei:note/@xml:id}' === activeComment.id ? 'active' : '' ]"
+          v-on:click="activateComment($event, '{../tei:note/@xml:id}', '{../tei:note}', '{.}')"
+          v-bind:commentId="'{../tei:note/@xml:id}'"
+          v-bind:commentText="'{../tei:note}'"
+          >
+          <q-tooltip content-style="font-size: 12pt;">
+            <xsl:choose>
+                <xsl:when test="string-length(../tei:note) &gt; 50">
+                    <xsl:value-of select="substring(../tei:note, 1, 50)" />...
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="../tei:note" />
+                </xsl:otherwise>
+            </xsl:choose>
+          </q-tooltip>
+        <xsl:apply-templates />
+        <CommentIcon 
+        v-bind:commentId="'{../tei:note/@xml:id}'" 
+        v-bind:commentText="'{../tei:note}'"
+        v-bind:commentReference="'{.}'">
     </CommentIcon>
-    
-</xsl:template>
-
-<xsl:template match="tei:seg[@type='comment']">
-    <span class="g-comment-icon">
-        <xsl:apply-templates/>
     </span>
 </xsl:template>
 

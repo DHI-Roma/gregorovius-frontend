@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import VRuntimeTemplate from "v-runtime-template";
 import { xslt } from "@/mixins/xslt";
 import { dataService } from "@/shared";
@@ -21,6 +22,10 @@ export default {
     };
   },
 
+  computed: {
+    ...mapGetters(['activeComment'])
+  },
+
   mounted() {
     this.getItems();
   },
@@ -35,6 +40,19 @@ export default {
         // eslint-disable-next-line
         console.error(error)
       }
+    },
+    activateComment(event, commentId, commentText, commentReference) {
+      // TODO: Position the comment at the right height
+      console.log(event);
+
+      const comment = {
+        id: commentId,
+        text: commentText,
+        reference: commentReference,
+        offsetTop: event.layerY
+      };
+
+      this.$store.dispatch('setActiveComment', comment);
     }
   }
 };
@@ -102,6 +120,16 @@ span.g-list-item
   display: flex
   margin-bottom: 0.5em
   margin-left: 1.5rem
+
+.g-comment-orig
+  box-shadow: inset 0 -0.7rem 0 0 lighten($secondary, 40)
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+
+  &.active,
+  &:hover
+    box-shadow: inset 0 -2.5rem 0 0 lighten($secondary, 40)
+
 
 .g-comment-icon
   color: $primary

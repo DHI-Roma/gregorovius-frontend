@@ -1,15 +1,9 @@
 <template>
-  <q-icon name="comment_bank" class="comment-icon" :class="{ active: isActive }" @click="activate">
-    <q-tooltip content-style="font-size: 12pt;">
-      {{ commentPreview }}
-    </q-tooltip>
-  </q-icon>
+  <q-icon name="comment_bank" class="comment-icon" :class="{ active: isActive }"></q-icon>
 </template>
 
 <script>
 import { QIcon, QTooltip } from "quasar";
-
-const COMMENT_PREVIEW_LENGTH = 50;
 
 export default {
   name: "CommentIcon",
@@ -34,23 +28,6 @@ export default {
   computed: {
     isActive() {
       return this.$store.getters.activeComment.id === this.commentId;
-    },
-    commentPreview() {
-      if (this.commentText.length < COMMENT_PREVIEW_LENGTH) {
-        return this.commentText;
-      }
-
-      return this.commentText.substring(0, COMMENT_PREVIEW_LENGTH) + "...";
-    }
-  },
-  methods: {
-    activate() {
-      const comment = {
-        id: this.commentId,
-        text: this.commentText,
-        reference: this.commentReference
-      };
-      this.$store.dispatch("setActiveComment", comment);
     }
   }
 };

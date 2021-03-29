@@ -1,5 +1,7 @@
 <template>
-  <div class="g-edition-comment-container">
+  <div 
+    class="g-edition-comment-container"
+    v-bind:style="{ top: activeComment.offsetTop + 'px' }">
     <div class="row justify-between self-center q-pb-sm">
       <span class="text-h6">
         Stellenkommentar
@@ -16,12 +18,6 @@
       ></q-btn>
     </div>
     <q-separator />
-    <q-chat-message
-      :text="[activeComment.reference]"
-      bg-color="primary"
-      class="q-mt-sm"
-      >
-    </q-chat-message>
 
     <div class="g-edition-comment">
       {{ activeComment.text }}
@@ -68,6 +64,7 @@ h6
   color: $seconary
 
 .g-edition-comment-container
+  position: absolute
   padding-left: 16px
 
 .g-edition-comment-reference
