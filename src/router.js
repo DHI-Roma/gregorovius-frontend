@@ -46,7 +46,11 @@ export default new Router({
         {
           path: "letters/:id",
           name: "Brief",
-          component: LettersDetail
+          component: LettersDetail,
+          beforeEnter(to, from, next) {
+            store.dispatch("unselectComment");
+            next();
+          }
         },
         {
           path: "persons",

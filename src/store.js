@@ -16,7 +16,10 @@ export default new Vuex.Store({
     selectedPlaceReceived: { label: "", value: "" },
     selectedPlaceSent: { label: "", value: "" },
     selectedYears: [],
-    activeComment: ""
+    activeComment: {
+      id: '',
+      text: ''
+    }
   },
   mutations: {
     SET_LOADING_STATUS(state, loading) {
@@ -120,6 +123,10 @@ export default new Vuex.Store({
 
     async setActiveComment({ commit }, comment) {
       commit("SET_ACTIVE_COMMENT", comment);
+    },
+
+    async unselectComment({ commit }) {
+      commit("SET_ACTIVE_COMMENT", {});
     }
   },
   getters: {

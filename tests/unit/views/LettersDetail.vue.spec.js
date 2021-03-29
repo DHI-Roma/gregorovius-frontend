@@ -1,4 +1,5 @@
-import { shallowMount } from "@vue/test-utils";
+import { shallowMount, createLocalVue } from "@vue/test-utils";
+import * as Vuex from "vuex";
 import LettersDetail from "@/views/LettersDetail.vue";
 import {
   itemDataRegStandard,
@@ -10,11 +11,32 @@ import * as service from "../../../src/shared/service";
 
 describe("LettersDetail", () => {
   let wrapper;
+  let localVue;
+  let getters;
+  let store;
+
+  beforeEach(() => {
+    localVue = createLocalVue();
+    localVue.use(Vuex);
+
+    getters = {
+      activeComment: () => {
+        return {
+          id: "comment_id",
+          text: "Some comment text"
+        };
+      }
+    }
+    store = new Vuex.Store({
+      getters
+    });
+  })
 
   const path = "/letters/G000127";
   const $route = {
     path
   };
+
 
   jest.doMock("axios", () => ({
     get: Promise.resolve(teiHeaderFixture)
@@ -24,6 +46,8 @@ describe("LettersDetail", () => {
   describe("German and English abstracts are available", () => {
     beforeEach(() => {
       wrapper = shallowMount(LettersDetail, {
+        localVue,
+        store,
         mocks: {
           $route
         },
@@ -75,6 +99,8 @@ describe("LettersDetail", () => {
   describe("No abstracts are available", () => {
     beforeEach(() => {
       wrapper = shallowMount(LettersDetail, {
+        localVue,
+        store,
         mocks: {
           $route
         },
@@ -117,6 +143,8 @@ describe("LettersDetail", () => {
   describe("Only one abstract is available", () => {
     beforeEach(() => {
       wrapper = shallowMount(LettersDetail, {
+        localVue,
+        store,
         mocks: {
           $route
         },

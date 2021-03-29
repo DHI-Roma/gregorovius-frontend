@@ -1,5 +1,5 @@
  <xsl:output method="html" version="4.0" encoding="UTF-8" indent="yes" />
- 
+
 <xsl:template match="/">
     <div class="g-edition-text">
         <xsl:apply-templates select="//tei:body"/>
@@ -8,6 +8,7 @@
 
 
 <!-- Page breaks -->
+
 <xsl:template match="tei:pb">
     <span class="text-red-10">| </span>
     <span class="g-pb text-red-10">
@@ -91,15 +92,17 @@
 </xsl:template>
 
 <xsl:template match="tei:seg[@type='comment']/tei:note">
-    <!-- TODO: Create new custom component that contains the icon and the comment text -->
-    
-    <CommentIcon v-bind:comment="'{.}'">
+     
+    <CommentIcon 
+        v-bind:commentId="'{./@xml:id}'" 
+        v-bind:commentText="'{.}'"
+        v-bind:commentReference="'{../tei:orig}'">
     </CommentIcon>
     
 </xsl:template>
 
 <xsl:template match="tei:seg[@type='comment']">
-    <span class="text-green-6">
+    <span class="g-comment-icon">
         <xsl:apply-templates/>
     </span>
 </xsl:template>

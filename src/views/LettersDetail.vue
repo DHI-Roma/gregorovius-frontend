@@ -48,16 +48,18 @@
             />
           </div>
           <div class="row">
-            <template v-if="activeComment">
-              <q-splitter v-model="splitterModel">
+            <template v-if="activeComment.id">
+              <q-splitter v-model="splitterModel" :limits="[50, 75]">
                 <template v-slot:before>
                   <LettersText />
                 </template>
-
                 <template v-slot:after>
+                  <!--
                   <div class="g-edition-comment">
-                    {{ activeComment }}
+                    {{ activeComment.text }}
                   </div>
+                  -->
+                  <Comment />
                 </template>
               </q-splitter>
             </template>
@@ -79,6 +81,7 @@
 <script>
 import VRuntimeTemplate from "v-runtime-template";
 import LettersText from "@/components/LettersText.vue";
+import Comment from "@/components/Comment.vue";
 import axios from "axios";
 import { dataService } from "@/shared";
 import { API } from "@/shared/config";
@@ -93,7 +96,8 @@ import {
   QTabs,
   QTab,
   QCardSection,
-  QChip
+  QChip,
+  QSplitter
 } from "quasar";
 
 const TAB_TEXTGRUNDLAGE = "tgl";
@@ -101,6 +105,7 @@ const TAB_TEXTGRUNDLAGE = "tgl";
 export default {
   name: "Item",
   components: {
+    Comment,
     LettersText,
     VRuntimeTemplate,
     QCard,
@@ -113,7 +118,8 @@ export default {
     QTabs,
     QTab,
     QCardSection,
-    QChip
+    QChip,
+    QSplitter
   },
   data() {
     return {

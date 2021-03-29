@@ -40,20 +40,53 @@ export default {
 };
 </script>
 
-<style>
-.g-edition-text {
-  font-family: Cardo;
-  font-size: 14pt;
-  padding: 16px;
-}
+<style lang="stylus">
+@import '../styles/quasar.variables.styl'
 
-.g-edition-comment {
-  font-family: Cardo;
-  font-size: 12pt;
-  padding: 16px;
-}
+.g-edition-text
+  font-family: Cardo
+  font-size: 14pt
+  padding: 16px
 
-span.g-pb {
+span.g-add
+  color: green
+
+
+del
+  color: red
+
+.g-entity-link
+  box-shadow: inset 0 -0.7rem 0 0 hsla(144.9, 100%, 82.5%, 0.5)
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+
+.g-entity-link.start-offset
+  box-shadow: inset 0 -2.5rem 0 0 hsla(144.9, 100%, 82.5%, 1)
+
+.g-entity-link.start-offset:hover
+  box-shadow: inset 0 -0.5rem 0 0 hsla(144.9, 100%, 82.5%, 1)
+
+.g-entity-link:hover
+  box-shadow: inset 0 -2.5rem 0 0 hsla(144.9, 100%, 82.5%, 1)
+
+.g-mprint
+  font-family: "Courier New", Courier, monospace
+  font-size: 12pt
+  letter-spacing: 2px
+
+.g-aq
+  font-family: "IBMPlexSans"
+  font-size: 13pt
+
+.g-margin-right
+  display: block
+  position: absolute !important
+  right: 0em
+
+.g-coupled
+  display: inline
+
+.g-pb {
   display: block;
   position: absolute;
   left: 1em;
@@ -61,59 +94,21 @@ span.g-pb {
   font-size: 0.8em;
 }
 
-span.g-add {
-  color: green;
-}
+span.g-list
+  display: block
+  margin-bottom: 1em
 
-del {
-  color: red;
-}
+span.g-list-item
+  display: flex
+  margin-bottom: 0.5em
+  margin-left: 1.5rem
 
-.g-entity-link {
-  box-shadow: inset 0 -0.7rem 0 0 hsla(144.9, 100%, 82.5%, 0.5);
-  transition: box-shadow 0.5s;
-  cursor: pointer;
-}
-.g-entity-link.start-offset {
-  box-shadow: inset 0 -2.5rem 0 0 hsla(144.9, 100%, 82.5%, 1);
-}
-.g-entity-link.start-offset:hover {
-  box-shadow: inset 0 -0.5rem 0 0 hsla(144.9, 100%, 82.5%, 1);
-}
+.g-comment-icon
+  color: $primary
 
-.g-entity-link:hover {
-  box-shadow: inset 0 -2.5rem 0 0 hsla(144.9, 100%, 82.5%, 1);
-}
+.q-splitter__before
+  overflow: unset !important
 
-.g-mprint {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 12pt;
-  letter-spacing: 2px;
-}
-
-.g-aq {
-  font-family: "IBMPlexSans";
-  font-size: 13pt;
-}
-
-.g-margin-right {
-  display: block;
-  position: absolute !important;
-  right: 0em;
-}
-
-.g-coupled {
-  display: inline;
-}
-
-span.g-list {
-  display: block;
-  margin-bottom: 1em;
-}
-
-span.g-list-item {
-  display: flex;
-  margin-bottom: 0.5em;
-  margin-left: 1.5rem;
-}
+  .g-pb
+    left: -2.2em
 </style>
