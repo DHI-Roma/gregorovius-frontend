@@ -42,17 +42,34 @@ export default {
       }
     },
     activateComment(event, commentId, commentText, commentReference) {
-      // TODO: Position the comment at the right height
-      console.log(event);
+      const hasActiveComment = this.activateComment.id ? true : false;
+      let offsetTop = event.layerY;
+
+      if (event.target.classList.contains("comment-icon")) {
+        offsetTop = event.target.parentElement.offsetTop;
+      }
 
       const comment = {
         id: commentId,
         text: commentText,
         reference: commentReference,
-        offsetTop: event.layerY
+        offsetTop: offsetTop
       };
-
       this.$store.dispatch('setActiveComment', comment);
+
+      console.log({
+        when: 'before',
+        offsetTop
+      });
+
+      if (!hasActiveComment) {
+        setTimeout(() => {
+          const commentReference = document.querySelector(`.g-comment-orig[commentId="${commentId}"]`);
+          comment.offsetTop = commentReference.offsetTop;
+          
+          this.$store.dispatch('setActiveComment', comment);
+        }, 0);
+      }
     }
   }
 };
@@ -139,4 +156,7 @@ span.g-list-item
 
   .g-pb
     left: -2.2em
+
+.separator-hidden
+  display: none
 </style>

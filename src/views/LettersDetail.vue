@@ -48,24 +48,14 @@
             />
           </div>
           <div class="row">
-            <template v-if="activeComment.id">
-              <q-splitter v-model="splitterModel" :limits="[50, 75]">
-                <template v-slot:before>
-                  <LettersText />
-                </template>
-                <template v-slot:after>
-                  <!--
-                  <div class="g-edition-comment">
-                    {{ activeComment.text }}
-                  </div>
-                  -->
-                  <Comment />
-                </template>
-              </q-splitter>
-            </template>
-            <template v-else>
-              <LettersText />
-            </template>
+            <q-splitter v-model="splitterModel" :limits="splitterLimits" after-class="overflow-hidden" :separator-class="splitterSeparatorClass" @input="onSeparatorChange">
+              <template v-slot:before>
+                <LettersText />
+              </template>
+              <template v-slot:after>
+                <Comment />
+              </template>
+            </q-splitter>
           </div>
         </q-card>
       </div>
@@ -101,6 +91,7 @@ import {
 } from "quasar";
 
 const TAB_TEXTGRUNDLAGE = "tgl";
+const SPLITTER_SIZE_START = 100;
 
 export default {
   name: "Item",
@@ -129,7 +120,7 @@ export default {
       msDesc: "",
       supplement: "",
       physDesc: "",
-      splitterModel: 75
+      splitterModel: SPLITTER_SIZE_START
     };
   },
   computed: {
@@ -149,7 +140,21 @@ export default {
     },
     activeComment() {
       return this.$store.getters.activeComment;
+    },
+    splitterLimits() {
+      if (this.activeComment.id) {
+        return [50, 75];
+      }
+
+      return [100, 100];
+    },
+    splitterSeparatorClass() {
+      if (this.activeComment.id) {
+        return "";
+      }
+      return "separator-hidden";
     }
+
   },
 
   async mounted() {
@@ -201,9 +206,21 @@ export default {
     },
     openUrl(url) {
       url ? window.open(url) : null;
+    },
+    onSeparatorChange(value) {
+      this.updateCommentPosition();
+    },
+    updateCommentPosition() {
+      if (!this.activeComment.id) {
+        return;
+      }
+
+      const activeCommentReference = document.querySelector(`.g-comment-orig[commentId="${this.activeComment.id}"]`);
+
+      const commentUpdate = { ...this.activeComment };
+      commentUpdate.offsetTop = activeCommentReference.offsetTop;
+      this.$store.dispatch('setActiveComment', commentUpdate);
     }
   }
 };
 </script>
-
-<style></style>

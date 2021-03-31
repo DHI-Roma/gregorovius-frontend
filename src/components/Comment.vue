@@ -67,11 +67,9 @@ h6
   position: absolute
   padding-left: 16px
 
-.g-edition-comment-reference
-  color: $accent
-
-.g-edition-comment-reference,
 .g-edition-comment
-  font-family: Cardo
+  font-family: "IBMPlexSans"
   font-size: 12pt
+  padding-top: 1rem
+  padding-bottom: 1rem
 </style>
