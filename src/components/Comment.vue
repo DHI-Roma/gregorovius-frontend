@@ -4,18 +4,8 @@
     v-bind:style="{ top: activeComment.offsetTop + 'px' }">
     <div class="row justify-between self-center q-pb-sm">
       <span class="text-h6">
-        Stellenkommentar
+        Kommentar
       </span>
-      <q-btn
-      color="accent"
-      icon="close"
-      align="right"
-      size="sm"
-      dense
-      rounded
-      outline
-      @click="close"
-      ></q-btn>
     </div>
     <q-separator />
 
@@ -31,10 +21,11 @@
       align="right"
       rounded
       outline
-      class="q-mt-sm"
+      class="close-comment q-mt-sm"
+      id="close-comment-large"
       @click="close"
     >
-    Kommentar schließen
+    Schließen
     </q-btn>
   </div>
 </template>

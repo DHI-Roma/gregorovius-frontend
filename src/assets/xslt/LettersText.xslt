@@ -91,6 +91,10 @@
     <br/>
 </xsl:template>
 
+<xsl:template match="tei:seg[@type='comment']/tei:note">
+
+</xsl:template>
+
 <xsl:template match="tei:seg[@type='comment']/tei:orig">
     <span class="g-comment-orig"
           v-bind:class="['{../tei:note/@xml:id}' === activeComment.id ? 'active' : '' ]"

@@ -57,16 +57,11 @@ export default {
       };
       this.$store.dispatch('setActiveComment', comment);
 
-      console.log({
-        when: 'before',
-        offsetTop
-      });
-
       if (!hasActiveComment) {
         setTimeout(() => {
           const commentReference = document.querySelector(`.g-comment-orig[commentId="${commentId}"]`);
           comment.offsetTop = commentReference.offsetTop;
-          
+
           this.$store.dispatch('setActiveComment', comment);
         }, 0);
       }
