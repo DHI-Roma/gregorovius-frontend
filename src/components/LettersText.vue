@@ -51,6 +51,12 @@ export default {
         offsetTop = event.target.parentElement.offsetTop;
       }
 
+      history.pushState(
+        {},
+        null,
+        basePathLetters + '/' + this.$route.params.id + '/' + commentId
+      );
+
       const comment = {
         id: commentId,
         text: commentText,

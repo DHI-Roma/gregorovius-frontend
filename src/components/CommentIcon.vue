@@ -1,9 +1,10 @@
 <template>
-  <q-icon name="comment_bank" class="comment-icon" :class="{ active: isActive }" @click.stop="doSomething"></q-icon>
+  <q-icon name="comment_bank" class="comment-icon" :class="{ active: isActive }" @click.stop="activateComment"></q-icon>
 </template>
 
 <script>
 import { QIcon, QTooltip } from "quasar";
+import { basePathLetters } from "../router";
 
 export default {
   name: "CommentIcon",
@@ -27,7 +28,7 @@ export default {
     }
   },
   methods: {
-    doSomething() {
+    activateComment() {
       const comment = {
         id: this.commentId,
         text: this.commentText,
@@ -35,6 +36,11 @@ export default {
       };
       this.$store.dispatch('setActiveComment', comment);
 
+      history.pushState(
+        {},
+        null,
+        basePathLetters + '/' + this.$route.params.id + '/' + this.commentId
+      );
     
       setTimeout(() => {
         const commentReference = document.querySelector(`.g-comment-orig[commentId="${this.commentId}"]`);

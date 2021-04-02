@@ -48,7 +48,13 @@
             />
           </div>
           <div class="row">
-            <q-splitter v-model="splitterModel" :limits="splitterLimits" after-class="overflow-hidden" :separator-class="splitterSeparatorClass" @input="onSeparatorChange">
+            <q-splitter
+              v-model="splitterModel"
+              :limits="splitterLimits"
+              after-class="overflow-auto"
+              :separator-class="splitterSeparatorClass"
+              @input="onSeparatorChange"
+              >
               <template v-slot:before>
                 <LettersText />
               </template>
@@ -179,7 +185,7 @@ export default {
         offset: 0
       };
 
-      this.$store.dispatch("setActiveComment", comment);
+      this.$store.dispatch("setActiveComment", comment);     
     }
   },
 
