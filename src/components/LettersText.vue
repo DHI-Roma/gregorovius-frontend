@@ -7,7 +7,9 @@ import { mapGetters } from 'vuex';
 import VRuntimeTemplate from "v-runtime-template";
 import { xslt } from "@/mixins/xslt";
 import { dataService } from "@/shared";
+import { basePathLetters } from "../router"
 import CommentIcon from "@/components/CommentIcon.vue";
+
 
 export default {
   name: "LettersText",
@@ -33,7 +35,7 @@ export default {
   methods: {
     async getItems() {
       try {
-        const response = await dataService.XSLTransform(this.$route.path, "LettersText");
+        const response = await dataService.XSLTransform(`${basePathLetters}/${this.$route.params.id}`, "LettersText");
         const data = await response;
         this.data = data;
       } catch (error) {
@@ -41,7 +43,7 @@ export default {
         console.error(error)
       }
     },
-    activateComment(event, commentId, commentText, commentReference) {
+    activateComment(event, commentId, commentText) {
       const hasActiveComment = this.activateComment.id ? true : false;
       let offsetTop = event.layerY;
 
@@ -52,7 +54,6 @@ export default {
       const comment = {
         id: commentId,
         text: commentText,
-        reference: commentReference,
         offsetTop: offsetTop
       };
       this.$store.dispatch('setActiveComment', comment);

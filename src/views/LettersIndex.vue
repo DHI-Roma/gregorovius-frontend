@@ -54,15 +54,15 @@
               :props="props"
               class="cursor-pointer"
               :class="searchInput ? 'cursor-pointer g-searchrow' : 'cursor-pointer'"
-              @click.native="$router.push({ name: 'Brief', params: { id: props.row.id } })"
+              @click.native="openItem('default', props.row.id)"
             >
               <q-menu touch-position context-menu>
                 <q-list dense style="min-width: 100px">
-                  <q-item v-close-popup clickable @click.native="openItem(props.row.id, 'window')">
+                  <q-item v-close-popup clickable @click.native="openItem('window', props.row.id)">
                     <q-item-section>In neuem Fenster öffnen</q-item-section>
                   </q-item>
                   <q-separator />
-                  <q-item v-close-popup clickable @click.native="openItem(props.row.id, 'tab')">
+                  <q-item v-close-popup clickable @click.native="openItem('tab', props.row.id)">
                     <q-item-section>In neuem Tab öffnen</q-item-section>
                   </q-item>
                 </q-list>
@@ -92,7 +92,7 @@
             <q-tr v-if="searchInput" :props="props" no-hover>
               <q-td colspan="100%" class="bg-grey-1 text-grey-8">
                 <div class="g-searchresult text-left">
-                  <q-icon name="search" class="q-mr-md text-primary" />
+                  <q-icon :name="getKwic(props.row.id).icon" class="q-mr-md text-primary" />
                   „{{ getKwic(props.row.id).previous }}
                   <div class="g-keyword text-primary text-bold">{{ getKwic(props.row.id).hi }}</div>
                   {{ getKwic(props.row.id).following }}“
@@ -252,7 +252,29 @@ export default {
     async getSearchResults() {
       this.loading = true;
       try {
-        const { results } = await dataService.getSearchResults("letters", this.searchInput);
+        const responseLetters = await dataService.getSearchResults("letters", this.searchInput);
+        const responseComments = await dataService.getSearchResults("comments", this.searchInput);
+        
+        const resultsLetters = responseLetters.results.map(result => {
+          return {
+            ...result,
+            type: 'letter',
+            icon: 'search'
+          }
+        });
+
+        const resultsComments = responseComments.results.map(result => {
+          return {
+            ...result,
+            type: 'comment',
+            icon: 'comment'
+          }
+        });
+
+        const results = resultsLetters.concat(resultsComments).sort((resultBefore, resultAfter) => {
+          return parseFloat(resultBefore.score) < parseFloat(resultAfter.score);
+        });
+        
         this.filter.searchResults = results ? results : [];
       } catch (error) {
         console.log(error);
@@ -287,7 +309,12 @@ export default {
     },
 
     getKwic(entityId) {
-      return this.filter.searchResults.find(result => result.entity_id === entityId);
+      return this.filter.searchResults.find(result => {
+        if (result.entity_related_id) {
+          return result.entity_related_id === entityId;  
+        }
+        return result.entity_id === entityId;
+      });
     },
 
     getArrayOptions(entityName, propertyName) {
@@ -370,7 +397,12 @@ export default {
         );
       }
       if (this.searchInput) {
-        const ids = terms.searchResults.map(result => result.entity_id);
+        const ids = terms.searchResults.map(result => {
+          if (result.entity_related_id) {
+            return result.entity_related_id;
+          }
+          return result.entity_id;
+        });
         rows = rows.filter(r => ids.includes(r.id));
       }
       return rows;
@@ -413,9 +445,26 @@ export default {
       );
     },
 
-    openItem(id, target) {
-      let routeData = this.$router.resolve({ name: "Brief", params: { id: id } });
+    openItem(target, id) {
+      const kwicEntry = this.getKwic(id);
+      let name = "Brief";
+      let params = {
+        id: id
+      };
+
+      if (kwicEntry && kwicEntry.type === "comment") {
+        name = "Brief und Kommentar";
+        params = {
+          id: kwicEntry.entity_related_id,
+          commentId: kwicEntry.entity_id
+        };
+      }
+
+      const routeData = this.$router.resolve({ name, params });
       switch (target) {
+        case "default":
+          this.$router.push({ name, params });
+          break;
         case "tab":
           window.open(routeData.href, "_blank");
           break;

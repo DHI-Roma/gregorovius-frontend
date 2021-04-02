@@ -44,7 +44,7 @@
               icon="arrow_right_alt"
               color="primary"
               size="md"
-              @click="openUrl(`http://gregorovius-edition.dhi-roma.it/api${$route.path}`)"
+              @click="openUrl(`http://gregorovius-edition.dhi-roma.it/api/letters/${$route.params.id}`)"
             />
           </div>
           <div class="row">
@@ -70,6 +70,8 @@
 
 <script>
 import VRuntimeTemplate from "v-runtime-template";
+import { mapGetters } from "vuex";
+import { basePathLetters } from "../router";
 import LettersText from "@/components/LettersText.vue";
 import Comment from "@/components/Comment.vue";
 import axios from "axios";
@@ -153,7 +155,9 @@ export default {
         return "";
       }
       return "separator-hidden";
-    }
+    },
+
+    ...mapGetters(['activeComment'])
 
   },
 
@@ -164,6 +168,18 @@ export default {
 
     if (!this.hasAbstracts()) {
       this.tab = TAB_TEXTGRUNDLAGE;
+    }
+
+    if (this.$route.params.commentId) {
+      const commentReference = document.querySelector(`.g-comment-orig[commentId="${this.$route.params.commentId}"]`);
+
+      const comment = {
+        id: commentReference.getAttribute("commentId"),
+        text: commentReference.getAttribute("commentText"),
+        offset: 0
+      };
+
+      this.$store.dispatch("setActiveComment", comment);
     }
   },
 
@@ -190,7 +206,7 @@ export default {
     },
     async getItems() {
       try {
-        const response = await axios.get(`${API}${this.$route.path}`, {
+        const response = await axios.get(`${API}${basePathLetters}/${this.$route.params.id}`, {
           headers: { Accept: "application/json" }
         });
         this.data = response.data;
@@ -202,8 +218,9 @@ export default {
       }
     },
     async getXSLT(fileName, targetProp) {
-      this[targetProp] = await dataService.XSLTransform(this.$route.path, fileName);
+      this[targetProp] = await dataService.XSLTransform(`${basePathLetters}/${this.$route.params.id}`, fileName);
     },
+
     openUrl(url) {
       url ? window.open(url) : null;
     },

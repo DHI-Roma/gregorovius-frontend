@@ -8,6 +8,7 @@ import {
 } from "../fixtures/item-data";
 import teiHeaderFixture from "../fixtures/tei-header";
 import * as service from "../../../src/shared/service";
+import VueRouter from "vue-router";
 
 describe("LettersDetail", () => {
   let wrapper;
@@ -15,10 +16,13 @@ describe("LettersDetail", () => {
   let getters;
   let store;
 
-  beforeEach(() => {
-    localVue = createLocalVue();
-    localVue.use(Vuex);
+  localVue = createLocalVue();
+  localVue.use(Vuex);
 
+  const router = new VueRouter();
+
+  beforeEach(() => {
+    
     getters = {
       activeComment: () => {
         return {
@@ -30,12 +34,7 @@ describe("LettersDetail", () => {
     store = new Vuex.Store({
       getters
     });
-  })
-
-  const path = "/letters/G000127";
-  const $route = {
-    path
-  };
+  });
 
 
   jest.doMock("axios", () => ({
@@ -48,9 +47,8 @@ describe("LettersDetail", () => {
       wrapper = shallowMount(LettersDetail, {
         localVue,
         store,
-        mocks: {
-          $route
-        },
+        router,
+        
         data() {
           return {
             data: {
@@ -101,9 +99,7 @@ describe("LettersDetail", () => {
       wrapper = shallowMount(LettersDetail, {
         localVue,
         store,
-        mocks: {
-          $route
-        },
+        router,
         data() {
           return {
             data: {
@@ -145,9 +141,7 @@ describe("LettersDetail", () => {
       wrapper = shallowMount(LettersDetail, {
         localVue,
         store,
-        mocks: {
-          $route
-        },
+        router,
         data() {
           return {
             data: {
@@ -184,4 +178,5 @@ describe("LettersDetail", () => {
       expect(wrapper.vm.getAbstractCount()).toBe(1);
     });
   });
+  
 });

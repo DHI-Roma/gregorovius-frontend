@@ -1,5 +1,5 @@
 <template>
-  <q-icon name="comment_bank" class="comment-icon" :class="{ active: isActive }"></q-icon>
+  <q-icon name="comment_bank" class="comment-icon" :class="{ active: isActive }" @click.stop="doSomething"></q-icon>
 </template>
 
 <script>
@@ -19,15 +19,29 @@ export default {
     commentText: {
       type: String,
       required: true
-    },
-    commentReference: {
-      type: String,
-      required: true
     }
   },
   computed: {
     isActive() {
       return this.$store.getters.activeComment.id === this.commentId;
+    }
+  },
+  methods: {
+    doSomething() {
+      const comment = {
+        id: this.commentId,
+        text: this.commentText,
+        offsetTop: 0
+      };
+      this.$store.dispatch('setActiveComment', comment);
+
+    
+      setTimeout(() => {
+        const commentReference = document.querySelector(`.g-comment-orig[commentId="${this.commentId}"]`);
+        comment.offsetTop = commentReference.offsetTop;
+
+        this.$store.dispatch('setActiveComment', comment);
+      }, 0);
     }
   }
 };

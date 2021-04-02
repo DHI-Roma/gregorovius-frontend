@@ -55,7 +55,6 @@ describe("CommentIcon", () => {
       propsData: {
         commentId: 'comment_id',
         commentText: "Some comment text",
-        commentReference: "This is the original text"
       }
     });
 
@@ -69,7 +68,6 @@ describe("CommentIcon", () => {
       propsData: {
         commentId: 'comment_id_other',
         commentText: "Some comment text",
-        commentReference: "This is the original text"
       }
     });
 
