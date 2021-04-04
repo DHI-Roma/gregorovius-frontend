@@ -57,7 +57,7 @@ export default {
 @import '../styles/quasar.variables.styl'
 
 .comment-icon
-  display: inline-block
+  display: inline-block !important
   margin-left: 5px
   margin-right: 2px
   cursor: pointer
