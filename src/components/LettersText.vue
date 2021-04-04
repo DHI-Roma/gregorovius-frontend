@@ -149,6 +149,9 @@ span.g-list-item
   &:hover
     box-shadow: inset 0 -2.5rem 0 0 lighten($secondary, 40)
 
+  .comment-icon
+    display: inline-block !important
+
 
 .g-comment-icon
   color: $primary
