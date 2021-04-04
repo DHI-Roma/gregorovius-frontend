@@ -1,5 +1,7 @@
 <template>
-  <q-icon name="comment_bank" class="comment-icon" :class="{ active: isActive }" @click.stop="activateComment"></q-icon>
+  <span class="comment-icon-wrapper">
+    <q-icon name="comment_bank" class="comment-icon" :class="{ active: isActive }" @click.stop="activateComment"></q-icon>
+  </span>
 </template>
 
 <script>
@@ -56,8 +58,10 @@ export default {
 <style lang="stylus">
 @import '../styles/quasar.variables.styl'
 
-.comment-icon
+.comment-icon-wrapper
   display: inline-block !important
+
+.comment-icon
   margin-left: 5px
   margin-right: 2px
   cursor: pointer
