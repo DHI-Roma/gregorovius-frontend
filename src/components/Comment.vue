@@ -19,6 +19,7 @@
       color="accent"
       icon="close"
       align="right"
+      size="sm"
       rounded
       outline
       class="close-comment q-mt-sm"
@@ -60,7 +61,7 @@ h6
 
 .g-edition-comment
   font-family: "IBMPlexSans"
-  font-size: 12pt
+  font-size: 10pt
   padding-top: 1rem
   padding-bottom: 1rem
 </style>

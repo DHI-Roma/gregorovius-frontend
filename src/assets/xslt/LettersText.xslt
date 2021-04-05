@@ -98,9 +98,9 @@
 <xsl:template match="tei:seg[@type='comment']/tei:orig">
     <span class="g-comment-orig"
           v-bind:class="['{../tei:note/@xml:id}' === activeComment.id ? 'active' : '' ]"
-          v-on:click="activateComment($event, '{../tei:note/@xml:id}', '{../tei:note}')"
-          v-bind:commentId="'{../tei:note/@xml:id}'"
-          v-bind:commentText="'{../tei:note}'"
+          v-on:click="activateComment($event, `{../tei:note/@xml:id}`, `{../tei:note}`)"
+          v-bind:commentId="`{../tei:note/@xml:id}`"
+          v-bind:commentText="`{../tei:note}`"
           >
           <q-tooltip content-style="font-size: 12pt;">
             <xsl:choose>
@@ -114,8 +114,8 @@
           </q-tooltip>
         <xsl:apply-templates />
         <CommentIcon 
-        v-bind:commentId="'{../tei:note/@xml:id}'" 
-        v-bind:commentText="'{../tei:note}'">
+        v-bind:commentId="`{../tei:note/@xml:id}`" 
+        v-bind:commentText="`{../tei:note}`">
     </CommentIcon>
     </span>
 </xsl:template>
