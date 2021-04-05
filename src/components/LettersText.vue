@@ -141,13 +141,13 @@ span.g-list-item
   margin-left: 1.5rem
 
 .g-comment-orig
-  box-shadow: inset 0 -0.7rem 0 0 lighten($secondary, 40)
+  box-shadow: inset 0 0.8rem 0 0 lighten($secondary, 40)
   transition: box-shadow 0.5s;
   cursor: pointer;
 
   &.active,
   &:hover
-    box-shadow: inset 0 -2.5rem 0 0 lighten($secondary, 40)
+    box-shadow: inset 0 2.5rem 0 0 lighten($secondary, 40)
 
   .comment-icon
     display: inline-block !important
