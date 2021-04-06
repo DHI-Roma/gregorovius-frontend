@@ -92,13 +92,27 @@
 </xsl:template>
 
 <xsl:template match="tei:seg[@type='comment']/tei:note">
-
+    <span class="hidden" id="comment-{@xml:id}"><xsl:apply-templates/></span>
 </xsl:template>
+
+<xsl:template match="tei:ref">
+    <xsl:choose>
+        <xsl:when test="@target">
+            <a class="g-entity-link" v-on:click="$router.push({{ name: 'Brief', params: {{ id: '{@target}' }} }})">
+                <xsl:apply-templates/>
+            </a>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:apply-templates/>
+        </xsl:otherwise>
+    </xsl:choose>
+</xsl:template>
+
 
 <xsl:template match="tei:seg[@type='comment']/tei:orig">
     <span class="g-comment-orig"
           v-bind:class="['{../tei:note/@xml:id}' === activeComment.id ? 'active' : '' ]"
-          v-on:click="activateComment($event, `{../tei:note/@xml:id}`, `{../tei:note}`)"
+          v-on:click="activateComment($event, `{../tei:note/@xml:id}`, `{../tei:note}`)"           
           v-bind:commentId="`{../tei:note/@xml:id}`"
           v-bind:commentText="`{../tei:note}`"
           >

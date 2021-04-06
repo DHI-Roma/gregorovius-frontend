@@ -9,8 +9,7 @@
     </div>
     <q-separator />
 
-    <div class="g-edition-comment">
-      {{ activeComment.text }}
+    <div class="g-edition-comment" v-html="commentWithLinks">
     </div>
 
     <q-separator class="q-mt-sm" />
@@ -32,6 +31,7 @@
 </template>
 
 <script>
+import * as linkifyUrls from 'linkify-urls';
 import { mapGetters } from "vuex";
 import { QChatMessage } from "quasar";
 
@@ -40,7 +40,17 @@ export default {
   components: {
     QChatMessage
   },
-  computed: { ...mapGetters(["activeComment"]) },
+  computed: { 
+    ...mapGetters(["activeComment"]),
+    commentWithLinks() {
+      return linkifyUrls(this.activeComment.text, {
+        attributes: {
+          class: 'g-edition-external-link',
+          target: '_blank'
+        }
+      });
+    }
+  },
   methods: {
     close() {
       this.$store.dispatch('unselectComment');

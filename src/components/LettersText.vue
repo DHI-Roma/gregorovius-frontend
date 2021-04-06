@@ -51,15 +51,18 @@ export default {
         offsetTop = event.target.parentElement.offsetTop;
       }
 
+      /** We don't use vue router.push here to not trigger a refresh of the component */
       history.pushState(
         {},
         null,
         basePathLetters + '/' + this.$route.params.id + '/' + commentId
       );
 
+      const commentHtml = document.querySelector(`#comment-${commentId}`);
+
       const comment = {
         id: commentId,
-        text: commentText,
+        text: commentHtml.innerHTML,
         offsetTop: offsetTop
       };
       this.$store.dispatch('setActiveComment', comment);
@@ -164,4 +167,14 @@ span.g-list-item
 
 .separator-hidden
   display: none
+
+.g-edition-external-link
+  color: unset
+  text-decoration: none
+  box-shadow: inset 0 -0.4rem 0 0 $info
+  transition: box-shadow 0.5s
+  cursor: pointer
+
+  &:hover
+    box-shadow: inset 0 -1rem 0 0 $info
 </style>

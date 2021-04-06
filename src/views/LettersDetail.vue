@@ -167,29 +167,43 @@ export default {
 
   },
 
-  async mounted() {
-    await this.getItems();
-    await this.getXSLT("LettersMsDesc", "msDesc");
-    this.loading = false;
+  mounted() {
+    this.initializeComponent();  
+  },
 
-    if (!this.hasAbstracts()) {
-      this.tab = TAB_TEXTGRUNDLAGE;
-    }
-
-    if (this.$route.params.commentId) {
-      const commentReference = document.querySelector(`.g-comment-orig[commentId="${this.$route.params.commentId}"]`);
-
-      const comment = {
-        id: commentReference.getAttribute("commentId"),
-        text: commentReference.getAttribute("commentText"),
-        offset: 0
-      };
-
-      this.$store.dispatch("setActiveComment", comment);     
+  watch: {
+    "$route.params.id": {
+      handler: function(oldId, newId) {
+        if (oldId !== newId) {
+          this.initializeComponent();
+        }
+      }
     }
   },
 
   methods: {
+    async initializeComponent() {
+      await this.getItems();
+      await this.getXSLT("LettersMsDesc", "msDesc");
+      this.loading = false;
+
+      if (!this.hasAbstracts()) {
+        this.tab = TAB_TEXTGRUNDLAGE;
+      }
+
+      if (this.$route.params.commentId) {
+        const commentReference = document.querySelector(`.g-comment-orig[commentId="${this.$route.params.commentId}"]`);
+
+        const comment = {
+          id: commentReference.getAttribute("commentId"),
+          text: commentReference.getAttribute("commentText"),
+          offset: 0
+        };
+
+        this.$store.dispatch("setActiveComment", comment);     
+      }
+    },
+
     getAbstractCount() {
       const abstractsWithText = this.data.teiHeader.profileDesc.abstract.p.filter(abstract => {
         return abstract.hasOwnProperty("#text");

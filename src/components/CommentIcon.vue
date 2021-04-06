@@ -31,19 +31,21 @@ export default {
   },
   methods: {
     activateComment() {
+      const commentHtml = document.querySelector(`#comment-${commentId}`);
       const comment = {
         id: this.commentId,
-        text: this.commentText,
+        text: commentHtml.innerHTML,
         offsetTop: 0
       };
       this.$store.dispatch('setActiveComment', comment);
 
+      /** We don't use vue router.push here to not trigger a refresh of the component */
       history.pushState(
         {},
         null,
         basePathLetters + '/' + this.$route.params.id + '/' + this.commentId
       );
-    
+
       setTimeout(() => {
         const commentReference = document.querySelector(`.g-comment-orig[commentId="${this.commentId}"]`);
         comment.offsetTop = commentReference.offsetTop;
