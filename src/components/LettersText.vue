@@ -97,8 +97,15 @@ del
 
 .g-entity-link
   box-shadow: inset 0 -0.7rem 0 0 hsla(144.9, 100%, 82.5%, 0.5)
-  transition: box-shadow 0.5s;
-  cursor: pointer;
+  transition: box-shadow 0.5s
+  cursor: pointer
+  text-decoration: none
+  text-decoration: none
+
+a.g-entity-link
+  color: unset
+  text-decoration: none
+  
 
 .g-entity-link.start-offset
   box-shadow: inset 0 -2.5rem 0 0 hsla(144.9, 100%, 82.5%, 1)
@@ -177,4 +184,8 @@ span.g-list-item
 
   &:hover
     box-shadow: inset 0 -1rem 0 0 $info
+
+.g-edition-comment
+  .g-aq
+    font-size: 10pt
 </style>

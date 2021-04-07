@@ -105,8 +105,8 @@
               <q-tr
                 :props="props"
                 no-hover
-                v-for="searchResult in getKwic(props.row.id)"
-                :key="searchResult.entity_id"
+                v-for="(searchResult, index) in getKwic(props.row.id)"
+                :key="searchResult.entity_id + '--' + searchResult.entity_related_id + '--' + index"
               >
                 <q-td colspan="100%" class="bg-grey-1 text-grey-8">
                   <div

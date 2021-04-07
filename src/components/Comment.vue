@@ -1,6 +1,7 @@
 <template>
   <div 
     class="g-edition-comment-container"
+    v-if="this.activeComment.id"
     v-bind:style="{ top: activeComment.offsetTop + 'px' }">
     <div class="row justify-between self-center q-pb-sm">
       <span class="text-h6">
@@ -74,4 +75,5 @@ h6
   font-size: 10pt
   padding-top: 1rem
   padding-bottom: 1rem
+
 </style>

@@ -193,14 +193,22 @@ export default {
 
       if (this.$route.params.commentId) {
         const commentReference = document.querySelector(`.g-comment-orig[commentId="${this.$route.params.commentId}"]`);
-
         const comment = {
           id: commentReference.getAttribute("commentId"),
           text: commentReference.getAttribute("commentText"),
           offset: 0
         };
 
-        this.$store.dispatch("setActiveComment", comment);     
+        this.$store.dispatch("setActiveComment", comment);
+
+        setTimeout(() => {
+          const commentReference = document.querySelector(`.g-comment-orig[commentId="${this.$route.params.commentId}"]`);
+          const commentHtml = document.querySelector(`#comment-${this.$route.params.commentId}`);
+          comment.offsetTop = commentReference.offsetTop;
+          comment.text = commentHtml.innerHTML;
+
+        this.$store.dispatch('setActiveComment', comment);
+      }, 0);
       }
     },
 

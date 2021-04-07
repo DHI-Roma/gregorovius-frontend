@@ -98,7 +98,9 @@
 <xsl:template match="tei:ref">
     <xsl:choose>
         <xsl:when test="@target">
-            <a class="g-entity-link" v-on:click="$router.push({{ name: 'Brief', params: {{ id: '{@target}' }} }})">
+            <a class="g-entity-link" 
+                v-on:click="$router.push({{ name: 'Brief', params: {{ id: '{@target}' }} }})" 
+                v-bind:href="$router.resolve({{ name: 'Brief', params: {{ id: '{@target}' }} }}).href">
                 <xsl:apply-templates/>
             </a>
         </xsl:when>

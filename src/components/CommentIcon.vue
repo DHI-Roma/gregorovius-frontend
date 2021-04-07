@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     activateComment() {
-      const commentHtml = document.querySelector(`#comment-${commentId}`);
+      const commentHtml = document.querySelector(`#comment-${this.commentId}`);
       const comment = {
         id: this.commentId,
         text: commentHtml.innerHTML,
