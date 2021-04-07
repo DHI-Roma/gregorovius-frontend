@@ -186,6 +186,6 @@ span.g-list-item
     box-shadow: inset 0 -1rem 0 0 $info
 
 .g-edition-comment
-  .g-aq
+  *
     font-size: 10pt
 </style>
