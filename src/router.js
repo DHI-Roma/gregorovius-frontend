@@ -23,6 +23,8 @@ import Error404 from "@/views/Error404.vue";
 
 Vue.use(Router);
 
+export const basePathLetters = "/letters";
+
 export default new Router({
   mode: "history",
   scrollBehavior() {
@@ -46,7 +48,16 @@ export default new Router({
         {
           path: "letters/:id",
           name: "Brief",
-          component: LettersDetail
+          component: LettersDetail,
+          beforeEnter(to, from, next) {
+            store.dispatch("unselectComment");
+            next();
+          }
+        },
+        {
+          path: "letters/:id/:commentId",
+          name: "Brief und Kommentar",
+          component: LettersDetail,
         },
         {
           path: "persons",

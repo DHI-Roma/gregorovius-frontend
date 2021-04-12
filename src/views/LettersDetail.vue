@@ -44,11 +44,24 @@
               icon="arrow_right_alt"
               color="primary"
               size="md"
-              @click="openUrl(`http://gregorovius-edition.dhi-roma.it/api${$route.path}`)"
+              @click="openUrl(`http://gregorovius-edition.dhi-roma.it/api/letters/${$route.params.id}`)"
             />
           </div>
           <div class="row">
-            <LettersText />
+            <q-splitter
+              v-model="splitterModel"
+              :limits="splitterLimits"
+              after-class="overflow-auto"
+              :separator-class="splitterSeparatorClass"
+              @input="onSeparatorChange"
+              >
+              <template v-slot:before>
+                <LettersText />
+              </template>
+              <template v-slot:after>
+                <Comment />
+              </template>
+            </q-splitter>
           </div>
         </q-card>
       </div>
@@ -63,7 +76,10 @@
 
 <script>
 import VRuntimeTemplate from "v-runtime-template";
+import { mapGetters } from "vuex";
+import { basePathLetters } from "../router";
 import LettersText from "@/components/LettersText.vue";
+import Comment from "@/components/Comment.vue";
 import axios from "axios";
 import { dataService } from "@/shared";
 import { API } from "@/shared/config";
@@ -78,14 +94,17 @@ import {
   QTabs,
   QTab,
   QCardSection,
-  QChip
+  QChip,
+  QSplitter
 } from "quasar";
 
 const TAB_TEXTGRUNDLAGE = "tgl";
+const SPLITTER_SIZE_START = 100;
 
 export default {
   name: "Item",
   components: {
+    Comment,
     LettersText,
     VRuntimeTemplate,
     QCard,
@@ -98,7 +117,8 @@ export default {
     QTabs,
     QTab,
     QCardSection,
-    QChip
+    QChip,
+    QSplitter
   },
   data() {
     return {
@@ -107,7 +127,8 @@ export default {
       tab: "reg",
       msDesc: "",
       supplement: "",
-      physDesc: ""
+      physDesc: "",
+      splitterModel: SPLITTER_SIZE_START
     };
   },
   computed: {
@@ -124,20 +145,73 @@ export default {
         / .?.? ?[A-Z][a-zà-ý)]*( [a-zà-ý]*)?( [A-Z][a-zà-ý]*)?(-[A-Z][-a-zà-ý]*)?(\(\?\))?\./
       );
       return secondPart[secondPart.length - 1];
-    }
+    },
+    activeComment() {
+      return this.$store.getters.activeComment;
+    },
+    splitterLimits() {
+      if (this.activeComment.id) {
+        return [50, 75];
+      }
+
+      return [100, 100];
+    },
+    splitterSeparatorClass() {
+      if (this.activeComment.id) {
+        return "";
+      }
+      return "separator-hidden";
+    },
+
+    ...mapGetters(['activeComment'])
+
   },
 
-  async mounted() {
-    await this.getItems();
-    await this.getXSLT("LettersMsDesc", "msDesc");
-    this.loading = false;
+  mounted() {
+    this.initializeComponent();  
+  },
 
-    if (!this.hasAbstracts()) {
-      this.tab = TAB_TEXTGRUNDLAGE;
+  watch: {
+    "$route.params.id": {
+      handler: function(oldId, newId) {
+        if (oldId !== newId) {
+          this.initializeComponent();
+        }
+      }
     }
   },
 
   methods: {
+    async initializeComponent() {
+      await this.getItems();
+      await this.getXSLT("LettersMsDesc", "msDesc");
+      this.loading = false;
+
+      if (!this.hasAbstracts()) {
+        this.tab = TAB_TEXTGRUNDLAGE;
+      }
+
+      if (this.$route.params.commentId) {
+        const commentReference = document.querySelector(`.g-comment-orig[commentId="${this.$route.params.commentId}"]`);
+        const comment = {
+          id: commentReference.getAttribute("commentId"),
+          text: commentReference.getAttribute("commentText"),
+          offset: 0
+        };
+
+        this.$store.dispatch("setActiveComment", comment);
+
+        setTimeout(() => {
+          const commentReference = document.querySelector(`.g-comment-orig[commentId="${this.$route.params.commentId}"]`);
+          const commentHtml = document.querySelector(`#comment-${this.$route.params.commentId}`);
+          comment.offsetTop = commentReference.offsetTop;
+          comment.text = commentHtml.innerHTML;
+
+        this.$store.dispatch('setActiveComment', comment);
+      }, 0);
+      }
+    },
+
     getAbstractCount() {
       const abstractsWithText = this.data.teiHeader.profileDesc.abstract.p.filter(abstract => {
         return abstract.hasOwnProperty("#text");
@@ -160,7 +234,7 @@ export default {
     },
     async getItems() {
       try {
-        const response = await axios.get(`${API}${this.$route.path}`, {
+        const response = await axios.get(`${API}${basePathLetters}/${this.$route.params.id}`, {
           headers: { Accept: "application/json" }
         });
         this.data = response.data;
@@ -172,13 +246,26 @@ export default {
       }
     },
     async getXSLT(fileName, targetProp) {
-      this[targetProp] = await dataService.XSLTransform(this.$route.path, fileName);
+      this[targetProp] = await dataService.XSLTransform(`${basePathLetters}/${this.$route.params.id}`, fileName);
     },
+
     openUrl(url) {
       url ? window.open(url) : null;
+    },
+    onSeparatorChange(value) {
+      this.updateCommentPosition();
+    },
+    updateCommentPosition() {
+      if (!this.activeComment.id) {
+        return;
+      }
+
+      const activeCommentReference = document.querySelector(`.g-comment-orig[commentId="${this.activeComment.id}"]`);
+
+      const commentUpdate = { ...this.activeComment };
+      commentUpdate.offsetTop = activeCommentReference.offsetTop;
+      this.$store.dispatch('setActiveComment', commentUpdate);
     }
   }
 };
 </script>
-
-<style></style>

@@ -1,16 +1,41 @@
-import { shallowMount } from "@vue/test-utils";
+import { shallowMount, createLocalVue } from "@vue/test-utils";
+import * as Vuex from "vuex";
 import LettersDetail from "@/views/LettersDetail.vue";
-import { itemDataRegStandard, itemDataRegNoAbstract, itemDataRegOneAbstract } from "../fixtures/item-data";
+import {
+  itemDataRegStandard,
+  itemDataRegNoAbstract,
+  itemDataRegOneAbstract
+} from "../fixtures/item-data";
 import teiHeaderFixture from "../fixtures/tei-header";
 import * as service from "../../../src/shared/service";
+import VueRouter from "vue-router";
 
 describe("LettersDetail", () => {
   let wrapper;
+  let localVue;
+  let getters;
+  let store;
 
-  const path = "/letters/G000127";
-  const $route = {
-    path
-  };
+  localVue = createLocalVue();
+  localVue.use(Vuex);
+
+  const router = new VueRouter();
+
+  beforeEach(() => {
+    
+    getters = {
+      activeComment: () => {
+        return {
+          id: "comment_id",
+          text: "Some comment text"
+        };
+      }
+    }
+    store = new Vuex.Store({
+      getters
+    });
+  });
+
 
   jest.doMock("axios", () => ({
     get: Promise.resolve(teiHeaderFixture)
@@ -20,9 +45,10 @@ describe("LettersDetail", () => {
   describe("German and English abstracts are available", () => {
     beforeEach(() => {
       wrapper = shallowMount(LettersDetail, {
-        mocks: {
-          $route
-        },
+        localVue,
+        store,
+        router,
+        
         data() {
           return {
             data: {
@@ -71,9 +97,9 @@ describe("LettersDetail", () => {
   describe("No abstracts are available", () => {
     beforeEach(() => {
       wrapper = shallowMount(LettersDetail, {
-        mocks: {
-          $route
-        },
+        localVue,
+        store,
+        router,
         data() {
           return {
             data: {
@@ -113,9 +139,9 @@ describe("LettersDetail", () => {
   describe("Only one abstract is available", () => {
     beforeEach(() => {
       wrapper = shallowMount(LettersDetail, {
-        mocks: {
-          $route
-        },
+        localVue,
+        store,
+        router,
         data() {
           return {
             data: {
@@ -152,4 +178,5 @@ describe("LettersDetail", () => {
       expect(wrapper.vm.getAbstractCount()).toBe(1);
     });
   });
+  
 });

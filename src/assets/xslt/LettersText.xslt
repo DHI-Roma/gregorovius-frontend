@@ -1,3 +1,5 @@
+ <xsl:output method="html" version="4.0" encoding="UTF-8" indent="yes" />
+
 <xsl:template match="/">
     <div class="g-edition-text">
         <xsl:apply-templates select="//tei:body"/>
@@ -87,7 +89,52 @@
 
 <xsl:template match="tei:lb">
     <br/>
-</xsl:template> 
+</xsl:template>
+
+<xsl:template match="tei:seg[@type='comment']/tei:note">
+    <span class="hidden" id="comment-{@xml:id}"><xsl:apply-templates/></span>
+</xsl:template>
+
+<xsl:template match="tei:ref">
+    <xsl:choose>
+        <xsl:when test="@target">
+            <a class="g-entity-link" 
+                v-on:click="$router.push({{ name: 'Brief', params: {{ id: '{@target}' }} }})" 
+                v-bind:href="$router.resolve({{ name: 'Brief', params: {{ id: '{@target}' }} }}).href">
+                <xsl:apply-templates/>
+            </a>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:apply-templates/>
+        </xsl:otherwise>
+    </xsl:choose>
+</xsl:template>
+
+
+<xsl:template match="tei:seg[@type='comment']/tei:orig">
+    <span class="g-comment-orig"
+          v-bind:class="['{../tei:note/@xml:id}' === activeComment.id ? 'active' : '' ]"
+          v-on:click="activateComment($event, `{../tei:note/@xml:id}`, `{../tei:note}`)"           
+          v-bind:commentId="`{../tei:note/@xml:id}`"
+          v-bind:commentText="`{../tei:note}`"
+          >
+          <q-tooltip content-style="font-size: 12pt;">
+            <xsl:choose>
+                <xsl:when test="string-length(../tei:note) &gt; 50">
+                    <xsl:value-of select="substring(../tei:note, 1, 50)" />...
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="../tei:note" />
+                </xsl:otherwise>
+            </xsl:choose>
+          </q-tooltip>
+        <xsl:apply-templates />
+        <CommentIcon 
+        v-bind:commentId="`{../tei:note/@xml:id}`" 
+        v-bind:commentText="`{../tei:note}`">
+    </CommentIcon>
+    </span>
+</xsl:template>
 
 <xsl:template match="tei:persName | tei:orgName">
     <xsl:choose>
