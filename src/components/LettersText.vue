@@ -105,7 +105,7 @@ del
 a.g-entity-link
   color: unset
   text-decoration: none
-  
+
 
 .g-entity-link.start-offset
   box-shadow: inset 0 -2.5rem 0 0 hsla(144.9, 100%, 82.5%, 1)
@@ -151,7 +151,6 @@ span.g-list-item
   margin-left: 1.5rem
 
 .g-comment-orig
-  box-shadow: inset 0 0.8rem 0 0 lighten($secondary, 40)
   transition: box-shadow 0.5s;
   cursor: pointer;
 
