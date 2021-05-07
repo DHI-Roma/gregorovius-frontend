@@ -32,6 +32,8 @@
                 </div>
               </q-tab-panel>
             </q-tab-panels>
+            <div v-if="editor" class="text-caption text-right q-tm-sm">Bearbeitet von: <span id="editor">{{ editor }}</span>
+            </div>
           </q-card>
         </div>
       </div>
@@ -101,6 +103,8 @@ import {
 const TAB_TEXTGRUNDLAGE = "tgl";
 const SPLITTER_SIZE_START = 100;
 
+const FG_03_03_SHOULD_DISPLAY_EDITOR = false;
+
 export default {
   name: "Item",
   components: {
@@ -162,13 +166,35 @@ export default {
       }
       return "separator-hidden";
     },
+    editor() {
+      if (!FG_03_03_SHOULD_DISPLAY_EDITOR) {
+        return "";
+      }
+
+      if (!this.data.teiHeader.fileDesc.titleStmt.respStmt) {
+        return "";
+      }
+
+      let forename = "";
+      let surname = "";
+
+      if (this.data.teiHeader.fileDesc.titleStmt.respStmt.persName.forename) {
+        forename = this.data.teiHeader.fileDesc.titleStmt.respStmt.persName.forename;
+      }
+
+      if (this.data.teiHeader.fileDesc.titleStmt.respStmt.persName.surname) {
+        surname = this.data.teiHeader.fileDesc.titleStmt.respStmt.persName.surname;
+      }
+
+      return [forename, surname].join(" ");
+    },
 
     ...mapGetters(['activeComment'])
 
   },
 
   mounted() {
-    this.initializeComponent();  
+    this.initializeComponent();
   },
 
   watch: {

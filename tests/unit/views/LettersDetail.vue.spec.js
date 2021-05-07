@@ -22,7 +22,7 @@ describe("LettersDetail", () => {
   const router = new VueRouter();
 
   beforeEach(() => {
-    
+
     getters = {
       activeComment: () => {
         return {
@@ -48,7 +48,7 @@ describe("LettersDetail", () => {
         localVue,
         store,
         router,
-        
+
         data() {
           return {
             data: {
@@ -178,5 +178,34 @@ describe("LettersDetail", () => {
       expect(wrapper.vm.getAbstractCount()).toBe(1);
     });
   });
-  
+
+
+  describe('Editor Statement', () => {
+    it.skip('should display the editors name if available', () => {
+      const teiHeader = itemDataRegOneAbstract.teiHeader;
+
+      teiHeader.fileDesc.titleStmt.respStmt.persName.forename = "The";
+      teiHeader.fileDesc.titleStmt.respStmt.persName.surname = "Editor";
+
+      wrapper = shallowMount(LettersDetail, {
+        localVue,
+        store,
+        router,
+        data() {
+          return {
+            data: {
+              teiHeader: teiHeader
+            },
+            loading: false
+          };
+        }
+      });
+
+      expect(wrapper.vm.editor).toBe("The Editor");
+      expect(wrapper.find('#editor')).toBeTruthy();
+      expect(wrapper.find("#editor").text()).toContain("The Editor");
+
+      wrapper.destroy();
+    });
+  });
 });
