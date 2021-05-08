@@ -528,8 +528,12 @@ export default {
         case "window": {
           const width = window.outerWidth;
           const height = window.outerHeight;
-          const strWindowFeatures = `resizable,location=yes,height=${height},width=${width},scrollbars=yes,status=yes`;
-          window.open(routeData.href, "_blank", strWindowFeatures);
+          const windowFeatures = `toolbar,menubar,resizable,location=yes,height=${height},width=${width},scrollbars=yes,status=yes`;
+          window.open(
+            routeData.href,
+            "_blank",
+            windowFeatures
+            );
           break;
         }
       }
@@ -544,7 +548,7 @@ export default {
   font-family: Cardo
   font-size: 1.2em
 
-.g-searchresult-comment 
+.g-searchresult-comment
   font-family: 'IBMPlexSans'
   font-size: 1em
   padding-left: 1em
