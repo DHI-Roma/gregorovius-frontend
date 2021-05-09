@@ -22,7 +22,7 @@ describe("LettersDetail", () => {
   const router = new VueRouter();
 
   beforeEach(() => {
-    
+
     getters = {
       activeComment: () => {
         return {
@@ -48,7 +48,7 @@ describe("LettersDetail", () => {
         localVue,
         store,
         router,
-        
+
         data() {
           return {
             data: {
@@ -178,5 +178,5 @@ describe("LettersDetail", () => {
       expect(wrapper.vm.getAbstractCount()).toBe(1);
     });
   });
-  
+
 });

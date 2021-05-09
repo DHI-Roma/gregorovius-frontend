@@ -138,12 +138,22 @@ import { mapActions } from "vuex";
 import { dataService } from "../shared";
 import SelectAutoComplete from "../components/SelectAutoComplete.vue";
 import SelectYears from "../components/SelectYears.vue";
+import {
+  QCard,
+  QInput,
+  QPage,
+  QTable
+} from "quasar";
 
 export default {
   name: "LettersIndex",
   components: {
     SelectAutoComplete,
     SelectYears,
+    QCard,
+    QInput,
+    QPage,
+    QTable
   },
   filters: {
     formatDate(isoDate) {
@@ -544,7 +554,7 @@ export default {
   font-family: Cardo
   font-size: 1.2em
 
-.g-searchresult-comment 
+.g-searchresult-comment
   font-family: 'IBMPlexSans'
   font-size: 1em
   padding-left: 1em
