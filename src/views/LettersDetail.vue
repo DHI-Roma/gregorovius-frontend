@@ -237,7 +237,7 @@ export default {
     },
     async getItems() {
       try {
-        const response = await axios.get(`${API}${basePathLetters}/${this.$route.params.id}`, {
+        const response = await axios.get(`${API}${basePathLetters}/${this.letterId}`, {
           headers: { Accept: "application/json" }
         });
         this.data = response.data;
@@ -249,7 +249,7 @@ export default {
       }
     },
     async getXSLT(fileName, targetProp) {
-      this[targetProp] = await dataService.XSLTransform(`${basePathLetters}/${this.$route.params.id}`, fileName);
+      this[targetProp] = await dataService.XSLTransform(`${basePathLetters}/${this.letterId}`, fileName);
     },
 
     openUrl(url) {
