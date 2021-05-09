@@ -44,7 +44,7 @@
               icon="arrow_right_alt"
               color="primary"
               size="md"
-              @click="openUrl(`http://gregorovius-edition.dhi-roma.it/api/letters/${$route.params.id}`)"
+              @click="openUrl(`http://gregorovius-edition.dhi-roma.it/api/letters/${letterId}`)"
             />
           </div>
           <div class="row">
@@ -132,6 +132,9 @@ export default {
     };
   },
   computed: {
+    letterId() {
+      return this.$route.params.id;
+    },
     // Splits the title and returns the first part.
     titleMain() {
       const title = this.data.teiHeader.fileDesc.titleStmt.title.replace(/[\n ]+/g, " ");
@@ -168,7 +171,7 @@ export default {
   },
 
   mounted() {
-    this.initializeComponent();  
+    this.initializeComponent();
   },
 
   watch: {

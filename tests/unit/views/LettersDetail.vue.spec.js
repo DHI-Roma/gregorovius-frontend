@@ -57,6 +57,9 @@ describe("LettersDetail", () => {
             },
             loading: false
           };
+        },
+        computed: {
+          letterId: () => "G000001"
         }
       });
     });
@@ -108,6 +111,9 @@ describe("LettersDetail", () => {
             },
             loading: false
           };
+        },
+        computed: {
+          letterId: () => "G000001"
         }
       });
     });
@@ -151,6 +157,9 @@ describe("LettersDetail", () => {
             },
             loading: false
           };
+        },
+        computed: {
+          letterId: () => "G000001"
         }
       });
     });
