@@ -27,7 +27,7 @@ This project used [Jest](https://jestjs.io/) as its main testing framework.
 Run tests with:
 
 ```shell
-npm run test:unit
+npm run test
 ```
 
 # Edition Guidelines
