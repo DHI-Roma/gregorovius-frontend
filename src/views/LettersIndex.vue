@@ -393,14 +393,7 @@ export default {
 
     getOptions(entityName, propertyName) {
       // Get a set of possible values from a string property
-      const optionIds = this[entityName].map((e) => {
-        const stack = propertyName.split(".");
-        var output = e.properties;
-        while (stack.length > 1) {
-          output = output[stack.shift()];
-        }
-        return output[stack.shift()];
-      });
+      const optionIds = this[entityName].map((entity) => tableService.traverseObject(entity, propertyName));
       const uniqueIds = [...new Set(optionIds)].filter((id) => id !== null);
       const idNameMap = uniqueIds.map((id) => ({
         label: this.getFullName(id, "NN"),

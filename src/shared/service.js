@@ -1,5 +1,6 @@
 /* eslint-disable func-names */
 import axios from "axios";
+import { xslt } from "../mixins/xslt";
 import { API } from "./config";
 
 const parseList = response => {
@@ -88,7 +89,7 @@ const getSearchResults = async function(entityName, searchInput) {
 
 const XSLTransform = async function(path, xsltName) {
   try {
-    const stylesheetModule = await import(`@/assets/xslt/${xsltName}.xslt`);
+    const stylesheetModule = await import(xslt.methods.getXsltPath(xsltName));
     const stylesheet = stylesheetModule.default;
     const response = await axios.post(`${API}${path}`, stylesheet, {
       params: {
@@ -98,7 +99,7 @@ const XSLTransform = async function(path, xsltName) {
     if (response.data === "") {
       return "";
     }
-    return `<div xmlns:v-bind="https://vuejs.org/v2/api/#v-bind" 
+    return `<div xmlns:v-bind="https://vuejs.org/v2/api/#v-bind"
           xmlns:v-on="https://vuejs.org/v2/api/#v-on">${response.data}</div>`;
   } catch (error) {
     console.error(error);
