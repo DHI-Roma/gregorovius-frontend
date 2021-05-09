@@ -1,6 +1,7 @@
 import { shallowMount, createLocalVue } from "@vue/test-utils";
 import * as Vuex from "vuex";
 import VueRouter from "vue-router";
+import { routes } from "@/router";
 
 import LettersIndex from "@/views/LettersIndex.vue";
 import * as service from "../../../src/shared/service";
@@ -16,6 +17,8 @@ describe("LettersIndex", () => {
 
   localVue = createLocalVue();
   localVue.use(Vuex);
+
+  const router = new VueRouter({ routes, mode: 'abstract'});
 
   beforeEach(() => {
     jest.doMock("axios", () => ({
@@ -39,24 +42,21 @@ describe("LettersIndex", () => {
       getters
     });
 
-    const $route = {
-      path: "/letters",
-      query: {}
-    };
-
     wrapper = shallowMount(LettersIndex, {
       localVue,
       store,
-      mocks: {
-        $route
-      }
+      router
     });
   });
 
-  afterEach(() => {});
+  afterEach(() => {
+    wrapper.destroy();
+  });
 
   it("renders the component", async () => {
     expect(wrapper).toBeTruthy();
-    wrapper.destroy();
   });
+
+  it("filters letters by recipient when one recipient is provided", async () => {
+  })
 });

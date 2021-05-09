@@ -1,5 +1,7 @@
 import { shallowMount, createLocalVue } from "@vue/test-utils";
 import * as Vuex from "vuex";
+import VueRouter from "vue-router";
+import { routes } from "@/routes";
 import LettersDetail from "@/views/LettersDetail.vue";
 import {
   itemDataRegStandard,
@@ -8,7 +10,6 @@ import {
 } from "../fixtures/item-data";
 import teiHeaderFixture from "../fixtures/tei-header";
 import * as service from "../../../src/shared/service";
-import VueRouter from "vue-router";
 
 describe("LettersDetail", () => {
   let wrapper;
@@ -19,7 +20,7 @@ describe("LettersDetail", () => {
   localVue = createLocalVue();
   localVue.use(Vuex);
 
-  const router = new VueRouter();
+  const router = new VueRouter({ routes, mode: 'abstract'});
 
   beforeEach(() => {
 
@@ -110,6 +111,7 @@ describe("LettersDetail", () => {
         }
       });
     });
+
 
     afterEach(() => {
       wrapper.destroy();
