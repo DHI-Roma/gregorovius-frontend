@@ -30,9 +30,13 @@
 
 <script>
 import { mapActions } from "vuex";
+import { QSelect } from "quasar";
 
 export default {
   name: "SelectAutoComplete",
+  components: {
+    QSelect
+  },
   props: {
     label: {
       type: String,
