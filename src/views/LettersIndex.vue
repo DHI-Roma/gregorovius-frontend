@@ -136,14 +136,25 @@
 <script>
 import { mapActions } from "vuex";
 import { dataService } from "../shared";
+import tableService from "@/services/table-service";
 import SelectAutoComplete from "../components/SelectAutoComplete.vue";
 import SelectYears from "../components/SelectYears.vue";
+import {
+  QCard,
+  QInput,
+  QPage,
+  QTable
+} from "quasar";
 
 export default {
   name: "LettersIndex",
   components: {
     SelectAutoComplete,
     SelectYears,
+    QCard,
+    QInput,
+    QPage,
+    QTable
   },
   filters: {
     formatDate(isoDate) {
@@ -382,14 +393,7 @@ export default {
 
     getOptions(entityName, propertyName) {
       // Get a set of possible values from a string property
-      const optionIds = this[entityName].map((e) => {
-        const stack = propertyName.split(".");
-        var output = e.properties;
-        while (stack.length > 1) {
-          output = output[stack.shift()];
-        }
-        return output[stack.shift()];
-      });
+      const optionIds = this[entityName].map((entity) => tableService.traverseObject(entity, propertyName));
       const uniqueIds = [...new Set(optionIds)].filter((id) => id !== null);
       const idNameMap = uniqueIds.map((id) => ({
         label: this.getFullName(id, "NN"),
@@ -398,42 +402,20 @@ export default {
       return idNameMap;
     },
 
-    hasValue(item, property, value) {
-      // Check if a property (Array or String) contains or is equal to a value
-      const stack = property.split(".");
-      var prop = item.properties;
-      while (stack.length > 1) {
-        prop = prop[stack.shift()];
-      }
-      prop = prop[stack.shift()];
-
-      if (prop instanceof Array) {
-        return prop.includes(value);
-      }
-      return prop === value;
-    },
-
-    filterItems(objectArray, property, value) {
-      const filtered = objectArray.filter((item) =>
-        this.hasValue(item, property, value)
-      );
-      return filtered;
-    },
-
     filterLetters(rows, terms) {
       if (terms.recipient !== "") {
         rows = rows.filter((r) =>
-          this.hasValue(r, "recipient", terms.recipient)
+          tableService.hasValue(r, "recipient", terms.recipient)
         );
       }
       if (terms.placeSent !== "") {
         rows = rows.filter((r) =>
-          this.hasValue(r, "place.sent", terms.placeSent)
+          tableService.hasValue(r, "place.sent", terms.placeSent)
         );
       }
       if (terms.placeReceived !== "") {
         rows = rows.filter((r) =>
-          this.hasValue(r, "place.received", terms.placeReceived)
+          tableService.hasValue(r, "place.received", terms.placeReceived)
         );
       }
       if (terms.years.length > 0) {
@@ -544,7 +526,7 @@ export default {
   font-family: Cardo
   font-size: 1.2em
 
-.g-searchresult-comment 
+.g-searchresult-comment
   font-family: 'IBMPlexSans'
   font-size: 1em
   padding-left: 1em

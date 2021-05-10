@@ -44,7 +44,7 @@
               icon="arrow_right_alt"
               color="primary"
               size="md"
-              @click="openUrl(`http://gregorovius-edition.dhi-roma.it/api/letters/${$route.params.id}`)"
+              @click="openUrl(`http://gregorovius-edition.dhi-roma.it/api/letters/${letterId}`)"
             />
           </div>
           <div class="row">
@@ -132,6 +132,9 @@ export default {
     };
   },
   computed: {
+    letterId() {
+      return this.$route.params.id;
+    },
     // Splits the title and returns the first part.
     titleMain() {
       const title = this.data.teiHeader.fileDesc.titleStmt.title.replace(/[\n ]+/g, " ");
@@ -168,7 +171,7 @@ export default {
   },
 
   mounted() {
-    this.initializeComponent();  
+    this.initializeComponent();
   },
 
   watch: {
@@ -234,7 +237,7 @@ export default {
     },
     async getItems() {
       try {
-        const response = await axios.get(`${API}${basePathLetters}/${this.$route.params.id}`, {
+        const response = await axios.get(`${API}${basePathLetters}/${this.letterId}`, {
           headers: { Accept: "application/json" }
         });
         this.data = response.data;
@@ -246,7 +249,7 @@ export default {
       }
     },
     async getXSLT(fileName, targetProp) {
-      this[targetProp] = await dataService.XSLTransform(`${basePathLetters}/${this.$route.params.id}`, fileName);
+      this[targetProp] = await dataService.XSLTransform(`${basePathLetters}/${this.letterId}`, fileName);
     },
 
     openUrl(url) {
