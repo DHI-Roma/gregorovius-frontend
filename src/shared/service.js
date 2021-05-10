@@ -90,7 +90,6 @@ const getSearchResults = async function(entityName, searchInput) {
 const XSLTransform = async function(path, xsltName) {
   try {
     const stylesheetModule = xslt.methods.getXslt(xsltName);
-    // const stylesheetModule = await import(`@/assets/xslt/${xsltName}.xslt`);
     const stylesheet = stylesheetModule.default;
     const response = await axios.post(`${API}${path}`, stylesheet, {
       params: {
