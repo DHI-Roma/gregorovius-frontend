@@ -11,7 +11,7 @@
       :options="options"
       :label="label"
       :value="model.value"
-      @filter="filterFn"
+      @filter="filterOptions"
       @input="setSelected"
     >
       <template v-if="model.value" v-slot:append>
@@ -66,10 +66,10 @@ export default {
   },
   methods: {
     ...mapActions(["setSelectedAction"]),
-    filterFn(val, update) {
+    filterOptions(val, update) {
       update(() => {
         const needle = val.toLowerCase();
-        const options = this.optionsFull.filter(o => o.label.toLowerCase().indexOf(needle) > -1);
+        const options = this.optionsFull.filter(option => option.label.toLowerCase().includes(needle));
         this.options = options.sort((a, b) => {
           const valA = a.label.toLowerCase();
           const valB = b.label.toLowerCase();
