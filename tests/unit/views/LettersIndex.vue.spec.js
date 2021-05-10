@@ -53,10 +53,11 @@ describe("LettersIndex", () => {
     wrapper.destroy();
   });
 
-  it("renders the component", async () => {
+  it("renders the component", () => {
     expect(wrapper).toBeTruthy();
   });
 
   it("filters letters by recipient when one recipient is provided", async () => {
+    
   })
 });

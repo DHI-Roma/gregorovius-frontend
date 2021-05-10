@@ -45,7 +45,10 @@ export default {
   },
   data() {
     return {
-      model: {},
+      model: {
+        label: "",
+        value: "",
+      },
       options: this.$attrs.options
     };
   },

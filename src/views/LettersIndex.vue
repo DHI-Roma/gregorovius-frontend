@@ -388,6 +388,7 @@ export default {
         label: this.getFullName(id, "NN"),
         value: id,
       }));
+
       return idNameMap;
     },
 
