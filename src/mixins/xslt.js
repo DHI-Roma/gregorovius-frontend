@@ -1,13 +1,17 @@
 /* eslint-disable import/prefer-default-export */
 
-export const getXsltPath = (xsltName) => {
+import * as LettersMsDescXslt from "@/assets/xslt/LettersMsDesc.xslt";
+import * as LettersTextXslt from "@/assets/xslt/LettersText.xslt";
+import * as WorkTitleXslt from "@/assets/xslt/WorkTitle.xslt";
+
+export const getXslt = (xsltName) => {
   switch (xsltName) {
     case "LettersMsDesc":
-      return "@/assets/xslt/LettersMsDesc.xslt";
+      return LettersMsDescXslt;
     case "LettersText":
-      return "@/assets/xslt/LettersText.xslt";
+      return LettersTextXslt;
     case "WorkTitle":
-      return "@/assets/xslt/WorkTitle.xslt";
+      return WorkTitleXslt;
     default:
       throw new Error("XSLT not implemented");
   }
@@ -16,7 +20,7 @@ export const getXsltPath = (xsltName) => {
 
 export const processXML = async(xmlString, xsltName) => {
   try {
-    const stylesheetModule = await import(getXsltPath(xsltName));
+    const stylesheetModule = getXslt(xsltName);
     const xsltStylesheet = stylesheetModule.default;
     const parser = new DOMParser();
     const xmlParsed = parser.parseFromString(xmlString, "text/xml");
@@ -34,7 +38,7 @@ export const processXML = async(xmlString, xsltName) => {
 
 export const xslt = {
   methods: {
-    getXsltPath,
+    getXslt,
     processXML
   }
 };
