@@ -16,7 +16,8 @@ export const getXsltPath = (xsltName) => {
 
 export const processXML = async(xmlString, xsltName) => {
   try {
-    const stylesheetModule = await import(getXsltPath(xsltName));
+    // const stylesheetModule = await import(getXsltPath(xsltName));
+    const stylesheetModule = await import(`@/assets/xslt/${xsltName}.xslt`);
     const xsltStylesheet = stylesheetModule.default;
     const parser = new DOMParser();
     const xmlParsed = parser.parseFromString(xmlString, "text/xml");
