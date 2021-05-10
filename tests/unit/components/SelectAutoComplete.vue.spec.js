@@ -6,8 +6,6 @@ import SelectAutoComplete from "@/components/SelectAutoComplete.vue";
 
 describe("SelectAutoComplete", () => {
   let localVue;
-  let actions;
-  let getters;
   let store;
   let wrapper;
 
@@ -34,5 +32,20 @@ describe("SelectAutoComplete", () => {
 
   it("creates the component", () => {
     expect(wrapper).toBeTruthy();
+  });
+
+  it("clears the selection", () => {
+    wrapper.vm.setSelected = jest.fn();
+    wrapper.vm.model = {
+      label: "Althaus, Friedrich",
+      value: "G000920"
+    };
+
+    expect(wrapper.vm.model.value).toBe("G000920");
+
+    wrapper.vm.clearSelection();
+
+    expect(wrapper.vm.model.label).toBe("");
+    expect(wrapper.vm.model.value).toBe("");
   });
 });

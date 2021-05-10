@@ -18,10 +18,7 @@
         <q-icon
           name="cancel"
           class="cursor-pointer"
-          @click.stop="
-            model = { label: '', value: '' };
-            setSelected();
-          "
+          @click.stop="clearSelection()"
         />
       </template>
     </q-select>
@@ -80,6 +77,10 @@ export default {
         });
       });
     },
+    clearSelection() {
+      this.model = { label: '', value: '' };
+      this.setSelected();
+    },
     setSelected() {
       this.setSelectedAction({ entity: this.$props.entity, value: this.value });
     },
@@ -92,9 +93,6 @@ export default {
           value: selectedValue
         };
       }
-      // this.model = this.$store.getters[
-      //   "selected" + this.$props.entity[0].toUpperCase() + this.$props.entity.slice(1)
-      // ];
     }
   }
 };
