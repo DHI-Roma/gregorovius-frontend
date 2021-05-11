@@ -43,7 +43,9 @@ describe("Table Service", () => {
     it("filters the letters when multiple recipients have been provided", () => {
       expect(tableService.filterByRecipients(lettersResponse, ["G001011"]).length).toBe(2);
       expect(tableService.filterByRecipients(lettersResponse, ["G000924"]).length).toBe(1);
-      expect(tableService.filterByRecipients(lettersResponse, ["G001011", "G000924"]).length).toBe(3);
+      expect(tableService.filterByRecipients(lettersResponse, ["G001011", "G000924"]).length).toBe(
+        3
+      );
     });
   });
 });

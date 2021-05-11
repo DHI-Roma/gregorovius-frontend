@@ -264,11 +264,11 @@ export default {
   },
   created() {
     for (const [paramKey, paramValue] of Object.entries(this.$route.query)) {
-      if (paramKey === "years") {
+      if (paramKey === "years" || paramKey === "recipient") {
         try {
           this.setSelectedAction({
             entity: paramKey,
-            value: paramValue.split(","),
+            value: paramValue.split(",")
           });
         } catch (error) {
           console.log(error);
@@ -334,8 +334,9 @@ export default {
     },
 
     loadAll() {
-      ["recipient", "placeReceived", "placeSent"].map(this.watchQueryParam);
+      ["placeReceived", "placeSent"].map(this.watchQueryParam);
       this.watchQueryParamYears();
+      this.watchQueryParamRecipients();
       if (this.$store.getters.letters.length == 0) {
         this.loadLettersAction();
       }
@@ -454,7 +455,9 @@ export default {
     watchQueryParam(entityKey) {
       const selectedEntityKey = "selected" + entityKey[0].toUpperCase() + entityKey.slice(1);
       this.$store.watch(
-        (state, getters) => getters[selectedEntityKey],
+        (state, getters) => {
+          getters[selectedEntityKey];
+        },
         newValue => {
           this.filter[entityKey] = newValue.value;
           if (newValue.value == "") {
@@ -484,7 +487,27 @@ export default {
           } else {
             this.$router.push({
               query: Object.assign({}, this.$route.query, {
-                years: newValue.join(),
+                years: newValue.join()
+              })
+            });
+          }
+        }
+      );
+    },
+
+    watchQueryParamRecipients() {
+      this.$store.watch(
+        (state, getters) => getters.selectedRecipients,
+        newValue => {
+          this.filter.years = newValue;
+          if (newValue == []) {
+            var newQuery = { ...this.$route.query };
+            delete newQuery.recipient;
+            this.$router.push({ query: newQuery });
+          } else {
+            this.$router.push({
+              query: Object.assign({}, this.$route.query, {
+                recipient: newValue.join()
               })
             });
           }

@@ -75,17 +75,25 @@ export default {
       this.setSelectedAction({ entity: this.$props.entity, value: this.model });
     },
     getSelected() {
-      // TODO
-      /*
       if (this.$props.entity in this.$route.query) {
-        const selectedValue = this.$route.query[this.$props.entity];
-        const selectedLabel = this.$store.getters.fullNameIndex[selectedValue];
-        this.model = {
-          label: selectedLabel,
-          value: selectedValue
-        };
+        this.model = this.$route.query[this.$props.entity].split(",");
+      } else {
+        this.model = [];
       }
-      */
+    }
+  },
+  watch: {
+    optionsFull: function(loadedOptions) {
+      if (!loadedOptions.length) {
+        return;
+      }
+      if (this.$props.entity in this.$route.query) {
+        this.model = this.$route.query[this.$props.entity].split(",").map(entityId => {
+          return this.optionsFull.find(option => option.value === entityId);
+        });
+      } else {
+        this.model = [];
+      }
     }
   }
 };
