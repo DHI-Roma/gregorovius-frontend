@@ -4,18 +4,27 @@
       ref="selector"
       v-model="model"
       filled
+      multiple
+      stack-label
+      use-chips
       bg-color="white"
       use-input
-      hide-selected
       fill-input
+      emit-value
+      map-options
+      option-value="value"
+      option-label="label"
       :options="options"
       :label="label"
       @filter="filterOptions"
       @input="setSelected"
     >
+    <!--
       <template v-if="model.value" v-slot:append>
         <q-icon name="cancel" class="cursor-pointer" @click.stop="clearSelection()"></q-icon>
       </template>
+
+      -->
     </q-select>
   </div>
 </template>
@@ -41,19 +50,13 @@ export default {
   },
   data() {
     return {
-      model: {
-        label: "",
-        value: ""
-      },
+      model: [],
       options: this.$attrs.options
     };
   },
   computed: {
     optionsFull() {
       return this.$attrs.options;
-    },
-    value() {
-      return this.model.value;
     }
   },
   async mounted() {
@@ -80,7 +83,12 @@ export default {
       this.setSelected();
     },
     setSelected() {
-      this.setSelectedAction({ entity: this.$props.entity, value: this.value });
+      console.log({
+        name: "selectAutoComplete#setSelected",
+        value: this.value,
+        model: this.model
+      });
+      this.setSelectedAction({ entity: this.$props.entity, value: this.model });
     },
     getSelected() {
       if (this.$props.entity in this.$route.query) {

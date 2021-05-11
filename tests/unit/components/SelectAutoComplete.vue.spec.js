@@ -62,6 +62,7 @@ describe("SelectAutoComplete", () => {
   });
 
   it("checks whether a value is assigned", () => {
+    pending();
     expect(wrapper.vm.hasValue).toBeFalsy();
 
     wrapper.vm.model = {

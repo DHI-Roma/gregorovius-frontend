@@ -134,7 +134,7 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 import { dataService } from "../shared";
 import tableService from "@/services/table-service";
 import SelectAutoComplete from "../components/SelectAutoComplete.vue";
@@ -236,13 +236,8 @@ export default {
   },
 
   computed: {
-    fullNameIndex() {
-      return this.$store.getters.fullNameIndex;
-    },
+    ...mapGetters(["fullNameIndex", "letters", "selectedRecipient", "selectedRecipientMultiple"]),
 
-    letters() {
-      return this.$store.getters.letters;
-    },
 
     uniqueRecipients() {
       return this.getArrayOptions("letters", "recipient");
@@ -404,33 +399,51 @@ export default {
     },
 
     filterLetters(rows, terms) {
-      if (terms.recipient !== "") {
-        rows = rows.filter((r) =>
-          tableService.hasValue(r, "recipient", terms.recipient)
+      let rowCollection = [];
+      /*
+      if (this.selectedRecipient.value !== "") {
+        rows = rows.filter(r =>
+          tableService.hasValue(r, "recipient", this.selectedRecipient.value)
         );
       }
+      */
+      console.log(this.selectedRecipientMultiple.length);
+      if (this.selectedRecipientMultiple.length) {
+        this.selectedRecipientMultiple.forEach(recipient => {
+          const elibibleRows = rows.filter(row =>
+            tableService.hasValue(row, "recipient", recipient)
+          );
+
+          console.log({
+            recipient,
+            elibibleRows
+          });
+
+          rowCollection.push(...elibibleRows);
+        });
+
+        console.log(rowCollection);
+        rows = rowCollection;
+      }
+
+      /*
       if (terms.placeSent !== "") {
-        rows = rows.filter((r) =>
-          tableService.hasValue(r, "place.sent", terms.placeSent)
-        );
+        rows = rows.filter(r => tableService.hasValue(r, "place.sent", terms.placeSent));
       }
       if (terms.placeReceived !== "") {
-        rows = rows.filter((r) =>
-          tableService.hasValue(r, "place.received", terms.placeReceived)
-        );
+        rows = rows.filter(r => tableService.hasValue(r, "place.received", terms.placeReceived));
       }
       if (terms.years.length > 0) {
-        rows = rows.filter((r) =>
-          !r.properties.date
-            ? false
-            : terms.years.includes(r.properties.date.slice(0, 4))
+        rows = rows.filter(r =>
+          !r.properties.date ? false : terms.years.includes(r.properties.date.slice(0, 4))
         );
       }
       if (terms.resp !== "") {
-        rows = rows.filter((r) =>
+        rows = rows.filter(r =>
           !r.properties.resp ? false : r.properties.resp.includes(terms.resp)
         );
       }
+      */
       if (this.searchInput) {
         const ids = terms.searchResults.map((result) => {
           if (result.entity_related_id) {
@@ -440,16 +453,14 @@ export default {
         });
         rows = rows.filter((r) => ids.includes(r.id));
       }
-      console.log(rows);
       return rows;
     },
 
     watchQueryParam(entityKey) {
-      const selectedEntityKey =
-        "selected" + entityKey[0].toUpperCase() + entityKey.slice(1);
+      const selectedEntityKey = "selected" + entityKey[0].toUpperCase() + entityKey.slice(1);
       this.$store.watch(
         (state, getters) => getters[selectedEntityKey],
-        (newValue) => {
+        newValue => {
           this.filter[entityKey] = newValue.value;
           if (newValue.value == "") {
             var newQuery = { ...this.$route.query };
@@ -458,8 +469,8 @@ export default {
           } else {
             this.$router.push({
               query: Object.assign({}, this.$route.query, {
-                [entityKey]: newValue.value,
-              }),
+                [entityKey]: newValue.value
+              })
             });
           }
         }
@@ -469,7 +480,7 @@ export default {
     watchQueryParamYears() {
       this.$store.watch(
         (state, getters) => getters.selectedYears,
-        (newValue) => {
+        newValue => {
           this.filter.years = newValue;
           if (newValue == []) {
             var newQuery = { ...this.$route.query };
@@ -479,7 +490,7 @@ export default {
             this.$router.push({
               query: Object.assign({}, this.$route.query, {
                 years: newValue.join(),
-              }),
+              })
             });
           }
         }

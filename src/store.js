@@ -13,6 +13,7 @@ export default new Vuex.Store({
     works: [],
     fullNameIndex: [],
     selectedRecipient: { label: "", value: "" },
+    selectedRecipientMultiple: [],
     selectedPlaceReceived: { label: "", value: "" },
     selectedPlaceSent: { label: "", value: "" },
     selectedYears: [],
@@ -45,6 +46,12 @@ export default new Vuex.Store({
       switch (payload.entity) {
         case "recipient":
           state.selectedRecipient = newModel;
+          state.selectedRecipientMultiple = payload.value;
+          console.log({
+            name: "SET_SELECTED",
+            newModel,
+            payload
+          });
           break;
         case "placeReceived":
           state.selectedPlaceReceived = newModel;
@@ -137,6 +144,7 @@ export default new Vuex.Store({
     loading: state => state.isLoading,
     fullNameIndex: state => state.fullNameIndex,
     selectedRecipient: state => state.selectedRecipient,
+    selectedRecipientMultiple: state => state.selectedRecipientMultiple,
     selectedPlaceReceived: state => state.selectedPlaceReceived,
     selectedPlaceSent: state => state.selectedPlaceSent,
     selectedYears: state => state.selectedYears,
