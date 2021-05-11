@@ -3,13 +3,12 @@
     <q-select
       ref="selector"
       v-model="model"
-      filled
-      multiple
-      stack-label
-      use-chips
       bg-color="white"
       use-input
       fill-input
+      filled
+      multiple
+      use-chips
       emit-value
       map-options
       option-value="value"

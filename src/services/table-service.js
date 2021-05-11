@@ -25,7 +25,7 @@ export const traverseObject = (item, propertyName) => {
 };
 
 export const filterByRecipients = (rows, selectedRecipients) => {
-  let rowCollection = [];
+  const rowCollection = [];
 
   if (selectedRecipients.length) {
     selectedRecipients.forEach(recipient => {

@@ -420,7 +420,7 @@ export default {
     },
 
     filterLetters(rows, terms) {
-      rows = this.tableService.filterByRecipient(rows, this.selectedRecipients);
+      rows = tableService.filterByRecipients(rows, this.selectedRecipients);
 
       if (terms.placeSent !== "") {
         rows = rows.filter(r => tableService.hasValue(r, "place.sent", terms.placeSent));
