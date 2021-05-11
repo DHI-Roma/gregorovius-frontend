@@ -15,11 +15,7 @@
       @input="setSelected"
     >
       <template v-if="model.value" v-slot:append>
-        <q-icon
-          name="cancel"
-          class="cursor-pointer"
-          @click.stop="clearSelection()"
-        />
+        <q-icon name="cancel" class="cursor-pointer" @click.stop="clearSelection()"></q-icon>
       </template>
     </q-select>
   </div>
@@ -48,7 +44,7 @@ export default {
     return {
       model: {
         label: "",
-        value: "",
+        value: ""
       },
       options: this.$attrs.options
     };
@@ -71,7 +67,9 @@ export default {
     },
     filterByInput(userInput) {
       const needle = userInput.toLowerCase();
-      const filteredOptions = this.optionsFull.filter(option => option.label.toLowerCase().includes(needle));
+      const filteredOptions = this.optionsFull.filter(option =>
+        option.label.toLowerCase().includes(needle)
+      );
       this.options = filteredOptions.sort((a, b) => {
         const valA = a.label.toLowerCase();
         const valB = b.label.toLowerCase();
@@ -79,7 +77,7 @@ export default {
       });
     },
     clearSelection() {
-      this.model = { label: '', value: '' };
+      this.model = { label: "", value: "" };
       this.setSelected();
     },
     setSelected() {

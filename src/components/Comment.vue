@@ -1,5 +1,5 @@
 <template>
-  <div 
+  <div
     class="g-edition-comment-container"
     v-if="this.activeComment.id"
     v-bind:style="{ top: activeComment.offsetTop + 'px' }">
@@ -41,7 +41,7 @@ export default {
   components: {
     QChatMessage
   },
-  computed: { 
+  computed: {
     ...mapGetters(["activeComment"]),
     commentWithLinks() {
       return linkifyUrls(this.activeComment.text, {

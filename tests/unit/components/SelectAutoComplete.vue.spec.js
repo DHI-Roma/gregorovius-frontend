@@ -1,17 +1,16 @@
-import { shallowMount, createLocalVue, mount } from "@vue/test-utils";
+import { shallowMount, createLocalVue } from "@vue/test-utils";
 import * as Vuex from "vuex";
 import VueRouter from "vue-router";
 import { routes } from "@/routes";
 import SelectAutoComplete from "@/components/SelectAutoComplete.vue";
 import { uniquePersons } from "../fixtures/unique-entities";
-import { QSelect } from "quasar";
 
 describe("SelectAutoComplete", () => {
   let localVue;
   let store;
   let wrapper;
 
-  const router = new VueRouter({ routes, mode: 'abstract'});
+  const router = new VueRouter({ routes, mode: "abstract" });
 
   beforeEach(() => {
     localVue = createLocalVue();
@@ -26,14 +25,14 @@ describe("SelectAutoComplete", () => {
         label: "Empfänger"
       },
       attrs: {
-        options: uniquePersons,
+        options: uniquePersons
       }
     });
   });
 
   afterEach(() => {
     wrapper.destroy();
-  })
+  });
 
   it("creates the component", () => {
     expect(wrapper).toBeTruthy();
@@ -60,5 +59,16 @@ describe("SelectAutoComplete", () => {
     wrapper.vm.filterByInput("alt");
 
     expect(wrapper.vm.options.length).toBe(2);
+  });
+
+  it("checks whether a value is assigned", () => {
+    expect(wrapper.vm.hasValue).toBeFalsy();
+
+    wrapper.vm.model = {
+      label: "Althaus, Friedrich",
+      value: "G000920"
+    };
+
+    expect(wrapper.vm.hasValue).toBeTruthy();
   });
 });

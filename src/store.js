@@ -17,8 +17,8 @@ export default new Vuex.Store({
     selectedPlaceSent: { label: "", value: "" },
     selectedYears: [],
     activeComment: {
-      id: '',
-      text: ''
+      id: "",
+      text: ""
     }
   },
   mutations: {
