@@ -10,7 +10,6 @@
       fill-input
       :options="options"
       :label="label"
-      :value="model.value"
       @filter="filterOptions"
       @input="setSelected"
     >
