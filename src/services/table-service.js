@@ -12,7 +12,7 @@ export const hasValue = (item, propertyName, value) => {
     return propertyValue.includes(value);
   }
   return propertyValue === value;
-}
+};
 
 export const traverseObject = (item, propertyName) => {
   const stack = propertyName.split(".");
@@ -22,9 +22,27 @@ export const traverseObject = (item, propertyName) => {
   }
 
   return prop;
-}
+};
+
+export const filterByRecipients = (rows, selectedRecipients) => {
+  let rowCollection = [];
+
+  if (selectedRecipients.length) {
+    selectedRecipients.forEach(recipient => {
+      const elibibleRows = rows.filter(row => hasValue(row, "recipient", recipient));
+      rowCollection.push(...elibibleRows);
+    });
+  }
+
+  if (rowCollection.length) {
+    return rowCollection;
+  }
+
+  return rows;
+};
 
 export default {
   hasValue,
-  traverseObject
+  traverseObject,
+  filterByRecipients
 };

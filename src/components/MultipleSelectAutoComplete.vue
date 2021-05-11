@@ -4,19 +4,21 @@
       ref="selector"
       v-model="model"
       filled
+      multiple
+      stack-label
+      use-chips
       bg-color="white"
       use-input
-      hide-selected
       fill-input
+      emit-value
+      map-options
+      option-value="value"
+      option-label="label"
       :options="options"
       :label="label"
-      :value="model.value"
       @filter="filterOptions"
       @input="setSelected"
     >
-      <template v-if="model.value" v-slot:append>
-        <q-icon name="cancel" class="cursor-pointer" @click.stop="clearSelection()" />
-      </template>
     </q-select>
   </div>
 </template>
@@ -26,7 +28,7 @@ import { mapActions } from "vuex";
 import { QSelect } from "quasar";
 
 export default {
-  name: "SelectAutoComplete",
+  name: "MultipleSelectAutoComplete",
   components: {
     QSelect
   },
@@ -42,26 +44,13 @@ export default {
   },
   data() {
     return {
-      model: {
-        label: "",
-        value: ""
-      },
+      model: [],
       options: this.$attrs.options
     };
   },
   computed: {
     optionsFull() {
       return this.$attrs.options;
-    },
-    value() {
-      return this.model.value;
-    },
-    hasValue() {
-      if (!this.model.value) {
-        return false;
-      }
-
-      return true;
     }
   },
   async mounted() {
@@ -83,14 +72,12 @@ export default {
         return valA.localeCompare(valB);
       });
     },
-    clearSelection() {
-      this.model = { label: "", value: "" };
-      this.setSelected();
-    },
     setSelected() {
-      this.setSelectedAction({ entity: this.$props.entity, value: this.value });
+      this.setSelectedAction({ entity: this.$props.entity, value: this.model });
     },
     getSelected() {
+      // TODO
+      /*
       if (this.$props.entity in this.$route.query) {
         const selectedValue = this.$route.query[this.$props.entity];
         const selectedLabel = this.$store.getters.fullNameIndex[selectedValue];
@@ -99,6 +86,7 @@ export default {
           value: selectedValue
         };
       }
+      */
     }
   }
 };

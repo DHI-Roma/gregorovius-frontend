@@ -17,7 +17,7 @@
                 </template>
               </q-input>
             </div>
-            <select-auto-complete
+            <multiple-select-auto-complete
               label="Empfänger"
               entity="recipient"
               :options="uniqueRecipients"
@@ -138,6 +138,7 @@ import { mapActions, mapGetters } from "vuex";
 import { dataService } from "../shared";
 import tableService from "@/services/table-service";
 import SelectAutoComplete from "../components/SelectAutoComplete.vue";
+import MultipleSelectAutoComplete from "../components/MultipleSelectAutoComplete.vue";
 import SelectYears from "../components/SelectYears.vue";
 import {
   QCard,
@@ -149,6 +150,7 @@ import {
 export default {
   name: "LettersIndex",
   components: {
+    MultipleSelectAutoComplete,
     SelectAutoComplete,
     SelectYears,
     QCard,
@@ -236,7 +238,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["fullNameIndex", "letters", "selectedRecipient", "selectedRecipientMultiple"]),
+    ...mapGetters(["fullNameIndex", "letters", "selectedRecipients"]),
 
 
     uniqueRecipients() {
@@ -398,35 +400,28 @@ export default {
       return idNameMap;
     },
 
-    filterLetters(rows, terms) {
+    filterByRecipient(rows) {
       let rowCollection = [];
-      /*
-      if (this.selectedRecipient.value !== "") {
-        rows = rows.filter(r =>
-          tableService.hasValue(r, "recipient", this.selectedRecipient.value)
-        );
-      }
-      */
-      console.log(this.selectedRecipientMultiple.length);
-      if (this.selectedRecipientMultiple.length) {
-        this.selectedRecipientMultiple.forEach(recipient => {
+
+      if (this.selectedRecipients.length) {
+        this.selectedRecipients.forEach(recipient => {
           const elibibleRows = rows.filter(row =>
             tableService.hasValue(row, "recipient", recipient)
           );
-
-          console.log({
-            recipient,
-            elibibleRows
-          });
-
           rowCollection.push(...elibibleRows);
         });
-
-        console.log(rowCollection);
-        rows = rowCollection;
       }
 
-      /*
+      if (rowCollection.length) {
+        return rowCollection;
+      }
+
+      return rows;
+    },
+
+    filterLetters(rows, terms) {
+      rows = this.tableService.filterByRecipient(rows, this.selectedRecipients);
+
       if (terms.placeSent !== "") {
         rows = rows.filter(r => tableService.hasValue(r, "place.sent", terms.placeSent));
       }
@@ -443,7 +438,7 @@ export default {
           !r.properties.resp ? false : r.properties.resp.includes(terms.resp)
         );
       }
-      */
+
       if (this.searchInput) {
         const ids = terms.searchResults.map((result) => {
           if (result.entity_related_id) {
