@@ -58,6 +58,10 @@ describe("LettersIndex", () => {
   });
 
   it("filters letters by recipient when one recipient is provided", async () => {
-    
+    pending();
+    // test filterLetters method, provide letter response and set term
+    // Set selected recipient
+
+    // See whether list has been filtered
   })
 });

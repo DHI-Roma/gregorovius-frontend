@@ -440,6 +440,7 @@ export default {
         });
         rows = rows.filter((r) => ids.includes(r.id));
       }
+      console.log(rows);
       return rows;
     },
 

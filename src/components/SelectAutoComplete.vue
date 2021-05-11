@@ -67,14 +67,15 @@ export default {
   methods: {
     ...mapActions(["setSelectedAction"]),
     filterOptions(val, update) {
-      update(() => {
-        const needle = val.toLowerCase();
-        const options = this.optionsFull.filter(option => option.label.toLowerCase().includes(needle));
-        this.options = options.sort((a, b) => {
-          const valA = a.label.toLowerCase();
-          const valB = b.label.toLowerCase();
-          return valA < valB ? -1 : valA > valB ? 1 : 0;
-        });
+      update(() => this.filterByInput(val));
+    },
+    filterByInput(userInput) {
+      const needle = userInput.toLowerCase();
+      const filteredOptions = this.optionsFull.filter(option => option.label.toLowerCase().includes(needle));
+      this.options = filteredOptions.sort((a, b) => {
+        const valA = a.label.toLowerCase();
+        const valB = b.label.toLowerCase();
+        return valA.localeCompare(valB);
       });
     },
     clearSelection() {

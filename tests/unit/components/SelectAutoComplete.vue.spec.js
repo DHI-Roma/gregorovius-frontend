@@ -1,5 +1,4 @@
 import { shallowMount, createLocalVue, mount } from "@vue/test-utils";
-import { Platform } from 'quasar'
 import * as Vuex from "vuex";
 import VueRouter from "vue-router";
 import { routes } from "@/routes";
@@ -18,7 +17,7 @@ describe("SelectAutoComplete", () => {
     localVue = createLocalVue();
     localVue.use(Vuex);
 
-    wrapper = mount(SelectAutoComplete, {
+    wrapper = shallowMount(SelectAutoComplete, {
       localVue,
       store,
       router,
@@ -26,9 +25,8 @@ describe("SelectAutoComplete", () => {
         entity: "recipient",
         label: "Empfänger"
       },
-      data() { return {
-        options: uniquePersons
-        }
+      attrs: {
+        options: uniquePersons,
       }
     });
   });
@@ -58,5 +56,9 @@ describe("SelectAutoComplete", () => {
 
   it("sees the available list of unique items", () => {
     expect(wrapper.vm.options.length).toBe(5);
+
+    wrapper.vm.filterByInput("alt");
+
+    expect(wrapper.vm.options.length).toBe(2);
   });
 });
