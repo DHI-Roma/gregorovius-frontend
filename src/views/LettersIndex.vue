@@ -17,7 +17,7 @@
                 </template>
               </q-input>
             </div>
-            <select-auto-complete
+            <multiple-select-auto-complete
               label="Empfänger"
               entity="recipient"
               :options="uniqueRecipients"
@@ -134,10 +134,11 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 import { dataService } from "../shared";
 import tableService from "@/services/table-service";
 import SelectAutoComplete from "../components/SelectAutoComplete.vue";
+import MultipleSelectAutoComplete from "../components/MultipleSelectAutoComplete.vue";
 import SelectYears from "../components/SelectYears.vue";
 import {
   QCard,
@@ -149,6 +150,7 @@ import {
 export default {
   name: "LettersIndex",
   components: {
+    MultipleSelectAutoComplete,
     SelectAutoComplete,
     SelectYears,
     QCard,
@@ -176,7 +178,7 @@ export default {
       model: "",
       visibleColumns: ["date", "recipient", "placeSent", "placeRecv"],
       filter: {
-        recipient: "",
+        recipient: [],
         placeSent: "",
         placeReceived: "",
         years: [],
@@ -236,13 +238,14 @@ export default {
   },
 
   computed: {
-    fullNameIndex() {
-      return this.$store.getters.fullNameIndex;
-    },
-
-    letters() {
-      return this.$store.getters.letters;
-    },
+    ...mapGetters([
+      "fullNameIndex",
+      "letters",
+      "selectedRecipients",
+      "selectedPlaceSent",
+      "selectedPlaceReceived",
+      "selectedYears"
+    ]),
 
     uniqueRecipients() {
       return this.getArrayOptions("letters", "recipient");
@@ -265,13 +268,27 @@ export default {
       return [...new Set(years)].filter((year) => year !== undefined).sort();
     },
   },
+  watch: {
+    selectedRecipients: function(newValue) {
+      this.applyMultiRouteParams("recipient", newValue);
+    },
+    selectedPlaceSent: function(newValue) {
+      this.applySingleRouteParam("placeSent", newValue);
+    },
+    selectedPlaceReceived: function(newValue) {
+      this.applySingleRouteParam("placeReceived", newValue);
+    },
+    selectedYears: function(newValue) {
+      this.applyMultiRouteParams("years", newValue);
+    }
+  },
   created() {
     for (const [paramKey, paramValue] of Object.entries(this.$route.query)) {
-      if (paramKey === "years") {
+      if (paramKey === "years" || paramKey === "recipient") {
         try {
           this.setSelectedAction({
             entity: paramKey,
-            value: paramValue.split(","),
+            value: paramValue.split(",").filter(entry => entry.length > 0)
           });
         } catch (error) {
           console.log(error);
@@ -284,7 +301,7 @@ export default {
   async mounted() {
     this.$store.watch(
       (state, getters) => getters.loading,
-      (newValue) => {
+      newValue => {
         this.loading = newValue;
       }
     );
@@ -292,11 +309,7 @@ export default {
     this.loadAll();
   },
   methods: {
-    ...mapActions([
-      "loadLettersAction",
-      "setLoadingStatus",
-      "setSelectedAction",
-    ]),
+    ...mapActions(["loadLettersAction", "setLoadingStatus", "setSelectedAction"]),
 
     async getSearchResults() {
       this.loading = true;
@@ -336,17 +349,77 @@ export default {
       this.loading = false;
     },
 
+    applySingleRouteParam(entityKey, payload) {
+      this.filter[entityKey] = payload.value;
+      if (payload.value == "") {
+        var newQuery = { ...this.$route.query };
+        delete newQuery[entityKey];
+        this.$router.push({ query: newQuery });
+      } else {
+        this.$router.push({
+          query: Object.assign({}, this.$route.query, {
+            [entityKey]: payload.value
+          })
+        });
+      }
+    },
+
+    applyMultiRouteParams(entityKey, payload) {
+      this.filter[entityKey] = payload.value;
+      if (!payload.length) {
+        var newQuery = { ...this.$route.query };
+        delete newQuery[entityKey];
+        this.$router.push({ query: newQuery });
+      } else {
+        this.$router.push({
+          query: Object.assign({}, this.$route.query, {
+            [entityKey]: payload.join()
+          })
+        });
+      }
+    },
+
     loadAll() {
-      ["recipient", "placeReceived", "placeSent"].map(this.watchQueryParam);
-      this.watchQueryParamYears();
       if (this.$store.getters.letters.length == 0) {
         this.loadLettersAction();
       }
-      this.filter.recipient = this.$route.query.recipient || "";
+      this.resetFilter();
+    },
+
+    resetFilter() {
+      this.filter.recipient = this.$route.query.recipient || [];
       this.filter.placeSent = this.$route.query.placeSent || "";
       this.filter.placeReceived = this.$route.query.placeReceived || "";
       this.filter.years = this.$route.query.years || [];
       this.filter.resp = this.$route.query.resp || "";
+
+      if (!this.filter.recipient.length) {
+        this.setSelectedAction({
+          entity: "recipient",
+          value: []
+        });
+      }
+
+      if (!this.filter.placeSent.value) {
+        this.setSelectedAction({
+          entity: "placeSent",
+          value: ""
+        });
+      }
+
+      if (!this.filter.placeReceived.value) {
+        this.setSelectedAction({
+          entity: "placeReceived",
+          value: ""
+        });
+      }
+
+      if (!this.filter.years.length) {
+        this.setSelectedAction({
+          entity: "years",
+          value: []
+        });
+      }
     },
 
     getFullName(id, altName) {
@@ -404,33 +477,32 @@ export default {
     },
 
     filterLetters(rows, terms) {
-      if (terms.recipient !== "") {
-        rows = rows.filter((r) =>
-          tableService.hasValue(r, "recipient", terms.recipient)
+      rows = tableService.filterByRecipients(rows, this.selectedRecipients);
+
+      if (this.selectedPlaceSent.value) {
+        rows = rows.filter(r =>
+          tableService.hasValue(r, "place.sent", this.selectedPlaceSent.value)
         );
       }
-      if (terms.placeSent !== "") {
-        rows = rows.filter((r) =>
-          tableService.hasValue(r, "place.sent", terms.placeSent)
+
+      if (this.selectedPlaceReceived.value) {
+        rows = rows.filter(r =>
+          tableService.hasValue(r, "place.received", this.selectedPlaceReceived.value)
         );
       }
-      if (terms.placeReceived !== "") {
-        rows = rows.filter((r) =>
-          tableService.hasValue(r, "place.received", terms.placeReceived)
+
+      if (this.selectedYears.length) {
+        rows = rows.filter(r =>
+          !r.properties.date ? false : this.selectedYears.includes(r.properties.date.slice(0, 4))
         );
       }
-      if (terms.years.length > 0) {
-        rows = rows.filter((r) =>
-          !r.properties.date
-            ? false
-            : terms.years.includes(r.properties.date.slice(0, 4))
-        );
-      }
+
       if (terms.resp !== "") {
-        rows = rows.filter((r) =>
+        rows = rows.filter(r =>
           !r.properties.resp ? false : r.properties.resp.includes(terms.resp)
         );
       }
+
       if (this.searchInput) {
         const ids = terms.searchResults.map((result) => {
           if (result.entity_related_id) {
@@ -440,49 +512,8 @@ export default {
         });
         rows = rows.filter((r) => ids.includes(r.id));
       }
+
       return rows;
-    },
-
-    watchQueryParam(entityKey) {
-      const selectedEntityKey =
-        "selected" + entityKey[0].toUpperCase() + entityKey.slice(1);
-      this.$store.watch(
-        (state, getters) => getters[selectedEntityKey],
-        (newValue) => {
-          this.filter[entityKey] = newValue.value;
-          if (newValue.value == "") {
-            var newQuery = { ...this.$route.query };
-            delete newQuery[entityKey];
-            this.$router.push({ query: newQuery });
-          } else {
-            this.$router.push({
-              query: Object.assign({}, this.$route.query, {
-                [entityKey]: newValue.value,
-              }),
-            });
-          }
-        }
-      );
-    },
-
-    watchQueryParamYears() {
-      this.$store.watch(
-        (state, getters) => getters.selectedYears,
-        (newValue) => {
-          this.filter.years = newValue;
-          if (newValue == []) {
-            var newQuery = { ...this.$route.query };
-            delete newQuery.years;
-            this.$router.push({ query: newQuery });
-          } else {
-            this.$router.push({
-              query: Object.assign({}, this.$route.query, {
-                years: newValue.join(),
-              }),
-            });
-          }
-        }
-      );
     },
 
     openItem(target, id) {

@@ -18,7 +18,7 @@ describe("LettersIndex", () => {
   localVue = createLocalVue();
   localVue.use(Vuex);
 
-  const router = new VueRouter({ routes, mode: 'abstract'});
+  const router = new VueRouter({ routes, mode: "abstract" });
 
   beforeEach(() => {
     jest.doMock("axios", () => ({
@@ -27,7 +27,13 @@ describe("LettersIndex", () => {
 
     service.dataService.getLetters = jest.fn();
     service.dataService.getEntities = jest.fn();
+  });
 
+  afterEach(() => {
+    wrapper.destroy();
+  });
+
+  it("renders the component", () => {
     getters = {
       letters: () => lettersResponse,
       fullNameIndex: () => fullNameIndex
@@ -35,7 +41,7 @@ describe("LettersIndex", () => {
 
     actions = {
       loadFullNameIndexAction: jest.fn()
-    }
+    };
 
     store = new Vuex.Store({
       actions,
@@ -47,17 +53,7 @@ describe("LettersIndex", () => {
       store,
       router
     });
-  });
 
-  afterEach(() => {
-    wrapper.destroy();
-  });
-
-  it("renders the component", () => {
     expect(wrapper).toBeTruthy();
   });
-
-  it("filters letters by recipient when one recipient is provided", async () => {
-    
-  })
 });

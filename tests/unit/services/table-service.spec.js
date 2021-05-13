@@ -1,8 +1,8 @@
 import { letterIndexItem } from "../fixtures/letter-index-item";
+import { lettersResponse } from "../fixtures/letters-response";
 import tableService from "@/services/table-service";
 
-describe("Value Service", () => {
-
+describe("Table Service", () => {
   describe("#traverseObject", () => {
     it("traverses an object with a direct property name", () => {
       expect(tableService.traverseObject(letterIndexItem, "date")).toBeTruthy();
@@ -10,7 +10,7 @@ describe("Value Service", () => {
 
     it("traverses an object with a nested property name", () => {
       expect(tableService.traverseObject(letterIndexItem, "mentioned.persons")).toBeTruthy();
-    })
+    });
   });
 
   describe("#hasValue", () => {
@@ -31,4 +31,21 @@ describe("Value Service", () => {
     });
   });
 
+  describe("#filterByRecipient", () => {
+    it("does not filter any letters when no recipients have been selected", () => {
+      expect(tableService.filterByRecipients(lettersResponse, []).length).toBe(14);
+    });
+
+    it("filters the letters when one recipient was provided", () => {
+      expect(tableService.filterByRecipients(lettersResponse, ["G001011"]).length).toBe(2);
+    });
+
+    it("filters the letters when multiple recipients have been provided", () => {
+      expect(tableService.filterByRecipients(lettersResponse, ["G001011"]).length).toBe(2);
+      expect(tableService.filterByRecipients(lettersResponse, ["G000924"]).length).toBe(1);
+      expect(tableService.filterByRecipients(lettersResponse, ["G001011", "G000924"]).length).toBe(
+        3
+      );
+    });
+  });
 });
