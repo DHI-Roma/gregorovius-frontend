@@ -268,6 +268,20 @@ export default {
       return [...new Set(years)].filter((year) => year !== undefined).sort();
     },
   },
+  watch: {
+    selectedRecipients: function(newValue) {
+      this.applyMultiRouteParams("recipient", newValue);
+    },
+    selectedPlaceSent: function(newValue) {
+      this.applySingleRouteParam("placeSent", newValue);
+    },
+    selectedPlaceReceived: function(newValue) {
+      this.applySingleRouteParam("placeReceived", newValue);
+    },
+    selectedYears: function(newValue) {
+      this.applyMultiRouteParams("years", newValue);
+    }
+  },
   created() {
     for (const [paramKey, paramValue] of Object.entries(this.$route.query)) {
       if (paramKey === "years" || paramKey === "recipient") {
@@ -287,7 +301,7 @@ export default {
   async mounted() {
     this.$store.watch(
       (state, getters) => getters.loading,
-      (newValue) => {
+      newValue => {
         this.loading = newValue;
       }
     );
@@ -295,11 +309,7 @@ export default {
     this.loadAll();
   },
   methods: {
-    ...mapActions([
-      "loadLettersAction",
-      "setLoadingStatus",
-      "setSelectedAction",
-    ]),
+    ...mapActions(["loadLettersAction", "setLoadingStatus", "setSelectedAction"]),
 
     async getSearchResults() {
       this.loading = true;
@@ -339,18 +349,77 @@ export default {
       this.loading = false;
     },
 
+    applySingleRouteParam(entityKey, payload) {
+      this.filter[entityKey] = payload.value;
+      if (payload.value == "") {
+        var newQuery = { ...this.$route.query };
+        delete newQuery[entityKey];
+        this.$router.push({ query: newQuery });
+      } else {
+        this.$router.push({
+          query: Object.assign({}, this.$route.query, {
+            [entityKey]: payload.value
+          })
+        });
+      }
+    },
+
+    applyMultiRouteParams(entityKey, payload) {
+      this.filter[entityKey] = payload.value;
+      if (!payload.length) {
+        var newQuery = { ...this.$route.query };
+        delete newQuery[entityKey];
+        this.$router.push({ query: newQuery });
+      } else {
+        this.$router.push({
+          query: Object.assign({}, this.$route.query, {
+            [entityKey]: payload.join()
+          })
+        });
+      }
+    },
+
     loadAll() {
-      ["placeReceived", "placeSent"].map(this.watchQueryParam);
-      this.watchQueryParamYears();
-      this.watchQueryParamRecipients();
       if (this.$store.getters.letters.length == 0) {
         this.loadLettersAction();
       }
+      this.resetFilter();
+    },
+
+    resetFilter() {
       this.filter.recipient = this.$route.query.recipient || [];
       this.filter.placeSent = this.$route.query.placeSent || "";
       this.filter.placeReceived = this.$route.query.placeReceived || "";
       this.filter.years = this.$route.query.years || [];
       this.filter.resp = this.$route.query.resp || "";
+
+      if (!this.filter.recipient.length) {
+        this.setSelectedAction({
+          entity: "recipient",
+          value: []
+        });
+      }
+
+      if (!this.filter.placeSent.value) {
+        this.setSelectedAction({
+          entity: "placeSent",
+          value: ""
+        });
+      }
+
+      if (!this.filter.placeReceived.value) {
+        this.setSelectedAction({
+          entity: "placeReceived",
+          value: ""
+        });
+      }
+
+      if (!this.filter.years.length) {
+        this.setSelectedAction({
+          entity: "years",
+          value: []
+        });
+      }
     },
 
     getFullName(id, altName) {
@@ -445,69 +514,6 @@ export default {
       }
 
       return rows;
-    },
-
-    watchQueryParam(entityKey) {
-      const selectedEntityKey = "selected" + entityKey[0].toUpperCase() + entityKey.slice(1);
-      this.$store.watch(
-        (state, getters) => {
-          getters[selectedEntityKey];
-        },
-        newValue => {
-          this.filter[entityKey] = newValue.value;
-          if (newValue.value == "") {
-            var newQuery = { ...this.$route.query };
-            delete newQuery[entityKey];
-            this.$router.push({ query: newQuery });
-          } else {
-            this.$router.push({
-              query: Object.assign({}, this.$route.query, {
-                [entityKey]: newValue.value
-              })
-            });
-          }
-        }
-      );
-    },
-
-    watchQueryParamYears() {
-      this.$store.watch(
-        (state, getters) => getters.selectedYears,
-        newValue => {
-          this.filter.years = newValue;
-          if (newValue == []) {
-            var newQuery = { ...this.$route.query };
-            delete newQuery.years;
-            this.$router.push({ query: newQuery });
-          } else {
-            this.$router.push({
-              query: Object.assign({}, this.$route.query, {
-                years: newValue.join()
-              })
-            });
-          }
-        }
-      );
-    },
-
-    watchQueryParamRecipients() {
-      this.$store.watch(
-        (state, getters) => getters.selectedRecipients,
-        newValue => {
-          this.filter.recipient = newValue;
-          if (newValue == []) {
-            var newQuery = { ...this.$route.query };
-            delete newQuery.recipient;
-            this.$router.push({ query: newQuery });
-          } else {
-            this.$router.push({
-              query: Object.assign({}, this.$route.query, {
-                recipient: newValue.join()
-              })
-            });
-          }
-        }
-      );
     },
 
     openItem(target, id) {
