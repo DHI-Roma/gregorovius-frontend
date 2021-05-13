@@ -3,6 +3,8 @@ import * as Vuex from "vuex";
 import VueRouter from "vue-router";
 import { routes } from "@/router";
 
+import { places } from "../fixtures/places";
+
 import PlacesDetail from "@/views/PlacesDetail.vue";
 
 describe("PlacesDetail", () => {
@@ -19,7 +21,8 @@ describe("PlacesDetail", () => {
 
   beforeEach(() => {
     getters = {
-      fullNameIndex: () => []
+      fullNameIndex: () => [],
+      places: () => places
     };
 
     actions = {
@@ -109,6 +112,32 @@ describe("PlacesDetail", () => {
 
     expect(wrapper.vm.authorityUri).toBe("");
     expect(wrapper.find("#geonames-uri").exists()).toBeFalsy();
+
+    wrapper.destroy();
+  });
+
+  it("gets the place type", () => {
+    wrapper = shallowMount(PlacesDetail, {
+      localVue,
+      store,
+      router,
+      computed: {
+        entityId: () => "G000848"
+      },
+      data() {
+        return {
+          data: {
+            place: {
+              "@xmlns": "http://www.tei-c.org/ns/1.0",
+              "@xml:id": "G000848",
+              placeName: { "@type": "reg", "#text": "Aetna" }
+            }
+          }
+        };
+      }
+    });
+
+    expect(wrapper.vm.properties.type).toBe("mountains");
 
     wrapper.destroy();
   });

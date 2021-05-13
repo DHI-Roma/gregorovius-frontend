@@ -66,7 +66,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["fullNameIndex"]),
+    ...mapGetters(["fullNameIndex", "places"]),
     entityId() {
       return this.$route.params.id;
     },
@@ -81,6 +81,9 @@ export default {
       return this.data.place.idno.length > 1
         ? this.data.place.idno[0]["#text"]
         : this.data.place.idno["#text"];
+    },
+    properties() {
+      return this.places.find(place => place.id === this.entityId).properties;
     }
   },
 
