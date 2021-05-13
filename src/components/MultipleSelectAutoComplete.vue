@@ -52,6 +52,28 @@ export default {
       return this.$attrs.options;
     }
   },
+  watch: {
+    optionsFull: function(loadedOptions) {
+      if (!loadedOptions.length) {
+        return;
+      }
+      if (this.$props.entity in this.$route.query) {
+        const entityIds = this.$route.query[this.$props.entity]
+          .split(",")
+          .filter(entityId => entityId.length > 0);
+
+        if (entityIds.length) {
+          this.model = entityIds.map(entityId => {
+            return this.optionsFull.find(option => option.value === entityId);
+          });
+        } else {
+          this.model = [];
+        }
+      } else {
+        this.model = [];
+      }
+    }
+  },
   async mounted() {
     await this.getSelected();
   },
@@ -76,21 +98,15 @@ export default {
     },
     getSelected() {
       if (this.$props.entity in this.$route.query) {
-        this.model = this.$route.query[this.$props.entity].split(",");
-      } else {
-        this.model = [];
-      }
-    }
-  },
-  watch: {
-    optionsFull: function(loadedOptions) {
-      if (!loadedOptions.length) {
-        return;
-      }
-      if (this.$props.entity in this.$route.query) {
-        this.model = this.$route.query[this.$props.entity].split(",").map(entityId => {
-          return this.optionsFull.find(option => option.value === entityId);
-        });
+        const entityIds = this.$route.query[this.$props.entity]
+          .split(",")
+          .filter(entityId => entityId.length > 0);
+
+        if (entityIds.length) {
+          this.model = this.$route.query[this.$props.entity].split(",");
+        } else {
+          this.model = [];
+        }
       } else {
         this.model = [];
       }

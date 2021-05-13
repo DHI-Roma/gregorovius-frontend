@@ -178,7 +178,7 @@ export default {
       model: "",
       visibleColumns: ["date", "recipient", "placeSent", "placeRecv"],
       filter: {
-        recipient: "",
+        recipient: [],
         placeSent: "",
         placeReceived: "",
         years: [],
@@ -238,8 +238,14 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["fullNameIndex", "letters", "selectedRecipients"]),
-
+    ...mapGetters([
+      "fullNameIndex",
+      "letters",
+      "selectedRecipients",
+      "selectedPlaceSent",
+      "selectedPlaceReceived",
+      "selectedYears"
+    ]),
 
     uniqueRecipients() {
       return this.getArrayOptions("letters", "recipient");
@@ -268,7 +274,7 @@ export default {
         try {
           this.setSelectedAction({
             entity: paramKey,
-            value: paramValue.split(",")
+            value: paramValue.split(",").filter(entry => entry.length > 0)
           });
         } catch (error) {
           console.log(error);
@@ -340,7 +346,7 @@ export default {
       if (this.$store.getters.letters.length == 0) {
         this.loadLettersAction();
       }
-      this.filter.recipient = this.$route.query.recipient || "";
+      this.filter.recipient = this.$route.query.recipient || [];
       this.filter.placeSent = this.$route.query.placeSent || "";
       this.filter.placeReceived = this.$route.query.placeReceived || "";
       this.filter.years = this.$route.query.years || [];
@@ -401,39 +407,27 @@ export default {
       return idNameMap;
     },
 
-    filterByRecipient(rows) {
-      let rowCollection = [];
-
-      if (this.selectedRecipients.length) {
-        this.selectedRecipients.forEach(recipient => {
-          const elibibleRows = rows.filter(row =>
-            tableService.hasValue(row, "recipient", recipient)
-          );
-          rowCollection.push(...elibibleRows);
-        });
-      }
-
-      if (rowCollection.length) {
-        return rowCollection;
-      }
-
-      return rows;
-    },
-
     filterLetters(rows, terms) {
       rows = tableService.filterByRecipients(rows, this.selectedRecipients);
 
-      if (terms.placeSent !== "") {
-        rows = rows.filter(r => tableService.hasValue(r, "place.sent", terms.placeSent));
-      }
-      if (terms.placeReceived !== "") {
-        rows = rows.filter(r => tableService.hasValue(r, "place.received", terms.placeReceived));
-      }
-      if (terms.years.length > 0) {
+      if (this.selectedPlaceSent.value) {
         rows = rows.filter(r =>
-          !r.properties.date ? false : terms.years.includes(r.properties.date.slice(0, 4))
+          tableService.hasValue(r, "place.sent", this.selectedPlaceSent.value)
         );
       }
+
+      if (this.selectedPlaceReceived.value) {
+        rows = rows.filter(r =>
+          tableService.hasValue(r, "place.received", this.selectedPlaceReceived.value)
+        );
+      }
+
+      if (this.selectedYears.length) {
+        rows = rows.filter(r =>
+          !r.properties.date ? false : this.selectedYears.includes(r.properties.date.slice(0, 4))
+        );
+      }
+
       if (terms.resp !== "") {
         rows = rows.filter(r =>
           !r.properties.resp ? false : r.properties.resp.includes(terms.resp)
@@ -449,6 +443,7 @@ export default {
         });
         rows = rows.filter((r) => ids.includes(r.id));
       }
+
       return rows;
     },
 
@@ -499,7 +494,7 @@ export default {
       this.$store.watch(
         (state, getters) => getters.selectedRecipients,
         newValue => {
-          this.filter.years = newValue;
+          this.filter.recipient = newValue;
           if (newValue == []) {
             var newQuery = { ...this.$route.query };
             delete newQuery.recipient;
