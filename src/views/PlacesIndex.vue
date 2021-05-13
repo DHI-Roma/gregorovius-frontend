@@ -48,6 +48,7 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
   name: "PlacesIndex",
   filters: {
@@ -123,12 +124,7 @@ export default {
   },
 
   computed: {
-    fullNameIndex() {
-      return this.$store.getters.fullNameIndex;
-    },
-    places() {
-      return this.$store.getters.places;
-    }
+    ...mapGetters(["fullNameIndex", "places"])
   },
 
   async mounted() {

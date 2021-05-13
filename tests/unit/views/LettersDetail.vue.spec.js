@@ -20,10 +20,9 @@ describe("LettersDetail", () => {
   localVue = createLocalVue();
   localVue.use(Vuex);
 
-  const router = new VueRouter({ routes, mode: 'abstract'});
+  const router = new VueRouter({ routes, mode: "abstract" });
 
   beforeEach(() => {
-
     getters = {
       activeComment: () => {
         return {
@@ -31,12 +30,11 @@ describe("LettersDetail", () => {
           text: "Some comment text"
         };
       }
-    }
+    };
     store = new Vuex.Store({
       getters
     });
   });
-
 
   jest.doMock("axios", () => ({
     get: Promise.resolve(teiHeaderFixture)
@@ -118,7 +116,6 @@ describe("LettersDetail", () => {
       });
     });
 
-
     afterEach(() => {
       wrapper.destroy();
     });
@@ -189,5 +186,4 @@ describe("LettersDetail", () => {
       expect(wrapper.vm.getAbstractCount()).toBe(1);
     });
   });
-
 });
