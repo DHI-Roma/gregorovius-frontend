@@ -53,26 +53,16 @@
             <q-tr
               :props="props"
               class="cursor-pointer"
-              :class="
-                searchInput ? 'cursor-pointer g-searchrow' : 'cursor-pointer'
-              "
+              :class="searchInput ? 'cursor-pointer g-searchrow' : 'cursor-pointer'"
               @click.native="openItem('default', props.row.id)"
             >
               <q-menu touch-position context-menu>
                 <q-list dense style="min-width: 100px">
-                  <q-item
-                    v-close-popup
-                    clickable
-                    @click.native="openItem('window', props.row.id)"
-                  >
+                  <q-item v-close-popup clickable @click.native="openItem('window', props.row.id)">
                     <q-item-section>In neuem Fenster öffnen</q-item-section>
                   </q-item>
                   <q-separator />
-                  <q-item
-                    v-close-popup
-                    clickable
-                    @click.native="openItem('tab', props.row.id)"
-                  >
+                  <q-item v-close-popup clickable @click.native="openItem('tab', props.row.id)">
                     <q-item-section>In neuem Tab öffnen</q-item-section>
                   </q-item>
                 </q-list>
@@ -88,9 +78,7 @@
                   @click="props.expand = !props.expand"
                 />
               </q-td>
-              <q-td key="date" :props="props">{{
-                props.row.properties.date | formatDate
-              }}</q-td>
+              <q-td key="date" :props="props">{{ props.row.properties.date | formatDate }}</q-td>
               <q-td key="recipient" :props="props">{{
                 getFullNameArray(props.row.properties.recipient).join("; ")
               }}</q-td>
@@ -113,10 +101,7 @@
                     class="g-searchresult text-left"
                     :class="['g-searchresult-' + searchResult.type]"
                   >
-                    <q-icon
-                      :name="searchResult.icon"
-                      class="q-mr-md text-primary"
-                    />
+                    <q-icon :name="searchResult.icon" class="q-mr-md text-primary" />
                     „{{ searchResult.previous }}
                     <div class="g-keyword text-primary text-bold">
                       {{ searchResult.hi }}
@@ -140,12 +125,7 @@ import tableService from "@/services/table-service";
 import SelectAutoComplete from "../components/SelectAutoComplete.vue";
 import MultipleSelectAutoComplete from "../components/MultipleSelectAutoComplete.vue";
 import SelectYears from "../components/SelectYears.vue";
-import {
-  QCard,
-  QInput,
-  QPage,
-  QTable
-} from "quasar";
+import { QCard, QInput, QPage, QTable } from "quasar";
 
 export default {
   name: "LettersIndex",
@@ -165,12 +145,12 @@ export default {
         return date.toLocaleDateString("de-DE", {
           day: "numeric",
           month: "long",
-          year: "numeric",
+          year: "numeric"
         });
       } else {
         return "o. D.";
       }
-    },
+    }
   },
   data() {
     return {
@@ -183,12 +163,12 @@ export default {
         placeReceived: "",
         years: [],
         resp: "",
-        searchResults: [],
+        searchResults: []
       },
       loading: this.$store.state.isLoading,
       pagination: {
         rowsPerPage: 20,
-        sortBy: "date",
+        sortBy: "date"
       },
       columns: [
         {
@@ -196,44 +176,40 @@ export default {
           required: true,
           label: "Schreibdatum",
           align: "left",
-          field: (row) =>
-            row.properties.date
-              ? new Date(row.properties.date)
-              : new Date("2000"),
-          sortable: true,
+          field: row => (row.properties.date ? new Date(row.properties.date) : new Date("2000")),
+          sortable: true
         },
         {
           name: "recipient",
           required: true,
           label: "Empfänger",
           align: "left",
-          field: (row) => this.getFullNameArray(row.properties.recipient),
-          sortable: true,
+          field: row => this.getFullNameArray(row.properties.recipient),
+          sortable: true
         },
         {
           name: "placeSent",
           required: true,
           label: "Schreibort",
           align: "left",
-          field: (row) => this.getFullName(row.properties.place.sent, "o. O."),
-          sortable: true,
+          field: row => this.getFullName(row.properties.place.sent, "o. O."),
+          sortable: true
         },
         {
           name: "placeRecv",
           required: true,
           label: "Empfangsort",
           align: "left",
-          field: (row) =>
-            this.getFullName(row.properties.place.received, "o. O."),
-          sortable: true,
+          field: row => this.getFullName(row.properties.place.received, "o. O."),
+          sortable: true
         },
         {
           name: "resp",
           label: "resp",
-          field: (row) => row.properties.resp,
-        },
+          field: row => row.properties.resp
+        }
       ],
-      data: [],
+      data: []
     };
   },
 
@@ -260,13 +236,13 @@ export default {
     },
 
     uniqueYears() {
-      const years = this.letters.map((e) => {
+      const years = this.letters.map(e => {
         if (e.properties.date !== null) {
           return e.properties.date.slice(0, 4);
         }
       });
-      return [...new Set(years)].filter((year) => year !== undefined).sort();
-    },
+      return [...new Set(years)].filter(year => year !== undefined).sort();
+    }
   },
   watch: {
     selectedRecipients: function(newValue) {
@@ -314,28 +290,22 @@ export default {
     async getSearchResults() {
       this.loading = true;
       try {
-        const responseLetters = await dataService.getSearchResults(
-          "letters",
-          this.searchInput
-        );
-        const responseComments = await dataService.getSearchResults(
-          "comments",
-          this.searchInput
-        );
+        const responseLetters = await dataService.getSearchResults("letters", this.searchInput);
+        const responseComments = await dataService.getSearchResults("comments", this.searchInput);
 
-        const resultsLetters = responseLetters.results.map((result) => {
+        const resultsLetters = responseLetters.results.map(result => {
           return {
             ...result,
             type: "letter",
-            icon: "search",
+            icon: "search"
           };
         });
 
-        const resultsComments = responseComments.results.map((result) => {
+        const resultsComments = responseComments.results.map(result => {
           return {
             ...result,
             type: "comment",
-            icon: "comment",
+            icon: "comment"
           };
         });
 
@@ -429,13 +399,13 @@ export default {
 
     getFullNameArray(nameIdArray) {
       if (nameIdArray) {
-        return nameIdArray.map((r) => this.getFullName(r, "NN"));
+        return nameIdArray.map(r => this.getFullName(r, "NN"));
       }
       return [];
     },
 
     getKwic(entityId) {
-      return this.filter.searchResults.filter((result) => {
+      return this.filter.searchResults.filter(result => {
         if (result.entity_related_id) {
           return result.entity_related_id === entityId;
         }
@@ -447,7 +417,7 @@ export default {
       // Get a set of possible values from an array property
       const optionIds = [].concat.apply(
         [],
-        this[entityName].map((e) => {
+        this[entityName].map(e => {
           const stack = propertyName.split(".");
           var output = e.properties;
           while (stack.length > 1) {
@@ -456,10 +426,10 @@ export default {
           return output[stack.shift()];
         })
       );
-      const uniqueIds = [...new Set(optionIds)].filter((id) => id !== null);
-      const idNameMap = uniqueIds.map((id) => ({
+      const uniqueIds = [...new Set(optionIds)].filter(id => id !== null);
+      const idNameMap = uniqueIds.map(id => ({
         label: this.getFullName(id, "NN"),
-        value: id,
+        value: id
       }));
 
       return idNameMap;
@@ -467,11 +437,13 @@ export default {
 
     getOptions(entityName, propertyName) {
       // Get a set of possible values from a string property
-      const optionIds = this[entityName].map((entity) => tableService.traverseObject(entity, propertyName));
-      const uniqueIds = [...new Set(optionIds)].filter((id) => id !== null);
-      const idNameMap = uniqueIds.map((id) => ({
+      const optionIds = this[entityName].map(entity =>
+        tableService.traverseObject(entity, propertyName)
+      );
+      const uniqueIds = [...new Set(optionIds)].filter(id => id !== null);
+      const idNameMap = uniqueIds.map(id => ({
         label: this.getFullName(id, "NN"),
-        value: id,
+        value: id
       }));
       return idNameMap;
     },
@@ -504,13 +476,13 @@ export default {
       }
 
       if (this.searchInput) {
-        const ids = terms.searchResults.map((result) => {
+        const ids = terms.searchResults.map(result => {
           if (result.entity_related_id) {
             return result.entity_related_id;
           }
           return result.entity_id;
         });
-        rows = rows.filter((r) => ids.includes(r.id));
+        rows = rows.filter(r => ids.includes(r.id));
       }
 
       return rows;
@@ -520,14 +492,14 @@ export default {
       const kwicEntry = this.getKwic(id)[0];
       let name = "Brief";
       let params = {
-        id: id,
+        id: id
       };
 
       if (kwicEntry && kwicEntry.type === "comment") {
         name = "Brief und Kommentar";
         params = {
           id: kwicEntry.entity_related_id,
-          commentId: kwicEntry.entity_id,
+          commentId: kwicEntry.entity_id
         };
       }
 
@@ -548,8 +520,8 @@ export default {
         }
       }
     },
-    loadQueryToStore() {},
-  },
+    loadQueryToStore() {}
+  }
 };
 </script>
 
@@ -569,4 +541,3 @@ export default {
 .g-keyword
   display: inline
 </style>
-

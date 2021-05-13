@@ -46,7 +46,7 @@ export const routes = [
       {
         path: "letters/:id/:commentId",
         name: "Brief und Kommentar",
-        component: LettersDetail,
+        component: LettersDetail
       },
       {
         path: "persons",

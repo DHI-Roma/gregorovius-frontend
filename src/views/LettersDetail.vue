@@ -54,7 +54,7 @@
               after-class="overflow-auto"
               :separator-class="splitterSeparatorClass"
               @input="onSeparatorChange"
-              >
+            >
               <template v-slot:before>
                 <LettersText />
               </template>
@@ -166,8 +166,7 @@ export default {
       return "separator-hidden";
     },
 
-    ...mapGetters(['activeComment'])
-
+    ...mapGetters(["activeComment"])
   },
 
   mounted() {
@@ -195,7 +194,9 @@ export default {
       }
 
       if (this.$route.params.commentId) {
-        const commentReference = document.querySelector(`.g-comment-orig[commentId="${this.$route.params.commentId}"]`);
+        const commentReference = document.querySelector(
+          `.g-comment-orig[commentId="${this.$route.params.commentId}"]`
+        );
         const comment = {
           id: commentReference.getAttribute("commentId"),
           text: commentReference.getAttribute("commentText"),
@@ -205,13 +206,15 @@ export default {
         this.$store.dispatch("setActiveComment", comment);
 
         setTimeout(() => {
-          const commentReference = document.querySelector(`.g-comment-orig[commentId="${this.$route.params.commentId}"]`);
+          const commentReference = document.querySelector(
+            `.g-comment-orig[commentId="${this.$route.params.commentId}"]`
+          );
           const commentHtml = document.querySelector(`#comment-${this.$route.params.commentId}`);
           comment.offsetTop = commentReference.offsetTop;
           comment.text = commentHtml.innerHTML;
 
-        this.$store.dispatch('setActiveComment', comment);
-      }, 0);
+          this.$store.dispatch("setActiveComment", comment);
+        }, 0);
       }
     },
 
@@ -249,7 +252,10 @@ export default {
       }
     },
     async getXSLT(fileName, targetProp) {
-      this[targetProp] = await dataService.XSLTransform(`${basePathLetters}/${this.letterId}`, fileName);
+      this[targetProp] = await dataService.XSLTransform(
+        `${basePathLetters}/${this.letterId}`,
+        fileName
+      );
     },
 
     openUrl(url) {
@@ -263,11 +269,13 @@ export default {
         return;
       }
 
-      const activeCommentReference = document.querySelector(`.g-comment-orig[commentId="${this.activeComment.id}"]`);
+      const activeCommentReference = document.querySelector(
+        `.g-comment-orig[commentId="${this.activeComment.id}"]`
+      );
 
       const commentUpdate = { ...this.activeComment };
       commentUpdate.offsetTop = activeCommentReference.offsetTop;
-      this.$store.dispatch('setActiveComment', commentUpdate);
+      this.$store.dispatch("setActiveComment", commentUpdate);
     }
   }
 };
