@@ -1,8 +1,9 @@
 <template>
   <div
+    v-if="activeComment.id"
     class="g-edition-comment-container"
-    v-if="this.activeComment.id"
-    v-bind:style="{ top: activeComment.offsetTop + 'px' }">
+    :style="{ top: activeComment.offsetTop + 'px' }"
+  >
     <div class="row justify-between self-center q-pb-sm">
       <span class="text-h6">
         Kommentar
@@ -10,12 +11,12 @@
     </div>
     <q-separator />
 
-    <div class="g-edition-comment" v-html="commentWithLinks">
-    </div>
+    <div class="g-edition-comment" v-html="commentWithLinks"></div>
 
     <q-separator class="q-mt-sm" />
 
     <q-btn
+      id="close-comment-large"
       color="accent"
       icon="close"
       align="right"
@@ -23,38 +24,33 @@
       rounded
       outline
       class="close-comment q-mt-sm"
-      id="close-comment-large"
       @click="close"
     >
-    Schließen
+      Schließen
     </q-btn>
   </div>
 </template>
 
 <script>
-import * as linkifyUrls from 'linkify-urls';
+import * as linkifyUrls from "linkify-urls";
 import { mapGetters } from "vuex";
-import { QChatMessage } from "quasar";
 
 export default {
   name: "Comment",
-  components: {
-    QChatMessage
-  },
   computed: {
     ...mapGetters(["activeComment"]),
     commentWithLinks() {
       return linkifyUrls(this.activeComment.text, {
         attributes: {
-          class: 'g-edition-external-link',
-          target: '_blank'
+          class: "g-edition-external-link",
+          target: "_blank"
         }
       });
     }
   },
   methods: {
     close() {
-      this.$store.dispatch('unselectComment');
+      this.$store.dispatch("unselectComment");
     }
   }
 };
@@ -75,5 +71,4 @@ h6
   font-size: 10pt
   padding-top: 1rem
   padding-bottom: 1rem
-
 </style>
