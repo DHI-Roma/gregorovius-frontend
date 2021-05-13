@@ -3,11 +3,11 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters } from "vuex";
 import VRuntimeTemplate from "v-runtime-template";
 import { xslt } from "@/mixins/xslt";
 import { dataService } from "@/shared";
-import { basePathLetters } from "../router"
+import { basePathLetters } from "../router";
 import CommentIcon from "@/components/CommentIcon.vue";
 
 
@@ -25,7 +25,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['activeComment'])
+    ...mapGetters(["activeComment"])
   },
 
   mounted() {
@@ -35,7 +35,10 @@ export default {
   methods: {
     async getItems() {
       try {
-        const response = await dataService.XSLTransform(`${basePathLetters}/${this.$route.params.id}`, "LettersText");
+        const response = await dataService.XSLTransform(
+          `${basePathLetters}/${this.$route.params.id}`,
+          "LettersText"
+        );
         const data = await response;
         this.data = data;
       } catch (error) {
@@ -52,11 +55,7 @@ export default {
       }
 
       /** We don't use vue router.push here to not trigger a refresh of the component */
-      history.pushState(
-        {},
-        null,
-        basePathLetters + '/' + this.$route.params.id + '/' + commentId
-      );
+      history.pushState({}, null, basePathLetters + "/" + this.$route.params.id + "/" + commentId);
 
       const commentHtml = document.querySelector(`#comment-${commentId}`);
 
@@ -65,14 +64,16 @@ export default {
         text: commentHtml.innerHTML,
         offsetTop: offsetTop
       };
-      this.$store.dispatch('setActiveComment', comment);
+      this.$store.dispatch("setActiveComment", comment);
 
       if (!hasActiveComment) {
         setTimeout(() => {
-          const commentReference = document.querySelector(`.g-comment-orig[commentId="${commentId}"]`);
+          const commentReference = document.querySelector(
+            `.g-comment-orig[commentId="${commentId}"]`
+          );
           comment.offsetTop = commentReference.offsetTop;
 
-          this.$store.dispatch('setActiveComment', comment);
+          this.$store.dispatch("setActiveComment", comment);
         }, 0);
       }
     }
