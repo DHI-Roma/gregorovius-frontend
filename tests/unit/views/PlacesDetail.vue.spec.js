@@ -145,4 +145,44 @@ describe("PlacesDetail", () => {
 
     wrapper.destroy();
   });
+
+  it("displays the alternative place name when available", () => {
+    wrapper = shallowMount(PlacesDetail, {
+      localVue,
+      store,
+      router,
+      computed: {
+        entityId: () => "G000848"
+      },
+      data() {
+        return {
+          data: {
+            place: {
+              "@xmlns": "http://www.tei-c.org/ns/1.0",
+              "@xml:id": "ed_sz2_h5b_bpb",
+              idno: {
+                "@type": "uri",
+                "#text": "http://www.geonames.org/146670"
+              },
+              placeName: [
+                {
+                  "@type": "reg",
+                  "#text": "Zypern"
+                },
+                {
+                  "@type": "alt",
+                  "#text": "Cypern"
+                }
+              ]
+            }
+          }
+        };
+      }
+    });
+
+    expect(wrapper.vm.alternativeName).toBe("Cypern");
+    expect(wrapper.find("#alternative-name").exists()).toBeTruthy();
+
+    wrapper.destroy();
+  });
 });

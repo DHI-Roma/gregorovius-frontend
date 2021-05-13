@@ -9,8 +9,19 @@
               <div class="text-subtitle3 text-secondary">{{ placeTypeName }}</div>
             </q-card-section>
             <q-card-section>
-              <div v-if="data.place.idno">
-                <a :href="authorityUri" id="geonames-uri">
+              <q-chip
+                v-if="alternativeName"
+                id="alternative-name"
+                color="green-1"
+                class="q-ml-none"
+              >
+                <q-avatar rounded font-size="11px" color="green-5" class="text-white">
+                  ALT
+                </q-avatar>
+                {{ alternativeName }}
+              </q-chip>
+              <div v-if="data.place.idno" class="inline-block">
+                <a id="geonames-uri" :href="authorityUri">
                   <q-chip color="blue-1" class="q-ml-none">
                     <q-avatar rounded font-size="11px" color="blue-5" class="text-white">
                       GEO
@@ -91,6 +102,21 @@ export default {
     },
     placeTypeClass() {
       return placeService.getPlaceTypeClass(this.properties.type);
+    },
+    alternativeName() {
+      if (!Array.isArray(this.data.place.placeName)) {
+        return "";
+      }
+
+      const alternativeName = this.data.place.placeName.find(
+        placeName => placeName["@type"] === "alt"
+      );
+
+      if (alternativeName) {
+        return alternativeName["#text"];
+      }
+
+      return "";
     }
   },
 
