@@ -14,6 +14,10 @@ describe("PlacesDetail", () => {
   let getters;
   let store;
 
+  jest.doMock("axios", () => ({
+    get: jest.fn()
+  }));
+
   localVue = createLocalVue();
   localVue.use(Vuex);
 

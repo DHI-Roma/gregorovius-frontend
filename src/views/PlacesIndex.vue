@@ -49,56 +49,15 @@
 
 <script>
 import { mapGetters } from "vuex";
+import { placeService } from "@/services/place-service";
 export default {
   name: "PlacesIndex",
   filters: {
     formatPlaceType(rawType) {
-      if (rawType === "mythological") {
-        return "Mythischer Ort";
-      }
-      if (rawType === "building") {
-        return "Gebäude";
-      }
-      if (rawType === "monument") {
-        return "Monument";
-      }
-      if (rawType === "river") {
-        return "Gewässer";
-      }
-      if (rawType === "mountains") {
-        return "Gebirge";
-      }
-      if (rawType === "settlement") {
-        return "Siedlung";
-      }
-      if (rawType === "district") {
-        return "Stadtviertel";
-      }
-      return rawType;
+      return placeService.getPlaceTypeTranslation(rawType);
     },
     getTypeChipColor(rawType) {
-      if (rawType === "mythological") {
-        return "pink-1";
-      }
-      if (rawType === "building") {
-        return "green-1";
-      }
-      if (rawType === "monument") {
-        return "cyan-1";
-      }
-      if (rawType === "river") {
-        return "blue-1";
-      }
-      if (rawType === "mountains") {
-        return "grey-2";
-      }
-      if (rawType === "settlement") {
-        return "brown-1";
-      }
-      if (rawType === "district") {
-        return "yellow-1";
-      }
-      return rawType;
+      return placeService.getPlaceTypeClass(rawType);
     }
   },
   data() {

@@ -6,7 +6,7 @@
           <q-card class="q-pa-xl" flat>
             <q-card-section>
               <div class="text-h6">{{ name }}</div>
-              <div class="text-subtitle3 text-secondary"></div>
+              <div class="text-subtitle3 text-secondary">{{ placeTypeName }}</div>
             </q-card-section>
             <q-card-section>
               <div v-if="data.place.idno">
@@ -44,6 +44,7 @@
 import { mapActions, mapGetters } from "vuex";
 import MentionsTable from "@/components/MentionsTable";
 import { dataService } from "@/shared";
+import placeService from "@/services/place-service";
 import { QSpinnerOval, QPage, QSeparator, QAvatar, QChip, QCard, QCardSection } from "quasar";
 
 export default {
@@ -84,6 +85,12 @@ export default {
     },
     properties() {
       return this.places.find(place => place.id === this.entityId).properties;
+    },
+    placeTypeName() {
+      return placeService.getPlaceTypeTranslation(this.properties.type);
+    },
+    placeTypeClass() {
+      return placeService.getPlaceTypeClass(this.properties.type);
     }
   },
 
