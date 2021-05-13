@@ -1,5 +1,7 @@
 import { shallowMount, createLocalVue } from "@vue/test-utils";
 import * as Vuex from "vuex";
+import VueRouter from "vue-router";
+import { routes } from "@/routes";
 import LettersDetail from "@/views/LettersDetail.vue";
 import {
   itemDataRegStandard,
@@ -8,7 +10,6 @@ import {
 } from "../fixtures/item-data";
 import teiHeaderFixture from "../fixtures/tei-header";
 import * as service from "../../../src/shared/service";
-import VueRouter from "vue-router";
 
 describe("LettersDetail", () => {
   let wrapper;
@@ -19,10 +20,9 @@ describe("LettersDetail", () => {
   localVue = createLocalVue();
   localVue.use(Vuex);
 
-  const router = new VueRouter();
+  const router = new VueRouter({ routes, mode: "abstract" });
 
   beforeEach(() => {
-
     getters = {
       activeComment: () => {
         return {
@@ -30,12 +30,11 @@ describe("LettersDetail", () => {
           text: "Some comment text"
         };
       }
-    }
+    };
     store = new Vuex.Store({
       getters
     });
   });
-
 
   jest.doMock("axios", () => ({
     get: Promise.resolve(teiHeaderFixture)
@@ -56,6 +55,9 @@ describe("LettersDetail", () => {
             },
             loading: false
           };
+        },
+        computed: {
+          letterId: () => "G000001"
         }
       });
     });
@@ -107,6 +109,9 @@ describe("LettersDetail", () => {
             },
             loading: false
           };
+        },
+        computed: {
+          letterId: () => "G000001"
         }
       });
     });
@@ -149,6 +154,9 @@ describe("LettersDetail", () => {
             },
             loading: false
           };
+        },
+        computed: {
+          letterId: () => "G000001"
         }
       });
     });
@@ -179,9 +187,8 @@ describe("LettersDetail", () => {
     });
   });
 
-
-  describe('Editor Statement', () => {
-    it.skip('should display the editors name if available', () => {
+  describe("Editor Statement", () => {
+    it.skip("should display the editors name if available", () => {
       const teiHeader = itemDataRegOneAbstract.teiHeader;
 
       teiHeader.fileDesc.titleStmt.respStmt.persName.forename = "The";
@@ -202,7 +209,7 @@ describe("LettersDetail", () => {
       });
 
       expect(wrapper.vm.editor).toBe("The Editor");
-      expect(wrapper.find('#editor')).toBeTruthy();
+      expect(wrapper.find("#editor")).toBeTruthy();
       expect(wrapper.find("#editor").text()).toContain("The Editor");
 
       wrapper.destroy();

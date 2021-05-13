@@ -12,13 +12,13 @@ export default new Vuex.Store({
     places: [],
     works: [],
     fullNameIndex: [],
-    selectedRecipient: { label: "", value: "" },
+    selectedRecipients: [],
     selectedPlaceReceived: { label: "", value: "" },
     selectedPlaceSent: { label: "", value: "" },
     selectedYears: [],
     activeComment: {
-      id: '',
-      text: ''
+      id: "",
+      text: ""
     }
   },
   mutations: {
@@ -44,7 +44,7 @@ export default new Vuex.Store({
       const newModel = { label: state.fullNameIndex[payload.value], value: payload.value };
       switch (payload.entity) {
         case "recipient":
-          state.selectedRecipient = newModel;
+          state.selectedRecipients = payload.value;
           break;
         case "placeReceived":
           state.selectedPlaceReceived = newModel;
@@ -136,7 +136,7 @@ export default new Vuex.Store({
     works: state => state.works,
     loading: state => state.isLoading,
     fullNameIndex: state => state.fullNameIndex,
-    selectedRecipient: state => state.selectedRecipient,
+    selectedRecipients: state => state.selectedRecipients,
     selectedPlaceReceived: state => state.selectedPlaceReceived,
     selectedPlaceSent: state => state.selectedPlaceSent,
     selectedYears: state => state.selectedYears,

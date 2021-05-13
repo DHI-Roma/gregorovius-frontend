@@ -17,7 +17,7 @@
                 </template>
               </q-input>
             </div>
-            <select-auto-complete
+            <multiple-select-auto-complete
               label="Empfänger"
               entity="recipient"
               :options="uniqueRecipients"
@@ -53,26 +53,16 @@
             <q-tr
               :props="props"
               class="cursor-pointer"
-              :class="
-                searchInput ? 'cursor-pointer g-searchrow' : 'cursor-pointer'
-              "
+              :class="searchInput ? 'cursor-pointer g-searchrow' : 'cursor-pointer'"
               @click.native="openItem('default', props.row.id)"
             >
               <q-menu touch-position context-menu>
                 <q-list dense style="min-width: 100px">
-                  <q-item
-                    v-close-popup
-                    clickable
-                    @click.native="openItem('window', props.row.id)"
-                  >
+                  <q-item v-close-popup clickable @click.native="openItem('window', props.row.id)">
                     <q-item-section>In neuem Fenster öffnen</q-item-section>
                   </q-item>
                   <q-separator />
-                  <q-item
-                    v-close-popup
-                    clickable
-                    @click.native="openItem('tab', props.row.id)"
-                  >
+                  <q-item v-close-popup clickable @click.native="openItem('tab', props.row.id)">
                     <q-item-section>In neuem Tab öffnen</q-item-section>
                   </q-item>
                 </q-list>
@@ -88,9 +78,7 @@
                   @click="props.expand = !props.expand"
                 />
               </q-td>
-              <q-td key="date" :props="props">{{
-                props.row.properties.date | formatDate
-              }}</q-td>
+              <q-td key="date" :props="props">{{ props.row.properties.date | formatDate }}</q-td>
               <q-td key="recipient" :props="props">{{
                 getFullNameArray(props.row.properties.recipient).join("; ")
               }}</q-td>
@@ -113,10 +101,7 @@
                     class="g-searchresult text-left"
                     :class="['g-searchresult-' + searchResult.type]"
                   >
-                    <q-icon
-                      :name="searchResult.icon"
-                      class="q-mr-md text-primary"
-                    />
+                    <q-icon :name="searchResult.icon" class="q-mr-md text-primary" />
                     „{{ searchResult.previous }}
                     <div class="g-keyword text-primary text-bold">
                       {{ searchResult.hi }}
@@ -134,16 +119,24 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 import { dataService } from "../shared";
+import tableService from "@/services/table-service";
 import SelectAutoComplete from "../components/SelectAutoComplete.vue";
+import MultipleSelectAutoComplete from "../components/MultipleSelectAutoComplete.vue";
 import SelectYears from "../components/SelectYears.vue";
+import { QCard, QInput, QPage, QTable } from "quasar";
 
 export default {
   name: "LettersIndex",
   components: {
+    MultipleSelectAutoComplete,
     SelectAutoComplete,
     SelectYears,
+    QCard,
+    QInput,
+    QPage,
+    QTable
   },
   filters: {
     formatDate(isoDate) {
@@ -152,12 +145,12 @@ export default {
         return date.toLocaleDateString("de-DE", {
           day: "numeric",
           month: "long",
-          year: "numeric",
+          year: "numeric"
         });
       } else {
         return "o. D.";
       }
-    },
+    }
   },
   data() {
     return {
@@ -165,17 +158,17 @@ export default {
       model: "",
       visibleColumns: ["date", "recipient", "placeSent", "placeRecv"],
       filter: {
-        recipient: "",
+        recipient: [],
         placeSent: "",
         placeReceived: "",
         years: [],
         resp: "",
-        searchResults: [],
+        searchResults: []
       },
       loading: this.$store.state.isLoading,
       pagination: {
         rowsPerPage: 20,
-        sortBy: "date",
+        sortBy: "date"
       },
       columns: [
         {
@@ -183,55 +176,52 @@ export default {
           required: true,
           label: "Schreibdatum",
           align: "left",
-          field: (row) =>
-            row.properties.date
-              ? new Date(row.properties.date)
-              : new Date("2000"),
-          sortable: true,
+          field: row => (row.properties.date ? new Date(row.properties.date) : new Date("2000")),
+          sortable: true
         },
         {
           name: "recipient",
           required: true,
           label: "Empfänger",
           align: "left",
-          field: (row) => this.getFullNameArray(row.properties.recipient),
-          sortable: true,
+          field: row => this.getFullNameArray(row.properties.recipient),
+          sortable: true
         },
         {
           name: "placeSent",
           required: true,
           label: "Schreibort",
           align: "left",
-          field: (row) => this.getFullName(row.properties.place.sent, "o. O."),
-          sortable: true,
+          field: row => this.getFullName(row.properties.place.sent, "o. O."),
+          sortable: true
         },
         {
           name: "placeRecv",
           required: true,
           label: "Empfangsort",
           align: "left",
-          field: (row) =>
-            this.getFullName(row.properties.place.received, "o. O."),
-          sortable: true,
+          field: row => this.getFullName(row.properties.place.received, "o. O."),
+          sortable: true
         },
         {
           name: "resp",
           label: "resp",
-          field: (row) => row.properties.resp,
-        },
+          field: row => row.properties.resp
+        }
       ],
-      data: [],
+      data: []
     };
   },
 
   computed: {
-    fullNameIndex() {
-      return this.$store.getters.fullNameIndex;
-    },
-
-    letters() {
-      return this.$store.getters.letters;
-    },
+    ...mapGetters([
+      "fullNameIndex",
+      "letters",
+      "selectedRecipients",
+      "selectedPlaceSent",
+      "selectedPlaceReceived",
+      "selectedYears"
+    ]),
 
     uniqueRecipients() {
       return this.getArrayOptions("letters", "recipient");
@@ -246,21 +236,35 @@ export default {
     },
 
     uniqueYears() {
-      const years = this.letters.map((e) => {
+      const years = this.letters.map(e => {
         if (e.properties.date !== null) {
           return e.properties.date.slice(0, 4);
         }
       });
-      return [...new Set(years)].filter((year) => year !== undefined).sort();
+      return [...new Set(years)].filter(year => year !== undefined).sort();
+    }
+  },
+  watch: {
+    selectedRecipients: function(newValue) {
+      this.applyMultiRouteParams("recipient", newValue);
     },
+    selectedPlaceSent: function(newValue) {
+      this.applySingleRouteParam("placeSent", newValue);
+    },
+    selectedPlaceReceived: function(newValue) {
+      this.applySingleRouteParam("placeReceived", newValue);
+    },
+    selectedYears: function(newValue) {
+      this.applyMultiRouteParams("years", newValue);
+    }
   },
   created() {
     for (const [paramKey, paramValue] of Object.entries(this.$route.query)) {
-      if (paramKey === "years") {
+      if (paramKey === "years" || paramKey === "recipient") {
         try {
           this.setSelectedAction({
             entity: paramKey,
-            value: paramValue.split(","),
+            value: paramValue.split(",").filter(entry => entry.length > 0)
           });
         } catch (error) {
           console.log(error);
@@ -273,7 +277,7 @@ export default {
   async mounted() {
     this.$store.watch(
       (state, getters) => getters.loading,
-      (newValue) => {
+      newValue => {
         this.loading = newValue;
       }
     );
@@ -281,37 +285,27 @@ export default {
     this.loadAll();
   },
   methods: {
-    ...mapActions([
-      "loadLettersAction",
-      "setLoadingStatus",
-      "setSelectedAction",
-    ]),
+    ...mapActions(["loadLettersAction", "setLoadingStatus", "setSelectedAction"]),
 
     async getSearchResults() {
       this.loading = true;
       try {
-        const responseLetters = await dataService.getSearchResults(
-          "letters",
-          this.searchInput
-        );
-        const responseComments = await dataService.getSearchResults(
-          "comments",
-          this.searchInput
-        );
+        const responseLetters = await dataService.getSearchResults("letters", this.searchInput);
+        const responseComments = await dataService.getSearchResults("comments", this.searchInput);
 
-        const resultsLetters = responseLetters.results.map((result) => {
+        const resultsLetters = responseLetters.results.map(result => {
           return {
             ...result,
             type: "letter",
-            icon: "search",
+            icon: "search"
           };
         });
 
-        const resultsComments = responseComments.results.map((result) => {
+        const resultsComments = responseComments.results.map(result => {
           return {
             ...result,
             type: "comment",
-            icon: "comment",
+            icon: "comment"
           };
         });
 
@@ -325,17 +319,77 @@ export default {
       this.loading = false;
     },
 
+    applySingleRouteParam(entityKey, payload) {
+      this.filter[entityKey] = payload.value;
+      if (payload.value == "") {
+        var newQuery = { ...this.$route.query };
+        delete newQuery[entityKey];
+        this.$router.push({ query: newQuery });
+      } else {
+        this.$router.push({
+          query: Object.assign({}, this.$route.query, {
+            [entityKey]: payload.value
+          })
+        });
+      }
+    },
+
+    applyMultiRouteParams(entityKey, payload) {
+      this.filter[entityKey] = payload.value;
+      if (!payload.length) {
+        var newQuery = { ...this.$route.query };
+        delete newQuery[entityKey];
+        this.$router.push({ query: newQuery });
+      } else {
+        this.$router.push({
+          query: Object.assign({}, this.$route.query, {
+            [entityKey]: payload.join()
+          })
+        });
+      }
+    },
+
     loadAll() {
-      ["recipient", "placeReceived", "placeSent"].map(this.watchQueryParam);
-      this.watchQueryParamYears();
       if (this.$store.getters.letters.length == 0) {
         this.loadLettersAction();
       }
-      this.filter.recipient = this.$route.query.recipient || "";
+      this.resetFilter();
+    },
+
+    resetFilter() {
+      this.filter.recipient = this.$route.query.recipient || [];
       this.filter.placeSent = this.$route.query.placeSent || "";
       this.filter.placeReceived = this.$route.query.placeReceived || "";
       this.filter.years = this.$route.query.years || [];
       this.filter.resp = this.$route.query.resp || "";
+
+      if (!this.filter.recipient.length) {
+        this.setSelectedAction({
+          entity: "recipient",
+          value: []
+        });
+      }
+
+      if (!this.filter.placeSent.value) {
+        this.setSelectedAction({
+          entity: "placeSent",
+          value: ""
+        });
+      }
+
+      if (!this.filter.placeReceived.value) {
+        this.setSelectedAction({
+          entity: "placeReceived",
+          value: ""
+        });
+      }
+
+      if (!this.filter.years.length) {
+        this.setSelectedAction({
+          entity: "years",
+          value: []
+        });
+      }
     },
 
     getFullName(id, altName) {
@@ -345,13 +399,13 @@ export default {
 
     getFullNameArray(nameIdArray) {
       if (nameIdArray) {
-        return nameIdArray.map((r) => this.getFullName(r, "NN"));
+        return nameIdArray.map(r => this.getFullName(r, "NN"));
       }
       return [];
     },
 
     getKwic(entityId) {
-      return this.filter.searchResults.filter((result) => {
+      return this.filter.searchResults.filter(result => {
         if (result.entity_related_id) {
           return result.entity_related_id === entityId;
         }
@@ -363,7 +417,7 @@ export default {
       // Get a set of possible values from an array property
       const optionIds = [].concat.apply(
         [],
-        this[entityName].map((e) => {
+        this[entityName].map(e => {
           const stack = propertyName.split(".");
           var output = e.properties;
           while (stack.length > 1) {
@@ -372,148 +426,80 @@ export default {
           return output[stack.shift()];
         })
       );
-      const uniqueIds = [...new Set(optionIds)].filter((id) => id !== null);
-      const idNameMap = uniqueIds.map((id) => ({
+      const uniqueIds = [...new Set(optionIds)].filter(id => id !== null);
+      const idNameMap = uniqueIds.map(id => ({
         label: this.getFullName(id, "NN"),
-        value: id,
+        value: id
       }));
+
       return idNameMap;
     },
 
     getOptions(entityName, propertyName) {
       // Get a set of possible values from a string property
-      const optionIds = this[entityName].map((e) => {
-        const stack = propertyName.split(".");
-        var output = e.properties;
-        while (stack.length > 1) {
-          output = output[stack.shift()];
-        }
-        return output[stack.shift()];
-      });
-      const uniqueIds = [...new Set(optionIds)].filter((id) => id !== null);
-      const idNameMap = uniqueIds.map((id) => ({
+      const optionIds = this[entityName].map(entity =>
+        tableService.traverseObject(entity, propertyName)
+      );
+      const uniqueIds = [...new Set(optionIds)].filter(id => id !== null);
+      const idNameMap = uniqueIds.map(id => ({
         label: this.getFullName(id, "NN"),
-        value: id,
+        value: id
       }));
       return idNameMap;
     },
 
-    hasValue(item, property, value) {
-      // Check if a property (Array or String) contains or is equal to a value
-      const stack = property.split(".");
-      var prop = item.properties;
-      while (stack.length > 1) {
-        prop = prop[stack.shift()];
-      }
-      prop = prop[stack.shift()];
-
-      if (prop instanceof Array) {
-        return prop.includes(value);
-      }
-      return prop === value;
-    },
-
-    filterItems(objectArray, property, value) {
-      const filtered = objectArray.filter((item) =>
-        this.hasValue(item, property, value)
-      );
-      return filtered;
-    },
-
     filterLetters(rows, terms) {
-      if (terms.recipient !== "") {
-        rows = rows.filter((r) =>
-          this.hasValue(r, "recipient", terms.recipient)
+      rows = tableService.filterByRecipients(rows, this.selectedRecipients);
+
+      if (this.selectedPlaceSent.value) {
+        rows = rows.filter(r =>
+          tableService.hasValue(r, "place.sent", this.selectedPlaceSent.value)
         );
       }
-      if (terms.placeSent !== "") {
-        rows = rows.filter((r) =>
-          this.hasValue(r, "place.sent", terms.placeSent)
+
+      if (this.selectedPlaceReceived.value) {
+        rows = rows.filter(r =>
+          tableService.hasValue(r, "place.received", this.selectedPlaceReceived.value)
         );
       }
-      if (terms.placeReceived !== "") {
-        rows = rows.filter((r) =>
-          this.hasValue(r, "place.received", terms.placeReceived)
+
+      if (this.selectedYears.length) {
+        rows = rows.filter(r =>
+          !r.properties.date ? false : this.selectedYears.includes(r.properties.date.slice(0, 4))
         );
       }
-      if (terms.years.length > 0) {
-        rows = rows.filter((r) =>
-          !r.properties.date
-            ? false
-            : terms.years.includes(r.properties.date.slice(0, 4))
-        );
-      }
+
       if (terms.resp !== "") {
-        rows = rows.filter((r) =>
+        rows = rows.filter(r =>
           !r.properties.resp ? false : r.properties.resp.includes(terms.resp)
         );
       }
+
       if (this.searchInput) {
-        const ids = terms.searchResults.map((result) => {
+        const ids = terms.searchResults.map(result => {
           if (result.entity_related_id) {
             return result.entity_related_id;
           }
           return result.entity_id;
         });
-        rows = rows.filter((r) => ids.includes(r.id));
+        rows = rows.filter(r => ids.includes(r.id));
       }
+
       return rows;
-    },
-
-    watchQueryParam(entityKey) {
-      const selectedEntityKey =
-        "selected" + entityKey[0].toUpperCase() + entityKey.slice(1);
-      this.$store.watch(
-        (state, getters) => getters[selectedEntityKey],
-        (newValue) => {
-          this.filter[entityKey] = newValue.value;
-          if (newValue.value == "") {
-            var newQuery = { ...this.$route.query };
-            delete newQuery[entityKey];
-            this.$router.push({ query: newQuery });
-          } else {
-            this.$router.push({
-              query: Object.assign({}, this.$route.query, {
-                [entityKey]: newValue.value,
-              }),
-            });
-          }
-        }
-      );
-    },
-
-    watchQueryParamYears() {
-      this.$store.watch(
-        (state, getters) => getters.selectedYears,
-        (newValue) => {
-          this.filter.years = newValue;
-          if (newValue == []) {
-            var newQuery = { ...this.$route.query };
-            delete newQuery.years;
-            this.$router.push({ query: newQuery });
-          } else {
-            this.$router.push({
-              query: Object.assign({}, this.$route.query, {
-                years: newValue.join(),
-              }),
-            });
-          }
-        }
-      );
     },
 
     openItem(target, id) {
       const kwicEntry = this.getKwic(id)[0];
       let name = "Brief";
       let params = {
-        id: id,
+        id: id
       };
 
       if (kwicEntry && kwicEntry.type === "comment") {
         name = "Brief und Kommentar";
         params = {
           id: kwicEntry.entity_related_id,
-          commentId: kwicEntry.entity_id,
+          commentId: kwicEntry.entity_id
         };
       }
 
@@ -534,8 +520,8 @@ export default {
         }
       }
     },
-    loadQueryToStore() {},
-  },
+    loadQueryToStore() {}
+  }
 };
 </script>
 
@@ -544,7 +530,7 @@ export default {
   font-family: Cardo
   font-size: 1.2em
 
-.g-searchresult-comment 
+.g-searchresult-comment
   font-family: 'IBMPlexSans'
   font-size: 1em
   padding-left: 1em
@@ -555,4 +541,3 @@ export default {
 .g-keyword
   display: inline
 </style>
-

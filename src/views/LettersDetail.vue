@@ -46,7 +46,7 @@
               icon="arrow_right_alt"
               color="primary"
               size="md"
-              @click="openUrl(`http://gregorovius-edition.dhi-roma.it/api/letters/${$route.params.id}`)"
+              @click="openUrl(`http://gregorovius-edition.dhi-roma.it/api/letters/${letterId}`)"
             />
           </div>
           <div class="row">
@@ -56,7 +56,7 @@
               after-class="overflow-auto"
               :separator-class="splitterSeparatorClass"
               @input="onSeparatorChange"
-              >
+            >
               <template v-slot:before>
                 <LettersText />
               </template>
@@ -136,6 +136,9 @@ export default {
     };
   },
   computed: {
+    letterId() {
+      return this.$route.params.id;
+    },
     // Splits the title and returns the first part.
     titleMain() {
       const title = this.data.teiHeader.fileDesc.titleStmt.title.replace(/[\n ]+/g, " ");
@@ -189,8 +192,7 @@ export default {
       return [forename, surname].join(" ");
     },
 
-    ...mapGetters(['activeComment'])
-
+    ...mapGetters(["activeComment"])
   },
 
   mounted() {
@@ -218,7 +220,9 @@ export default {
       }
 
       if (this.$route.params.commentId) {
-        const commentReference = document.querySelector(`.g-comment-orig[commentId="${this.$route.params.commentId}"]`);
+        const commentReference = document.querySelector(
+          `.g-comment-orig[commentId="${this.$route.params.commentId}"]`
+        );
         const comment = {
           id: commentReference.getAttribute("commentId"),
           text: commentReference.getAttribute("commentText"),
@@ -228,13 +232,15 @@ export default {
         this.$store.dispatch("setActiveComment", comment);
 
         setTimeout(() => {
-          const commentReference = document.querySelector(`.g-comment-orig[commentId="${this.$route.params.commentId}"]`);
+          const commentReference = document.querySelector(
+            `.g-comment-orig[commentId="${this.$route.params.commentId}"]`
+          );
           const commentHtml = document.querySelector(`#comment-${this.$route.params.commentId}`);
           comment.offsetTop = commentReference.offsetTop;
           comment.text = commentHtml.innerHTML;
 
-        this.$store.dispatch('setActiveComment', comment);
-      }, 0);
+          this.$store.dispatch("setActiveComment", comment);
+        }, 0);
       }
     },
 
@@ -260,7 +266,7 @@ export default {
     },
     async getItems() {
       try {
-        const response = await axios.get(`${API}${basePathLetters}/${this.$route.params.id}`, {
+        const response = await axios.get(`${API}${basePathLetters}/${this.letterId}`, {
           headers: { Accept: "application/json" }
         });
         this.data = response.data;
@@ -272,7 +278,10 @@ export default {
       }
     },
     async getXSLT(fileName, targetProp) {
-      this[targetProp] = await dataService.XSLTransform(`${basePathLetters}/${this.$route.params.id}`, fileName);
+      this[targetProp] = await dataService.XSLTransform(
+        `${basePathLetters}/${this.letterId}`,
+        fileName
+      );
     },
 
     openUrl(url) {
@@ -286,11 +295,13 @@ export default {
         return;
       }
 
-      const activeCommentReference = document.querySelector(`.g-comment-orig[commentId="${this.activeComment.id}"]`);
+      const activeCommentReference = document.querySelector(
+        `.g-comment-orig[commentId="${this.activeComment.id}"]`
+      );
 
       const commentUpdate = { ...this.activeComment };
       commentUpdate.offsetTop = activeCommentReference.offsetTop;
-      this.$store.dispatch('setActiveComment', commentUpdate);
+      this.$store.dispatch("setActiveComment", commentUpdate);
     }
   }
 };
