@@ -5,10 +5,14 @@ describe("PlaceService", () => {
       expect(placeService.getPlaceTypeTranslation("mythological")).toBe("Mythischer Ort");
       expect(placeService.getPlaceTypeTranslation("building")).toBe("Gebäude");
       expect(placeService.getPlaceTypeTranslation("monument")).toBe("Monument");
-      expect(placeService.getPlaceTypeTranslation("river")).toBe("Gewässer");
-      expect(placeService.getPlaceTypeTranslation("mountains")).toBe("Gebirge");
+      expect(placeService.getPlaceTypeTranslation("river")).toBe("Fluss, See, Meer");
+      expect(placeService.getPlaceTypeTranslation("sea")).toBe("Fluss, See, Meer");
+      expect(placeService.getPlaceTypeTranslation("park")).toBe("Park");
+      expect(placeService.getPlaceTypeTranslation("mountains")).toBe("Gebirge, Berg, Hügel");
       expect(placeService.getPlaceTypeTranslation("settlement")).toBe("Siedlung");
       expect(placeService.getPlaceTypeTranslation("district")).toBe("Stadtviertel");
+      expect(placeService.getPlaceTypeTranslation("street")).toBe("Straße");
+      expect(placeService.getPlaceTypeTranslation("forest")).toBe("Wald");
     });
 
     it("passes the original value when no match could be found", () => {
