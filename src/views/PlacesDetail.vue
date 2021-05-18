@@ -6,20 +6,16 @@
           <q-card class="q-pa-xl" flat>
             <q-card-section>
               <div class="text-h6">{{ name }}</div>
-              <div class="text-subtitle3 text-secondary">{{ placeTypeName }}</div>
-            </q-card-section>
-            <q-card-section>
-              <q-chip
+              <div
                 v-if="alternativeName"
                 id="alternative-name"
-                color="green-1"
-                class="q-ml-none"
+                class="text-subtitle3 text-secondary"
               >
-                <q-avatar rounded font-size="11px" color="green-5" class="text-white">
-                  ALT
-                </q-avatar>
                 {{ alternativeName }}
-              </q-chip>
+              </div>
+            </q-card-section>
+            <q-card-section>
+              <q-chip v-if="placeTypeName" :color="placeTypeClass">{{ placeTypeName }}</q-chip>
               <div v-if="data.place.idno" class="inline-block">
                 <a id="geonames-uri" :href="authorityUri">
                   <q-chip color="blue-1" class="q-ml-none">

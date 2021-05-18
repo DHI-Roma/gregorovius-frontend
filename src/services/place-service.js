@@ -7,13 +7,21 @@ export const getPlaceTypeTranslation = placeType => {
     case "monument":
       return "Monument";
     case "river":
-      return "Gewässer";
+    case "sea":
+      return "Fluss, See, Meer";
+    case "park":
+      return "Park";
     case "mountains":
-      return "Gebirge";
+    case "mountain":
+      return "Gebirge, Berg, Hügel";
     case "settlement":
       return "Siedlung";
     case "district":
       return "Stadtviertel";
+    case "street":
+      return "Straße";
+    case "forest":
+      return "Wald";
     default:
       return placeType;
   }
@@ -28,15 +36,17 @@ export const getPlaceTypeClass = placeType => {
     case "monument":
       return "cyan-1";
     case "river":
+    case "sea":
       return "blue-1";
     case "mountains":
+    case "mountian":
       return "grey-2";
     case "settlement":
       return "brown-1";
     case "district":
       return "yellow-1";
     default:
-      return placeType;
+      return "grey-1";
   }
 };
 

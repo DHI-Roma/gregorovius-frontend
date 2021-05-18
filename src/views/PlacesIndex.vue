@@ -31,7 +31,7 @@
                     <q-item-label>{{ fullNameIndex[props.row.id] }}</q-item-label>
                   </q-item-section>
                   <q-chip
-                    v-if="false"
+                    v-if="props.row.properties.type"
                     size="12px"
                     :color="props.row.properties.type | getTypeChipColor"
                   >
@@ -49,7 +49,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import { placeService } from "@/services/place-service";
+import placeService from "@/services/place-service";
 export default {
   name: "PlacesIndex",
   filters: {
