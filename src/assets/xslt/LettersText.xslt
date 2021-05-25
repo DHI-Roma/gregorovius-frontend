@@ -75,12 +75,21 @@
     <del> <xsl:apply-templates/> </del>
 </xsl:template> 
 
+
 <xsl:template match="tei:hi[@rendition='#u']">
     <u> <xsl:apply-templates/> </u>
 </xsl:template> 
 
+<xsl:template match="tei:hi[@rendition='#uu']">
+    <span class="g-uu"> <xsl:apply-templates/> </span>
+</xsl:template> 
+
 <xsl:template match="tei:hi[@rendition='#aq']">
     <span class="g-aq"> <xsl:apply-templates/> </span>
+</xsl:template> 
+
+<xsl:template match="tei:hi[@rendition='#sup']">
+    <sup> <xsl:apply-templates/> </sup>
 </xsl:template> 
 
 <xsl:template match="tei:ex">
