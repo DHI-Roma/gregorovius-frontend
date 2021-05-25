@@ -64,7 +64,7 @@
 </xsl:template>
 
 <xsl:template match="tei:add">
-    <span class="add"> <xsl:apply-templates/> </span>
+    <span class="g-add"> <xsl:apply-templates/> </span>
 </xsl:template> 
 
 <xsl:template match="tei:del[@rendition='#s']">
