@@ -58,10 +58,6 @@
             >
               <q-menu touch-position context-menu>
                 <q-list dense style="min-width: 100px">
-                  <q-item v-close-popup clickable @click.native="openItem('window', props.row.id)">
-                    <q-item-section>In neuem Fenster öffnen</q-item-section>
-                  </q-item>
-                  <q-separator />
                   <q-item v-close-popup clickable @click.native="openItem('tab', props.row.id)">
                     <q-item-section>In neuem Tab öffnen</q-item-section>
                   </q-item>
@@ -509,15 +505,9 @@ export default {
           this.$router.push({ name, params });
           break;
         case "tab":
+        case "window":
           window.open(routeData.href, "_blank");
           break;
-        case "window": {
-          const width = window.outerWidth;
-          const height = window.outerHeight;
-          const strWindowFeatures = `resizable,location=yes,height=${height},width=${width},scrollbars=yes,status=yes`;
-          window.open(routeData.href, "_blank", strWindowFeatures);
-          break;
-        }
       }
     },
     loadQueryToStore() {}
