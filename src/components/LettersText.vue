@@ -92,9 +92,12 @@ export default {
 span.g-add
   color: green
 
-
 del
   color: red
+
+.g-uu
+  text-decoration-line: underline
+  text-decoration-style: double
 
 .g-entity-link
   box-shadow: inset 0 -0.7rem 0 0 hsla(144.9, 100%, 82.5%, 0.5)
