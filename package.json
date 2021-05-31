@@ -1,6 +1,6 @@
 {
   "name": "gregorovius-frontend",
-  "version": "1.6.2-beta",
+  "version": "1.6.3-beta",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -33,7 +33,6 @@
     "babel-eslint": "^10.0.3",
     "babel-plugin-transform-imports": "1.5.0",
     "chai": "^4.1.2",
-    "cypress": "^6.8.0",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-loader": "^3.0.3",

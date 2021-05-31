@@ -36,11 +36,16 @@ describe("LettersIndex", () => {
   it("renders the component", () => {
     getters = {
       letters: () => lettersResponse,
-      fullNameIndex: () => fullNameIndex
+      fullNameIndex: () => fullNameIndex,
+      selectedRecipients: () => [],
+      selectedPlaceSent: () => "",
+      selectedPlaceReceived: () => "",
+      selectedYears: () => []
     };
 
     actions = {
-      loadFullNameIndexAction: jest.fn()
+      loadFullNameIndexAction: jest.fn(),
+      setSelectedAction: jest.fn()
     };
 
     store = new Vuex.Store({
