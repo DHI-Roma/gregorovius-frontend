@@ -1,10 +1,11 @@
 {
   "name": "gregorovius-frontend",
-  "version": "1.6.3-beta",
+  "version": "1.6.4-beta",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "test": "vue-cli-service test:unit --watch",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "cypress:open": "cypress open",

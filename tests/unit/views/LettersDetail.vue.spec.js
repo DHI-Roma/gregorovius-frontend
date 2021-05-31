@@ -186,4 +186,39 @@ describe("LettersDetail", () => {
       expect(wrapper.vm.getAbstractCount()).toBe(1);
     });
   });
+
+  describe("Editor statement", () => {
+    beforeEach(() => {
+      wrapper = shallowMount(LettersDetail, {
+        localVue,
+        store,
+        router,
+        data() {
+          return {
+            data: {
+              teiHeader: itemDataRegOneAbstract.teiHeader
+            },
+            loading: false
+          };
+        },
+        computed: {
+          letterId: () => "G000001"
+        }
+      });
+    });
+
+    afterEach(() => {
+      wrapper.destroy();
+    });
+
+    it("shows the editor when the information is available", () => {
+      expect(wrapper.vm.editor).toBe("Angela Steinsiek");
+      expect(wrapper.find("#editor").exists).toBeTruthy();
+    });
+
+    it("shows the name of the responsible editors", () => {
+      expect(wrapper.vm.responsible).toBe("Theodor Costea");
+      expect(wrapper.find("#responsible").exists).toBeTruthy();
+    });
+  });
 });
