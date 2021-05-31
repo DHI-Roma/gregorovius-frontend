@@ -60,6 +60,8 @@ describe("LettersDetail", () => {
           letterId: () => "G000001"
         }
       });
+
+      wrapper.vm.getItems = jest.fn();
     });
 
     afterEach(() => {
