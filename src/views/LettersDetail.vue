@@ -4,6 +4,12 @@
       <div class="row justify-center">
         <div v-if="data.teiHeader" class="col-md-8 col-12 q-py-xl q-gutter-y-lg">
           <q-card class="q-pa-xl" flat>
+            <div v-if="editor" class="text-caption text-right q-tm-sm text-secondary">
+              Hrsg. <span id="editor">{{ editor }}</span>
+            </div>
+            <div v-if="responsible" class="text-caption text-right q-tm-sm text-secondary">
+              Mitarb. <span id="responsible">{{ responsible }}</span>
+            </div>
             <q-card-section>
               <div class="text-h6">{{ titleMain }}</div>
               <div class="text-subtitle3 text-secondary">
@@ -101,6 +107,8 @@ import {
 const TAB_TEXTGRUNDLAGE = "tgl";
 const SPLITTER_SIZE_START = 100;
 
+const FG_03_03_SHOULD_DISPLAY_EDITOR = true;
+
 export default {
   name: "Item",
   components: {
@@ -164,6 +172,50 @@ export default {
         return "";
       }
       return "separator-hidden";
+    },
+    editor() {
+      if (!FG_03_03_SHOULD_DISPLAY_EDITOR) {
+        return "";
+      }
+
+      if (!this.data.teiHeader.fileDesc.titleStmt.editor) {
+        return "";
+      }
+
+      let forename = "";
+      let surname = "";
+
+      if (this.data.teiHeader.fileDesc.titleStmt.editor.persName.forename) {
+        forename = this.data.teiHeader.fileDesc.titleStmt.editor.persName.forename;
+      }
+
+      if (this.data.teiHeader.fileDesc.titleStmt.editor.persName.surname) {
+        surname = this.data.teiHeader.fileDesc.titleStmt.editor.persName.surname;
+      }
+
+      return [forename, surname].join(" ");
+    },
+    responsible() {
+      if (!FG_03_03_SHOULD_DISPLAY_EDITOR) {
+        return "";
+      }
+
+      if (!this.data.teiHeader.fileDesc.titleStmt.respStmt) {
+        return "";
+      }
+
+      let forename = "";
+      let surname = "";
+
+      if (this.data.teiHeader.fileDesc.titleStmt.respStmt.persName.forename) {
+        forename = this.data.teiHeader.fileDesc.titleStmt.respStmt.persName.forename;
+      }
+
+      if (this.data.teiHeader.fileDesc.titleStmt.respStmt.persName.surname) {
+        surname = this.data.teiHeader.fileDesc.titleStmt.respStmt.persName.surname;
+      }
+
+      return [forename, surname].join(" ");
     },
 
     ...mapGetters(["activeComment"])

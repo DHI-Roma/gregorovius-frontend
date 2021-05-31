@@ -59,6 +59,7 @@ describe("PlacesDetail", () => {
         };
       }
     });
+    wrapper.vm.getItems = jest.fn();
 
     expect(wrapper).toBeTruthy();
 
@@ -87,6 +88,8 @@ describe("PlacesDetail", () => {
       }
     });
 
+    wrapper.vm.getItems = jest.fn();
+
     expect(wrapper.vm.authorityUri).toBe("http://www.geonames.org/3247449");
     expect(wrapper.find("#geonames-uri").exists()).toBeTruthy();
 
@@ -114,6 +117,8 @@ describe("PlacesDetail", () => {
       }
     });
 
+    wrapper.vm.getItems = jest.fn();
+
     expect(wrapper.vm.authorityUri).toBe("");
     expect(wrapper.find("#geonames-uri").exists()).toBeFalsy();
 
@@ -140,6 +145,8 @@ describe("PlacesDetail", () => {
         };
       }
     });
+
+    wrapper.vm.getItems = jest.fn();
 
     expect(wrapper.vm.properties.type).toBe("mountains");
 
@@ -179,6 +186,8 @@ describe("PlacesDetail", () => {
         };
       }
     });
+
+    wrapper.vm.getItems = jest.fn();
 
     expect(wrapper.vm.alternativeName).toBe("Cypern");
     expect(wrapper.find("#alternative-name").exists()).toBeTruthy();
