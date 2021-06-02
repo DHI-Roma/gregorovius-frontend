@@ -40,22 +40,12 @@
           </q-card-section>
           <q-separator dark />
         </q-card>
-        <q-card>
+        <q-card v-for="person in formerMembers" :key="person.id">
           <div class="row">
             <div class="self-center">
               <q-card-section>
-                <div class="text-h6">Dr. Wiebke Fastenrath Vinattieri</div>
-                <div class="text-secondary">(bis Februar 2019)</div>
-              </q-card-section>
-            </div>
-          </div>
-        </q-card>
-        <q-card>
-          <div class="row">
-            <div class="self-center">
-              <q-card-section>
-                <div class="text-h6">Eric Müller M. A.</div>
-                <div class="text-secondary">(bis Juni 2019)</div>
+                <div class="text-h6">{{ person.name }}</div>
+                <div class="text-secondary">(bis {{ person.until }})</div>
               </q-card-section>
             </div>
           </div>
@@ -81,39 +71,63 @@ export default {
           url: "http://dhi-roma.it/index.php?id=steinsiek"
         },
         {
-          id: "costea",
-          img: require("../statics/img/costea.jpg"),
-          name: "Theodor Costea M. A.",
-          role: "Wissenschaftlicher Mitarbeiter (DFG-Projekt)",
-          tel: "+49 (0)30 20370490",
-          mail: "costea@dhi-roma.it",
-          url: "http://dhi-roma.it/index.php?id=costea"
+          id: "ramazzotti",
+          img: require("../statics/img/ramazzotti.jpg"),
+          name: "Mariana Ramazzotti, M. A.",
+          role: "Wissenschaftliche Hilfskraft (DFG-Projekt)",
+          tel: "",
+          mail: "ramazzotti@dhi-roma.it",
+          url: "http://dhi-roma.it/index.php?id=mueller00&L=0"
         },
         {
-          id: "weiger",
-          img: require("../statics/img/weiger.jpg"),
-          name: "Dr. des. Katharina Weiger",
-          role: "Wissenschaftliche Mitarbeiterin (Stipendiatin Gerda Henkel Stiftung)",
-          tel: "+49 (0)7571 7572970",
-          mail: "weiger@dhi-roma.it",
-          url: "http://dhi-roma.it/index.php?id=2475"
+          id: "compton",
+          img: require("../statics/img/compton.jpg"),
+          name: "Marlene Compton, M. A.",
+          role: "Wissenschaftliche Hilfskraft (Gerda Henkel Stiftung)",
+          tel: "",
+          mail: "",
+          url: ""
         },
         {
-          id: "neuber",
-          img: require("../statics/img/neuber.jpg"),
-          name: "Frederike Neuber",
+          id: "pohl",
+          img: require("../statics/img/pohl.jpg"),
+          name: "Oliver Pohl, M. A.",
           role: "Werkauftrag",
           tel: "",
-          mail: ""
+          mail: "kontakt@wildegans-solutions.de",
+          url: ""
+        }
+      ],
+      formerMembers: [
+        {
+          id: "weiger",
+          name: "Dr. Katharina Weiger",
+          until: "Juli 2020"
         },
         {
           id: "stepken",
-          img: require("../statics/img/stepken.jpg"),
-          name: "Raphael Stepken B. A.",
-          role: "Wissenschaftliche Hilfskraft (DFG-Projekt)",
-          tel: "",
-          mail: "stepken@dhi-roma.it",
-          url: "http://dhi-roma.it/index.php?id=mueller0"
+          name: "Raphael Stepken, B. A.",
+          until: "Juli 2020"
+        },
+        {
+          id: "costea",
+          name: "Theodor Costea, M. A.",
+          until: "März 2020"
+        },
+        {
+          id: "mueller",
+          name: "Eric Müller, M. A.",
+          until: "Juni 2019"
+        },
+        {
+          id: "neuber",
+          name: "Dr. Frederike Neuber",
+          until: "September 2019"
+        },
+        {
+          id: "vinattieri",
+          name: "Dr. Wiebke Fastenrath Vinattieri",
+          until: "Februar 2019"
         }
       ]
     };
