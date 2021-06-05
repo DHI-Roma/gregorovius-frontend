@@ -32,10 +32,18 @@
                     <q-item-label>{{ props.row.properties.name.fullName }}</q-item-label>
                   </q-item-section>
                   <q-chip
+                    v-if="isOrganisation(props.row.properties.type)"
                     size="12px"
-                    :color="props.row.properties.type === 'org' ? 'blue-1' : 'orange-1'"
+                    color="blue-1"
                   >
                     {{ props.row.properties.type | formatPersonType }}
+                  </q-chip>
+                  <q-chip
+                    v-if="isPerson(props.row.properties.type)"
+                    size="12px"
+                    :color="getRoleClass(props.row.properties.role)"
+                  >
+                    {{ props.row.properties.role | formatPersonRole }}
                   </q-chip>
                 </q-item>
               </q-list>
@@ -48,17 +56,23 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
+import { QPage, QTable } from "quasar";
+
+import personService from "@/services/person-service";
+
 export default {
   name: "PersonsIndex",
+  components: {
+    QPage,
+    QTable
+  },
   filters: {
     formatPersonType(rawType) {
-      if (rawType === "org") {
-        return "Körperschaft";
-      }
-      if (rawType === "person") {
-        return "Person";
-      }
-      return rawType;
+      return personService.getPersonTypeTranslation(rawType);
+    },
+    formatPersonRole(rawRole) {
+      return personService.getPersonRoleTranslation(rawRole);
     }
   },
 
@@ -92,10 +106,21 @@ export default {
       return this.$store.getters.persons;
     }
   },
-
   async mounted() {
-    await this.$store.dispatch("loadFullNameIndexAction");
+    await this.loadFullNameIndexAction();
     this.loading = false;
+  },
+  methods: {
+    ...mapActions(["loadFullNameIndexAction"]),
+    isPerson(rawType) {
+      return rawType === "person";
+    },
+    isOrganisation(rawType) {
+      return rawType === "org";
+    },
+    getRoleClass(rawRole) {
+      return personService.getPersonRoleClass(rawRole);
+    }
   }
 };
 </script>
