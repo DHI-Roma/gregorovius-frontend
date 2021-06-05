@@ -14,8 +14,11 @@
               </div>
             </q-card-section>
             <q-card-section>
-              <q-chip v-if="roleName" id="role" :color="roleClass">
+              <q-chip v-if="roleName && isPerson" id="role" :color="roleClass">
                 {{ roleName }}
+              </q-chip>
+              <q-chip v-if="isOrganisation" id="role" color="blue-1">
+                Körperschaft
               </q-chip>
               <a v-if="data.person.idno" :href="authorityUri">
                 <q-chip color="blue-1" class="q-ml-none">
@@ -97,6 +100,12 @@ export default {
         return {};
       }
       return this.persons.find(person => person.id === this.entityId).properties;
+    },
+    isPerson() {
+      return this.properties.type === "person";
+    },
+    isOrganisation() {
+      return this.properties.type === "org";
     },
     roleName() {
       if (!this.persons.length) {

@@ -69,7 +69,7 @@ describe("PersonsDetail view", () => {
     wrapper.destroy();
   });
 
-  it("displays the role element", () => {
+  it("displays the role element when the entry is a person and not an organisation", () => {
     wrapper = shallowMount(PersonsDetail, {
       localVue,
       store,
@@ -84,6 +84,8 @@ describe("PersonsDetail view", () => {
     const targetRole = "Mythologische Figur";
 
     expect(wrapper.vm.roleName).toBe(targetRole);
+    expect(wrapper.vm.isPerson).toBeTruthy();
+    expect(wrapper.vm.isOrganisation).toBeFalsy();
     expect(roleElement.exists()).toBeTruthy();
     expect(roleElement.text()).toBe(targetRole);
 

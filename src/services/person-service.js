@@ -23,7 +23,8 @@ export const getPersonRoleClass = role => {
 export const getPersonTypeTranslation = personType => {
   switch (personType) {
     case "organisation":
-      return "Organisation";
+    case "org":
+      return "Körperschaft";
     case "person":
     default:
       return "Person";
@@ -33,6 +34,7 @@ export const getPersonTypeTranslation = personType => {
 export const getPersonTypeClass = personType => {
   switch (personType) {
     case "organisation":
+    case "org":
       return "blue-1";
     case "person":
     default:

@@ -19,7 +19,8 @@ describe("PersonService", () => {
     expect(personService.getPersonTypeTranslation(null)).toBe("Person");
     expect(personService.getPersonTypeTranslation("")).toBe("Person");
     expect(personService.getPersonTypeTranslation("person")).toBe("Person");
-    expect(personService.getPersonTypeTranslation("organisation")).toBe("Organisation");
+    expect(personService.getPersonTypeTranslation("organisation")).toBe("Körperschaft");
+    expect(personService.getPersonTypeTranslation("org")).toBe("Körperschaft");
   });
 
   it("gets the color class depending on the person type", () => {
@@ -27,5 +28,6 @@ describe("PersonService", () => {
     expect(personService.getPersonTypeClass("")).toBe("orange-1");
     expect(personService.getPersonTypeClass("person")).toBe("orange-1");
     expect(personService.getPersonTypeClass("organisation")).toBe("blue-1");
+    expect(personService.getPersonTypeClass("org")).toBe("blue-1");
   });
 });

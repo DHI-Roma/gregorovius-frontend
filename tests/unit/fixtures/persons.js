@@ -46,5 +46,21 @@ export const persons = [
         fullName: "Sindbad"
       }
     }
+  },
+  {
+    id: "ed_mg4_mp5_5lb",
+    entity: "persons",
+    properties: {
+      type: "org",
+      role: null,
+      name: {
+        surname: null,
+        forename: null,
+        simpleName: null,
+        roleName: null,
+        orgName: "Acta Sanctorum",
+        fullName: "Acta Sanctorum"
+      }
+    }
   }
 ];
