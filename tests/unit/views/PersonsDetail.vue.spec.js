@@ -52,4 +52,41 @@ describe("PersonsDetail view", () => {
 
     wrapper.destroy();
   });
+
+  it("can get the person properties", () => {
+    wrapper = shallowMount(PersonsDetail, {
+      localVue,
+      store,
+      router,
+      computed: {
+        entityId: () => "G001323"
+      }
+    });
+    wrapper.vm.getItems = jest.fn();
+
+    expect(wrapper.vm.properties.role).toBe("mythological");
+
+    wrapper.destroy();
+  });
+
+  it("displays the role element", () => {
+    wrapper = shallowMount(PersonsDetail, {
+      localVue,
+      store,
+      router,
+      computed: {
+        entityId: () => "G001323"
+      }
+    });
+    wrapper.vm.getItems = jest.fn();
+
+    const roleElement = wrapper.find("#role");
+    const targetRole = "Mythologische Figur";
+
+    expect(wrapper.vm.roleName).toBe(targetRole);
+    expect(roleElement.exists()).toBeTruthy();
+    expect(roleElement.text()).toBe(targetRole);
+
+    wrapper.destroy();
+  });
 });

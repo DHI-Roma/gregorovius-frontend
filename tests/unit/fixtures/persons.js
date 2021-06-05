@@ -4,12 +4,12 @@ export const persons = [
     entity: "persons",
     properties: {
       type: "person",
+      role: null,
       name: {
         surname: "Caesar",
         forename: "Gaius Julius",
         simpleName: null,
         roleName: null,
-        role: null,
         orgName: null,
         fullName: "Caesar, Gaius Julius"
       }
@@ -20,12 +20,12 @@ export const persons = [
     entity: "persons",
     properties: {
       type: "person",
+      role: "mythological",
       name: {
         surname: null,
         forename: null,
         simpleName: "Jupiter",
         roleName: null,
-        role: "mythological",
         orgName: null,
         fullName: "Jupiter"
       }
@@ -36,12 +36,12 @@ export const persons = [
     entity: "persons",
     properties: {
       type: "person",
+      role: "fictional",
       name: {
         surname: null,
         forename: null,
         simpleName: "Sindbad",
         roleName: null,
-        role: "fictional",
         orgName: null,
         fullName: "Sindbad"
       }

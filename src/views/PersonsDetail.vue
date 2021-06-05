@@ -14,18 +14,19 @@
               </div>
             </q-card-section>
             <q-card-section>
-              <div v-if="data.person.idno">
-                <a :href="authorityUri">
-                  <q-chip color="blue-1" class="q-ml-none">
-                    <q-avatar rounded font-size="11px" color="blue-5" class="text-white">
-                      GND
-                    </q-avatar>
-                    <div class="text-blue text-caption q-pl-sm">
-                      {{ authorityUri }}
-                    </div>
-                  </q-chip>
-                </a>
-              </div>
+              <q-chip v-if="roleName" id="role" :color="roleClass">
+                {{ roleName }}
+              </q-chip>
+              <a v-if="data.person.idno" :href="authorityUri">
+                <q-chip color="blue-1" class="q-ml-none">
+                  <q-avatar rounded font-size="11px" color="blue-5" class="text-white">
+                    GND
+                  </q-avatar>
+                  <div class="text-blue text-caption q-pl-sm">
+                    {{ authorityUri }}
+                  </div>
+                </q-chip>
+              </a>
             </q-card-section>
             <q-separator dark />
           </q-card>
@@ -46,17 +47,19 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 import MentionsTable from "@/components/MentionsTable";
 import { dataService } from "@/shared";
+import personService from "@/services/person-service";
 
-import { QCard, QCardSection, QPage, QSeparator, QSpinnerOval } from "quasar";
+import { QCard, QCardSection, QChip, QPage, QSeparator, QSpinnerOval } from "quasar";
 
 export default {
   name: "PersonsDetail",
   components: {
     QCard,
     QCardSection,
+    QChip,
     QPage,
     QSeparator,
     QSpinnerOval,
@@ -77,16 +80,32 @@ export default {
   },
 
   computed: {
+    ...mapGetters(["fullNameIndex", "persons"]),
     entityId() {
       return this.$route.params.id;
     },
     name() {
-      return this.$store.getters.fullNameIndex[this.$route.params.id];
+      return this.fullNameIndex[this.$route.params.id];
     },
     authorityUri() {
       return this.data.person.idno.length > 1
         ? this.data.person.idno[0]["#text"]
         : this.data.person.idno["#text"];
+    },
+    properties() {
+      if (!this.persons.length) {
+        return {};
+      }
+      return this.persons.find(person => person.id === this.entityId).properties;
+    },
+    roleName() {
+      if (!this.persons.length) {
+        return "";
+      }
+      return personService.getPersonRoleTranslation(this.properties.role);
+    },
+    roleClass() {
+      return personService.getPersonRoleClass(this.properties.role);
     }
   },
 
