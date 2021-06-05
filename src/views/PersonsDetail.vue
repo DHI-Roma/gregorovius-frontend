@@ -33,11 +33,7 @@
       </div>
       <div class="row justify-center">
         <div class="col-md-8 col-12 q-pb-xl q-gutter-y-lg">
-          <MentionsTable
-            :entity-id="this.$route.params.id"
-            :entity-name="name"
-            entity-type="persons"
-          />
+          <MentionsTable :entity-id="entityId" :entity-name="name" entity-type="persons" />
         </div>
       </div>
     </q-page>
@@ -54,9 +50,18 @@ import { mapActions } from "vuex";
 import MentionsTable from "@/components/MentionsTable";
 import { dataService } from "@/shared";
 
+import { QCard, QCardSection, QPage, QSeparator, QSpinnerOval } from "quasar";
+
 export default {
   name: "PersonsDetail",
-  components: { MentionsTable },
+  components: {
+    QCard,
+    QCardSection,
+    QPage,
+    QSeparator,
+    QSpinnerOval,
+    MentionsTable
+  },
   data() {
     return {
       data: {
@@ -72,6 +77,9 @@ export default {
   },
 
   computed: {
+    entityId() {
+      return this.$route.params.id;
+    },
     name() {
       return this.$store.getters.fullNameIndex[this.$route.params.id];
     },
