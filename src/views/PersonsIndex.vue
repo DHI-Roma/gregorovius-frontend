@@ -30,12 +30,14 @@
                 >
                   <q-item-section>
                     <q-item-label>{{ props.row.properties.name.fullName }}</q-item-label>
+                    <!--
                     <div
                       v-if="hasDifferentSimpleName(props.row)"
                       class="text-subtitle3 text-secondary"
                     >
                       {{ props.row.properties.name.simpleName }}
                     </div>
+                    -->
                     <div
                       v-if="hasAlternativeName(props.row)"
                       class="text-caption q-tm-sm text-secondary"
@@ -54,6 +56,17 @@
                         {{ props.row.properties.name.altSimpleName }}
                       </span>
                     </div>
+                    <!--
+                    <div
+                      v-if="props.row.properties.name.roleName"
+                      class="text-caption q-tm-sm text-secondary"
+                    >
+                      <span class="text-weight-bold">
+                        Rolle:
+                      </span>
+                      {{ props.row.properties.name.roleName }}
+                    </div>
+                    -->
                   </q-item-section>
                   <q-chip
                     v-if="isOrganisation(props.row.properties.type)"
