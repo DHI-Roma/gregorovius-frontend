@@ -42,9 +42,57 @@ export const getPersonTypeClass = personType => {
   }
 };
 
+export const getPersonAlternativeNameTypeTranslation = subType => {
+  switch (subType) {
+    case "birthname":
+      return "Geburtsname";
+    case "pseudonym":
+      return "Pseudonym";
+    default:
+      return "Alternativ";
+  }
+};
+
+export const hasDifferentSimpleName = person => {
+  if (!person.properties.name.simpleName) {
+    return false;
+  }
+  return person.properties.name.fullName !== person.properties.name.simpleName;
+};
+
+export const hasAlternativeName = person => {
+  return (
+    person.properties.name.altForename ||
+    person.properties.name.altSurname ||
+    person.properties.name.altSimpleName
+  );
+};
+
+export const getAlternativeFullName = person => {
+  let name = "";
+
+  if (person.properties.name.altSurname) {
+    name += person.properties.name.altSurname;
+  }
+
+  if (person.properties.name.altSurname && person.properties.name.altForename) {
+    name += ", ";
+  }
+
+  if (person.properties.name.altForename) {
+    name += person.properties.name.altForename;
+  }
+
+  return name;
+};
+
 export default {
   getPersonRoleTranslation,
   getPersonRoleClass,
   getPersonTypeTranslation,
-  getPersonTypeClass
+  getPersonTypeClass,
+  hasDifferentSimpleName,
+  hasAlternativeName,
+  getAlternativeFullName,
+  getPersonAlternativeNameTypeTranslation
 };
