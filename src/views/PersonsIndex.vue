@@ -30,6 +30,43 @@
                 >
                   <q-item-section>
                     <q-item-label>{{ props.row.properties.name.fullName }}</q-item-label>
+                    <!--
+                    <div
+                      v-if="hasDifferentSimpleName(props.row)"
+                      class="text-subtitle3 text-secondary"
+                    >
+                      {{ props.row.properties.name.simpleName }}
+                    </div>
+                    -->
+                    <div
+                      v-if="hasAlternativeName(props.row)"
+                      class="text-caption q-tm-sm text-secondary"
+                    >
+                      <span>
+                        <span class="text-weight-bold"
+                          >{{
+                            props.row.properties.name.altNameSubtype | formatAlternativeNameSubType
+                          }}:</span
+                        >
+                      </span>
+                      <span v-if="getAlternativeFullName(props.row)">
+                        {{ getAlternativeFullName(props.row) }}
+                      </span>
+                      <span v-if="props.row.properties.name.altSimpleName">
+                        {{ props.row.properties.name.altSimpleName }}
+                      </span>
+                    </div>
+                    <!--
+                    <div
+                      v-if="props.row.properties.name.roleName"
+                      class="text-caption q-tm-sm text-secondary"
+                    >
+                      <span class="text-weight-bold">
+                        Rolle:
+                      </span>
+                      {{ props.row.properties.name.roleName }}
+                    </div>
+                    -->
                   </q-item-section>
                   <q-chip
                     v-if="isOrganisation(props.row.properties.type)"
@@ -73,6 +110,9 @@ export default {
     },
     formatPersonRole(rawRole) {
       return personService.getPersonRoleTranslation(rawRole);
+    },
+    formatAlternativeNameSubType(subType) {
+      return personService.getPersonAlternativeNameTypeTranslation(subType);
     }
   },
 
@@ -90,10 +130,21 @@ export default {
           required: true,
           label: "Name",
           align: "left",
-          field: row =>
-            row.properties.name.orgName ||
-            row.properties.name.simpleName ||
-            row.properties.name.surname,
+          field: row => {
+            return [
+              row.properties.name.surname,
+              row.properties.name.forename,
+              row.properties.name.simpleName,
+              row.properties.name.roleName,
+              row.properties.name.orgName,
+              row.properties.name.fullName,
+              row.properties.name.altSurname,
+              row.properties.name.altForename,
+              row.properties.name.altSimpleName
+            ]
+              .filter(content => content)
+              .join(" ");
+          },
           sortable: true
         }
       ],
@@ -120,6 +171,15 @@ export default {
     },
     getRoleClass(rawRole) {
       return personService.getPersonRoleClass(rawRole);
+    },
+    hasDifferentSimpleName(row) {
+      return personService.hasDifferentSimpleName(row);
+    },
+    hasAlternativeName(row) {
+      return personService.hasAlternativeName(row);
+    },
+    getAlternativeFullName(row) {
+      return personService.getAlternativeFullName(row);
     }
   }
 };

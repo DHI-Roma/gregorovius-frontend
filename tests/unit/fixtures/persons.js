@@ -11,7 +11,11 @@ export const persons = [
         simpleName: null,
         roleName: null,
         orgName: null,
-        fullName: "Caesar, Gaius Julius"
+        fullName: "Caesar, Gaius Julius",
+        altNameSubtype: null,
+        altSurname: null,
+        altForename: null,
+        altSimpleName: null
       }
     }
   },
@@ -27,7 +31,11 @@ export const persons = [
         simpleName: "Jupiter",
         roleName: null,
         orgName: null,
-        fullName: "Jupiter"
+        fullName: "Jupiter",
+        altNameSubtype: null,
+        altSurname: null,
+        altForename: null,
+        altSimpleName: null
       }
     }
   },
@@ -43,7 +51,11 @@ export const persons = [
         simpleName: "Sindbad",
         roleName: null,
         orgName: null,
-        fullName: "Sindbad"
+        fullName: "Sindbad",
+        altNameSubtype: null,
+        altSurname: null,
+        altForename: null,
+        altSimpleName: null
       }
     }
   },
@@ -59,7 +71,51 @@ export const persons = [
         simpleName: null,
         roleName: null,
         orgName: "Acta Sanctorum",
-        fullName: "Acta Sanctorum"
+        fullName: "Acta Sanctorum",
+        altNameSubtype: null,
+        altSurname: null,
+        altForename: null,
+        altSimpleName: null
+      }
+    }
+  },
+  {
+    id: "ed_mym_3bz_z4b",
+    entity: "persons",
+    properties: {
+      type: "person",
+      role: null,
+      name: {
+        surname: null,
+        forename: null,
+        simpleName: "Abd el-Kader",
+        roleName: "Emir",
+        orgName: null,
+        fullName: "Abd el-Kader, Emir",
+        altNameSubtype: null,
+        altSurname: null,
+        altForename: null,
+        altSimpleName: null
+      }
+    }
+  },
+  {
+    id: "G001274",
+    entity: "persons",
+    properties: {
+      type: "person",
+      role: null,
+      name: {
+        surname: "Heyse",
+        forename: "Paul",
+        simpleName: null,
+        roleName: null,
+        orgName: null,
+        fullName: "Heyse, Paul",
+        altNameSubtype: "pseudonym",
+        altSurname: "Florentin",
+        altForename: "Theodor",
+        altSimpleName: null
       }
     }
   }

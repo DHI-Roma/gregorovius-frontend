@@ -12,6 +12,17 @@
               >
                 {{ data.person.birth }} – {{ data.person.death }}
               </div>
+              <div v-if="hasAlternativeName" class="text-caption q-tm-sm text-secondary">
+                <span>
+                  <span class="text-weight-bold">{{ alternativeNameType }}:</span>
+                </span>
+                <span v-if="alternativeFullName">
+                  {{ alternativeFullName }}
+                </span>
+                <span v-if="alternativeSimpleName">
+                  {{ alternativeSimpleName }}
+                </span>
+              </div>
             </q-card-section>
             <q-card-section>
               <q-chip v-if="roleName && isPerson" id="role" :color="roleClass">
@@ -95,11 +106,17 @@ export default {
         ? this.data.person.idno[0]["#text"]
         : this.data.person.idno["#text"];
     },
+    entity() {
+      if (!this.persons.length) {
+        return {};
+      }
+      return this.persons.find(person => person.id === this.entityId);
+    },
     properties() {
       if (!this.persons.length) {
         return {};
       }
-      return this.persons.find(person => person.id === this.entityId).properties;
+      return this.entity.properties;
     },
     isPerson() {
       return this.properties.type === "person";
@@ -115,6 +132,23 @@ export default {
     },
     roleClass() {
       return personService.getPersonRoleClass(this.properties.role);
+    },
+    alternativeNameType() {
+      return personService.getPersonAlternativeNameTypeTranslation(
+        this.properties.name.altNameType
+      );
+    },
+    hasAlternativeName() {
+      if (!this.persons.length) {
+        return false;
+      }
+      return personService.hasAlternativeName(this.entity);
+    },
+    alternativeFullName() {
+      return personService.getAlternativeFullName(this.entity);
+    },
+    alternativeSimpleName() {
+      return this.properties.name.altSimpleName;
     }
   },
 
