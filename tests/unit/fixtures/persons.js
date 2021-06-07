@@ -118,5 +118,25 @@ export const persons = [
         altSimpleName: null
       }
     }
+  },
+  {
+    id: "G001011",
+    entity: "persons",
+    properties: {
+      type: "person",
+      role: null,
+      name: {
+        surname: "Caetani Lovatelli",
+        forename: "Ersilia, Contessa",
+        simpleName: null,
+        roleName: null,
+        orgName: null,
+        fullName: "Caetani Lovatelli, Ersilia, Contessa",
+        altNameSubtype: null,
+        altSurname: null,
+        altForename: null,
+        altSimpleName: "Gaetani Lovatelli"
+      }
+    }
   }
 ];
