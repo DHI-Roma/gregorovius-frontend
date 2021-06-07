@@ -46,6 +46,11 @@
           </q-card>
         </div>
       </div>
+      <div v-if="correspondences.length" id="correspondences" class="row justify-center">
+        <div class="col-md-8 col-12 q-pb-xl q-gutter-y-lg">
+          <CorrespondenceTable :letters="correspondences"></CorrespondenceTable>
+        </div>
+      </div>
       <div class="row justify-center">
         <div class="col-md-8 col-12 q-pb-xl q-gutter-y-lg">
           <MentionsTable :entity-id="entityId" :entity-name="name" entity-type="persons" />
@@ -63,6 +68,7 @@
 <script>
 import { mapActions, mapGetters } from "vuex";
 import MentionsTable from "@/components/MentionsTable";
+import CorrespondenceTable from "@/components/CorrespondenceTable";
 import { dataService } from "@/shared";
 import personService from "@/services/person-service";
 
@@ -77,7 +83,8 @@ export default {
     QPage,
     QSeparator,
     QSpinnerOval,
-    MentionsTable
+    MentionsTable,
+    CorrespondenceTable
   },
   data() {
     return {
@@ -94,7 +101,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["fullNameIndex", "persons"]),
+    ...mapGetters(["fullNameIndex", "persons", "letters"]),
     entityId() {
       return this.$route.params.id;
     },
@@ -149,6 +156,16 @@ export default {
     },
     alternativeSimpleName() {
       return this.properties.name.altSimpleName;
+    },
+    correspondences() {
+      if (!this.letters.length) {
+        return [];
+      }
+      return this.letters.filter(
+        letter =>
+          letter.properties.sender.includes(this.entityId) ||
+          letter.properties.recipient.includes(this.entityId)
+      );
     }
   },
 

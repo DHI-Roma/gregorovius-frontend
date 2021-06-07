@@ -5,6 +5,7 @@ import { routes } from "@/router";
 
 import PersonsDetail from "@/views/PersonsDetail.vue";
 import { persons } from "../fixtures/persons";
+import { lettersResponse } from "../fixtures/letters-response";
 
 describe("PersonsDetail view", () => {
   let wrapper;
@@ -24,7 +25,8 @@ describe("PersonsDetail view", () => {
   beforeEach(() => {
     getters = {
       fullNameIndex: () => [],
-      persons: () => persons
+      persons: () => persons,
+      letters: () => lettersResponse
     };
 
     actions = {
@@ -88,6 +90,23 @@ describe("PersonsDetail view", () => {
     expect(wrapper.vm.isOrganisation).toBeFalsy();
     expect(roleElement.exists()).toBeTruthy();
     expect(roleElement.text()).toBe(targetRole);
+
+    wrapper.destroy();
+  });
+
+  it("displays a list of letters where the referenced person is a correspondent", () => {
+    wrapper = shallowMount(PersonsDetail, {
+      localVue,
+      store,
+      router,
+      computed: {
+        entityId: () => "G001011"
+      }
+    });
+    wrapper.vm.getItems = jest.fn();
+
+    expect(wrapper.vm.correspondences.length).toBe(2);
+    expect(wrapper.find("#correspondences").exists()).toBeTruthy();
 
     wrapper.destroy();
   });
