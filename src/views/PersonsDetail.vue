@@ -42,6 +42,9 @@
                 </q-chip>
               </a>
             </q-card-section>
+            <q-card-section v-if="data.person.note.length" id="note">
+              {{ data.person.note }}
+            </q-card-section>
             <q-separator dark />
           </q-card>
         </div>
@@ -93,7 +96,8 @@ export default {
           persName: "",
           birth: "",
           death: "",
-          idno: ""
+          idno: "",
+          note: ""
         }
       },
       loading: true
@@ -185,4 +189,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="stylus" scoped>
+#note
+  font-family: "IBMPlexSans"
+  line-height: 1.5
+  font-size: 14px
+</style>
