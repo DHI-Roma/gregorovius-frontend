@@ -138,5 +138,25 @@ export const persons = [
         altSimpleName: "Gaetani Lovatelli"
       }
     }
+  },
+  {
+    id: "G001337",
+    entity: "persons",
+    properties: {
+      type: "person",
+      role: null,
+      name: {
+        surname: "Klumpp",
+        forename: "Charlotte",
+        simpleName: null,
+        roleName: null,
+        orgName: null,
+        fullName: "Klumpp, Charlotte",
+        altNameSubtype: null,
+        altSurname: null,
+        altForename: null,
+        altSimpleName: null
+      }
+    }
   }
 ];

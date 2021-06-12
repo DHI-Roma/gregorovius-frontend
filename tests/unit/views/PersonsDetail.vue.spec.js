@@ -5,6 +5,7 @@ import { routes } from "@/router";
 
 import PersonsDetail from "@/views/PersonsDetail.vue";
 import { persons } from "../fixtures/persons";
+import { personWithNote } from "../fixtures/single-person";
 import { lettersResponse } from "../fixtures/letters-response";
 
 describe("PersonsDetail view", () => {
@@ -107,6 +108,36 @@ describe("PersonsDetail view", () => {
 
     expect(wrapper.vm.correspondences.length).toBe(2);
     expect(wrapper.find("#correspondences").exists()).toBeTruthy();
+
+    wrapper.destroy();
+  });
+
+  it("displays the note if it is available", () => {
+    const person = personWithNote;
+    const noteText = "Some additional information about the person";
+    person.note = noteText;
+
+    wrapper = shallowMount(PersonsDetail, {
+      localVue,
+      store,
+      router,
+      data: () => {
+        return {
+          data: {
+            person
+          }
+        };
+      },
+      computed: {
+        entityId: () => "G001337"
+      }
+    });
+    wrapper.vm.getItems = jest.fn();
+
+    const noteElement = wrapper.find("#note");
+
+    expect(noteElement.exists()).toBeTruthy();
+    expect(noteElement.text()).toBe(noteText);
 
     wrapper.destroy();
   });
