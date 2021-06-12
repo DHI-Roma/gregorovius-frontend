@@ -3,50 +3,7 @@
     <q-page v-show="!this.$store.getters.loading && loading == false" padding>
       <div class="row justify-center">
         <div class="col-md-8 col-12 q-py-xl q-gutter-y-lg">
-          <q-card class="q-pa-xl" flat>
-            <q-card-section>
-              <div class="text-h6">{{ name }}</div>
-              <div
-                v-if="data.person.birth || data.person.death"
-                class="text-subtitle3 text-secondary"
-              >
-                {{ data.person.birth }} – {{ data.person.death }}
-              </div>
-              <div v-if="hasAlternativeName" class="text-caption q-tm-sm text-secondary">
-                <span>
-                  <span class="text-weight-bold">{{ alternativeNameType }}:</span>
-                </span>
-                <span v-if="alternativeFullName">
-                  {{ alternativeFullName }}
-                </span>
-                <span v-if="alternativeSimpleName">
-                  {{ alternativeSimpleName }}
-                </span>
-              </div>
-            </q-card-section>
-            <q-card-section>
-              <q-chip v-if="roleName && isPerson" id="role" :color="roleClass">
-                {{ roleName }}
-              </q-chip>
-              <q-chip v-if="isOrganisation" id="role" color="blue-1">
-                Körperschaft
-              </q-chip>
-              <a v-if="data.person.idno" :href="authorityUri">
-                <q-chip color="blue-1" class="q-ml-none">
-                  <q-avatar rounded font-size="11px" color="blue-5" class="text-white">
-                    GND
-                  </q-avatar>
-                  <div class="text-blue text-caption q-pl-sm">
-                    {{ authorityUri }}
-                  </div>
-                </q-chip>
-              </a>
-            </q-card-section>
-            <q-card-section v-if="hasNote" id="note">
-              {{ data.person.note }}
-            </q-card-section>
-            <q-separator dark />
-          </q-card>
+          <PersonsTitle :person="data.person" :entity="entity"></PersonsTitle>
         </div>
       </div>
       <div v-if="correspondences.length" id="correspondences" class="row justify-center">
@@ -72,22 +29,19 @@
 import { mapActions, mapGetters } from "vuex";
 import MentionsTable from "@/components/MentionsTable";
 import CorrespondenceTable from "@/components/CorrespondenceTable";
+import PersonsTitle from "@/components/PersonsTitle.vue";
 import { dataService } from "@/shared";
-import personService from "@/services/person-service";
 
-import { QCard, QCardSection, QChip, QPage, QSeparator, QSpinnerOval } from "quasar";
+import { QPage, QSpinnerOval } from "quasar";
 
 export default {
   name: "PersonsDetail",
   components: {
-    QCard,
-    QCardSection,
-    QChip,
     QPage,
-    QSeparator,
     QSpinnerOval,
     MentionsTable,
-    CorrespondenceTable
+    CorrespondenceTable,
+    PersonsTitle
   },
   data() {
     return {
@@ -109,14 +63,6 @@ export default {
     entityId() {
       return this.$route.params.id;
     },
-    name() {
-      return this.fullNameIndex[this.$route.params.id];
-    },
-    authorityUri() {
-      return this.data.person.idno.length > 1
-        ? this.data.person.idno[0]["#text"]
-        : this.data.person.idno["#text"];
-    },
     entity() {
       if (!this.persons.length) {
         return {};
@@ -128,44 +74,6 @@ export default {
         return {};
       }
       return this.entity.properties;
-    },
-    isPerson() {
-      return this.properties.type === "person";
-    },
-    isOrganisation() {
-      return this.properties.type === "org";
-    },
-    roleName() {
-      if (!this.persons.length) {
-        return "";
-      }
-      return personService.getPersonRoleTranslation(this.properties.role);
-    },
-    roleClass() {
-      return personService.getPersonRoleClass(this.properties.role);
-    },
-    alternativeNameType() {
-      return personService.getPersonAlternativeNameTypeTranslation(
-        this.properties.name.altNameType
-      );
-    },
-    hasNote() {
-      if (!this.data.person.note) {
-        return false;
-      }
-      return true;
-    },
-    hasAlternativeName() {
-      if (!this.persons.length) {
-        return false;
-      }
-      return personService.hasAlternativeName(this.entity);
-    },
-    alternativeFullName() {
-      return personService.getAlternativeFullName(this.entity);
-    },
-    alternativeSimpleName() {
-      return this.properties.name.altSimpleName;
     },
     correspondences() {
       if (!this.letters.length) {
@@ -194,10 +102,3 @@ export default {
   }
 };
 </script>
-
-<style lang="stylus" scoped>
-#note
-  font-family: "IBMPlexSans"
-  line-height: 1.5
-  font-size: 14px
-</style>

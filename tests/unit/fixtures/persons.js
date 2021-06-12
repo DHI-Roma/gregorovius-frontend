@@ -158,5 +158,45 @@ export const persons = [
         altSimpleName: null
       }
     }
+  },
+  {
+    id: "G001215",
+    entity: "persons",
+    properties: {
+      type: "person",
+      role: null,
+      name: {
+        surname: "Grunelius",
+        forename: "Adelheid",
+        simpleName: null,
+        roleName: null,
+        orgName: null,
+        fullName: "Grunelius, Adelheid",
+        altNameSubtype: "birthname",
+        altSurname: null,
+        altForename: null,
+        altSimpleName: "Fecht"
+      }
+    }
+  },
+  {
+    id: "G001203",
+    entity: "persons",
+    properties: {
+      type: "person",
+      role: null,
+      name: {
+        surname: "Gregorovius",
+        forename: "Julius",
+        simpleName: null,
+        roleName: null,
+        orgName: null,
+        fullName: "Gregorovius, Julius",
+        altNameSubtype: null,
+        altSurname: null,
+        altForename: null,
+        altSimpleName: null
+      }
+    }
   }
 ];
