@@ -42,7 +42,7 @@
                 </q-chip>
               </a>
             </q-card-section>
-            <q-card-section v-if="data.person.note.length" id="note">
+            <q-card-section v-if="hasNote" id="note">
               {{ data.person.note }}
             </q-card-section>
             <q-separator dark />
@@ -148,6 +148,12 @@ export default {
       return personService.getPersonAlternativeNameTypeTranslation(
         this.properties.name.altNameType
       );
+    },
+    hasNote() {
+      if (!this.data.person.note) {
+        return false;
+      }
+      return true;
     },
     hasAlternativeName() {
       if (!this.persons.length) {
