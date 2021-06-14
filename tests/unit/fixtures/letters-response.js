@@ -570,8 +570,8 @@ export const lettersResponse = [
           "G000971",
           "G001012",
           "ed_onq_fvq_j4b",
-          "G001215",
-          "G001203",
+          "G001215", // fabricated
+          "G001203 G001215",
           "G001111",
           "G001109",
           "G000494",

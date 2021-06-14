@@ -21,7 +21,8 @@ describe("CommentIcon", () => {
           reference: "This is the original text"
         };
       }
-    }
+    };
+
     actions = {
       setActiveComment: jest.fn()
     };
@@ -36,8 +37,8 @@ describe("CommentIcon", () => {
       localVue,
       store,
       propsData: {
-        commentId: 'comment_id',
-        commentText: "Some comment text",
+        commentId: "comment_id",
+        commentText: "Some comment text"
       }
     });
 

@@ -148,9 +148,18 @@
 <xsl:template match="tei:persName | tei:orgName">
     <xsl:choose>
         <xsl:when test="@key">
-            <a class="g-entity-link" v-on:click="$router.push({{ name: 'Person', params: {{ id: '{@key}' }} }})">
-                <xsl:apply-templates/>
-            </a>
+            <xsl:choose>
+                <xsl:when test="contains(@key, ' ')">
+                    <a class="g-entity-link" v-on:click="$router.push({{ name: 'Personen (mehrfach)', query: {{ ids: '{@key}'.split(' ').join(',') }} }})">
+                        <xsl:apply-templates/>
+                    </a>
+                </xsl:when>
+                <xsl:otherwise>
+                    <a class="g-entity-link" v-on:click="$router.push({{ name: 'Person', params: {{ id: '{@key}' }} }})">
+                        <xsl:apply-templates/>
+                    </a>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:when>
         <xsl:otherwise>
             <xsl:apply-templates/>
