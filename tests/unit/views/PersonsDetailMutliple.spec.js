@@ -40,7 +40,7 @@ describe("PersonsDetailMultiple", () => {
       getters
     });
 
-    service.dataService.getEntity = jest.fn();
+    service.dataService.getEntity = jest.fn(() => Promise.resolve({ data: { person: {} } }));
   });
   it("creates the component", () => {
     wrapper = shallowMount(PersonsDetailMultiple, {

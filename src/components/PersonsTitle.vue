@@ -1,7 +1,16 @@
 <template>
   <q-card :class="wrapperClass" flat>
     <q-card-section>
-      <div :class="titleClass">{{ name }}</div>
+      <div :class="titleClass">
+        <a
+          v-if="isList"
+          class="cursor-pointer"
+          @click="$router.push({ name: 'Person', params: { id: entity.id } })"
+        >
+          {{ name }}
+        </a>
+        <span v-else>{{ name }}</span>
+      </div>
       <div v-if="person.birth || person.death" class="text-subtitle3 text-secondary">
         {{ person.birth }} – {{ person.death }}
       </div>

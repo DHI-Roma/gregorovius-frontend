@@ -4,14 +4,14 @@
       <div class="row justify-center">
         <div class="col-md-8 col-12 q-py-xl q-gutter-y-lg">
           <q-card class="q-pa-xl" flat>
-            <q-card-section>
+            <q-card-section v-if="personsData.length === entities.length">
               <div class="text-h6">
                 Mehrfache Indizierung von Personen
               </div>
               <div v-for="(entity, index) in entities" :key="entity.id">
                 <PersonsTitle
                   :entity="entity"
-                  :person="getItem(entity.id)"
+                  :person="getPersonById(entity.id)"
                   :is-list="true"
                 ></PersonsTitle>
                 <q-separator v-if="index < entities.length - 1" spaced></q-separator>
@@ -86,6 +86,11 @@ export default {
     if (!this.persons.length) {
       await this.loadFullNameIndexAction();
     }
+    this.entityIds.forEach(entityId => {
+      this.getItem(entityId).then(data => {
+        this.personsData.push(data.person);
+      });
+    });
   },
 
   methods: {
@@ -93,6 +98,9 @@ export default {
     async getItem(entityId) {
       const data = await dataService.getEntity("persons", entityId, "json");
       return data;
+    },
+    getPersonById(entityId) {
+      return this.personsData.find(person => person["@xml:id"] === entityId);
     }
   }
 };
