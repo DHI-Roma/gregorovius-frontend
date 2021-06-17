@@ -204,18 +204,20 @@ export default {
         return "";
       }
 
-      let forename = "";
-      let surname = "";
+      let editorName = "";
 
-      if (this.data.teiHeader.fileDesc.titleStmt.respStmt.persName.forename) {
-        forename = this.data.teiHeader.fileDesc.titleStmt.respStmt.persName.forename;
+      if (Array.isArray(this.data.teiHeader.fileDesc.titleStmt.respStmt)) {
+        const editors = this.data.teiHeader.fileDesc.titleStmt.respStmt.map(editor =>
+          this.getEditorName(editor)
+        );
+        const lastEditor = editors.pop();
+
+        editorName = editors.join(", ") + " und " + lastEditor;
+      } else {
+        editorName = this.getEditorName(this.data.teiHeader.fileDesc.titleStmt.respStmt);
       }
 
-      if (this.data.teiHeader.fileDesc.titleStmt.respStmt.persName.surname) {
-        surname = this.data.teiHeader.fileDesc.titleStmt.respStmt.persName.surname;
-      }
-
-      return [forename, surname].join(" ");
+      return editorName;
     },
 
     ...mapGetters(["activeComment"])
@@ -328,6 +330,20 @@ export default {
       const commentUpdate = { ...this.activeComment };
       commentUpdate.offsetTop = activeCommentReference.offsetTop;
       this.$store.dispatch("setActiveComment", commentUpdate);
+    },
+    getEditorName(editor) {
+      let forename = "";
+      let surname = "";
+
+      if (editor.persName.forename) {
+        forename = editor.persName.forename;
+      }
+
+      if (editor.persName.surname) {
+        surname = editor.persName.surname;
+      }
+
+      return [forename, surname].join(" ");
     }
   }
 };

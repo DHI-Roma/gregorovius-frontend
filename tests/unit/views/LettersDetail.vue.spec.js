@@ -116,6 +116,8 @@ describe("LettersDetail", () => {
           letterId: () => "G000001"
         }
       });
+
+      wrapper.vm.getItems = jest.fn();
     });
 
     afterEach(() => {
@@ -161,6 +163,8 @@ describe("LettersDetail", () => {
           letterId: () => "G000001"
         }
       });
+
+      wrapper.vm.getItems = jest.fn();
     });
 
     afterEach(() => {
@@ -207,6 +211,8 @@ describe("LettersDetail", () => {
           letterId: () => "G000001"
         }
       });
+
+      wrapper.vm.getItems = jest.fn();
     });
 
     afterEach(() => {
@@ -217,10 +223,78 @@ describe("LettersDetail", () => {
       expect(wrapper.vm.editor).toBe("Angela Steinsiek");
       expect(wrapper.find("#editor").exists).toBeTruthy();
     });
+  });
 
-    it("shows the name of the responsible editors", () => {
+  describe("Responsible statement", () => {
+    it("shows the name of one responsible editor", () => {
+      wrapper = shallowMount(LettersDetail, {
+        localVue,
+        store,
+        router,
+        data() {
+          return {
+            data: {
+              teiHeader: itemDataRegOneAbstract.teiHeader
+            },
+            loading: false
+          };
+        },
+        computed: {
+          letterId: () => "G000001"
+        }
+      });
+
+      wrapper.vm.getItems = jest.fn();
+
       expect(wrapper.vm.responsible).toBe("Theodor Costea");
       expect(wrapper.find("#responsible").exists).toBeTruthy();
+
+      wrapper.destroy();
+    });
+
+    it("shows the name of multiple responsible editors", () => {
+      const teiHeader = itemDataRegOneAbstract.teiHeader;
+
+      const editor1 = {
+        persName: { surname: "Einstein", forename: "Albert" },
+        resp: { note: { "@type": "remarkResponsibility", "#text": "Mitarbeit" } }
+      };
+
+      const editor2 = {
+        persName: { surname: "Newton", forename: "Isaac" },
+        resp: { note: { "@type": "remarkResponsibility", "#text": "Mitarbeit" } }
+      };
+
+      const editor3 = {
+        persName: { surname: "Tesla", forename: "Nikola" },
+        resp: { note: { "@type": "remarkResponsibility", "#text": "Mitarbeit" } }
+      };
+
+      teiHeader.fileDesc.titleStmt.respStmt = [editor1, editor2, editor3];
+
+      wrapper = shallowMount(LettersDetail, {
+        localVue,
+        store,
+        router,
+        data() {
+          return {
+            data: {
+              teiHeader
+            },
+            loading: false
+          };
+        },
+        computed: {
+          letterId: () => "G000001"
+        }
+      });
+
+      wrapper.vm.getItems = jest.fn();
+
+      expect(wrapper.vm.responsible).toBe("Albert Einstein, Isaac Newton und Nikola Tesla");
+      expect(wrapper.find("#responsible").exists).toBeTruthy();
+
+      wrapper.destroy();
     });
   });
 });
