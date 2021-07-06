@@ -8,14 +8,18 @@
               <q-input
                 v-model="searchInput"
                 label="Volltextsuche"
-                debounce="300"
+                debounce="550"
                 outlined
                 @input="getSearchResults()"
+                @keyup.enter="getSearchResults()"
               >
                 <template v-slot:append>
                   <q-icon name="search" />
                 </template>
               </q-input>
+              <div v-if="phraseSearchHint" id="phrase-search-hint" class="text-caption text-grey-8">
+                {{ phraseSearchHint }}
+              </div>
             </div>
             <multiple-select-auto-complete
               label="Empfänger"
@@ -238,6 +242,19 @@ export default {
         }
       });
       return [...new Set(years)].filter(year => year !== undefined).sort();
+    },
+    phraseSearchHint() {
+      const quoteCount = (this.searchInput.match(/"/g) || []).length;
+
+      if (quoteCount === 0) {
+        return "";
+      }
+
+      if (quoteCount % 2 === 1) {
+        return `Ungerade Anzahl an Anführungszeichen (") entdeckt. Möchten Sie eine Phrasensuche auszuführen?`;
+      }
+
+      return "Phrasensuche aktiviert";
     }
   },
   watch: {

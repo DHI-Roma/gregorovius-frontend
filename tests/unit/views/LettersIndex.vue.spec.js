@@ -1,4 +1,5 @@
 import { shallowMount, createLocalVue } from "@vue/test-utils";
+import Vue from "vue";
 import * as Vuex from "vuex";
 import VueRouter from "vue-router";
 import { routes } from "@/router";
@@ -29,36 +30,60 @@ describe("LettersIndex", () => {
     service.dataService.getEntities = jest.fn();
   });
 
+  getters = {
+    letters: () => lettersResponse,
+    fullNameIndex: () => fullNameIndex,
+    selectedRecipients: () => [],
+    selectedPlaceSent: () => "",
+    selectedPlaceReceived: () => "",
+    selectedYears: () => []
+  };
+
+  actions = {
+    loadFullNameIndexAction: jest.fn(),
+    setSelectedAction: jest.fn()
+  };
+
+  store = new Vuex.Store({
+    actions,
+    getters
+  });
+
   afterEach(() => {
     wrapper.destroy();
   });
 
   it("renders the component", () => {
-    getters = {
-      letters: () => lettersResponse,
-      fullNameIndex: () => fullNameIndex,
-      selectedRecipients: () => [],
-      selectedPlaceSent: () => "",
-      selectedPlaceReceived: () => "",
-      selectedYears: () => []
-    };
-
-    actions = {
-      loadFullNameIndexAction: jest.fn(),
-      setSelectedAction: jest.fn()
-    };
-
-    store = new Vuex.Store({
-      actions,
-      getters
-    });
-
     wrapper = shallowMount(LettersIndex, {
       localVue,
       store,
       router
     });
 
+    wrapper.vm.getItems = jest.fn();
+    wrapper.vm.getSearchResults = jest.fn();
+
     expect(wrapper).toBeTruthy();
+  });
+
+  it("checks whether to show a phrase search hint", async () => {
+    wrapper = shallowMount(LettersIndex, {
+      localVue,
+      store,
+      router
+    });
+
+    wrapper.vm.getItems = jest.fn();
+    wrapper.vm.getSearchResults = jest.fn();
+
+    expect(wrapper.find("#phrase-search-hint").exists()).toBeFalsy();
+
+    wrapper.vm.searchInput = `"asdf`;
+    await Vue.nextTick();
+    expect(wrapper.find("#phrase-search-hint").exists()).toBeTruthy();
+
+    wrapper.vm.searchInput = `"asdf"`;
+    await Vue.nextTick();
+    expect(wrapper.find("#phrase-search-hint").exists()).toBeTruthy();
   });
 });
