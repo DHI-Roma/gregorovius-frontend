@@ -7,7 +7,6 @@
           <q-tab label="Werkregister Gregorovius" name="wgr" />
           <q-tab label="Übersetzungen" name="ueb" />
           <q-tab label="Werke anderer Autoren" name="waa" />
-          <q-tab label="Zeitgenössische Quellen" name="zgq" />
           <q-tab label="Sekundärliteratur" name="skl" />
         </q-tabs>
         <q-separator />
@@ -20,9 +19,6 @@
           </q-tab-panel>
           <q-tab-panel name="waa">
             <works-index-table type="othersMain" />
-          </q-tab-panel>
-          <q-tab-panel name="zgq">
-            <works-index-table type="contemporarySources" />
           </q-tab-panel>
           <q-tab-panel name="skl">
             <works-index-table type="secondary" />
