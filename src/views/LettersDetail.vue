@@ -38,6 +38,8 @@
                 </div>
               </q-tab-panel>
             </q-tab-panels>
+
+            <div v-if="citation" class="text-caption q-tm-sm text-secondary">{{ citation }}</div>
           </q-card>
         </div>
       </div>
@@ -88,6 +90,7 @@ import LettersText from "@/components/LettersText.vue";
 import Comment from "@/components/Comment.vue";
 import axios from "axios";
 import { dataService } from "@/shared";
+import letterService from "@/services/letter-service";
 import { API } from "@/shared/config";
 import {
   QCard,
@@ -143,19 +146,11 @@ export default {
     letterId() {
       return this.$route.params.id;
     },
-    // Splits the title and returns the first part.
     titleMain() {
-      const title = this.data.teiHeader.fileDesc.titleStmt.title.replace(/[\n ]+/g, " ");
-      return title.split(/\. (?=([A-Z][a-zà-ý]*|St\.)( [a-zà-ý]*)?( [A-Z][a-zà-ý]*)?,)/)[0];
+      return letterService.getTitle(this.data);
     },
-    // Splits the title and returns the second part.
-    // Is different than titleMain because of lookbehind limitations.
     titleSecondary() {
-      const title = this.data.teiHeader.fileDesc.titleStmt.title.replace(/[\n ]+/g, " ");
-      const secondPart = title.split(
-        / .?.? ?[A-Z][a-zà-ý)]*( [a-zà-ý]*)?( [A-Z][a-zà-ý]*)?(-[A-Z][-a-zà-ý]*)?(\(\?\))?\./
-      );
-      return secondPart[secondPart.length - 1];
+      return letterService.getSecondaryTitle(this.data);
     },
     activeComment() {
       return this.$store.getters.activeComment;
@@ -178,46 +173,18 @@ export default {
         return "";
       }
 
-      if (!this.data.teiHeader.fileDesc.titleStmt.editor) {
-        return "";
-      }
-
-      let forename = "";
-      let surname = "";
-
-      if (this.data.teiHeader.fileDesc.titleStmt.editor.persName.forename) {
-        forename = this.data.teiHeader.fileDesc.titleStmt.editor.persName.forename;
-      }
-
-      if (this.data.teiHeader.fileDesc.titleStmt.editor.persName.surname) {
-        surname = this.data.teiHeader.fileDesc.titleStmt.editor.persName.surname;
-      }
-
-      return [forename, surname].join(" ");
+      return letterService.getEditor(this.data);
     },
     responsible() {
       if (!FG_03_03_SHOULD_DISPLAY_EDITOR) {
         return "";
       }
 
-      if (!this.data.teiHeader.fileDesc.titleStmt.respStmt) {
-        return "";
-      }
+      return letterService.getResponsible(this.data);
+    },
 
-      let editorName = "";
-
-      if (Array.isArray(this.data.teiHeader.fileDesc.titleStmt.respStmt)) {
-        const editors = this.data.teiHeader.fileDesc.titleStmt.respStmt.map(editor =>
-          this.getEditorName(editor)
-        );
-        const lastEditor = editors.pop();
-
-        editorName = editors.join(", ") + " und " + lastEditor;
-      } else {
-        editorName = this.getEditorName(this.data.teiHeader.fileDesc.titleStmt.respStmt);
-      }
-
-      return editorName;
+    citation() {
+      return letterService.getCitationRecommendation(this.data, window.location);
     },
 
     ...mapGetters(["activeComment"])
@@ -330,20 +297,6 @@ export default {
       const commentUpdate = { ...this.activeComment };
       commentUpdate.offsetTop = activeCommentReference.offsetTop;
       this.$store.dispatch("setActiveComment", commentUpdate);
-    },
-    getEditorName(editor) {
-      let forename = "";
-      let surname = "";
-
-      if (editor.persName.forename) {
-        forename = editor.persName.forename;
-      }
-
-      if (editor.persName.surname) {
-        surname = editor.persName.surname;
-      }
-
-      return [forename, surname].join(" ");
     }
   }
 };
