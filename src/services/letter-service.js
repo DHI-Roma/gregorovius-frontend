@@ -55,6 +55,18 @@ const getResponsible = data => {
   return editorName;
 };
 
+const getResponsibleList = data => {
+  if (!data.teiHeader.fileDesc.titleStmt.respStmt) {
+    return [];
+  }
+
+  if (Array.isArray(data.teiHeader.fileDesc.titleStmt.respStmt)) {
+    return data.teiHeader.fileDesc.titleStmt.respStmt.map(editor => getEditorName(editor));
+  }
+
+  return [getEditorName(data.teiHeader.fileDesc.titleStmt.respStmt)];
+};
+
 const getEditorName = editor => {
   let forename = "";
   let surname = "";
@@ -92,5 +104,6 @@ export default {
   getSecondaryTitle,
   getEditor,
   getResponsible,
+  getResponsibleList,
   getCitationRecommendation
 };
