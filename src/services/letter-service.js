@@ -76,11 +76,15 @@ const getCitationRecommendation = (data, url) => {
   const editor = getEditor(data);
   const responsible = getResponsible(data);
 
-  return (
-    `${title}. ${secondaryTitle}. In: ${EDITION_NAME}` +
-    `, hrsg. von ${editor} unter Mitarbeit von ${responsible}. ${EDITION_INSTITUTION}, ` +
-    `URL: ${url}`
-  );
+  let recommendation = `${title}. ${secondaryTitle}. In: ${EDITION_NAME}` + `, Hrgs. von ${editor}`;
+
+  if (responsible) {
+    recommendation += `unter Mitarbeit von ${responsible}`;
+  }
+
+  recommendation += `. ${EDITION_INSTITUTION} 2017-2023. URL: `;
+
+  return recommendation;
 };
 
 export default {

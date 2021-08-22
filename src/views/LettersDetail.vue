@@ -38,8 +38,6 @@
                 </div>
               </q-tab-panel>
             </q-tab-panels>
-
-            <div v-if="citation" class="text-caption q-tm-sm text-secondary">{{ citation }}</div>
           </q-card>
         </div>
       </div>
@@ -70,6 +68,15 @@
                 <Comment />
               </template>
             </q-splitter>
+          </div>
+        </q-card>
+      </div>
+      <div class="row justify-center">
+        <q-card class="col-md-8 col-12 q-pa-xl q-mb-xl" bordered flat>
+          <strong>Zitierhinweis</strong>
+          <div>
+            {{ citation }}
+            <a :href="location">{{ location }}</a>
           </div>
         </q-card>
       </div>
@@ -184,7 +191,11 @@ export default {
     },
 
     citation() {
-      return letterService.getCitationRecommendation(this.data, window.location);
+      return letterService.getCitationRecommendation(this.data);
+    },
+
+    location() {
+      return window.location;
     },
 
     ...mapGetters(["activeComment"])
