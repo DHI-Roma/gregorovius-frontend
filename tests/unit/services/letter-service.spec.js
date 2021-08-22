@@ -74,7 +74,7 @@ fdescribe("Citation recommendation", () => {
     const recommendation =
       "Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 16. und 22. Dezember 1860. " +
       "In: Ferdinand Gregorovius. Poesie und Wissenschaft. Gesammelte deutsche und italienische Briefe. Digitale Edition, " +
-      "Hrsg. von Angela Steinsiek, Isaac Newton und Nikola Tesla. " +
+      "Hrsg. von Angela Steinsiek. " +
       "Deutsches Historisches Institut in Rom 2017-2023. URL: ";
 
     expect(letterService.getCitationRecommendation(teiHeaderFixture)).toBe(recommendation);
