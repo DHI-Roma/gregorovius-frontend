@@ -74,10 +74,17 @@
       <div class="row justify-center">
         <q-card class="col-md-8 col-12 q-pa-xl q-mb-xl" bordered flat>
           <strong>Zitierhinweis</strong>
-          <div>
+          <div class="q-mt-sm">
             {{ citation }}
             <a :href="location">{{ location }}</a>
           </div>
+          <q-btn
+            class="q-mt-sm"
+            icon="content_paste"
+            color="secondary"
+            :label="copyCitationLabel"
+            @click="copyCitation">
+          </q-btn>
         </q-card>
       </div>
     </q-page>
@@ -100,6 +107,7 @@ import { dataService } from "@/shared";
 import letterService from "@/services/letter-service";
 import { API } from "@/shared/config";
 import {
+  copyToClipboard,
   QCard,
   QPage,
   QBtn,
@@ -146,7 +154,8 @@ export default {
       msDesc: "",
       supplement: "",
       physDesc: "",
-      splitterModel: SPLITTER_SIZE_START
+      splitterModel: SPLITTER_SIZE_START,
+      copyCitationLabel: "kopieren"
     };
   },
   computed: {
@@ -308,6 +317,17 @@ export default {
       const commentUpdate = { ...this.activeComment };
       commentUpdate.offsetTop = activeCommentReference.offsetTop;
       this.$store.dispatch("setActiveComment", commentUpdate);
+    },
+    copyCitation() {
+      const citation = this.citation + this.location;
+      copyToClipboard(citation)
+        .then(() => {
+          this.copyCitationLabel = "kopiert";
+          setTimeout(() => {
+            this.copyCitationLabel = "kopieren";
+          }, 3000);
+        })
+        .catch(() => console.log("Something went wrong while copying to clipboard."));
     }
   }
 };
