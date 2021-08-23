@@ -70,7 +70,7 @@ const getEditorName = editor => {
   return [forename, surname].join(" ");
 };
 
-const getCitationRecommendation = (data, url) => {
+const getCitationRecommendation = data => {
   const title = getTitle(data);
   const secondaryTitle = getSecondaryTitle(data);
   const editor = getEditor(data);
