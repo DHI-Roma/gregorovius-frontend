@@ -77,15 +77,15 @@
             Zitierhinweis:
             {{ citation }}
             <a :href="location">{{ location }}</a>
+            <q-btn
+              class="q-ml-sm"
+              icon="content_paste"
+              color="secondary"
+              size="xs"
+              :label="copyCitationLabel"
+              @click="copyCitation">
+            </q-btn>
           </div>
-          <q-btn
-            class="q-tm-sm"
-            icon="content_paste"
-            color="secondary"
-            size="sm"
-            :label="copyCitationLabel"
-            @click="copyCitation">
-          </q-btn>
         </q-card>
       </div>
     </q-page>
