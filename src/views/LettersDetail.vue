@@ -73,15 +73,16 @@
       </div>
       <div class="row justify-center">
         <q-card class="col-md-8 col-12 q-pa-xl q-mb-xl" bordered flat>
-          <strong>Zitierhinweis</strong>
-          <div class="q-mt-sm">
+          <div class="text-caption q-tm-sm text-secondary">
+            Zitierhinweis:
             {{ citation }}
             <a :href="location">{{ location }}</a>
           </div>
           <q-btn
-            class="q-mt-sm"
+            class="q-tm-sm"
             icon="content_paste"
             color="secondary"
+            size="sm"
             :label="copyCitationLabel"
             @click="copyCitation">
           </q-btn>
