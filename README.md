@@ -14,6 +14,12 @@ npm install
 
 to install all required dependencies.
 
+Copy the `env.dist.js` to `env.js` and change the contents if necessary.
+
+```shell
+cp env.dist.js env.js
+```
+
 To compile and hot-reload for development run
 
 ```shell

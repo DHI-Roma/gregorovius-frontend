@@ -33,7 +33,7 @@
 import VRuntimeTemplate from "v-runtime-template";
 import { dataService } from "@/shared";
 import MentionsTable from "@/components/MentionsTable";
-import { API } from "@/shared/config";
+import { API } from "../../env";
 
 export default {
   name: "PersonsDetail",

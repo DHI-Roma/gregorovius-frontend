@@ -83,7 +83,8 @@
               color="secondary"
               size="xs"
               :label="copyCitationLabel"
-              @click="copyCitation">
+              @click="copyCitation"
+            >
             </q-btn>
           </div>
         </q-card>
@@ -106,7 +107,7 @@ import Comment from "@/components/Comment.vue";
 import axios from "axios";
 import { dataService } from "@/shared";
 import letterService from "@/services/letter-service";
-import { API } from "@/shared/config";
+import { API } from "../../env";
 import {
   copyToClipboard,
   QCard,
@@ -303,7 +304,7 @@ export default {
     openUrl(url) {
       url ? window.open(url) : null;
     },
-    onSeparatorChange(value) {
+    onSeparatorChange() {
       this.updateCommentPosition();
     },
     updateCommentPosition() {
