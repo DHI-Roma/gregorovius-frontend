@@ -9,11 +9,11 @@ export const letterIndexItem = {
     mentioned: {
       persons: ["G067651", "G001643", "G001645"],
       places: ["G000646", "ed_hqc_lrv_gmb", "G000860"],
-      works: ["G004289", "G003476"],
+      works: ["G004289", "G003476"]
     },
     place: {
       received: "G000636",
-      sent: "G000763",
+      sent: "G000763"
     },
     resp: ["Steinsiek", "Costea"],
     sender: ["G001200"],
