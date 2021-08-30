@@ -73,18 +73,20 @@
       </div>
       <div class="row justify-center">
         <q-card class="col-md-8 col-12 q-pa-xl q-mb-xl" bordered flat>
-          <strong>Zitierhinweis</strong>
-          <div class="q-mt-sm">
+          <div class="text-caption q-tm-sm text-secondary">
+            Zitierhinweis:
             {{ citation }}
             <a :href="location">{{ location }}</a>
+            <q-btn
+              class="q-ml-sm"
+              icon="content_paste"
+              color="secondary"
+              size="xs"
+              :label="copyCitationLabel"
+              @click="copyCitation"
+            >
+            </q-btn>
           </div>
-          <q-btn
-            class="q-mt-sm"
-            icon="content_paste"
-            color="secondary"
-            :label="copyCitationLabel"
-            @click="copyCitation">
-          </q-btn>
         </q-card>
       </div>
     </q-page>
@@ -106,7 +108,7 @@ import axios from "axios";
 import { dataService } from "@/shared";
 import letterService from "@/services/letter-service";
 import metaService from "@/services/meta-service";
-import { API } from "@/shared/config";
+import { API } from "../../env";
 import {
   copyToClipboard,
   QCard,
@@ -307,7 +309,7 @@ export default {
     openUrl(url) {
       url ? window.open(url) : null;
     },
-    onSeparatorChange(value) {
+    onSeparatorChange() {
       this.updateCommentPosition();
     },
     updateCommentPosition() {
