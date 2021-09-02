@@ -107,6 +107,7 @@ import Comment from "@/components/Comment.vue";
 import axios from "axios";
 import { dataService } from "@/shared";
 import letterService from "@/services/letter-service";
+import metaService from "@/services/meta-service";
 import { API } from "../../env";
 import {
   copyToClipboard,
@@ -235,6 +236,10 @@ export default {
       if (!this.hasAbstracts()) {
         this.tab = TAB_TEXTGRUNDLAGE;
       }
+
+      metaService.setMetaTitle(this.titleMain + ". " + this.titleSecondary);
+      metaService.setMetaAuthors([this.editor, ...letterService.getResponsibleList(this.data)]);
+      metaService.refreshZotero();
 
       if (this.$route.params.commentId) {
         const commentReference = document.querySelector(
