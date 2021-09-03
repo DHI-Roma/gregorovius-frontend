@@ -1,5 +1,5 @@
 <template>
-  <q-card :class="wrapperClass" flat>
+  <q-card v-if="properties" :class="wrapperClass" flat>
     <q-card-section>
       <div :class="titleClass">
         <a

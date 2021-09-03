@@ -13,7 +13,7 @@
       </div>
       <div class="row justify-center">
         <div class="col-md-8 col-12 q-pb-xl q-gutter-y-lg">
-          <MentionsTable :entity-id="entityId" :entity-name="name" entity-type="persons" />
+          <MentionsTable :entity-id="entityId" :entity-name="entityName" entity-type="persons" />
         </div>
       </div>
     </q-page>
@@ -54,7 +54,8 @@ export default {
           note: ""
         }
       },
-      loading: true
+      loading: true,
+      entityName: "persons"
     };
   },
 
