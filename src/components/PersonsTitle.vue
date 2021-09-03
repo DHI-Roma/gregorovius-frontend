@@ -120,6 +120,14 @@ export default {
       return personService.getPersonRoleClass(this.properties.role);
     },
     alternativeNameType() {
+      const subTypeName = personService.getPersonAlternativeNameTypeTranslation(
+        this.properties.name.altNameSubtype
+      );
+
+      if (subTypeName !== personService.DEFAULT_ALTERNATIVE_NAME_TYPE_TRANSLATION) {
+        return subTypeName;
+      }
+
       return personService.getPersonAlternativeNameTypeTranslation(
         this.properties.name.altNameType
       );
