@@ -23,7 +23,7 @@
           <div class="q-pa-xs col-xs-12 col-sm-6 col-md-4 col-lg-3">
             <q-card>
               <q-separator />
-              <q-list>
+              <q-list class="g-card-list">
                 <q-item
                   class="cursor-pointer g-card"
                   @click.native="$router.push({ path: `/persons/${props.row.id}` })"
@@ -38,6 +38,12 @@
                       {{ props.row.properties.name.simpleName }}
                     </div>
                     -->
+                    <div
+                      v-if="props.row.properties.birth || props.row.properties.death"
+                      class="text-subtitle3 text-secondary"
+                    >
+                      {{ props.row.properties.birth }}-{{ props.row.properties.death }}
+                    </div>
                     <div
                       v-if="hasAlternativeName(props.row)"
                       class="text-caption q-tm-sm text-secondary"
@@ -121,7 +127,7 @@ export default {
       filter: "",
       loading: true,
       pagination: {
-        rowsPerPage: 50,
+        rowsPerPage: 32,
         sortBy: "name"
       },
       columns: [
@@ -188,5 +194,9 @@ export default {
 <style>
 .g-card:hover {
   background: #f7f7f7;
+}
+
+.g-card-list {
+  height: 5.5em;
 }
 </style>

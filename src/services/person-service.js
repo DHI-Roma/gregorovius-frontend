@@ -42,6 +42,8 @@ export const getPersonTypeClass = personType => {
   }
 };
 
+export const DEFAULT_ALTERNATIVE_NAME_TYPE_TRANSLATION = "Alternativ";
+
 export const getPersonAlternativeNameTypeTranslation = subType => {
   switch (subType) {
     case "birthname":
@@ -49,7 +51,7 @@ export const getPersonAlternativeNameTypeTranslation = subType => {
     case "pseudonym":
       return "Pseudonym";
     default:
-      return "Alternativ";
+      return DEFAULT_ALTERNATIVE_NAME_TYPE_TRANSLATION;
   }
 };
 
@@ -94,5 +96,6 @@ export default {
   hasDifferentSimpleName,
   hasAlternativeName,
   getAlternativeFullName,
-  getPersonAlternativeNameTypeTranslation
+  getPersonAlternativeNameTypeTranslation,
+  DEFAULT_ALTERNATIVE_NAME_TYPE_TRANSLATION
 };
