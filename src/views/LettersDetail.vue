@@ -41,6 +41,7 @@
           </q-card>
         </div>
       </div>
+
       <div class="row justify-center">
         <q-card class="col-md-8 col-12 q-pa-xl q-mb-xl" bordered flat>
           <div class="row justify-end">
@@ -68,6 +69,30 @@
                 <Comment />
               </template>
             </q-splitter>
+          </div>
+          <div class="row justify-center">
+            <q-btn
+              v-if="previousLetter"
+              flat
+              rounded
+              size="sm"
+              color="primary"
+              icon="arrow_back"
+              @click="openPreviousLetter()"
+            >
+              <q-tooltip>Vorheriger Brief: {{ previousLetter.properties.title }}</q-tooltip>
+            </q-btn>
+            <q-btn
+              v-if="nextLetter"
+              flat
+              rounded
+              size="sm"
+              color="primary"
+              icon="arrow_forward"
+              @click="openNextLetter()"
+            >
+              <q-tooltip>Nächster Brief: {{ nextLetter.properties.title }}</q-tooltip>
+            </q-btn>
           </div>
         </q-card>
       </div>
@@ -100,7 +125,7 @@
 
 <script>
 import VRuntimeTemplate from "v-runtime-template";
-import { mapGetters } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 import { basePathLetters } from "../router";
 import LettersText from "@/components/LettersText.vue";
 import Comment from "@/components/Comment.vue";
@@ -210,7 +235,24 @@ export default {
       return window.location;
     },
 
-    ...mapGetters(["activeComment"])
+    ...mapGetters(["activeComment", "letters"]),
+
+    currentLetterIndex() {
+      return this.letters.findIndex(letter => letter.id === this.letterId);
+    },
+
+    nextLetter() {
+      if (this.currentLetterIndex + 1 >= this.letters.length - 1) {
+        return false;
+      }
+      return this.letters[this.currentLetterIndex + 1];
+    },
+    previousLetter() {
+      if (this.currentLetterIndex - 1 <= 0) {
+        return false;
+      }
+      return this.letters[this.currentLetterIndex - 1];
+    }
   },
 
   mounted() {
@@ -228,9 +270,15 @@ export default {
   },
 
   methods: {
+    ...mapActions(["loadLettersAction"]),
+
     async initializeComponent() {
       await this.getItems();
       await this.getXSLT("LettersMsDesc", "msDesc");
+      if (this.letters.length == 0) {
+        await this.loadLettersAction();
+      }
+
       this.loading = false;
 
       if (!this.hasAbstracts()) {
@@ -335,6 +383,22 @@ export default {
           }, 3000);
         })
         .catch(() => console.log("Something went wrong while copying to clipboard."));
+    },
+    openPreviousLetter() {
+      this.$router.push({
+        name: "Brief",
+        params: {
+          id: this.previousLetter.id
+        }
+      });
+    },
+    openNextLetter() {
+      this.$router.push({
+        name: "Brief",
+        params: {
+          id: this.nextLetter.id
+        }
+      });
     }
   }
 };

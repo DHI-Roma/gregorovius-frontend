@@ -130,7 +130,7 @@ export default new Vuex.Store({
     }
   },
   getters: {
-    letters: state => state.letters,
+    letters: state => state.letters.sort((letterA, letterB) => letterA.properties.date > letterB.properties.date),
     persons: state => state.persons,
     places: state => state.places,
     works: state => state.works,
