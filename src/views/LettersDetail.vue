@@ -384,7 +384,7 @@ export default {
         })
         .catch(() => console.log("Something went wrong while copying to clipboard."));
     },
-    openPreviousLetter() {
+    async openPreviousLetter() {
       this.$router.push({
         name: "Brief",
         params: {
@@ -392,7 +392,7 @@ export default {
         }
       });
     },
-    openNextLetter() {
+    async openNextLetter() {
       this.$router.push({
         name: "Brief",
         params: {
