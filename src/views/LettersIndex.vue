@@ -42,6 +42,7 @@
       </div>
       <div class="q-pa-md col-12 col-md-9">
         <q-table
+          ref="table"
           :data="letters"
           :columns="columns"
           row-key="id"
@@ -255,6 +256,11 @@ export default {
       }
 
       return "Phrasensuche aktiviert";
+    },
+    tableResults() {
+      const filteredSortedRows = this.$refs.table.filteredSortedRows;
+      this.setLettersFiltered(filteredSortedRows);
+      return filteredSortedRows;
     }
   },
   watch: {
@@ -298,7 +304,12 @@ export default {
     this.loadAll();
   },
   methods: {
-    ...mapActions(["loadLettersAction", "setLoadingStatus", "setSelectedAction"]),
+    ...mapActions([
+      "loadLettersAction",
+      "setLoadingStatus",
+      "setSelectedAction",
+      "setLettersFiltered"
+    ]),
 
     async getSearchResults() {
       this.loading = true;

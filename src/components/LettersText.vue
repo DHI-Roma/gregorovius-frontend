@@ -10,7 +10,6 @@ import { dataService } from "@/shared";
 import { basePathLetters } from "../router";
 import CommentIcon from "@/components/CommentIcon.vue";
 
-
 export default {
   name: "LettersText",
   components: {

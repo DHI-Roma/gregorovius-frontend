@@ -80,8 +80,41 @@
               icon="arrow_back"
               @click="openPreviousLetter()"
             >
-              <q-tooltip>Vorheriger Brief: {{ previousLetter.properties.title }}</q-tooltip>
+              <q-tooltip
+                >Vorheriger Brief (chronologisch): {{ previousLetter.properties.title }}</q-tooltip
+              >
             </q-btn>
+
+            <q-btn
+              v-if="previousLetterInSelection && letters.length !== lettersFiltered.length"
+              flat
+              rounded
+              size="sm"
+              color="primary"
+              icon="arrow_left"
+              @click="openPreviousLetterInSelection()"
+            >
+              <q-tooltip
+                >Vorheriger Brief (in Auswahl):
+                {{ previousLetterInSelection.properties.title }}</q-tooltip
+              >
+            </q-btn>
+
+            <q-btn
+              v-if="nextLetterInSelection && letters.length !== lettersFiltered.length"
+              flat
+              rounded
+              size="sm"
+              color="primary"
+              icon="arrow_right"
+              @click="openNextLetterInSelection()"
+            >
+              <q-tooltip
+                >Nächster Brief (in Auswahl):
+                {{ nextLetterInSelection.properties.title }}</q-tooltip
+              >
+            </q-btn>
+
             <q-btn
               v-if="nextLetter"
               flat
@@ -91,7 +124,9 @@
               icon="arrow_forward"
               @click="openNextLetter()"
             >
-              <q-tooltip>Nächster Brief: {{ nextLetter.properties.title }}</q-tooltip>
+              <q-tooltip
+                >Nächster Brief (chronologisch): {{ nextLetter.properties.title }}</q-tooltip
+              >
             </q-btn>
           </div>
         </q-card>
@@ -187,6 +222,8 @@ export default {
     };
   },
   computed: {
+    ...mapGetters(["activeComment", "letters", "lettersFiltered"]),
+
     letterId() {
       return this.$route.params.id;
     },
@@ -235,23 +272,39 @@ export default {
       return window.location;
     },
 
-    ...mapGetters(["activeComment", "letters"]),
-
     currentLetterIndex() {
       return this.letters.findIndex(letter => letter.id === this.letterId);
     },
 
+    currentLetterIndexInSelection() {
+      return this.lettersFiltered.findIndex(letter => letter.id === this.letterId);
+    },
+
     nextLetter() {
-      if (this.currentLetterIndex + 1 >= this.letters.length - 1) {
+      if (this.currentLetterIndex + 1 > this.letters.length - 1) {
         return false;
       }
       return this.letters[this.currentLetterIndex + 1];
     },
     previousLetter() {
-      if (this.currentLetterIndex - 1 <= 0) {
+      if (this.currentLetterIndex - 1 < 0) {
         return false;
       }
       return this.letters[this.currentLetterIndex - 1];
+    },
+
+    nextLetterInSelection() {
+      if (this.currentLetterIndexInSelection + 1 > this.lettersFiltered.length - 1) {
+        return false;
+      }
+      return this.lettersFiltered[this.currentLetterIndexInSelection + 1];
+    },
+
+    previousLetterInSelection() {
+      if (this.currentLetterIndexInSelection - 1 < 0) {
+        return false;
+      }
+      return this.lettersFiltered[this.currentLetterIndexInSelection - 1];
     }
   },
 
@@ -397,6 +450,22 @@ export default {
         name: "Brief",
         params: {
           id: this.nextLetter.id
+        }
+      });
+    },
+    async openPreviousLetterInSelection() {
+      this.$router.push({
+        name: "Brief",
+        params: {
+          id: this.previousLetterInSelection.id
+        }
+      });
+    },
+    async openNextLetterInSelection() {
+      this.$router.push({
+        name: "Brief",
+        params: {
+          id: this.nextLetterInSelection.id
         }
       });
     }

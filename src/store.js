@@ -8,6 +8,7 @@ export default new Vuex.Store({
   state: {
     isLoading: false,
     letters: [],
+    lettersFiltered: [],
     persons: [],
     places: [],
     works: [],
@@ -27,6 +28,9 @@ export default new Vuex.Store({
     },
     GET_LETTERS(state, letters) {
       state.letters = letters;
+    },
+    SET_LETTERS_FILTERED(state, letters) {
+      state.lettersFiltered = letters;
     },
     GET_PERSONS(state, persons) {
       state.persons = persons;
@@ -127,10 +131,19 @@ export default new Vuex.Store({
 
     async unselectComment({ commit }) {
       commit("SET_ACTIVE_COMMENT", {});
+    },
+
+    async setLettersFiltered({ commit }, letters) {
+      commit("SET_LETTERS_FILTERED", letters);
     }
   },
   getters: {
-    letters: state => state.letters.sort((letterA, letterB) => letterA.properties.date > letterB.properties.date),
+    letters: state =>
+      state.letters.sort((letterA, letterB) => letterA.properties.date > letterB.properties.date),
+    lettersFiltered: state =>
+      state.lettersFiltered.sort(
+        (letterA, letterB) => letterA.properties.date > letterB.properties.date
+      ),
     persons: state => state.persons,
     places: state => state.places,
     works: state => state.works,
