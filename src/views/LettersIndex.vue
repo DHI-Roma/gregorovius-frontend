@@ -256,11 +256,6 @@ export default {
       }
 
       return "Phrasensuche aktiviert";
-    },
-    tableResults() {
-      const filteredSortedRows = this.$refs.table.filteredSortedRows;
-      this.setLettersFiltered(filteredSortedRows);
-      return filteredSortedRows;
     }
   },
   watch: {
@@ -300,6 +295,16 @@ export default {
         this.loading = newValue;
       }
     );
+
+    this.$watch(
+      () => {
+        return this.$refs.table.filteredSortedRows;
+      },
+      filteredSortedRows => {
+        this.setLettersFiltered(filteredSortedRows);
+      }
+    );
+
     await this.$store.dispatch("loadFullNameIndexAction");
     this.loadAll();
   },
