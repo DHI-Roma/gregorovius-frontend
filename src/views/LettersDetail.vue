@@ -210,7 +210,50 @@ export default {
       return window.location;
     },
 
-    ...mapGetters(["activeComment"])
+    letterEntity() {
+      return this.letters.find(letter => letter.id === this.letterId);
+    },
+
+    mentionedPersonEntities() {
+      if (!this.persons.length) {
+        return [];
+      }
+
+      return this.persons.filter(person => {
+        const matches = this.letterEntity.properties.mentioned.persons.find(
+          mentionedPersonId => mentionedPersonId === person.id
+        );
+        return matches ? true : false;
+      });
+    },
+
+    mentionedPlaceEntites() {
+      if (!this.places.length) {
+        return [];
+      }
+
+      return this.places.filter(place => {
+        const matches = this.letterEntity.properties.mentioned.places.find(
+          mentionedPlaceId => mentionedPlaceId === place.id
+        );
+        return matches ? true : false;
+      });
+    },
+
+    mentionedWorkEntities() {
+      if (!this.works.length) {
+        return [];
+      }
+
+      return this.works.filter(work => {
+        const matches = this.letterEntity.properties.mentioned.works.find(
+          mentionedWorkId => mentionedWorkId === work.id
+        );
+        return matches ? true : false;
+      });
+    },
+
+    ...mapGetters(["activeComment", "letters", "persons", "places", "works"])
   },
 
   mounted() {

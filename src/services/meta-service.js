@@ -22,8 +22,6 @@ const setMetaAuthors = authors => {
 
     document.querySelector("head").appendChild(newAuthorNode);
   });
-
-  console.log("asdf");
 };
 
 export default {
