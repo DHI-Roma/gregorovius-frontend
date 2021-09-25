@@ -73,6 +73,63 @@
       </div>
       <div class="row justify-center">
         <q-card class="col-md-8 col-12 q-pa-xl q-mb-xl" bordered flat>
+          <q-tabs v-model="mentionTab" class="text-primary">
+            <q-tab v-if="mentionedPersonEntities.length" name="persons" label="Erwähnte Personen" />
+            <q-tab v-if="mentionedPlaceEntites.length" name="places" label="Erwähnte Orte" />
+            <q-tab v-if="mentionedWorkEntities.length" name="works" label="Erwähnte Werke" />
+          </q-tabs>
+          <q-separator dark />
+          <q-tab-panels v-model="mentionTab" animated>
+            <q-tab-panel v-if="mentionedPersonEntities.length" name="persons">
+              <q-list separator>
+                <q-item
+                  v-for="person in mentionedPersonEntities"
+                  :key="person.id"
+                  :to="'/persons/' + person.id"
+                  v-ripple
+                  clickable
+                >
+                  <q-item-section>
+                    {{ person.properties.name.fullName }}
+                  </q-item-section>
+                </q-item>
+              </q-list>
+            </q-tab-panel>
+            <q-tab-panel v-if="mentionedPlaceEntites.length" name="places">
+              <q-list separator>
+                <q-item
+                  v-for="place in mentionedPlaceEntites"
+                  :key="place.id"
+                  :to="'/places/' + place.id"
+                  v-ripple
+                  clickable
+                >
+                  <q-item-section>
+                    {{ place.properties.name.toponym }}
+                  </q-item-section>
+                </q-item>
+              </q-list>
+            </q-tab-panel>
+            <q-tab-panel v-if="mentionedWorkEntities.length" name="works">
+              <q-list separator>
+                <q-item
+                  v-for="work in mentionedWorkEntities"
+                  :key="work.id"
+                  :to="'/works/' + work.id"
+                  v-ripple
+                  clickable
+                >
+                  <q-item-section>
+                    {{ work.properties.title }}
+                  </q-item-section>
+                </q-item>
+              </q-list>
+            </q-tab-panel>
+          </q-tab-panels>
+        </q-card>
+      </div>
+      <div class="row justify-center">
+        <q-card class="col-md-8 col-12 q-pa-xl q-mb-xl" bordered flat>
           <div class="text-caption q-tm-sm text-secondary">
             Zitierhinweis:
             {{ citation }}
@@ -154,6 +211,7 @@ export default {
       data: [],
       loading: true,
       tab: "reg",
+      mentionTab: "persons",
       msDesc: "",
       supplement: "",
       physDesc: "",
@@ -219,12 +277,16 @@ export default {
         return [];
       }
 
-      return this.persons.filter(person => {
-        const matches = this.letterEntity.properties.mentioned.persons.find(
-          mentionedPersonId => mentionedPersonId === person.id
-        );
-        return matches ? true : false;
-      });
+      return this.persons
+        .filter(person => {
+          const matches = this.letterEntity.properties.mentioned.persons.find(
+            mentionedPersonId => mentionedPersonId === person.id
+          );
+          return matches ? true : false;
+        })
+        .sort((personA, personB) => {
+          personA.properties.name.fullName > personB.properties.name.fullName;
+        });
     },
 
     mentionedPlaceEntites() {
@@ -232,12 +294,14 @@ export default {
         return [];
       }
 
-      return this.places.filter(place => {
-        const matches = this.letterEntity.properties.mentioned.places.find(
-          mentionedPlaceId => mentionedPlaceId === place.id
-        );
-        return matches ? true : false;
-      });
+      return this.places
+        .filter(place => {
+          const matches = this.letterEntity.properties.mentioned.places.find(
+            mentionedPlaceId => mentionedPlaceId === place.id
+          );
+          return matches ? true : false;
+        })
+        .sort((placeA, placeB) => placeA.properties.name.toponym > placeB.properties.name.toponym);
     },
 
     mentionedWorkEntities() {
