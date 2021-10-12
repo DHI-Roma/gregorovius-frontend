@@ -92,7 +92,7 @@
                   <div class="q-pa-xs col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <q-card>
                       <q-separator />
-                      <q-list class="g-card-list">
+                      <q-list class="g-card-list mention">
                         <PersonTile :person="props.row"></PersonTile>
                       </q-list>
                     </q-card>
@@ -112,43 +112,32 @@
                   <div class="q-pa-xs col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <q-card>
                       <q-separator />
-                      <q-list class="g-card-list">
+                      <q-list class="g-card-list mention">
                         <PlaceTile :place="props.row"></PlaceTile>
                       </q-list>
                     </q-card>
                   </div>
                 </template>
               </q-table>
-              <!--
-              <q-list separator>
-                <q-item
-                  v-for="place in mentionedPlaceEntites"
-                  :key="place.id"
-                  :to="'/places/' + place.id"
-                  v-ripple
-                  clickable
-                >
-                  <q-item-section>
-                    {{ place.properties.name.toponym }}
-                  </q-item-section>
-                </q-item>
-              </q-list>
-              -->
             </q-tab-panel>
+
             <q-tab-panel v-if="mentionedWorkEntities.length" name="works">
-              <q-list separator>
-                <q-item
-                  v-for="work in mentionedWorkEntities"
-                  :key="work.id"
-                  :to="'/works/' + work.id"
-                  v-ripple
-                  clickable
-                >
-                  <q-item-section>
-                    {{ work.properties.title }}
-                  </q-item-section>
-                </q-item>
-              </q-list>
+              <q-table
+                :data="mentionedWorkEntities"
+                :columns="mentionedWorksTableColumns"
+                row-key="id"
+                flat
+                :pagination="mentionPagination"
+              >
+                <template v-slot:body-cell="props">
+                  <q-td
+                    :props="props"
+                    class="cursor-pointer"
+                    @click.native="$router.push({ path: `/works/${props.row.id}` })"
+                    >{{ props.value }}</q-td
+                  >
+                </template>
+              </q-table>
             </q-tab-panel>
           </q-tab-panels>
         </q-card>
@@ -249,7 +238,25 @@ export default {
       mentionPagination: {
         rowsPerPage: 16,
         sortBy: "name"
-      }
+      },
+      mentionedWorksTableColumns: [
+        {
+          name: "type",
+          required: true,
+          label: "Typ",
+          align: "left",
+          field: row => this.getWorkType(row.properties.type),
+          sortable: true
+        },
+        {
+          name: "title",
+          required: true,
+          label: "Titel",
+          align: "left",
+          field: row => row.properties.title,
+          sortable: true
+        }
+      ]
     };
   },
   computed: {
@@ -477,6 +484,20 @@ export default {
           }, 3000);
         })
         .catch(() => console.log("Something went wrong while copying to clipboard."));
+    },
+    getWorkType(type) {
+      switch (type) {
+        case "gregoroviusMain":
+          return "Werkregister Gregorovius";
+        case "gregoroviusTranslation":
+          return "Übersetzungen";
+        case "othersMain":
+          return "Werke anderer Autoren";
+        case "secondary":
+          return "Sekundärliteratur";
+        default:
+          return "Unbekannt";
+      }
     }
   }
 };
@@ -487,7 +508,7 @@ export default {
   background: #f7f7f7;
 }
 
-.g-card-list {
-  height: 5.5em;
+.g-card-list.mention {
+  height: 7.5em;
 }
 </style>
