@@ -10,7 +10,6 @@ import { dataService } from "@/shared";
 import { basePathLetters } from "../router";
 import CommentIcon from "@/components/CommentIcon.vue";
 
-
 export default {
   name: "LettersText",
   components: {
@@ -26,6 +25,16 @@ export default {
 
   computed: {
     ...mapGetters(["activeComment"])
+  },
+
+  watch: {
+    "$route.params.id": {
+      handler: function(oldId, newId) {
+        if (oldId !== newId) {
+          this.getItems();
+        }
+      }
+    }
   },
 
   mounted() {
@@ -46,7 +55,7 @@ export default {
         console.error(error)
       }
     },
-    activateComment(event, commentId, commentText) {
+    activateComment(event, commentId) {
       const hasActiveComment = this.activateComment.id ? true : false;
       let offsetTop = event.layerY;
 

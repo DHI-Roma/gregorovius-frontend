@@ -29,7 +29,9 @@ describe("LettersDetail", () => {
           id: "comment_id",
           text: "Some comment text"
         };
-      }
+      },
+      letters: () => [],
+      lettersFiltered: () => []
     };
     store = new Vuex.Store({
       getters
