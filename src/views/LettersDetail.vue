@@ -81,7 +81,13 @@
           <q-separator dark />
           <q-tab-panels v-model="mentionTab" animated>
             <q-tab-panel v-if="mentionedPersonEntities.length" name="persons">
-              <q-table grid :data="mentionedPersonEntities" row-key="id" flat :pagination="mentionPagination">
+              <q-table
+                grid
+                :data="mentionedPersonEntities"
+                row-key="id"
+                flat
+                :pagination="mentionPagination"
+              >
                 <template v-slot:item="props">
                   <div class="q-pa-xs col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <q-card>
@@ -93,23 +99,27 @@
                   </div>
                 </template>
               </q-table>
-              <!--
-              <q-list separator>
-                <q-item
-                  v-for="person in mentionedPersonEntities"
-                  :key="person.id"
-                  :to="'/persons/' + person.id"
-                  v-ripple
-                  clickable
-                >
-                  <q-item-section>
-                    {{ person.properties.name.fullName }}
-                  </q-item-section>
-                </q-item>
-              </q-list>
-              -->
             </q-tab-panel>
             <q-tab-panel v-if="mentionedPlaceEntites.length" name="places">
+              <q-table
+                grid
+                :data="mentionedPlaceEntites"
+                row-key="id"
+                flat
+                :pagination="mentionPagination"
+              >
+                <template v-slot:item="props">
+                  <div class="q-pa-xs col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <q-card>
+                      <q-separator />
+                      <q-list class="g-card-list">
+                        <PlaceTile :place="props.row"></PlaceTile>
+                      </q-list>
+                    </q-card>
+                  </div>
+                </template>
+              </q-table>
+              <!--
               <q-list separator>
                 <q-item
                   v-for="place in mentionedPlaceEntites"
@@ -123,6 +133,7 @@
                   </q-item-section>
                 </q-item>
               </q-list>
+              -->
             </q-tab-panel>
             <q-tab-panel v-if="mentionedWorkEntities.length" name="works">
               <q-list separator>
@@ -171,11 +182,12 @@
 
 <script>
 import VRuntimeTemplate from "v-runtime-template";
-import { mapGetters } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 import { basePathLetters } from "../router";
 import LettersText from "@/components/LettersText.vue";
 import Comment from "@/components/Comment.vue";
 import PersonTile from "@/components/PersonTile.vue";
+import PlaceTile from "@/components/PlaceTile.vue";
 import axios from "axios";
 import { dataService } from "@/shared";
 import letterService from "@/services/letter-service";
@@ -208,6 +220,7 @@ export default {
     Comment,
     LettersText,
     PersonTile,
+    PlaceTile,
     VRuntimeTemplate,
     QCard,
     QPage,
@@ -355,9 +368,11 @@ export default {
   },
 
   methods: {
+    ...mapActions(["loadEntitiesAction"]),
     async initializeComponent() {
       await this.getItems();
       await this.getXSLT("LettersMsDesc", "msDesc");
+      await this.loadEntitiesAction();
       this.loading = false;
 
       if (!this.hasAbstracts()) {

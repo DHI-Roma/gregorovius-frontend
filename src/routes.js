@@ -59,7 +59,7 @@ export const routes = [
         name: "Person",
         component: PersonsDetail,
         beforeEnter(to, from, next) {
-          store.dispatch("loadFullNameIndexAction");
+          store.dispatch("loadEntitiesAction");
           next();
         }
       },
@@ -74,7 +74,7 @@ export const routes = [
         name: "Orte",
         component: PlacesIndex,
         beforeEnter(to, from, next) {
-          store.dispatch("loadFullNameIndexAction");
+          store.dispatch("loadEntitiesAction");
           next();
         }
       },
@@ -83,7 +83,7 @@ export const routes = [
         name: "Ort",
         component: PlacesDetail,
         beforeEnter(to, from, next) {
-          store.dispatch("loadFullNameIndexAction");
+          store.dispatch("loadEntitiesAction");
           next();
         }
       },

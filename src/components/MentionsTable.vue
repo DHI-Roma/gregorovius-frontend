@@ -80,16 +80,14 @@ export default {
   },
 
   async beforeMount() {
-    if (this.$store.getters.letters.length == 0) {
-      await this.loadLettersAction();
-    }
+    await this.loadEntitiesAction();
     if (this.$store.getters.fullNameIndex.length == 0) {
       await this.loadFullNameIndexAction();
     }
   },
 
   methods: {
-    ...mapActions(["loadLettersAction", "loadFullNameIndexAction"]),
+    ...mapActions(["loadLettersAction", "loadEntitiesAction", "loadFullNameIndexAction"]),
     getMentioned(entityName) {
       this.loading = true;
       const { letters } = this.$store.getters;

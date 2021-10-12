@@ -113,6 +113,24 @@ export default new Vuex.Store({
       }
     },
 
+    async loadEntitiesAction() {
+      if (this.getters.letters.length === 0) {
+        await this.dispatch("loadLettersAction");
+      }
+
+      if (this.getters.persons.length === 0) {
+        await this.dispatch("loadPersonsAction");
+      }
+
+      if (this.getters.places.length === 0) {
+        await this.dispatch("loadPlacesAction");
+      }
+
+      if (this.getters.works.length === 0) {
+        await this.dispatch("loadWorksAction");
+      }
+    },
+
     async setSelectedAction({ commit }, payload) {
       commit("SET_SELECTED", payload);
     },

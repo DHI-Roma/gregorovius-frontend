@@ -298,7 +298,7 @@ export default {
     this.loadAll();
   },
   methods: {
-    ...mapActions(["loadLettersAction", "setLoadingStatus", "setSelectedAction"]),
+    ...mapActions(["loadEntitiesAction", "setLoadingStatus", "setSelectedAction"]),
 
     async getSearchResults() {
       this.loading = true;
@@ -363,9 +363,7 @@ export default {
     },
 
     loadAll() {
-      if (this.$store.getters.letters.length == 0) {
-        this.loadLettersAction();
-      }
+      this.loadEntitiesAction();
       this.resetFilter();
     },
 

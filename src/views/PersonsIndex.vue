@@ -39,25 +39,12 @@ import { mapActions } from "vuex";
 import { QPage, QTable } from "quasar";
 import PersonTile from "@/components/PersonTile.vue";
 
-import personService from "@/services/person-service";
-
 export default {
   name: "PersonsIndex",
   components: {
     QPage,
     QTable,
     PersonTile
-  },
-  filters: {
-    formatPersonType(rawType) {
-      return personService.getPersonTypeTranslation(rawType);
-    },
-    formatPersonRole(rawRole) {
-      return personService.getPersonRoleTranslation(rawRole);
-    },
-    formatAlternativeNameSubType(subType) {
-      return personService.getPersonAlternativeNameTypeTranslation(subType);
-    }
   },
 
   data() {
@@ -106,25 +93,7 @@ export default {
     this.loading = false;
   },
   methods: {
-    ...mapActions(["loadFullNameIndexAction"]),
-    isPerson(rawType) {
-      return rawType === "person";
-    },
-    isOrganisation(rawType) {
-      return rawType === "org";
-    },
-    getRoleClass(rawRole) {
-      return personService.getPersonRoleClass(rawRole);
-    },
-    hasDifferentSimpleName(row) {
-      return personService.hasDifferentSimpleName(row);
-    },
-    hasAlternativeName(row) {
-      return personService.hasAlternativeName(row);
-    },
-    getAlternativeFullName(row) {
-      return personService.getAlternativeFullName(row);
-    }
+    ...mapActions(["loadFullNameIndexAction"])
   }
 };
 </script>
