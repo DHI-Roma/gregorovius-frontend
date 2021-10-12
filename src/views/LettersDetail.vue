@@ -81,6 +81,19 @@
           <q-separator dark />
           <q-tab-panels v-model="mentionTab" animated>
             <q-tab-panel v-if="mentionedPersonEntities.length" name="persons">
+              <q-table grid :data="mentionedPersonEntities" row-key="id" flat :pagination="mentionPagination">
+                <template v-slot:item="props">
+                  <div class="q-pa-xs col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <q-card>
+                      <q-separator />
+                      <q-list class="g-card-list">
+                        <PersonTile :person="props.row"></PersonTile>
+                      </q-list>
+                    </q-card>
+                  </div>
+                </template>
+              </q-table>
+              <!--
               <q-list separator>
                 <q-item
                   v-for="person in mentionedPersonEntities"
@@ -94,6 +107,7 @@
                   </q-item-section>
                 </q-item>
               </q-list>
+              -->
             </q-tab-panel>
             <q-tab-panel v-if="mentionedPlaceEntites.length" name="places">
               <q-list separator>
@@ -161,6 +175,7 @@ import { mapGetters } from "vuex";
 import { basePathLetters } from "../router";
 import LettersText from "@/components/LettersText.vue";
 import Comment from "@/components/Comment.vue";
+import PersonTile from "@/components/PersonTile.vue";
 import axios from "axios";
 import { dataService } from "@/shared";
 import letterService from "@/services/letter-service";
@@ -192,6 +207,7 @@ export default {
   components: {
     Comment,
     LettersText,
+    PersonTile,
     VRuntimeTemplate,
     QCard,
     QPage,
@@ -216,7 +232,11 @@ export default {
       supplement: "",
       physDesc: "",
       splitterModel: SPLITTER_SIZE_START,
-      copyCitationLabel: "kopieren"
+      copyCitationLabel: "kopieren",
+      mentionPagination: {
+        rowsPerPage: 16,
+        sortBy: "name"
+      }
     };
   },
   computed: {
@@ -446,3 +466,13 @@ export default {
   }
 };
 </script>
+
+<style>
+.g-card:hover {
+  background: #f7f7f7;
+}
+
+.g-card-list {
+  height: 5.5em;
+}
+</style>

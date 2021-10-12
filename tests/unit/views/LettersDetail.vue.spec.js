@@ -29,7 +29,10 @@ describe("LettersDetail", () => {
           id: "comment_id",
           text: "Some comment text"
         };
-      }
+      },
+      persons: () => [],
+      places: () => [],
+      works: () => []
     };
     store = new Vuex.Store({
       getters
