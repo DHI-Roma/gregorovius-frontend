@@ -42,6 +42,7 @@
       </div>
       <div class="q-pa-md col-12 col-md-9">
         <q-table
+          ref="table"
           :data="letters"
           :columns="columns"
           row-key="id"
@@ -294,11 +295,26 @@ export default {
         this.loading = newValue;
       }
     );
+
+    this.$watch(
+      () => {
+        return this.$refs.table.filteredSortedRows;
+      },
+      filteredSortedRows => {
+        this.setLettersFiltered(filteredSortedRows);
+      }
+    );
+
     await this.$store.dispatch("loadFullNameIndexAction");
     this.loadAll();
   },
   methods: {
-    ...mapActions(["loadEntitiesAction", "setLoadingStatus", "setSelectedAction"]),
+    ...mapActions([
+      "loadEntitiesAction",
+      "setLoadingStatus",
+      "setSelectedAction",
+      "setLettersFiltered"
+    ]),
 
     async getSearchResults() {
       this.loading = true;

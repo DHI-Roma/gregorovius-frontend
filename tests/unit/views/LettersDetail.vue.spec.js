@@ -32,7 +32,9 @@ describe("LettersDetail", () => {
       },
       persons: () => [],
       places: () => [],
-      works: () => []
+      works: () => [],
+      letters: () => [],
+      lettersFiltered: () => []
     };
     store = new Vuex.Store({
       getters
