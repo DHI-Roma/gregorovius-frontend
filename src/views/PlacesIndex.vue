@@ -23,21 +23,7 @@
             <q-card>
               <q-separator />
               <q-list>
-                <q-item
-                  class="cursor-pointer g-card"
-                  @click.native="$router.push({ path: `/places/${props.row.id}` })"
-                >
-                  <q-item-section>
-                    <q-item-label>{{ fullNameIndex[props.row.id] }}</q-item-label>
-                  </q-item-section>
-                  <q-chip
-                    v-if="props.row.properties.type"
-                    size="12px"
-                    :color="props.row.properties.type | getTypeChipColor"
-                  >
-                    {{ props.row.properties.type | formatPlaceType }}
-                  </q-chip>
-                </q-item>
+                <PlaceTile :place="props.row"></PlaceTile>
               </q-list>
             </q-card>
           </div>
@@ -49,16 +35,11 @@
 
 <script>
 import { mapGetters } from "vuex";
-import placeService from "@/services/place-service";
+import PlaceTile from "@/components/PlaceTile.vue";
 export default {
   name: "PlacesIndex",
-  filters: {
-    formatPlaceType(rawType) {
-      return placeService.getPlaceTypeTranslation(rawType);
-    },
-    getTypeChipColor(rawType) {
-      return placeService.getPlaceTypeClass(rawType);
-    }
+  components: {
+    PlaceTile
   },
   data() {
     return {
@@ -83,7 +64,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["fullNameIndex", "places"])
+    ...mapGetters(["places"])
   },
 
   async mounted() {
@@ -93,15 +74,9 @@ export default {
   methods: {
     async getItems() {
       await this.$store.dispatch("loadFullNameIndexAction");
-      await this.$store.dispatch("loadPlacesAction");
+      await this.$store.dispatch("loadEntities");
       this.loading = false;
     }
   }
 };
 </script>
-
-<style>
-.g-card:hover {
-  background: #f7f7f7;
-}
-</style>

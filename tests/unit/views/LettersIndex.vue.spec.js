@@ -41,7 +41,8 @@ describe("LettersIndex", () => {
 
   actions = {
     loadFullNameIndexAction: jest.fn(),
-    setSelectedAction: jest.fn()
+    setSelectedAction: jest.fn(),
+    loadEntitiesAction: jest.fn()
   };
 
   store = new Vuex.Store({

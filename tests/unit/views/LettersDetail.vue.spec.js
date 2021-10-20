@@ -30,6 +30,9 @@ describe("LettersDetail", () => {
           text: "Some comment text"
         };
       },
+      persons: () => [],
+      places: () => [],
+      works: () => [],
       letters: () => [],
       lettersFiltered: () => []
     };

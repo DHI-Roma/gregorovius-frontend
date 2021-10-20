@@ -310,7 +310,7 @@ export default {
   },
   methods: {
     ...mapActions([
-      "loadLettersAction",
+      "loadEntitiesAction",
       "setLoadingStatus",
       "setSelectedAction",
       "setLettersFiltered"
@@ -379,9 +379,7 @@ export default {
     },
 
     loadAll() {
-      if (this.$store.getters.letters.length == 0) {
-        this.loadLettersAction();
-      }
+      this.loadEntitiesAction();
       this.resetFilter();
     },
 

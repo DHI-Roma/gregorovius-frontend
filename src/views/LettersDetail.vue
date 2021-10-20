@@ -133,6 +133,77 @@
       </div>
       <div class="row justify-center">
         <q-card class="col-md-8 col-12 q-pa-xl q-mb-xl" bordered flat>
+          <q-tabs v-model="mentionTab" class="text-primary">
+            <q-tab v-if="mentionedPersonEntities.length" name="persons" label="Erwähnte Personen" />
+            <q-tab v-if="mentionedPlaceEntites.length" name="places" label="Erwähnte Orte" />
+            <q-tab v-if="mentionedWorkEntities.length" name="works" label="Erwähnte Werke" />
+          </q-tabs>
+          <q-separator dark />
+          <q-tab-panels v-model="mentionTab" animated>
+            <q-tab-panel v-if="mentionedPersonEntities.length" name="persons">
+              <q-table
+                grid
+                :data="mentionedPersonEntities"
+                row-key="id"
+                flat
+                :pagination="mentionPagination"
+              >
+                <template v-slot:item="props">
+                  <div class="q-pa-xs col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <q-card>
+                      <q-separator />
+                      <q-list class="g-card-list mention">
+                        <PersonTile :person="props.row"></PersonTile>
+                      </q-list>
+                    </q-card>
+                  </div>
+                </template>
+              </q-table>
+            </q-tab-panel>
+            <q-tab-panel v-if="mentionedPlaceEntites.length" name="places">
+              <q-table
+                grid
+                :data="mentionedPlaceEntites"
+                row-key="id"
+                flat
+                :pagination="mentionPagination"
+              >
+                <template v-slot:item="props">
+                  <div class="q-pa-xs col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <q-card>
+                      <q-separator />
+                      <q-list class="g-card-list mention">
+                        <PlaceTile :place="props.row"></PlaceTile>
+                      </q-list>
+                    </q-card>
+                  </div>
+                </template>
+              </q-table>
+            </q-tab-panel>
+
+            <q-tab-panel v-if="mentionedWorkEntities.length" name="works">
+              <q-table
+                :data="mentionedWorkEntities"
+                :columns="mentionedWorksTableColumns"
+                row-key="id"
+                flat
+                :pagination="mentionPagination"
+              >
+                <template v-slot:body-cell="props">
+                  <q-td
+                    :props="props"
+                    class="cursor-pointer"
+                    @click.native="$router.push({ path: `/works/${props.row.id}` })"
+                    >{{ props.value }}</q-td
+                  >
+                </template>
+              </q-table>
+            </q-tab-panel>
+          </q-tab-panels>
+        </q-card>
+      </div>
+      <div class="row justify-center">
+        <q-card class="col-md-8 col-12 q-pa-xl q-mb-xl" bordered flat>
           <div class="text-caption q-tm-sm text-secondary">
             Zitierhinweis:
             {{ citation }}
@@ -160,10 +231,12 @@
 
 <script>
 import VRuntimeTemplate from "v-runtime-template";
-import { mapGetters, mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 import { basePathLetters } from "../router";
 import LettersText from "@/components/LettersText.vue";
 import Comment from "@/components/Comment.vue";
+import PersonTile from "@/components/PersonTile.vue";
+import PlaceTile from "@/components/PlaceTile.vue";
 import axios from "axios";
 import { dataService } from "@/shared";
 import letterService from "@/services/letter-service";
@@ -195,6 +268,8 @@ export default {
   components: {
     Comment,
     LettersText,
+    PersonTile,
+    PlaceTile,
     VRuntimeTemplate,
     QCard,
     QPage,
@@ -214,11 +289,34 @@ export default {
       data: [],
       loading: true,
       tab: "reg",
+      mentionTab: "persons",
       msDesc: "",
       supplement: "",
       physDesc: "",
       splitterModel: SPLITTER_SIZE_START,
-      copyCitationLabel: "kopieren"
+      copyCitationLabel: "kopieren",
+      mentionPagination: {
+        rowsPerPage: 16,
+        sortBy: "name"
+      },
+      mentionedWorksTableColumns: [
+        {
+          name: "type",
+          required: true,
+          label: "Typ",
+          align: "left",
+          field: row => this.getWorkType(row.properties.type),
+          sortable: true
+        },
+        {
+          name: "title",
+          required: true,
+          label: "Titel",
+          align: "left",
+          field: row => row.properties.title,
+          sortable: true
+        }
+      ]
     };
   },
   computed: {
@@ -272,6 +370,56 @@ export default {
       return window.location;
     },
 
+    letterEntity() {
+      return this.letters.find(letter => letter.id === this.letterId);
+    },
+
+    mentionedPersonEntities() {
+      if (!this.persons.length) {
+        return [];
+      }
+
+      return this.persons
+        .filter(person => {
+          const matches = this.letterEntity.properties.mentioned.persons.find(
+            mentionedPersonId => mentionedPersonId === person.id
+          );
+          return matches ? true : false;
+        })
+        .sort((personA, personB) => {
+          personA.properties.name.fullName > personB.properties.name.fullName;
+        });
+    },
+
+    mentionedPlaceEntites() {
+      if (!this.places.length) {
+        return [];
+      }
+
+      return this.places
+        .filter(place => {
+          const matches = this.letterEntity.properties.mentioned.places.find(
+            mentionedPlaceId => mentionedPlaceId === place.id
+          );
+          return matches ? true : false;
+        })
+        .sort((placeA, placeB) => placeA.properties.name.toponym > placeB.properties.name.toponym);
+    },
+
+    mentionedWorkEntities() {
+      if (!this.works.length) {
+        return [];
+      }
+
+      return this.works.filter(work => {
+        const matches = this.letterEntity.properties.mentioned.works.find(
+          mentionedWorkId => mentionedWorkId === work.id
+        );
+        return matches ? true : false;
+      });
+    },
+
+    ...mapGetters(["activeComment", "letters", "persons", "places", "works"]),
     currentLetterIndex() {
       return this.letters.findIndex(letter => letter.id === this.letterId);
     },
@@ -323,15 +471,11 @@ export default {
   },
 
   methods: {
-    ...mapActions(["loadLettersAction"]),
-
+    ...mapActions(["loadEntitiesAction"]),
     async initializeComponent() {
       await this.getItems();
       await this.getXSLT("LettersMsDesc", "msDesc");
-      if (this.letters.length == 0) {
-        await this.loadLettersAction();
-      }
-
+      await this.loadEntitiesAction();
       this.loading = false;
 
       if (!this.hasAbstracts()) {
@@ -437,6 +581,20 @@ export default {
         })
         .catch(() => console.log("Something went wrong while copying to clipboard."));
     },
+    getWorkType(type) {
+      switch (type) {
+        case "gregoroviusMain":
+          return "Werkregister Gregorovius";
+        case "gregoroviusTranslation":
+          return "Übersetzungen";
+        case "othersMain":
+          return "Werke anderer Autoren";
+        case "secondary":
+          return "Sekundärliteratur";
+        default:
+          return "Unbekannt";
+      }
+    },
     async openPreviousLetter() {
       this.$router.push({
         name: "Brief",
@@ -472,3 +630,13 @@ export default {
   }
 };
 </script>
+
+<style>
+.g-card:hover {
+  background: #f7f7f7;
+}
+
+.g-card-list.mention {
+  height: 7.5em;
+}
+</style>
