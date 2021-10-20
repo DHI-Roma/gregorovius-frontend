@@ -60,6 +60,7 @@
               class="cursor-pointer"
               :class="searchInput ? 'cursor-pointer g-searchrow' : 'cursor-pointer'"
               @click.native="openItem('default', props.row.id)"
+              @click.middle="openItem('tab', props.row.id)"
             >
               <q-menu touch-position context-menu>
                 <q-list dense style="min-width: 100px">

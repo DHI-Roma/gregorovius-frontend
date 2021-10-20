@@ -196,6 +196,9 @@
                     @click.native="$router.push({ path: `/works/${props.row.id}` })"
                     >{{ props.value }}</q-td
                   >
+                  <context-menu
+                    :route-to-open="$router.resolve({ path: `/works/${props.row.id}` }).href"
+                  ></context-menu>
                 </template>
               </q-table>
             </q-tab-panel>
@@ -257,6 +260,8 @@ import {
   QChip,
   QSplitter
 } from "quasar";
+import ContextMenu from "../components/ContextMenu.vue";
+import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
 
 const TAB_TEXTGRUNDLAGE = "tgl";
 const SPLITTER_SIZE_START = 100;
@@ -282,8 +287,10 @@ export default {
     QTab,
     QCardSection,
     QChip,
-    QSplitter
+    QSplitter,
+    ContextMenu
   },
+  mixins: [openInNewTabMixin],
   data() {
     return {
       data: [],

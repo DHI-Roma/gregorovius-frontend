@@ -1,7 +1,8 @@
 <template>
   <q-item
     class="cursor-pointer g-card"
-    @click.native="$router.push({ path: `/places/${place.id}` })"
+    @click.native="$router.push(route)"
+    @click.middle="openInNewTab(route)"
   >
     <q-item-section>
       <q-item-label>{{ fullNameIndex[place.id] }}</q-item-label>
@@ -13,6 +14,7 @@
     >
       {{ place.properties.type | formatPlaceType }}
     </q-chip>
+    <context-menu :route-to-open="$router.resolve(route).href"></context-menu>
   </q-item>
 </template>
 
@@ -21,6 +23,8 @@ import { mapGetters } from "vuex";
 
 import { QChip, QItem, QItemLabel, QItemSection } from "quasar";
 import placeService from "@/services/place-service";
+import ContextMenu from "./ContextMenu.vue";
+import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
 
 export default {
   name: "PlaceTile",
@@ -28,7 +32,8 @@ export default {
     QChip,
     QItem,
     QItemLabel,
-    QItemSection
+    QItemSection,
+    ContextMenu
   },
   filters: {
     formatPlaceType(rawType) {
@@ -38,6 +43,7 @@ export default {
       return placeService.getPlaceTypeClass(rawType);
     }
   },
+  mixins: [openInNewTabMixin],
   props: {
     place: {
       type: [Object, Promise],
@@ -46,7 +52,15 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(["fullNameIndex"])
+    ...mapGetters(["fullNameIndex"]),
+    route() {
+      return { path: `/places/${this.place.id}` };
+    }
+  },
+  methods: {
+    openInNewTab() {
+      window.open(this.$router.resolve(this.route).href, "_blank");
+    }
   }
 };
 </script>

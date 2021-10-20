@@ -15,8 +15,12 @@
           :props="props"
           class="cursor-pointer"
           @click.native="$router.push({ path: `/letters/${props.row.id}` })"
+          @click.middle="openInNewTab({ path: `/letters/${props.row.id}` })"
           >{{ props.value }}</q-td
         >
+        <context-menu
+          :route-to-open="$router.resolve({ path: `/letters/${props.row.id}` }).href"
+        ></context-menu>
       </template>
     </q-table>
     <q-banner
@@ -32,9 +36,13 @@
 
 <script>
 import { mapActions } from "vuex";
+import ContextMenu from "./ContextMenu.vue";
+import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
 
 export default {
   name: "MentionsTable",
+  components: { ContextMenu },
+  mixins: [openInNewTabMixin],
   props: {
     entityType: {
       type: String,

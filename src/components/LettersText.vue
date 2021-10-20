@@ -1,3 +1,4 @@
+/* eslint-disable vue/no-unused-components */
 <template>
   <v-runtime-template :template="data"></v-runtime-template>
 </template>
@@ -9,14 +10,17 @@ import { xslt } from "@/mixins/xslt";
 import { dataService } from "@/shared";
 import { basePathLetters } from "../router";
 import CommentIcon from "@/components/CommentIcon.vue";
+import ContextMenu from "@/components/ContextMenu.vue";
+import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
 
 export default {
   name: "LettersText",
   components: {
     VRuntimeTemplate,
-    CommentIcon
+    CommentIcon,
+    ContextMenu
   },
-  mixins: [xslt],
+  mixins: [openInNewTabMixin, xslt],
   data() {
     return {
       data: null
