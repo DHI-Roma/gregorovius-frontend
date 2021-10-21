@@ -109,7 +109,11 @@
         <xsl:when test="@target">
             <a class="g-entity-link" 
                 v-on:click="$router.push({{ name: 'Brief', params: {{ id: '{@target}' }} }})" 
-                v-bind:href="$router.resolve({{ name: 'Brief', params: {{ id: '{@target}' }} }}).href">
+                v-bind:href="$router.resolve({{ name: 'Brief', params: {{ id: '{@target}' }} }}).href"
+                v-on:click.middle="openInNewTab({{ name: 'Brief', params: {{ id: '{@target}' }} }})">
+                <context-menu
+                    v-bind:route-to-open="$router.resolve({{ name: 'Brief', params: {{ id: '{@target}' }} }}).href"
+                ></context-menu>
                 <xsl:apply-templates/>
             </a>
         </xsl:when>
@@ -150,12 +154,22 @@
         <xsl:when test="@key">
             <xsl:choose>
                 <xsl:when test="contains(@key, ' ')">
-                    <a class="g-entity-link" v-on:click="$router.push({{ name: 'Personen (mehrfach)', query: {{ ids: '{@key}'.split(' ').join(',') }} }})">
+                    <a class="g-entity-link" 
+                        v-on:click="$router.push({{ name: 'Personen (mehrfach)', query: {{ ids: '{@key}'.split(' ').join(',') }} }})"
+                        v-on:click.middle="openInNewTab({{ name: 'Personen (mehrfach)', query: {{ ids: '{@key}'.split(' ').join(',') }} }})">
+                        <context-menu
+                            v-bind:route-to-open="$router.resolve({{ name: 'Personen (mehrfach)', query: {{ ids: '{@key}'.split(' ').join(',') }} }}).href"
+                        ></context-menu>
                         <xsl:apply-templates/>
                     </a>
                 </xsl:when>
                 <xsl:otherwise>
-                    <a class="g-entity-link" v-on:click="$router.push({{ name: 'Person', params: {{ id: '{@key}' }} }})">
+                    <a class="g-entity-link"
+                        v-on:click="$router.push({{ name: 'Person', params: {{ id: '{@key}' }} }})"
+                        v-on:click.middle="openInNewTab({{ name: 'Person', params: {{ id: '{@key}' }} }})">
+                        <context-menu
+                            v-bind:route-to-open="$router.resolve({{ name: 'Person', params: {{ id: '{@key}' }} }}).href"
+                        ></context-menu>
                         <xsl:apply-templates/>
                     </a>
                 </xsl:otherwise>
@@ -170,7 +184,13 @@
 <xsl:template match="tei:placeName">
     <xsl:choose>
         <xsl:when test="@key">
-            <a class="g-entity-link" v-on:click="$router.push({{ name: 'Ort', params: {{ id: '{@key}' }} }})">
+            <a class="g-entity-link" 
+                v-on:click="$router.push({{ name: 'Ort', params: {{ id: '{@key}' }} }})"
+                v-on:click.middle="openInNewTab({{ name: 'Ort', params: {{ id: '{@key}' }} }})"
+                >
+                <context-menu
+                    v-bind:route-to-open="$router.resolve({{ name: 'Person', params: {{ id: '{@key}' }} }}).href"
+                ></context-menu>
                 <xsl:apply-templates/>
             </a>
         </xsl:when>
@@ -191,13 +211,25 @@
 <xsl:template match="tei:bibl">
     <xsl:choose>
         <xsl:when test="@sameAs">
-            <a class="g-entity-link" v-on:click="$router.push({{ name: 'Werk', params: {{ id: '{@sameAs}' }} }})">
+            <a 
+            class="g-entity-link"
+            v-on:click="$router.push({{ name: 'Werk', params: {{ id: '{@sameAs}' }} }})"
+            v-on:click.middle="openInNewTab({{ name: 'Werk', params: {{ id: '{@sameAs}' }} }})">
+                <context-menu
+                    v-bind:route-to-open="$router.resolve({{ name: 'Werk', params: {{ id: '{@sameAs}' }} }}).href"
+                ></context-menu>
                 <xsl:apply-templates/>
             </a>
         </xsl:when>
         <!--TODO: Mehrfache Literaturverweise-->
         <xsl:when test="@corresp">
-            <a class="g-entity-link" v-on:click="$router.push({{ name: 'Werk (mehrfach)', query: {{ ids: '{@corresp}'.split(' ').join(',') }} }})">
+            <a
+                class="g-entity-link"
+                v-on:click="$router.push({{ name: 'Werk (mehrfach)', query: {{ ids: '{@corresp}'.split(' ').join(',') }} }})"
+                v-on:click.middle="openInNewTab({{ name: 'Werk (mehrfach)', query: {{ ids: '{@corresp}'.split(' ').join(',') }} }})">
+                <context-menu
+                    v-bind:route-to-open="$router.resolve({{ name: 'Werk (mehrfach)', query: {{ ids: '{@corresp}'.split(' ').join(',') }} }}).href"
+                ></context-menu>
                 <xsl:apply-templates/>
             </a>
         </xsl:when>

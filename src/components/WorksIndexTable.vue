@@ -13,8 +13,12 @@
         :props="props"
         class="cursor-pointer"
         @click.native="$router.push({ path: `/works/${props.row.id}` })"
+        @click.middle="openInNewTab({ path: `/works/${props.row.id}` })"
         >{{ props.value }}</q-td
       >
+      <context-menu
+        :route-to-open="$router.resolve({ path: `/works/${props.row.id}` }).href"
+      ></context-menu>
     </template>
     <template v-slot:top-left>
       <q-input v-model="filter" borderless dense debounce="300" placeholder="Suche">
@@ -27,8 +31,14 @@
 </template>
 
 <script>
+import ContextMenu from "./ContextMenu.vue";
+import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
 export default {
   name: "WorksIndexTable",
+  components: {
+    ContextMenu
+  },
+  mixins: [openInNewTabMixin],
   props: {
     type: {
       type: String,

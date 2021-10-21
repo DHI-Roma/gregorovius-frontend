@@ -1,7 +1,8 @@
 <template>
   <q-item
     class="cursor-pointer g-card"
-    @click.native="$router.push({ path: `/persons/${person.id}` })"
+    @click.native="$router.push(route)"
+    @click.middle="openInNewTab(route)"
   >
     <q-item-section>
       <q-item-label>{{ person.properties.name.fullName }}</q-item-label>
@@ -35,12 +36,16 @@
     >
       {{ person.properties.role | formatPersonRole }}
     </q-chip>
+
+    <context-menu :route-to-open="$router.resolve(route).href"></context-menu>
   </q-item>
 </template>
 
 <script>
 import { QChip, QItem, QItemSection, QItemLabel } from "quasar";
 import personService from "@/services/person-service";
+import ContextMenu from "./ContextMenu.vue";
+import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
 
 export default {
   name: "PersonTile",
@@ -48,7 +53,8 @@ export default {
     QChip,
     QItem,
     QItemSection,
-    QItemLabel
+    QItemLabel,
+    ContextMenu
   },
   filters: {
     formatPersonType(rawType) {
@@ -61,11 +67,17 @@ export default {
       return personService.getPersonAlternativeNameTypeTranslation(subType);
     }
   },
+  mixins: [openInNewTabMixin],
   props: {
     person: {
       type: [Object, Promise],
       required: true,
       default: null
+    }
+  },
+  computed: {
+    route() {
+      return { path: `/persons/${this.person.id}` };
     }
   },
   methods: {
