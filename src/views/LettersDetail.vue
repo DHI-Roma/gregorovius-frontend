@@ -51,7 +51,7 @@
               icon="arrow_right_alt"
               color="primary"
               size="md"
-              @click="openUrl(`http://gregorovius-edition.dhi-roma.it/api/letters/${letterId}`)"
+              @click="openUrl(`https://gregorovius-edition.dhi-roma.it/api/letters/${letterId}`)"
             />
           </div>
           <div class="row">
@@ -478,7 +478,7 @@ export default {
   },
 
   methods: {
-    ...mapActions(["loadEntitiesAction"]),
+    ...mapActions(["loadEntitiesAction", "setSelectedEntityIds", "setLettersFiltered"]),
     async initializeComponent() {
       await this.getItems();
       await this.getXSLT("LettersMsDesc", "msDesc");
@@ -494,28 +494,57 @@ export default {
       metaService.refreshZotero();
 
       if (this.$route.params.commentId) {
+        await this.initializeActiveComment();
+      }
+
+      if (this.$route.params.entityIds) {
+        const entityIds = this.$route.params.entityIds.split(",");
+        const filteredLetters = this.letters.filter(letter => {
+          let hasMatch = false;
+          entityIds.forEach(entityId => {
+            if (letter.properties.mentioned.persons.includes(entityId)) {
+              hasMatch = true;
+              return;
+            }
+
+            if (letter.properties.mentioned.places.includes(entityId)) {
+              hasMatch = true;
+              return;
+            }
+
+            if (letter.properties.mentioned.works.includes(entityId)) {
+              hasMatch = true;
+            }
+          });
+
+          return hasMatch;
+        });
+
+        await this.setLettersFiltered(filteredLetters);
+      }
+    },
+    async initializeActiveComment() {
+      const commentReference = document.querySelector(
+        `.g-comment-orig[commentId="${this.$route.params.commentId}"]`
+      );
+      const comment = {
+        id: commentReference.getAttribute("commentId"),
+        text: commentReference.getAttribute("commentText"),
+        offset: 0
+      };
+
+      await this.$store.dispatch("setActiveComment", comment);
+
+      setTimeout(() => {
         const commentReference = document.querySelector(
           `.g-comment-orig[commentId="${this.$route.params.commentId}"]`
         );
-        const comment = {
-          id: commentReference.getAttribute("commentId"),
-          text: commentReference.getAttribute("commentText"),
-          offset: 0
-        };
+        const commentHtml = document.querySelector(`#comment-${this.$route.params.commentId}`);
+        comment.offsetTop = commentReference.offsetTop;
+        comment.text = commentHtml.innerHTML;
 
         this.$store.dispatch("setActiveComment", comment);
-
-        setTimeout(() => {
-          const commentReference = document.querySelector(
-            `.g-comment-orig[commentId="${this.$route.params.commentId}"]`
-          );
-          const commentHtml = document.querySelector(`#comment-${this.$route.params.commentId}`);
-          comment.offsetTop = commentReference.offsetTop;
-          comment.text = commentHtml.innerHTML;
-
-          this.$store.dispatch("setActiveComment", comment);
-        }, 0);
-      }
+      }, 0);
     },
 
     getAbstractCount() {
