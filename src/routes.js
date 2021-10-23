@@ -50,6 +50,11 @@ export const routes = [
         component: LettersDetail
       },
       {
+        path: "letters/:id/filters/:entityIds",
+        name: "Briefe mit vorhandenen Entitaeten",
+        component: LettersDetail
+      },
+      {
         path: "persons",
         name: "Personen",
         component: PersonsIndex

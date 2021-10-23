@@ -153,7 +153,7 @@ export default new Vuex.Store({
 
     async setLettersFiltered({ commit }, letters) {
       commit("SET_LETTERS_FILTERED", letters);
-    }
+    },
   },
   getters: {
     letters: state =>

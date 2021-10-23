@@ -10,6 +10,12 @@
       :pagination.sync="pagination"
       flat
     >
+      <template v-slot:top-right>
+        <BrowseEntitiesButton
+          :entity-ids="[entityId]"
+          :route="{ path: `/letters/${letters[0].id}` }"
+        ></BrowseEntitiesButton>
+      </template>
       <template v-slot:body-cell="props">
         <q-td
           :props="props"
@@ -38,10 +44,14 @@
 import { mapActions } from "vuex";
 import ContextMenu from "./ContextMenu.vue";
 import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
+import BrowseEntitiesButton from "@/components/BrowseEntitiesButton";
 
 export default {
   name: "MentionsTable",
-  components: { ContextMenu },
+  components: {
+    ContextMenu,
+    BrowseEntitiesButton
+  },
   mixins: [openInNewTabMixin],
   props: {
     entityType: {
