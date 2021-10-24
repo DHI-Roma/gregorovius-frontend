@@ -386,9 +386,14 @@ export default {
         return [];
       }
 
+      const personsEntityIds = this.letterEntity.properties.mentioned.persons
+        .flat()
+        .join(" ")
+        .split(" ");
+
       return this.persons
         .filter(person => {
-          const matches = this.letterEntity.properties.mentioned.persons.find(
+          const matches = personsEntityIds.find(
             mentionedPersonId => mentionedPersonId === person.id
           );
           return matches ? true : false;
@@ -402,12 +407,14 @@ export default {
       if (!this.places.length) {
         return [];
       }
+      const placeEntityIds = this.letterEntity.properties.mentioned.places
+        .flat()
+        .join(" ")
+        .split(" ");
 
       return this.places
         .filter(place => {
-          const matches = this.letterEntity.properties.mentioned.places.find(
-            mentionedPlaceId => mentionedPlaceId === place.id
-          );
+          const matches = placeEntityIds.find(mentionedPlaceId => mentionedPlaceId === place.id);
           return matches ? true : false;
         })
         .sort((placeA, placeB) => placeA.properties.name.toponym > placeB.properties.name.toponym);
@@ -419,9 +426,11 @@ export default {
       }
 
       return this.works.filter(work => {
-        const matches = this.letterEntity.properties.mentioned.works.find(
-          mentionedWorkId => mentionedWorkId === work.id
-        );
+        const workEntityIds = this.letterEntity.properties.mentioned.works
+          .flat()
+          .join(" ")
+          .split(" ");
+        const matches = workEntityIds.find(mentionedWorkId => mentionedWorkId === work.id);
         return matches ? true : false;
       });
     },
@@ -502,17 +511,26 @@ export default {
         const filteredLetters = this.letters.filter(letter => {
           let hasMatch = false;
           entityIds.forEach(entityId => {
-            if (letter.properties.mentioned.persons.includes(entityId)) {
+            const mentionedPersonEntityIds = letterService.flattenMentions(
+              letter.properties.mentioned.persons
+            );
+            if (mentionedPersonEntityIds.includes(entityId)) {
               hasMatch = true;
               return;
             }
 
-            if (letter.properties.mentioned.places.includes(entityId)) {
+            const mentionedPlaceEntityIds = letterService.flattenMentions(
+              letter.properties.mentioned.places
+            );
+            if (mentionedPlaceEntityIds.includes(entityId)) {
               hasMatch = true;
               return;
             }
 
-            if (letter.properties.mentioned.works.includes(entityId)) {
+            const mentionedWorkEntityIds = letterService.flattenMentions(
+              letter.properties.mentioned.works
+            );
+            if (mentionedWorkEntityIds.includes(entityId)) {
               hasMatch = true;
             }
           });

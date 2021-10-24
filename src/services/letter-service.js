@@ -99,11 +99,16 @@ const getCitationRecommendation = data => {
   return recommendation;
 };
 
+const flattenMentions = mentions => {
+  return mentions.join(" ").split(" ");
+};
+
 export default {
   getTitle,
   getSecondaryTitle,
   getEditor,
   getResponsible,
   getResponsibleList,
-  getCitationRecommendation
+  getCitationRecommendation,
+  flattenMentions
 };
