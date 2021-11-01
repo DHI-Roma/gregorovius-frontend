@@ -88,6 +88,18 @@ export const getAlternativeFullName = person => {
   return name;
 };
 
+export const getPersonIdByGnd = (gnd, persons) => {
+  const gndRoute = 'http://d-nb.info/gnd/';
+  const match = persons.find(person => person.properties.gnd === gndRoute + gnd);
+
+
+  if (!match) {
+    return null;
+  }
+
+  return match.id;
+};
+
 export default {
   getPersonRoleTranslation,
   getPersonRoleClass,
@@ -97,5 +109,6 @@ export default {
   hasAlternativeName,
   getAlternativeFullName,
   getPersonAlternativeNameTypeTranslation,
+  getPersonIdByGnd,
   DEFAULT_ALTERNATIVE_NAME_TYPE_TRANSLATION
 };

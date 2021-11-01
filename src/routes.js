@@ -16,6 +16,8 @@ import Impressum from "@/views/Impressum.vue";
 import Project from "@/views/Project.vue";
 import Team from "@/views/Team.vue";
 
+import { getPersonIdByGnd } from "@/services/person-service";
+
 import store from "@/store";
 
 import Error404 from "@/views/Error404.vue";
@@ -73,6 +75,23 @@ export const routes = [
         name: "Personen (mehrfach)",
         component: PersonsDetailMultiple,
         props: route => ({ ids: route.query.ids })
+      },
+      {
+        path: "gnd/:id",
+        name: "GND",
+        component: PersonsIndex,
+        async beforeEnter(to, from, next) {
+          await store.dispatch("loadEntitiesAction");
+
+          const personId = getPersonIdByGnd(to.params.id, store.getters.persons);
+          if (!personId) {
+            next();
+          }
+
+          next({
+            path: `persons/${personId}`
+          });
+        }
       },
       {
         path: "places",
