@@ -123,6 +123,32 @@
                   <a href="http://gregorovius-edition.dhi-roma.it/api/docs">dokumentiert</a> und
                   steht interessierten NutzerInnen und EntwicklerInnen als Webservice zur Verfügung.
                 </p>
+                <p>
+                  Weiterhin liegt eine
+                  <a href="https://de.wikipedia.org/wiki/Wikipedia:BEACON">BEACON</a>-Schnittstelle
+                  vor, welche eine Referenzliste aller mit einer
+                  <a href="https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html"
+                    >GND </a
+                  >identifizierten Entitäten im Personenregister bereitstellt. Die
+                  BEACON-Schnittstelle liegt vor für:
+                </p>
+                <ul>
+                  <li>
+                    <a href="https://gregorovius-edition.dhi-roma.it/api/beacon/all"
+                      >Personen und Körperschaften</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://gregorovius-edition.dhi-roma.it/api/beacon/persons"
+                      >Nur Personen</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://gregorovius-edition.dhi-roma.it/api/beacon/organizations"
+                      >Nur Körperschaften</a
+                    >
+                  </li>
+                </ul>
               </div>
             </q-tab-panel>
           </q-tab-panels>
