@@ -132,77 +132,25 @@
         </q-card>
       </div>
       <div class="row justify-center">
-        <q-card class="col-md-8 col-12 q-pa-xl q-mb-xl" bordered flat>
-          <q-tabs v-model="mentionTab" class="text-primary">
-            <q-tab v-if="mentionedPersonEntities.length" name="persons" label="Erwähnte Personen" />
-            <q-tab v-if="mentionedPlaceEntites.length" name="places" label="Erwähnte Orte" />
-            <q-tab v-if="mentionedWorkEntities.length" name="works" label="Erwähnte Werke" />
-          </q-tabs>
-          <q-separator dark />
-          <q-tab-panels v-model="mentionTab" animated>
-            <q-tab-panel v-if="mentionedPersonEntities.length" name="persons">
-              <q-table
-                grid
-                :data="mentionedPersonEntities"
-                row-key="id"
-                flat
-                :pagination="mentionPagination"
-              >
-                <template v-slot:item="props">
-                  <div class="q-pa-xs col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <q-card>
-                      <q-separator />
-                      <q-list class="g-card-list mention">
-                        <PersonTile :person="props.row"></PersonTile>
-                      </q-list>
-                    </q-card>
-                  </div>
-                </template>
-              </q-table>
-            </q-tab-panel>
-            <q-tab-panel v-if="mentionedPlaceEntites.length" name="places">
-              <q-table
-                grid
-                :data="mentionedPlaceEntites"
-                row-key="id"
-                flat
-                :pagination="mentionPagination"
-              >
-                <template v-slot:item="props">
-                  <div class="q-pa-xs col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <q-card>
-                      <q-separator />
-                      <q-list class="g-card-list mention">
-                        <PlaceTile :place="props.row"></PlaceTile>
-                      </q-list>
-                    </q-card>
-                  </div>
-                </template>
-              </q-table>
-            </q-tab-panel>
-
-            <q-tab-panel v-if="mentionedWorkEntities.length" name="works">
-              <q-table
-                :data="mentionedWorkEntities"
-                :columns="mentionedWorksTableColumns"
-                row-key="id"
-                flat
-                :pagination="mentionPagination"
-              >
-                <template v-slot:body-cell="props">
-                  <q-td
-                    :props="props"
-                    class="cursor-pointer"
-                    @click.native="$router.push({ path: `/works/${props.row.id}` })"
-                    >{{ props.value }}</q-td
-                  >
-                  <context-menu
-                    :route-to-open="$router.resolve({ path: `/works/${props.row.id}` }).href"
-                  ></context-menu>
-                </template>
-              </q-table>
-            </q-tab-panel>
-          </q-tab-panels>
+        <q-card
+          v-if="mentionedEntities.length"
+          class="col-md-8 col-12 q-pa-xl q-mb-xl"
+          bordered
+          flat
+        >
+          <q-card-section>
+            <div class="text-h6">In diesem Brief erwähnte Entitäten</div>
+          </q-card-section>
+          <q-table grid :data="mentionedEntities" row-key="id" flat :pagination="mentionPagination">
+            <template v-slot:item="props">
+              <div class="q-pa-xs col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <q-card>
+                  <q-separator />
+                  <MentionsTile :entity="props.row"></MentionsTile>
+                </q-card>
+              </div>
+            </template>
+          </q-table>
         </q-card>
       </div>
       <div class="row justify-center">
@@ -262,6 +210,7 @@ import {
 } from "quasar";
 import ContextMenu from "../components/ContextMenu.vue";
 import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
+import MentionsTile from "@/components/MentionsTile";
 
 const TAB_TEXTGRUNDLAGE = "tgl";
 const SPLITTER_SIZE_START = 100;
@@ -271,6 +220,7 @@ const FG_03_03_SHOULD_DISPLAY_EDITOR = true;
 export default {
   name: "Item",
   components: {
+    MentionsTile,
     Comment,
     LettersText,
     PersonTile,
@@ -296,14 +246,14 @@ export default {
       data: [],
       loading: true,
       tab: "reg",
-      mentionTab: "persons",
+      mentionTab: "all",
       msDesc: "",
       supplement: "",
       physDesc: "",
       splitterModel: SPLITTER_SIZE_START,
       copyCitationLabel: "kopieren",
       mentionPagination: {
-        rowsPerPage: 16,
+        rowsPerPage: 0,
         sortBy: "name"
       },
       mentionedWorksTableColumns: [
@@ -432,6 +382,33 @@ export default {
           .split(" ");
         const matches = workEntityIds.find(mentionedWorkId => mentionedWorkId === work.id);
         return matches ? true : false;
+      });
+    },
+
+    mentionedEntityIdsInOrder() {
+      const entityIds = [];
+      const entityIdsFromDomNodes = document
+        .querySelector(".g-edition-text")
+        .querySelectorAll(".g-entity-link[entity-id]");
+
+      entityIdsFromDomNodes.forEach(node => {
+        const ids = node.getAttribute("entity-id").split(" ");
+        entityIds.push(...ids);
+      });
+
+      return entityIds;
+    },
+
+    mentionedEntities() {
+      return [
+        ...this.mentionedPersonEntities,
+        ...this.mentionedPlaceEntites,
+        ...this.mentionedWorkEntities
+      ].sort((entityA, entityB) => {
+        const positionInSortedListA = this.mentionedEntityIdsInOrder.indexOf(entityA.id);
+        const positionInSortedListB = this.mentionedEntityIdsInOrder.indexOf(entityB.id);
+
+        return positionInSortedListA > positionInSortedListB;
       });
     },
 
@@ -684,13 +661,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.g-card:hover {
-  background: #f7f7f7;
-}
-
-.g-card-list.mention {
-  height: 7.5em;
-}
-</style>
