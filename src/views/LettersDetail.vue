@@ -256,24 +256,7 @@ export default {
         rowsPerPage: 0,
         sortBy: "name"
       },
-      mentionedWorksTableColumns: [
-        {
-          name: "type",
-          required: true,
-          label: "Typ",
-          align: "left",
-          field: row => this.getWorkType(row.properties.type),
-          sortable: true
-        },
-        {
-          name: "title",
-          required: true,
-          label: "Titel",
-          align: "left",
-          field: row => row.properties.title,
-          sortable: true
-        }
-      ]
+      mentionedEntityIdsInOrder: []
     };
   },
   computed: {
@@ -385,19 +368,6 @@ export default {
       });
     },
 
-    mentionedEntityIdsInOrder() {
-      const entityIds = [];
-      const entityIdsFromDomNodes = document
-        .querySelector(".g-edition-text")
-        .querySelectorAll(".g-entity-link[entity-id]");
-
-      entityIdsFromDomNodes.forEach(node => {
-        const ids = node.getAttribute("entity-id").split(" ");
-        entityIds.push(...ids);
-      });
-
-      return entityIds;
-    },
 
     mentionedEntities() {
       return [
@@ -482,7 +452,7 @@ export default {
       if (this.$route.params.commentId) {
         await this.initializeActiveComment();
       }
-
+      this.setMentionedEntityIdsInOrder();
       if (this.$route.params.entityIds) {
         const entityIds = this.$route.params.entityIds.split(",");
         const filteredLetters = this.letters.filter(letter => {
@@ -657,7 +627,22 @@ export default {
           id: this.nextLetterInSelection.id
         }
       });
-    }
+    },
+    setMentionedEntityIdsInOrder() {
+      setTimeout(() => {
+        const entityIds = [];
+        const entityIdsFromDomNodes = document
+          .querySelector(".g-edition-text")
+          .querySelectorAll(".g-entity-link[entity-id]");
+
+        entityIdsFromDomNodes.forEach(node => {
+          const ids = node.getAttribute("entity-id").split(" ");
+          entityIds.push(...ids);
+        });
+
+        this.mentionedEntityIdsInOrder = entityIds;
+      });
+    },
   }
 };
 </script>
