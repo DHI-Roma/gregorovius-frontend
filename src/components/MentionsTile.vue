@@ -6,7 +6,12 @@
     @click.middle="openInNewTab(route)"
   >
     <q-item class="g-card">
-      {{ name | truncate }}
+      <q-item-label>
+        {{ name | truncate }}
+      </q-item-label>
+      <q-item-label v-if="subtitle.length" class="text-subtitle3 text-secondary">
+        {{ subtitle }}
+      </q-item-label>
     </q-item>
     <ContextMenu :route-to-open="route"></ContextMenu>
   </q-list>
@@ -78,6 +83,17 @@ export default {
 
       return "";
     },
+    subtitle() {
+      if (this.entity.entity !== ENTITY_PERSON) {
+        return "";
+      }
+
+      if (this.entity.properties.birth.length && this.entity.properties.death.length) {
+        return `${this.entity.properties.birth} – ${this.entity.properties.death}`;
+      }
+
+      return "";
+    },
     backgroundColorClass() {
       if (this.entity.entity === ENTITY_PERSON) {
         return "bg-green-1";
@@ -119,6 +135,10 @@ export default {
 </script>
 
 <style scoped>
+.g-card {
+  flex-direction: column;
+}
+
 .g-card-list {
   font-size: 0.8rem;
 }
