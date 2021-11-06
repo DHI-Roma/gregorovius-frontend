@@ -103,7 +103,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .g-card:hover {
   background: #f7f7f7;
 }
