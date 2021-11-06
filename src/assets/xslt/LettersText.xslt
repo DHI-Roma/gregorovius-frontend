@@ -189,7 +189,7 @@
                 v-on:click.middle="openInNewTab({{ name: 'Ort', params: {{ id: '{@key}' }} }})"
                 >
                 <context-menu
-                    v-bind:route-to-open="$router.resolve({{ name: 'Person', params: {{ id: '{@key}' }} }}).href"
+                    v-bind:route-to-open="$router.resolve({{ name: 'Ort', params: {{ id: '{@key}' }} }}).href"
                 ></context-menu>
                 <xsl:apply-templates/>
             </a>
