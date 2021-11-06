@@ -597,7 +597,8 @@ export default {
       }
     },
     async openPreviousLetter() {
-      this.$router.push({
+      await this.$store.dispatch("unselectComment");
+      await this.$router.push({
         name: "Brief",
         params: {
           id: this.previousLetter.id
@@ -605,7 +606,8 @@ export default {
       });
     },
     async openNextLetter() {
-      this.$router.push({
+      await this.$store.dispatch("unselectComment");
+      await this.$router.push({
         name: "Brief",
         params: {
           id: this.nextLetter.id
@@ -613,7 +615,8 @@ export default {
       });
     },
     async openPreviousLetterInSelection() {
-      this.$router.push({
+      await this.$store.dispatch("unselectComment");
+      await this.$router.push({
         name: "Brief",
         params: {
           id: this.previousLetterInSelection.id
@@ -621,7 +624,8 @@ export default {
       });
     },
     async openNextLetterInSelection() {
-      this.$router.push({
+      await this.$store.dispatch("unselectComment");
+      await this.$router.push({
         name: "Brief",
         params: {
           id: this.nextLetterInSelection.id
