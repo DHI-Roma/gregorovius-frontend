@@ -98,12 +98,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .g-card:hover {
   background: #f7f7f7;
-}
-
-.g-card-list {
-  height: 5.5em;
 }
 </style>
