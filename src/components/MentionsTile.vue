@@ -88,7 +88,7 @@ export default {
         return "";
       }
 
-      if (this.entity.properties.birth.length && this.entity.properties.death.length) {
+      if (this.entity.properties.birth && this.entity.properties.death) {
         return `${this.entity.properties.birth} – ${this.entity.properties.death}`;
       }
 
