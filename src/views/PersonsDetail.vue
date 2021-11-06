@@ -16,6 +16,12 @@
           <MentionsTable :entity-id="entityId" :entity-name="entityName" entity-type="persons" />
         </div>
       </div>
+
+      <div v-if="gnd.length" class="row justify-center">
+        <div class="col-md-8 col-12 q-pb-xl q-gutter-y-lg">
+          <PersonSeeAlsoTable :gnd="gnd"></PersonSeeAlsoTable>
+        </div>
+      </div>
     </q-page>
     <q-page v-show="this.$store.getters.loading || loading == true">
       <div class="q-pt-xl row justify-center">
@@ -31,12 +37,15 @@ import MentionsTable from "@/components/MentionsTable";
 import CorrespondenceTable from "@/components/CorrespondenceTable";
 import PersonsTitle from "@/components/PersonsTitle.vue";
 import { dataService } from "@/shared";
+import beaconService from "@/services/beacon-service";
 
 import { QPage, QSpinnerOval } from "quasar";
+import PersonSeeAlsoTable from "@/components/PersonSeeAlsoTable";
 
 export default {
   name: "PersonsDetail",
   components: {
+    PersonSeeAlsoTable,
     QPage,
     QSpinnerOval,
     MentionsTable,
@@ -69,6 +78,17 @@ export default {
         return {};
       }
       return this.persons.find(person => person.id === this.entityId);
+    },
+    gnd() {
+      if (!this.persons.length) {
+        return false;
+      }
+
+      if (!beaconService.hasGnd(this.entity)) {
+        return false;
+      }
+
+      return beaconService.getGnd(this.entity);
     },
     properties() {
       if (!this.persons.length) {

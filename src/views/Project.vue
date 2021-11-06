@@ -149,6 +149,12 @@
                     >
                   </li>
                 </ul>
+                <p>
+                  Die Edition bezieht Daten vom
+                  <a href="https://beacon.findbuch.de/">BEACON Findbuch</a>, um die Personen und
+                  Körperschaften im Personenregister mit Referenzen in weiteren Datenquellen
+                  anzureichern.
+                </p>
               </div>
             </q-tab-panel>
           </q-tab-panels>
