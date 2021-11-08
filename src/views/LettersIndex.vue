@@ -343,13 +343,15 @@ export default {
 
         this.filter.searchResults = results ? results : [];
       } catch (error) {
-        console.log(error);
         this.filter.searchResults = [];
       }
       this.loading = false;
     },
 
     applySingleRouteParam(entityKey, payload) {
+      if (!Object.keys(this.$route.query).length) {
+        return;
+      }
       this.filter[entityKey] = payload.value;
       if (payload.value == "") {
         var newQuery = { ...this.$route.query };
@@ -365,6 +367,9 @@ export default {
     },
 
     applyMultiRouteParams(entityKey, payload) {
+      if (!Object.keys(this.$route.query).length) {
+        return;
+      }
       this.filter[entityKey] = payload.value;
       if (!payload.length) {
         var newQuery = { ...this.$route.query };

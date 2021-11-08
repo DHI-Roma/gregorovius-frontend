@@ -83,6 +83,9 @@ const getEditorName = editor => {
 };
 
 const getCitationRecommendation = data => {
+  if (!data.teiHeader) {
+    return "";
+  }
   const title = getTitle(data);
   const secondaryTitle = getSecondaryTitle(data);
   const editor = getEditor(data);
