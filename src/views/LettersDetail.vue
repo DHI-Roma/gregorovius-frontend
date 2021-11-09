@@ -186,8 +186,6 @@ import { mapActions, mapGetters } from "vuex";
 import { basePathLetters } from "../router";
 import LettersText from "@/components/LettersText.vue";
 import Comment from "@/components/Comment.vue";
-import PersonTile from "@/components/PersonTile.vue";
-import PlaceTile from "@/components/PlaceTile.vue";
 import axios from "axios";
 import { dataService } from "@/shared";
 import letterService from "@/services/letter-service";
@@ -208,7 +206,6 @@ import {
   QChip,
   QSplitter
 } from "quasar";
-import ContextMenu from "../components/ContextMenu.vue";
 import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
 import MentionsTile from "@/components/MentionsTile";
 
@@ -223,8 +220,6 @@ export default {
     MentionsTile,
     Comment,
     LettersText,
-    PersonTile,
-    PlaceTile,
     VRuntimeTemplate,
     QCard,
     QPage,
@@ -237,8 +232,7 @@ export default {
     QTab,
     QCardSection,
     QChip,
-    QSplitter,
-    ContextMenu
+    QSplitter
   },
   mixins: [openInNewTabMixin],
   data() {
@@ -378,7 +372,15 @@ export default {
         const positionInSortedListA = this.mentionedEntityIdsInOrder.indexOf(entityA.id);
         const positionInSortedListB = this.mentionedEntityIdsInOrder.indexOf(entityB.id);
 
-        return positionInSortedListA > positionInSortedListB;
+        if (positionInSortedListA > positionInSortedListB) {
+          return 1;
+        }
+
+        if (positionInSortedListA < positionInSortedListB) {
+          return -1;
+        }
+
+        return 0;
       });
     },
 
