@@ -5,11 +5,12 @@
       :data="references.entries"
       :columns="columns"
       :pagination="pagination"
+      dense
     >
       <template v-slot:body-cell="props">
         <q-td class="cursor-pointer" :props="props" @click="openEntry(props.row.url)">
           <span>
-            <q-tooltip v-if="">
+            <q-tooltip>
               {{ props.row.long }}
             </q-tooltip>
 
