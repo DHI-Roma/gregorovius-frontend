@@ -151,7 +151,7 @@
                 </ul>
                 <p>
                   Die Edition bezieht Daten vom
-                  <a href="https://beacon.findbuch.de/">BEACON Findbuch</a>, um die Personen und
+                  <a href="https://beacon.findbuch.de/seealso/pnd-aks">BEACON Findbuch</a>, um die Personen und
                   Körperschaften im Personenregister mit Referenzen in weiteren Datenquellen
                   anzureichern.
                 </p>

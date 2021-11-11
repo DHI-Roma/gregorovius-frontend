@@ -18,7 +18,7 @@
       </div>
 
       <div v-if="gnd.length" class="row justify-center">
-        <div class="col-md-8 col-12 q-pb-xl q-gutter-y-lg">
+        <div class="col-md-8 col-12 q-pb-xl q-gutter-y-sm">
           <PersonSeeAlsoTable :gnd="gnd"></PersonSeeAlsoTable>
         </div>
       </div>

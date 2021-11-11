@@ -1,7 +1,8 @@
 <template>
-  <q-card v-if="references.entries.length" class="col-md-8 col-12 q-pa-xl" flat bordered>
+  <q-card v-if="references.entries.length" class="col-md-8 col-12 q-px-xl q-py-sm" flat bordered>
     <q-table
       title="Referenzen in anderen Datenquellen"
+      title-class="text-overline q-pt-sm"
       :data="references.entries"
       :columns="columns"
       :pagination="pagination"
@@ -14,6 +15,7 @@
               {{ props.row.long }}
             </q-tooltip>
 
+            <q-icon name="chevron_right"></q-icon>
             {{ props.value }}
           </span>
         </q-td>
