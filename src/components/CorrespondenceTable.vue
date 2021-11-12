@@ -47,8 +47,7 @@ export default {
       filter: "",
       loading: true,
       pagination: {
-        rowsPerPage: 10,
-        sortBy: "title"
+        rowsPerPage: 10
       },
       columns: [
         {
