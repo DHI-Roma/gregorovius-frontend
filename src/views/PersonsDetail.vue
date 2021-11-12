@@ -104,7 +104,17 @@ export default {
         letter =>
           letter.properties.sender.includes(this.entityId) ||
           letter.properties.recipient.includes(this.entityId)
-      );
+      ).sort((letterA, letterB) => {
+        if (letterA.properties.date > letterB.properties.date) {
+          return 1;
+        }
+
+        if (letterA.properties.date < letterB.properties.date) {
+          return -1;
+        }
+
+        return 0;
+      });
     }
   },
 
