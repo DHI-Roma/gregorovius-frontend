@@ -73,8 +73,7 @@ export default {
       filter: "",
       loading: true,
       pagination: {
-        rowsPerPage: 10,
-        sortBy: "title"
+        rowsPerPage: 10
       },
       columns: [
         {
@@ -93,7 +92,17 @@ export default {
       return this.$store.getters.fullNameIndex;
     },
     letters() {
-      return this.getMentioned(this.entityType);
+      return this.getMentioned(this.entityType).sort((entityA, entityB) => {
+        if (entityA.properties.date > entityB.properties.date) {
+          return 1;
+        }
+
+        if (entityA.properties.date < entityB.properties.date) {
+          return -1;
+        }
+
+        return 0;
+      });
     }
   },
 
