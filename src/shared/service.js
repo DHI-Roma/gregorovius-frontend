@@ -26,8 +26,7 @@ const parseItem = (response, code) => {
 const getVersion = async () => {
   try {
     const response = await axios.get(`${API}/version/`);
-    const version = response.data.version;
-    return version;
+    return response.data.version;
   } catch (error) {
     console.error(`${error}: Unable to load version`);
     return "";
