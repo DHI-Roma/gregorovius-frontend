@@ -23,6 +23,18 @@ const parseItem = (response, code) => {
   return item;
 };
 
+const getVersion = async () => {
+  try {
+    const response = await axios.get(`${API}/version/`);
+    const version = response.data.version;
+    console.log(version);
+    return version;
+  } catch (error) {
+    console.error(`${error}: Unable to load version`);
+    return "";
+  }
+}
+
 const getEntities = async function(entityName) {
   try {
     if (localStorage.getItem(entityName)) {
@@ -128,5 +140,6 @@ export const dataService = {
   getEntity,
   getLetters,
   getSearchResults,
+  getVersion,
   XSLTransform
 };

@@ -118,6 +118,14 @@ export default new Vuex.Store({
     },
 
     async loadEntitiesAction() {
+      const currentVersion = localStorage.getItem("version");
+      const remoteVersion = await dataService.getVersion();
+
+      if (currentVersion !== remoteVersion) {
+        localStorage.clear();
+        localStorage.setItem("version", remoteVersion);
+      }
+
       if (this.getters.letters.length === 0) {
         await this.dispatch("loadLettersAction");
       }
