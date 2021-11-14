@@ -536,9 +536,15 @@ export default {
     },
     async getItems() {
       try {
+        const storageId = `letter-${this.letterId}`;
+        if (localStorage.getItem(storageId)) {
+          this.data = JSON.parse(localStorage.getItem(storageId));
+          return;
+        }
         const response = await axios.get(`${API}${basePathLetters}/${this.letterId}`, {
           headers: { Accept: "application/json" }
         });
+        localStorage.setItem(storageId, JSON.stringify(response.data));
         this.data = response.data;
         if (response.status === 404) {
           this.$router.push({ path: "/404" });
