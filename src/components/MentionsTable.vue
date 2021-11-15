@@ -1,7 +1,7 @@
 <template>
   <q-card class="col-md-8 col-12 q-pa-xl" flat bordered>
     <q-table
-      v-if="loading == false && letters.length > 0"
+      v-if="!loading && letters.length > 0"
       title="Erwähnt in"
       :data="letters"
       :columns="columns"
@@ -30,7 +30,7 @@
       </template>
     </q-table>
     <q-banner
-      v-if="letters.length == 0 && loading == false"
+      v-if="letters.length === 0 && !loading"
       class="bg-warning text-center"
       inline-actions
       rounded
@@ -107,23 +107,23 @@ export default {
   },
 
   async beforeMount() {
+    this.loading = true;
     await this.loadEntitiesAction();
     if (this.$store.getters.fullNameIndex.length == 0) {
       await this.loadFullNameIndexAction();
     }
+    this.loading = false;
   },
 
   methods: {
     ...mapActions(["loadLettersAction", "loadEntitiesAction", "loadFullNameIndexAction"]),
     getMentioned(entityName) {
-      this.loading = true;
       const { letters } = this.$store.getters;
       const filtered = letters.filter(letter => {
         let entities = letter.properties.mentioned[entityName];
         entities = !entities ? [] : entities;
         return [...entities].some(id => id.includes(this.entityId));
       });
-      this.loading = false;
       return filtered;
     }
   }

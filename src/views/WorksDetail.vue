@@ -1,6 +1,6 @@
 <template>
   <div>
-    <q-page v-show="!this.$store.getters.loading" padding>
+    <q-page v-show="!this.$store.getters.loading && !isLoading" padding>
       <div class="row justify-center">
         <div class="col-md-8 col-12 q-py-xl q-gutter-y-lg">
           <q-card class="q-pa-xl" flat>
@@ -21,7 +21,7 @@
         </div>
       </div>
     </q-page>
-    <q-page v-show="this.$store.getters.loading">
+    <q-page v-show="this.$store.getters.loading || isLoading">
       <div class="q-pt-xl row justify-center">
         <q-spinner-oval color="primary" size="5em" />
       </div>
@@ -36,7 +36,7 @@ import MentionsTable from "@/components/MentionsTable";
 import { API } from "../../env";
 
 export default {
-  name: "PersonsDetail",
+  name: "WorksDetail",
   components: {
     MentionsTable,
     VRuntimeTemplate
@@ -44,7 +44,8 @@ export default {
   data() {
     return {
       data: [],
-      title: ""
+      title: "",
+      isLoading: true
     };
   },
   computed: {
@@ -53,9 +54,10 @@ export default {
     }
   },
 
-  created() {
-    this.getItems();
-    this.getXSLT("WorkTitle", "title");
+  async beforeMount() {
+    await this.getItems();
+    await this.getXSLT("WorkTitle", "title");
+    this.isLoading = false;
   },
 
   methods: {
