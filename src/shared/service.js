@@ -31,7 +31,7 @@ const getVersion = async () => {
     console.error(`${error}: Unable to load version`);
     return "";
   }
-}
+};
 
 const getEntities = async function(entityName) {
   try {

@@ -105,13 +105,17 @@ export default new Vuex.Store({
       await this.dispatch("loadPlacesAction");
       if (this.getters.fullNameIndex.length === 0) {
         commit("SET_LOADING_STATUS", true);
-        const entities = [...this.getters.persons, ...this.getters.places];
-        const fullNameIndex = {};
-        entities.map(async entity => {
-          const targetEntity = entities.find(item => item.id === entity.id);
-          fullNameIndex[entity.id] =
-            targetEntity.properties.name.toponym || targetEntity.properties.name.fullName || "NN";
-        });
+        let fullNameIndex = {};
+        if (localStorage.getItem("fullNameIndex")) {
+          fullNameIndex = localStorage.getItem("fullNameIndex");
+        } else {
+          const entities = [...this.getters.persons, ...this.getters.places];
+          entities.map(async entity => {
+            const targetEntity = entities.find(item => item.id === entity.id);
+            fullNameIndex[entity.id] =
+              targetEntity.properties.name.toponym || targetEntity.properties.name.fullName || "NN";
+          });
+        }
         commit("GET_FULLNAME_INDEX", fullNameIndex);
         commit("SET_LOADING_STATUS", false);
       }

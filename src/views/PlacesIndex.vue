@@ -74,7 +74,7 @@ export default {
   methods: {
     async getItems() {
       await this.$store.dispatch("loadFullNameIndexAction");
-      await this.$store.dispatch("loadEntities");
+      await this.$store.dispatch("loadEntitiesAction");
       this.loading = false;
     }
   }
