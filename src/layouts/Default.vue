@@ -76,6 +76,11 @@
                 Impressum
               </q-btn>
             </div>
+            <div class="col-md-3 col-10">
+              <q-btn flat class="text-caption bg-none" @click="$router.push({ name: 'Datenschutzerklärung' })">
+                Datenschutz
+              </q-btn>
+            </div>
             <div class="col-md-1 col-10 cursor-pointer">
               <q-icon name="photo_camera" :class="$route.path === '/' ? '' : 'hidden'">
                 <q-popup-proxy>

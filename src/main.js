@@ -5,7 +5,7 @@ import store from "./store";
 import VueMatomo from "vue-matomo";
 import "./quasar";
 
-import { MATOMO_CONFIG } from "app/env";
+import { MATOMO_CONFIG } from "../env";
 
 Vue.config.productionTip = false;
 
