@@ -15,6 +15,7 @@ import WorksDetailMultiple from "@/views/WorksDetailMultiple.vue";
 import Impressum from "@/views/Impressum.vue";
 import Project from "@/views/Project.vue";
 import Team from "@/views/Team.vue";
+import PrivacyNotice from "@/views/PrivacyNotice";
 
 import { getPersonIdByGnd } from "@/services/person-service";
 
@@ -141,6 +142,11 @@ export const routes = [
         path: "impressum",
         name: "Impressum",
         component: Impressum
+      },
+      {
+        path: "privacy",
+        name: "Datenschutzerklärung",
+        component: PrivacyNotice
       },
       {
         path: "*",

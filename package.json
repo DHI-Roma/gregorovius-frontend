@@ -1,6 +1,6 @@
 {
   "name": "gregorovius-frontend",
-  "version": "1.8.6-beta",
+  "version": "1.8.7-beta",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -21,6 +21,7 @@
     "raw-loader": "^3.1.0",
     "v-runtime-template": "^1.10.0",
     "vue": "^2.6.11",
+    "vue-matomo": "^4.1.0",
     "vue-router": "^3.0.3",
     "vuex": "^3.1.2"
   },
