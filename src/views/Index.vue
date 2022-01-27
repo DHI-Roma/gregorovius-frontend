@@ -9,9 +9,9 @@
         <div class="text-center text-h4 landing-button">Briefe</div>
       </q-btn>
       <div class="row q-mt-lg">
-        <div class="text-h7 text-left text-white text-bold q-pr-xs">Projektleitung</div>
+        <div class="text-h7 text-left text-white text-bold q-pr-xs">Herausgegeben von</div>
         <div class="text-h7 text-left text-white">
-          Prof. Dr. Martin Baumeister und Dr. Angela Steinsiek
+          Dr. Angela Steinsiek
         </div>
       </div>
     </div>
