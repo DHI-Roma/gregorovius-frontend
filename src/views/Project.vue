@@ -20,18 +20,19 @@
                   Ferdinand Gregorovius hat mehr als zwanzig Jahre in Rom gelebt und hier sein
                   Hauptwerk, die „Geschichte der Stadt Rom im Mittelalter“, geschrieben, das ihm
                   1876 die römische Ehrenbürgerwürde einbrachte. Auch wenn Gregorovius vor seinem
-                  Tod viele der Briefe <b>an ihn</b> vernichtet hat und einige seiner vertrauten
+                  Tod viele der Briefe <b>an ihn</b> vernichtet hat und viele seiner vertrauten
                   Freunde veranlasst hat, seine Briefe <b>von ihm</b> zu vernichten, haben sich
                   neben seinem historiographischen und schriftstellerischen Œuvre mehrere Tausend
-                  Briefe erhalten. Das Gregorovius-Briefkorpus ist wissenschafts-, zeit- und
+                  Briefe
+                  erhalten. Das Gregorovius-Briefkorpus ist wissenschafts-, zeit- und
                   kulturgeschichtlich von höchster Relevanz, weil er selbst sich als Grenzgänger
-                  zwischen Geschichtsschreibung und Literatur verstand. Wissenschafts-, Insbesondere
-                  die weitgehend vollständig überlieferten Verlags-Briefe an und von Cotta sowie die
-                  an Brockhaus erlauben einen konkreten Einblick in die Werkstatt dieses außerhalb
-                  akademischer Strukturen schreibenden Historikers. Die Briefe dieses kritischen
-                  Beobachters seiner Gegenwart ergänzen, begleiten und kommentieren gewissermaßen
-                  seine Tagebuch-Aufzeichnungen, die eine Standardquelle des Risorgimento sind. Sie
-                  zeigen sein transnationales Netzwerk mit Gelehrten, Schriftstellern, Journalisten,
+                  zwischen Geschichtsschreibung und Literatur verstand. Insbesondere die weitgehend
+                  vollständig überlieferten Verlags-Briefe an und von Cotta sowie die an Brockhaus
+                  erlauben einen konkreten Einblick in die Werkstatt dieses außerhalb akademischer
+                  Strukturen schreibenden Historikers. Die Briefe dieses kritischen Beobachters
+                  seiner Gegenwart ergänzen, begleiten und kommentieren gewissermaßen seine
+                  Tagebuch-Aufzeichnungen, die eine Standardquelle des Risorgimento sind. Sie zeigen
+                  sein transnationales Netzwerk mit Gelehrten, Schriftstellern, Journalisten,
                   Künstlern, Verlegern, Standespersonen, Freunden und Familienmitgliedern. – Vor dem
                   Hintergrund der Korrespondenz lässt sich über vierzig Jahre sein Selbstverständnis
                   als Gelehrter, als Philologe und als Schriftsteller sowie als Geschichtsschreiber
@@ -49,23 +50,24 @@
                 </figure>
                 <p>
                   Auf der Basis einer systematischen Recherche in deutschen und italienischen
-                  Archiven konnten bislang rund 3130 Briefe <b>von</b> und <b>an</b> Gregorovius in
-                  etwa 50 Archiven und privaten Sammlungen nachgewiesen werden – die weitaus meisten
-                  davon unpubliziert. Die „Gesammelten deutschen und italienischen Briefe“
-                  erschließen eine repräsentative Auswahl von etwa 1000 Briefen von Ferdinand
-                  Gregorovius als kritische digitale Edition in der jeweiligen Originalsprache mit
-                  umfassenden Kommentaren. Die Metadaten <b>aller</b> Briefe <b>von</b> und
-                  <b>an</b> Gregorovius wurden und werden in einer internen Datenbank erfasst, die
-                  zum Projektende veröffentlicht wird. Die edierten Briefe werden, wo die
-                  bestandshaltenden Sammlungen dies erlauben, nach und nach auch als digitale
-                  Faksimiles der Originalhandschrift veröffentlicht. Die inhaltliche Erschließung
-                  der Briefe erfolgt zusätzlich durch Regesten in Deutsch und Englisch.
-                  Editionsarbeit und Kommentar stützen sich auf eine über viele Jahre entstandene
-                  Personalbibliographie und ein gleichzeitig angelegtes Quellenarchiv, in dem neben
-                  den gedruckten Briefen von und an Gregorovius auch erstmals das gesamte, oft
-                  anonym in Periodika publizierte Werk, die Übersetzungen und die vollständige
-                  Forschungsliteratur (inklusive zeitgenössischer Rezensionen) nachgewiesen und
-                  zusammengetragen wurde.
+                  Archiven konnten bislang nahezu 3300 Briefe <b>von</b> und <b>an</b> Gregorovius
+                  in etwa 50
+                  Archiven und privaten Sammlungen nachgewiesen werden – die weitaus meisten davon
+                  unpubliziert. Die „Gesammelten deutschen und italienischen Briefe“ erschließen
+                  eine repräsentative Auswahl von etwa 1000 Briefen von Ferdinand Gregorovius als
+                  kritische digitale Edition in der jeweiligen Originalsprache mit umfassenden
+                  Kommentaren. Die Metadaten <b>aller</b> Briefe <b>von</b> und <b>an</b>
+                  Gregorovius wurden und werden
+                  in einer internen Datenbank erfasst, die zum Projektende veröffentlicht wird. Die
+                  edierten Briefe werden, wo die bestandshaltenden Sammlungen dies erlauben, nach
+                  und nach auch als digitale Faksimiles der Originalhandschrift veröffentlicht. Die
+                  inhaltliche Erschließung der Briefe erfolgt zusätzlich durch Regesten in Deutsch
+                  und Englisch. Editionsarbeit und Kommentar stützen sich auf eine über viele Jahre
+                  entstandene Personalbibliographie und ein gleichzeitig angelegtes Quellenarchiv
+                  der Projektleiterin Angela Steinsiek, in dem neben den gedruckten Briefen von und
+                  an Gregorovius auch erstmals das gesamte, oft anonym in Periodika publizierte
+                  Werk, die Übersetzungen und die vollständige Forschungsliteratur (inklusive
+                  zeitgenössischer Rezensionen) nachgewiesen und zusammengetragen wurde.
                 </p>
                 <p class="text-bold">
                   Der aktuelle Stand der Arbeit an den Texten und Datensätzen wird als
@@ -74,11 +76,13 @@
                   Funktionalitäten weiterentwickelt wird.
                 </p>
                 <p>
-                  Das Projekt des Deutschen Historischen Instituts in Rom wird seit 2017 von der
-                  Deutschen Forschungsgemeinschaft (DFG) gefördert. Die digitale Erarbeitung der
-                  Briefe findet in Zusammenarbeit mit der Berlin-Brandenburgischen Akademie der
-                  Wissenschaften statt. Zudem wird das Projekt seit 2018 von der Gerda Henkel
-                  Stiftung großzügig unterstützt.
+                  Das Projekt des Deutschen Historischen Instituts in Rom wurde von dem
+                  Institutsdirektor Professor Dr. Martin Baumeister initiiert, der es zusammen mit
+                  Dr. Angela Steinsiek verantwortet. Seit 2017 wird es von der Deutschen
+                  Forschungsgemeinschaft (DFG) gefördert. Die digitale Erarbeitung der Briefe findet
+                  in Zusammenarbeit mit der Berlin-Brandenburgischen Akademie der Wissenschaften
+                  statt. Zudem wird das Projekt seit 2018 von der Gerda Henkel Stiftung großzügig
+                  unterstützt.
                 </p>
                 <p>
                   Von Dr. Wiebke Fastenrath Vinattieri stammen die Rohtranskriptionen der Briefe von
@@ -113,7 +117,7 @@
                   eine benutzerfreundliche und für die Briefedition maßgeschneiderte Softwarelösung
                   einzugeben. Das TEI XML Datenmodell der Edition basiert zum Teil auf dem
                   <a href="http://www.deutschestextarchiv.de/doku/basisformat/"
-                    >Basisformat des Deutschen Textarchivs (DTABf)</a
+                  >Basisformat des Deutschen Textarchivs (DTABf)</a
                   >, ein von der DFG empfohlener datentechnischer Standard. Die vorliegende Web-App
                   wurde auf Frontend-Ebene mit <a href="https://vuejs.org/">Vue.js</a> und
                   <a href="https://quasar.dev/">Quasar</a> gebaut. Die Daten werden in
@@ -128,30 +132,31 @@
                   <a href="https://de.wikipedia.org/wiki/Wikipedia:BEACON">BEACON</a>-Schnittstelle
                   vor, welche eine Referenzliste aller mit einer
                   <a href="https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html"
-                    >GND </a
+                  >GND </a
                   >identifizierten Entitäten im Personenregister bereitstellt. Die
                   BEACON-Schnittstelle liegt vor für:
                 </p>
                 <ul>
                   <li>
                     <a href="https://gregorovius-edition.dhi-roma.it/api/beacon/all"
-                      >Personen und Körperschaften</a
+                    >Personen und Körperschaften</a
                     >
                   </li>
                   <li>
                     <a href="https://gregorovius-edition.dhi-roma.it/api/beacon/persons"
-                      >Nur Personen</a
+                    >Nur Personen</a
                     >
                   </li>
                   <li>
                     <a href="https://gregorovius-edition.dhi-roma.it/api/beacon/organizations"
-                      >Nur Körperschaften</a
+                    >Nur Körperschaften</a
                     >
                   </li>
                 </ul>
                 <p>
                   Die Edition bezieht Daten vom
-                  <a href="https://beacon.findbuch.de/seealso/pnd-aks">BEACON Findbuch</a>, um die Personen und
+                  <a href="https://beacon.findbuch.de/seealso/pnd-aks">BEACON Findbuch</a>, um die
+                  Personen und
                   Körperschaften im Personenregister mit Referenzen in weiteren Datenquellen
                   anzureichern.
                 </p>
@@ -179,6 +184,7 @@ export default {
 .g-project-img {
   max-width: 100%;
 }
+
 a {
   text-decoration: none;
 }
