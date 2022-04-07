@@ -20,7 +20,7 @@ Angela Steinsiek: Das epistolarische Werk von Ferdinand Gregorovius. Eine Bestan
     Forschungen aus italienischen Archiven und Bibliotheken (QFIAB). Hrsg. vom Deutschen Historischen Institut in Rom.
     Bd.
     97. Berlin, Boston 2017. S. 290–315 (<a
-            href="https://perspectivia.net/publikationen/qfiab/97-2017/290-315">https://perspectivia.net/publikationen/qfiab/97-2017/290-315</a>)
+            href="https://perspectivia.net/publikationen/qfiab/97-2017/290-315" target="_blank">https://perspectivia.net/publikationen/qfiab/97-2017/290-315</a>)
 
   `,
   `

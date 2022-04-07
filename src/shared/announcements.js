@@ -31,7 +31,7 @@ export const announcements = [
 <blockquote>
     <p>Angela Steinsiek (Projektleiterin, Deutsches Historisches Institut in Rom / Berlin)</p>
     <p>Einführung (<a
-            href="https://lisa.gerda-henkel-stiftung.de/gregorovius_einfuehrung_steinsiek">https://lisa.gerda-henkel-stiftung.de/gregorovius_einfuehrung_steinsiek</a>)
+            href="https://lisa.gerda-henkel-stiftung.de/gregorovius_einfuehrung_steinsiek" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_einfuehrung_steinsiek</a>)
     </p>
 </blockquote>
 <p>10.30 Uhr</p>
@@ -39,14 +39,14 @@ export const announcements = [
     <p>Jörg Hörnschemeyer (Deutsches Historisches Institut in Rom)</p>
     <p>„Ich war sehr thätig – das ist die beßte Neuigkeit von mir“. Die digitale Edition der Briefe von Ferdinand
         Gregorovius (<a
-                href="https://lisa.gerda-henkel-stiftung.de/gregorovius_digital_hoernschmeyer">https://lisa.gerda-henkel-stiftung.de/gregorovius_digital_hoernschmeyer</a>)
+                href="https://lisa.gerda-henkel-stiftung.de/gregorovius_digital_hoernschmeyer" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_digital_hoernschmeyer</a>)
     </p>
 </blockquote>
 <p>11.15 Uhr</p>
 <blockquote>
     <p>Günther Wassilowsky (Humboldt-Universität zu Berlin)</p>
     <p>Ferdinand Gregorovius und das Judentum (<a
-            href="https://lisa.gerda-henkel-stiftung.de/gregorovius4">https://lisa.gerda-henkel-stiftung.de/gregorovius4</a>)
+            href="https://lisa.gerda-henkel-stiftung.de/gregorovius4" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius4</a>)
     </p>
 </blockquote>
 <p>12.15 Uhr</p>
@@ -59,7 +59,7 @@ export const announcements = [
 <blockquote>
     <p>Simon Strauß (Frankfurter Allgemeine Zeitung, Berlin)</p>
     <p>Ferdinand Gregorovius und Theodor Mommsen (<a
-            href="https://lisa.gerda-henkel-stiftung.de/gregorovius_theodormommsen_strauss">https://lisa.gerda-henkel-stiftung.de/gregorovius_theodormommsen_strauss</a>)
+            href="https://lisa.gerda-henkel-stiftung.de/gregorovius_theodormommsen_strauss" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_theodormommsen_strauss</a>)
     </p>
 </blockquote>
 <p>15.15 Uhr</p>
@@ -67,21 +67,21 @@ export const announcements = [
     <p>Markus Bernauer (Berlin-Brandenburgische Akademie der Wissenschaften)</p>
     <p>Der in die Politik verirrte Poet. Gregorovius’ Erzählung von Cola di Rienzo in der „Geschichte der Stadt Rom im
         Mittelalter“ (<a
-                href="https://lisa.gerda-henkel-stiftung.de/gregorovius_coladirienzo_bernauer">https://lisa.gerda-henkel-stiftung.de/gregorovius_coladirienzo_bernauer</a>)
+                href="https://lisa.gerda-henkel-stiftung.de/gregorovius_coladirienzo_bernauer" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_coladirienzo_bernauer</a>)
     </p>
 </blockquote>
 <p>16.00 Uhr</p>
 <blockquote>
     <p>Angela Steinsiek (Deutsches Historisches Institut in Rom / Berlin)</p>
     <p>Die deutsche Sendung. Ferdinand Gregorovius und Richard Wagner (<a
-            href="https://lisa.gerda-henkel-stiftung.de/gregorovius_wagner_steinsiek">https://lisa.gerda-henkel-stiftung.de/gregorovius_wagner_steinsiek</a>)
+            href="https://lisa.gerda-henkel-stiftung.de/gregorovius_wagner_steinsiek" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_wagner_steinsiek</a>)
     </p>
 </blockquote>
 <p>16.45 Uhr</p>
 <blockquote>
     <p>Roman Lach (Keimyung University, Daegu)</p>
     <p>Ferdinand Gregorovius und Felix Dahn. Die Krise des historischen Erzählens (<a
-            href="https://lisa.gerda-henkel-stiftung.de/gregorovius_felixdahn_lach">https://lisa.gerda-henkel-stiftung.de/gregorovius_felixdahn_lach</a>)
+            href="https://lisa.gerda-henkel-stiftung.de/gregorovius_felixdahn_lach" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_felixdahn_lach</a>)
     </p>
 </blockquote>
 <p><strong>Freitag, 15. Oktober 2021</strong></p>
@@ -89,7 +89,7 @@ export const announcements = [
 <blockquote>
     <p>Uwe Ludwig (Universität Duisburg-Essen)</p>
     <p>Die Romzüge der deutschen Herrscher in der „Geschichte Rom der Stadt Rom im Mittelalter“ (<a
-            href="https://lisa.gerda-henkel-stiftung.de/gregorovius_romzuege_ludwig">https://lisa.gerda-henkel-stiftung.de/gregorovius_romzuege_ludwig</a>)
+            href="https://lisa.gerda-henkel-stiftung.de/gregorovius_romzuege_ludwig" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_romzuege_ludwig</a>)
     </p>
 </blockquote>
 <p>10.45 Uhr</p>
@@ -118,15 +118,15 @@ export const announcements = [
 <blockquote>
     <p>Helmuth Mojem (Deutsches Literaturarchiv Marbach)</p>
     <p>„Der Anblick war groß, fremd und südlich“. Ferdinand Gregorovius und Cotta (<a
-            href="https://lisa.gerda-henkel-stiftung.de/gregorovius_cotta_mojem">https://lisa.gerda-henkel-stiftung.de/gregorovius_cotta_mojem</a>)
+            href="https://lisa.gerda-henkel-stiftung.de/gregorovius_cotta_mojem" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_cotta_mojem</a>)
     </p>
 </blockquote>
 <p>Internationale Tagung mit finanzieller Unterstützung der Deutschen Forschungsgemeinschaft (DFG) in Zusammenarbeit mit
     der Gerda Henkel Stiftung. Von den Vorträgen steht online ein Videomitschnitt auf dem L.I.S.A. Wissenschaftsportal
     der
-    Gerda Henkel Stiftung (<a href="https://lisa.gerda-henkel-stiftung.de/">https://lisa.gerda-henkel-stiftung.de/</a>)
+    Gerda Henkel Stiftung (<a href="https://lisa.gerda-henkel-stiftung.de/" target="_blank">https://lisa.gerda-henkel-stiftung.de/</a>)
     zur Verfügung. Einen Tagungsbericht von Pascal Oswald finden Sie auf H-Soz-Kult (<a
-            href="https://www.hsozkult.de/conferencereport/id/tagungsberichte-9189">https://www.hsozkult.de/conferencereport/id/tagungsberichte-9189</a>).
+            href="https://www.hsozkult.de/conferencereport/id/tagungsberichte-9189" target="_blank">https://www.hsozkult.de/conferencereport/id/tagungsberichte-9189</a>).
 </p>
           `
   },
@@ -156,7 +156,7 @@ export const announcements = [
 <p>Eine Abendveranstaltung in Zusammenarbeit mit der Gerda Henkel Stiftung, mit finanzieller Unterstützung der Deutschen
     Forschungsgemeinschaft (DFG). Ein Videomitschnitt steht online auf dem L.I.S.A. Wissenschaftsportal der Gerda Henkel
     Stiftung zur Verfügung (<a
-            href="https://lisa.gerda-henkel-stiftung.de/gregorovius_lesung_ptok">https://lisa.gerda-henkel-stiftung.de/gregorovius_lesung_ptok</a>).
+            href="https://lisa.gerda-henkel-stiftung.de/gregorovius_lesung_ptok" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_lesung_ptok</a>).
 </p>
 
           `
@@ -172,7 +172,7 @@ export const announcements = [
 <p>Vortrag im Rahmen der Tagung: „Soziales Medium Brief. Sharen, Liken, Retweeten im 18. und 19. Jahrhundert. Neue
     Perspektiven auf die Briefkultur“ („Edition von Briefen aus Jean Pauls Umfeld“ der Berlin-Brandenburgischen Akademie
     der Wissenschaften, 24.–26. Juni 2021; <a
-            href="https://www.bbaw.de/files-bbaw/veranstaltungen/2021/Juni_2021/Soziales_Medium_Brief_Onlineflyer.pdf">https://www.bbaw.de/files-bbaw/veranstaltungen/2021/Juni_2021/Soziales_Medium_Brief_Onlineflyer.pdf</a>).
+            href="https://www.bbaw.de/files-bbaw/veranstaltungen/2021/Juni_2021/Soziales_Medium_Brief_Onlineflyer.pdf" target="_blank">https://www.bbaw.de/files-bbaw/veranstaltungen/2021/Juni_2021/Soziales_Medium_Brief_Onlineflyer.pdf</a>).
 </p>
           `
   },
@@ -185,7 +185,7 @@ export const announcements = [
     description: `
 <p>Projektvorstellung im Rahmen der digitalen Tagung: „Briefeditionen – wie digital?“ (Forum für Digital Humanities
     Leipzig und die Sächsische Akademie der Wissenschaften zu Leipzig; <a
-            href="https://www.saw-leipzig.de/de/aktuelles/virtuelle-tagung-briefeditionen-2013-wie-digital">https://www.saw-leipzig.de/de/aktuelles/virtuelle-tagung-briefeditionen-2013-wie-digital</a>)
+            href="https://www.saw-leipzig.de/de/aktuelles/virtuelle-tagung-briefeditionen-2013-wie-digital" target="_blank">https://www.saw-leipzig.de/de/aktuelles/virtuelle-tagung-briefeditionen-2013-wie-digital</a>)
 </p>
           `
   },
@@ -199,9 +199,9 @@ export const announcements = [
 <p>Vortrag im Rahmen der Tagung: „Ninfa. Vom Pompei des Mittelalters zu den Gärten von Ninfa“ (Fondazione Roffredo
     Caetani / Institut für Geschichtliche Landeskunde an der Universität Mainz, Michael Matheus)</p>
 <p>Einen Videomitschnitt der Tagung steht auf dem YouTube-Kanal der Fondazione Roffredo Caetani zu Verfügung (<a
-        href="https://www.youtube.com/channel/UCOsVwBfVWsjvTIyxVq1lPLQ">https://www.youtube.com/channel/UCOsVwBfVWsjvTIyxVq1lPLQ</a>).
+        href="https://www.youtube.com/channel/UCOsVwBfVWsjvTIyxVq1lPLQ" target="_blank">https://www.youtube.com/channel/UCOsVwBfVWsjvTIyxVq1lPLQ</a>).
     Das Tagungsprogramm finden auf H-Soz-Kult (<a
-            href="https://www.hsozkult.de/event/id/event-93708">https://www.hsozkult.de/event/id/event-93708</a>).</p>
+            href="https://www.hsozkult.de/event/id/event-93708" target="_blank">https://www.hsozkult.de/event/id/event-93708</a>).</p>
           `
   },
   {
@@ -225,9 +225,9 @@ export const announcements = [
     </blockquote>
     <p>Ein Videomitschnitt der Veranstaltung steht online auf L.I.S.A. dem Wissenschaftsportal der Gerda Henkel Stiftung zur
       Verfügung (<a
-        href="https://lisa.gerda-henkel-stiftung.de/ferdinand_gregorovius_ein_preusse_im_kirchenstaat._die_digitale_briefedition?nav_id=8927">https://lisa.gerda-henkel-stiftung.de/ferdinand_gregorovius_ein_preusse_im_kirchenstaat._die_digitale_briefedition?nav_id=8927</a>),
+        href="https://lisa.gerda-henkel-stiftung.de/ferdinand_gregorovius_ein_preusse_im_kirchenstaat._die_digitale_briefedition?nav_id=8927" target="_blank">https://lisa.gerda-henkel-stiftung.de/ferdinand_gregorovius_ein_preusse_im_kirchenstaat._die_digitale_briefedition?nav_id=8927</a>),
       ein Podcast auf der Website des Deutschen Historischen Instituts in Rom (<a
-        href="http://dhi-roma.it/fileadmin/user_upload/medien/20200205_gregorovius_launch_mitschnitt_05-02-20.mp3">http://dhi-roma.it/fileadmin/user_upload/medien/20200205_gregorovius_launch_mitschnitt_05-02-20.mp3</a>).
+        href="http://dhi-roma.it/fileadmin/user_upload/medien/20200205_gregorovius_launch_mitschnitt_05-02-20.mp3" target="_blank">http://dhi-roma.it/fileadmin/user_upload/medien/20200205_gregorovius_launch_mitschnitt_05-02-20.mp3</a>).
     </p>`
   },
   {
