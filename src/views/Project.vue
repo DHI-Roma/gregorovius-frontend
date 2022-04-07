@@ -23,8 +23,7 @@
                   Tod viele der Briefe <b>an ihn</b> vernichtet hat und viele seiner vertrauten
                   Freunde veranlasst hat, seine Briefe <b>von ihm</b> zu vernichten, haben sich
                   neben seinem historiographischen und schriftstellerischen Œuvre mehrere Tausend
-                  Briefe
-                  erhalten. Das Gregorovius-Briefkorpus ist wissenschafts-, zeit- und
+                  Briefe erhalten. Das Gregorovius-Briefkorpus ist wissenschafts-, zeit- und
                   kulturgeschichtlich von höchster Relevanz, weil er selbst sich als Grenzgänger
                   zwischen Geschichtsschreibung und Literatur verstand. Insbesondere die weitgehend
                   vollständig überlieferten Verlags-Briefe an und von Cotta sowie die an Brockhaus
@@ -51,22 +50,22 @@
                 <p>
                   Auf der Basis einer systematischen Recherche in deutschen und italienischen
                   Archiven konnten bislang nahezu 3300 Briefe <b>von</b> und <b>an</b> Gregorovius
-                  in etwa 50
-                  Archiven und privaten Sammlungen nachgewiesen werden – die weitaus meisten davon
-                  unpubliziert. Die „Gesammelten deutschen und italienischen Briefe“ erschließen
-                  eine repräsentative Auswahl von etwa 1000 Briefen von Ferdinand Gregorovius als
-                  kritische digitale Edition in der jeweiligen Originalsprache mit umfassenden
-                  Kommentaren. Die Metadaten <b>aller</b> Briefe <b>von</b> und <b>an</b>
-                  Gregorovius wurden und werden
-                  in einer internen Datenbank erfasst, die zum Projektende veröffentlicht wird. Die
-                  edierten Briefe werden, wo die bestandshaltenden Sammlungen dies erlauben, nach
-                  und nach auch als digitale Faksimiles der Originalhandschrift veröffentlicht. Die
-                  inhaltliche Erschließung der Briefe erfolgt zusätzlich durch Regesten in Deutsch
-                  und Englisch. Editionsarbeit und Kommentar stützen sich auf eine über viele Jahre
-                  entstandene Personalbibliographie und ein gleichzeitig angelegtes Quellenarchiv
-                  der Projektleiterin Angela Steinsiek, in dem neben den gedruckten Briefen von und
-                  an Gregorovius auch erstmals das gesamte, oft anonym in Periodika publizierte
-                  Werk, die Übersetzungen und die vollständige Forschungsliteratur (inklusive
+                  in etwa 50 Archiven und privaten Sammlungen nachgewiesen werden – die weitaus
+                  meisten davon unpubliziert. Die „Gesammelten deutschen und italienischen Briefe“
+                  erschließen eine repräsentative Auswahl von etwa 1000 Briefen von Ferdinand
+                  Gregorovius als kritische digitale Edition in der jeweiligen Originalsprache mit
+                  umfassenden Kommentaren. Die Metadaten <b>aller</b> Briefe <b>von</b> und
+                  <b>an</b>
+                  Gregorovius wurden und werden in einer internen Datenbank erfasst, die zum
+                  Projektende veröffentlicht wird. Die edierten Briefe werden, wo die
+                  bestandshaltenden Sammlungen dies erlauben, nach und nach auch als digitale
+                  Faksimiles der Originalhandschrift veröffentlicht. Die inhaltliche Erschließung
+                  der Briefe erfolgt zusätzlich durch Regesten in Deutsch und Englisch.
+                  Editionsarbeit und Kommentar stützen sich auf eine über viele Jahre entstandene
+                  Personalbibliographie und ein gleichzeitig angelegtes Quellenarchiv der
+                  Projektleiterin Angela Steinsiek, in dem neben den gedruckten Briefen von und an
+                  Gregorovius auch erstmals das gesamte, oft anonym in Periodika publizierte Werk,
+                  die Übersetzungen und die vollständige Forschungsliteratur (inklusive
                   zeitgenössischer Rezensionen) nachgewiesen und zusammengetragen wurde.
                 </p>
                 <p class="text-bold">
@@ -117,7 +116,7 @@
                   eine benutzerfreundliche und für die Briefedition maßgeschneiderte Softwarelösung
                   einzugeben. Das TEI XML Datenmodell der Edition basiert zum Teil auf dem
                   <a href="http://www.deutschestextarchiv.de/doku/basisformat/"
-                  >Basisformat des Deutschen Textarchivs (DTABf)</a
+                    >Basisformat des Deutschen Textarchivs (DTABf)</a
                   >, ein von der DFG empfohlener datentechnischer Standard. Die vorliegende Web-App
                   wurde auf Frontend-Ebene mit <a href="https://vuejs.org/">Vue.js</a> und
                   <a href="https://quasar.dev/">Quasar</a> gebaut. Die Daten werden in
@@ -132,33 +131,32 @@
                   <a href="https://de.wikipedia.org/wiki/Wikipedia:BEACON">BEACON</a>-Schnittstelle
                   vor, welche eine Referenzliste aller mit einer
                   <a href="https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html"
-                  >GND </a
+                    >GND </a
                   >identifizierten Entitäten im Personenregister bereitstellt. Die
                   BEACON-Schnittstelle liegt vor für:
                 </p>
                 <ul>
                   <li>
                     <a href="https://gregorovius-edition.dhi-roma.it/api/beacon/all"
-                    >Personen und Körperschaften</a
+                      >Personen und Körperschaften</a
                     >
                   </li>
                   <li>
                     <a href="https://gregorovius-edition.dhi-roma.it/api/beacon/persons"
-                    >Nur Personen</a
+                      >Nur Personen</a
                     >
                   </li>
                   <li>
                     <a href="https://gregorovius-edition.dhi-roma.it/api/beacon/organizations"
-                    >Nur Körperschaften</a
+                      >Nur Körperschaften</a
                     >
                   </li>
                 </ul>
                 <p>
                   Die Edition bezieht Daten vom
                   <a href="https://beacon.findbuch.de/seealso/pnd-aks">BEACON Findbuch</a>, um die
-                  Personen und
-                  Körperschaften im Personenregister mit Referenzen in weiteren Datenquellen
-                  anzureichern.
+                  Personen und Körperschaften im Personenregister mit Referenzen in weiteren
+                  Datenquellen anzureichern.
                 </p>
               </div>
             </q-tab-panel>
