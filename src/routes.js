@@ -22,6 +22,7 @@ import { getPersonIdByGnd } from "@/services/person-service";
 import store from "@/store";
 
 import Error404 from "@/views/Error404.vue";
+import Announcements from "@/views/Announcements.vue";
 
 export const routes = [
   {
@@ -147,6 +148,11 @@ export const routes = [
         path: "privacy",
         name: "Datenschutzerklärung",
         component: PrivacyNotice
+      },
+      {
+        path: "announcements",
+        name: "announcements",
+        component: Announcements
       },
       {
         path: "*",
