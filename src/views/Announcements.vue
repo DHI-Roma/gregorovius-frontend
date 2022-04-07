@@ -14,12 +14,18 @@
               {{ announcement.title }}
             </div>
             <div class="row q-mt-sm">
-              <q-chip size="sm" outline color="primary" icon="schedule"
-                >{{ announcement.date }}
-              </q-chip>
-              <q-chip v-if="announcement.location" size="sm" outline color="primary" icon="room">
-                {{ announcement.location }}
-              </q-chip>
+              <div class="col-12">
+                <q-icon name="schedule" color="primary" size="md" left></q-icon>
+                <span class="text-primary">
+                  {{ announcement.date }}
+                </span>
+              </div>
+              <div class="col-12">
+                <q-icon name="room" color="primary" size="md" left></q-icon>
+                <span class="text-primary text-small">
+                  {{ announcement.location }}
+                </span>
+              </div>
             </div>
           </q-card-section>
           <q-card-section v-html="announcement.description" />
