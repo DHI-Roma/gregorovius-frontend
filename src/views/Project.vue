@@ -7,12 +7,12 @@
             <div class="text-h6 text-center">Das Projekt</div>
             <div class="text-subtitle3 text-secondary"></div>
           </q-card-section>
-          <q-separator dark />
+          <q-separator dark/>
           <q-tabs v-model="tab" class="text-primary">
-            <q-tab name="edi" label="Zur Edition" />
-            <q-tab name="tec" label="Eingesetzte Technologien" />
+            <q-tab name="edi" label="Zur Edition"/>
+            <q-tab name="tec" label="Eingesetzte Technologien"/>
           </q-tabs>
-          <q-separator />
+          <q-separator/>
           <q-tab-panels v-model="tab" animated>
             <q-tab-panel name="edi" class="text">
               <div class="text-body1">
@@ -40,7 +40,7 @@
                 </p>
                 <figure class="row justify-center">
                   <picture>
-                    <img class="g-project-img" src="@/statics/img/colonna-bsb.jpg" />
+                    <img class="g-project-img" src="@/statics/img/colonna-bsb.jpg"/>
                   </picture>
                   <figcaption class="text-caption">
                     Rom aus dem Garten der Colonna, Bleistift-Zeichnung von F. Gregorovius, BSB
@@ -48,25 +48,25 @@
                   </figcaption>
                 </figure>
                 <p>
-                  Auf der Basis einer systematischen Recherche in deutschen und italienischen
-                  Archiven konnten bislang nahezu 3300 Briefe <b>von</b> und <b>an</b> Gregorovius
-                  in etwa 50 Archiven und privaten Sammlungen nachgewiesen werden – die weitaus
-                  meisten davon unpubliziert. Die „Gesammelten deutschen und italienischen Briefe“
-                  erschließen eine repräsentative Auswahl von etwa 1000 Briefen von Ferdinand
-                  Gregorovius als kritische digitale Edition in der jeweiligen Originalsprache mit
-                  umfassenden Kommentaren. Die Metadaten <b>aller</b> Briefe <b>von</b> und
-                  <b>an</b>
-                  Gregorovius wurden und werden in einer internen Datenbank erfasst, die zum
-                  Projektende veröffentlicht wird. Die edierten Briefe werden, wo die
-                  bestandshaltenden Sammlungen dies erlauben, nach und nach auch als digitale
-                  Faksimiles der Originalhandschrift veröffentlicht. Die inhaltliche Erschließung
-                  der Briefe erfolgt zusätzlich durch Regesten in Deutsch und Englisch.
-                  Editionsarbeit und Kommentar stützen sich auf eine über viele Jahre entstandene
-                  Personalbibliographie und ein gleichzeitig angelegtes Quellenarchiv der
-                  Projektleiterin Angela Steinsiek, in dem neben den gedruckten Briefen von und an
-                  Gregorovius auch erstmals das gesamte, oft anonym in Periodika publizierte Werk,
-                  die Übersetzungen und die vollständige Forschungsliteratur (inklusive
-                  zeitgenössischer Rezensionen) nachgewiesen und zusammengetragen wurde.
+                  Auf Basis systematischen Recherchen in deutschen und italienischen Archiven
+                  konnten, neben zahlreichen nur im Druck überlieferten Schreiben, bislang mehr als
+                  3300 Briefe von und an Gregorovius in nahezu 90 Archiven und (privaten) Sammlungen
+                  nachgewiesen werden (siehe unten) – die weitaus meisten davon unpubliziert. Die
+                  „Gesammelten deutschen und italienischen Briefe“ erschließen eine repräsentative
+                  Auswahl von etwa 1000 Briefen von Ferdinand Gregorovius als kritische digitale
+                  Edition in der jeweiligen Originalsprache mit umfassenden Kommentaren. Die
+                  Metadaten aller Briefe <b>von </b>und <b>an</b> Gregorovius wurden und werden in
+                  einer internen
+                  Datenbank erfasst, die zum Projektende veröffentlicht wird. Die edierten Briefe
+                  werden, wo die bestandshaltenden Sammlungen dies erlauben, nach und nach auch als
+                  digitale Faksimiles der Originalhandschrift veröffentlicht. Die inhaltliche
+                  Erschließung der Briefe erfolgt neben den Kommentaren zusätzlich durch Regesten in
+                  Deutsch und Englisch. Editionsarbeit und Kommentar stützen sich auf eine über
+                  viele Jahre entstandene Personalbibliographie und ein gleichzeitig angelegtes
+                  Quellenarchiv der Projektleiterin Angela Steinsiek, in dem neben den gedruckten
+                  Briefen von und an Gregorovius auch erstmals das gesamte, oft anonym in Periodika
+                  publizierte Werk, die Übersetzungen und die vollständige Forschungsliteratur
+                  (inklusive zeitgenössischer Rezensionen) nachgewiesen und zusammengetragen wurde.
                 </p>
                 <p class="text-bold">
                   Der aktuelle Stand der Arbeit an den Texten und Datensätzen wird als
@@ -100,9 +100,60 @@
                   besonderer Dank ausgesprochen sei. Die technische Umsetzung der Edition lag in den
                   ersten zwei Jahren in den Händen von Theodor Costea, M. A. Die Weiterentwicklung
                   der Website verantwortet jetzt Oliver Pohl, M. A. Von Marlene Compton, M. A.
-                  stammen die englischen (amerikanischen) Übersetzungen der Regesten. Eric Müller
-                  und Raphael Stepken haben als wissenschaftliche Hilfskraft wesentliche, die
-                  Edition vorbereitende und begleitende Arbeiten übernommen.
+                  stammen die englischen (amerikanischen) Übersetzungen der Regesten.
+                  Eric Müller, M. A. und Raphael Stepken haben als wissenschaftliche Hilfskraft
+                  wesentliche, die Edition vorbereitende und begleitende Arbeiten übernommen.
+                </p>
+                <p>
+                  Handschriftlich überlieferte Briefe von und an Gregorovius konnten in folgenden
+                  Institutionen und Sammlungen nachgewiesen werden: Universitätsbibliothek
+                  Amsterdam, Staatsbibliothek Bamberg, Privatbesitz, Erbengemeinschaft Wilhelm
+                  (Basel), Universitätsbibliothek Basel, Ateneo di Scienze Lettere ed Arti di
+                  Bergamo, Archiv der Berlin-Brandenburgischen Akademie der Wissenschaften,
+                  Bundesarchiv Berlin, Deutsches Historisches Museum (Berlin), Geheimes Staatsarchiv
+                  Berlin, Privatbesitz Angela Steinsiek (Berlin), Staatsbibliothek zu Berlin – PK,
+                  Fondazione Sella (Biella), Heimatstube der Kreisgemeinschaft Neidenburg (Bochum),
+                  Biblioteca dell’Archiginnasio (Bologna), Archivio della Deputazione di Storia
+                  Patria per le Province di Romagna (Bologna), Universitäts- und Landesbibliothek
+                  Bonn, Landesarchiv Nordrhein-Westfalen (Detmold), Sächsische Landesbibliothek –
+                  Staats- und Universitätsbibliothek Dresden, Archivio di Stato di Firenze,
+                  Biblioteca Nazionale Centrale di Firenze, Florenz, Privatarchiv Anrep (Florenz),
+                  Universitätsbibliothek Johann Christian Senckenberg (Frankfurt), Bibliothèque de
+                  Genève, Biblioteca-Civica „Vincenzo Bindi“ (Giulianova), Universitätsbibliothek
+                  Greifswald, Staats- und Universitätsbibliothek Hamburg Carl von Ossietzky,
+                  Stadtarchiv Hannover, Universitätsbibliothek Heidelberg, Biblioteca Comunale di
+                  Imola, Generallandesarchiv Karlsruhe (Großherzogliches Familienarchiv), Museum für
+                  Literatur am Oberrhein (Karlsruhe), Schleswig-Holsteinische Landesbibliothek Kiel,
+                  Historisches Archiv Köln, Privatbesitz Klaus Bergdolt (Köln), Biblioteka
+                  Jagiellońska Krakau (SBB-PK), Biblioteca Provinciale „Nicola Bernardini“ (Lecce),
+                  Sächsisches Staatsarchiv Leipzig, Universitätsbibliothek Leipzig, Getty Research
+                  Institute, Research Library (Los Angeles, CA), University of Southern California,
+                  Lion Feuchtwanger papers (Los Angeles, CA), Ostpreußisches Landesmuseum
+                  (Lüneburg), Archivio generale im Museo del Risorgimento (Mailand), Stadtbibliothek
+                  Mainz, Deutsches Literaturarchiv Marbach, Hessisches Staatsarchiv Marburg,
+                  Archivio dell’Abbazia (Montecassino), Bayerische Staatsbibliothek München,
+                  Monacensia im Hildebrandhaus (München), Städtische Galerie im Lenbachhaus und
+                  Kunstbau München, Privatbesitz Familie Peter Freude (Murnau am Staffelsee),
+                  Archivio di Stato di Napoli, Biblioteca Nazionale Vittorio Emanuele III. (Neapel),
+                  Yale University Library (New Haven, CT), Pierpont Morgan Library (Manhattan, NYC),
+                  Germanisches Nationalmuseum Nürnberg, Sezione di Archivio di Stato di Orvieto
+                  Crispino Ferri, Biblioteca Civica (Padua), Biblioteca Centrale della Regione
+                  siciliana (Palermo), Biblioteca Oliveriana (Pesaro), Archives nationales
+                  (Pierrefitte-sur-Seine), Biblioteca Roncioniana Prato, Stadtarchiv Schweinfurt,
+                  Istitutione Biblioteca Classense del Comune di Ravenna, Archivio Accademico della
+                  Accademia di San Luca (Rom), Archivio Camillo Caetani (Rom), Archivio Centrale
+                  dello Stato (Rom), Archivio Storico Capitolino di Roma, Archivio Segreto Vaticano
+                  (Rom), Biblioteca Apostolica Vaticana (Rom), Biblioteca Vallicelliana (Rom),
+                  Deutsches Archäologisches Institut Rom, Städtisches Museum Schärding am Inn,
+                  Mecklenburgisches Landeshauptarchiv Schwerin, Kantonsbibliothek Vadiana St.
+                  Gallen, Württembergische Landesbibliothek Stuttgart, Archivio di Stato di Terni,
+                  Archivio Storico dell’Accademia delle Scienze di Torino, Biblioteca Comunale di
+                  Trento, Universitätsbibliothek Tübingen, Biblioteca Civica di Verona, Goethe- und
+                  Schiller-Archiv Weimar, Landesarchiv Thüringen – Hauptstaatsarchiv Weimar
+                  (Großherzogliches Hausarchiv), Österreichische Nationalbibliothek (Wien),
+                  Wienbibliothek im Rathaus, Herzog-August-Bibliothek Wolfenbüttel,
+                  Niedersächsisches Landesarchiv (Wolfenbüttel), Universität Würzburg,
+                  Martin-von-Wagner-Museum.
                 </p>
               </div>
             </q-tab-panel>
@@ -115,8 +166,8 @@
                   weiterentwickelt und ermöglicht, komplexe projektspezifische Datenstrukturen über
                   eine benutzerfreundliche und für die Briefedition maßgeschneiderte Softwarelösung
                   einzugeben. Das TEI XML Datenmodell der Edition basiert zum Teil auf dem
-                  <a href="http://www.deutschestextarchiv.de/doku/basisformat/"
-                    >Basisformat des Deutschen Textarchivs (DTABf)</a
+                  <a href="http://www.deutschestextarchiv.de/doku/basisformat/">Basisformat des
+                    Deutschen Textarchivs (DTABf)</a
                   >, ein von der DFG empfohlener datentechnischer Standard. Die vorliegende Web-App
                   wurde auf Frontend-Ebene mit <a href="https://vuejs.org/">Vue.js</a> und
                   <a href="https://quasar.dev/">Quasar</a> gebaut. Die Daten werden in
@@ -131,24 +182,24 @@
                   <a href="https://de.wikipedia.org/wiki/Wikipedia:BEACON">BEACON</a>-Schnittstelle
                   vor, welche eine Referenzliste aller mit einer
                   <a href="https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html"
-                    >GND </a
+                  >GND </a
                   >identifizierten Entitäten im Personenregister bereitstellt. Die
                   BEACON-Schnittstelle liegt vor für:
                 </p>
                 <ul>
                   <li>
                     <a href="https://gregorovius-edition.dhi-roma.it/api/beacon/all"
-                      >Personen und Körperschaften</a
+                    >Personen und Körperschaften</a
                     >
                   </li>
                   <li>
                     <a href="https://gregorovius-edition.dhi-roma.it/api/beacon/persons"
-                      >Nur Personen</a
+                    >Nur Personen</a
                     >
                   </li>
                   <li>
                     <a href="https://gregorovius-edition.dhi-roma.it/api/beacon/organizations"
-                      >Nur Körperschaften</a
+                    >Nur Körperschaften</a
                     >
                   </li>
                 </ul>
