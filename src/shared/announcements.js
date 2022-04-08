@@ -153,8 +153,8 @@ export const announcements = [
     <p>Einführung: Angela Steinsiek (Projektleiterin, Deutsches Historisches Institut in Rom / Berlin)</p>
     <p>Lesung: Friedhelm Ptok (Berlin), moderiert von Angela Steinsiek</p>
 </blockquote>
-<p>Eine Abendveranstaltung in Zusammenarbeit mit der Gerda Henkel Stiftung, mit finanzieller Unterstützung der Deutschen
-    Forschungsgemeinschaft (DFG). Ein Videomitschnitt steht online auf dem L.I.S.A. Wissenschaftsportal der Gerda Henkel
+<p>Eine Abendveranstaltung mit finanzieller Unterstützung der Deutschen Forschungsgemeinschaft (DFG) in Zusammenarbeit mit der Gerda Henkel Stiftung.
+ Ein Videomitschnitt steht online auf dem L.I.S.A. Wissenschaftsportal der Gerda Henkel
     Stiftung zur Verfügung (<a
             href="https://lisa.gerda-henkel-stiftung.de/gregorovius_lesung_ptok" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_lesung_ptok</a>).
 </p>
@@ -215,7 +215,8 @@ export const announcements = [
           zum wichtigsten Historiker der ewigen Stadt. Seine „Geschichte der Stadt Rom im Mittelalter“ (1859–1872) ist außerdem
     eines der Hauptwerke der deutschen Historiographie. Vom Leben im Rom und von der Entstehung dieses und seiner anderen
     Bücher erzählen viele seiner Briefe. Erstmals legt eine Projektgruppe des Deutschen Historischen Instituts in Rom in
-    Zusammenarbeit mit TELOTA eine größere Auswahl seiner Briefe in einer digitalen Edition vor. Eine Abendveranstaltung mit finanzieller Unterstützung der Deutschen Forschungsgemeinschaft (DFG) in Zusammenarbeit mit der Gerda Henkel Stiftung."
+    Zusammenarbeit mit TELOTA eine größere Auswahl seiner Briefe in einer digitalen Edition vor.
+    Eine Abendveranstaltung aus Anlass der kürzlich freigeschalteten Betaversion der Webseite „Ferdinand Gregorovius. Poesie und Wissenschaft“.
 </p>
     <blockquote>
       <p>Moderation: Alexander Czmiel (Leitung TELOTA, Berlin-Brandenburgische Akademie der Wissenschaften)</p>

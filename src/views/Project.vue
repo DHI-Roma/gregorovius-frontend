@@ -50,12 +50,12 @@
                 <p>
                   Auf Basis systematischen Recherchen in deutschen und italienischen Archiven
                   konnten, neben zahlreichen nur im Druck überlieferten Schreiben, bislang mehr als
-                  3300 Briefe von und an Gregorovius in nahezu 90 Archiven und (privaten) Sammlungen
+                  3300 Briefe <b>von</b> und <b>an</b> Gregorovius in nahezu 90 Archiven und (privaten) Sammlungen
                   nachgewiesen werden (siehe unten) – die weitaus meisten davon unpubliziert. Die
                   „Gesammelten deutschen und italienischen Briefe“ erschließen eine repräsentative
                   Auswahl von etwa 1000 Briefen von Ferdinand Gregorovius als kritische digitale
                   Edition in der jeweiligen Originalsprache mit umfassenden Kommentaren. Die
-                  Metadaten aller Briefe <b>von </b>und <b>an</b> Gregorovius wurden und werden in
+                  Metadaten <b>aller</b> Briefe <b>von</b> und <b>an</b> Gregorovius wurden und werden in
                   einer internen
                   Datenbank erfasst, die zum Projektende veröffentlicht wird. Die edierten Briefe
                   werden, wo die bestandshaltenden Sammlungen dies erlauben, nach und nach auch als
@@ -105,7 +105,7 @@
                   wesentliche, die Edition vorbereitende und begleitende Arbeiten übernommen.
                 </p>
                 <p>
-                  Handschriftlich überlieferte Briefe von und an Gregorovius konnten in folgenden
+                  Handschriftlich überlieferte Briefe <b>von</b> und <b>an</b> Gregorovius konnten in folgenden
                   Institutionen und Sammlungen nachgewiesen werden: Universitätsbibliothek
                   Amsterdam, Staatsbibliothek Bamberg, Privatbesitz, Erbengemeinschaft Wilhelm
                   (Basel), Universitätsbibliothek Basel, Ateneo di Scienze Lettere ed Arti di
