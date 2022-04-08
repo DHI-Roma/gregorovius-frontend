@@ -36,7 +36,7 @@
             <div class="text-h6">Publikationen zur ferneren Lektüre</div>
           </q-card-section>
           <q-card-section
-            class="text-body1"
+            class="text-body1 text-small"
             v-for="(literatureEntry, index) in additionalLiteratureEntries"
             :key="index"
             v-html="literatureEntry"
@@ -68,4 +68,7 @@ export default {
 .announcement-title
   font-size 1.1rem
   font-weight bold
+
+.text-small
+  font-size 0.85rem
 </style>
