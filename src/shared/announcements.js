@@ -198,9 +198,9 @@ export const announcements = [
     description: `
 <p>Vortrag im Rahmen der Tagung: „Ninfa. Vom Pompei des Mittelalters zu den Gärten von Ninfa“ (Fondazione Roffredo
     Caetani / Institut für Geschichtliche Landeskunde an der Universität Mainz, Michael Matheus)</p>
-<p>Einen Videomitschnitt der Tagung steht auf dem YouTube-Kanal der Fondazione Roffredo Caetani zu Verfügung (<a
+<p>Ein Videomitschnitt der Tagung steht auf dem YouTube-Kanal der Fondazione Roffredo Caetani zur Verfügung (<a
         href="https://www.youtube.com/channel/UCOsVwBfVWsjvTIyxVq1lPLQ" target="_blank">https://www.youtube.com/channel/UCOsVwBfVWsjvTIyxVq1lPLQ</a>).
-    Das Tagungsprogramm finden auf H-Soz-Kult (<a
+    Das Tagungsprogramm finden Sie auf H-Soz-Kult (<a
             href="https://www.hsozkult.de/event/id/event-93708" target="_blank">https://www.hsozkult.de/event/id/event-93708</a>).</p>
           `
   },
@@ -215,8 +215,8 @@ export const announcements = [
           zum wichtigsten Historiker der ewigen Stadt. Seine „Geschichte der Stadt Rom im Mittelalter“ (1859–1872) ist außerdem
     eines der Hauptwerke der deutschen Historiographie. Vom Leben im Rom und von der Entstehung dieses und seiner anderen
     Bücher erzählen viele seiner Briefe. Erstmals legt eine Projektgruppe des Deutschen Historischen Instituts in Rom in
-    Zusammenarbeit mit TELOTA eine größere Auswahl seiner Briefe in einer digitalen Edition vor. Eine Abendveranstaltung
-    aus Anlass der kürzlich freigeschalteten Betaversion der Webseite „Ferdinand Gregorovius. Poesie und Wissenschaft.</p>
+    Zusammenarbeit mit TELOTA eine größere Auswahl seiner Briefe in einer digitalen Edition vor. Eine Abendveranstaltung mit finanzieller Unterstützung der Deutschen Forschungsgemeinschaft (DFG) in Zusammenarbeit mit der Gerda Henkel Stiftung."
+</p>
     <blockquote>
       <p>Moderation: Alexander Czmiel (Leitung TELOTA, Berlin-Brandenburgische Akademie der Wissenschaften)</p>
       <p>Begrüßung: Martin Baumeister (Direktor, Deutsches Historisches Institut in Rom)</p>

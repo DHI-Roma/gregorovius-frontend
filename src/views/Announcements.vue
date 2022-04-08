@@ -4,13 +4,13 @@
       <div class="col-md-8 col-12 q-py-xl q-gutter-y-lg">
         <q-card class="q-pa-md" flat>
           <q-card-section>
-            <div class="text-h4">Ankündigungen</div>
+            <div class="text-h6">Ankündigungen</div>
           </q-card-section>
         </q-card>
 
         <q-card v-for="announcement in announcements" :key="announcement.id" class="q-pa-md" flat>
           <q-card-section>
-            <div class="row text-h6">
+            <div class="row announcement-title">
               {{ announcement.title }}
             </div>
             <div class="row q-mt-sm">
@@ -28,7 +28,7 @@
               </div>
             </div>
           </q-card-section>
-          <q-card-section v-html="announcement.description" />
+          <q-card-section class="text-body1" v-html="announcement.description" />
         </q-card>
 
         <q-card class="q-pa-md" flat>
@@ -62,3 +62,8 @@ export default {
   }
 };
 </script>
+
+<style lang="stylus" scoped>
+.announcement-title
+  font-size 1.1rem
+</style>
