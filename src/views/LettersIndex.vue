@@ -43,7 +43,7 @@
       <div class="q-pa-md col-12 col-md-9">
         <q-table
           ref="table"
-          :data="letters"
+          :data="letterEntries"
           :columns="columns"
           row-key="id"
           :filter="filter"
@@ -224,6 +224,13 @@ export default {
       "selectedPlaceReceived",
       "selectedYears"
     ]),
+    letterEntries() {
+      if (!this.letters.length || !Object.entries(this.fullNameIndex).length) {
+        return []
+      }
+
+      return this.letters
+    },
 
     uniqueRecipients() {
       return this.getArrayOptions("letters", "recipient");
