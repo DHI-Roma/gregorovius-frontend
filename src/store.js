@@ -106,30 +106,18 @@ export default new Vuex.Store({
       if (this.getters.fullNameIndex.length === 0) {
         commit("SET_LOADING_STATUS", true);
         let fullNameIndex = {};
-        if (localStorage.getItem("fullNameIndex")) {
-          fullNameIndex = localStorage.getItem("fullNameIndex");
-        } else {
-          const entities = [...this.getters.persons, ...this.getters.places];
-          entities.map(async entity => {
-            const targetEntity = entities.find(item => item.id === entity.id);
-            fullNameIndex[entity.id] =
-              targetEntity.properties.name.toponym || targetEntity.properties.name.fullName || "NN";
-          });
-        }
+        const entities = [...this.getters.persons, ...this.getters.places];
+        entities.map(async entity => {
+          const targetEntity = entities.find(item => item.id === entity.id);
+          fullNameIndex[entity.id] =
+            targetEntity.properties.name.toponym || targetEntity.properties.name.fullName || "NN";
+        });
         commit("GET_FULLNAME_INDEX", fullNameIndex);
         commit("SET_LOADING_STATUS", false);
       }
     },
 
     async loadEntitiesAction() {
-      const currentVersion = localStorage.getItem("version");
-      const remoteVersion = await dataService.getVersion();
-
-      if (currentVersion !== remoteVersion) {
-        localStorage.clear();
-        localStorage.setItem("version", remoteVersion);
-      }
-
       if (this.getters.letters.length === 0) {
         await this.dispatch("loadLettersAction");
       }
