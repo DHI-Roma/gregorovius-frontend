@@ -167,7 +167,7 @@ export default {
         resp: "",
         searchResults: []
       },
-      loading: this.$store.state.isLoading,
+      loading: this.$store.getters.loading,
       pagination: {
         rowsPerPage: 20,
         sortBy: "date"
@@ -306,8 +306,10 @@ export default {
       }
     );
 
-    await this.$store.dispatch("loadFullNameIndexAction");
-    this.loadAll();
+    await Promise.all([
+      this.$store.dispatch("loadFullNameIndexAction"),
+      this.loadAll(),
+    ]);
   },
   methods: {
     ...mapActions([
@@ -384,8 +386,8 @@ export default {
       }
     },
 
-    loadAll() {
-      this.loadEntitiesAction();
+    async loadAll() {
+      await this.loadEntitiesAction();
       this.resetFilter();
     },
 
