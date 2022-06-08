@@ -61,12 +61,7 @@ export const routes = [
       {
         path: "persons",
         name: "Personen",
-        component: PersonsIndex
-      },
-      {
-        path: "persons/:id",
-        name: "Person",
-        component: PersonsDetail,
+        component: PersonsIndex,
         async beforeEnter(to, from, next) {
           await Promise.all([
             store.dispatch("loadFullNameIndexAction"),
@@ -74,19 +69,17 @@ export const routes = [
           ]);
           next();
         }
+      },
+      {
+        path: "persons/:id",
+        name: "Person",
+        component: PersonsDetail
       },
       {
         path: "persons-multiple",
         name: "Personen (mehrfach)",
         component: PersonsDetailMultiple,
-        props: route => ({ ids: route.query.ids }),
-        async beforeEnter(to, from, next) {
-          await Promise.all([
-            store.dispatch("loadFullNameIndexAction"),
-            store.dispatch("loadEntitiesAction")
-          ]);
-          next();
-        }
+        props: route => ({ ids: route.query.ids })
       },
       {
         path: "gnd/:id",
@@ -123,14 +116,7 @@ export const routes = [
       {
         path: "places/:id",
         name: "Ort",
-        component: PlacesDetail,
-        async beforeEnter(to, from, next) {
-          await Promise.all([
-            store.dispatch("loadFullNameIndexAction"),
-            store.dispatch("loadEntitiesAction")
-          ]);
-          next();
-        }
+        component: PlacesDetail
       },
       {
         path: "works",

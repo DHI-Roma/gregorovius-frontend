@@ -79,7 +79,13 @@ export default {
       return this.$route.params.id;
     },
     name() {
-      return this.fullNameIndex[this.$route.params.id];
+      const fullName = this.fullNameIndex[this.$route.params.id];
+
+      if (fullName) {
+        return fullName;
+      }
+
+      return this.properties.name.toponym;
     },
     authorityUri() {
       if (!this.data.place.idno) {
@@ -117,10 +123,10 @@ export default {
   },
 
   async mounted() {
-    if (this.$store.getters.fullNameIndex.length == 0) {
-      await this.loadFullNameIndexAction();
-    }
-    await this.getItems();
+    await Promise.all([
+      this.getItems(),
+      this.loadFullNameIndexAction()
+    ]);
   },
 
   methods: {

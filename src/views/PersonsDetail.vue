@@ -119,8 +119,7 @@ export default {
   },
 
   async mounted() {
-    await this.loadFullNameIndexAction();
-    await this.getItems();
+    await Promise.all([this.getItems(), this.loadFullNameIndexAction()]);
   },
 
   methods: {

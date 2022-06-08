@@ -96,7 +96,13 @@ export default {
       return this.isList ? "context-small" : "";
     },
     name() {
-      return this.fullNameIndex[this.entity.id];
+      const fullName = this.fullNameIndex[this.entity.id];
+
+      if (fullName) {
+        return fullName;
+      }
+
+      return this.person.persName.name;
     },
     authorityUri() {
       return this.person.idno.length > 1 ? this.person.idno[0]["#text"] : this.person.idno["#text"];

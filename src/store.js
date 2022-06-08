@@ -34,7 +34,7 @@ export default new Vuex.Store({
       state.isLoading = loading;
     },
     SET_NAMED_LOADING_STATUS(state, { entity, loading }) {
-      state.loadingStatus[entity] = loading
+      state.loadingStatus[entity] = loading;
     },
     GET_LETTERS(state, letters) {
       state.letters = letters;
@@ -81,48 +81,45 @@ export default new Vuex.Store({
     async loadLettersAction({ commit }) {
       if (this.getters.letters.length === 0 && !this.getters.loadingStatusLetters) {
         commit("SET_LOADING_STATUS", true);
-        commit("SET_NAMED_LOADING_STATUS", { entity: "letters", loading: true })
+        commit("SET_NAMED_LOADING_STATUS", { entity: "letters", loading: true });
         const letters = await dataService.getLetters();
         commit("GET_LETTERS", letters);
         commit("SET_LOADING_STATUS", false);
-        commit("SET_NAMED_LOADING_STATUS", { entity: "letters", loading: false })
+        commit("SET_NAMED_LOADING_STATUS", { entity: "letters", loading: false });
       }
     },
     async loadPersonsAction({ commit }) {
       if (this.getters.persons.length === 0 && !this.getters.loadingStatusPersons) {
         commit("SET_LOADING_STATUS", true);
-        commit("SET_NAMED_LOADING_STATUS", { entity: "persons", loading: true })
+        commit("SET_NAMED_LOADING_STATUS", { entity: "persons", loading: true });
         const persons = await dataService.getEntities("persons");
         commit("GET_PERSONS", persons);
         commit("SET_LOADING_STATUS", false);
-        commit("SET_NAMED_LOADING_STATUS", { entity: "persons", loading: false })
+        commit("SET_NAMED_LOADING_STATUS", { entity: "persons", loading: false });
       }
     },
     async loadPlacesAction({ commit }) {
       if (this.getters.places.length === 0 && !this.getters.loadingStatusPlaces) {
         commit("SET_LOADING_STATUS", true);
-        commit("SET_NAMED_LOADING_STATUS", { entity: "places", loading: true })
+        commit("SET_NAMED_LOADING_STATUS", { entity: "places", loading: true });
         const places = await dataService.getEntities("places");
         commit("GET_PLACES", places);
         commit("SET_LOADING_STATUS", false);
-        commit("SET_NAMED_LOADING_STATUS", { entity: "places", loading: false })
+        commit("SET_NAMED_LOADING_STATUS", { entity: "places", loading: false });
       }
     },
     async loadWorksAction({ commit }) {
       if (this.getters.works.length === 0 && !this.loadingStatusWorks) {
         commit("SET_LOADING_STATUS", true);
-        commit("SET_NAMED_LOADING_STATUS", { entity: "works", loading: true })
+        commit("SET_NAMED_LOADING_STATUS", { entity: "works", loading: true });
         const works = await dataService.getEntities("works");
         commit("GET_WORKS", works);
         commit("SET_LOADING_STATUS", false);
-        commit("SET_NAMED_LOADING_STATUS", { entity: "works", loading: false })
+        commit("SET_NAMED_LOADING_STATUS", { entity: "works", loading: false });
       }
     },
     async loadFullNameIndexAction({ commit }) {
-      await Promise.all([
-        this.dispatch("loadPersonsAction"),
-        this.dispatch("loadPlacesAction")
-      ]);
+      await Promise.all([this.dispatch("loadPersonsAction"), this.dispatch("loadPlacesAction")]);
       if (this.getters.fullNameIndex.length === 0) {
         commit("SET_LOADING_STATUS", true);
         let fullNameIndex = {};
@@ -176,7 +173,7 @@ export default new Vuex.Store({
 
     async setLettersFiltered({ commit }, letters) {
       commit("SET_LETTERS_FILTERED", letters);
-    },
+    }
   },
   getters: {
     letters: state =>
@@ -188,7 +185,8 @@ export default new Vuex.Store({
     persons: state => state.persons,
     places: state => state.places,
     works: state => state.works,
-    loading: state => state.isLoading ||
+    loading: state =>
+      state.isLoading ||
       state.loadingStatus.letters ||
       state.loadingStatus.persons ||
       state.loadingStatus.places ||
@@ -203,6 +201,6 @@ export default new Vuex.Store({
     loadingStatusLetters: state => state.loadingStatus.letters,
     loadingStatusPersons: state => state.loadingStatus.persons,
     loadingStatusPlaces: state => state.loadingStatus.places,
-    loadingStatusWorks: state => state.loadingStatus.works,
+    loadingStatusWorks: state => state.loadingStatus.works
   }
 });
