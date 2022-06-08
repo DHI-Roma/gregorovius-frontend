@@ -68,13 +68,16 @@ export default {
   },
 
   async mounted() {
-    this.getItems();
+    this.loading = true;
+    await this.getItems();
   },
 
   methods: {
     async getItems() {
-      await this.$store.dispatch("loadFullNameIndexAction");
-      await this.$store.dispatch("loadEntitiesAction");
+      await Promise.all([
+        this.$store.dispatch("loadFullNameIndexAction"),
+        this.$store.dispatch("loadEntitiesAction")
+      ]);
       this.loading = false;
     }
   }

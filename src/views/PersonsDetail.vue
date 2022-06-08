@@ -100,21 +100,23 @@ export default {
       if (!this.letters.length) {
         return [];
       }
-      return this.letters.filter(
-        letter =>
-          letter.properties.sender.includes(this.entityId) ||
-          letter.properties.recipient.includes(this.entityId)
-      ).sort((letterA, letterB) => {
-        if (letterA.properties.date > letterB.properties.date) {
-          return 1;
-        }
+      return this.letters
+        .filter(
+          letter =>
+            letter.properties.sender.includes(this.entityId) ||
+            letter.properties.recipient.includes(this.entityId)
+        )
+        .sort((letterA, letterB) => {
+          if (letterA.properties.date > letterB.properties.date) {
+            return 1;
+          }
 
-        if (letterA.properties.date < letterB.properties.date) {
-          return -1;
-        }
+          if (letterA.properties.date < letterB.properties.date) {
+            return -1;
+          }
 
-        return 0;
-      });
+          return 0;
+        });
     }
   },
 

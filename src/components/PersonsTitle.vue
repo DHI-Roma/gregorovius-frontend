@@ -102,7 +102,7 @@ export default {
         return fullName;
       }
 
-      return this.person.persName.name;
+      return this.properties.name.fullName;
     },
     authorityUri() {
       return this.person.idno.length > 1 ? this.person.idno[0]["#text"] : this.person.idno["#text"];

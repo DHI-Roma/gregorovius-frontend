@@ -5,7 +5,7 @@
     @click.middle="openInNewTab(route)"
   >
     <q-item-section>
-      <q-item-label>{{ fullNameIndex[place.id] }}</q-item-label>
+      <q-item-label>{{ name }}</q-item-label>
     </q-item-section>
     <q-chip
       v-if="place.properties.type"
@@ -55,6 +55,15 @@ export default {
     ...mapGetters(["fullNameIndex"]),
     route() {
       return { path: `/places/${this.place.id}` };
+    },
+    name() {
+      const fullName = this.fullNameIndex[this.place.id];
+
+      if (fullName) {
+        return fullName;
+      }
+
+      return this.place.properties.name.toponym;
     }
   },
   methods: {

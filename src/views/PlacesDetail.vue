@@ -16,7 +16,7 @@
             </q-card-section>
             <q-card-section>
               <q-chip v-if="placeTypeName" :color="placeTypeClass">{{ placeTypeName }}</q-chip>
-              <div v-if="data.place.idno" class="inline-block">
+              <div v-if="data.place && data.place.idno" class="inline-block">
                 <a id="geonames-uri" :href="authorityUri">
                   <q-chip color="blue-1" class="q-ml-none">
                     <q-avatar rounded font-size="11px" color="blue-5" class="text-white">
@@ -79,6 +79,9 @@ export default {
       return this.$route.params.id;
     },
     name() {
+      if (!this.properties) {
+        return "";
+      }
       const fullName = this.fullNameIndex[this.$route.params.id];
 
       if (fullName) {
@@ -88,6 +91,9 @@ export default {
       return this.properties.name.toponym;
     },
     authorityUri() {
+      if (!this.data) {
+        return "";
+      }
       if (!this.data.place.idno) {
         return "";
       }
@@ -97,15 +103,31 @@ export default {
         : this.data.place.idno["#text"];
     },
     properties() {
+      if (!this.places.length) {
+        return null;
+      }
       return this.places.find(place => place.id === this.entityId).properties;
     },
     placeTypeName() {
+      if (!this.properties) {
+        return "";
+      }
       return placeService.getPlaceTypeTranslation(this.properties.type);
     },
     placeTypeClass() {
+      if (!this.properties) {
+        return "";
+      }
       return placeService.getPlaceTypeClass(this.properties.type);
     },
     alternativeName() {
+      if (!this.data) {
+        return "";
+      }
+      if (!this.data.place) {
+        return "";
+      }
+
       if (!Array.isArray(this.data.place.placeName)) {
         return "";
       }
