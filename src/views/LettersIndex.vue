@@ -226,10 +226,10 @@ export default {
     ]),
     letterEntries() {
       if (!this.letters.length || !Object.entries(this.fullNameIndex).length) {
-        return []
+        return [];
       }
 
-      return this.letters
+      return this.letters;
     },
 
     uniqueRecipients() {

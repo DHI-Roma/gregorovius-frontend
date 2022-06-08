@@ -120,7 +120,7 @@ export default new Vuex.Store({
     },
     async loadFullNameIndexAction({ commit }) {
       await Promise.all([this.dispatch("loadPersonsAction"), this.dispatch("loadPlacesAction")]);
-      if (this.getters.fullNameIndex.length === 0) {
+      if (Object.entries(this.getters.fullNameIndex).length === 0) {
         commit("SET_LOADING_STATUS", true);
         let fullNameIndex = {};
         const entities = [...this.getters.persons, ...this.getters.places];

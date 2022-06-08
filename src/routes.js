@@ -117,6 +117,13 @@ export const routes = [
         path: "places/:id",
         name: "Ort",
         component: PlacesDetail
+        // async beforeEnter(to, from, next) {
+        //   await Promise.all([
+        //     store.dispatch("loadFullNameIndexAction"),
+        //     store.dispatch("loadEntitiesAction")
+        //   ]);
+        //   next();
+        // }
       },
       {
         path: "works",

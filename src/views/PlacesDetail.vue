@@ -146,8 +146,9 @@ export default {
 
   async mounted() {
     await Promise.all([
-      this.getItems(),
-      this.loadFullNameIndexAction()
+      this.loadFullNameIndexAction(),
+      this.$store.dispatch("loadEntitiesAction"),
+      this.getItems()
     ]);
   },
 
