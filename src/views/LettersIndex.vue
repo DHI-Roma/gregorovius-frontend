@@ -43,7 +43,7 @@
       <div class="q-pa-md col-12 col-md-9">
         <q-table
           ref="table"
-          :data="letters"
+          :data="letterEntries"
           :columns="columns"
           row-key="id"
           :filter="filter"
@@ -167,7 +167,7 @@ export default {
         resp: "",
         searchResults: []
       },
-      loading: this.$store.state.isLoading,
+      loading: this.$store.getters.loading,
       pagination: {
         rowsPerPage: 20,
         sortBy: "date"
@@ -224,6 +224,13 @@ export default {
       "selectedPlaceReceived",
       "selectedYears"
     ]),
+    letterEntries() {
+      if (!this.letters.length || !Object.entries(this.fullNameIndex).length) {
+        return []
+      }
+
+      return this.letters
+    },
 
     uniqueRecipients() {
       return this.getArrayOptions("letters", "recipient");
@@ -306,8 +313,10 @@ export default {
       }
     );
 
-    await this.$store.dispatch("loadFullNameIndexAction");
-    this.loadAll();
+    await Promise.all([
+      this.$store.dispatch("loadFullNameIndexAction"),
+      this.loadAll(),
+    ]);
   },
   methods: {
     ...mapActions([
@@ -384,8 +393,8 @@ export default {
       }
     },
 
-    loadAll() {
-      this.loadEntitiesAction();
+    async loadAll() {
+      await this.loadEntitiesAction();
       this.resetFilter();
     },
 
