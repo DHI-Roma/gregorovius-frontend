@@ -67,8 +67,11 @@ export const routes = [
         path: "persons/:id",
         name: "Person",
         component: PersonsDetail,
-        beforeEnter(to, from, next) {
-          store.dispatch("loadEntitiesAction");
+        async beforeEnter(to, from, next) {
+          await Promise.all([
+            store.dispatch("loadFullNameIndexAction"),
+            store.dispatch("loadEntitiesAction")
+          ]);
           next();
         }
       },
@@ -76,14 +79,24 @@ export const routes = [
         path: "persons-multiple",
         name: "Personen (mehrfach)",
         component: PersonsDetailMultiple,
-        props: route => ({ ids: route.query.ids })
+        props: route => ({ ids: route.query.ids }),
+        async beforeEnter(to, from, next) {
+          await Promise.all([
+            store.dispatch("loadFullNameIndexAction"),
+            store.dispatch("loadEntitiesAction")
+          ]);
+          next();
+        }
       },
       {
         path: "gnd/:id",
         name: "GND",
         component: PersonsIndex,
         async beforeEnter(to, from, next) {
-          await store.dispatch("loadEntitiesAction");
+          await Promise.all([
+            store.dispatch("loadFullNameIndexAction"),
+            store.dispatch("loadEntitiesAction")
+          ]);
 
           const personId = getPersonIdByGnd(to.params.id, store.getters.persons);
           if (!personId) {
@@ -99,8 +112,11 @@ export const routes = [
         path: "places",
         name: "Orte",
         component: PlacesIndex,
-        beforeEnter(to, from, next) {
-          store.dispatch("loadEntitiesAction");
+        async beforeEnter(to, from, next) {
+          await Promise.all([
+            store.dispatch("loadFullNameIndexAction"),
+            store.dispatch("loadEntitiesAction")
+          ]);
           next();
         }
       },
@@ -108,8 +124,11 @@ export const routes = [
         path: "places/:id",
         name: "Ort",
         component: PlacesDetail,
-        beforeEnter(to, from, next) {
-          store.dispatch("loadEntitiesAction");
+        async beforeEnter(to, from, next) {
+          await Promise.all([
+            store.dispatch("loadFullNameIndexAction"),
+            store.dispatch("loadEntitiesAction")
+          ]);
           next();
         }
       },
