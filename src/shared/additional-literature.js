@@ -24,19 +24,16 @@ Angela Steinsiek: Das epistolarische Werk von Ferdinand Gregorovius. Eine Bestan
 
   `,
   `
-Angela Steinsiek: Ferdinand Gregorovius e i Caetani. In: Ninfa. Vom Pompei des Mittelalters zu den Gärten von Ninfa.
-    Hrsg. von Michael Matheus in Zusammenarbeit mit der Fondazione Roffredo Caetani und dem Institut für Geschichtliche
-    Landeskunde an der Universität Mainz: Regensburg: Schnell und Steiner (erscheint 2022)
+  Angela Steinsiek: Ferdinand Gregorovius e la famiglia Caetani, in: Ninfa. Percezioni nella scienza, letteratura e
+  belle arti nel XIX e all’inizio del XX secolo, hrsg. von Michael Matheus, Regensburg: Schnell und Steiner 2022. S. 215–230
   `,
   `
-Angela Steinsiek: Private und öffentliche Kommunikationsstrategien in den Korrespondenzen und Briefen von Ferdinand
-    Gregorovius. In: Soziales Medium Brief. Sharen, Liken, Retweeten im 18. und 19. Jahrhundert. Neue Perspektiven auf
-    die
-    Briefkultur. Hrsg. von Markus Bernauer. Darmstadt: wbg (erscheint 2022)
+  Angela Steinsiek: Private und öffentliche Kommunikationsstrategien in den Korrespondenzen und Briefen von Ferdinand Gregorovius.
+  In: Soziales Medium Brief. Sharen, Liken, Retweeten im 18. und 19. Jahrhundert. Neue Perspektiven auf die Briefkultur.
+  Hrsg. von Markus Bernauer, Selma Jahnke, Frederike Neuber und Michael Rölcke. Darmstadt: wbg (im Druck)
   `,
   `
-Ferdinand Gregorovius in seinem Jahrhundert. Der Historiker und Schriftsteller aus Anlass der Edition der Briefe und
-    des 200. Geburtstages neu gelesen. Hrsg. von Angela Steinsiek und Martin Baumeister. Köln: Böhlau (erscheint 2023)
-    (Beihefte zum Archiv für Kulturgeschichte)
+  Ferdinand Gregorovius in seinem Jahrhundert. Der Historiker und Schriftsteller aus Anlass der Edition der Briefe und des
+  200. Geburtstages neu gelesen. Hrsg. von Angela Steinsiek. Köln: Böhlau (im Druck) (Beihefte zum Archiv für Kulturgeschichte)
   `
 ];
