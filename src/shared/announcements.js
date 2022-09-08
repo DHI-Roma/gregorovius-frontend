@@ -46,7 +46,7 @@ export const announcements = [
 <blockquote>
     <p>Günther Wassilowsky (Humboldt-Universität zu Berlin)</p>
     <p>Ferdinand Gregorovius und das Judentum (<a
-            href="https://lisa.gerda-henkel-stiftung.de/gregorovius4" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius4</a>)
+            href="https://lisa.gerda-henkel-stiftung.de/gregorovius_judentum_wassilowsky" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_judentum_wassilowsky</a>)
     </p>
 </blockquote>
 <p>12.15 Uhr</p>
