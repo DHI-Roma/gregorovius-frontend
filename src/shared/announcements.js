@@ -53,7 +53,7 @@ export const announcements = [
 <blockquote>
     <p>Martin Baumeister (Deutsches Historisches Institut in Rom)</p>
     <p>„Die Epoche des Mittelalters ist abgelaufen; die neue Zeit schlägt Wurzel“. Ferdinand Gregorovius blickt auf den
-        Katholizismus (https://lisa.gerda-henkel-stiftung.de/gregorovius_katholizismus_baumeister)</p>
+        Katholizismus (<a href="https://lisa.gerda-henkel-stiftung.de/gregorovius_katholizismus_baumeister" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_katholizismus_baumeister</a>)</p>
 </blockquote>
 <p>13.00 Uhr</p>
 <blockquote>
@@ -95,24 +95,24 @@ export const announcements = [
 <p>10.45 Uhr</p>
 <blockquote>
     <p>Alberto Forni (Rom)</p>
-    <p>Ferdinand Gregorovius als Forscher in italienischen Archiven und Bibliotheken</p>
+    <p>Ferdinand Gregorovius als Forscher in italienischen Archiven und Bibliotheken (<a href="https://lisa.gerda-henkel-stiftung.de/gregorovius_forscher_forni" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_forscher_forni</a>)</p>
 </blockquote>
 <p>12.30 Uhr</p>
 <blockquote>
     <p>Katharina Weiger (Kunsthistorisches Institut in Florenz)</p>
     <p>„Mentre loro godono le tiepide aure di Ronzano, noi altri …“ Ferdinand Gregorovius in seinen Briefen an Giovanni
-        Gozzadini</p>
+        Gozzadini (<a href="https://lisa.gerda-henkel-stiftung.de/gregorovius_gozzadini_weiger" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_gozzadini_weiger</a>)</p>
 </blockquote>
 <p>14.45 Uhr</p>
 <blockquote>
     <p>Patrick Bahners (Frankfurter Allgemeine Zeitung, Köln)</p>
     <p>Die Kultur der Renaissance im Italien der Kaiserzeit: Die beiden Fassungen des Hadrian-Buches von Ferdinand
-        Gregorovius und der Einfluss Jacob Burckhardts</p>
+        Gregorovius und der Einfluss Jacob Burckhardts (<a href="https://lisa.gerda-henkel-stiftung.de/gregorovius_jacobburckhardt_bahners" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_jacobburckhardt_bahners</a>)</p>
 </blockquote>
 <p>15.30 Uhr</p>
 <blockquote>
     <p>Anna Maria Voci (Rom)</p>
-    <p>Ferdinand Gregorovius in Florenz</p>
+    <p>Ferdinand Gregorovius in Florenz (<a href="https://lisa.gerda-henkel-stiftung.de/gregorovius_florenz_voci" target="_blank">https://lisa.gerda-henkel-stiftung.de/gregorovius_florenz_voci</a>)</p>
 </blockquote>
 <p>16.15 Uhr</p>
 <blockquote>
@@ -170,7 +170,7 @@ export const announcements = [
       "Berlin-Brandenburgische Akademie der Wissenschaften, Einstein-Saal, Jägerstraße 22/23, 10117 Berlin",
     description: `
 <p>Vortrag im Rahmen der Tagung: „Soziales Medium Brief. Sharen, Liken, Retweeten im 18. und 19. Jahrhundert. Neue
-    Perspektiven auf die Briefkultur“ („Edition von Briefen aus Jean Pauls Umfeld“ der Berlin-Brandenburgischen Akademie
+    Perspektiven auf die Briefkultur“ (Markus Bernauer, Selma Jahnke, Frederike Neuber und Michael Rölcke, „Edition von Briefen aus Jean Pauls Umfeld“ der Berlin-Brandenburgischen Akademie
     der Wissenschaften, 24.–26. Juni 2021; <a
             href="https://www.bbaw.de/files-bbaw/veranstaltungen/2021/Juni_2021/Soziales_Medium_Brief_Onlineflyer.pdf" target="_blank">https://www.bbaw.de/files-bbaw/veranstaltungen/2021/Juni_2021/Soziales_Medium_Brief_Onlineflyer.pdf</a>).
 </p>
