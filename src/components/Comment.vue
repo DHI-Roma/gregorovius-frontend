@@ -32,15 +32,27 @@
 </template>
 
 <script>
-import * as linkifyUrls from "linkify-urls";
 import { mapGetters } from "vuex";
 
 export default {
   name: "Comment",
+  data() {
+    return {
+      commentWithLinks: ""
+    };
+  },
   computed: {
-    ...mapGetters(["activeComment"]),
-    commentWithLinks() {
-      return linkifyUrls(this.activeComment.text, {
+    ...mapGetters(["activeComment"])
+  },
+  watch: {
+    // eslint-disable-next-line no-unused-vars
+    "activeComment.id": async function(_newValue) {
+      if (this.$q.platform.is.ios || this.$q.platform.is.mac) {
+        this.commentWithLinks = this.activeComment.text;
+        return;
+      }
+      const linkifyUrls = await require("linkify-urls");
+      this.commentWithLinks = linkifyUrls(this.activeComment.text, {
         attributes: {
           class: "g-edition-external-link",
           target: "_blank"
