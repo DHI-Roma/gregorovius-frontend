@@ -4,7 +4,7 @@
     <div class="g-edition-text">
         <xsl:apply-templates select="//tei:body"/>
     </div>
-</xsl:template> 
+</xsl:template>
 
 
 <!-- Page breaks -->
@@ -30,7 +30,7 @@
             <p> <xsl:apply-templates/> </p>
         </xsl:otherwise>
     </xsl:choose>
-</xsl:template> 
+</xsl:template>
 
 <!-- Letter body -->
 
@@ -65,36 +65,36 @@
 
 <xsl:template match="tei:add">
     <span class="g-add"> <xsl:apply-templates/> </span>
-</xsl:template> 
+</xsl:template>
 
 <xsl:template match="tei:del[@rendition='#s']">
     <del> <xsl:apply-templates/> </del>
-</xsl:template> 
+</xsl:template>
 
 <xsl:template match="tei:del[@rendition='#ow']">
     <del> <xsl:apply-templates/> </del>
-</xsl:template> 
+</xsl:template>
 
 
 <xsl:template match="tei:hi[@rendition='#u']">
     <u> <xsl:apply-templates/> </u>
-</xsl:template> 
+</xsl:template>
 
 <xsl:template match="tei:hi[@rendition='#uu']">
     <span class="g-uu"> <xsl:apply-templates/> </span>
-</xsl:template> 
+</xsl:template>
 
 <xsl:template match="tei:hi[@rendition='#aq']">
     <span class="g-aq"> <xsl:apply-templates/> </span>
-</xsl:template> 
+</xsl:template>
 
 <xsl:template match="tei:hi[@rendition='#sup']">
     <sup> <xsl:apply-templates/> </sup>
-</xsl:template> 
+</xsl:template>
 
 <xsl:template match="tei:ex">
     <em> <xsl:apply-templates/> </em>
-</xsl:template> 
+</xsl:template>
 
 <xsl:template match="tei:lb">
     <br/>
@@ -106,9 +106,14 @@
 
 <xsl:template match="tei:ref">
     <xsl:choose>
+        <xsl:when test="@target and starts-with(@target, 'http')">
+            <a class="g-entity-link" href="{@target}" target="_blank">
+                <xsl:apply-templates/>
+            </a>
+        </xsl:when>
         <xsl:when test="@target">
-            <a class="g-entity-link" 
-                v-on:click="$router.push({{ name: 'Brief', params: {{ id: '{@target}' }} }})" 
+            <a class="g-entity-link"
+                v-on:click="$router.push({{ name: 'Brief', params: {{ id: '{@target}' }} }})"
                 v-bind:href="$router.resolve({{ name: 'Brief', params: {{ id: '{@target}' }} }}).href"
                 v-on:click.middle="openInNewTab({{ name: 'Brief', params: {{ id: '{@target}' }} }})"
             >
@@ -128,7 +133,7 @@
 <xsl:template match="tei:seg[@type='comment']/tei:orig">
     <span class="g-comment-orig"
           v-bind:class="['{../tei:note/@xml:id}' === activeComment.id ? 'active' : '' ]"
-          v-on:click="activateComment($event, `{../tei:note/@xml:id}`, `{../tei:note}`)"           
+          v-on:click="activateComment($event, `{../tei:note/@xml:id}`, `{../tei:note}`)"
           v-bind:commentId="`{../tei:note/@xml:id}`"
           v-bind:commentText="`{../tei:note}`"
           >
@@ -143,8 +148,8 @@
             </xsl:choose>
           </q-tooltip>
         <xsl:apply-templates />
-        <CommentIcon 
-        v-bind:commentId="`{../tei:note/@xml:id}`" 
+        <CommentIcon
+        v-bind:commentId="`{../tei:note/@xml:id}`"
         v-bind:commentText="`{../tei:note}`">
     </CommentIcon>
     </span>
@@ -215,7 +220,7 @@
 <xsl:template match="tei:bibl">
     <xsl:choose>
         <xsl:when test="@sameAs">
-            <a 
+            <a
             class="g-entity-link"
             entity-id="{@sameAs}"
             v-on:click="$router.push({{ name: 'Werk', params: {{ id: '{@sameAs}' }} }})"
@@ -274,24 +279,24 @@
         </xsl:choose>
     </xsl:variable>
     <!-- TODO: Check material design icons -->
-    <q-btn 
+    <q-btn
         color="primary" flat="" outline="" icon="comment"
         class="note metamark-{tei:metamark/@function} g-margin-right"
     >
-        <q-tooltip 
-            anchor="center left" self="center right" 
+        <q-tooltip
+            anchor="center left" self="center right"
             v-bind:offset="[10, 10]" content-style="font-size: 15px"
             content-class="bg-white shadow-24 text-black q-pa-md"
         >
-            Anmerkung 
-            am <xsl:value-of select="$place"/> Rand, 
-            <xsl:value-of select="$hand"/> 
+            Anmerkung
+            am <xsl:value-of select="$place"/> Rand,
+            <xsl:value-of select="$hand"/>
             <div class="g-edition-text text-center">
-                <xsl:value-of select="text()"/> 
+                <xsl:value-of select="text()"/>
             </div>
         </q-tooltip>
     </q-btn>
-</xsl:template>    
+</xsl:template>
 
 <xsl:template match="tei:note[@place and tei:metamark[@function]]">
     <xsl:variable name="place">
@@ -329,25 +334,25 @@
             <xsl:otherwise/>
         </xsl:choose>
     </xsl:variable>
-    <q-btn 
+    <q-btn
         color="primary" flat="" outline="" icon="{$icon-type}"
         class="note metamark-{tei:metamark/@function} g-margin-right"
     >
-        <q-tooltip 
-            anchor="center left" self="center right" 
+        <q-tooltip
+            anchor="center left" self="center right"
             v-bind:offset="[10, 10]" content-style="font-size: 15px"
             content-class="bg-white shadow-24 text-black q-pa-md"
         >
-            <xsl:value-of select="$metamark"/> mit Anmerkung 
-            am <xsl:value-of select="$place"/> Rand, 
-            <xsl:value-of select="$hand"/> 
+            <xsl:value-of select="$metamark"/> mit Anmerkung
+            am <xsl:value-of select="$place"/> Rand,
+            <xsl:value-of select="$hand"/>
             <xsl:value-of select="$list"/>
             <div class="g-edition-text text-center">
-                <xsl:value-of select="text()"/> 
+                <xsl:value-of select="text()"/>
             </div>
         </q-tooltip>
     </q-btn>
-</xsl:template>    
+</xsl:template>
 
 <xsl:template match="tei:add[@place and tei:metamark[@function]]">
     <xsl:variable name="place">
@@ -386,18 +391,18 @@
         </xsl:choose>
     </xsl:variable>
 
-    <q-btn 
+    <q-btn
         color="primary" flat="" outline="" icon="{$icon-type}"
         class="metamark-{tei:metamark/@function} g-margin-right"
     >
-        <q-tooltip 
-            anchor="center left" self="center right" 
+        <q-tooltip
+            anchor="center left" self="center right"
             v-bind:offset="[10, 10]" content-style="font-size: 15px"
             content-class="bg-white shadow-24 text-black q-pa-md"
         >
-            <xsl:value-of select="$metamark"/> 
-            am <xsl:value-of select="$place"/> Rand, 
-            <xsl:value-of select="$hand"/> 
+            <xsl:value-of select="$metamark"/>
+            am <xsl:value-of select="$place"/> Rand,
+            <xsl:value-of select="$hand"/>
             <xsl:value-of select="$list"/>
         </q-tooltip>
     </q-btn>
@@ -439,18 +444,18 @@
         </xsl:choose>
     </xsl:variable>
 
-    <q-btn 
+    <q-btn
         color="primary" flat="" outline="" icon="{$icon-type}"
         class="metamark-{tei:metamark/@function} g-margin-right"
     >
-        <q-tooltip 
-            anchor="center left" self="center right" 
+        <q-tooltip
+            anchor="center left" self="center right"
             v-bind:offset="[10, 10]" content-style="font-size: 15px"
             content-class="bg-white shadow-24 text-black q-pa-md"
         >
-            <xsl:value-of select="$metamark"/> 
-            am <xsl:value-of select="$place"/> Rand, 
-            <xsl:value-of select="$hand"/> 
+            <xsl:value-of select="$metamark"/>
+            am <xsl:value-of select="$place"/> Rand,
+            <xsl:value-of select="$hand"/>
             <xsl:value-of select="$list"/>
         </q-tooltip>
     </q-btn>
@@ -460,7 +465,7 @@
     <span class="seg">
         <xsl:apply-templates/>
     </span>
-</xsl:template>    
+</xsl:template>
 
 <!-- Listen -->
 <xsl:template match="tei:list">
