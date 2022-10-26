@@ -11,13 +11,16 @@
       :label="label"
       :value="model"
     >
-      <template v-slot:option="scope">
-        <q-item>
+      <template v-slot:option="{ itemProps, itemEvents, opt, selected, toggleOption }">
+        <q-item
+          v-bind="itemProps"
+          v-on="itemEvents"
+        >
           <q-item-section>
-            <q-item-label>{{ scope.opt }}</q-item-label>
+            <q-item-label>{{ opt }}</q-item-label>
           </q-item-section>
           <q-item-section side>
-            <q-toggle v-model="model" :val="scope.opt" @input="setSelected" />
+            <q-toggle :value="selected" @input="toggleOption(opt)" />
           </q-item-section>
         </q-item>
       </template>
@@ -50,14 +53,18 @@ export default {
       return this.$attrs.options;
     }
   },
+  watch: {
+    model: {
+      handler: function(newValue) {
+        this.setSelectedAction({ entity: "years", value: newValue });
+      }
+    }
+  },
   mounted() {
     this.getSelected();
   },
   methods: {
     ...mapActions(["setSelectedAction"]),
-    setSelected() {
-      this.setSelectedAction({ entity: "years", value: this.model });
-    },
     getSelected() {
       if ("years" in this.$route.query) this.model = this.$route.query.years.split(",");
       else this.model = [];
