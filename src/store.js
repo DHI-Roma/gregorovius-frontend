@@ -182,6 +182,14 @@ export default new Vuex.Store({
       state.lettersFiltered.sort(
         (letterA, letterB) => letterA.properties.date > letterB.properties.date
       ),
+    yearsInLetters: state => {
+      const years = state.letters.map(e => {
+        if (e.properties.date !== null) {
+          return e.properties.date.slice(0, 4);
+        }
+      });
+      return [...new Set(years)].filter(year => year !== undefined).sort();
+    },
     persons: state => state.persons,
     places: state => state.places,
     works: state => state.works,

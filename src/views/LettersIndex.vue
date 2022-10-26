@@ -36,7 +36,7 @@
               entity="placeReceived"
               :options="uniquePlacesReceived"
             />
-            <select-years label="Jahre" entity="years" :options="uniqueYears" />
+            <select-years label="Jahre" entity="years" :options="yearsInLetters" />
           </div>
         </q-card>
       </div>
@@ -159,6 +159,7 @@ export default {
       searchInput: "",
       model: "",
       visibleColumns: ["date", "recipient", "placeSent", "placeRecv"],
+      uniqueYears: [],
       filter: {
         recipient: [],
         placeSent: "",
@@ -219,6 +220,7 @@ export default {
     ...mapGetters([
       "fullNameIndex",
       "letters",
+      "yearsInLetters",
       "selectedRecipients",
       "selectedPlaceSent",
       "selectedPlaceReceived",
@@ -244,14 +246,6 @@ export default {
       return this.getOptions("letters", "place.received");
     },
 
-    uniqueYears() {
-      const years = this.letters.map(e => {
-        if (e.properties.date !== null) {
-          return e.properties.date.slice(0, 4);
-        }
-      });
-      return [...new Set(years)].filter(year => year !== undefined).sort();
-    },
     phraseSearchHint() {
       const quoteCount = (this.searchInput.match(/"/g) || []).length;
 
