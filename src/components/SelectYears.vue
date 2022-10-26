@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md">
     <q-select
-      v-model="model"
+      v-model="selectedYears"
       filled
       bg-color="white"
       multiple
@@ -9,8 +9,11 @@
       fill-input
       :options="options"
       :label="label"
-      :value="model"
+      :value="selectedYears"
     >
+      <template #selected>
+        {{ selectedYearsSorted }}
+      </template>
       <template v-slot:option="{ itemProps, itemEvents, opt, selected, toggleOption }">
         <q-item
           v-bind="itemProps"
@@ -45,12 +48,15 @@ export default {
   },
   data() {
     return {
-      model: []
+      selectedYears: []
     };
   },
   computed: {
     options() {
       return this.$attrs.options;
+    },
+    selectedYearsSorted() {
+      return this.selectedYears.sort().join(", ");
     }
   },
   watch: {
@@ -66,8 +72,8 @@ export default {
   methods: {
     ...mapActions(["setSelectedAction"]),
     getSelected() {
-      if ("years" in this.$route.query) this.model = this.$route.query.years.split(",");
-      else this.model = [];
+      if ("years" in this.$route.query) this.selectedYears = this.$route.query.years.split(",");
+      else this.selectedYears = [];
     }
   }
 };
