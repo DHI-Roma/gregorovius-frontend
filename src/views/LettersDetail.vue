@@ -494,9 +494,10 @@ export default {
       const commentReference = document.querySelector(
         `.g-comment-orig[commentId="${this.$route.params.commentId}"]`
       );
+      const commentHtml = document.querySelector(`#comment-${this.$route.params.commentId}`);
       const comment = {
         id: commentReference.getAttribute("commentId"),
-        text: commentReference.getAttribute("commentText"),
+        text: commentHtml.innerHTML,
         offset: 0
       };
 
@@ -569,7 +570,12 @@ export default {
         `.g-comment-orig[commentId="${this.activeComment.id}"]`
       );
 
-      const commentUpdate = { ...this.activeComment };
+      const commentHtml = document.querySelector(`#comment-${this.activeComment.id}`);
+
+      const commentUpdate = {
+        ...this.activeComment,
+        text: commentHtml.innerHTML
+      };
       commentUpdate.offsetTop = activeCommentReference.offsetTop;
       this.$store.dispatch("setActiveComment", commentUpdate);
     },
