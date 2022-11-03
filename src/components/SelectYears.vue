@@ -60,7 +60,7 @@ export default {
     }
   },
   watch: {
-    model: {
+    selectedYears: {
       handler: function(newValue) {
         this.setSelectedAction({ entity: "years", value: newValue });
       }
