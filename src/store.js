@@ -19,6 +19,7 @@ export default new Vuex.Store({
     persons: [],
     places: [],
     works: [],
+    facsimiles: {},
     fullNameIndex: [],
     selectedRecipients: [],
     selectedPlaceReceived: { label: "", value: "" },
@@ -75,9 +76,21 @@ export default new Vuex.Store({
     },
     SET_ACTIVE_COMMENT(state, comment) {
       state.activeComment = comment;
+    },
+    SET_FACSIMILES(state, facsimiles) {
+      state.facsimiles = facsimiles;
     }
   },
   actions: {
+    async loadFacsimilesAction({ commit }) {
+      commit("SET_LOADING_STATUS", true);
+      commit("SET_NAMED_LOADING_STATUS", { entity: "facsimiles", loading: true });
+      const facsimiles = await dataService.getFacsimiles();
+      commit("SET_FACSIMILES", facsimiles);
+
+      commit("SET_LOADING_STATUS", false);
+      commit("SET_NAMED_LOADING_STATUS", { entity: "facsimiles", loading: false });
+    },
     async loadLettersAction({ commit }) {
       if (this.getters.letters.length === 0 && !this.getters.loadingStatusLetters) {
         commit("SET_LOADING_STATUS", true);
@@ -152,7 +165,11 @@ export default new Vuex.Store({
         dispatchers.push(this.dispatch("loadWorksAction"));
       }
 
-      await Promise.all(dispatchers);
+      if (Object.keys(this.getters.facsimiles).length === 0) {
+        dispatchers.push(this.dispatch("loadFacsimilesAction"));
+      }
+
+      await Promise.allSettled(dispatchers);
     },
 
     async setSelectedAction({ commit }, payload) {
@@ -193,6 +210,7 @@ export default new Vuex.Store({
     persons: state => state.persons,
     places: state => state.places,
     works: state => state.works,
+    facsimiles: state => state.facsimiles,
     loading: state =>
       state.isLoading ||
       state.loadingStatus.letters ||

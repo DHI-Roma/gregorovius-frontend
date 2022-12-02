@@ -131,6 +131,69 @@
           </div>
         </q-card>
       </div>
+      <div v-if="availableFacsimiles" class="row justify-center">
+        <q-card class="col-md-8 col-12 q-pa-xl q-mb-xl" bordered flat>
+          <q-card-section>
+            <div class="text-h6">Faksimiles zu diesem Brief</div>
+          </q-card-section>
+          <q-card-section>
+            <q-carousel
+              ref="carousel"
+              v-model="selectedFacsimileSlide"
+              :fullscreen="isFacsimileCarouselFullscreen"
+              control-type="flat"
+              control-color="primary"
+              animated
+              navigation
+              arrows
+              height="auto"
+              transition-prev="slide-right"
+              transition-next="slide-left"
+            >
+              <q-carousel-slide
+                v-for="(_imgSrc, imgName) in availableFacsimiles"
+                :key="imgName"
+                :name="imgName"
+              >
+                <q-img
+                  :src="getFacsimileSrc(imgName)"
+                  :height="facsimileImageHeight"
+                  contain
+                >
+                  <div class="absolute-bottom-right text-subtitle2">
+                    {{ selectedFacsimileSlide }}
+                  </div>
+                </q-img>
+              </q-carousel-slide>
+
+              <template #control>
+                <q-carousel-control
+                  position="top-left"
+                  :offset="[18, 18]"
+                  class="text-white rounded-borders"
+                >
+                  <a :href="getFacsimileSrc(selectedFacsimileSlide)" target="_blank">
+                    <q-btn
+                      round dense color="primary" text-color="white" icon="download"
+                    />
+                  </a>
+                </q-carousel-control>
+                <q-carousel-control
+                  position="top-right"
+                  :offset="[18, 18]"
+                  class="text-white rounded-borders"
+                >
+                  <q-btn
+                    round dense color="primary" text-color="white" icon="fullscreen"
+                    @click="toggleFacsimileFullscreen"
+                  />
+                </q-carousel-control>
+              </template>
+
+            </q-carousel>
+          </q-card-section>
+        </q-card>
+      </div>
       <div class="row justify-center">
         <q-card
           v-if="mentionedEntities.length"
@@ -250,11 +313,13 @@ export default {
         rowsPerPage: 0,
         sortBy: "name"
       },
-      mentionedEntityIdsInOrder: []
+      mentionedEntityIdsInOrder: [],
+      selectedFacsimileSlide: 1,
+      isFacsimileCarouselFullscreen: false
     };
   },
   computed: {
-    ...mapGetters(["activeComment", "letters", "lettersFiltered"]),
+    ...mapGetters(["activeComment", "letters", "lettersFiltered", "facsimiles"]),
 
     letterId() {
       return this.$route.params.id;
@@ -362,7 +427,6 @@ export default {
       });
     },
 
-
     mentionedEntities() {
       return [
         ...this.mentionedPersonEntities,
@@ -418,11 +482,13 @@ export default {
         return false;
       }
       return this.lettersFiltered[this.currentLetterIndexInSelection - 1];
+    },
+    availableFacsimiles() {
+      return this.facsimiles[this.letterId] ?? null;
+    },
+    facsimileImageHeight() {
+      return this.isFacsimileCarouselFullscreen ? 'auto' : '650px';
     }
-  },
-
-  mounted() {
-    this.initializeComponent();
   },
 
   watch: {
@@ -432,7 +498,16 @@ export default {
           this.initializeComponent();
         }
       }
+    },
+    availableFacsimiles(newValue) {
+      if (newValue) {
+        this.selectedFacsimileSlide = Object.keys(newValue).sort()[0];
+      }
     }
+  },
+
+  mounted() {
+    this.initializeComponent();
   },
 
   methods: {
@@ -655,6 +730,13 @@ export default {
         this.mentionedEntityIdsInOrder = entityIds;
       });
     },
+
+    getFacsimileSrc(imgName) {
+      return `${API}/facsimiles/${this.letterId}/${imgName}`;
+    },
+    toggleFacsimileFullscreen() {
+      this.isFacsimileCarouselFullscreen = !this.isFacsimileCarouselFullscreen;
+    }
   }
 };
 </script>

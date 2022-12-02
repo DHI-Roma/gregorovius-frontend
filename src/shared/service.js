@@ -79,6 +79,21 @@ const getLetters = async function() {
   }
 };
 
+const getFacsimiles = async () => {
+  try {
+    const response = await axios.get(`${API}/facsimiles/`, {
+      headers: {
+        Accept: "application/json"
+      }
+    });
+
+    return response?.data ?? {};
+  } catch (error) {
+    console.error(error);
+    return {};
+  }
+};
+
 const getSearchResults = async function(entityName, searchInput) {
   try {
     const response = await axios.get(`${API}/search`, {
@@ -91,8 +106,7 @@ const getSearchResults = async function(entityName, searchInput) {
         width: "60"
       }
     });
-    const data = parseList(response);
-    return data;
+    return parseList(response);
   } catch (error) {
     console.error(error);
     return [];
@@ -125,5 +139,6 @@ export const dataService = {
   getLetters,
   getSearchResults,
   getVersion,
+  getFacsimiles,
   XSLTransform
 };
