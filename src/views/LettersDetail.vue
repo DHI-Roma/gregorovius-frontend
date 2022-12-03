@@ -482,7 +482,7 @@ export default {
       return this.lettersFiltered[this.currentLetterIndexInSelection - 1];
     },
     availableFacsimiles() {
-      return this.facsimiles[this.letterId] ?? {};
+      return this.facsimiles[this.letterId] ?? null;
     },
     facsimileImageHeight() {
       return this.isFacsimileCarouselFullscreen ? 'auto' : '650px';
