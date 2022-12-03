@@ -173,9 +173,7 @@
                   class="text-white rounded-borders"
                 >
                   <a :href="getFacsimileSrc(selectedFacsimileSlide)" target="_blank">
-                    <q-btn
-                      round dense color="primary" text-color="white" icon="download"
-                    />
+                    <q-btn round dense color="primary" text-color="white" icon="download" />
                   </a>
                 </q-carousel-control>
                 <q-carousel-control
@@ -314,7 +312,7 @@ export default {
         sortBy: "name"
       },
       mentionedEntityIdsInOrder: [],
-      selectedFacsimileSlide: 1,
+      selectedFacsimileSlide: "1",
       isFacsimileCarouselFullscreen: false
     };
   },
@@ -484,7 +482,7 @@ export default {
       return this.lettersFiltered[this.currentLetterIndexInSelection - 1];
     },
     availableFacsimiles() {
-      return this.facsimiles[this.letterId] ?? null;
+      return this.facsimiles[this.letterId] ?? {};
     },
     facsimileImageHeight() {
       return this.isFacsimileCarouselFullscreen ? 'auto' : '650px';
