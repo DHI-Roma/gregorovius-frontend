@@ -1,40 +1,102 @@
 <template>
   <div>
-    <q-page v-show="!loading" padding>
+    <q-page
+      v-show="!loading"
+      padding
+    >
       <div class="row justify-center">
-        <div v-if="data.teiHeader" class="col-md-8 col-12 q-py-xl q-gutter-y-lg">
-          <q-card class="q-pa-xl" flat>
-            <div v-if="editor" class="text-caption text-right q-tm-sm text-secondary">
+        <div
+          v-if="data.teiHeader"
+          class="col-md-8 col-12 q-py-xl q-gutter-y-lg"
+        >
+          <q-card
+            class="q-pa-xl"
+            flat
+          >
+            <div
+              v-if="editor"
+              class="text-caption text-right q-tm-sm text-secondary"
+            >
               Hrsg. <span id="editor">{{ editor }}</span>
             </div>
-            <div v-if="responsible" class="text-caption text-right q-tm-sm text-secondary">
+            <div
+              v-if="responsible"
+              class="text-caption text-right q-tm-sm text-secondary"
+            >
               Mitarb. <span id="responsible">{{ responsible }}</span>
             </div>
             <q-card-section>
-              <div class="text-h6">{{ titleMain }}</div>
+              <div class="text-h6">
+                {{ titleMain }}
+              </div>
               <div class="text-subtitle3 text-secondary">
                 {{ titleSecondary }}
               </div>
             </q-card-section>
             <q-separator dark />
-            <q-tabs v-model="tab" class="text-primary">
-              <q-tab id="label-tgl" label="Textgrundlage" name="tgl" />
-              <q-tab v-if="hasAbstracts()" id="label-reg" label="Regest" name="reg" />
+            <q-tabs
+              v-model="tab"
+              class="text-primary"
+            >
+              <q-tab
+                id="label-tgl"
+                label="Textgrundlage"
+                name="tgl"
+              />
+              <q-tab
+                v-if="hasAbstracts()"
+                id="label-reg"
+                label="Regest"
+                name="reg"
+              />
             </q-tabs>
             <q-separator />
-            <q-tab-panels v-model="tab" animated>
-              <q-tab-panel id="panel-tgl" name="tgl">
+            <q-tab-panels
+              v-model="tab"
+              animated
+            >
+              <q-tab-panel
+                id="panel-tgl"
+                name="tgl"
+              >
                 <v-runtime-template :template="msDesc" />
               </q-tab-panel>
-              <q-tab-panel v-if="hasAbstracts()" id="panel-reg" name="reg">
-                <div v-if="getAbstractForLanguage('de')" id="abstract-de">
-                  <q-chip outline size="sm" color="primary" dense>DE</q-chip>
-                  {{ getAbstractForLanguage("de") }}
+              <q-tab-panel
+                v-if="hasAbstracts()"
+                id="panel-reg"
+                name="reg"
+              >
+                <div
+                  v-if="getAbstractForLanguage('de')"
+                  id="abstract-de"
+                >
+                  <q-chip
+                    outline
+                    size="sm"
+                    color="primary"
+                    dense
+                  >
+                    DE
+                  </q-chip>
+                  {{ getAbstractForLanguage('de') }}
                 </div>
-                <q-separator v-if="getAbstractCount() > 1" spaced />
-                <div v-if="getAbstractForLanguage('en')" id="abstract-en">
-                  <q-chip outline size="sm" color="primary" dense>EN</q-chip>
-                  {{ getAbstractForLanguage("en") }}
+                <q-separator
+                  v-if="getAbstractCount() > 1"
+                  spaced
+                />
+                <div
+                  v-if="getAbstractForLanguage('en')"
+                  id="abstract-en"
+                >
+                  <q-chip
+                    outline
+                    size="sm"
+                    color="primary"
+                    dense
+                  >
+                    EN
+                  </q-chip>
+                  {{ getAbstractForLanguage('en') }}
                 </div>
               </q-tab-panel>
             </q-tab-panels>
@@ -43,7 +105,11 @@
       </div>
 
       <div class="row justify-center">
-        <q-card class="col-md-8 col-12 q-pa-xl q-mb-xl" bordered flat>
+        <q-card
+          class="col-md-8 col-12 q-pa-xl q-mb-xl"
+          bordered
+          flat
+        >
           <div class="row justify-end">
             <q-btn
               label="TEI XML"
@@ -80,9 +146,9 @@
               icon="arrow_back"
               @click="openPreviousLetter()"
             >
-              <q-tooltip
-                >Vorheriger Brief (chronologisch): {{ previousLetter.properties.title }}</q-tooltip
-              >
+              <q-tooltip>
+                Vorheriger Brief (chronologisch): {{ previousLetter.properties.title }}
+              </q-tooltip>
             </q-btn>
 
             <q-btn
@@ -94,10 +160,10 @@
               icon="arrow_left"
               @click="openPreviousLetterInSelection()"
             >
-              <q-tooltip
-                >Vorheriger Brief (in Auswahl):
-                {{ previousLetterInSelection.properties.title }}</q-tooltip
-              >
+              <q-tooltip>
+                Vorheriger Brief (in Auswahl):
+                {{ previousLetterInSelection.properties.title }}
+              </q-tooltip>
             </q-btn>
 
             <q-btn
@@ -109,10 +175,10 @@
               icon="arrow_right"
               @click="openNextLetterInSelection()"
             >
-              <q-tooltip
-                >Nächster Brief (in Auswahl):
-                {{ nextLetterInSelection.properties.title }}</q-tooltip
-              >
+              <q-tooltip>
+                Nächster Brief (in Auswahl):
+                {{ nextLetterInSelection.properties.title }}
+              </q-tooltip>
             </q-btn>
 
             <q-btn
@@ -124,15 +190,22 @@
               icon="arrow_forward"
               @click="openNextLetter()"
             >
-              <q-tooltip
-                >Nächster Brief (chronologisch): {{ nextLetter.properties.title }}</q-tooltip
-              >
+              <q-tooltip>
+                Nächster Brief (chronologisch): {{ nextLetter.properties.title }}
+              </q-tooltip>
             </q-btn>
           </div>
         </q-card>
       </div>
-      <div v-if="availableFacsimiles" class="row justify-center">
-        <q-card class="col-md-8 col-12 q-pa-xl q-mb-xl" bordered flat>
+      <div
+        v-if="availableFacsimiles"
+        class="row justify-center"
+      >
+        <q-card
+          class="col-md-8 col-12 q-pa-xl q-mb-xl"
+          bordered
+          flat
+        >
           <q-card-section>
             <div class="text-h6">Faksimiles zu diesem Brief</div>
           </q-card-section>
@@ -155,39 +228,36 @@
                 :key="imgName"
                 :name="imgName"
               >
-                <q-img
-                  :src="getFacsimileSrc(imgName)"
-                  :height="facsimileImageHeight"
-                  contain
-                >
-                  <div class="absolute-bottom-right text-subtitle2">
-                    {{ selectedFacsimileSlide }}
-                  </div>
-                </q-img>
+                <div class="row justify-center">
+                  <vue-photo-zoom-pro
+                    type="circle"
+                    :high-url="getFacsimileSrc(imgName)"
+                  >
+                    <img
+                      :src="getFacsimileSrc(imgName)"
+                      :style="{ height: facsimileImageHeight }"
+                      :alt="imgName"
+                    />
+                  </vue-photo-zoom-pro>
+                </div>
               </q-carousel-slide>
 
               <template #control>
-                <q-carousel-control
-                  position="top-left"
-                  :offset="[18, 18]"
-                  class="text-white rounded-borders"
-                >
-                  <a :href="getFacsimileSrc(selectedFacsimileSlide)" target="_blank">
-                    <q-btn round dense color="primary" text-color="white" icon="download" />
-                  </a>
-                </q-carousel-control>
                 <q-carousel-control
                   position="top-right"
                   :offset="[18, 18]"
                   class="text-white rounded-borders"
                 >
                   <q-btn
-                    round dense color="primary" text-color="white" icon="fullscreen"
+                    round
+                    dense
+                    color="primary"
+                    text-color="white"
+                    icon="fullscreen"
                     @click="toggleFacsimileFullscreen"
                   />
                 </q-carousel-control>
               </template>
-
             </q-carousel>
           </q-card-section>
         </q-card>
@@ -202,12 +272,18 @@
           <q-card-section>
             <div class="text-h6">In diesem Brief erwähnte Entitäten</div>
           </q-card-section>
-          <q-table grid :data="mentionedEntities" row-key="id" flat :pagination="mentionPagination">
+          <q-table
+            grid
+            :data="mentionedEntities"
+            row-key="id"
+            flat
+            :pagination="mentionPagination"
+          >
             <template v-slot:item="props">
               <div class="q-pa-xs col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <q-card>
                   <q-separator />
-                  <MentionsTile :entity="props.row"></MentionsTile>
+                  <MentionsTile :entity="props.row" />
                 </q-card>
               </div>
             </template>
@@ -215,7 +291,11 @@
         </q-card>
       </div>
       <div class="row justify-center">
-        <q-card class="col-md-8 col-12 q-pa-xl q-mb-xl" bordered flat>
+        <q-card
+          bordered
+          class="col-md-8 col-12 q-pa-xl q-mb-xl"
+          flat
+        >
           <div class="text-caption q-tm-sm text-secondary">
             Zitierhinweis:
             {{ citation }}
@@ -227,31 +307,33 @@
               size="xs"
               :label="copyCitationLabel"
               @click="copyCitation"
-            >
-            </q-btn>
+            />
           </div>
         </q-card>
       </div>
     </q-page>
     <q-page v-show="loading">
       <div class="q-pt-xl row justify-center">
-        <q-spinner-oval color="primary" size="5em" />
+        <q-spinner-oval
+          color="primary"
+          size="5em"
+        />
       </div>
     </q-page>
   </div>
 </template>
 
 <script>
-import VRuntimeTemplate from "v-runtime-template";
-import { mapActions, mapGetters } from "vuex";
-import { basePathLetters } from "../router";
-import LettersText from "@/components/LettersText.vue";
-import Comment from "@/components/Comment.vue";
-import axios from "axios";
-import { dataService } from "@/shared";
-import letterService from "@/services/letter-service";
-import metaService from "@/services/meta-service";
-import { API } from "../../env";
+import VRuntimeTemplate from 'v-runtime-template';
+import { mapActions, mapGetters } from 'vuex';
+import { basePathLetters } from '../router';
+import LettersText from '@/components/LettersText.vue';
+import Comment from '@/components/Comment.vue';
+import axios from 'axios';
+import { dataService } from '@/shared';
+import letterService from '@/services/letter-service';
+import metaService from '@/services/meta-service';
+import { API } from '../../env';
 import {
   copyToClipboard,
   QCard,
@@ -265,18 +347,20 @@ import {
   QTab,
   QCardSection,
   QChip,
-  QSplitter
-} from "quasar";
-import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
-import MentionsTile from "@/components/MentionsTile";
+  QSplitter,
+} from 'quasar';
+import { openInNewTabMixin } from '@/mixins/openInNewTabMixin';
+import MentionsTile from '@/components/MentionsTile';
+import VuePhotoZoomPro from 'vue-photo-zoom-pro';
+import 'vue-photo-zoom-pro/dist/style/vue-photo-zoom-pro.css';
 
-const TAB_TEXTGRUNDLAGE = "tgl";
+const TAB_TEXTGRUNDLAGE = 'tgl';
 const SPLITTER_SIZE_START = 100;
 
 const FG_03_03_SHOULD_DISPLAY_EDITOR = true;
 
 export default {
-  name: "Item",
+  name: 'Item',
   components: {
     MentionsTile,
     Comment,
@@ -293,31 +377,32 @@ export default {
     QTab,
     QCardSection,
     QChip,
-    QSplitter
+    QSplitter,
+    VuePhotoZoomPro,
   },
   mixins: [openInNewTabMixin],
   data() {
     return {
       data: [],
       loading: true,
-      tab: "reg",
-      mentionTab: "all",
-      msDesc: "",
-      supplement: "",
-      physDesc: "",
+      tab: 'reg',
+      mentionTab: 'all',
+      msDesc: '',
+      supplement: '',
+      physDesc: '',
       splitterModel: SPLITTER_SIZE_START,
-      copyCitationLabel: "kopieren",
+      copyCitationLabel: 'kopieren',
       mentionPagination: {
         rowsPerPage: 0,
-        sortBy: "name"
+        sortBy: 'name',
       },
       mentionedEntityIdsInOrder: [],
-      selectedFacsimileSlide: "1",
-      isFacsimileCarouselFullscreen: false
+      selectedFacsimileSlide: '1',
+      isFacsimileCarouselFullscreen: false,
     };
   },
   computed: {
-    ...mapGetters(["activeComment", "letters", "lettersFiltered", "facsimiles"]),
+    ...mapGetters(['activeComment', 'letters', 'lettersFiltered', 'facsimiles']),
 
     letterId() {
       return this.$route.params.id;
@@ -340,20 +425,20 @@ export default {
     },
     splitterSeparatorClass() {
       if (this.activeComment.id) {
-        return "";
+        return '';
       }
-      return "separator-hidden";
+      return 'separator-hidden';
     },
     editor() {
       if (!FG_03_03_SHOULD_DISPLAY_EDITOR) {
-        return "";
+        return '';
       }
 
       return letterService.getEditor(this.data);
     },
     responsible() {
       if (!FG_03_03_SHOULD_DISPLAY_EDITOR) {
-        return "";
+        return '';
       }
 
       return letterService.getResponsible(this.data);
@@ -368,7 +453,7 @@ export default {
     },
 
     letterEntity() {
-      return this.letters.find(letter => letter.id === this.letterId);
+      return this.letters.find((letter) => letter.id === this.letterId);
     },
 
     mentionedPersonEntities() {
@@ -378,15 +463,15 @@ export default {
 
       const personsEntityIds = this.letterEntity.properties.mentioned.persons
         .flat()
-        .join(" ")
-        .split(" ");
+        .join(' ')
+        .split(' ');
 
       return this.persons
-        .filter(person => {
+        .filter((person) => {
           const matches = personsEntityIds.find(
-            mentionedPersonId => mentionedPersonId === person.id
+            (mentionedPersonId) => mentionedPersonId === person.id
           );
-          return matches ? true : false;
+          return !!matches;
         })
         .sort((personA, personB) => {
           personA.properties.name.fullName > personB.properties.name.fullName;
@@ -399,12 +484,12 @@ export default {
       }
       const placeEntityIds = this.letterEntity.properties.mentioned.places
         .flat()
-        .join(" ")
-        .split(" ");
+        .join(' ')
+        .split(' ');
 
       return this.places
-        .filter(place => {
-          const matches = placeEntityIds.find(mentionedPlaceId => mentionedPlaceId === place.id);
+        .filter((place) => {
+          const matches = placeEntityIds.find((mentionedPlaceId) => mentionedPlaceId === place.id);
           return matches ? true : false;
         })
         .sort((placeA, placeB) => placeA.properties.name.toponym > placeB.properties.name.toponym);
@@ -415,12 +500,12 @@ export default {
         return [];
       }
 
-      return this.works.filter(work => {
+      return this.works.filter((work) => {
         const workEntityIds = this.letterEntity.properties.mentioned.works
           .flat()
-          .join(" ")
-          .split(" ");
-        const matches = workEntityIds.find(mentionedWorkId => mentionedWorkId === work.id);
+          .join(' ')
+          .split(' ');
+        const matches = workEntityIds.find((mentionedWorkId) => mentionedWorkId === work.id);
         return matches ? true : false;
       });
     },
@@ -429,7 +514,7 @@ export default {
       return [
         ...this.mentionedPersonEntities,
         ...this.mentionedPlaceEntites,
-        ...this.mentionedWorkEntities
+        ...this.mentionedWorkEntities,
       ].sort((entityA, entityB) => {
         const positionInSortedListA = this.mentionedEntityIdsInOrder.indexOf(entityA.id);
         const positionInSortedListB = this.mentionedEntityIdsInOrder.indexOf(entityB.id);
@@ -446,13 +531,13 @@ export default {
       });
     },
 
-    ...mapGetters(["activeComment", "letters", "persons", "places", "works"]),
+    ...mapGetters(['activeComment', 'letters', 'persons', 'places', 'works']),
     currentLetterIndex() {
-      return this.letters.findIndex(letter => letter.id === this.letterId);
+      return this.letters.findIndex((letter) => letter.id === this.letterId);
     },
 
     currentLetterIndexInSelection() {
-      return this.lettersFiltered.findIndex(letter => letter.id === this.letterId);
+      return this.lettersFiltered.findIndex((letter) => letter.id === this.letterId);
     },
 
     nextLetter() {
@@ -486,22 +571,22 @@ export default {
     },
     facsimileImageHeight() {
       return this.isFacsimileCarouselFullscreen ? 'auto' : '650px';
-    }
+    },
   },
 
   watch: {
-    "$route.params.id": {
-      handler: function(oldId, newId) {
+    '$route.params.id': {
+      handler: function (oldId, newId) {
         if (oldId !== newId) {
           this.initializeComponent();
         }
-      }
+      },
     },
     availableFacsimiles(newValue) {
       if (newValue) {
         this.selectedFacsimileSlide = Object.keys(newValue).sort()[0];
       }
-    }
+    },
   },
 
   mounted() {
@@ -509,10 +594,10 @@ export default {
   },
 
   methods: {
-    ...mapActions(["loadEntitiesAction", "setSelectedEntityIds", "setLettersFiltered"]),
+    ...mapActions(['loadEntitiesAction', 'setSelectedEntityIds', 'setLettersFiltered']),
     async initializeComponent() {
       await this.getItems();
-      await this.getXSLT("LettersMsDesc", "msDesc");
+      await this.getXSLT('LettersMsDesc', 'msDesc');
       await this.loadEntitiesAction();
       this.loading = false;
 
@@ -520,7 +605,7 @@ export default {
         this.tab = TAB_TEXTGRUNDLAGE;
       }
 
-      metaService.setMetaTitle(this.titleMain + ". " + this.titleSecondary);
+      metaService.setMetaTitle(this.titleMain + '. ' + this.titleSecondary);
       metaService.setMetaAuthors([this.editor, ...letterService.getResponsibleList(this.data)]);
       metaService.refreshZotero();
 
@@ -529,10 +614,10 @@ export default {
       }
       this.setMentionedEntityIdsInOrder();
       if (this.$route.params.entityIds) {
-        const entityIds = this.$route.params.entityIds.split(",");
-        const filteredLetters = this.letters.filter(letter => {
+        const entityIds = this.$route.params.entityIds.split(',');
+        const filteredLetters = this.letters.filter((letter) => {
           let hasMatch = false;
-          entityIds.forEach(entityId => {
+          entityIds.forEach((entityId) => {
             const mentionedPersonEntityIds = letterService.flattenMentions(
               letter.properties.mentioned.persons
             );
@@ -569,12 +654,12 @@ export default {
       );
       const commentHtml = document.querySelector(`#comment-${this.$route.params.commentId}`);
       const comment = {
-        id: commentReference.getAttribute("commentId"),
+        id: commentReference.getAttribute('commentId'),
         text: commentHtml.innerHTML,
-        offset: 0
+        offset: 0,
       };
 
-      await this.$store.dispatch("setActiveComment", comment);
+      await this.$store.dispatch('setActiveComment', comment);
 
       setTimeout(() => {
         const commentReference = document.querySelector(
@@ -584,13 +669,13 @@ export default {
         comment.offsetTop = commentReference.offsetTop;
         comment.text = commentHtml.innerHTML;
 
-        this.$store.dispatch("setActiveComment", comment);
+        this.$store.dispatch('setActiveComment', comment);
       }, 0);
     },
 
     getAbstractCount() {
-      const abstractsWithText = this.data.teiHeader.profileDesc.abstract.p.filter(abstract => {
-        return abstract.hasOwnProperty("#text");
+      const abstractsWithText = this.data.teiHeader.profileDesc.abstract.p.filter((abstract) => {
+        return abstract.hasOwnProperty('#text');
       });
 
       return abstractsWithText.length;
@@ -600,22 +685,22 @@ export default {
     },
     getAbstractForLanguage(language) {
       try {
-        const abstractObject = this.data.teiHeader.profileDesc.abstract.p.filter(abstract => {
-          return abstract["@xml:lang"] === language;
+        const abstractObject = this.data.teiHeader.profileDesc.abstract.p.filter((abstract) => {
+          return abstract['@xml:lang'] === language;
         })[0];
-        return abstractObject["#text"];
+        return abstractObject['#text'];
       } catch {
-        return "";
+        return '';
       }
     },
     async getItems() {
       try {
         const response = await axios.get(`${API}${basePathLetters}/${this.letterId}`, {
-          headers: { Accept: "application/json" }
+          headers: { Accept: 'application/json' },
         });
         this.data = response.data;
         if (response.status === 404) {
-          this.$router.push({ path: "/404" });
+          this.$router.push({ path: '/404' });
         }
       } catch (error) {
         console.error(error);
@@ -647,81 +732,81 @@ export default {
 
       const commentUpdate = {
         ...this.activeComment,
-        text: commentHtml.innerHTML
+        text: commentHtml.innerHTML,
       };
       commentUpdate.offsetTop = activeCommentReference.offsetTop;
-      this.$store.dispatch("setActiveComment", commentUpdate);
+      this.$store.dispatch('setActiveComment', commentUpdate);
     },
     copyCitation() {
       const citation = this.citation + this.location;
       copyToClipboard(citation)
         .then(() => {
-          this.copyCitationLabel = "kopiert";
+          this.copyCitationLabel = 'kopiert';
           setTimeout(() => {
-            this.copyCitationLabel = "kopieren";
+            this.copyCitationLabel = 'kopieren';
           }, 3000);
         })
-        .catch(() => console.log("Something went wrong while copying to clipboard."));
+        .catch(() => console.log('Something went wrong while copying to clipboard.'));
     },
     getWorkType(type) {
       switch (type) {
-        case "gregoroviusMain":
-          return "Werkregister Gregorovius";
-        case "gregoroviusTranslation":
-          return "Übersetzungen";
-        case "othersMain":
-          return "Werke anderer Autoren";
-        case "secondary":
-          return "Sekundärliteratur";
+        case 'gregoroviusMain':
+          return 'Werkregister Gregorovius';
+        case 'gregoroviusTranslation':
+          return 'Übersetzungen';
+        case 'othersMain':
+          return 'Werke anderer Autoren';
+        case 'secondary':
+          return 'Sekundärliteratur';
         default:
-          return "Unbekannt";
+          return 'Unbekannt';
       }
     },
     async openPreviousLetter() {
-      await this.$store.dispatch("unselectComment");
+      await this.$store.dispatch('unselectComment');
       await this.$router.push({
-        name: "Brief",
+        name: 'Brief',
         params: {
-          id: this.previousLetter.id
-        }
+          id: this.previousLetter.id,
+        },
       });
     },
     async openNextLetter() {
-      await this.$store.dispatch("unselectComment");
+      await this.$store.dispatch('unselectComment');
       await this.$router.push({
-        name: "Brief",
+        name: 'Brief',
         params: {
-          id: this.nextLetter.id
-        }
+          id: this.nextLetter.id,
+        },
       });
     },
     async openPreviousLetterInSelection() {
-      await this.$store.dispatch("unselectComment");
+      await this.$store.dispatch('unselectComment');
       await this.$router.push({
-        name: "Brief",
+        name: 'Brief',
         params: {
-          id: this.previousLetterInSelection.id
-        }
+          id: this.previousLetterInSelection.id,
+        },
       });
     },
     async openNextLetterInSelection() {
-      await this.$store.dispatch("unselectComment");
+      await this.$store.dispatch('unselectComment');
       await this.$router.push({
-        name: "Brief",
+        name: 'Brief',
         params: {
-          id: this.nextLetterInSelection.id
-        }
+          id: this.nextLetterInSelection.id,
+        },
       });
     },
     setMentionedEntityIdsInOrder() {
       setTimeout(() => {
         const entityIds = [];
         const entityIdsFromDomNodes = document
-          .querySelector(".g-edition-text")
-          .querySelectorAll(".g-entity-link[entity-id]");
+          .querySelector('.g-edition-text')
+          .querySelectorAll('.g-entity-link[entity-id]');
 
-        entityIdsFromDomNodes.forEach(node => {
-          const ids = node.getAttribute("entity-id").split(" ");
+        entityIdsFromDomNodes.forEach((node) => {
+          const ids = node.getAttribute('entity-id').split(' ');
           entityIds.push(...ids);
         });
 
@@ -734,7 +819,7 @@ export default {
     },
     toggleFacsimileFullscreen() {
       this.isFacsimileCarouselFullscreen = !this.isFacsimileCarouselFullscreen;
-    }
-  }
+    },
+  },
 };
 </script>
