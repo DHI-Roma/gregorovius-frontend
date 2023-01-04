@@ -1,6 +1,6 @@
 {
     "name": "gregorovius-frontend",
-    "version": "1.8.11-beta",
+    "version": "1.8.12-beta",
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
@@ -21,6 +21,7 @@
         "v-runtime-template": "^1.10.0",
         "vue": "^2.6.11",
         "vue-matomo": "^4.1.0",
+        "vue-photo-zoom-pro": "^2.5.0",
         "vue-router": "^3.0.3",
         "vuex": "^3.1.2"
     },
@@ -42,7 +43,7 @@
         "eslint-plugin-prettier": "^3.1.2",
         "eslint-plugin-vue": "^5.2.3",
         "flush-promises": "^1.0.2",
-        "prettier": "^1.19.1",
+        "prettier": "^2.8.1",
         "sass": "^1.24.4",
         "sass-loader": "^7.1.0",
         "stylus": "^0.54.5",
