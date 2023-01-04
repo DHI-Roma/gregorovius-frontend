@@ -242,7 +242,7 @@
 
                     <img
                       :src="getFacsimileSrc(imgName)"
-                      :style="{ height: facsimileImageHeight }"
+                      :style="{ maxHeight: facsimileImageHeight, maxWidth: facsimileImageWidth }"
                       :alt="imgName"
                     />
                   </vue-photo-zoom-pro>
@@ -576,6 +576,9 @@ export default {
     },
     availableFacsimiles() {
       return this.facsimiles[this.letterId] ?? null;
+    },
+    facsimileImageWidth() {
+      return this.isFacsimileCarouselFullscreen ? 'auto' : '300px';
     },
     facsimileImageHeight() {
       return this.isFacsimileCarouselFullscreen ? 'auto' : '650px';
