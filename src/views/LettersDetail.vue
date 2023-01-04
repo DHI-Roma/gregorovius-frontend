@@ -104,7 +104,9 @@
         </div>
       </div>
 
-      <div class="row justify-center">
+      <div
+        class="row justify-center"
+      >
         <q-card
           class="col-md-8 col-12 q-pa-xl q-mb-xl"
           bordered
@@ -196,13 +198,10 @@
             </q-btn>
           </div>
         </q-card>
-      </div>
-      <div
-        v-if="availableFacsimiles"
-        class="row justify-center"
-      >
+
         <q-card
-          class="col-md-8 col-12 q-pa-xl q-mb-xl"
+          v-if="availableFacsimiles"
+          class="col-md-4 col-12 q-pa-xl q-mb-xl"
           bordered
           flat
         >
@@ -229,10 +228,18 @@
                 :name="imgName"
               >
                 <div class="row justify-center">
+                  <q-img
+                    v-if="$q.screen.lt.md"
+                    :src="getFacsimileSrc(imgName)"
+                    :height="facsimileImageHeight"
+                    contain
+                  />
                   <vue-photo-zoom-pro
+                    v-else
                     type="circle"
                     :high-url="getFacsimileSrc(imgName)"
                   >
+
                     <img
                       :src="getFacsimileSrc(imgName)"
                       :style="{ height: facsimileImageHeight }"
@@ -262,6 +269,7 @@
           </q-card-section>
         </q-card>
       </div>
+
       <div class="row justify-center">
         <q-card
           v-if="mentionedEntities.length"
