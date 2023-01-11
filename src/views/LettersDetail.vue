@@ -240,7 +240,7 @@
                   >
                     <img
                       :src="getFacsimileSrc(imgName)"
-                      :class="facsimileClass"
+                      :class="facsimileClasses"
                       :alt="imgName"
                     />
                   </vue-photo-zoom-pro>
@@ -578,8 +578,18 @@ export default {
     availableFacsimiles() {
       return this.facsimiles[this.letterId] ?? null;
     },
-    facsimileClass() {
-      return this.isFacsimileCarouselFullscreen ? 'facsimile-fullscreen' : 'facsimile-default';
+    facsimileClasses() {
+      if (this.isFacsimileCarouselFullscreen) {
+        return ['facsimile-fullscreen'];
+      }
+      if (this.$q.screen.gt.lg) {
+        return ['facsimile-lg'];
+      }
+
+      if (this.$q.screen.gt.md) {
+        return ['facsimile-md'];
+      }
+      return ['facsimile-sm'];
     },
   },
 
@@ -834,9 +844,17 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.facsimile-default
+.facsimile-lg
   max-width: 650px
   max-height: 800px
+
+.facsimile-md
+  max-width: 550px
+  max-height: 700px
+
+.facsimile-sm
+  max-width: 300px
+  max-height: 550px
 
 .facsimile-fullscreen
   max-width: auto
