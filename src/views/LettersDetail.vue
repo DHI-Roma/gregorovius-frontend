@@ -104,11 +104,10 @@
         </div>
       </div>
 
-      <div
-        class="row justify-center"
-      >
+      <div class="row justify-center">
         <q-card
-          class="col-md-6 col-12 q-pa-xl q-mb-xl"
+          class="col-12 q-pa-xl q-mb-xl"
+          :class="availableFacsimiles ? 'col-md-7' : 'col-md-8'"
           bordered
           flat
         >
@@ -201,7 +200,7 @@
 
         <q-card
           v-if="availableFacsimiles"
-          class="col-md-6 col-12 q-pa-xl q-mb-xl"
+          class="col-md-5 col-12 q-pa-xl q-mb-xl"
           bordered
           flat
         >
@@ -248,7 +247,10 @@
                 </div>
               </q-carousel-slide>
 
-              <template #control>
+              <template
+                v-if="$q.screen.lt.md"
+                #control
+              >
                 <q-carousel-control
                   position="top-right"
                   :offset="[18, 18]"
