@@ -845,11 +845,11 @@ export default {
 
 <style lang="stylus" scoped>
 .facsimile-lg
-  max-width: 650px
+  max-width: 550px
   max-height: 800px
 
 .facsimile-md
-  max-width: 550px
+  max-width: 450px
   max-height: 700px
 
 .facsimile-sm
