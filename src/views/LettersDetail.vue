@@ -108,7 +108,7 @@
         class="row justify-center"
       >
         <q-card
-          class="col-md-8 col-12 q-pa-xl q-mb-xl"
+          class="col-md-6 col-12 q-pa-xl q-mb-xl"
           bordered
           flat
         >
@@ -201,7 +201,7 @@
 
         <q-card
           v-if="availableFacsimiles"
-          class="col-md-4 col-12 q-pa-xl q-mb-xl"
+          class="col-md-6 col-12 q-pa-xl q-mb-xl"
           bordered
           flat
         >
@@ -239,10 +239,9 @@
                     type="circle"
                     :high-url="getFacsimileSrc(imgName)"
                   >
-
                     <img
                       :src="getFacsimileSrc(imgName)"
-                      :style="{ maxHeight: facsimileImageHeight, maxWidth: facsimileImageWidth }"
+                      :class="facsimileClass"
                       :alt="imgName"
                     />
                   </vue-photo-zoom-pro>
@@ -577,11 +576,8 @@ export default {
     availableFacsimiles() {
       return this.facsimiles[this.letterId] ?? null;
     },
-    facsimileImageWidth() {
-      return this.isFacsimileCarouselFullscreen ? 'auto' : '300px';
-    },
-    facsimileImageHeight() {
-      return this.isFacsimileCarouselFullscreen ? 'auto' : '650px';
+    facsimileClass() {
+      return this.isFacsimileCarouselFullscreen ? 'facsimile-fullscreen' : 'facsimile-default';
     },
   },
 
@@ -834,3 +830,13 @@ export default {
   },
 };
 </script>
+
+<style lang="stylus" scoped>
+.facsimile-default
+  max-width: 650px
+  max-height: 800px
+
+.facsimile-fullscreen
+  max-width: auto
+  max-height: auto
+</style>
