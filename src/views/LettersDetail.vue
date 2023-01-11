@@ -106,8 +106,7 @@
 
       <div class="row justify-center">
         <q-card
-          class="col-12 q-pa-xl q-mb-xl"
-          :class="availableFacsimiles ? 'col-md-7' : 'col-md-8'"
+          class="col-md-8 col-12 q-pa-xl q-mb-xl"
           bordered
           flat
         >
@@ -200,7 +199,7 @@
 
         <q-card
           v-if="availableFacsimiles"
-          class="col-md-5 col-12 q-pa-xl q-mb-xl"
+          class="col-md-4 col-12 q-pa-xl q-mb-xl"
           bordered
           flat
         >
@@ -230,7 +229,7 @@
                   <q-img
                     v-if="$q.screen.lt.md"
                     :src="getFacsimileSrc(imgName)"
-                    :height="facsimileImageHeight"
+                    :width="isFacsimileCarouselFullscreen ? '75%' : '100%'"
                     contain
                   />
                   <vue-photo-zoom-pro
@@ -248,7 +247,6 @@
               </q-carousel-slide>
 
               <template
-                v-if="$q.screen.lt.md"
                 #control
               >
                 <q-carousel-control
@@ -845,18 +843,18 @@ export default {
 
 <style lang="stylus" scoped>
 .facsimile-lg
-  max-width: 550px
-  max-height: 800px
-
-.facsimile-md
-  max-width: 450px
+  max-width: 475px
   max-height: 700px
 
+.facsimile-md
+  max-width: 350px
+  max-height: 600px
+
 .facsimile-sm
-  max-width: 300px
-  max-height: 550px
+  max-width: 225px
+  max-height: 500px
 
 .facsimile-fullscreen
   max-width: auto
-  max-height: auto
+  max-height: 95vh
 </style>
