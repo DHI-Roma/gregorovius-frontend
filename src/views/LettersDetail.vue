@@ -199,7 +199,7 @@
 
         <q-card
           v-if="availableFacsimiles"
-          class="col-md-4 col-12 q-pa-xl q-mb-xl"
+          class="col-md-4 col-12 q-pa-md q-mb-xl"
           bordered
           flat
         >
@@ -843,16 +843,16 @@ export default {
 
 <style lang="stylus" scoped>
 .facsimile-lg
-  max-width: 475px
-  max-height: 700px
+  max-width: 100%
+  max-height: 100%
 
 .facsimile-md
-  max-width: 350px
-  max-height: 600px
+  max-width: 100%
+  max-height: 100%
 
 .facsimile-sm
-  max-width: 225px
-  max-height: 500px
+  max-width: 100%
+  max-height: 100%
 
 .facsimile-fullscreen
   max-width: auto
