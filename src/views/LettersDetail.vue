@@ -843,16 +843,16 @@ export default {
 
 <style lang="stylus" scoped>
 .facsimile-lg
-  max-width: 100%
-  max-height: 100%
+  max-width: 475px
+  max-height: 700px
 
 .facsimile-md
-  max-width: 100%
-  max-height: 100%
+  max-width: 350px
+  max-height: 600px
 
 .facsimile-sm
-  max-width: 100%
-  max-height: 100%
+  max-width: 225px
+  max-height: 500px
 
 .facsimile-fullscreen
   max-width: auto
