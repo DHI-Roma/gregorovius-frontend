@@ -106,7 +106,8 @@
 
       <div class="row justify-center">
         <q-card
-          class="col-md-8 col-12 q-pa-xl q-mb-xl"
+          class="col-12 q-pa-xl q-mb-xl"
+          :class="showLandscapeFacsimile ? 'col-md-6' : 'col-md-8'"
           bordered
           flat
         >
@@ -199,7 +200,8 @@
 
         <q-card
           v-if="availableFacsimiles"
-          class="col-md-4 col-12 q-pa-md q-mb-xl"
+          class="col-12 q-pa-md q-mb-xl"
+          :class="showLandscapeFacsimile ? 'col-md-6' : 'col-md-4'"
           bordered
           flat
         >
@@ -221,34 +223,35 @@
               transition-next="slide-left"
             >
               <q-carousel-slide
-                v-for="(_imgSrc, imgName) in availableFacsimiles"
-                :key="imgName"
-                :name="imgName"
+                v-for="(img, imgPosition) in availableFacsimiles"
+                :key="imgPosition"
+                :name="imgPosition"
               >
                 <div class="row justify-center">
                   <q-img
                     v-if="$q.screen.lt.md"
-                    :src="getFacsimileSrc(imgName)"
+                    :src="getFacsimileSrc(imgPosition)"
                     :width="isFacsimileCarouselFullscreen ? '75%' : '100%'"
                     contain
                   />
                   <vue-photo-zoom-pro
                     v-else
                     type="circle"
-                    :high-url="getFacsimileSrc(imgName)"
+                    :high-url="getFacsimileSrc(imgPosition)"
                   >
                     <img
-                      :src="getFacsimileSrc(imgName)"
+                      :src="getFacsimileSrc(imgPosition)"
                       :class="facsimileClasses"
-                      :alt="imgName"
+                      :alt="img.label"
                     />
                   </vue-photo-zoom-pro>
+                  <div class="absolute-bottom-right text-subtitle2">
+                    {{ selectedFacsimileSlide }}
+                  </div>
                 </div>
               </q-carousel-slide>
 
-              <template
-                #control
-              >
+              <template #control>
                 <q-carousel-control
                   position="top-right"
                   :offset="[18, 18]"
@@ -576,18 +579,34 @@ export default {
     availableFacsimiles() {
       return this.facsimiles[this.letterId] ?? null;
     },
+    showLandscapeFacsimile() {
+      if (!this.availableFacsimiles) {
+        return false;
+      }
+
+      for (const facsimile of Object.values(this.availableFacsimiles)) {
+        if (facsimile.name.includes('_quer_')) {
+          return true;
+        }
+      }
+
+      return false;
+    },
     facsimileClasses() {
       if (this.isFacsimileCarouselFullscreen) {
         return ['facsimile-fullscreen'];
       }
+
+      const orientationClass = this.showLandscapeFacsimile ? 'facsimile-landscape' : '';
+
       if (this.$q.screen.gt.lg) {
-        return ['facsimile-lg'];
+        return ['facsimile-lg', orientationClass];
       }
 
       if (this.$q.screen.gt.md) {
-        return ['facsimile-md'];
+        return ['facsimile-md', orientationClass];
       }
-      return ['facsimile-sm'];
+      return ['facsimile-sm', orientationClass];
     },
   },
 
@@ -846,13 +865,22 @@ export default {
   max-width: 475px
   max-height: 700px
 
+  &.facsimile-landscape
+    max-width: 700px
+
 .facsimile-md
   max-width: 350px
   max-height: 600px
 
+  &.facsimile-landscape
+    max-width: 600px
+
 .facsimile-sm
   max-width: 225px
   max-height: 500px
+
+  &.facsimile-landscape
+    max-width: 400px
 
 .facsimile-fullscreen
   max-width: auto
