@@ -246,7 +246,7 @@
                     />
                   </vue-photo-zoom-pro>
                   <div class="absolute-bottom-right text-subtitle2">
-                    {{ selectedFacsimileSlide }}
+                    {{ img.label }}
                   </div>
                 </div>
               </q-carousel-slide>
