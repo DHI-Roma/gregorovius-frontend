@@ -245,7 +245,7 @@
                       :alt="img.label"
                     />
                   </vue-photo-zoom-pro>
-                  <div class="absolute-bottom-right text-subtitle2">
+                  <div class="absolute-bottom-right q-pa-sm text-subtitle2 facsimile-label">
                     {{ img.label }}
                   </div>
                 </div>
@@ -861,6 +861,13 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+@import '../styles/quasar.variables.styl'
+
+.facsimile-label
+  background-color: $primary
+  opacity: 0.8
+  transform: translateY(-1rem)
+
 .facsimile-lg
   max-width: 475px
   max-height: 700px
