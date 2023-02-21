@@ -293,6 +293,7 @@
                     v-if="$q.screen.lt.md"
                     :src="getFacsimileSrc(imgPosition)"
                     :width="isFacsimileCarouselFullscreen ? '75%' : '100%'"
+                    :class="rotationClass"
                     contain
                   />
                   <vue-photo-zoom-pro
@@ -641,23 +642,24 @@ export default {
       }
       return this.showLandscapeFacsimile;
     },
+    rotationClass() {
+      return this.facsimileRotation ? `rotate-${this.facsimileRotation}` : '';
+    },
     facsimileClasses() {
-      const rotationClass = this.facsimileRotation ? `rotate-${this.facsimileRotation}` : '';
-
       if (this.isFacsimileCarouselFullscreen) {
-        return ['facsimile-fullscreen', rotationClass];
+        return ['facsimile-fullscreen', this.rotationClass];
       }
 
       const orientationClass = this.isInLandscapeMode ? 'facsimile-landscape' : '';
 
       if (this.$q.screen.gt.lg) {
-        return ['facsimile-lg', orientationClass, rotationClass];
+        return ['facsimile-lg', orientationClass, this.rotationClass];
       }
 
       if (this.$q.screen.gt.md) {
-        return ['facsimile-md', orientationClass, rotationClass];
+        return ['facsimile-md', orientationClass, this.rotationClass];
       }
-      return ['facsimile-sm', orientationClass, rotationClass];
+      return ['facsimile-sm', orientationClass, this.rotationClass];
     },
     selectedFacsimileLabel() {
       if (!Object.values(this.availableFacsimiles).length) {
