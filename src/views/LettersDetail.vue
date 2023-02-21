@@ -107,7 +107,7 @@
       <div class="row justify-center">
         <q-card
           class="col-12 q-pa-xl q-mb-xl"
-          :class="showLandscapeFacsimile ? 'col-md-6' : 'col-md-8'"
+          :class="isInLandscapeMode ? 'col-md-6' : 'col-md-8'"
           bordered
           flat
         >
@@ -201,13 +201,10 @@
         <q-card
           v-if="availableFacsimiles"
           class="col-12 q-pa-md q-mb-xl"
-          :class="showLandscapeFacsimile ? 'col-md-6' : 'col-md-4'"
+          :class="isInLandscapeMode ? 'col-md-6' : 'col-md-4'"
           bordered
           flat
         >
-          <q-card-section>
-            <div class="text-h6">Faksimiles zu diesem Brief</div>
-          </q-card-section>
           <q-card-section>
             <q-carousel
               ref="carousel"
@@ -217,15 +214,79 @@
               control-color="primary"
               animated
               navigation
-              arrows
               height="auto"
               transition-prev="slide-right"
               transition-next="slide-left"
             >
+              <template #control>
+                <q-carousel-control
+                  position="top"
+                  :offset="isFacsimileCarouselFullscreen ? [0, 20] : [0, 0]"
+                >
+                  <div class="row justify-around items-center q-mb-sm">
+                    <div>
+                      <q-btn
+                        round
+                        dense
+                        color="primary"
+                        text-color="white"
+                        icon="navigate_before"
+                        class="q-mr-sm"
+                        @click="openPreviousSlide"
+                      />
+                      <q-btn
+                        round
+                        dense
+                        color="primary"
+                        text-color="white"
+                        icon="navigate_next"
+                        class="q-mx-sm"
+                        @click="openNextSlide"
+                      />
+                    </div>
+                    <div class="row justify-center">
+                      <div class="text-subtitle facsimile-label">
+                        {{ selectedFacsimileLabel }}
+                      </div>
+                    </div>
+                    <div>
+                      <q-btn
+                        round
+                        dense
+                        color="primary"
+                        text-color="white"
+                        icon="rotate_left"
+                        class="q-mr-sm"
+                        @click="applyRotation(-90)"
+                      />
+                      <q-btn
+                        round
+                        dense
+                        color="primary"
+                        text-color="white"
+                        icon="rotate_right"
+                        class="q-mx-sm"
+                        @click="applyRotation(90)"
+                      />
+                      <q-btn
+                        round
+                        dense
+                        color="primary"
+                        text-color="white"
+                        icon="fullscreen"
+                        class="q-ml-sm"
+                        @click="toggleFacsimileFullscreen"
+                      />
+                    </div>
+                  </div>
+                </q-carousel-control>
+              </template>
+
               <q-carousel-slide
                 v-for="(img, imgPosition) in availableFacsimiles"
                 :key="imgPosition"
                 :name="imgPosition"
+                class="q-mb-xl q-mt-xl"
               >
                 <div class="row justify-center">
                   <q-img
@@ -243,30 +304,11 @@
                       :src="getFacsimileSrc(imgPosition)"
                       :class="facsimileClasses"
                       :alt="img.label"
+                      class="facsimile-control-offset"
                     />
                   </vue-photo-zoom-pro>
-                  <div class="absolute-bottom-right q-pa-sm text-subtitle2 facsimile-label">
-                    {{ img.label }}
-                  </div>
                 </div>
               </q-carousel-slide>
-
-              <template #control>
-                <q-carousel-control
-                  position="top-right"
-                  :offset="[18, 18]"
-                  class="text-white rounded-borders"
-                >
-                  <q-btn
-                    round
-                    dense
-                    color="primary"
-                    text-color="white"
-                    icon="fullscreen"
-                    @click="toggleFacsimileFullscreen"
-                  />
-                </q-carousel-control>
-              </template>
             </q-carousel>
           </q-card-section>
         </q-card>
@@ -407,8 +449,9 @@ export default {
         sortBy: 'name',
       },
       mentionedEntityIdsInOrder: [],
-      selectedFacsimileSlide: '1',
+      selectedFacsimileSlide: '0',
       isFacsimileCarouselFullscreen: false,
+      facsimileRotation: 0,
     };
   },
   computed: {
@@ -592,21 +635,36 @@ export default {
 
       return false;
     },
+    isInLandscapeMode() {
+      if ([90, 270].includes(this.facsimileRotation)) {
+        return !this.showLandscapeFacsimile;
+      }
+      return this.showLandscapeFacsimile;
+    },
     facsimileClasses() {
+      const rotationClass = this.facsimileRotation ? `rotate-${this.facsimileRotation}` : '';
+
       if (this.isFacsimileCarouselFullscreen) {
-        return ['facsimile-fullscreen'];
+        return ['facsimile-fullscreen', rotationClass];
       }
 
-      const orientationClass = this.showLandscapeFacsimile ? 'facsimile-landscape' : '';
+      const orientationClass = this.isInLandscapeMode ? 'facsimile-landscape' : '';
 
       if (this.$q.screen.gt.lg) {
-        return ['facsimile-lg', orientationClass];
+        return ['facsimile-lg', orientationClass, rotationClass];
       }
 
       if (this.$q.screen.gt.md) {
-        return ['facsimile-md', orientationClass];
+        return ['facsimile-md', orientationClass, rotationClass];
       }
-      return ['facsimile-sm', orientationClass];
+      return ['facsimile-sm', orientationClass, rotationClass];
+    },
+    selectedFacsimileLabel() {
+      if (!Object.values(this.availableFacsimiles).length) {
+        return '';
+      }
+
+      return this.availableFacsimiles[parseInt(this.selectedFacsimileSlide)].label;
     },
   },
 
@@ -856,18 +914,30 @@ export default {
     toggleFacsimileFullscreen() {
       this.isFacsimileCarouselFullscreen = !this.isFacsimileCarouselFullscreen;
     },
+    applyRotation(rotation) {
+      this.facsimileRotation += rotation;
+
+      while (this.facsimileRotation < 0) {
+        this.facsimileRotation += 360;
+      }
+
+      while (this.facsimileRotation >= 360) {
+        this.facsimileRotation -= 360;
+      }
+    },
+    openPreviousSlide() {
+      this.facsimileRotation = 0;
+      this.$refs.carousel.previous();
+    },
+    openNextSlide() {
+      this.facsimileRotation = 0;
+      this.$refs.carousel.next();
+    },
   },
 };
 </script>
 
 <style lang="stylus" scoped>
-@import '../styles/quasar.variables.styl'
-
-.facsimile-label
-  background-color: $primary
-  opacity: 0.8
-  transform: translateY(-1rem)
-
 .facsimile-lg
   max-width: 475px
   max-height: 700px
@@ -889,7 +959,10 @@ export default {
   &.facsimile-landscape
     max-width: 400px
 
+.facsimile-control-offset
+  margin-bottom: 2rem
+
 .facsimile-fullscreen
   max-width: auto
-  max-height: 95vh
+  max-height: (95vh - 5rem)
 </style>
