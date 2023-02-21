@@ -245,7 +245,7 @@
                       />
                     </div>
                     <div class="row justify-center">
-                      <div class="text-subtitle facsimile-label">
+                      <div class="text-subtitle text-black facsimile-label">
                         {{ selectedFacsimileLabel }}
                       </div>
                     </div>
