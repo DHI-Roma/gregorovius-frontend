@@ -251,6 +251,7 @@
                     </div>
                     <div>
                       <q-btn
+                        v-if="$q.screen.gt.md"
                         round
                         dense
                         color="primary"
@@ -260,6 +261,7 @@
                         @click="applyRotation(-90)"
                       />
                       <q-btn
+                        v-if="$q.screen.gt.md"
                         round
                         dense
                         color="primary"
@@ -300,6 +302,7 @@
                     v-else
                     type="circle"
                     :high-url="getFacsimileSrc(imgPosition)"
+                    :class="'magnifier-rotation-' + facsimileRotation"
                   >
                     <img
                       :src="getFacsimileSrc(imgPosition)"
@@ -623,11 +626,7 @@ export default {
     availableFacsimiles() {
       return this.facsimiles[this.letterId] ?? null;
     },
-    showLandscapeFacsimile() {
-      if (!this.availableFacsimiles) {
-        return false;
-      }
-
+    hasLandscapeImage() {
       for (const facsimile of Object.values(this.availableFacsimiles)) {
         if (facsimile.name.includes('_quer_')) {
           return true;
@@ -636,8 +635,15 @@ export default {
 
       return false;
     },
+    showLandscapeFacsimile() {
+      if (!this.availableFacsimiles) {
+        return false;
+      }
+
+      return this.hasLandscapeImage;
+    },
     isInLandscapeMode() {
-      if ([90, 270].includes(this.facsimileRotation)) {
+      if ([90, 270].includes(this.facsimileRotation) && !this.hasLandscapeImage) {
         return !this.showLandscapeFacsimile;
       }
       return this.showLandscapeFacsimile;
