@@ -308,7 +308,8 @@
                       :src="getFacsimileSrc(imgPosition)"
                       :class="facsimileClasses"
                       :alt="img.label"
-                      class="facsimile-control-offset"
+                      class="facsimile-control-offset facsimile-img"
+                      :style="facsimileStyles"
                     />
                   </vue-photo-zoom-pro>
                 </div>
@@ -651,21 +652,37 @@ export default {
     rotationClass() {
       return this.facsimileRotation ? `rotate-${this.facsimileRotation}` : '';
     },
+    facsimileStyles() {
+      if (this.facsimileRotation % 180 === 0) {
+        return {
+          transform: `rotate(${this.facsimileRotation}deg)`,
+        };
+      }
+
+      const { width, height } = document.querySelector('.facsimile-img');
+      let dimensionDifference = (width - height) / 2;
+      if (this.facsimileRotation === 270) {
+        dimensionDifference *= -1;
+      }
+      return {
+        transform: `rotate(${this.facsimileRotation}deg) translate(${dimensionDifference}px, ${dimensionDifference}px)`,
+      };
+    },
     facsimileClasses() {
       if (this.isFacsimileCarouselFullscreen) {
-        return ['facsimile-fullscreen', this.rotationClass];
+        return ['facsimile-fullscreen'];
       }
 
       const orientationClass = this.isInLandscapeMode ? 'facsimile-landscape' : '';
 
       if (this.$q.screen.gt.lg) {
-        return ['facsimile-lg', orientationClass, this.rotationClass];
+        return ['facsimile-lg', orientationClass];
       }
 
       if (this.$q.screen.gt.md) {
-        return ['facsimile-md', orientationClass, this.rotationClass];
+        return ['facsimile-md', orientationClass];
       }
-      return ['facsimile-sm', orientationClass, this.rotationClass];
+      return ['facsimile-sm', orientationClass];
     },
     selectedFacsimileLabel() {
       if (!Object.values(this.availableFacsimiles).length) {
@@ -687,6 +704,17 @@ export default {
     availableFacsimiles(newValue) {
       if (newValue) {
         this.selectedFacsimileSlide = Object.keys(newValue).sort()[0];
+      }
+    },
+    facsimileRotation(newValue) {
+      const photozoomContainer = document.querySelector('.vue-photo-zoom-pro');
+      if (newValue % 180 === 0) {
+        photozoomContainer.style.height = 'auto';
+        photozoomContainer.style.width = 'auto';
+      } else {
+        const currentImage = document.querySelector('.facsimile-img');
+        photozoomContainer.style.height = currentImage.width + 'px';
+        photozoomContainer.style.width = currentImage.height + 'px';
       }
     },
   },
