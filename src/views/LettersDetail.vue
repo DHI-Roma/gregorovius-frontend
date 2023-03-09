@@ -251,7 +251,7 @@
                     </div>
                     <div>
                       <q-btn
-                        v-if="$q.screen.gt.md"
+                        v-if="$q.screen.gt.xs"
                         round
                         dense
                         color="primary"
@@ -261,7 +261,7 @@
                         @click="applyRotation(-90)"
                       />
                       <q-btn
-                        v-if="$q.screen.gt.md"
+                        v-if="$q.screen.gt.xs"
                         round
                         dense
                         color="primary"
