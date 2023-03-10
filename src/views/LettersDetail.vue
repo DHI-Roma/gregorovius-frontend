@@ -302,14 +302,12 @@
                     v-else
                     type="square"
                     :high-url="getFacsimileSrc(imgPosition)"
-                    :class="'magnifier-rotation-' + facsimileRotation"
                   >
                     <img
                       :src="getFacsimileSrc(imgPosition)"
                       :class="facsimileClasses"
                       :alt="img.label"
-                      class="facsimile-control-offset facsimile-img"
-                      :style="facsimileStyles"
+                      class="facsimile-img"
                     />
                   </vue-photo-zoom-pro>
                 </div>
@@ -705,18 +703,7 @@ export default {
       if (newValue) {
         this.selectedFacsimileSlide = Object.keys(newValue).sort()[0];
       }
-    },
-    facsimileRotation(newValue) {
-      const photozoomContainer = document.querySelector('.vue-photo-zoom-pro');
-      if (newValue % 180 === 0) {
-        photozoomContainer.style.height = 'auto';
-        photozoomContainer.style.width = 'auto';
-      } else {
-        const currentImage = document.querySelector('.facsimile-img');
-        photozoomContainer.style.height = currentImage.width + 'px';
-        photozoomContainer.style.width = currentImage.height + 'px';
-      }
-    },
+    }
   },
 
   mounted() {
@@ -945,7 +932,7 @@ export default {
     },
 
     getFacsimileSrc(imgName) {
-      return `${API}/facsimiles/${this.letterId}/${imgName}`;
+      return `${API}/facsimiles/${this.letterId}/${imgName}/${this.facsimileRotation}`;
     },
     toggleFacsimileFullscreen() {
       this.isFacsimileCarouselFullscreen = !this.isFacsimileCarouselFullscreen;
@@ -994,9 +981,6 @@ export default {
 
   &.facsimile-landscape
     max-width: 400px
-
-.facsimile-control-offset
-  margin-bottom: 2rem
 
 .facsimile-fullscreen
   max-width: auto
