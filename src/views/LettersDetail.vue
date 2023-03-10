@@ -300,7 +300,7 @@
                   />
                   <vue-photo-zoom-pro
                     v-else
-                    type="square"
+                    type="circle"
                     :high-url="getFacsimileSrc(imgPosition)"
                     :class="'magnifier-rotation-' + facsimileRotation"
                   >
