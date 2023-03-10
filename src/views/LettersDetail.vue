@@ -301,12 +301,15 @@
                     v-else
                     type="square"
                     :high-url="getFacsimileSrc(imgPosition)"
+                    :width="facsimileZoomWidth"
+                    :height="150"
                   >
                     <img
                       :src="getFacsimileSrc(imgPosition)"
                       :class="facsimileClasses"
                       :alt="img.label"
                       class="facsimile-img"
+                      @load="applyZoomWidth"
                     />
                   </vue-photo-zoom-pro>
                 </div>
@@ -454,6 +457,7 @@ export default {
       selectedFacsimileSlide: '0',
       isFacsimileCarouselFullscreen: false,
       facsimileRotation: 0,
+      facsimileZoomWidth: 0,
     };
   },
   computed: {
@@ -684,6 +688,18 @@ export default {
         this.selectedFacsimileSlide = Object.keys(newValue).sort()[0];
       }
     },
+    selectedFacsimileSlide: {
+      immediate: true,
+      handler: function (newValue) {
+        this.applyZoomWidth();
+      },
+    },
+    facsimileRotation: {
+      immediate: true,
+      handler: function (newValue) {
+        this.applyZoomWidth();
+      }
+    }
   },
 
   mounted() {
@@ -935,6 +951,14 @@ export default {
     openNextSlide() {
       this.facsimileRotation = 0;
       this.$refs.carousel.next();
+    },
+    applyZoomWidth() {
+      const facsimileImage = document.querySelector('.facsimile-img');
+      if (!facsimileImage) {
+        return;
+      }
+
+      this.facsimileZoomWidth = facsimileImage.clientWidth;
     },
   },
 };
