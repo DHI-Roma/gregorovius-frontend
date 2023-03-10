@@ -258,7 +258,7 @@
                         text-color="white"
                         icon="rotate_left"
                         class="q-mr-sm"
-                        @click="applyRotation(-90)"
+                        @click="applyRotation(90)"
                       />
                       <q-btn
                         v-if="$q.screen.gt.xs"
@@ -268,7 +268,7 @@
                         text-color="white"
                         icon="rotate_right"
                         class="q-mx-sm"
-                        @click="applyRotation(90)"
+                        @click="applyRotation(-90)"
                       />
                       <q-btn
                         round
