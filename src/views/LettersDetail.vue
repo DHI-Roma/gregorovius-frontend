@@ -210,7 +210,6 @@
               ref="carousel"
               v-model="selectedFacsimileSlide"
               :fullscreen="isFacsimileCarouselFullscreen"
-              @transition="applyZoomWidth"
               control-type="flat"
               control-color="primary"
               animated
@@ -218,6 +217,7 @@
               height="auto"
               transition-prev="slide-right"
               transition-next="slide-left"
+              @transition="onSlideChange"
             >
               <template #control>
                 <q-carousel-control
@@ -675,7 +675,7 @@ export default {
       }
 
       return this.availableFacsimiles[parseInt(this.selectedFacsimileSlide)].label;
-    }
+    },
   },
 
   watch: {
@@ -969,6 +969,12 @@ export default {
     openNextSlide() {
       this.facsimileRotation = 0;
       this.$refs.carousel.next();
+      this.$nextTick(() => {
+        this.applyZoomWidth();
+      });
+    },
+    onSlideChange() {
+      this.facsimileRotation = 0;
       this.$nextTick(() => {
         this.applyZoomWidth();
       });
