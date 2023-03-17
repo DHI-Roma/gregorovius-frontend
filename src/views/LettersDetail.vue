@@ -210,6 +210,7 @@
               ref="carousel"
               v-model="selectedFacsimileSlide"
               :fullscreen="isFacsimileCarouselFullscreen"
+              @transition="applyZoomWidth"
               control-type="flat"
               control-color="primary"
               animated
@@ -303,8 +304,10 @@
                     :high-url="getFacsimileSrc(imgPosition)"
                     :width="facsimileZoomWidth"
                     :height="150"
+                    :scale="1.5"
                   >
                     <img
+                      :id="'facsimile-img-' + imgPosition"
                       :src="getFacsimileSrc(imgPosition)"
                       :class="facsimileClasses"
                       :alt="img.label"
@@ -672,7 +675,7 @@ export default {
       }
 
       return this.availableFacsimiles[parseInt(this.selectedFacsimileSlide)].label;
-    },
+    }
   },
 
   watch: {
@@ -690,16 +693,28 @@ export default {
     },
     selectedFacsimileSlide: {
       immediate: true,
-      handler: function (newValue) {
-        this.applyZoomWidth();
+      handler: function () {
+        this.$nextTick(() => {
+          this.applyZoomWidth();
+        });
       },
     },
     facsimileRotation: {
       immediate: true,
-      handler: function (newValue) {
-        this.applyZoomWidth();
-      }
-    }
+      handler: function () {
+        this.$nextTick(() => {
+          this.applyZoomWidth();
+        });
+      },
+    },
+    isFacsimileCarouselFullscreen: {
+      immediate: true,
+      handler: function () {
+        this.$nextTick(() => {
+          this.applyZoomWidth();
+        });
+      },
+    },
   },
 
   mounted() {
@@ -947,13 +962,21 @@ export default {
     openPreviousSlide() {
       this.facsimileRotation = 0;
       this.$refs.carousel.previous();
+      this.$nextTick(() => {
+        this.applyZoomWidth();
+      });
     },
     openNextSlide() {
       this.facsimileRotation = 0;
       this.$refs.carousel.next();
+      this.$nextTick(() => {
+        this.applyZoomWidth();
+      });
     },
     applyZoomWidth() {
-      const facsimileImage = document.querySelector('.facsimile-img');
+      const facsimileImage = document.querySelector(
+        '#facsimile-img-' + this.selectedFacsimileSlide
+      );
       if (!facsimileImage) {
         return;
       }
