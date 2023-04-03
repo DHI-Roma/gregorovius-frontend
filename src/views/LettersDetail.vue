@@ -993,6 +993,13 @@ export default {
         return;
       }
 
+      if (facsimileImage.clientWidth <= 0) {
+        setTimeout(() => {
+          this.applyZoomWidth();
+        }, 250);
+        return;
+      }
+
       if (this.isFacsimileCarouselFullscreen && !this.isInLandscapeMode) {
         this.facsimileZoomWidth = facsimileImage.clientWidth * 1.5;
         return;
@@ -1036,4 +1043,7 @@ export default {
 .facsimile-fullscreen
   max-width: auto
   max-height: (95vh - 5rem)
+
+.facsimile-img
+  widtH: 100%
 </style>
