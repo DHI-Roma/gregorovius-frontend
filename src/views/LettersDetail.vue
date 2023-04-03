@@ -304,7 +304,7 @@
                     :high-url="getFacsimileSrc(imgPosition)"
                     :width="facsimileZoomWidth"
                     :height="150"
-                    :scale="1.5"
+                    :scale="facsimileZoomScale"
                   >
                     <img
                       :id="'facsimile-img-' + imgPosition"
@@ -411,8 +411,8 @@ import {
 } from 'quasar';
 import { openInNewTabMixin } from '@/mixins/openInNewTabMixin';
 import MentionsTile from '@/components/MentionsTile';
-import VuePhotoZoomPro from 'vue-photo-zoom-pro';
 import 'vue-photo-zoom-pro/dist/style/vue-photo-zoom-pro.css';
+import VuePhotoZoomPro from "vue-photo-zoom-pro";
 
 const TAB_TEXTGRUNDLAGE = 'tgl';
 const SPLITTER_SIZE_START = 100;
@@ -675,6 +675,12 @@ export default {
       }
 
       return this.availableFacsimiles[parseInt(this.selectedFacsimileSlide)].label;
+    },
+    facsimileZoomScale() {
+      if (this.isFacsimileCarouselFullscreen && !this.isInLandscapeMode) {
+        return 1.5;
+      }
+      return 2;
     },
   },
 
@@ -984,6 +990,15 @@ export default {
         '#facsimile-img-' + this.selectedFacsimileSlide
       );
       if (!facsimileImage) {
+        return;
+      }
+
+      if (this.isFacsimileCarouselFullscreen && !this.isInLandscapeMode) {
+        this.facsimileZoomWidth = facsimileImage.clientWidth * 1.5;
+        return;
+      } else if (this.isFacsimileCarouselFullscreen) {
+        const additionalWidth = ((window.innerWidth - facsimileImage.clientWidth) / 2) - 50;
+        this.facsimileZoomWidth = facsimileImage.clientWidth + additionalWidth;
         return;
       }
 
