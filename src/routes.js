@@ -41,7 +41,7 @@ export const routes = [
         component: LettersIndex,
       },
       {
-        path: 'letters/total-index',
+        path: 'letters/full-index',
         name: 'Gesamtdatenbank',
         component: LettersFullIndex,
       },

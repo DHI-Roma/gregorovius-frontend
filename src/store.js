@@ -60,6 +60,7 @@ export default new Vuex.Store({
       state.loadingStatus.fullNameIndex ||
       state.loadingStatus.fullLettersIndex,
     fullNameIndex: (state) => state.fullNameIndex,
+    fullLettersIndex: (state) => state.fullLettersIndex,
     selectedRecipients: (state) => state.selectedRecipients,
     selectedPlaceReceived: (state) => state.selectedPlaceReceived,
     selectedPlaceSent: (state) => state.selectedPlaceSent,

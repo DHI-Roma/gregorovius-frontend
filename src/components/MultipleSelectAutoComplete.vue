@@ -11,8 +11,8 @@
       use-chips
       emit-value
       map-options
-      option-value="value"
-      option-label="label"
+      :option-value="getOptionValue"
+      :option-label="getOptionLabel"
       :options="options"
       :label="label"
       @filter="filterOptions"
@@ -39,8 +39,9 @@ export default {
     entity: {
       type: String,
       default: ""
-    }
+    },
   },
+  emits: ['update-selection'],
   data() {
     return {
       model: [],
@@ -84,17 +85,21 @@ export default {
     },
     filterByInput(userInput) {
       const needle = userInput.toLowerCase();
-      const filteredOptions = this.optionsFull.filter(option =>
-        option.label.toLowerCase().includes(needle)
-      );
+      const filteredOptions = this.optionsFull.filter((option) => {
+        const label = option?.label ?? option;
+        return label.toLowerCase().includes(needle);
+      });
       this.options = filteredOptions.sort((a, b) => {
-        const valA = a.label.toLowerCase();
-        const valB = b.label.toLowerCase();
+        const labelA = a?.label ?? a;
+        const labelB = b?.label ?? b;
+        const valA = labelA.toLowerCase();
+        const valB = labelB.toLowerCase();
         return valA.localeCompare(valB);
       });
     },
     setSelected() {
       this.setSelectedAction({ entity: this.$props.entity, value: this.model });
+      this.$emit('update-selection', this.model);
     },
     getSelected() {
       if (this.$props.entity in this.$route.query) {
@@ -110,7 +115,19 @@ export default {
       } else {
         this.model = [];
       }
-    }
+    },
+    getOptionValue(option) {
+      if (typeof option === 'object') {
+        return option.value;
+      }
+      return option;
+    },
+    getOptionLabel(option) {
+      if (typeof option === 'object') {
+        return option.label;
+      }
+      return option;
+    },
   }
 };
 </script>
