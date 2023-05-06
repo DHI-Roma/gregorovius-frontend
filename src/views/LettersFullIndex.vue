@@ -47,6 +47,10 @@
               :options="fullLettersIndex.aufbewahrungsorte_short"
               @update-selection="filter.holdingLocations = $event"
             />
+            <q-toggle
+              v-model="filter.isAvailableOnly"
+              label="Nur edierte Briefe"
+            />
           </div>
         </div>
       </div>
@@ -86,6 +90,7 @@ export default {
         placesReceived: [],
         placesSent: [],
         holdingLocations: [],
+        isAvailableOnly: false
       },
     };
   },
