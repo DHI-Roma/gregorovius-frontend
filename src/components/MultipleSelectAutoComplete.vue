@@ -34,11 +34,16 @@ export default {
   props: {
     label: {
       type: String,
-      default: ""
+      default: ''
     },
     entity: {
       type: String,
-      default: ""
+      default: ''
+    },
+    reloadOptions: {
+      type: Boolean,
+      required: false,
+      default: true,
     },
   },
   emits: ['update-selection'],
@@ -51,7 +56,7 @@ export default {
   computed: {
     optionsFull() {
       return this.$attrs.options;
-    }
+    },
   },
   watch: {
     optionsFull: function(loadedOptions) {
@@ -70,16 +75,16 @@ export default {
         } else {
           this.model = [];
         }
-      } else {
+      } else if (this.reloadOptions) {
         this.model = [];
       }
-    }
+    },
   },
   async mounted() {
     await this.getSelected();
   },
   methods: {
-    ...mapActions(["setSelectedAction"]),
+    ...mapActions(['setSelectedAction']),
     filterOptions(val, update) {
       update(() => this.filterByInput(val));
     },

@@ -6,7 +6,9 @@
           <q-badge
             v-if="entry.lfdnr"
             class="q-mr-sm"
-          >#{{ entry.lfdnr }}</q-badge>
+          >
+            #{{ entry.lfdnr }}
+          </q-badge>
           <q-badge v-if="entry.xml_id">{{ entry.xml_id }}</q-badge>
         </div>
         <div class="col-6 text-right">
@@ -35,6 +37,11 @@
           <div v-for="sender in entry.senders">
             {{ sender }}
           </div>
+          <div
+            v-if="entry.placename_sent"
+            class="text-italic"
+          >{{ entry.placename_sent }}</div>
+
         </div>
         <div class="col-12 col-md-4">
           <div class="text-caption text-uppercase text-bold text-grey">
@@ -44,6 +51,10 @@
           <div v-for="recipient in entry.recipients">
             {{ recipient }}
           </div>
+          <div
+            v-if="entry.placename_received"
+            class="text-italic"
+          >{{ entry.placename_received }}</div>
         </div>
       </div>
       <div
@@ -89,12 +100,13 @@
     </q-card-section>
     <q-separator v-if="entry.status === 'ED'" />
     <q-card-actions v-if="entry.status === 'ED'">
-      <q-space/>
+      <q-space />
       <q-btn
         flat
         dense
         color="primary"
         label="Brief öffnen"
+        @click="$router.push({ name: 'Brief', params: { id: entry.xml_id } })"
       />
     </q-card-actions>
   </q-card>

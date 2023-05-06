@@ -18,33 +18,38 @@
               </template>
             </q-input>
             <multiple-select-auto-complete
-              label="Empfänger"
-              entity="fli_recipient"
-              :options="fullLettersIndex.unique_recipients"
-              @update-selection="filter.recipients = $event"
-            />
-            <multiple-select-auto-complete
               label="Sender"
               entity="fli_sender"
               :options="fullLettersIndex.unique_senders"
+              :reload-options="false"
               @update-selection="filter.sender = $event"
             />
             <multiple-select-auto-complete
-              label="Empfangsort"
-              entity="fli_place_received"
-              :options="fullLettersIndex.unique_recipient_places"
-              @update-selection="filter.placesReceived = $event"
+              label="Empfänger"
+              entity="fli_recipient"
+              :options="fullLettersIndex.unique_recipients"
+              :reload-options="false"
+              @update-selection="filter.recipients = $event"
             />
             <multiple-select-auto-complete
               label="Versandort"
               entity="fli_place_sent"
               :options="fullLettersIndex.unique_sender_places"
+              :reload-options="false"
               @update-selection="filter.placesSent = $event"
+            />
+            <multiple-select-auto-complete
+              label="Empfangsort"
+              entity="fli_place_received"
+              :options="fullLettersIndex.unique_recipient_places"
+              :reload-options="false"
+              @update-selection="filter.placesReceived = $event"
             />
             <multiple-select-auto-complete
               label="Aufbewahrungsorte"
               entity="fli_holding_locations"
               :options="fullLettersIndex.aufbewahrungsorte_short"
+              :reload-options="false"
               @update-selection="filter.holdingLocations = $event"
             />
             <q-toggle
@@ -57,7 +62,8 @@
       <div class="col-12 col-md-9">
         <q-table
           :columns="['_entry']"
-          :data="fullLettersIndex.letters"
+          :data="filteredLetters"
+          :hide-header="true"
         >
           <template #body="props">
             <q-tr :props="props">
@@ -90,12 +96,77 @@ export default {
         placesReceived: [],
         placesSent: [],
         holdingLocations: [],
-        isAvailableOnly: false
+        isAvailableOnly: false,
       },
     };
   },
   computed: {
     ...mapGetters(['fullLettersIndex']),
+    filteredLetters() {
+      if (!this.fullLettersIndex.letters.length) return [];
+      return this.fullLettersIndex.letters.filter((letter) => {
+        const letterFullText = [
+          letter.senders.join(' '),
+          letter.recipients.join(' '),
+          letter.placename_sent,
+          letter.placename_received,
+          letter.incipit,
+          letter.reference,
+          letter.print_reference
+        ].join(' ');
+
+        if (
+          this.filter.fullText.length &&
+          !letterFullText.toLowerCase().includes(this.filter.fullText.toLowerCase())
+        ) {
+          return false;
+        }
+
+        if (
+          this.filter.recipients.length &&
+          !this.filter.recipients.some((recipient) => letter.recipients.includes(recipient))
+        ) {
+          return false;
+        }
+
+        if (
+          this.filter.sender.length &&
+          !this.filter.sender.some((sender) => letter.senders.includes(sender))
+        ) {
+          return false;
+        }
+
+        if (
+          this.filter.placesSent.length &&
+          !this.filter.placesSent.some((place) => letter.placename_sent.includes(place))
+        ) {
+          return false;
+        }
+
+        if (
+          this.filter.placesReceived.length &&
+          !this.filter.placesReceived.some((place) => letter.placename_received.includes(place))
+        ) {
+          return false;
+        }
+
+        if (
+          this.filter.holdingLocations.length &&
+          !this.filter.holdingLocations.some((holdingLocation) => letter.reference.includes(holdingLocation))
+        ) {
+          return false;
+        }
+
+        if (
+          this.filter.isAvailableOnly &&
+          letter.status !== 'ED'
+        ) {
+          return false;
+        }
+
+        return true;
+      });
+    },
   },
   mounted() {
     this.$store.dispatch('loadEntitiesAction');
