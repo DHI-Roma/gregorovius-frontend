@@ -26,7 +26,11 @@
               <q-icon name="event" />
               Versanddatum
             </div>
-            {{ dateEstimate }}
+            <div
+              :class="entry.date_cert === 'low' ? 'text-grey' : ''"
+            >
+              {{ dateEstimate }}
+            </div>
           </div>
         </div>
         <div class="col-12 col-md-4">
