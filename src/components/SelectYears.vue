@@ -61,7 +61,7 @@ export default {
       return this.$attrs.options;
     },
     selectedYearsSorted() {
-      return this.selectedYears.sort().join(", ");
+      return this.selectedYears.sort().join(", ").replace("0000", "undatiert");
     }
   },
   watch: {
