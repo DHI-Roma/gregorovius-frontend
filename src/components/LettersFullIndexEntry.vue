@@ -113,32 +113,54 @@ export default {
   },
   computed: {
     dateEstimate() {
-      if (this.entry.date_when.startsWith('0000')) {
-        return 'undatiert';
+      const dateWhen = this.entry?.date_when || "";
+      if (dateWhen.startsWith("0000")) {
+        return "undatiert";
       }
-      if (this.entry.date_when) {
+
+      if (dateWhen) {
         return this.toDate(this.entry.date_when);
       }
 
-      let dateFromRaw = this.entry?.date_from ?? this.entry?.date_not_before ?? null;
-      let dateToRaw = this.entry?.date_to ?? this.entry?.date_not_after ?? null;
+      let dateFromRaw = null;
+      let dateToRaw = null;
+      let prependNotBefore = "";
+      let prependNotAfter = "";
+      let combiner = " ";
+
+      if (this.entry.date_from) {
+        dateFromRaw = this.entry.date_from;
+      } else if (this.entry.date_not_before) {
+        dateFromRaw = this.entry.date_not_before;
+        prependNotBefore = "nicht vor ";
+      }
+
+      if (this.entry.date_to) {
+        dateToRaw = this.entry.date_to;
+      } else if (this.entry.date_not_after) {
+        dateToRaw = this.entry.date_not_after;
+        prependNotAfter = "nicht nach ";
+      }
 
       let dateFrom = "";
       if (dateFromRaw) {
         dateFrom = this.toDate(dateFromRaw);
       }
-      dateFrom += " - ";
 
       let dateTo = "";
       if (dateToRaw) {
         dateTo = this.toDate(dateToRaw);
       }
 
-      if (!dateTo && dateFrom === " - ") {
+      if (!dateTo && !dateFrom) {
         return "undatiert";
       }
 
-      return dateFrom + dateTo;
+      if (dateFrom && dateTo) {
+        combiner = " - ";
+      }
+
+      return prependNotBefore + dateFrom + combiner + prependNotAfter + dateTo;
     },
   },
   methods: {
