@@ -5,7 +5,9 @@
       filled
       :rules="[germanDateRule]"
       :label="label"
+      clearable
       @input="onDateInput"
+      @clear="clearDateInput"
     >
       <template v-slot:append>
         <q-icon
@@ -90,6 +92,7 @@ export default {
     },
     onDateInput() {
       if (!this.dateInput) {
+        this.clearDateInput();
         return;
       }
 
@@ -115,6 +118,11 @@ export default {
       this.dateInput = `${day}.${month}.${year}`;
       const date = `${year}-${month}-${day}`;
       this.$emit('update-date', date);
+    },
+    clearDateInput() {
+      this.datePickerSelection = null;
+      this.dateInput = null;
+      this.$emit('update-date', null);
     }
   }
 };

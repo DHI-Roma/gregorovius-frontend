@@ -10,6 +10,7 @@
       :options="options"
       :label="label"
       :value="selectedYears"
+      @input="onSelectedChange"
     >
       <template #selected>
         {{ selectedYearsSorted }}
@@ -20,7 +21,10 @@
           v-on="itemEvents"
         >
           <q-item-section>
-            <q-item-label>{{ opt }}</q-item-label>
+            <q-item-label>
+              <template v-if="opt === '0000'">undatiert</template>
+              <template v-else>{{ opt }}</template>
+            </q-item-label>
           </q-item-section>
           <q-item-section side>
             <q-toggle :value="selected" @input="toggleOption(opt)" />
@@ -46,6 +50,7 @@ export default {
       default: ""
     }
   },
+  emits: ["update-selection"],
   data() {
     return {
       selectedYears: []
@@ -74,6 +79,13 @@ export default {
     getSelected() {
       if ("years" in this.$route.query) this.selectedYears = this.$route.query.years.split(",");
       else this.selectedYears = [];
+    },
+    setSelected(value) {
+      this.setSelectedAction({ entity: "years", value });
+      this.selectedYears = value;
+    },
+    onSelectedChange(value) {
+      this.$emit("update-selection", value);
     }
   }
 };

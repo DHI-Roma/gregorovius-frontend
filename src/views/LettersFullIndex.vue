@@ -2,10 +2,7 @@
   <q-page padding>
     <div class="row">
       <div class="col-12 col-md-3">
-        <div
-          class="q-gutter-sm col justify-center"
-          style="max-width: 500px"
-        >
+        <div class="q-gutter-sm col justify-center" style="max-width: 500px">
           <div class="q-pa-md">
             <q-input
               v-model="filter.fullText"
@@ -21,25 +18,30 @@
           <div class="row">
             <div class="col-12 col-md-6">
               <date-picker-input
+                ref="dateFromPicker"
                 label="von"
                 :min-date="fullLettersIndex.date_earliest"
                 :max-date="fullLettersIndex.date_latest"
-                @update-date="filter.dateFrom = $event"
+                @update-date="setDateFromFilter"
               />
             </div>
 
             <div class="col-12 col-md-6">
               <date-picker-input
+                ref="dateToPicker"
                 label="bis"
                 :min-date="fullLettersIndex.date_earliest"
                 :max-date="fullLettersIndex.date_latest"
-                @update-date="filter.dateTo = $event"
+                @update-date="setDateToFilter"
               />
             </div>
           </div>
-          <q-toggle
-            v-model="filter.highDateCertOnly"
-            label="Nur Briefe mit gesicherter Datierung"
+          <select-years
+            ref="yearsSelect"
+            label="Jahre"
+            entity="fli_years"
+            :options="fullLettersIndex.unique_years"
+            @update-selection="setYearFilter"
           />
           <multiple-select-auto-complete
             label="Sender"
@@ -76,18 +78,11 @@
             :reload-options="false"
             @update-selection="filter.holdingLocations = $event"
           />
-          <q-toggle
-            v-model="filter.isAvailableOnly"
-            label="Nur edierte Briefe"
-          />
+          <q-toggle v-model="filter.isAvailableOnly" label="Nur edierte Briefe" />
         </div>
       </div>
       <div class="col-12 col-md-9">
-        <q-table
-          :columns="['_entry']"
-          :data="filteredLetters"
-          :hide-header="true"
-        >
+        <q-table :columns="['_entry']" :data="filteredLetters" :hide-header="true">
           <template #body="props">
             <q-tr :props="props">
               <q-td :no-hover="true">
@@ -107,10 +102,11 @@ import MultipleSelectAutoComplete from "@/components/MultipleSelectAutoComplete.
 import { mapGetters } from "vuex";
 import LettersFullIndexEntry from "@/components/LettersFullIndexEntry.vue";
 import DatePickerInput from "@/components/DatePickerInput.vue";
+import SelectYears from "@/components/SelectYears.vue";
 
 export default {
   name: "LettersFullIndex",
-  components: { LettersFullIndexEntry, MultipleSelectAutoComplete, QInput, QPage, DatePickerInput },
+  components: { SelectYears, LettersFullIndexEntry, MultipleSelectAutoComplete, QInput, QPage, DatePickerInput },
   data() {
     return {
       filter: {
@@ -121,10 +117,11 @@ export default {
         placesSent: [],
         holdingLocations: [],
         isAvailableOnly: false,
-        highDateCertOnly: false,
         dateFrom: null,
-        dateTo: null
-      }
+        dateTo: null,
+        years: [],
+      },
+      yearsFilter: [],
     };
   },
   computed: {
@@ -139,7 +136,7 @@ export default {
           letter.placename_received,
           letter.incipit,
           letter.reference,
-          letter.print_reference
+          letter.print_reference,
         ].join(" ");
 
         if (
@@ -190,10 +187,6 @@ export default {
           return false;
         }
 
-        if (this.filter.highDateCertOnly && letter.date_cert !== "high") {
-          return false;
-        }
-
         if (this.filter.dateFrom && this.filter.dateTo) {
           return this.isAfterSelection(letter) && this.isBeforeSelection(letter);
         }
@@ -206,58 +199,55 @@ export default {
           return this.isBeforeSelection(letter);
         }
 
+        if (this.yearsFilter.length) {
+          return this.yearsFilter.some((year) => letter.relevant_years.includes(year));
+        }
+
         return true;
       });
-    }
+    },
   },
   mounted() {
     this.$store.dispatch("loadEntitiesAction");
   },
   methods: {
     isAfterSelection(letter) {
-      const [year, month, day] = this.filter.dateFrom.split('-');
-      const letterDateFrom = letter.date_when ?? letter.date_from ?? letter.date_not_before ?? letter.date_to ?? letter.date_not_after ?? null;
+      const letterDateFrom = letter.date_index;
       if (!letterDateFrom) return false;
 
-      const [letterYear, letterMonth, letterDay] = letterDateFrom.split('-');
+      const [letterYear] = letterDateFrom.split("-");
 
-      if (letterYear === '0000') return false;
+      if (!letterYear.startsWith("1")) return false;
 
-      if (letterMonth === '00' || letterDay === '00') {
-        return letterYear >= year;
-      }
-
-      if (year === letterYear) {
-        if (month === letterMonth) {
-          return letterDay >= day;
-        }
-        return letterYear >= month;
-      }
-
-      return letterYear >= year;
+      return this.filter.dateFrom <= letterDateFrom;
     },
     isBeforeSelection(letter) {
-      const [year, month, day] = this.filter.dateTo.split('-');
-      const letterDateTo = letter.date_when ?? letter.date_to ?? letter.date_not_after ?? letter.date_from ?? letter.date_not_before ?? null;
+      const letterDateTo = letter.date_index;
       if (!letterDateTo) return false;
 
-      const [letterYear, letterMonth, letterDay] = letterDateTo.split('-');
+      const [letterYear] = letterDateTo.split("-");
 
-      if (letterYear === '0000') return false;
+      if (!letterYear.startsWith("1")) return false;
 
-      if (letterMonth === '00' || letterDay === '00') {
-        return letterYear <= year;
-      }
-
-      if (year === letterYear) {
-        if (month === letterMonth) {
-          return letterDay <= day;
-        }
-        return letterMonth <= month;
-      }
-
-      return letterYear < year;
+      return this.filter.dateTo >= letterDateTo;
+    },
+    setDateFromFilter(dateFrom) {
+      this.filter.dateFrom = dateFrom;
+      if (!dateFrom) return;
+      this.yearsFilter = [];
+      this.$refs.yearsSelect.setSelected([]);
+    },
+    setDateToFilter(dateTo) {
+      this.filter.dateTo = dateTo;
+      if (!dateTo) return;
+      this.yearsFilter = [];
+      this.$refs.yearsSelect.setSelected([]);
+    },
+    setYearFilter(years) {
+      this.yearsFilter = years;
+      this.$refs.dateFromPicker.clearDateInput();
+      this.$refs.dateToPicker.clearDateInput();
     }
-  }
+  },
 };
 </script>

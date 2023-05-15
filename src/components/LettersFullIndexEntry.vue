@@ -2,16 +2,15 @@
   <q-card flat>
     <q-card-section>
       <div class="row q-mb-md">
-        <div class="col-6">
-          <q-badge
-            v-if="entry.lfdnr"
-            class="q-mr-sm"
-          >
-            #{{ entry.lfdnr }}
-          </q-badge>
-          <q-badge v-if="entry.xml_id">{{ entry.xml_id }}</q-badge>
-        </div>
-        <div class="col-6 text-right">
+        <div class="col-12 text-right">
+          <q-btn
+            v-if="entry.status === 'ED'"
+            flat
+            dense
+            color="primary"
+            label="Brief öffnen"
+            @click="$router.push({ name: 'Brief', params: { id: entry.xml_id } })"
+          />
           <q-icon
             :name="entry.status === 'ED' ? 'check_circle' : 'cancel'"
             :color="entry.status === 'ED' ? 'primary' : 'red'"
@@ -26,10 +25,9 @@
               <q-icon name="event" />
               Versanddatum
             </div>
-            <div
-              :class="entry.date_cert === 'low' ? 'text-grey' : ''"
-            >
-              {{ dateEstimate }}
+            <div class="text-wrap">
+              <span class="text-bold">{{ dateEstimate }}</span>
+              <span v-if="entry.date_cert !== 'high'"> (ungesichert)</span>
             </div>
           </div>
         </div>
@@ -38,47 +36,46 @@
             <q-icon name="send" />
             Absender
           </div>
-          <div v-for="sender in entry.senders">
+          <div
+            v-for="(sender, index) in entry.senders"
+            :key="index"
+            class="text-wrap text-bold"
+          >
             {{ sender }}
           </div>
-          <div
-            v-if="entry.placename_sent"
-            class="text-italic"
-          >{{ entry.placename_sent }}</div>
-
+          <div v-if="entry.placename_sent" class="text-wrap">
+            {{ entry.placename_sent }}
+          </div>
         </div>
         <div class="col-12 col-md-4">
           <div class="text-caption text-uppercase text-bold text-grey">
             <q-icon name="mark_email_read" />
             Empfänger
           </div>
-          <div v-for="recipient in entry.recipients">
+          <div v-for="(recipient, index) in entry.recipients" :key="index" class="text-wrap text-bold">
             {{ recipient }}
           </div>
-          <div
-            v-if="entry.placename_received"
-            class="text-italic"
-          >{{ entry.placename_received }}</div>
+          <div v-if="entry.placename_received" class="text-wrap">
+            {{ entry.placename_received }}
+          </div>
         </div>
       </div>
-      <div
-        class="row q-my-md"
-      >
+      <div class="row q-my-md">
         <div class="col-12 col-md-4">
           <div class="text-caption text-uppercase text-bold text-grey">
-            Incipit
-          </div>
-          <div>
-            {{ entry.incipit ? entry.incipit : '-' }}
+Incipit
+</div>
+          <div class="text-wrap">
+            {{ entry.incipit ? entry.incipit : "-" }}
           </div>
         </div>
 
         <div class="col-12 col-md-4">
           <div class="text-caption text-uppercase text-bold text-grey">
-            Umfang
-          </div>
-          <div>
-            {{ entry.scope ? entry.scope : '-' }}
+Umfang
+</div>
+          <div class="text-wrap">
+            {{ entry.scope ? entry.scope : "-" }}
           </div>
         </div>
 
@@ -87,38 +84,27 @@
             Handschrift- oder Abschriftennachweis
           </div>
           <div class="text-wrap">
-            {{ entry.reference ? entry.reference : '-' }}
+            {{ entry.reference ? entry.reference : "-" }}
           </div>
         </div>
       </div>
       <div class="row q-mt-sm">
         <div class="col-12 col-md-4">
           <div class="text-caption text-uppercase text-bold text-grey">
-            Drucknachweis
-          </div>
-          <div>
-            {{ entry.print_reference ? entry.print_reference : '-' }}
+Drucknachweis
+</div>
+          <div class="text-wrap">
+            {{ entry.print_reference ? entry.print_reference : "-" }}
           </div>
         </div>
       </div>
     </q-card-section>
-    <q-separator v-if="entry.status === 'ED'" />
-    <q-card-actions v-if="entry.status === 'ED'">
-      <q-space />
-      <q-btn
-        flat
-        dense
-        color="primary"
-        label="Brief öffnen"
-        @click="$router.push({ name: 'Brief', params: { id: entry.xml_id } })"
-      />
-    </q-card-actions>
   </q-card>
 </template>
 
 <script>
 export default {
-  name: 'LettersFullIndexEntry',
+  name: "LettersFullIndexEntry",
   props: {
     entry: {
       type: Object,
@@ -127,6 +113,9 @@ export default {
   },
   computed: {
     dateEstimate() {
+      if (this.entry.date_when.startsWith('0000')) {
+        return 'undatiert';
+      }
       if (this.entry.date_when) {
         return this.toDate(this.entry.date_when);
       }
@@ -134,15 +123,19 @@ export default {
       let dateFromRaw = this.entry?.date_from ?? this.entry?.date_not_before ?? null;
       let dateToRaw = this.entry?.date_to ?? this.entry?.date_not_after ?? null;
 
-      let dateFrom = '';
+      let dateFrom = "";
       if (dateFromRaw) {
         dateFrom = this.toDate(dateFromRaw);
       }
-      dateFrom += ' - ';
+      dateFrom += " - ";
 
-      let dateTo = '';
+      let dateTo = "";
       if (dateToRaw) {
         dateTo = this.toDate(dateToRaw);
+      }
+
+      if (!dateTo && dateFrom === " - ") {
+        return "undatiert";
       }
 
       return dateFrom + dateTo;
@@ -150,18 +143,32 @@ export default {
   },
   methods: {
     toDate(dateString) {
-      const [year, month, day] = dateString.split('-');
-      if (month === '00' && day === '00') {
+      const [year, month, day] = dateString.split("-");
+      if (month === "00" && day === "00") {
         return year;
       }
-      if (dateString) {
-        return new Intl.DateTimeFormat('de-DE', { dateStyle: 'long' })
-          .format(Date.parse(dateString));
+
+      if (month === "99" && day === "99") {
+        return year;
       }
 
-      return '';
+      if (year === "0000" || year === "9999") {
+        return "undatiert";
+      }
+
+      try {
+        if (dateString) {
+          return new Intl.DateTimeFormat("de-DE", { dateStyle: "long" }).format(
+            Date.parse(dateString)
+          );
+        }
+      } catch (e) {
+        return dateString;
+      }
+
+      return "";
     },
-  }
+  },
 };
 </script>
 
