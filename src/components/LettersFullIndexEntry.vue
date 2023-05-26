@@ -2,7 +2,7 @@
   <q-card flat>
     <q-card-section>
       <div class="row q-mb-md">
-        <div class="col-12 text-right">
+        <div class="col-12 q-pr-sm text-right">
           <q-btn
             v-if="entry.status === 'ED'"
             flat
@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 q-pr-sm">
           <div>
             <div class="text-caption text-uppercase text-bold text-grey">
               <q-icon name="event" />
@@ -31,7 +31,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 q-pr-sm">
           <div class="text-caption text-uppercase text-bold text-grey">
             <q-icon name="send" />
             Absender
@@ -47,7 +47,7 @@
             {{ entry.placename_sent }}
           </div>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 q-pr-sm">
           <div class="text-caption text-uppercase text-bold text-grey">
             <q-icon name="mark_email_read" />
             Empfänger
@@ -61,7 +61,7 @@
         </div>
       </div>
       <div class="row q-my-md">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 q-pr-sm">
           <div class="text-caption text-uppercase text-bold text-grey">
 Incipit
 </div>
@@ -70,7 +70,7 @@ Incipit
           </div>
         </div>
 
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 q-pr-sm">
           <div class="text-caption text-uppercase text-bold text-grey">
 Umfang
 </div>
@@ -79,7 +79,7 @@ Umfang
           </div>
         </div>
 
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 q-pr-sm">
           <div class="text-caption text-uppercase text-bold text-grey">
             Handschrift- oder Abschriftennachweis
           </div>
@@ -89,7 +89,7 @@ Umfang
         </div>
       </div>
       <div class="row q-mt-sm">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 q-pr-sm">
           <div class="text-caption text-uppercase text-bold text-grey">
 Drucknachweis
 </div>
