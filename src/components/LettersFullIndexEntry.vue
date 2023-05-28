@@ -25,7 +25,7 @@
               <q-icon name="event" />
               Versanddatum
             </div>
-            <div class="text-wrap">
+            <div class="text-wrap text-bigger">
               <span class="text-bold">{{ dateEstimate }}</span>
               <span v-if="entry.date_cert !== 'high'"> (ungesichert)</span>
             </div>
@@ -39,7 +39,7 @@
           <div
             v-for="(sender, index) in entry.senders"
             :key="index"
-            class="text-wrap text-bold"
+            class="text-wrap text-bold text-bigger"
           >
             {{ sender }}
           </div>
@@ -52,7 +52,11 @@
             <q-icon name="mark_email_read" />
             Empfänger
           </div>
-          <div v-for="(recipient, index) in entry.recipients" :key="index" class="text-wrap text-bold">
+          <div
+            v-for="(recipient, index) in entry.recipients"
+            :key="index"
+            class="text-wrap text-bold text-bigger"
+          >
             {{ recipient }}
           </div>
           <div v-if="entry.placename_received" class="text-wrap">
@@ -62,18 +66,14 @@
       </div>
       <div class="row q-my-md">
         <div class="col-12 col-md-4 q-pr-sm">
-          <div class="text-caption text-uppercase text-bold text-grey">
-Incipit
-</div>
+          <div class="text-caption text-uppercase text-bold text-grey">Drucknachweis</div>
           <div class="text-wrap">
-            {{ entry.incipit ? entry.incipit : "-" }}
+            {{ entry.print_reference ? entry.print_reference : "-" }}
           </div>
         </div>
 
         <div class="col-12 col-md-4 q-pr-sm">
-          <div class="text-caption text-uppercase text-bold text-grey">
-Umfang
-</div>
+          <div class="text-caption text-uppercase text-bold text-grey">Umfang</div>
           <div class="text-wrap">
             {{ entry.scope ? entry.scope : "-" }}
           </div>
@@ -88,13 +88,11 @@ Umfang
           </div>
         </div>
       </div>
-      <div class="row q-mt-sm">
+      <div v-if="entry.incipit" class="row q-mt-sm">
         <div class="col-12 col-md-4 q-pr-sm">
-          <div class="text-caption text-uppercase text-bold text-grey">
-Drucknachweis
-</div>
+          <div class="text-caption text-uppercase text-bold text-grey">Incipit</div>
           <div class="text-wrap">
-            {{ entry.print_reference ? entry.print_reference : "-" }}
+            {{ entry.incipit }}
           </div>
         </div>
       </div>
@@ -197,4 +195,7 @@ export default {
 <style lang="stylus" scoped>
 .text-wrap
   white-space: initial
+
+.text-bigger
+  font-size: 1.3em
 </style>
