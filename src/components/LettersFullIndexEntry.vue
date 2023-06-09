@@ -41,7 +41,13 @@
             :key="index"
             class="text-wrap text-bold text-bigger"
           >
-            {{ sender }}
+            {{ sender.name }}
+
+            <letters-full-index-entry-person-context-menu
+              v-if="hasAdditionalInformation(sender)"
+              :person="sender"
+            ></letters-full-index-entry-person-context-menu>
+
           </div>
           <div v-if="entry.placename_sent" class="text-wrap">
             {{ entry.placename_sent }}
@@ -57,7 +63,12 @@
             :key="index"
             class="text-wrap text-bold text-bigger"
           >
-            {{ recipient }}
+            {{ recipient.name }}
+
+            <letters-full-index-entry-person-context-menu
+              v-if="hasAdditionalInformation(recipient)"
+              :person="recipient"
+            ></letters-full-index-entry-person-context-menu>
           </div>
           <div v-if="entry.placename_received" class="text-wrap">
             {{ entry.placename_received }}
@@ -105,8 +116,18 @@
 </template>
 
 <script>
+import { QMenu, QBtn, QChip, QAvatar } from "quasar";
+import LettersFullIndexEntryPersonContextMenu
+  from "@/components/LettersFullIndexEntryPersonContextMenu.vue";
 export default {
   name: "LettersFullIndexEntry",
+  components: {
+    LettersFullIndexEntryPersonContextMenu,
+    QAvatar,
+    QChip,
+    QMenu,
+    QBtn
+  },
   props: {
     entry: {
       type: Object,
@@ -163,7 +184,7 @@ export default {
       }
 
       return prependNotBefore + dateFrom + combiner + prependNotAfter + dateTo;
-    }
+    },
   },
   methods: {
     toDate(dateString) {
@@ -191,6 +212,9 @@ export default {
       }
 
       return "";
+    },
+    hasAdditionalInformation(person) {
+      return person.gnd || person.birth || person.death;
     }
   }
 };
