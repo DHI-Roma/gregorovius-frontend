@@ -197,4 +197,5 @@ export default {
 <style lang="stylus" scoped>
 .text-wrap
   white-space: initial
+  padding-right: 1rem
 </style>
