@@ -40,6 +40,7 @@ export default {
       default: ""
     }
   },
+  emits: ["update-selection"],
   data() {
     return {
       model: {
@@ -89,6 +90,7 @@ export default {
     },
     setSelected() {
       this.setSelectedAction({ entity: this.$props.entity, value: this.value });
+      this.$emit('update-selection', this.model);
     },
     getSelected() {
       if (this.$props.entity in this.$route.query) {

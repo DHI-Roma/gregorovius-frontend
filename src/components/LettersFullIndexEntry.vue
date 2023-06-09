@@ -25,9 +25,9 @@
               <q-icon name="event" />
               Versanddatum
             </div>
-            <div class="text-wrap">
+            <div class="text-wrap text-bigger">
               <span class="text-bold">{{ dateEstimate }}</span>
-              <span v-if="entry.date_cert !== 'high'"> (ungesichert)</span>
+              <span v-if="entry.date_cert === 'low' && entry.date_when"> (ungesichert)</span>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@
           <div
             v-for="(sender, index) in entry.senders"
             :key="index"
-            class="text-wrap text-bold"
+            class="text-wrap text-bold text-bigger"
           >
             {{ sender }}
           </div>
@@ -47,12 +47,16 @@
             {{ entry.placename_sent }}
           </div>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 q-pr-sm">
           <div class="text-caption text-uppercase text-bold text-grey">
             <q-icon name="mark_email_read" />
             Empfänger
           </div>
-          <div v-for="(recipient, index) in entry.recipients" :key="index" class="text-wrap text-bold">
+          <div
+            v-for="(recipient, index) in entry.recipients"
+            :key="index"
+            class="text-wrap text-bold text-bigger"
+          >
             {{ recipient }}
           </div>
           <div v-if="entry.placename_received" class="text-wrap">
@@ -62,39 +66,37 @@
       </div>
       <div class="row q-my-md">
         <div class="col-12 col-md-4">
-          <div class="text-caption text-uppercase text-bold text-grey">
-Incipit
-</div>
+          <div class="text-caption text-uppercase text-bold text-grey">Drucknachweis</div>
           <div class="text-wrap">
-            {{ entry.incipit ? entry.incipit : "-" }}
+            {{ entry.print_reference ? entry.print_reference : "-" }}
           </div>
         </div>
 
         <div class="col-12 col-md-4">
-          <div class="text-caption text-uppercase text-bold text-grey">
-Umfang
-</div>
-          <div class="text-wrap">
-            {{ entry.scope ? entry.scope : "-" }}
-          </div>
+          <template v-if="entry.scope">
+            <div class="text-caption text-uppercase text-bold text-grey">
+              Umfang
+            </div>
+            <div class="text-wrap">
+              {{ entry.scope }}
+            </div>
+          </template>
         </div>
 
         <div class="col-12 col-md-4">
           <div class="text-caption text-uppercase text-bold text-grey">
-            Handschrift- oder Abschriftennachweis
+            Aufbewahrungsort (Archiv / Sammlung)
           </div>
           <div class="text-wrap">
             {{ entry.reference ? entry.reference : "-" }}
           </div>
         </div>
       </div>
-      <div class="row q-mt-sm">
-        <div class="col-12 col-md-4">
-          <div class="text-caption text-uppercase text-bold text-grey">
-Drucknachweis
-</div>
+      <div v-if="entry.incipit" class="row q-mt-sm">
+        <div class="col-12 col-md-4 q-pr-sm">
+          <div class="text-caption text-uppercase text-bold text-grey">Incipit</div>
           <div class="text-wrap">
-            {{ entry.print_reference ? entry.print_reference : "-" }}
+            {{ entry.incipit }}
           </div>
         </div>
       </div>
@@ -108,8 +110,8 @@ export default {
   props: {
     entry: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
     dateEstimate() {
@@ -161,7 +163,7 @@ export default {
       }
 
       return prependNotBefore + dateFrom + combiner + prependNotAfter + dateTo;
-    },
+    }
   },
   methods: {
     toDate(dateString) {
@@ -189,8 +191,8 @@ export default {
       }
 
       return "";
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -198,4 +200,7 @@ export default {
 .text-wrap
   white-space: initial
   padding-right: 1rem
+
+.text-bigger
+  font-size: 1.3em
 </style>

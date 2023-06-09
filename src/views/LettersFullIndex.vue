@@ -78,7 +78,12 @@
             :reload-options="false"
             @update-selection="filter.holdingLocations = $event"
           />
-          <q-toggle v-model="filter.isAvailableOnly" label="Nur edierte Briefe" />
+          <select-auto-complete
+            label="Bearbeitungsstatus"
+            entity="fli_status"
+            :options="statusFilterOptions"
+            @update-selection="filter.status = $event"
+          />
         </div>
       </div>
       <div class="col-12 col-md-9">
@@ -103,10 +108,11 @@ import { mapGetters } from "vuex";
 import LettersFullIndexEntry from "@/components/LettersFullIndexEntry.vue";
 import DatePickerInput from "@/components/DatePickerInput.vue";
 import SelectYears from "@/components/SelectYears.vue";
+import SelectAutoComplete from "@/components/SelectAutoComplete.vue";
 
 export default {
   name: "LettersFullIndex",
-  components: { SelectYears, LettersFullIndexEntry, MultipleSelectAutoComplete, QInput, QPage, DatePickerInput },
+  components: { SelectAutoComplete, SelectYears, LettersFullIndexEntry, MultipleSelectAutoComplete, QInput, QPage, DatePickerInput },
   data() {
     return {
       filter: {
@@ -116,12 +122,26 @@ export default {
         placesReceived: [],
         placesSent: [],
         holdingLocations: [],
-        isAvailableOnly: false,
+        status: null,
         dateFrom: null,
         dateTo: null,
         years: [],
       },
       yearsFilter: [],
+      statusFilterOptions: [
+        {
+          label: "Alle",
+          value: null,
+        },
+        {
+          label: "Nur edierte Briefe",
+          value: "ED",
+        },
+        {
+          label: "Nur nicht editierte Briefe",
+          value: "UN",
+        },
+      ],
     };
   },
   computed: {
@@ -183,7 +203,7 @@ export default {
           return false;
         }
 
-        if (this.filter.isAvailableOnly && letter.status !== "ED") {
+        if (this.filter?.status?.value && letter.status !== this.filter.status.value) {
           return false;
         }
 
