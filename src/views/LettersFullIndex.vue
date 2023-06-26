@@ -1,5 +1,5 @@
 <template>
-  <q-page padding v-if="fullLettersIndex">
+  <q-page v-if="fullLettersIndex" padding>
     <div class="row">
       <div class="col-12 col-md-3">
         <div class="q-gutter-sm col justify-center" style="max-width: 500px">
@@ -40,41 +40,41 @@
             ref="yearsSelect"
             label="Jahre"
             entity="fli_years"
-            :options="uniqueYears"
+            :options="fullLettersIndex.unique_years"
             @update-selection="setYearFilter"
           />
           <multiple-select-auto-complete
             label="Sender"
             entity="fli_sender"
-            :options="uniqueSenders"
+            :options="fullLettersIndex.unique_senders"
             :reload-options="false"
             @update-selection="filter.sender = $event"
           />
           <multiple-select-auto-complete
             label="Empfänger"
             entity="fli_recipient"
-            :options="uniqueRecipients"
+            :options="fullLettersIndex.unique_recipients"
             :reload-options="false"
             @update-selection="filter.recipients = $event"
           />
           <multiple-select-auto-complete
             label="Versandort"
             entity="fli_place_sent"
-            :options="uniqueSenderPlaces"
+            :options="fullLettersIndex.unique_sender_places"
             :reload-options="false"
             @update-selection="filter.placesSent = $event"
           />
           <multiple-select-auto-complete
             label="Empfangsort"
             entity="fli_place_received"
-            :options="uniqueRecipientPlaces"
+            :options="fullLettersIndex.unique_recipient_places"
             :reload-options="false"
             @update-selection="filter.placesReceived = $event"
           />
           <multiple-select-auto-complete
             label="Aufbewahrungsorte"
             entity="fli_holding_locations"
-            :options="uniqueHoldingLocations"
+            :options="fullLettersIndex.aufbewahrungsorte_short"
             :reload-options="false"
             @update-selection="filter.holdingLocations = $event"
           />
@@ -112,7 +112,15 @@ import SelectAutoComplete from "@/components/SelectAutoComplete.vue";
 
 export default {
   name: "LettersFullIndex",
-  components: { SelectAutoComplete, SelectYears, LettersFullIndexEntry, MultipleSelectAutoComplete, QInput, QPage, DatePickerInput },
+  components: {
+    SelectAutoComplete,
+    SelectYears,
+    LettersFullIndexEntry,
+    MultipleSelectAutoComplete,
+    QInput,
+    QPage,
+    DatePickerInput,
+  },
   data() {
     return {
       filter: {
@@ -147,7 +155,7 @@ export default {
       uniqueSenderPlaces: [],
       uniqueRecipientPlaces: [],
       uniqueYears: [],
-      uniqueHoldingLocations: []
+      uniqueHoldingLocations: [],
     };
   },
   computed: {
@@ -233,6 +241,68 @@ export default {
       });
     },
   },
+  watch: {
+    filteredLetters: {
+      deep: true,
+      immediate: true,
+      handler() {
+        return false;
+        // if (!this.filteredLetters.length && this.fullLettersIndex) {
+        //   this.uniqueSenders = this.fullLettersIndex.unique_senders;
+        //   this.uniqueRecipients = this.fullLettersIndex.unique_recipients;
+        //   this.uniqueSenderPlaces = this.fullLettersIndex.unique_sender_places;
+        //   this.uniqueRecipientPlaces = this.fullLettersIndex.unique_recipient_places;
+        //   this.uniqueYears = this.fullLettersIndex.unique_years;
+        //   this.uniqueHoldingLocations = this.fullLettersIndex.aufbewahrungsorte_short;
+        //   return;
+        // }
+        // const recipients = [];
+        // const senders = [];
+        // const placesSent = [];
+        // const placesReceived = [];
+        // const relevantYears = [];
+        // const holdingLocations = [];
+        //
+        // this.filteredLetters.forEach((letter) => {
+        //   letter.recipient_names.forEach((recipient) => {
+        //     if (!recipients.includes(recipient)) {
+        //       recipients.push(recipient);
+        //     }
+        //   });
+        //   letter.sender_names.forEach((sender) => {
+        //     if (!senders.includes(sender)) {
+        //       senders.push(sender);
+        //     }
+        //   });
+        //
+        //   letter.relevant_years.forEach((year) => {
+        //     if (!relevantYears.includes(year)) {
+        //       relevantYears.push(year);
+        //     }
+        //   });
+        //
+        //   letter.relevant_holding_locations.forEach((holdingLocation) => {
+        //     if (!holdingLocations.includes(holdingLocation)) {
+        //       holdingLocations.push(holdingLocation);
+        //     }
+        //   });
+        //   if (!placesSent.includes(letter.placename_sent)) {
+        //     placesSent.push(letter.placename_sent);
+        //   }
+        //   if (!placesReceived.includes(letter.placename_received)) {
+        //     placesReceived.push(letter.placename_received);
+        //   }
+        // });
+        //
+        // this.uniqueSenders = senders.sort();
+        // this.uniqueRecipients = recipients.sort();
+        // this.uniqueSenderPlaces = placesSent.sort();
+        // this.uniqueRecipientPlaces = placesReceived.sort();
+        // this.uniqueYears = relevantYears.sort();
+        // this.uniqueHoldingLocations = holdingLocations.sort();
+      },
+    },
+  },
   mounted() {
     this.$store.dispatch("loadEntitiesAction");
   },
@@ -275,67 +345,5 @@ export default {
       this.$refs.dateToPicker.clearDateInput();
     },
   },
-  watch: {
-    filteredLetters: {
-      deep: true,
-      immediate: true,
-      handler() {
-        if (!this.filteredLetters.length && this.fullLettersIndex) {
-          this.uniqueSenders = this.fullLettersIndex.unique_senders;
-          this.uniqueRecipients = this.fullLettersIndex.unique_recipients;
-          this.uniqueSenderPlaces = this.fullLettersIndex.unique_sender_places;
-          this.uniqueRecipientPlaces = this.fullLettersIndex.unique_recipient_places;
-          this.uniqueYears = this.fullLettersIndex.unique_years;
-          this.uniqueHoldingLocations = this.fullLettersIndex.aufbewahrungsorte_short;
-          return;
-        }
-        const recipients = [];
-        const senders = [];
-        const placesSent = [];
-        const placesReceived = [];
-        const relevantYears = [];
-        const holdingLocations = [];
-
-        this.filteredLetters.forEach((letter) => {
-          letter.recipient_names.forEach((recipient) => {
-            if (!recipients.includes(recipient)) {
-              recipients.push(recipient);
-            }
-          });
-          letter.sender_names.forEach((sender) => {
-            if (!senders.includes(sender)) {
-              senders.push(sender);
-            }
-          });
-
-          letter.relevant_years.forEach((year) => {
-            if (!relevantYears.includes(year)) {
-              relevantYears.push(year);
-            }
-          });
-
-          letter.relevant_holding_locations.forEach((holdingLocation) => {
-            if (!holdingLocations.includes(holdingLocation)) {
-              holdingLocations.push(holdingLocation);
-            }
-          });
-          if (!placesSent.includes(letter.placename_sent)) {
-            placesSent.push(letter.placename_sent);
-          }
-          if (!placesReceived.includes(letter.placename_received)) {
-            placesReceived.push(letter.placename_received);
-          }
-
-        });
-
-        this.uniqueSenders = senders.sort();
-        this.uniqueRecipients = recipients.sort();
-        this.uniqueSenderPlaces = placesSent.sort();
-        this.uniqueRecipientPlaces = placesReceived.sort();
-        this.uniqueYears = relevantYears.sort();
-        this.uniqueHoldingLocations = holdingLocations.sort();
-      }
-    }
-  }
 };
 </script>

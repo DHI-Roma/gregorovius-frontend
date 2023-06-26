@@ -137,9 +137,12 @@ export default {
   computed: {
     dateEstimate() {
       const dateWhen = this.entry?.date_when || "";
-      if (dateWhen.startsWith("0000")) {
+      if (dateWhen === "0000-00-00") {
         return "undatiert";
       }
+      // if (dateWhen.startsWith("0000")) {
+      //   return "undatiert";
+      // }
 
       if (dateWhen) {
         return this.toDate(this.entry.date_when);
@@ -198,7 +201,22 @@ export default {
       }
 
       if (year === "0000" || year === "9999") {
+        if (day !== "00" && month !== "00") {
+          const dateLong = new Intl.DateTimeFormat("de-DE", { dateStyle: "long" }).format(
+            Date.parse(`2000-${month}-${day}`)
+          );
+          return dateLong.replace("2000", "");
+        }
         return "undatiert";
+      }
+
+      if (day === "00") {
+        dateString = `${year}-${month}-01`;
+        const monthLong = new Intl.DateTimeFormat("de-DE", { month: "long" }).format(
+          Date.parse(dateString)
+        );
+
+        return `${monthLong} ${year}`;
       }
 
       try {

@@ -7,6 +7,11 @@
   >
     <q-menu>
       <q-list>
+        <q-item v-if="person.birth || person.death">
+          <template>{{ person.birth }}</template>
+          -
+          <template>{{ person.death }}</template>
+        </q-item>
         <q-item v-if="person.gnd">
           <a :href="'http://d-nb.info/gnd/' + person.gnd" target="_blank">
             <q-chip color="blue-1" class="q-ml-none">
@@ -20,11 +25,6 @@
           </a>
         </q-item>
 
-        <q-item v-if="person.birth || person.death">
-          <template>{{ person.birth }}</template>
-          -
-          <template>{{ person.death }}</template>
-        </q-item>
       </q-list>
     </q-menu>
 
