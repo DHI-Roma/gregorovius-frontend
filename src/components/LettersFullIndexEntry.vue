@@ -205,7 +205,7 @@ export default {
           const dateLong = new Intl.DateTimeFormat("de-DE", { dateStyle: "long" }).format(
             Date.parse(`2000-${month}-${day}`)
           );
-          return dateLong.replace("2000", "");
+          return dateLong.replace(" 2000", ", ohne Jahr");
         }
         return "undatiert";
       }

@@ -17,6 +17,14 @@
         <q-route-tab to="/persons" label="PERSONEN" />
         <q-route-tab to="/places" label="ORTE" />
         <q-route-tab to="/works" label="WERKE" />
+        <q-route-tab
+          class="q-ml-md"
+          to="/letters/full-index">
+          <div class="flex-block">
+            <div>Gesamtdatenbank</div>
+            <div>der Korrespondenz</div>
+          </div>
+        </q-route-tab>
         <q-space />
         <q-btn flat label="PROJEKT" @click="$router.push({ name: 'Projekt' })" />
         <q-btn flat label="ANKÜNDIGUNGEN" @click="$router.push({ name: 'announcements' })" />
