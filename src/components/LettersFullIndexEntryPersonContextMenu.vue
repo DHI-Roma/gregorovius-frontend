@@ -12,6 +12,9 @@
           -
           <template>{{ person.death }}</template>
         </q-item>
+        <q-item v-else-if="person.date_special">
+          {{ person.date_special }}
+        </q-item>
         <q-item v-if="person.gnd">
           <a :href="'http://d-nb.info/gnd/' + person.gnd" target="_blank">
             <q-chip color="blue-1" class="q-ml-none">

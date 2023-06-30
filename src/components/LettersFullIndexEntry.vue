@@ -232,7 +232,7 @@ export default {
       return "";
     },
     hasAdditionalInformation(person) {
-      return person.gnd || person.birth || person.death;
+      return person.gnd || person.birth || person.death || person.date_special;
     }
   }
 };

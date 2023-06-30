@@ -13,13 +13,12 @@
           style="font-size: 1.3em"
           @click="$router.push({ path: '/' })"
         ></q-icon>
-        <q-route-tab to="/letters" label="BRIEFE" />
-        <q-route-tab to="/persons" label="PERSONEN" />
-        <q-route-tab to="/places" label="ORTE" />
-        <q-route-tab to="/works" label="WERKE" />
-        <q-route-tab
-          class="q-ml-md"
-          to="/letters/full-index">
+        <q-route-tab to="/letters" label="BRIEFEDITION" class="tab-small" />
+        <q-route-tab to="/persons" label="PERSONEN" class="tab-small" />
+        <q-route-tab to="/places" label="ORTE" class="tab-small" />
+        <q-route-tab to="/works" label="WERKE" class="tab-small" />
+        <q-space />
+        <q-route-tab to="/letters/full-index">
           <div class="flex-block">
             <div>Gesamtdatenbank</div>
             <div>der Korrespondenz</div>
@@ -27,7 +26,7 @@
         </q-route-tab>
         <q-space />
         <q-btn flat label="PROJEKT" @click="$router.push({ name: 'Projekt' })" />
-        <q-btn flat label="ANKÜNDIGUNGEN" @click="$router.push({ name: 'announcements' })" />
+        <q-btn flat label="AKTUELLES" @click="$router.push({ name: 'announcements' })" />
         <q-btn flat label="TEAM" @click="$router.push({ name: 'Team' })" />
         <q-btn
           flat
@@ -140,5 +139,9 @@ export default {
 }
 .g-route-tabs {
   font-family: IBMPlexSansMedium;
+}
+
+.tab-small {
+  max-width: 120px;
 }
 </style>
