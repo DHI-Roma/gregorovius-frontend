@@ -65,7 +65,7 @@ export default {
           id: "steinsiek",
           img: require("../statics/img/steinsiek.jpg"),
           name: "Dr. Angela Steinsiek",
-          role: "Projekt- und Editionsleitung (DFG-Projekt)",
+          role: "Projekt- und Editionsleitung",
           tel: "+49 (0)30 4940204",
           mail: "steinsiek@dhi-roma.it",
           url: "http://dhi-roma.it/index.php?id=steinsiek"
@@ -74,19 +74,10 @@ export default {
           id: "ramazzotti",
           img: require("../statics/img/ramazzotti.jpg"),
           name: "Mariana Ramazzotti, M. A.",
-          role: "Wissenschaftliche Hilfskraft (DFG-Projekt)",
+          role: "Wissenschaftliche Hilfskraft",
           tel: "",
           mail: "ramazzotti@dhi-roma.it",
           url: "http://dhi-roma.it/index.php?id=mueller00&L=0"
-        },
-        {
-          id: "compton",
-          img: require("../statics/img/compton.jpg"),
-          name: "Marlene Compton, M. A.",
-          role: "Wissenschaftliche Hilfskraft (Gerda Henkel Stiftung)",
-          tel: "",
-          mail: "",
-          url: ""
         },
         {
           id: "pohl",
@@ -99,6 +90,11 @@ export default {
         }
       ],
       formerMembers: [
+        {
+          id: "compton",
+          name: "Marlene Compton, M. A.",
+          until: "Februar 2023",
+        },
         {
           id: "weiger",
           name: "Dr. Katharina Weiger",
