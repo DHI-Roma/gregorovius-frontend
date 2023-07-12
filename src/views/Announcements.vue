@@ -4,7 +4,7 @@
       <div class="col-md-8 col-12 q-py-xl q-gutter-y-lg">
         <q-card class="q-pa-md" flat>
           <q-card-section>
-            <div class="text-h6">Ankündigungen</div>
+            <div class="text-h6">Aktuelles</div>
           </q-card-section>
         </q-card>
 
