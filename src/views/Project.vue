@@ -88,7 +88,8 @@
                   Regesten in Deutsch und Englisch. Editionsarbeit und Kommentar stützen sich auf
                   eine über viele Jahre entstandene Personalbibliographie und ein gleichzeitig
                   angelegtes Quellenarchiv der Projektleiterin Angela Steinsiek, in dem neben den
-                  gedruckten Briefen von und an Gregorovius auch erstmals das gesamte, oft anonym in
+                  gedruckten Briefen <b>von</b>und <b>an</b> Gregorovius auch erstmals das gesamte,
+                  oft anonym in
                   Periodika publizierte Werk, die Übersetzungen und die vollständige
                   Forschungsliteratur (inklusive zeitgenössischer Rezensionen) nachgewiesen und
                   zusammengetragen wurde, das durch die Erkenntnisse der Briefedition noch einmal
@@ -137,13 +138,13 @@
                   Sie bitte an <a href="mailto:steinsiek@dhi-roma.it">steinsiek@dhi-roma.it</a>.
                 </p>
                 <p>
-                  Handschriftlich überlieferte Briefe von und an Gregorovius konnten in folgenden
+                  Handschriftlich überlieferte Briefe <b>von</b> und <b>an</b> Gregorovius konnten in folgenden
                   Archiven und Sammlungen nachgewiesen werden: Allard Pierson, University of
                   Amsterdam, Staatsbibliothek Bamberg, Privatbesitz, Erbengemeinschaft Wilhelm
                   (Basel), Universitätsbibliothek Basel, Ateneo di Scienze, Lettere ed Arti di
                   Bergamo, Archiv der Berlin-Brandenburgischen Akademie der Wissenschaften,
                   Bundesarchiv Berlin, Deutsches Historisches Museum (Berlin), Geheimes Staatsarchiv
-                  Berlin, Privatbesitz Angela Steinsiek (Berlin), Staatsbibliothek zu Berlin – PK,
+                  Berlin, Staatsbibliothek zu Berlin – PK,
                   Fondazione Sella (Biella), Heimatstube der Kreisgemeinschaft Neidenburg (Bochum),
                   Biblioteca dell’Archiginnasio (Bologna), Archivio della Deputazione di Storia
                   Patria per le Province di Romagna (Bologna), Universitäts- und Landesbibliothek
