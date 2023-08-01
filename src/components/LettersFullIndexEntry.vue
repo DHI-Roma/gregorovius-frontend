@@ -10,7 +10,9 @@
             color="primary"
             label="Brief öffnen"
             @click="$router.push({ name: 'Brief', params: { id: entry.xml_id } })"
-          />
+          >
+            <context-menu :route-to-open="$router.resolve({ name: 'Brief', params: { id: entry.xml_id } }).href"/>
+          </q-btn>
           <q-icon
             :name="entry.status === 'ED' ? 'check_circle' : 'cancel'"
             :color="entry.status === 'ED' ? 'primary' : 'red'"
@@ -119,6 +121,7 @@
 import { QMenu, QBtn, QChip, QAvatar } from "quasar";
 import LettersFullIndexEntryPersonContextMenu
   from "@/components/LettersFullIndexEntryPersonContextMenu.vue";
+import ContextMenu from "@/components/ContextMenu.vue";
 export default {
   name: "LettersFullIndexEntry",
   components: {
@@ -126,7 +129,8 @@ export default {
     QAvatar,
     QChip,
     QMenu,
-    QBtn
+    QBtn,
+    ContextMenu,
   },
   props: {
     entry: {
