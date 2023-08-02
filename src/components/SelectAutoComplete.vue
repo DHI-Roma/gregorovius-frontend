@@ -101,7 +101,10 @@ export default {
           value: selectedValue
         };
       }
-    }
+    },
+    setModel(model) {
+      this.model = model;
+    },
   }
 };
 </script>

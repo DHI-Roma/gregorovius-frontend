@@ -25,18 +25,28 @@
               label="Empfänger"
               entity="recipient"
               :options="uniqueRecipients"
+              @update-selection="applyRouteParams"
             />
             <select-auto-complete
+              ref="placeSentAutocomplete"
               label="Schreibort"
               entity="placeSent"
               :options="uniquePlacesSent"
+              @update-selection="applyRouteParams"
             />
             <select-auto-complete
+              ref="placeReceivedAutocomplete"
               label="Empfangsort"
               entity="placeReceived"
               :options="uniquePlacesReceived"
+              @update-selection="applyRouteParams"
             />
-            <select-years label="Jahre" entity="years" :options="yearsInLetters" />
+            <select-years
+              label="Jahre"
+              entity="years"
+              :options="yearsInLetters"
+              @update-selection="applyRouteParams"
+            />
           </div>
         </q-card>
       </div>
@@ -224,7 +234,7 @@ export default {
       "selectedRecipients",
       "selectedPlaceSent",
       "selectedPlaceReceived",
-      "selectedYears"
+      "selectedYears",
     ]),
     letterEntries() {
       if (!this.letters.length || !Object.entries(this.fullNameIndex).length) {
@@ -258,37 +268,10 @@ export default {
       }
 
       return "Phrasensuche aktiviert";
-    }
-  },
-  watch: {
-    selectedRecipients: function(newValue) {
-      this.applyMultiRouteParams("recipient", newValue);
     },
-    selectedPlaceSent: function(newValue) {
-      this.applySingleRouteParam("placeSent", newValue);
-    },
-    selectedPlaceReceived: function(newValue) {
-      this.applySingleRouteParam("placeReceived", newValue);
-    },
-    selectedYears: function(newValue) {
-      this.applyMultiRouteParams("years", newValue);
-    }
   },
   created() {
-    for (const [paramKey, paramValue] of Object.entries(this.$route.query)) {
-      if (paramKey === "years" || paramKey === "recipient") {
-        try {
-          this.setSelectedAction({
-            entity: paramKey,
-            value: paramValue.split(",").filter(entry => entry.length > 0)
-          });
-        } catch (error) {
-          console.log(error);
-        }
-      } else {
-        this.setSelectedAction({ entity: paramKey, value: paramValue });
-      }
-    }
+
   },
   async mounted() {
     this.$store.watch(
@@ -311,14 +294,46 @@ export default {
       this.$store.dispatch("loadFullNameIndexAction"),
       this.loadAll(),
     ]);
+
+    await this.loadRouteParams();
+
   },
   methods: {
     ...mapActions([
       "loadEntitiesAction",
       "setLoadingStatus",
       "setSelectedAction",
-      "setLettersFiltered"
+      "setLettersFiltered",
     ]),
+
+    async loadRouteParams() {
+      for (const [paramKey, paramValue] of Object.entries(this.$route.query)) {
+        if (paramKey === "years" || paramKey === "recipient") {
+          try {
+            await this.setSelectedAction({
+              entity: paramKey,
+              value: paramValue.split(",").filter(entry => entry.length > 0)
+            });
+          } catch (error) {
+            console.log(error);
+          }
+        }
+        if (paramKey === "placeSent") {
+          await this.setSelectedAction({ entity: paramKey, value: paramValue });
+          this.$refs.placeSentAutocomplete.setModel({
+            value: paramValue,
+            label: this.$store.getters.fullNameIndex[paramValue],
+          });
+        }
+        if (paramKey === "placeReceived") {
+          await this.setSelectedAction({ entity: paramKey, value: paramValue });
+          this.$refs.placeReceivedAutocomplete.setModel({
+            value: paramValue,
+            label: this.$store.getters.fullNameIndex[paramValue],
+          });
+        }
+      }
+    },
 
     async getSearchResults() {
       this.loading = true;
@@ -350,41 +365,27 @@ export default {
       }
       this.loading = false;
     },
+    applyRouteParams() {
+      const query = {};
 
-    applySingleRouteParam(entityKey, payload) {
-      if (!Object.keys(this.$route.query).length) {
-        return;
+      if (this.selectedRecipients.length) {
+        query.recipient = this.selectedRecipients.join();
       }
-      this.filter[entityKey] = payload.value;
-      if (payload.value == "") {
-        var newQuery = { ...this.$route.query };
-        delete newQuery[entityKey];
-        this.$router.push({ query: newQuery });
-      } else {
-        this.$router.push({
-          query: Object.assign({}, this.$route.query, {
-            [entityKey]: payload.value
-          })
-        });
-      }
-    },
 
-    applyMultiRouteParams(entityKey, payload) {
-      if (!Object.keys(this.$route.query).length) {
-        return;
+      if (this.selectedPlaceSent.value) {
+        query.placeSent = this.selectedPlaceSent.value;
       }
-      this.filter[entityKey] = payload.value;
-      if (!payload.length) {
-        var newQuery = { ...this.$route.query };
-        delete newQuery[entityKey];
-        this.$router.push({ query: newQuery });
-      } else {
-        this.$router.push({
-          query: Object.assign({}, this.$route.query, {
-            [entityKey]: payload.join()
-          })
-        });
+
+      if (this.selectedPlaceReceived.value) {
+        query.placeReceived = this.selectedPlaceReceived.value;
       }
+
+      if (this.selectedYears.length) {
+        query.selectedYears = this.selectedYears.join();
+      }
+
+      const href = this.$router.resolve({ query }).href;
+      window.history.pushState({}, null, href);
     },
 
     async loadAll() {
