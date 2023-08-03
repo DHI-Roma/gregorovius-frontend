@@ -13,7 +13,7 @@
           style="font-size: 1.3em"
           @click="$router.push({ path: '/' })"
         ></q-icon>
-        <q-route-tab to="/letters" label="BRIEFEDITION" class="tab-small" />
+        <q-route-tab :to="$router.resolve({ path: '/letters', query: $route.query }).href" label="BRIEFEDITION" class="tab-small" />
         <q-route-tab to="/persons" label="PERSONEN" class="tab-small" />
         <q-route-tab to="/places" label="ORTE" class="tab-small" />
         <q-route-tab to="/works" label="WERKE" class="tab-small" />

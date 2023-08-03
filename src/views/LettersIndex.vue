@@ -269,9 +269,27 @@ export default {
 
       return "Phrasensuche aktiviert";
     },
-  },
-  created() {
+    queryParams() {
+      const query = {};
 
+      if (this.selectedRecipients.length) {
+        query.recipient = this.selectedRecipients.join();
+      }
+
+      if (this.selectedPlaceSent.value) {
+        query.placeSent = this.selectedPlaceSent.value;
+      }
+
+      if (this.selectedPlaceReceived.value) {
+        query.placeReceived = this.selectedPlaceReceived.value;
+      }
+
+      if (this.selectedYears.length) {
+        query.selectedYears = this.selectedYears.join();
+      }
+
+      return query;
+    },
   },
   async mounted() {
     this.$store.watch(
@@ -366,25 +384,7 @@ export default {
       this.loading = false;
     },
     applyRouteParams() {
-      const query = {};
-
-      if (this.selectedRecipients.length) {
-        query.recipient = this.selectedRecipients.join();
-      }
-
-      if (this.selectedPlaceSent.value) {
-        query.placeSent = this.selectedPlaceSent.value;
-      }
-
-      if (this.selectedPlaceReceived.value) {
-        query.placeReceived = this.selectedPlaceReceived.value;
-      }
-
-      if (this.selectedYears.length) {
-        query.selectedYears = this.selectedYears.join();
-      }
-
-      const href = this.$router.resolve({ query }).href;
+      const href = this.$router.resolve({ query: this.queryParams }).href;
       window.history.pushState({}, null, href);
     },
 
@@ -540,10 +540,14 @@ export default {
         };
       }
 
-      const routeData = this.$router.resolve({ name, params });
+      const routeData = this.$router.resolve({
+        name,
+        params,
+        query: this.queryParams,
+      });
       switch (target) {
         case "default":
-          this.$router.push({ name, params });
+          this.$router.push({ name, params, query: this.queryParams });
           break;
         case "tab":
         case "window":
@@ -551,7 +555,6 @@ export default {
           break;
       }
     },
-    loadQueryToStore() {}
   }
 };
 </script>

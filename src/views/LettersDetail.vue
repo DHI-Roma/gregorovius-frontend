@@ -1,28 +1,13 @@
 <template>
   <div>
-    <q-page
-      v-show="!loading"
-      padding
-    >
+    <q-page v-show="!loading" padding>
       <div class="row justify-center">
-        <div
-          v-if="data.teiHeader"
-          class="col-md-8 col-12 q-py-xl q-gutter-y-lg"
-        >
-          <q-card
-            class="q-pa-xl"
-            flat
-          >
-            <div
-              v-if="editor"
-              class="text-caption text-right q-tm-sm text-secondary"
-            >
+        <div v-if="data.teiHeader" class="col-md-8 col-12 q-py-xl q-gutter-y-lg">
+          <q-card class="q-pa-xl" flat>
+            <div v-if="editor" class="text-caption text-right q-tm-sm text-secondary">
               Hrsg. <span id="editor">{{ editor }}</span>
             </div>
-            <div
-              v-if="responsible"
-              class="text-caption text-right q-tm-sm text-secondary"
-            >
+            <div v-if="responsible" class="text-caption text-right q-tm-sm text-secondary">
               Mitarb. <span id="responsible">{{ responsible }}</span>
             </div>
             <q-card-section>
@@ -34,69 +19,28 @@
               </div>
             </q-card-section>
             <q-separator dark />
-            <q-tabs
-              v-model="tab"
-              class="text-primary"
-            >
-              <q-tab
-                id="label-tgl"
-                label="Textgrundlage"
-                name="tgl"
-              />
-              <q-tab
-                v-if="hasAbstracts()"
-                id="label-reg"
-                label="Regest"
-                name="reg"
-              />
+            <q-tabs v-model="tab" class="text-primary">
+              <q-tab id="label-tgl" label="Textgrundlage" name="tgl" />
+              <q-tab v-if="hasAbstracts()" id="label-reg" label="Regest" name="reg" />
             </q-tabs>
             <q-separator />
-            <q-tab-panels
-              v-model="tab"
-              animated
-            >
-              <q-tab-panel
-                id="panel-tgl"
-                name="tgl"
-              >
+            <q-tab-panels v-model="tab" animated>
+              <q-tab-panel id="panel-tgl" name="tgl">
                 <v-runtime-template :template="msDesc" />
               </q-tab-panel>
-              <q-tab-panel
-                v-if="hasAbstracts()"
-                id="panel-reg"
-                name="reg"
-              >
-                <div
-                  v-if="getAbstractForLanguage('de')"
-                  id="abstract-de"
-                >
-                  <q-chip
-                    outline
-                    size="sm"
-                    color="primary"
-                    dense
-                  >
-                    DE
-                  </q-chip>
-                  {{ getAbstractForLanguage('de') }}
+              <q-tab-panel v-if="hasAbstracts()" id="panel-reg" name="reg">
+                <div v-if="getAbstractForLanguage('de')" id="abstract-de">
+                  <q-chip outline size="sm" color="primary" dense>
+DE
+</q-chip>
+                  {{ getAbstractForLanguage("de") }}
                 </div>
-                <q-separator
-                  v-if="getAbstractCount() > 1"
-                  spaced
-                />
-                <div
-                  v-if="getAbstractForLanguage('en')"
-                  id="abstract-en"
-                >
-                  <q-chip
-                    outline
-                    size="sm"
-                    color="primary"
-                    dense
-                  >
-                    EN
-                  </q-chip>
-                  {{ getAbstractForLanguage('en') }}
+                <q-separator v-if="getAbstractCount() > 1" spaced />
+                <div v-if="getAbstractForLanguage('en')" id="abstract-en">
+                  <q-chip outline size="sm" color="primary" dense>
+EN
+</q-chip>
+                  {{ getAbstractForLanguage("en") }}
                 </div>
               </q-tab-panel>
             </q-tab-panels>
@@ -332,13 +276,7 @@
           <q-card-section>
             <div class="text-h6">In diesem Brief erwähnte Entitäten</div>
           </q-card-section>
-          <q-table
-            grid
-            :data="mentionedEntities"
-            row-key="id"
-            flat
-            :pagination="mentionPagination"
-          >
+          <q-table grid :data="mentionedEntities" row-key="id" flat :pagination="mentionPagination">
             <template v-slot:item="props">
               <div class="q-pa-xs col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <q-card>
@@ -351,11 +289,7 @@
         </q-card>
       </div>
       <div class="row justify-center">
-        <q-card
-          bordered
-          class="col-md-8 col-12 q-pa-xl q-mb-xl"
-          flat
-        >
+        <q-card bordered class="col-md-8 col-12 q-pa-xl q-mb-xl" flat>
           <div class="text-caption q-tm-sm text-secondary">
             Zitierhinweis:
             {{ citation }}
@@ -374,26 +308,25 @@
     </q-page>
     <q-page v-show="loading">
       <div class="q-pt-xl row justify-center">
-        <q-spinner-oval
-          color="primary"
-          size="5em"
-        />
+        <q-spinner-oval color="primary" size="5em" />
       </div>
     </q-page>
   </div>
 </template>
 
 <script>
-import VRuntimeTemplate from 'v-runtime-template';
-import { mapActions, mapGetters } from 'vuex';
-import { basePathLetters } from '../router';
-import LettersText from '@/components/LettersText.vue';
-import Comment from '@/components/Comment.vue';
-import axios from 'axios';
-import { dataService } from '@/shared';
-import letterService from '@/services/letter-service';
-import metaService from '@/services/meta-service';
-import { API } from '../../env';
+import VRuntimeTemplate from "v-runtime-template";
+import { mapActions, mapGetters } from "vuex";
+import { basePathLetters } from "../router";
+import LettersText from "@/components/LettersText.vue";
+import Comment from "@/components/Comment.vue";
+import axios from "axios";
+import { dataService } from "@/shared";
+import letterService from "@/services/letter-service";
+import metaService from "@/services/meta-service";
+import { API } from "../../env";
+import tableService from "@/services/table-service";
+
 import {
   copyToClipboard,
   QCard,
@@ -408,19 +341,19 @@ import {
   QCardSection,
   QChip,
   QSplitter,
-} from 'quasar';
-import { openInNewTabMixin } from '@/mixins/openInNewTabMixin';
-import MentionsTile from '@/components/MentionsTile';
-import 'vue-photo-zoom-pro/dist/style/vue-photo-zoom-pro.css';
+} from "quasar";
+import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
+import MentionsTile from "@/components/MentionsTile";
+import "vue-photo-zoom-pro/dist/style/vue-photo-zoom-pro.css";
 import VuePhotoZoomPro from "vue-photo-zoom-pro";
 
-const TAB_TEXTGRUNDLAGE = 'tgl';
+const TAB_TEXTGRUNDLAGE = "tgl";
 const SPLITTER_SIZE_START = 100;
 
 const FG_03_03_SHOULD_DISPLAY_EDITOR = true;
 
 export default {
-  name: 'Item',
+  name: "Item",
   components: {
     MentionsTile,
     Comment,
@@ -445,26 +378,35 @@ export default {
     return {
       data: [],
       loading: true,
-      tab: 'reg',
-      mentionTab: 'all',
-      msDesc: '',
-      supplement: '',
-      physDesc: '',
+      tab: "reg",
+      mentionTab: "all",
+      msDesc: "",
+      supplement: "",
+      physDesc: "",
       splitterModel: SPLITTER_SIZE_START,
-      copyCitationLabel: 'kopieren',
+      copyCitationLabel: "kopieren",
       mentionPagination: {
         rowsPerPage: 0,
-        sortBy: 'name',
+        sortBy: "name",
       },
       mentionedEntityIdsInOrder: [],
-      selectedFacsimileSlide: '0',
+      selectedFacsimileSlide: "0",
       isFacsimileCarouselFullscreen: false,
       facsimileRotation: 0,
       facsimileZoomWidth: 0,
     };
   },
   computed: {
-    ...mapGetters(['activeComment', 'letters', 'lettersFiltered', 'facsimiles']),
+    ...mapGetters([
+      "activeComment",
+      "letters",
+      "lettersFiltered",
+      "facsimiles",
+      "selectedRecipients",
+      "selectedPlaceSent",
+      "selectedPlaceReceived",
+      "selectedYears",
+    ]),
 
     letterId() {
       return this.$route.params.id;
@@ -487,20 +429,20 @@ export default {
     },
     splitterSeparatorClass() {
       if (this.activeComment.id) {
-        return '';
+        return "";
       }
-      return 'separator-hidden';
+      return "separator-hidden";
     },
     editor() {
       if (!FG_03_03_SHOULD_DISPLAY_EDITOR) {
-        return '';
+        return "";
       }
 
       return letterService.getEditor(this.data);
     },
     responsible() {
       if (!FG_03_03_SHOULD_DISPLAY_EDITOR) {
-        return '';
+        return "";
       }
 
       return letterService.getResponsible(this.data);
@@ -525,8 +467,8 @@ export default {
 
       const personsEntityIds = this.letterEntity.properties.mentioned.persons
         .flat()
-        .join(' ')
-        .split(' ');
+        .join(" ")
+        .split(" ");
 
       return this.persons
         .filter((person) => {
@@ -546,8 +488,8 @@ export default {
       }
       const placeEntityIds = this.letterEntity.properties.mentioned.places
         .flat()
-        .join(' ')
-        .split(' ');
+        .join(" ")
+        .split(" ");
 
       return this.places
         .filter((place) => {
@@ -565,8 +507,8 @@ export default {
       return this.works.filter((work) => {
         const workEntityIds = this.letterEntity.properties.mentioned.works
           .flat()
-          .join(' ')
-          .split(' ');
+          .join(" ")
+          .split(" ");
         const matches = workEntityIds.find((mentionedWorkId) => mentionedWorkId === work.id);
         return matches ? true : false;
       });
@@ -593,7 +535,7 @@ export default {
       });
     },
 
-    ...mapGetters(['activeComment', 'letters', 'persons', 'places', 'works']),
+    ...mapGetters(["activeComment", "letters", "persons", "places", "works"]),
     currentLetterIndex() {
       return this.letters.findIndex((letter) => letter.id === this.letterId);
     },
@@ -633,7 +575,7 @@ export default {
     },
     hasLandscapeImage() {
       for (const facsimile of Object.values(this.availableFacsimiles)) {
-        if (facsimile.name.includes('_quer_')) {
+        if (facsimile.name.includes("_quer_")) {
           return true;
         }
       }
@@ -655,23 +597,23 @@ export default {
     },
     facsimileClasses() {
       if (this.isFacsimileCarouselFullscreen) {
-        return ['facsimile-fullscreen'];
+        return ["facsimile-fullscreen"];
       }
 
-      const orientationClass = this.isInLandscapeMode ? 'facsimile-landscape' : '';
+      const orientationClass = this.isInLandscapeMode ? "facsimile-landscape" : "";
 
       if (this.$q.screen.gt.lg) {
-        return ['facsimile-lg', orientationClass];
+        return ["facsimile-lg", orientationClass];
       }
 
       if (this.$q.screen.gt.md) {
-        return ['facsimile-md', orientationClass];
+        return ["facsimile-md", orientationClass];
       }
-      return ['facsimile-sm', orientationClass];
+      return ["facsimile-sm", orientationClass];
     },
     selectedFacsimileLabel() {
       if (!Object.values(this.availableFacsimiles).length) {
-        return '';
+        return "";
       }
 
       return this.availableFacsimiles[parseInt(this.selectedFacsimileSlide)].label;
@@ -685,7 +627,7 @@ export default {
   },
 
   watch: {
-    '$route.params.id': {
+    "$route.params.id": {
       handler: function (oldId, newId) {
         if (oldId !== newId) {
           this.initializeComponent();
@@ -728,18 +670,27 @@ export default {
   },
 
   methods: {
-    ...mapActions(['loadEntitiesAction', 'setSelectedEntityIds', 'setLettersFiltered']),
+    ...mapActions([
+      "loadEntitiesAction",
+      "setSelectedEntityIds",
+      "setLettersFiltered",
+      "setSelectedAction",
+    ]),
     async initializeComponent() {
-      await this.getItems();
-      await this.getXSLT('LettersMsDesc', 'msDesc');
-      await this.loadEntitiesAction();
+      await Promise.allSettled([
+        this.getItems(),
+        this.getXSLT("LettersMsDesc", "msDesc"),
+        this.loadEntitiesAction(),
+      ]);
+
+      await this.loadRouteParams();
       this.loading = false;
 
       if (!this.hasAbstracts()) {
         this.tab = TAB_TEXTGRUNDLAGE;
       }
 
-      metaService.setMetaTitle(this.titleMain + '. ' + this.titleSecondary);
+      metaService.setMetaTitle(this.titleMain + ". " + this.titleSecondary);
       metaService.setMetaAuthors([this.editor, ...letterService.getResponsibleList(this.data)]);
       metaService.refreshZotero();
 
@@ -747,39 +698,91 @@ export default {
         await this.initializeActiveComment();
       }
       this.setMentionedEntityIdsInOrder();
+
       if (this.$route.params.entityIds) {
-        const entityIds = this.$route.params.entityIds.split(',');
-        const filteredLetters = this.letters.filter((letter) => {
-          let hasMatch = false;
-          entityIds.forEach((entityId) => {
-            const mentionedPersonEntityIds = letterService.flattenMentions(
-              letter.properties.mentioned.persons
-            );
-            if (mentionedPersonEntityIds.includes(entityId)) {
-              hasMatch = true;
-              return;
-            }
+        await this.filterLetterFromMentions();
+      } else {
+        await this.filterLettersFromQueryParams();
+      }
+    },
+    async filterLetterFromMentions() {
+      const entityIds = this.$route.params.entityIds.split(",");
+      const filteredLetters = this.letters.filter((letter) => {
+        entityIds.forEach((entityId) => {
+          const mentionedPersonEntityIds = letterService.flattenMentions(
+            letter.properties.mentioned.persons
+          );
+          if (mentionedPersonEntityIds.includes(entityId)) {
+            return true;
+          }
 
-            const mentionedPlaceEntityIds = letterService.flattenMentions(
-              letter.properties.mentioned.places
-            );
-            if (mentionedPlaceEntityIds.includes(entityId)) {
-              hasMatch = true;
-              return;
-            }
+          const mentionedPlaceEntityIds = letterService.flattenMentions(
+            letter.properties.mentioned.places
+          );
+          if (mentionedPlaceEntityIds.includes(entityId)) {
+            return true;
+          }
 
-            const mentionedWorkEntityIds = letterService.flattenMentions(
-              letter.properties.mentioned.works
-            );
-            if (mentionedWorkEntityIds.includes(entityId)) {
-              hasMatch = true;
-            }
-          });
-
-          return hasMatch;
+          const mentionedWorkEntityIds = letterService.flattenMentions(
+            letter.properties.mentioned.works
+          );
+          if (mentionedWorkEntityIds.includes(entityId)) {
+            return true;
+          }
         });
 
-        await this.setLettersFiltered(filteredLetters);
+        return false;
+      });
+
+      await this.setLettersFiltered(filteredLetters);
+    },
+    async filterLettersFromQueryParams() {
+      if (this.lettersFiltered.length) {
+        return;
+      }
+
+      let filteredLetters = this.letters;
+
+      filteredLetters = tableService.filterByRecipients(filteredLetters, this.selectedRecipients);
+
+      if (this.selectedPlaceSent.value) {
+        filteredLetters = filteredLetters.filter((letter) =>
+          tableService.hasValue(letter, "place.sent", this.selectedPlaceSent.value)
+        );
+      }
+
+      if (this.selectedPlaceReceived.value) {
+        filteredLetters = filteredLetters.filter((letter) =>
+          tableService.hasValue(letter, "place.received", this.selectedPlaceReceived.value)
+        );
+      }
+
+      if (this.selectedYears.length) {
+        filteredLetters = filteredLetters.filter((letter) =>
+          !r.properties.date ? false : this.selectedYears.includes(letter.date.slice(0, 4))
+        );
+      }
+
+      await this.setLettersFiltered(filteredLetters);
+    },
+    async loadRouteParams() {
+      for (const [paramKey, paramValue] of Object.entries(this.$route.query)) {
+        if (paramKey === "years" || paramKey === "recipient") {
+          try {
+            await this.setSelectedAction({
+              entity: paramKey,
+              value: paramValue.split(",").filter((entry) => entry.length > 0),
+            });
+          } catch (error) {
+            console.log(error);
+          }
+        }
+        if (paramKey === "placeSent") {
+          await this.setSelectedAction({ entity: paramKey, value: paramValue });
+        }
+        if (paramKey === "placeReceived") {
+          await this.setSelectedAction({ entity: paramKey, value: paramValue });
+        }
       }
     },
     async initializeActiveComment() {
@@ -788,12 +791,12 @@ export default {
       );
       const commentHtml = document.querySelector(`#comment-${this.$route.params.commentId}`);
       const comment = {
-        id: commentReference.getAttribute('commentId'),
+        id: commentReference.getAttribute("commentId"),
         text: commentHtml.innerHTML,
         offset: 0,
       };
 
-      await this.$store.dispatch('setActiveComment', comment);
+      await this.$store.dispatch("setActiveComment", comment);
 
       setTimeout(() => {
         const commentReference = document.querySelector(
@@ -803,13 +806,13 @@ export default {
         comment.offsetTop = commentReference.offsetTop;
         comment.text = commentHtml.innerHTML;
 
-        this.$store.dispatch('setActiveComment', comment);
+        this.$store.dispatch("setActiveComment", comment);
       }, 0);
     },
 
     getAbstractCount() {
       const abstractsWithText = this.data.teiHeader.profileDesc.abstract.p.filter((abstract) => {
-        return abstract.hasOwnProperty('#text');
+        return abstract.hasOwnProperty("#text");
       });
 
       return abstractsWithText.length;
@@ -820,21 +823,21 @@ export default {
     getAbstractForLanguage(language) {
       try {
         const abstractObject = this.data.teiHeader.profileDesc.abstract.p.filter((abstract) => {
-          return abstract['@xml:lang'] === language;
+          return abstract["@xml:lang"] === language;
         })[0];
-        return abstractObject['#text'];
+        return abstractObject["#text"];
       } catch {
-        return '';
+        return "";
       }
     },
     async getItems() {
       try {
         const response = await axios.get(`${API}${basePathLetters}/${this.letterId}`, {
-          headers: { Accept: 'application/json' },
+          headers: { Accept: "application/json" },
         });
         this.data = response.data;
         if (response.status === 404) {
-          this.$router.push({ path: '/404' });
+          this.$router.push({ path: "/404" });
         }
       } catch (error) {
         console.error(error);
@@ -869,78 +872,80 @@ export default {
         text: commentHtml.innerHTML,
       };
       commentUpdate.offsetTop = activeCommentReference.offsetTop;
-      this.$store.dispatch('setActiveComment', commentUpdate);
+      this.$store.dispatch("setActiveComment", commentUpdate);
     },
     copyCitation() {
       const citation = this.citation + this.location;
       copyToClipboard(citation)
         .then(() => {
-          this.copyCitationLabel = 'kopiert';
+          this.copyCitationLabel = "kopiert";
           setTimeout(() => {
-            this.copyCitationLabel = 'kopieren';
+            this.copyCitationLabel = "kopieren";
           }, 3000);
         })
-        .catch(() => console.log('Something went wrong while copying to clipboard.'));
+        .catch(() => console.log("Something went wrong while copying to clipboard."));
     },
     getWorkType(type) {
       switch (type) {
-        case 'gregoroviusMain':
-          return 'Werkregister Gregorovius';
-        case 'gregoroviusTranslation':
-          return 'Übersetzungen';
-        case 'othersMain':
-          return 'Werke anderer Autoren';
-        case 'secondary':
-          return 'Sekundärliteratur';
+        case "gregoroviusMain":
+          return "Werkregister Gregorovius";
+        case "gregoroviusTranslation":
+          return "Übersetzungen";
+        case "othersMain":
+          return "Werke anderer Autoren";
+        case "secondary":
+          return "Sekundärliteratur";
         default:
-          return 'Unbekannt';
+          return "Unbekannt";
       }
     },
     async openPreviousLetter() {
-      await this.$store.dispatch('unselectComment');
+      await this.$store.dispatch("unselectComment");
       await this.$router.push({
-        name: 'Brief',
+        name: "Brief",
         params: {
           id: this.previousLetter.id,
         },
       });
     },
     async openNextLetter() {
-      await this.$store.dispatch('unselectComment');
+      await this.$store.dispatch("unselectComment");
       await this.$router.push({
-        name: 'Brief',
+        name: "Brief",
         params: {
           id: this.nextLetter.id,
         },
       });
     },
     async openPreviousLetterInSelection() {
-      await this.$store.dispatch('unselectComment');
+      await this.$store.dispatch("unselectComment");
       await this.$router.push({
-        name: 'Brief',
+        name: "Brief",
         params: {
           id: this.previousLetterInSelection.id,
         },
+        query: this.$route.query,
       });
     },
     async openNextLetterInSelection() {
-      await this.$store.dispatch('unselectComment');
+      await this.$store.dispatch("unselectComment");
       await this.$router.push({
-        name: 'Brief',
+        name: "Brief",
         params: {
           id: this.nextLetterInSelection.id,
         },
+        query: this.$route.query,
       });
     },
     setMentionedEntityIdsInOrder() {
       setTimeout(() => {
         const entityIds = [];
         const entityIdsFromDomNodes = document
-          .querySelector('.g-edition-text')
-          .querySelectorAll('.g-entity-link[entity-id]');
+          .querySelector(".g-edition-text")
+          .querySelectorAll(".g-entity-link[entity-id]");
 
         entityIdsFromDomNodes.forEach((node) => {
-          const ids = node.getAttribute('entity-id').split(' ');
+          const ids = node.getAttribute("entity-id").split(" ");
           entityIds.push(...ids);
         });
 
@@ -987,7 +992,7 @@ export default {
     },
     applyZoomWidth() {
       const facsimileImage = document.querySelector(
-        '#facsimile-img-' + this.selectedFacsimileSlide
+        "#facsimile-img-" + this.selectedFacsimileSlide
       );
       if (!facsimileImage) {
         return;
@@ -1004,7 +1009,7 @@ export default {
         this.facsimileZoomWidth = facsimileImage.clientWidth * 1.5;
         return;
       } else if (this.isFacsimileCarouselFullscreen) {
-        const additionalWidth = ((window.innerWidth - facsimileImage.clientWidth) / 2) - 50;
+        const additionalWidth = (window.innerWidth - facsimileImage.clientWidth) / 2 - 50;
         this.facsimileZoomWidth = facsimileImage.clientWidth + additionalWidth;
         return;
       }
