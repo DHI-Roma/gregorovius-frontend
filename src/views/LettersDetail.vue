@@ -741,9 +741,15 @@ export default {
         return;
       }
 
+      if (!Object.entries(this.$route.query).length) {
+        return;
+      }
+
       let filteredLetters = this.letters;
 
-      filteredLetters = tableService.filterByRecipients(filteredLetters, this.selectedRecipients);
+      if (this.selectedRecipients.length) {
+        filteredLetters = tableService.filterByRecipients(filteredLetters, this.selectedRecipients);
+      }
 
       if (this.selectedPlaceSent.value) {
         filteredLetters = filteredLetters.filter((letter) =>
@@ -759,7 +765,7 @@ export default {
 
       if (this.selectedYears.length) {
         filteredLetters = filteredLetters.filter((letter) =>
-          !r.properties.date ? false : this.selectedYears.includes(letter.date.slice(0, 4))
+          !letter.date ? false : this.selectedYears.includes(letter.date.slice(0, 4))
         );
       }
 
