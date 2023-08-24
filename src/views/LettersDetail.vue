@@ -708,7 +708,7 @@ export default {
     async filterLetterFromMentions() {
       const entityIds = this.$route.params.entityIds.split(",");
       const filteredLetters = this.letters.filter((letter) => {
-        entityIds.forEach((entityId) => {
+        for (const entityId of entityIds) {
           const mentionedPersonEntityIds = letterService.flattenMentions(
             letter.properties.mentioned.persons
           );
@@ -729,7 +729,7 @@ export default {
           if (mentionedWorkEntityIds.includes(entityId)) {
             return true;
           }
-        });
+        }
 
         return false;
       });
