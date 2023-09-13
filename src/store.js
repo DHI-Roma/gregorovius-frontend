@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import { dataService } from "./shared";
+import { sortLetterByDate } from "@/services/sort-service";
 
 Vue.use(Vuex);
 
@@ -33,12 +34,8 @@ export default new Vuex.Store({
     },
   },
   getters: {
-    letters: (state) =>
-      state.letters.sort((letterA, letterB) => letterA.properties.date > letterB.properties.date),
-    lettersFiltered: (state) =>
-      state.lettersFiltered.sort(
-        (letterA, letterB) => letterA.properties.date > letterB.properties.date
-      ),
+    letters: (state) => state.letters.sort(sortLetterByDate),
+    lettersFiltered: (state) => state.lettersFiltered.sort(sortLetterByDate),
     yearsInLetters: (state) => {
       const years = state.letters.map((e) => {
         if (e.properties.date !== null) {
