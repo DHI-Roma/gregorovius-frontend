@@ -699,6 +699,7 @@ export default {
       }
       this.setMentionedEntityIdsInOrder();
 
+      await this.setLettersFiltered([]);
       if (this.$route.params.entityIds) {
         await this.filterLetterFromMentions();
       } else {
@@ -925,21 +926,37 @@ export default {
     },
     async openPreviousLetterInSelection() {
       await this.$store.dispatch("unselectComment");
+      let name = "Brief";
+      const params = {
+        id: this.nextLetterInSelection.id,
+      };
+
+      if (this.$route.params.entityIds) {
+        name = "Briefe mit vorhandenen Entitaeten";
+        params.entityIds = this.$route.params.entityIds;
+      }
+
       await this.$router.push({
-        name: "Brief",
-        params: {
-          id: this.previousLetterInSelection.id,
-        },
+        name,
+        params,
         query: this.$route.query,
       });
     },
     async openNextLetterInSelection() {
       await this.$store.dispatch("unselectComment");
+
+      let name = "Brief";
+      const params = {
+        id: this.nextLetterInSelection.id,
+      };
+
+      if (this.$route.params.entityIds) {
+        name = "Briefe mit vorhandenen Entitaeten";
+        params.entityIds = this.$route.params.entityIds;
+      }
       await this.$router.push({
-        name: "Brief",
-        params: {
-          id: this.nextLetterInSelection.id,
-        },
+        name,
+        params,
         query: this.$route.query,
       });
     },
