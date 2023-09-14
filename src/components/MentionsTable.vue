@@ -20,8 +20,8 @@
         <q-td
           :props="props"
           class="cursor-pointer"
-          @click.native="$router.push({ path: `/letters/${props.row.id}` })"
-          @click.middle="openInNewTab({ path: `/letters/${props.row.id}` })"
+          @click.native="$router.push({ path: `/letters/${props.row.id}/filters/${entityId}` })"
+          @click.middle="openInNewTab({ path: `/letters/${props.row.id}/filters/${entityId}` })"
           >{{ props.value }}</q-td
         >
         <context-menu
