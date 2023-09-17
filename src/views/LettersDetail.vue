@@ -978,7 +978,6 @@ export default {
       });
     },
     setMentionedEntityIdsInOrder() {
-      return;
       setTimeout(() => {
         const entityIds = [];
         const entityIdsFromDomNodes = document
