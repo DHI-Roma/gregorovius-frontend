@@ -25,7 +25,7 @@
           >{{ props.value }}</q-td
         >
         <context-menu
-          :route-to-open="$router.resolve({ path: `/letters/${props.row.id}` }).href"
+          :route-to-open="$router.resolve({ path: `/letters/${props.row.id}/filters/${entityId}` }).href"
         ></context-menu>
       </template>
     </q-table>

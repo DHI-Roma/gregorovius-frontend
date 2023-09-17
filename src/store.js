@@ -106,6 +106,7 @@ export default new Vuex.Store({
           state.selectedPlaceSent = newModel;
           break;
         case "years":
+        case "selectedYears":
           state.selectedYears = payload.value;
           break;
         default:

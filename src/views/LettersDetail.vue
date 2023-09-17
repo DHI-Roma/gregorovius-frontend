@@ -465,6 +465,10 @@ export default {
         return [];
       }
 
+      if (!this.letterEntity) {
+        return [];
+      }
+
       const personsEntityIds = this.letterEntity.properties.mentioned.persons
         .flat()
         .join(" ")
@@ -486,6 +490,11 @@ export default {
       if (!this.places.length) {
         return [];
       }
+
+      if (!this.letterEntity) {
+        return [];
+      }
+
       const placeEntityIds = this.letterEntity.properties.mentioned.places
         .flat()
         .join(" ")
@@ -501,6 +510,10 @@ export default {
 
     mentionedWorkEntities() {
       if (!this.works.length) {
+        return [];
+      }
+
+      if (!this.letterEntity) {
         return [];
       }
 
@@ -684,10 +697,19 @@ export default {
       ]);
 
       await this.loadRouteParams();
-      this.loading = false;
 
       if (!this.hasAbstracts()) {
         this.tab = TAB_TEXTGRUNDLAGE;
+      }
+
+      if (!this.$route.params.entityIds && !Object.entries(this.$route.query).length) {
+        await this.setLettersFiltered([]);
+      }
+
+      if (this.$route.params.entityIds) {
+        await this.filterLetterFromMentions();
+      } else if (Object.entries(this.$route.query).length) {
+        await this.filterLettersFromQueryParams();
       }
 
       metaService.setMetaTitle(this.titleMain + ". " + this.titleSecondary);
@@ -699,12 +721,7 @@ export default {
       }
       this.setMentionedEntityIdsInOrder();
 
-      await this.setLettersFiltered([]);
-      if (this.$route.params.entityIds) {
-        await this.filterLetterFromMentions();
-      } else {
-        await this.filterLettersFromQueryParams();
-      }
+      this.loading = false;
     },
     async filterLetterFromMentions() {
       const entityIds = this.$route.params.entityIds.split(",");
@@ -766,7 +783,7 @@ export default {
 
       if (this.selectedYears.length) {
         filteredLetters = filteredLetters.filter((letter) =>
-          !letter.date ? false : this.selectedYears.includes(letter.date.slice(0, 4))
+          !letter.properties.date ? false : this.selectedYears.includes(letter.properties.date.slice(0, 4))
         );
       }
 
@@ -774,7 +791,7 @@ export default {
     },
     async loadRouteParams() {
       for (const [paramKey, paramValue] of Object.entries(this.$route.query)) {
-        if (paramKey === "years" || paramKey === "recipient") {
+        if (["years", "selectedYears", "recipient"].includes(paramKey)) {
           try {
             await this.setSelectedAction({
               entity: paramKey,
@@ -961,6 +978,7 @@ export default {
       });
     },
     setMentionedEntityIdsInOrder() {
+      return;
       setTimeout(() => {
         const entityIds = [];
         const entityIdsFromDomNodes = document
