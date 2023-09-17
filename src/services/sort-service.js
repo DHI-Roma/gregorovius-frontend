@@ -1,4 +1,4 @@
-export const sortLetterByDate  = (letterA, letterB) => {
+export const sortLetterByDate = (letterA, letterB) => {
   if (letterA.properties.date > letterB.properties.date) {
     return 1;
   }
@@ -8,4 +8,4 @@ export const sortLetterByDate  = (letterA, letterB) => {
   }
 
   return 0;
-}
+};

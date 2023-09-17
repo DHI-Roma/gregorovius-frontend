@@ -945,7 +945,7 @@ export default {
       await this.$store.dispatch("unselectComment");
       let name = "Brief";
       const params = {
-        id: this.nextLetterInSelection.id,
+        id: this.previousLetterInSelection.id,
       };
 
       if (this.$route.params.entityIds) {
