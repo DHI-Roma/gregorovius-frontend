@@ -88,11 +88,21 @@ export default {
         return "";
       }
 
-      if (this.entity.properties.birth && this.entity.properties.death) {
-        return `${this.entity.properties.birth} – ${this.entity.properties.death}`;
+      let subtitle = "";
+
+      if (this.entity.properties.birth) {
+        subtitle += this.entity.properties.birth;
       }
 
-      return "";
+      if (this.entity.properties.birth || this.entity.properties.death) {
+        subtitle += " - ";
+      }
+
+      if (this.entity.properties.death) {
+        subtitle += this.entity.properties.death;
+      }
+
+      return subtitle.trim();
     },
     backgroundColorClass() {
       if (this.entity.entity === ENTITY_PERSON) {
