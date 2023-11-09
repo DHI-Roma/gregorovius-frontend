@@ -11,10 +11,16 @@
     <xsl:choose>
         <xsl:when test="string()">
             <div>
-                <b>H</b>: 
+                <b>H</b>:
                 <xsl:for-each select="./*">
-                    <xsl:value-of select="."/>
-                    <xsl:if test="position() != last()">, </xsl:if>
+                    <xsl:choose>
+                    <xsl:when test="@type = 'URLImages'">
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="."/>
+                        <xsl:if test="position() != last()">, </xsl:if>
+                    </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:for-each>
             </div>
         </xsl:when>
@@ -22,7 +28,7 @@
             <xsl:apply-templates/>
         </xsl:otherwise>
     </xsl:choose>
-</xsl:template> 
+</xsl:template>
 
 <!-- Render physical description and supplements -->
 <xsl:template match="//tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:physDesc">
@@ -36,14 +42,14 @@
             <div><xsl:apply-templates select="tei:p[1]"/></div>
         </xsl:otherwise>
     </xsl:choose>
-</xsl:template> 
+</xsl:template>
 
 <!-- Render copies (Abschriften) -->
 <xsl:template match="tei:fileDesc/tei:sourceDesc/tei:listWit//tei:witness/tei:msDesc[@type='copy']">
     <xsl:choose>
         <xsl:when test="string()">
             <div class="q-pt-md">
-                <b>h</b>: 
+                <b>h</b>:
                 <xsl:for-each select="./*/*">
                     <xsl:value-of select="."/>
                     <xsl:if test="position() != last()">, </xsl:if>
@@ -54,14 +60,14 @@
             <xsl:apply-templates/>
         </xsl:otherwise>
     </xsl:choose>
-</xsl:template> 
+</xsl:template>
 
 <!-- Render prints (Drucke) -->
 <xsl:template match="tei:fileDesc/tei:sourceDesc/tei:listWit//tei:witness/tei:bibl[@type='print']">
     <xsl:choose>
         <xsl:when test="string()">
             <div class="q-pt-md">
-                <b>D</b>: 
+                <b>D</b>:
                 <xsl:for-each select="text()"><xsl:value-of select="."/></xsl:for-each>
             </div>
         </xsl:when>
@@ -69,14 +75,14 @@
             <xsl:apply-templates/>
         </xsl:otherwise>
     </xsl:choose>
-</xsl:template> 
+</xsl:template>
 
 <!-- Render concepts (Konzepte) -->
 <xsl:template match="tei:fileDesc/tei:sourceDesc/tei:listWit//tei:witness/tei:msDesc[@type='concept']">
     <xsl:choose>
         <xsl:when test="text()">
             <div class="q-pt-md">
-                <b>K</b>: 
+                <b>K</b>:
                 <xsl:apply-templates/>
             </div>
         </xsl:when>
@@ -84,28 +90,28 @@
             <xsl:apply-templates/>
         </xsl:otherwise>
     </xsl:choose>
-</xsl:template> 
+</xsl:template>
 
 <xsl:template match="tei:fileDesc/tei:sourceDesc/tei:listWit//tei:witness[@select='#this']">
-    <div><q-tooltip anchor="center left" self="center right">Textgrundlage <q-icon name="arrow_right"/></q-tooltip><b><xsl:apply-templates/></b></div> 
-</xsl:template> 
+    <div><q-tooltip anchor="center left" self="center right">Textgrundlage <q-icon name="arrow_right"/></q-tooltip><b><xsl:apply-templates/></b></div>
+</xsl:template>
 
 <xsl:template match="tei:correspContext">
     <div class="q-pt-md text-bold">Korrespondenzkontext</div>
     <xsl:apply-templates/>
-</xsl:template> 
+</xsl:template>
 
 <xsl:template match="tei:correspContext/tei:ref">
     <xsl:choose>
         <xsl:when test="@type='next'">
             <div>
-                <b>A</b>: 
+                <b>A</b>:
                 <xsl:for-each select="text()"><xsl:value-of select="."/></xsl:for-each>
             </div>
         </xsl:when>
         <xsl:when test="@type='prev'">
             <div>
-                <b>B</b>: 
+                <b>B</b>:
                 <xsl:for-each select="text()"><xsl:value-of select="."/></xsl:for-each>
             </div>
         </xsl:when>
