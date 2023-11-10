@@ -12,15 +12,9 @@
         <xsl:when test="string()">
             <div>
                 <b>H</b>:
-                <xsl:for-each select="./*">
-                    <xsl:choose>
-                    <xsl:when test="@type = 'URLImages'">
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="."/>
-                        <xsl:if test="position() != last()">, </xsl:if>
-                    </xsl:otherwise>
-                    </xsl:choose>
+                <xsl:for-each select="./*[not(@type = 'URLImages')]">
+                    <xsl:value-of select="."/>
+                    <xsl:if test="(position() != last())">, </xsl:if>
                 </xsl:for-each>
             </div>
         </xsl:when>
