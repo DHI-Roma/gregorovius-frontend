@@ -13,12 +13,12 @@
         <q-td
           :props="props"
           class="cursor-pointer"
-          @click.native="$router.push({ path: `/letters/${props.row.id}` })"
-          @click.middle="openInNewTab({ path: `/letters/${props.row.id}` })"
+          @click.native="$router.push({ path: `/letters/${props.row.id}`, query: { recipient: recipientId } })"
+          @click.middle="openInNewTab({ path: `/letters/${props.row.id}`, query: { recipient: recipientId } })"
           >{{ props.value }}</q-td
         >
         <context-menu
-          :route-to-open="$router.resolve({ path: `/letters/${props.row.id}` }).href"
+          :route-to-open="$router.resolve({ path: `/letters/${props.row.id}`, query: { recipient: recipientId } }).href"
         ></context-menu>
       </template>
     </q-table>
@@ -39,8 +39,12 @@ export default {
   props: {
     letters: {
       type: Array,
-      required: true
-    }
+      required: true,
+    },
+    recipientId: {
+      type: String,
+      required: true,
+    },
   },
   data() {
     return {

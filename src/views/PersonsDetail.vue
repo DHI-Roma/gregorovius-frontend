@@ -8,7 +8,10 @@
       </div>
       <div v-if="correspondences.length" id="correspondences" class="row justify-center">
         <div class="col-md-8 col-12 q-pb-xl q-gutter-y-lg">
-          <CorrespondenceTable :letters="correspondences"></CorrespondenceTable>
+          <CorrespondenceTable
+            :letters="correspondences"
+            :recipient-id="entityId"
+          ></CorrespondenceTable>
         </div>
       </div>
       <div class="row justify-center">
