@@ -11,7 +11,7 @@
       <div class="row q-mt-lg">
         <div class="text-h7 text-left text-white text-bold q-pr-xs">Herausgegeben von</div>
         <div class="text-h7 text-left text-white">
-          Dr. Angela Steinsiek
+          Angela Steinsiek
         </div>
       </div>
     </div>

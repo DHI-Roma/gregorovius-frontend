@@ -36,7 +36,7 @@
         </q-card>
         <q-card class="col-md-8 col-12 q-mt-xl" flat>
           <q-card-section>
-            <div class="text-h6 text-center">Ehemalige Mitarbeiter</div>
+            <div class="text-h6 text-center">Ehemalige Mitarbeitende</div>
           </q-card-section>
           <q-separator dark />
         </q-card>
@@ -71,25 +71,21 @@ export default {
           url: "http://dhi-roma.it/index.php?id=steinsiek"
         },
         {
-          id: "ramazzotti",
-          img: require("../statics/img/ramazzotti.jpg"),
-          name: "Mariana Ramazzotti, M. A.",
-          role: "Wissenschaftliche Hilfskraft",
-          tel: "",
-          mail: "ramazzotti@dhi-roma.it",
-          url: "http://dhi-roma.it/index.php?id=mueller00&L=0"
-        },
-        {
           id: "pohl",
           img: require("../statics/img/pohl.jpg"),
           name: "Oliver Pohl, M. A.",
           role: "Werkauftrag",
           tel: "",
           mail: "kontakt@wildegans-solutions.de",
-          url: ""
-        }
+          url: "",
+        },
       ],
       formerMembers: [
+        {
+          id: "ramazzotti",
+          name: "Mariana Ramazzotti, M. A.",
+          until: "September 2023"
+        },
         {
           id: "compton",
           name: "Marlene Compton, M. A.",

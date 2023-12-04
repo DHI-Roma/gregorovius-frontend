@@ -88,54 +88,18 @@
                   Regesten in Deutsch und Englisch. Editionsarbeit und Kommentar stützen sich auf
                   eine über viele Jahre entstandene Personalbibliographie und ein gleichzeitig
                   angelegtes Quellenarchiv der Projektleiterin Angela Steinsiek, in dem neben den
-                  gedruckten Briefen <b>von</b>und <b>an</b> Gregorovius auch erstmals das gesamte,
+                  gedruckten Briefen <b>von</b> und <b>an</b> Gregorovius auch erstmals das gesamte,
                   oft anonym in
                   Periodika publizierte Werk, die Übersetzungen und die vollständige
                   Forschungsliteratur (inklusive zeitgenössischer Rezensionen) nachgewiesen und
                   zusammengetragen wurde, das durch die Erkenntnisse der Briefedition noch einmal
                   wesentlich erweitert werden konnte.
                 </p>
-                <p class="text-bold">
-                  Der aktuelle Stand der Arbeit an den Texten und Datensätzen wird als
-                  <span class="text-green">Betaversion</span>
-                  präsentiert, die in regelmäßigen Abständen aktualisiert und in den
-                  Funktionalitäten weiterentwickelt wird.
-                </p>
-                <p>
-                  Das Projekt des Deutschen Historischen Instituts in Rom wurde von dem
-                  Institutsdirektor Professor Dr. Martin Baumeister initiiert, der es zusammen mit
-                  Dr. Angela Steinsiek verantwortet. Seit 2017 (bis 2023) wird es von der Deutschen
-                  Forschungsgemeinschaft (DFG) gefördert. Die digitale Präsentation der Briefe fand
-                  in den ersten zwei Jahren in Zusammenarbeit mit der Berlin-Brandenburgischen
-                  Akademie der Wissenschaften statt. Zudem wird das Projekt seit 2018 (bis 2023) von
-                  der Gerda Henkel Stiftung großzügig gefördert.
-                </p>
-                <p>
-                  Dr. Wiebke Fastenrath Vinattieri erstellte Rohtranskriptionen von Briefen von
-                  Gregorovius an Michele Amari (18), Guido Biagi (1), Angelo De Gubernatis (2),
-                  Giuseppe De Leva (4), Emilia Viola Ferretti (2), Tommaso Gar (23), Raffaele
-                  Mariano (56), Ferdinand Martini (1), Francesco Protonotari (2), Gustavo
-                  Strafforello (1), Oreste Tommasini (2) und Filippo Zamboni (1). Textherstellung
-                  und Stellenkommentare vieler italienischer Briefe wurden von Dr. Frederike Neuber,
-                  Dr. Katharina Weiger und Dr. Anna Maria Voci übernommen. Die jeweiligen
-                  Zuständigkeiten sind in den einzelnen Briefen angegeben und analog in den
-                  Zitierhinweisen hinterlegt. Anna Maria Voci hat zudem sämtliche Transkriptionen
-                  der italienisch-sprachigen Briefe an den Handschriften überprüft, wofür ihr an
-                  dieser Stelle noch einmal ein ganz besonderer Dank ausgesprochen sei. Die
-                  technische Umsetzung der Edition lag in den ersten zwei Jahren in den Händen von
-                  Theodor Costea, M. A. Die Weiterentwicklung und endgültige Gestaltung der Website
-                  hat Oliver Pohl, M. A umgesetzt. Von Marlene Compton, M. A. stammen die englischen
-                  (amerikanischen) Übersetzungen der Regesten. Eric Müller, M. A. und Raphael
-                  Stepken haben als wissenschaftliche Hilfskraft die Edition vorbereitende und
-                  begleitende Arbeiten übernommen. Ab September 2020 hat Mariana Ramazzotti, M. A.
-                  als wissenschaftliche Hilfskraft die Projektarbeit in allen Belangen mit
-                  Engagement unterstützt.
-                </p>
                 <p><b>Feedback</b></p>
                 <p>
                   Die Erstellung der digitalen Edition und Datenbestände ist ein fortlaufender
                   Prozess. Hinweise und Ergänzungen werden dankbar entgegengenommen. Bitte schreiben
-                  Sie bitte an <a href="mailto:steinsiek@dhi-roma.it">steinsiek@dhi-roma.it</a>.
+                  Sie an <a href="mailto:steinsiek@dhi-roma.it">steinsiek@dhi-roma.it</a>.
                 </p>
                 <p>
                   Handschriftlich überlieferte Briefe <b>von</b> und <b>an</b> Gregorovius konnten in folgenden
@@ -188,6 +152,36 @@
                   Wienbibliothek im Rathaus, Herzog-August-Bibliothek Wolfenbüttel,
                   Niedersächsisches Landesarchiv (Wolfenbüttel), Universität Würzburg,
                   Martin-von-Wagner-Museum, Zentralbibliothek Zürich.
+                </p>
+                <p>
+                  Das Projekt des Deutschen Historischen Instituts in Rom wurde von dem
+                  Institutsdirektor Professor Dr. Martin Baumeister initiiert, der es zusammen mit
+                  Dr. Angela Steinsiek verantwortet. Seit 2017 (bis 2023) wird es von der Deutschen
+                  Forschungsgemeinschaft (DFG) gefördert. Die digitale Präsentation der Briefe fand
+                  in den ersten zwei Jahren in Zusammenarbeit mit der Berlin-Brandenburgischen
+                  Akademie der Wissenschaften statt. Zudem wird das Projekt seit 2018 (bis 2023) von
+                  der Gerda Henkel Stiftung großzügig gefördert.
+                </p>
+                <p>
+                  Dr. Wiebke Fastenrath Vinattieri erstellte Rohtranskriptionen von Briefen von
+                  Gregorovius an Michele Amari (18), Guido Biagi (1), Angelo De Gubernatis (2),
+                  Giuseppe De Leva (4), Emilia Viola Ferretti (2), Tommaso Gar (23), Raffaele
+                  Mariano (56), Ferdinand Martini (1), Francesco Protonotari (2), Gustavo
+                  Strafforello (1), Oreste Tommasini (2) und Filippo Zamboni (1). Textherstellung
+                  und Stellenkommentare vieler italienischer Briefe wurden von Dr. Frederike Neuber,
+                  Dr. Katharina Weiger und Dr. Anna Maria Voci übernommen. Die jeweiligen
+                  Zuständigkeiten sind in den einzelnen Briefen angegeben und analog in den
+                  Zitierhinweisen hinterlegt. Anna Maria Voci hat zudem sämtliche Transkriptionen
+                  der italienisch-sprachigen Briefe an den Handschriften überprüft, wofür ihr an
+                  dieser Stelle noch einmal ein ganz besonderer Dank ausgesprochen sei. Die
+                  technische Umsetzung der Edition lag in den ersten zwei Jahren in den Händen von
+                  Theodor Costea, M. A. Die Weiterentwicklung und endgültige Gestaltung der Website
+                  hat Oliver Pohl, M. A umgesetzt. Von Marlene Compton, M. A. stammen die englischen
+                  (amerikanischen) Übersetzungen der Regesten. Eric Müller, M. A. und Raphael
+                  Stepken haben als wissenschaftliche Hilfskraft die Edition vorbereitende und
+                  begleitende Arbeiten übernommen. Ab September 2020 hat Mariana Ramazzotti, M. A.
+                  als wissenschaftliche Hilfskraft die Projektarbeit in allen Belangen mit
+                  Engagement unterstützt.
                 </p>
               </div>
             </q-tab-panel>
