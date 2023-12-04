@@ -1,7 +1,7 @@
 ## Gegenstand der Edition
 Die „Gesammelten deutschen und italienischen Briefe“ von Ferdinand Gregorovius
 erschließen eine repräsentative Auswahl von 600-700 Briefen von Ferdinand Gregorovius als kritische digitale Edition in der jeweiligen Originalsprache mit umfassenden Kommentaren.
-Die vorliegende Betaversion präsentiert den aktuellen Stand der Arbeit an den Texten und Datensätzen.
+Die vorliegende Version präsentiert den aktuellen Stand der Arbeit an den Texten und Datensätzen.
 Perspektivisch sollen zudem alle Briefe, wo die bestandshaltenden Sammlungen dies erlauben, als digitale Faksimiles der Originalhandschrift veröffentlicht werden.
 
 ## Die digitale Editionsumgebung
