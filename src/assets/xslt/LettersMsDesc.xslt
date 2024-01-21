@@ -44,7 +44,7 @@
         <xsl:when test="string()">
             <div class="q-pt-md">
                 <b>h</b>:
-                <xsl:for-each select="./*/*">
+                <xsl:for-each select="./*/*[not(@type = 'URLImages')]">
                     <xsl:value-of select="."/>
                     <xsl:if test="position() != last()">, </xsl:if>
                 </xsl:for-each>
