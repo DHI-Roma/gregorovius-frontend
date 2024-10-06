@@ -45,8 +45,18 @@
             <div class="q-pt-md">
                 <b>h</b>:
                 <xsl:for-each select="./*/*[not(@type = 'URLImages')]">
-                    <xsl:value-of select="."/>
-                    <xsl:if test="position() != last()">, </xsl:if>
+                    <xsl:choose>
+                        <xsl:when test="name(.) = 'p'">
+                            <br/>
+                            <xsl:value-of select="."/>
+                            <xsl:variable name="disableComma" select="'true'"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="."/>
+                            <xsl:variable name="disableComma" select="'false'"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    <xsl:if test="position() != last() and disableComma = 'false'">, </xsl:if>
                 </xsl:for-each>
             </div>
         </xsl:when>
@@ -55,6 +65,7 @@
         </xsl:otherwise>
     </xsl:choose>
 </xsl:template>
+
 
 <!-- Render prints (Drucke) -->
 <xsl:template match="tei:fileDesc/tei:sourceDesc/tei:listWit//tei:witness/tei:bibl[@type='print']">
