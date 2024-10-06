@@ -453,7 +453,7 @@ export default {
     },
 
     location() {
-      return window.location;
+      return window.location.protocol + "//" + window.location.host + window.location.pathname
     },
 
     letterEntity() {
