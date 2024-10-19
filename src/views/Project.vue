@@ -35,27 +35,66 @@
             >
               <div class="text-body1">
                 <p>
-                  Ferdinand Gregorovius hat mehr als zwanzig Jahre in Rom gelebt und hier sein
-                  Hauptwerk, die „Geschichte der Stadt Rom im Mittelalter“, geschrieben, das ihm
-                  1876 die römische Ehrenbürgerwürde einbrachte. Auch wenn Gregorovius vor seinem
-                  Tod viele der Briefe <b>an ihn</b> vernichtet hat und viele seiner vertrauten
-                  Freunde veranlasst hat, seine Briefe <b>von ihm</b> zu vernichten, haben sich
-                  neben seinem historiographischen und schriftstellerischen Œuvre mehrere Tausend
-                  Briefe erhalten. Das Gregorovius-Briefkorpus ist wissenschafts-, zeit- und
-                  kulturgeschichtlich von höchster Relevanz, weil er selbst sich als Grenzgänger
-                  zwischen Geschichtsschreibung und Literatur verstand. Insbesondere die weitgehend
-                  vollständig überlieferten Verlags-Briefe an und von Cotta sowie die an Brockhaus
-                  erlauben einen konkreten Einblick in die Werkstatt dieses außerhalb akademischer
-                  Strukturen schreibenden Historikers. Die Briefe dieses kritischen Beobachters
-                  seiner Gegenwart ergänzen, begleiten und kommentieren gewissermaßen seine
-                  Tagebuch-Aufzeichnungen, die eine Standardquelle des Risorgimento sind. Sie zeigen
-                  sein transnationales Netzwerk mit Gelehrten, Schriftstellern, Journalisten,
-                  Künstlern, Verlegern, Standespersonen, Freunden und Familienmitgliedern. – Vor dem
-                  Hintergrund der Korrespondenz lässt sich über vierzig Jahre sein Selbstverständnis
-                  als Gelehrter, als Philologe und als Schriftsteller sowie als Geschichtsschreiber
-                  verfolgen, aber auch das Verhältnis von Zunft- und Privatgelehrtentum und die
-                  Interferenzen von wissenschaftlicher Forschung und Zeitzeugenschaft.
+                  Die Briefe des Historikers und Schriftstellers Ferdinand Gregorovius (1821–1891)
+                  in einem größeren Zusammenhang zu veröffentlichen und wissenschaftlich zu
+                  erschließen, war in vielerlei Hinsicht eines der großen Desiderata für die
+                  Geschichts- wie für die Literaturwissenschaft. Ist Gregorovius doch einer der
+                  wichtigsten Historiker des 19. Jahrhunderts im deutsch-italienischen Kontext, der
+                  1852 aus Ostpreußen nach Italien ging und nach mehr als zwanzig Jahren hoch
+                  geehrter deutsch-italienischer Historiker und Erfolgsautor nach Deutschland
+                  zurückkehrte. Auch wenn Gregorovius vor seinem Tod viele der Briefe an ihn
+                  vernichtet hat und viele seiner Korrespondenten veranlasst hat, die Briefe von ihm
+                  zu verbrennen, haben sich mehrere Tausend Briefe erhalten. Das Forschungsprojekt
+                  erschließt rund 1.100 zuvor in der großen Mehrzahl unedierte deutsche und
+                  italienische Briefe der Jahre 1852 bis 1891. Sie relativieren und korrigieren
+                  frühere Forschungsergebnisse und geben Anlass zu zahlreichen neuen
+                  Fragestellungen.
                 </p>
+                <p>
+                  In seiner Korrespondenz lässt sich sein Aufstieg zum Erfolgsautor verfolgen, mit
+                  dem Aufbau seines internationalen Gelehrtennetzwerks zudem seine Entwicklung vom
+                  Schriftsteller zum Historiker. Für sein achtbändiges Hauptwerk, die „Geschichte
+                  der Stadt Rom im Mittelalter“, wurde er 1876 zum römischen Ehrenbürger ernannt.
+                  Für Gregorovius, der sich selbst vor allem als Schriftsteller verstand, war Klio
+                  eine Muse. Er war als Historiker Schriftsteller und als Reiseschriftsteller,
+                  Romancier, Dramatiker und Lyriker auch immer Historiker. Dabei war Gregorovius
+                  auch ohne einen Lehrstuhl, der ihm mehrfach erfolglos angeboten wurde, bereits vor
+                  dem Abschluss seines Hauptwerks hochangesehenes Mitglied der Bayerischen Akademie
+                  der Wissenschaften und der namhaftesten italienischen Akademien – und er wurde
+                  regelmäßig von Verlagen um Gutachten und von Gelehrten um Expertisen zu aktuellen
+                  Fachfragen ersucht. Seine in den Briefen verhandelte Methodik als Historiker wie
+                  als Philologe ist oft von staunenswerter Modernität, sein zeitpolitisches Urteil
+                  hochreflektiert. Seine Briefe begleiten und kommentieren seine
+                  Tagebuch-Aufzeichnungen, die eine Standardquelle des Risorgimento sind, das
+                  Gregorovius als Hegel-Schüler zweiter Generation und enttäuschter Revolutionär vor
+                  dem Hintergrund der deutschen Reichgründung verfolgte.
+                </p>
+                <p>
+                  Als frei schaffender Autor wählte Gregorovius seine Publikationsorgane und Verlage
+                  mit Bedacht und verhandelte seine Verlagsverträge bis ins Kleinste mit großem
+                  Geschäftssinn und äußerster Hartnäckigkeit. Eine repräsentative Auswahl seiner
+                  umfangreichen Verlagskorrespondenz mit Cotta liegt nun ungekürzt und unter
+                  Berücksichtigung der Gegenbriefe vor – im Erstdruck (1921) waren die Briefe
+                  einseitig sowie regelmäßig um die finanziellen und persönlichen Angelegenheiten
+                  gekürzt veröffentlicht worden. Zusammen mit den erstmals edierten Briefen an den
+                  F. A. Brockhaus Verlag und den italienischen Verlagsbriefen geben sie mit den für
+                  die Kommentare herangezogenen Gegenbriefen einen detaillierten Einblick in
+                  Entstehung und Produktionsbedingungen seiner großen Werke wie kleiner Schriften
+                  sowie von deren Übersetzungen. Gemeinsam mit der Korrespondenz aus der
+                  Personalakte des preußischen und italienischen Kulturministeriums liefern sie
+                  überraschende Einblicke in die Verlagsarbeit und die Kulturpolitik von der Mitte
+                  bis zum Ende des 19. Jahrhunderts.
+                </p>
+
+                <p>
+                  Die vorliegende Briefedition erschließt mit ausführlichen wissenschaftlichen
+                  Kommentaren viele neue Facetten des 19. Jahrhunderts: Seine Korrespondenzen mit
+                  Gelehrten, Adeligen, Politikern, Schriftstellern, Künstlern, Übersetzern,
+                  Verlegern, Familie und Freunden, darunter auch die Briefe von seiner Orientreise
+                  im Jahr 1882, stellen ein einzigartiges Dokument der europäischen Zeit-, Kultur-,
+                  Verlags- und Wissenschaftsgeschichte dar.
+                </p>
+
                 <figure class="row justify-center">
                   <picture>
                     <img
@@ -69,129 +108,80 @@
                   </figcaption>
                 </figure>
                 <p>
-                  Auf Basis systematischen Recherchen in deutschen und italienischen Archiven
-                  konnten, inklusive der nur im Druck überlieferten Schreiben, mehr als 3340 Briefe
-                  <b>von</b> und <b>an</b> Gregorovius in nahezu 90 Archiven und (privaten)
-                  Sammlungen
-                  nachgewiesen werden (Stand Juli 2023) – die weitaus meisten davon unpubliziert.
-                  Die „Gesammelten deutschen und italienischen Briefe“ erschließen eine
-                  repräsentative Auswahl von etwa 1000 Briefen von Ferdinand Gregorovius als
+                  Auf der Basis systematischer Recherchen, insbesondere in deutschen und
+                  italienischen Archiven, konnten inklusive der nur im Druck überlieferten Schreiben
+                  mehr als 3.340 Briefe von und an Gregorovius in nahezu 90 Archiven und (privaten)
+                  Sammlungen nachgewiesen werden (Stand Dezember 2023) – die weitaus meisten davon
+                  unpubliziert. Die „Gesammelten deutschen und italienischen Briefe“ erschließen
+                  eine repräsentative Auswahl von rund 1.100 Briefen von Ferdinand Gregorovius als
                   kritische digitale Edition in der jeweiligen Originalsprache mit umfassenden
-                  Kommentaren. Die Metadaten und ggf. die (wesentlichen) Drucknachweise <b>aller</b>
-                  Briefe
-                  <b>von</b> und <b>an</b> Gregorovius sind in der der Datenbank der
-                  Gesamtkorrespondenz erfasst
-                  und durchsuchbar. Die edierten Briefe sind, wo die bestandshaltenden Archive und
-                  Besitzer dies erlauben, auch als digitale Faksimiles der Originalhandschrift
-                  veröffentlicht. Die inhaltliche Erschließung der Briefe erfolgt neben den
-                  Kommentaren und verschiedenen Registern (inkl. Normdaten) zusätzlich durch
-                  Regesten in Deutsch und Englisch. Editionsarbeit und Kommentar stützen sich auf
-                  eine über viele Jahre entstandene Personalbibliographie und ein gleichzeitig
-                  angelegtes Quellenarchiv der Projektleiterin Angela Steinsiek, in dem neben den
-                  gedruckten Briefen <b>von</b> und <b>an</b> Gregorovius auch erstmals das gesamte,
-                  oft anonym in
-                  Periodika publizierte Werk, die Übersetzungen und die vollständige
-                  Forschungsliteratur (inklusive zeitgenössischer Rezensionen) nachgewiesen und
-                  zusammengetragen wurde, das durch die Erkenntnisse der Briefedition noch einmal
-                  wesentlich erweitert werden konnte.
+                  Kommentaren, für die ggf. auch die Gegenbriefe und die nicht edierten Briefe
+                  herangezogen wurden. Die edierten Briefe sind, wo die bestandshaltenden Archive
+                  und Besitzer dies erlauben, durch digitale Faksimiles der Handschriften ergänzt.
+                  Die inhaltliche Erschließung der Briefe erfolgt neben den Kommentaren und
+                  verschiedenen Registern (inkl. Normdaten) zusätzlich durch Regesten in Deutsch und
+                  Englisch.
+                </p>
+                <p>
+                  Ergänzend und begleitend zur Edition wurde eine durchsuchbare „Gesamtdatenbank der
+                  Korrespondenz“ erarbeitet und auf der Website veröffentlicht, die die Metadaten
+                  aller weltweit ermittelten Briefe von und an Gregorovius mit Aufbewahrungsorten
+                  und ggf. mit allen Drucken nachweist. Editionsarbeit, Kommentar und
+                  Gesamtdatenbank stützen sich auf eine über viele Jahre entstandene
+                  Personalbibliographie und ein gleichzeitig angelegtes Quellenarchiv der
+                  Projektleiterin Dr. Angela Steinsiek, in dem neben den gedruckten Briefen von und
+                  an Gregorovius auch erstmals das gesamte, oft anonym in Periodika publizierte
+                  Werk, die Übersetzungen und die vollständige Forschungsliteratur (inklusive
+                  zeitgenössischer Rezensionen) nachgewiesen und zusammengetragen wurde. Es konnte
+                  durch die Erkenntnisse aus der Erarbeitung der Briefedition noch einmal wesentlich
+                  erweitert werden.
                 </p>
                 <p><b>Feedback</b></p>
                 <p>
-                  Die Erstellung der digitalen Edition und Datenbestände ist ein fortlaufender
-                  Prozess. Hinweise und Ergänzungen werden dankbar entgegengenommen. Bitte schreiben
-                  Sie an <a href="mailto:steinsiek@dhi-roma.it">steinsiek@dhi-roma.it</a>.
+                  <b>
+                    Hinweise und Ergänzungen zur digitalen Edition und zu den Datenbeständen werden
+                    dankbar entgegengenommen. Bitte schreiben Sie an
+                    <a href="mailto:angela.steinsiek@posteo.de">
+                      angela.steinsiek@posteo.de
+                    </a>
+                  </b>
                 </p>
                 <p>
-                  Handschriftlich überlieferte Briefe <b>von</b> und <b>an</b> Gregorovius konnten in folgenden
-                  Archiven und Sammlungen nachgewiesen werden: Allard Pierson, University of
-                  Amsterdam, Staatsbibliothek Bamberg, Privatbesitz, Erbengemeinschaft Wilhelm
-                  (Basel), Universitätsbibliothek Basel, Ateneo di Scienze, Lettere ed Arti di
-                  Bergamo, Archiv der Berlin-Brandenburgischen Akademie der Wissenschaften,
-                  Bundesarchiv Berlin, Deutsches Historisches Museum (Berlin), Geheimes Staatsarchiv
-                  Berlin, Staatsbibliothek zu Berlin – PK,
-                  Fondazione Sella (Biella), Heimatstube der Kreisgemeinschaft Neidenburg (Bochum),
-                  Biblioteca dell’Archiginnasio (Bologna), Archivio della Deputazione di Storia
-                  Patria per le Province di Romagna (Bologna), Universitäts- und Landesbibliothek
-                  Bonn, Landesarchiv Nordrhein-Westfalen (Detmold), Sächsische Landesbibliothek –
-                  Staats- und Universitätsbibliothek Dresden, Archivio di Stato di Firenze,
-                  Biblioteca Nazionale Centrale di Firenze, Privatarchiv Anrep (Florenz),
-                  Universitätsbibliothek Johann Christian Senckenberg (Frankfurt), Bibliothèque de
-                  Genève, Biblioteca Civica „Vincenzo Bindi“ (Giulianova), Universitätsbibliothek
-                  Greifswald, Staats- und Universitätsbibliothek Hamburg Carl von Ossietzky,
-                  Stadtarchiv Hannover, Universitätsbibliothek Heidelberg, Biblioteca Comunale di
-                  Imola, Generallandesarchiv Karlsruhe (Großherzogliches Familienarchiv), Museum für
-                  Literatur am Oberrhein (Karlsruhe), Schleswig-Holsteinische Landesbibliothek Kiel,
-                  Historisches Archiv Köln, Privatbesitz Klaus Bergdolt (Köln), Biblioteka
-                  Jagiellońska Krakau (SBB-PK), Biblioteca Provinciale „Nicola Bernardini“ (Lecce),
-                  Sächsisches Staatsarchiv Leipzig, Universitätsbibliothek Leipzig, Getty Research
-                  Institute, Research Library (Los Angeles, CA), University of Southern California,
-                  Lion Feuchtwanger papers (Los Angeles, CA), Ostpreußisches Landesmuseum
-                  (Lüneburg), Archivio generale im Museo del Risorgimento (Mailand), Stadtbibliothek
-                  Mainz, Deutsches Literaturarchiv Marbach, Hessisches Staatsarchiv Marburg,
-                  Biblioteca Estense Universitaria (Modena), Archivio dell’Abbazia (Montecassino),
-                  Bayerische Staatsbibliothek München, Monacensia im Hildebrandhaus (München),
-                  Städtische Galerie im Lenbachhaus und Kunstbau München, Privatbesitz Familie Peter
-                  Freude (Murnau am Staffelsee), Archivio di Stato di Napoli, Biblioteca Nazionale
-                  Vittorio Emanuele III. (Neapel), Yale University Library (New Haven, CT), Pierpont
-                  Morgan Library (Manhattan, NYC), Germanisches Nationalmuseum Nürnberg, Sezione di
-                  Archivio di Stato di Orvieto Crispino Ferri, Biblioteca Civica (Padua), Biblioteca
-                  Centrale della Regione siciliana (Palermo), Bibliothèque nationale de France
-                  (Paris), Biblioteca Oliveriana (Pesaro), Archives nationales
-                  (Pierrefitte-sur-Seine), Biblioteca Roncioniana Prato, Istituzione Biblioteca
-                  Classense del Comune di Ravenna, Archivio Accademico della Accademia di San Luca
-                  (Rom), Archivio Camillo Caetani (Rom), Archivio Centrale dello Stato (Rom),
-                  Archivio Storico Capitolino di Roma, Archivio Segreto Vaticano (Rom), Biblioteca
-                  Apostolica Vaticana (Rom), Biblioteca Vallicelliana (Rom), Deutsches
-                  Archäologisches Institut Rom, Städtisches Museum Schärding am Inn, Stadtarchiv
-                  Schweinfurt, Mecklenburgisches Landeshauptarchiv Schwerin, Kantonsbibliothek
-                  Vadiana St. Gallen, Württembergische Landesbibliothek Stuttgart, Archivio di Stato
-                  di Terni, Archivio Storico dell’Accademia delle Scienze di Torino, Biblioteca
-                  Comunale di Trento, Universitätsbibliothek Tübingen, Biblioteca Civica (Verona),
-                  Goethe- und Schiller-Archiv Weimar, Landesarchiv Thüringen – Hauptstaatsarchiv
-                  Weimar (Großherzogliches Hausarchiv), Österreichische Nationalbibliothek (Wien),
-                  Wienbibliothek im Rathaus, Herzog-August-Bibliothek Wolfenbüttel,
-                  Niedersächsisches Landesarchiv (Wolfenbüttel), Universität Würzburg,
-                  Martin-von-Wagner-Museum, Zentralbibliothek Zürich.
-                </p>
-                <p>
-                  Das Projekt des Deutschen Historischen Instituts in Rom wurde von dem
-                  Institutsdirektor Professor Dr. Martin Baumeister initiiert, der es zusammen mit
-                  Dr. Angela Steinsiek verantwortet. Seit 2017 (bis 2023) wird es von der Deutschen
-                  Forschungsgemeinschaft (DFG) gefördert. Die digitale Präsentation der Briefe fand
+                  Das Projekt des Deutschen Historischen Instituts in Rom wurde von der
+                  Projektleiterin Dr. Angela Steinsiek zusammen Professor Dr. Martin Baumeister, dem
+                  Institutsdirektor, initiiert. 2017 bis 2023 wurde es von der Deutschen
+                  Forschungsgemeinschaft (DFG) finanziert. Die digitale Präsentation der Briefe fand
                   in den ersten zwei Jahren in Zusammenarbeit mit der Berlin-Brandenburgischen
-                  Akademie der Wissenschaften statt. Zudem wird das Projekt seit 2018 (bis 2023) von
-                  der Gerda Henkel Stiftung großzügig gefördert.
+                  Akademie der Wissenschaften statt. Zudem wurde das Projekt 2018 bis 2023 von der
+                  Gerda Henkel Stiftung großzügig gefördert.
                 </p>
                 <p>
-                  Dr. Wiebke Fastenrath Vinattieri erstellte Rohtranskriptionen von Briefen von
-                  Gregorovius an Michele Amari (18), Guido Biagi (1), Angelo De Gubernatis (2),
-                  Giuseppe De Leva (4), Emilia Viola Ferretti (2), Tommaso Gar (23), Raffaele
-                  Mariano (56), Ferdinand Martini (1), Francesco Protonotari (2), Gustavo
-                  Strafforello (1), Oreste Tommasini (2) und Filippo Zamboni (1). Textherstellung
-                  und Stellenkommentare vieler italienischer Briefe wurden von Dr. Frederike Neuber,
-                  Dr. Katharina Weiger und Dr. Anna Maria Voci übernommen. Die jeweiligen
-                  Zuständigkeiten sind in den einzelnen Briefen angegeben und analog in den
-                  Zitierhinweisen hinterlegt. Anna Maria Voci hat zudem sämtliche Transkriptionen
-                  der italienisch-sprachigen Briefe an den Handschriften überprüft, wofür ihr an
-                  dieser Stelle noch einmal ein ganz besonderer Dank ausgesprochen sei. Die
-                  technische Umsetzung der Edition lag in den ersten zwei Jahren in den Händen von
-                  Theodor Costea, M. A. Die Weiterentwicklung und endgültige Gestaltung der Website
-                  hat Oliver Pohl, M. A umgesetzt. Von Marlene Compton, M. A. stammen die englischen
-                  (amerikanischen) Übersetzungen der Regesten. Eric Müller, M. A. und Raphael
-                  Stepken haben als wissenschaftliche Hilfskraft die Edition vorbereitende und
-                  begleitende Arbeiten übernommen. Ab September 2020 hat Mariana Ramazzotti, M. A.
-                  als wissenschaftliche Hilfskraft die Projektarbeit in allen Belangen mit
-                  Engagement unterstützt.
+                  Im ersten Projektjahr wurden von Dr. Wiebke Fastenrath Vinattieri
+                  Rohtranskriptionen von rund 100 Briefen von Gregorovius an italienische
+                  Korrespondenten erstellt. Textherstellung und Stellenkommentare vieler
+                  italienischer Briefe wurden von Dr. Frederike Neuber, Dr. Katharina Weiger und Dr.
+                  Anna Maria Voci übernommen. Die jeweiligen Zuständigkeiten sind in den einzelnen
+                  Briefen angegeben und in den Zitierhinweisen hinterlegt. Anna Maria Voci hat zudem
+                  sämtliche Transkriptionen der italienisch-sprachigen Briefe an den Handschriften
+                  überprüft, wofür ihr an dieser Stelle noch einmal ein ganz besonderer Dank
+                  ausgesprochen sei. Die technische Umsetzung der Edition lag in den ersten zwei
+                  Jahren in den Händen von Theodor Costea, M. A. Die Weiterentwicklung und
+                  endgültige Gestaltung der Website hat Oliver Pohl, M. A. umgesetzt. Von Marlene
+                  Compton, M. A. stammen die englischen (amerikanischen) Übersetzungen der Regesten.
+                  Eric Müller, M. A. und Raphael Stepken, B. A. haben als wissenschaftliche
+                  Hilfskraft die Edition vorbereitende und begleitende Arbeiten übernommen. Ab
+                  September 2020 hat Mariana Ramazzotti, M. A. als wissenschaftliche Hilfskraft die
+                  Projektarbeit in allen Belangen mit Engagement unterstützt.
                 </p>
               </div>
             </q-tab-panel>
             <q-tab-panel name="tec">
               <div class="text-body1">
                 <p>
-                  Die Dateneingabe erfolgt in Oxygen mit Hilfe von
+                  Die Dateneingabe erfolgte in Oxygen mit Hilfe von
                   <a href="http://www.bbaw.de/telota/software/ediarum">ediarum</a>. Das
-                  ediarum.BASE-Framework wurde durch ein Addon ergänzt. Es wird laufend
-                  weiterentwickelt und ermöglicht, komplexe projektspezifische Datenstrukturen über
+                  ediarum.BASE-Framework wurde durch ein Addon ergänzt. Es wurde laufend
+                  weiterentwickelt und ermöglichte, komplexe projektspezifische Datenstrukturen über
                   eine benutzerfreundliche und für die Briefedition maßgeschneiderte Softwarelösung
                   einzugeben. Das TEI XML Datenmodell der Edition basiert zum Teil auf dem
                   <a href="http://www.deutschestextarchiv.de/doku/basisformat/">Basisformat des
