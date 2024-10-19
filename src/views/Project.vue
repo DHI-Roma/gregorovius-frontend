@@ -110,7 +110,7 @@
                 <p>
                   Auf der Basis systematischer Recherchen, insbesondere in deutschen und
                   italienischen Archiven, konnten inklusive der nur im Druck überlieferten Schreiben
-                  mehr als 3.340 Briefe von und an Gregorovius in nahezu 90 Archiven und (privaten)
+                  mehr als 3.340 Briefe <b>von</b> und <b>an</b> Gregorovius in nahezu 90 Archiven und (privaten)
                   Sammlungen nachgewiesen werden (Stand Dezember 2023) – die weitaus meisten davon
                   unpubliziert. Die „Gesammelten deutschen und italienischen Briefe“ erschließen
                   eine repräsentative Auswahl von rund 1.100 Briefen von Ferdinand Gregorovius als
@@ -125,7 +125,7 @@
                 <p>
                   Ergänzend und begleitend zur Edition wurde eine durchsuchbare „Gesamtdatenbank der
                   Korrespondenz“ erarbeitet und auf der Website veröffentlicht, die die Metadaten
-                  aller weltweit ermittelten Briefe von und an Gregorovius mit Aufbewahrungsorten
+                  aller weltweit ermittelten Briefe <b>von</b> und <b>an</b> Gregorovius mit Aufbewahrungsorten
                   und ggf. mit allen Drucken nachweist. Editionsarbeit, Kommentar und
                   Gesamtdatenbank stützen sich auf eine über viele Jahre entstandene
                   Personalbibliographie und ein gleichzeitig angelegtes Quellenarchiv der
