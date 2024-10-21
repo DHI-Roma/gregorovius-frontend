@@ -148,7 +148,7 @@
                 </p>
                 <p>
                   Das Projekt des Deutschen Historischen Instituts in Rom wurde von der
-                  Projektleiterin Dr. Angela Steinsiek zusammen Professor Dr. Martin Baumeister, dem
+                  Projektleiterin Dr. Angela Steinsiek zusammen mit Professor Dr. Martin Baumeister, dem
                   Institutsdirektor, initiiert. 2017 bis 2023 wurde es von der Deutschen
                   Forschungsgemeinschaft (DFG) finanziert. Die digitale Präsentation der Briefe fand
                   in den ersten zwei Jahren in Zusammenarbeit mit der Berlin-Brandenburgischen

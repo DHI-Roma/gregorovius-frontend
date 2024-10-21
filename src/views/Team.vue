@@ -77,7 +77,7 @@ export default {
           role: "Projekt- und Editionsleitung",
           tel: "",
           mail: "angela.steinsiek@posteo.de",
-          url: "http://dhi-roma.it/index.php?id=steinsiek",
+          url: "",
         },
         {
           id: "pohl",
