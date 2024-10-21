@@ -44,19 +44,29 @@
         <xsl:when test="string()">
             <div class="q-pt-md">
                 <b>h</b>:
-                <xsl:for-each select="./*/*[not(@type = 'URLImages')]">
+                <xsl:for-each select="./tei:msIdentifier/*[not(@type = 'URLImages')]">
                     <xsl:choose>
                         <xsl:when test="name(.) = 'p'">
                             <br/>
                             <xsl:value-of select="."/>
-                            <xsl:variable name="disableComma" select="'true'"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:value-of select="."/>
-                            <xsl:variable name="disableComma" select="'false'"/>
+                            <xsl:if test="position() != last()">, </xsl:if>
                         </xsl:otherwise>
                     </xsl:choose>
-                    <xsl:if test="position() != last() and disableComma = 'false'">, </xsl:if>
+                </xsl:for-each>
+                <xsl:for-each select="./tei:physDesc/*[not(@type = 'URLImages')]">
+                    <xsl:choose>
+                        <xsl:when test="name(.) = 'p'">
+                            <br/>
+                            <xsl:value-of select="."/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="."/>
+                            <xsl:if test="position() != last()">, </xsl:if>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:for-each>
             </div>
         </xsl:when>
