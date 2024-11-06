@@ -1,20 +1,19 @@
 import { EDITION_NAME, EDITION_INSTITUTION } from "../shared/constants";
 
+const splitTitle = title => {
+  return title.split(/\. (?=([A-Z][a-zà-ý]*|St\.)( [a-zà-ý]*)?( [A-Z][a-zà-ý]*)?,)/);
+};
+
 // Splits the title and returns the first part.
 const getTitle = data => {
-  const title = data.teiHeader.fileDesc.titleStmt.title.replace(/[\n ]+/g, " ");
-  return title.split(/\. (?=([A-Z][a-zà-ý]*|St\.)( [a-zà-ý]*)?( [A-Z][a-zà-ý]*)?,)/)[0];
+  return splitTitle(data.teiHeader.fileDesc.titleStmt.title)[0];
 };
 
 // Splits the title and returns the second part.
 // Is different than titleMain because of lookbehind limitations.
 const getSecondaryTitle = data => {
-  const title = data.teiHeader.fileDesc.titleStmt.title.replace(/[\n ]+/g, " ");
-  const secondPart = title.split(
-    / .?.? ?[A-Z][a-zà-ý)]*( [a-zà-ý]*)?( [A-Z][a-zà-ý]*)?(-[A-Z][-a-zà-ý]*)?(\(\?\))?\./
-  );
-
-  return secondPart.pop().trim();
+  const splits = splitTitle(data.teiHeader.fileDesc.titleStmt.title);
+  return splits[splits.length - 1];
 };
 
 const getEditor = data => {
