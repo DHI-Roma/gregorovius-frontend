@@ -1,7 +1,9 @@
-FROM node:12-alpine as build-stage-main
+FROM node:22-alpine as build-stage-main
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN apk update && \
+    apk add python3 make g++ && \
+    npm install
 COPY ./ .
 RUN npx vue-cli-service build --modern
 
