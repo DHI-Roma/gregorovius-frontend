@@ -8,13 +8,12 @@
       use-input
       hide-selected
       fill-input
-      :options="options"
+      :options="filteredOptions"
       :label="label"
-      :value="model.value"
       @filter="filterOptions"
-      @input="setSelected"
+      @update:model-value="setSelected"
     >
-      <template v-if="model.value" v-slot:append>
+      <template v-if="model.value" #append>
         <q-icon name="cancel" class="cursor-pointer" @click.stop="clearSelection()" />
       </template>
     </q-select>
@@ -22,91 +21,102 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
-import { QSelect } from "quasar";
+import { defineComponent, ref, computed, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
+import { useMainStore } from 'src/stores/main';
 
-export default {
-  name: "SelectAutoComplete",
-  components: {
-    QSelect
-  },
+export default defineComponent({
+  name: 'SelectAutoComplete',
+
   props: {
     label: {
       type: String,
-      default: ""
+      default: '',
     },
     entity: {
       type: String,
-      default: ""
-    }
-  },
-  emits: ["update-selection"],
-  data() {
-    return {
-      model: {
-        label: "",
-        value: ""
-      },
-      options: this.$attrs.options
-    };
-  },
-  computed: {
-    optionsFull() {
-      return this.$attrs.options;
+      default: '',
     },
-    value() {
-      return this.model.value;
+    options: {
+      type: Array,
+      default: () => [],
     },
-    hasValue() {
-      if (!this.model.value) {
-        return false;
-      }
+  },
 
-      return true;
+  emits: ['update-selection'],
+
+  setup(props, { emit, expose }) {
+    const route = useRoute();
+    const store = useMainStore();
+
+    const model = ref({
+      label: '',
+      value: '',
+    });
+
+    const filteredOptions = ref([]);
+
+    const optionsFull = computed(() => props.options);
+
+    function filterOptions(val, update) {
+      update(() => filterByInput(val));
     }
-  },
-  async mounted() {
-    await this.getSelected();
-  },
-  methods: {
-    ...mapActions(["setSelectedAction"]),
-    filterOptions(val, update) {
-      update(() => this.filterByInput(val));
-    },
-    filterByInput(userInput) {
+
+    function filterByInput(userInput) {
       const needle = userInput.toLowerCase();
-      const filteredOptions = this.optionsFull.filter(option =>
+      const filtered = optionsFull.value.filter((option) =>
         option.label.toLowerCase().includes(needle)
       );
-      this.options = filteredOptions.sort((a, b) => {
+      filteredOptions.value = filtered.sort((a, b) => {
         const valA = a.label.toLowerCase();
         const valB = b.label.toLowerCase();
         return valA.localeCompare(valB);
       });
-    },
-    clearSelection() {
-      this.model = { label: "", value: "" };
-      this.setSelected();
-    },
-    setSelected() {
-      this.setSelectedAction({ entity: this.$props.entity, value: this.value });
-      this.$emit('update-selection', this.model);
-    },
-    getSelected() {
-      if (this.$props.entity in this.$route.query) {
-        const selectedValue = this.$route.query[this.$props.entity];
-        const selectedLabel = this.$store.getters.fullNameIndex[selectedValue];
-        this.model = {
+    }
+
+    function clearSelection() {
+      model.value = { label: '', value: '' };
+      setSelected();
+    }
+
+    function setSelected() {
+      store.setSelected({ entity: props.entity, value: model.value.value });
+      emit('update-selection', model.value);
+    }
+
+    function getSelected() {
+      if (props.entity in route.query) {
+        const selectedValue = route.query[props.entity];
+        const selectedLabel = store.fullNameIndex[selectedValue];
+        model.value = {
           label: selectedLabel,
-          value: selectedValue
+          value: selectedValue,
         };
       }
-    },
-    setModel(model) {
-      this.model = model;
-    },
-  }
-};
+    }
+
+    function setModel(newModel) {
+      model.value = newModel;
+    }
+
+    onMounted(() => {
+      filteredOptions.value = [...props.options];
+      getSelected();
+    });
+
+    // Expose setModel for parent component access
+    expose({ setModel });
+
+    return {
+      model,
+      filteredOptions,
+      filterOptions,
+      clearSelection,
+      setSelected,
+      setModel,
+    };
+  },
+});
 </script>
 
 <style></style>

@@ -1,4 +1,4 @@
-import { API } from "@/../env";
+import { API } from "src/../env";
 import axios from "axios";
 
 const hasGnd = function(personEntity) {

@@ -9,17 +9,13 @@
       fill-input
       :options="options"
       :label="label"
-      :value="selectedYears"
-      @input="onSelectedChange"
+      @update:model-value="onSelectedChange"
     >
       <template #selected>
         {{ selectedYearsSorted }}
       </template>
-      <template v-slot:option="{ itemProps, itemEvents, opt, selected, toggleOption }">
-        <q-item
-          v-bind="itemProps"
-          v-on="itemEvents"
-        >
+      <template #option="{ itemProps, opt, selected, toggleOption }">
+        <q-item v-bind="itemProps">
           <q-item-section>
             <q-item-label>
               <template v-if="opt === '0000'">undatiert</template>
@@ -27,7 +23,7 @@
             </q-item-label>
           </q-item-section>
           <q-item-section side>
-            <q-toggle :value="selected" @input="toggleOption(opt)" />
+            <q-toggle :model-value="selected" @update:model-value="toggleOption(opt)" />
           </q-item-section>
         </q-item>
       </template>
@@ -36,59 +32,67 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { defineComponent, ref, computed, watch, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
+import { useMainStore } from 'src/stores/main';
 
-export default {
-  name: "SelectYears",
+export default defineComponent({
+  name: 'SelectYears',
+
   props: {
     label: {
       type: String,
-      default: ""
+      default: '',
     },
     entity: {
       type: String,
-      default: ""
-    }
-  },
-  emits: ["update-selection"],
-  data() {
-    return {
-      selectedYears: []
-    };
-  },
-  computed: {
-    options() {
-      return this.$attrs.options;
+      default: '',
     },
-    selectedYearsSorted() {
-      return this.selectedYears.sort().join(", ").replace("0000", "undatiert");
-    }
+    options: {
+      type: Array,
+      default: () => [],
+    },
   },
-  watch: {
-    selectedYears: {
-      handler: function(newValue) {
-        this.setSelectedAction({ entity: "years", value: newValue });
+
+  emits: ['update-selection'],
+
+  setup(props, { emit }) {
+    const route = useRoute();
+    const store = useMainStore();
+
+    const selectedYears = ref([]);
+
+    const selectedYearsSorted = computed(() => {
+      return [...selectedYears.value].sort().join(', ').replace('0000', 'undatiert');
+    });
+
+    watch(selectedYears, (newValue) => {
+      store.setSelected({ entity: 'years', value: newValue });
+    });
+
+    function getSelected() {
+      if ('years' in route.query) {
+        selectedYears.value = route.query.years.split(',');
+      } else {
+        selectedYears.value = [];
       }
     }
-  },
-  mounted() {
-    this.getSelected();
-  },
-  methods: {
-    ...mapActions(["setSelectedAction"]),
-    getSelected() {
-      if ("years" in this.$route.query) this.selectedYears = this.$route.query.years.split(",");
-      else this.selectedYears = [];
-    },
-    setSelected(value) {
-      this.setSelectedAction({ entity: "years", value });
-      this.selectedYears = value;
-    },
-    onSelectedChange(value) {
-      this.$emit("update-selection", value);
+
+    function onSelectedChange(value) {
+      emit('update-selection', value);
     }
-  }
-};
+
+    onMounted(() => {
+      getSelected();
+    });
+
+    return {
+      selectedYears,
+      selectedYearsSorted,
+      onSelectedChange,
+    };
+  },
+});
 </script>
 
 <style></style>

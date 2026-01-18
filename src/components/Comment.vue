@@ -32,45 +32,55 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { defineComponent, ref, watch } from "vue";
+import { useMainStore } from "src/stores/main";
+import { storeToRefs } from "pinia";
 
-export default {
+export default defineComponent({
   name: "Comment",
-  data() {
+
+  setup() {
+    const store = useMainStore();
+    const { activeComment } = storeToRefs(store);
+
+    const commentWithLinks = ref("");
+
+    watch(
+      () => activeComment.value.id,
+      () => {
+        commentWithLinks.value = activeComment.value.text;
+      }
+    );
+
+    function close() {
+      store.unselectComment();
+    }
+
     return {
-      commentWithLinks: ""
+      activeComment,
+      commentWithLinks,
+      close,
     };
   },
-  computed: {
-    ...mapGetters(["activeComment"])
-  },
-  watch: {
-    // eslint-disable-next-line no-unused-vars
-    "activeComment.id": async function(_newValue) {
-      this.commentWithLinks = this.activeComment.text;
-    }
-  },
-  methods: {
-    close() {
-      this.$store.dispatch("unselectComment");
-    }
-  }
-};
+});
 </script>
 
-<style lang="stylus" scoped>
-@import '../styles/quasar.variables.styl'
+<style lang="scss" scoped>
+@import '../css/quasar.variables.scss';
 
-h6
-  color: $seconary
+h6 {
+  color: $secondary;
+}
 
-.g-edition-comment-container
-  position: absolute
-  padding-left: 16px
+.g-edition-comment-container {
+  position: absolute;
+  padding-left: 16px;
+}
 
-.g-edition-comment
-  font-family: "IBMPlexSans"
-  font-size: 10pt
-  padding-top: 1rem
-  padding-bottom: 1rem
+.g-edition-comment {
+  font-family: "IBMPlexSans";
+  font-size: 10pt;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 </style>

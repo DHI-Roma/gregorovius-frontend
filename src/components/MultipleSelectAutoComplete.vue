@@ -13,32 +13,34 @@
       map-options
       :option-value="getOptionValue"
       :option-label="getOptionLabel"
-      :options="options"
+      :options="filteredOptions"
       :label="label"
       @filter="filterOptions"
-      @input="setSelected"
-    >
-    </q-select>
+      @update:model-value="setSelected"
+    />
   </div>
 </template>
 
 <script>
-import { mapActions } from "vuex";
-import { QSelect } from "quasar";
+import { defineComponent, ref, computed, watch, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
+import { useMainStore } from 'src/stores/main';
 
-export default {
-  name: "MultipleSelectAutoComplete",
-  components: {
-    QSelect
-  },
+export default defineComponent({
+  name: 'MultipleSelectAutoComplete',
+
   props: {
     label: {
       type: String,
-      default: ''
+      default: '',
     },
     entity: {
       type: String,
-      default: ''
+      default: '',
+    },
+    options: {
+      type: Array,
+      default: () => [],
     },
     reloadOptions: {
       type: Boolean,
@@ -46,95 +48,109 @@ export default {
       default: true,
     },
   },
+
   emits: ['update-selection'],
-  data() {
-    return {
-      model: [],
-      options: this.$attrs.options
-    };
-  },
-  computed: {
-    optionsFull() {
-      return this.$attrs.options;
-    },
-  },
-  watch: {
-    optionsFull: function(loadedOptions) {
+
+  setup(props, { emit }) {
+    const route = useRoute();
+    const store = useMainStore();
+
+    const model = ref([]);
+    const filteredOptions = ref([]);
+
+    const optionsFull = computed(() => props.options);
+
+    watch(optionsFull, (loadedOptions) => {
       if (!loadedOptions.length) {
         return;
       }
-      if (this.$props.entity in this.$route.query) {
-        const entityIds = this.$route.query[this.$props.entity]
-          .split(",")
-          .filter(entityId => entityId.length > 0);
+      if (props.entity in route.query) {
+        const entityIds = route.query[props.entity]
+          .split(',')
+          .filter((entityId) => entityId.length > 0);
 
         if (entityIds.length) {
-          this.model = entityIds.map(entityId => {
-            return this.optionsFull.find(option => option.value === entityId);
+          model.value = entityIds.map((entityId) => {
+            return optionsFull.value.find((option) => option.value === entityId);
           });
         } else {
-          this.model = [];
+          model.value = [];
         }
-      } else if (this.reloadOptions) {
-        this.model = [];
+      } else if (props.reloadOptions) {
+        model.value = [];
       }
-    },
-  },
-  async mounted() {
-    await this.getSelected();
-  },
-  methods: {
-    ...mapActions(['setSelectedAction']),
-    filterOptions(val, update) {
-      update(() => this.filterByInput(val));
-    },
-    filterByInput(userInput) {
+      filteredOptions.value = [...loadedOptions];
+    });
+
+    function filterOptions(val, update) {
+      update(() => filterByInput(val));
+    }
+
+    function filterByInput(userInput) {
       const needle = userInput.toLowerCase();
-      const filteredOptions = this.optionsFull.filter((option) => {
+      const filtered = optionsFull.value.filter((option) => {
         const label = option?.label ?? option;
         return label.toLowerCase().includes(needle);
       });
-      this.options = filteredOptions.sort((a, b) => {
+      filteredOptions.value = filtered.sort((a, b) => {
         const labelA = a?.label ?? a;
         const labelB = b?.label ?? b;
         const valA = labelA.toLowerCase();
         const valB = labelB.toLowerCase();
         return valA.localeCompare(valB);
       });
-    },
-    setSelected() {
-      this.setSelectedAction({ entity: this.$props.entity, value: this.model });
-      this.$emit('update-selection', this.model);
-    },
-    getSelected() {
-      if (this.$props.entity in this.$route.query) {
-        const entityIds = this.$route.query[this.$props.entity]
-          .split(",")
-          .filter(entityId => entityId.length > 0);
+    }
+
+    function setSelected() {
+      store.setSelected({ entity: props.entity, value: model.value });
+      emit('update-selection', model.value);
+    }
+
+    function getSelected() {
+      if (props.entity in route.query) {
+        const entityIds = route.query[props.entity]
+          .split(',')
+          .filter((entityId) => entityId.length > 0);
 
         if (entityIds.length) {
-          this.model = this.$route.query[this.$props.entity].split(",");
+          model.value = route.query[props.entity].split(',');
         } else {
-          this.model = [];
+          model.value = [];
         }
       } else {
-        this.model = [];
+        model.value = [];
       }
-    },
-    getOptionValue(option) {
+    }
+
+    function getOptionValue(option) {
       if (typeof option === 'object') {
         return option.value;
       }
       return option;
-    },
-    getOptionLabel(option) {
+    }
+
+    function getOptionLabel(option) {
       if (typeof option === 'object') {
         return option.label;
       }
       return option;
-    },
-  }
-};
+    }
+
+    onMounted(() => {
+      filteredOptions.value = [...props.options];
+      getSelected();
+    });
+
+    return {
+      model,
+      filteredOptions,
+      filterOptions,
+      setSelected,
+      getOptionValue,
+      getOptionLabel,
+    };
+  },
+});
 </script>
 
 <style></style>

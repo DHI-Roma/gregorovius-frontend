@@ -129,8 +129,7 @@ const getFullLettersIndex = async () => {
 
 const XSLTransform = async function (path, xsltName) {
   try {
-    const stylesheetModule = xslt.methods.getXslt(xsltName);
-    const stylesheet = stylesheetModule.default;
+    const stylesheet = xslt.methods.getXslt(xsltName);
     const response = await axios.post(`${API}${path}`, stylesheet, {
       params: {
         xslt: true,

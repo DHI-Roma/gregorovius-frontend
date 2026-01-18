@@ -1,28 +1,28 @@
 <template>
   <q-table
-    :data="works"
+    :rows="works"
     :columns="columns"
     row-key="id"
     :filter="filter"
-    :pagination.sync="pagination"
-    :loading="loading"
+    v-model:pagination="pagination"
+    :loading="storeLoading"
     flat
   >
-    <template v-slot:body-cell="props">
+    <template #body-cell="props">
       <q-td
         :props="props"
         class="cursor-pointer"
-        @click.native="$router.push({ path: `/works/${props.row.id}` })"
+        @click="router.push({ path: `/works/${props.row.id}` })"
         @click.middle="openInNewTab({ path: `/works/${props.row.id}` })"
         >{{ props.value }}</q-td
       >
       <context-menu
-        :route-to-open="$router.resolve({ path: `/works/${props.row.id}` }).href"
+        :route-to-open="router.resolve({ path: `/works/${props.row.id}` }).href"
       ></context-menu>
     </template>
-    <template v-slot:top-left>
+    <template #top-left>
       <q-input v-model="filter" borderless dense debounce="300" placeholder="Suche">
-        <template v-slot:append>
+        <template #append>
           <q-icon name="search" />
         </template>
       </q-input>
@@ -31,56 +31,68 @@
 </template>
 
 <script>
+import { defineComponent, ref, computed } from "vue";
+import { useMainStore } from "src/stores/main";
+import { storeToRefs } from "pinia";
+import { useRouter } from "vue-router";
 import ContextMenu from "./ContextMenu.vue";
-import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
-export default {
+
+export default defineComponent({
   name: "WorksIndexTable",
   components: {
-    ContextMenu
+    ContextMenu,
   },
-  mixins: [openInNewTabMixin],
+
   props: {
     type: {
       type: String,
       default: "",
-      required: true
-    }
+      required: true,
+    },
   },
-  data() {
-    return {
-      filter: "",
-      loading: this.$store.state.isLoading,
-      pagination: {
-        rowsPerPage: 10,
-        sortBy: "title"
+
+  setup(props) {
+    const store = useMainStore();
+    const router = useRouter();
+    const { works: allWorks, loading: storeLoading } = storeToRefs(store);
+
+    const filter = ref("");
+    const pagination = ref({
+      rowsPerPage: 10,
+      sortBy: "title",
+    });
+
+    const columns = [
+      {
+        name: "title",
+        required: true,
+        label: "Titel",
+        align: "left",
+        field: (row) => row.properties.title,
+        sortable: true,
       },
-      columns: [
-        {
-          name: "title",
-          required: true,
-          label: "Titel",
-          align: "left",
-          field: row => row.properties.title,
-          sortable: true
-        }
-      ],
-      data: []
+    ];
+
+    const works = computed(() => {
+      return allWorks.value.filter((w) => w.properties.type === props.type);
+    });
+
+    function openInNewTab(route) {
+      const resolved = router.resolve(route);
+      window.open(resolved.href, "_blank");
+    }
+
+    return {
+      router,
+      filter,
+      pagination,
+      columns,
+      works,
+      storeLoading,
+      openInNewTab,
     };
   },
-  computed: {
-    works() {
-      return this.$store.getters.works.filter(w => w.properties.type === this.$props.type);
-    }
-  },
-  beforeMount() {
-    this.$store.watch(
-      (state, getters) => getters.loading,
-      newValue => {
-        this.loading = newValue;
-      }
-    );
-  }
-};
+});
 </script>
 
 <style></style>

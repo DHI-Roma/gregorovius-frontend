@@ -3,17 +3,17 @@
     <q-table
       v-if="letters.length > 0"
       title="Korrespondenzen"
-      :data="letters"
+      :rows="letters"
       :columns="columns"
       row-key="id"
-      :pagination.sync="pagination"
+      v-model:pagination="pagination"
       flat
     >
-      <template v-slot:body-cell="props">
+      <template #body-cell="props">
         <q-td
           :props="props"
           class="cursor-pointer"
-          @click.native="$router.push({ path: `/letters/${props.row.id}`, query: { recipient: recipientId } })"
+          @click="$router.push({ path: `/letters/${props.row.id}`, query: { recipient: recipientId } })"
           @click.middle="openInNewTab({ path: `/letters/${props.row.id}`, query: { recipient: recipientId } })"
           >{{ props.value }}</q-td
         >
@@ -26,16 +26,16 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
-import ContextMenu from "@/components/ContextMenu.vue";
-import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
+import { defineComponent, ref } from "vue";
+import { useRouter } from "vue-router";
+import ContextMenu from "src/components/ContextMenu.vue";
 
-export default {
+export default defineComponent({
   name: "CorrespondenceTable",
   components: {
-    ContextMenu
+    ContextMenu,
   },
-  mixins: [openInNewTabMixin],
+
   props: {
     letters: {
       type: Array,
@@ -46,29 +46,32 @@ export default {
       required: true,
     },
   },
-  data() {
-    return {
-      filter: "",
-      loading: true,
-      pagination: {
-        rowsPerPage: 10
+
+  setup() {
+    const router = useRouter();
+
+    const pagination = ref({ rowsPerPage: 10 });
+    const columns = [
+      {
+        name: "title",
+        required: true,
+        align: "left",
+        field: (row) => row.properties.title,
       },
-      columns: [
-        {
-          name: "title",
-          required: true,
-          align: "left",
-          field: row => row.properties.title
-        }
-      ],
-      data: []
+    ];
+
+    function openInNewTab(route) {
+      const resolved = router.resolve(route);
+      window.open(resolved.href, "_blank");
+    }
+
+    return {
+      pagination,
+      columns,
+      openInNewTab,
     };
   },
-
-  computed: {
-    ...mapGetters(["fullNameIndex"])
-  }
-};
+});
 </script>
 
 <style></style>

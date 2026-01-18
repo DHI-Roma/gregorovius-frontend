@@ -1,7 +1,8 @@
 <template>
   <q-item
+    clickable
     class="cursor-pointer g-card"
-    @click.native="$router.push(route)"
+    @click="router.push(route)"
     @click.middle="openInNewTab(route)"
   >
     <q-item-section>
@@ -10,68 +11,74 @@
     <q-chip
       v-if="place.properties.type"
       size="12px"
-      :color="place.properties.type | getTypeChipColor"
+      :color="getTypeChipColor(place.properties.type)"
     >
-      {{ place.properties.type | formatPlaceType }}
+      {{ formatPlaceType(place.properties.type) }}
     </q-chip>
-    <context-menu :route-to-open="$router.resolve(route).href"></context-menu>
+    <context-menu :route-to-open="router.resolve(route).href"></context-menu>
   </q-item>
 </template>
 
 <script>
-import { mapGetters } from "vuex";
-
-import { QChip, QItem, QItemLabel, QItemSection } from "quasar";
-import placeService from "@/services/place-service";
+import { defineComponent, computed } from "vue";
+import { useMainStore } from "src/stores/main";
+import { storeToRefs } from "pinia";
+import { useRouter } from "vue-router";
+import placeService from "src/services/place-service";
 import ContextMenu from "./ContextMenu.vue";
-import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
 
-export default {
+export default defineComponent({
   name: "PlaceTile",
   components: {
-    QChip,
-    QItem,
-    QItemLabel,
-    QItemSection,
-    ContextMenu
+    ContextMenu,
   },
-  filters: {
-    formatPlaceType(rawType) {
-      return placeService.getPlaceTypeTranslation(rawType);
-    },
-    getTypeChipColor(rawType) {
-      return placeService.getPlaceTypeClass(rawType);
-    }
-  },
-  mixins: [openInNewTabMixin],
+
   props: {
     place: {
       type: [Object, Promise],
       required: true,
-      default: null
-    }
-  },
-  computed: {
-    ...mapGetters(["fullNameIndex"]),
-    route() {
-      return { path: `/places/${this.place.id}` };
+      default: null,
     },
-    name() {
-      const fullName = this.fullNameIndex[this.place.id];
-
-      if (fullName) {
-        return fullName;
-      }
-
-      return this.place.properties.name.toponym;
-    }
   },
-  methods: {
-    openInNewTab() {
-      window.open(this.$router.resolve(this.route).href, "_blank");
+
+  setup(props) {
+    const store = useMainStore();
+    const router = useRouter();
+    const { fullNameIndex } = storeToRefs(store);
+
+    function formatPlaceType(rawType) {
+      return placeService.getPlaceTypeTranslation(rawType);
     }
-  }
-};
+
+    function getTypeChipColor(rawType) {
+      return placeService.getPlaceTypeClass(rawType);
+    }
+
+    function openInNewTab(route) {
+      const resolved = router.resolve(route);
+      window.open(resolved.href, "_blank");
+    }
+
+    const route = computed(() => {
+      return { path: `/places/${props.place.id}` };
+    });
+
+    const name = computed(() => {
+      const fullName = fullNameIndex.value[props.place.id];
+      if (fullName) return fullName;
+      return props.place.properties.name.toponym;
+    });
+
+    return {
+      router,
+      route,
+      name,
+      formatPlaceType,
+      getTypeChipColor,
+      openInNewTab,
+    };
+  },
+});
 </script>
 
 <style scoped>

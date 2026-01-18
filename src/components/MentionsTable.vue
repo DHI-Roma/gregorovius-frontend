@@ -3,24 +3,24 @@
     <q-table
       v-if="!loading && letters.length > 0"
       title="Erwähnt in"
-      :data="letters"
+      :rows="letters"
       :columns="columns"
       :loading="loading"
       row-key="id"
-      :pagination.sync="pagination"
+      v-model:pagination="pagination"
       flat
     >
-      <template v-slot:top-right>
+      <template #top-right>
         <BrowseEntitiesButton
           :entity-ids="[entityId]"
           :route="{ path: `/letters/${letters[0].id}` }"
         ></BrowseEntitiesButton>
       </template>
-      <template v-slot:body-cell="props">
+      <template #body-cell="props">
         <q-td
           :props="props"
           class="cursor-pointer"
-          @click.native="$router.push({ path: `/letters/${props.row.id}/filters/${entityId}` })"
+          @click="$router.push({ path: `/letters/${props.row.id}/filters/${entityId}` })"
           @click.middle="openInNewTab({ path: `/letters/${props.row.id}/filters/${entityId}` })"
           >{{ props.value }}</q-td
         >
@@ -41,93 +41,92 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { defineComponent, ref, computed, onBeforeMount } from "vue";
+import { useMainStore } from "src/stores/main";
+import { storeToRefs } from "pinia";
+import { useRouter } from "vue-router";
 import ContextMenu from "./ContextMenu.vue";
-import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
-import BrowseEntitiesButton from "@/components/BrowseEntitiesButton";
+import BrowseEntitiesButton from "src/components/BrowseEntitiesButton.vue";
 
-export default {
+export default defineComponent({
   name: "MentionsTable",
   components: {
     ContextMenu,
-    BrowseEntitiesButton
+    BrowseEntitiesButton,
   },
-  mixins: [openInNewTabMixin],
+
   props: {
     entityType: {
       type: String,
-      required: true
+      required: true,
     },
     entityName: {
       type: String,
       required: false,
-      default: "Diese Entität"
+      default: "Diese Entität",
     },
     entityId: {
       type: String,
-      required: true
-    }
-  },
-  data() {
-    return {
-      filter: "",
-      loading: true,
-      pagination: {
-        rowsPerPage: 10
-      },
-      columns: [
-        {
-          name: "title",
-          required: true,
-          align: "left",
-          field: row => row.properties.title
-        }
-      ],
-      data: []
-    };
-  },
-
-  computed: {
-    fullNameIndex() {
-      return this.$store.getters.fullNameIndex;
+      required: true,
     },
-    letters() {
-      return this.getMentioned(this.entityType).sort((entityA, entityB) => {
-        if (entityA.properties.date > entityB.properties.date) {
-          return 1;
-        }
-
-        if (entityA.properties.date < entityB.properties.date) {
-          return -1;
-        }
-
-        return 0;
-      });
-    }
   },
 
-  async beforeMount() {
-    this.loading = true;
-    await this.loadEntitiesAction();
-    if (this.$store.getters.fullNameIndex.length == 0) {
-      await this.loadFullNameIndexAction();
-    }
-    this.loading = false;
-  },
+  setup(props) {
+    const store = useMainStore();
+    const router = useRouter();
+    const { fullNameIndex, letters: storeLetters } = storeToRefs(store);
 
-  methods: {
-    ...mapActions(["loadLettersAction", "loadEntitiesAction", "loadFullNameIndexAction"]),
-    getMentioned(entityName) {
-      const { letters } = this.$store.getters;
-      const filtered = letters.filter(letter => {
+    const loading = ref(true);
+    const pagination = ref({ rowsPerPage: 10 });
+    const columns = [
+      {
+        name: "title",
+        required: true,
+        align: "left",
+        field: (row) => row.properties.title,
+      },
+    ];
+
+    function openInNewTab(route) {
+      const resolved = router.resolve(route);
+      window.open(resolved.href, "_blank");
+    }
+
+    function getMentioned(entityName) {
+      const filtered = storeLetters.value.filter((letter) => {
         let entities = letter.properties.mentioned[entityName];
         entities = !entities ? [] : entities;
-        return [...entities].some(id => id.includes(this.entityId));
+        return [...entities].some((id) => id.includes(props.entityId));
       });
       return filtered;
     }
-  }
-};
+
+    const letters = computed(() => {
+      return getMentioned(props.entityType).sort((entityA, entityB) => {
+        if (entityA.properties.date > entityB.properties.date) return 1;
+        if (entityA.properties.date < entityB.properties.date) return -1;
+        return 0;
+      });
+    });
+
+    onBeforeMount(async () => {
+      loading.value = true;
+      await store.loadEntities();
+      if (Object.keys(fullNameIndex.value).length === 0) {
+        await store.loadFullNameIndex();
+      }
+      loading.value = false;
+    });
+
+    return {
+      loading,
+      pagination,
+      columns,
+      letters,
+      openInNewTab,
+    };
+  },
+});
 </script>
 
 <style></style>

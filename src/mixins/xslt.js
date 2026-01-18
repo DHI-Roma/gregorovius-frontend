@@ -1,8 +1,6 @@
-/* eslint-disable import/prefer-default-export */
-
-import * as LettersMsDescXslt from "@/assets/xslt/LettersMsDesc.xslt";
-import * as LettersTextXslt from "@/assets/xslt/LettersText.xslt";
-import * as WorkTitleXslt from "@/assets/xslt/WorkTitle.xslt";
+import LettersMsDescXslt from "src/assets/xslt/LettersMsDesc.xslt?raw";
+import LettersTextXslt from "src/assets/xslt/LettersText.xslt?raw";
+import WorkTitleXslt from "src/assets/xslt/WorkTitle.xslt?raw";
 
 export const getXslt = (xsltName) => {
   switch (xsltName) {
@@ -20,8 +18,7 @@ export const getXslt = (xsltName) => {
 
 export const processXML = async(xmlString, xsltName) => {
   try {
-    const stylesheetModule = getXslt(xsltName);
-    const xsltStylesheet = stylesheetModule.default;
+    const xsltStylesheet = getXslt(xsltName);
     const parser = new DOMParser();
     const xmlParsed = parser.parseFromString(xmlString, "text/xml");
     const xsltParsed = parser.parseFromString(xsltStylesheet, "text/xml");

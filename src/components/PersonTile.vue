@@ -1,7 +1,8 @@
 <template>
   <q-item
+    clickable
     class="cursor-pointer g-card"
-    @click.native="$router.push(route)"
+    @click="router.push(route)"
     @click.middle="openInNewTab(route)"
   >
     <q-item-section>
@@ -15,7 +16,7 @@
       <div v-if="hasAlternativeName(person)" class="text-caption q-tm-sm text-secondary">
         <span>
           <span class="text-weight-bold"
-            >{{ person.properties.name.altNameSubtype | formatAlternativeNameSubType }}:</span
+            >{{ formatAlternativeNameSubType(person.properties.name.altNameSubtype) }}:</span
           >
         </span>
         <span v-if="getAlternativeFullName(person)">
@@ -27,80 +28,95 @@
       </div>
     </q-item-section>
     <q-chip v-if="isOrganisation(person.properties.type)" size="12px" color="blue-1">
-      {{ person.properties.type | formatPersonType }}
+      {{ formatPersonType(person.properties.type) }}
     </q-chip>
     <q-chip
       v-if="isPerson(person.properties.type)"
       size="12px"
       :color="getRoleClass(person.properties.role)"
     >
-      {{ person.properties.role | formatPersonRole }}
+      {{ formatPersonRole(person.properties.role) }}
     </q-chip>
 
-    <context-menu :route-to-open="$router.resolve(route).href"></context-menu>
+    <context-menu :route-to-open="router.resolve(route).href"></context-menu>
   </q-item>
 </template>
 
 <script>
-import { QChip, QItem, QItemSection, QItemLabel } from "quasar";
-import personService from "@/services/person-service";
+import { defineComponent, computed } from "vue";
+import { useRouter } from "vue-router";
+import personService from "src/services/person-service";
 import ContextMenu from "./ContextMenu.vue";
-import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
 
-export default {
+export default defineComponent({
   name: "PersonTile",
   components: {
-    QChip,
-    QItem,
-    QItemSection,
-    QItemLabel,
-    ContextMenu
+    ContextMenu,
   },
-  filters: {
-    formatPersonType(rawType) {
-      return personService.getPersonTypeTranslation(rawType);
-    },
-    formatPersonRole(rawRole) {
-      return personService.getPersonRoleTranslation(rawRole);
-    },
-    formatAlternativeNameSubType(subType) {
-      return personService.getPersonAlternativeNameTypeTranslation(subType);
-    }
-  },
-  mixins: [openInNewTabMixin],
   props: {
     person: {
       type: [Object, Promise],
       required: true,
-      default: null
-    }
+      default: null,
+    },
   },
-  computed: {
-    route() {
-      return { path: `/persons/${this.person.id}` };
+
+  setup(props) {
+    const router = useRouter();
+
+    const route = computed(() => ({ path: `/persons/${props.person.id}` }));
+
+    function openInNewTab(routeObj) {
+      window.open(router.resolve(routeObj).href, "_blank");
     }
-  },
-  methods: {
-    isPerson(rawType) {
+
+    function isPerson(rawType) {
       return rawType === "person";
-    },
-    isOrganisation(rawType) {
+    }
+
+    function isOrganisation(rawType) {
       return rawType === "org";
-    },
-    getRoleClass(rawRole) {
+    }
+
+    function getRoleClass(rawRole) {
       return personService.getPersonRoleClass(rawRole);
-    },
-    hasDifferentSimpleName(row) {
-      return personService.hasDifferentSimpleName(row);
-    },
-    hasAlternativeName(row) {
+    }
+
+    function hasAlternativeName(row) {
       return personService.hasAlternativeName(row);
-    },
-    getAlternativeFullName(row) {
+    }
+
+    function getAlternativeFullName(row) {
       return personService.getAlternativeFullName(row);
     }
-  }
-};
+
+    function formatPersonType(rawType) {
+      return personService.getPersonTypeTranslation(rawType);
+    }
+
+    function formatPersonRole(rawRole) {
+      return personService.getPersonRoleTranslation(rawRole);
+    }
+
+    function formatAlternativeNameSubType(subType) {
+      return personService.getPersonAlternativeNameTypeTranslation(subType);
+    }
+
+    return {
+      router,
+      route,
+      openInNewTab,
+      isPerson,
+      isOrganisation,
+      getRoleClass,
+      hasAlternativeName,
+      getAlternativeFullName,
+      formatPersonType,
+      formatPersonRole,
+      formatAlternativeNameSubType,
+    };
+  },
+});
 </script>
 
 <style scoped>

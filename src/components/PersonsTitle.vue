@@ -52,82 +52,69 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
-import personService from "@/services/person-service";
+import { defineComponent, computed } from "vue";
+import { useMainStore } from "src/stores/main";
+import { storeToRefs } from "pinia";
+import personService from "src/services/person-service";
 
-import { QAvatar, QCard, QCardSection, QChip, QSeparator } from "quasar";
-
-import dataService from "@/shared";
-
-export default {
+export default defineComponent({
   name: "PersonsTitle",
-  components: {
-    QAvatar,
-    QCard,
-    QCardSection,
-    QChip,
-    QSeparator
-  },
+
   props: {
     entity: {
       type: Object,
-      required: true
+      required: true,
     },
     person: {
       type: [Object, Promise],
       required: true,
-      default: null
+      default: null,
     },
     isList: {
       type: Boolean,
       required: false,
-      default: false
-    }
+      default: false,
+    },
   },
-  computed: {
-    ...mapGetters(["fullNameIndex", "persons", "letters"]),
-    titleClass() {
-      return this.isList ? "" : "text-h6";
-    },
-    wrapperClass() {
-      return this.isList ? "" : "q-pa-xl";
-    },
-    contextClass() {
-      return this.isList ? "context-small" : "";
-    },
-    name() {
-      const fullName = this.fullNameIndex[this.entity.id];
 
-      if (fullName) {
-        return fullName;
-      }
+  setup(props) {
+    const store = useMainStore();
+    const { fullNameIndex, persons } = storeToRefs(store);
 
-      return this.properties.name.fullName;
-    },
-    authorityUri() {
-      return this.person.idno.length > 1 ? this.person.idno[0]["#text"] : this.person.idno["#text"];
-    },
-    properties() {
-      return this.entity.properties;
-    },
-    isPerson() {
-      return this.properties.type === "person";
-    },
-    isOrganisation() {
-      return this.properties.type === "org";
-    },
-    roleName() {
-      if (!this.persons.length) {
-        return "";
-      }
-      return personService.getPersonRoleTranslation(this.properties.role);
-    },
-    roleClass() {
-      return personService.getPersonRoleClass(this.properties.role);
-    },
-    alternativeNameType() {
+    const titleClass = computed(() => (props.isList ? "" : "text-h6"));
+    const wrapperClass = computed(() => (props.isList ? "" : "q-pa-xl"));
+    const contextClass = computed(() => (props.isList ? "context-small" : ""));
+
+    const properties = computed(() => props.entity?.properties);
+
+    const name = computed(() => {
+      const fullName = fullNameIndex.value[props.entity.id];
+      if (fullName) return fullName;
+      return properties.value?.name?.fullName || "";
+    });
+
+    const authorityUri = computed(() => {
+      if (!props.person?.idno) return "";
+      return props.person.idno.length > 1
+        ? props.person.idno[0]["#text"]
+        : props.person.idno["#text"];
+    });
+
+    const isPerson = computed(() => properties.value?.type === "person");
+    const isOrganisation = computed(() => properties.value?.type === "org");
+
+    const roleName = computed(() => {
+      if (!persons.value.length) return "";
+      return personService.getPersonRoleTranslation(properties.value?.role);
+    });
+
+    const roleClass = computed(() => {
+      return personService.getPersonRoleClass(properties.value?.role);
+    });
+
+    const alternativeNameType = computed(() => {
       const subTypeName = personService.getPersonAlternativeNameTypeTranslation(
-        this.properties.name.altNameSubtype
+        properties.value?.name?.altNameSubtype
       );
 
       if (subTypeName !== personService.DEFAULT_ALTERNATIVE_NAME_TYPE_TRANSLATION) {
@@ -135,44 +122,55 @@ export default {
       }
 
       return personService.getPersonAlternativeNameTypeTranslation(
-        this.properties.name.altNameType
+        properties.value?.name?.altNameType
       );
-    },
-    hasNote() {
-      if (!this.person.note) {
-        return false;
-      }
-      return true;
-    },
-    hasAlternativeName() {
-      if (!this.persons.length) {
-        return false;
-      }
-      return personService.hasAlternativeName(this.entity);
-    },
-    alternativeFullName() {
-      return personService.getAlternativeFullName(this.entity);
-    },
-    alternativeSimpleName() {
-      return this.properties.name.altSimpleName;
-    }
+    });
+
+    const hasNote = computed(() => !!props.person?.note);
+
+    const hasAlternativeName = computed(() => {
+      if (!persons.value.length) return false;
+      return personService.hasAlternativeName(props.entity);
+    });
+
+    const alternativeFullName = computed(() => {
+      return personService.getAlternativeFullName(props.entity);
+    });
+
+    const alternativeSimpleName = computed(() => {
+      return properties.value?.name?.altSimpleName;
+    });
+
+    return {
+      titleClass,
+      wrapperClass,
+      contextClass,
+      properties,
+      name,
+      authorityUri,
+      isPerson,
+      isOrganisation,
+      roleName,
+      roleClass,
+      alternativeNameType,
+      hasNote,
+      hasAlternativeName,
+      alternativeFullName,
+      alternativeSimpleName,
+    };
   },
-  methods: {
-    async getItem(entityId) {
-      const data = await dataService.getEntity("persons", entityId, "json");
-      return data.person;
-    }
-  }
-};
+});
 </script>
 
-<style lang="stylus" scoped>
-#note
-  font-family: "IBMPlexSans"
-  line-height: 1.5
-  font-size: 14px
+<style lang="scss" scoped>
+#note {
+  font-family: "IBMPlexSans";
+  line-height: 1.5;
+  font-size: 14px;
+}
 
-.context-small
-  margin-top: 0
-  padding-top: 0
+.context-small {
+  margin-top: 0;
+  padding-top: 0;
+}
 </style>

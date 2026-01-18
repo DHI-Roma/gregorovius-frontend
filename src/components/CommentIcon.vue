@@ -10,75 +10,95 @@
 </template>
 
 <script>
-import { QIcon } from "quasar";
+import { defineComponent, computed } from "vue";
+import { useMainStore } from "src/stores/main";
+import { storeToRefs } from "pinia";
+import { useRoute } from "vue-router";
 import { basePathLetters } from "../router";
 
-export default {
+export default defineComponent({
   name: "CommentIcon",
-  components: {
-    QIcon
-  },
+
   props: {
     commentId: {
       type: String,
-      required: true
+      required: true,
     },
     commentText: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
-  computed: {
-    isActive() {
-      return this.$store.getters.activeComment.id === this.commentId;
-    }
-  },
-  methods: {
-    activateComment() {
-      const commentHtml = document.querySelector(`#comment-${this.commentId}`);
+
+  setup(props) {
+    const store = useMainStore();
+    const route = useRoute();
+    const { activeComment } = storeToRefs(store);
+
+    const isActive = computed(() => {
+      return activeComment.value.id === props.commentId;
+    });
+
+    function activateComment() {
+      const commentHtml = document.querySelector(`#comment-${props.commentId}`);
+      const commentReference = document.querySelector(
+        `.g-comment-orig[commentId="${props.commentId}"]`
+      );
+
       const comment = {
-        id: this.commentId,
+        id: props.commentId,
         text: commentHtml.innerHTML,
-        offsetTop: 0
+        offsetTop: commentReference.offsetTop,
       };
-      this.$store.dispatch("setActiveComment", comment);
+      store.setActiveComment(comment);
 
       /** We don't use vue router.push here to not trigger a refresh of the component */
       history.pushState(
         {},
         null,
-        basePathLetters + "/" + this.$route.params.id + "/" + this.commentId
+        basePathLetters + "/" + route.params.id + "/" + props.commentId
       );
 
+      // Recalculate after splitter resizes
       setTimeout(() => {
-        const commentReference = document.querySelector(
-          `.g-comment-orig[commentId="${this.commentId}"]`
-        );
-        comment.offsetTop = commentReference.offsetTop;
-
-        this.$store.dispatch("setActiveComment", comment);
-      }, 0);
+        const panel = document.querySelector('.comment-panel');
+        if (panel && commentReference) {
+          const panelRect = panel.getBoundingClientRect();
+          const refRect = commentReference.getBoundingClientRect();
+          comment.offsetTop = refRect.top - panelRect.top + panel.scrollTop;
+          store.setActiveComment(comment);
+        }
+      }, 50);
     }
-  }
-};
+
+    return {
+      isActive,
+      activateComment,
+    };
+  },
+});
 </script>
 
-<style lang="stylus">
-@import '../styles/quasar.variables.styl'
+<style lang="scss">
+@import '../css/quasar.variables.scss';
 
-.comment-icon-wrapper
-  display: inline-block !important
+.comment-icon-wrapper {
+  display: inline-block !important;
+}
 
-.comment-icon
-  margin-left: 5px
-  margin-right: 2px
-  cursor: pointer
-  color: $secondary
+.comment-icon {
+  margin-left: 5px;
+  margin-right: 2px;
+  cursor: pointer;
+  color: $secondary;
+}
 
-.active
-  color: $primary
+.active {
+  color: $primary;
+}
 
-.comment-icon:hover
-  cursor: pointer
-  color: $primary
+.comment-icon:hover {
+  cursor: pointer;
+  color: $primary;
+}
 </style>

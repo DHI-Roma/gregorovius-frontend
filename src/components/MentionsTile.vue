@@ -2,12 +2,12 @@
   <q-list
     class="cursor-pointer g-card-list mention"
     :class="backgroundColorClass"
-    @click.native="$router.push(route)"
+    @click="$router.push(route)"
     @click.middle="openInNewTab(route)"
   >
     <q-item class="g-card">
       <q-item-label>
-        {{ name | truncate }}
+        {{ truncate(name) }}
       </q-item-label>
       <q-item-label v-if="subtitle.length" class="text-subtitle3 text-secondary">
         {{ subtitle }}
@@ -18,7 +18,8 @@
 </template>
 
 <script>
-import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
+import { defineComponent, computed } from "vue";
+import { useRouter } from "vue-router";
 import {
   ENTITY_PERSON,
   ENTITY_PLACE,
@@ -26,122 +27,122 @@ import {
   WORK_TYPE_GREGOROVIUS_MAIN,
   WORK_TYPE_GREGOROVIUS_TRANSLATION,
   WORK_TYPE_OTHER,
-  WORK_TYPE_SECONDARY
-} from "@/shared/constants";
-import { mapGetters } from "vuex";
-import ContextMenu from "@/components/ContextMenu";
+  WORK_TYPE_SECONDARY,
+} from "src/shared/constants";
+import ContextMenu from "src/components/ContextMenu.vue";
 
-export default {
+export default defineComponent({
   name: "MentionsTile",
   components: { ContextMenu },
-  filters: {
-    truncate(text) {
-      const characterLimit = 90;
-      if (text.length < characterLimit) {
-        return text;
-      }
 
-      return text.substr(0, characterLimit) + "...";
-    }
-  },
-  mixins: [openInNewTabMixin],
   props: {
     entity: {
       type: [Object, Promise],
-      required: true
-    }
+      required: true,
+    },
   },
-  computed: {
-    ...mapGetters(["fullNameIndex"]),
-    route() {
-      if (this.entity.entity === ENTITY_PERSON) {
-        return "/persons/" + this.entity.id;
-      }
 
-      if (this.entity.entity === ENTITY_PLACE) {
-        return "/places/" + this.entity.id;
-      }
+  setup(props) {
+    const router = useRouter();
 
-      if (this.entity.entity === ENTITY_WORKS) {
-        return "/works/" + this.entity.id;
+    function truncate(text) {
+      const characterLimit = 90;
+      if (!text || text.length < characterLimit) {
+        return text;
       }
+      return text.substr(0, characterLimit) + "...";
+    }
 
+    function openInNewTab(route) {
+      const resolved = router.resolve(route);
+      window.open(resolved.href, "_blank");
+    }
+
+    const route = computed(() => {
+      if (props.entity.entity === ENTITY_PERSON) {
+        return "/persons/" + props.entity.id;
+      }
+      if (props.entity.entity === ENTITY_PLACE) {
+        return "/places/" + props.entity.id;
+      }
+      if (props.entity.entity === ENTITY_WORKS) {
+        return "/works/" + props.entity.id;
+      }
       return "";
-    },
-    name() {
-      if (this.entity.entity === ENTITY_PERSON) {
-        return this.entity.properties.name.fullName;
-      }
+    });
 
-      if (this.entity.entity === ENTITY_PLACE) {
-        return this.entity.properties.name.toponym;
+    const name = computed(() => {
+      if (props.entity.entity === ENTITY_PERSON) {
+        return props.entity.properties.name.fullName;
       }
-
-      if (this.entity.entity === ENTITY_WORKS) {
-        return this.entity.properties.title;
+      if (props.entity.entity === ENTITY_PLACE) {
+        return props.entity.properties.name.toponym;
       }
-
+      if (props.entity.entity === ENTITY_WORKS) {
+        return props.entity.properties.title;
+      }
       return "";
-    },
-    subtitle() {
-      if (this.entity.entity !== ENTITY_PERSON) {
+    });
+
+    const subtitle = computed(() => {
+      if (props.entity.entity !== ENTITY_PERSON) {
         return "";
       }
 
-      let subtitle = "";
-
-      if (this.entity.properties.birth) {
-        subtitle += this.entity.properties.birth;
+      let subtitleText = "";
+      if (props.entity.properties.birth) {
+        subtitleText += props.entity.properties.birth;
       }
-
-      if (this.entity.properties.birth || this.entity.properties.death) {
-        subtitle += " - ";
+      if (props.entity.properties.birth || props.entity.properties.death) {
+        subtitleText += " - ";
       }
-
-      if (this.entity.properties.death) {
-        subtitle += this.entity.properties.death;
+      if (props.entity.properties.death) {
+        subtitleText += props.entity.properties.death;
       }
+      return subtitleText.trim();
+    });
 
-      return subtitle.trim();
-    },
-    backgroundColorClass() {
-      if (this.entity.entity === ENTITY_PERSON) {
+    const backgroundColorClass = computed(() => {
+      if (props.entity.entity === ENTITY_PERSON) {
         return "bg-green-1";
       }
-
-      if (this.entity.entity === ENTITY_PLACE) {
+      if (props.entity.entity === ENTITY_PLACE) {
         return "bg-brown-1";
       }
-
       if (
-        this.entity.entity === ENTITY_WORKS &&
-        this.entity.properties.type === WORK_TYPE_GREGOROVIUS_MAIN
+        props.entity.entity === ENTITY_WORKS &&
+        props.entity.properties.type === WORK_TYPE_GREGOROVIUS_MAIN
       ) {
         return "bg-indigo-1";
       }
-
       if (
-        this.entity.entity === ENTITY_WORKS &&
-        this.entity.properties.type === WORK_TYPE_GREGOROVIUS_TRANSLATION
+        props.entity.entity === ENTITY_WORKS &&
+        props.entity.properties.type === WORK_TYPE_GREGOROVIUS_TRANSLATION
       ) {
         return "bg-blue-1";
       }
-
-      if (this.entity.entity === ENTITY_WORKS && this.entity.properties.type === WORK_TYPE_OTHER) {
+      if (props.entity.entity === ENTITY_WORKS && props.entity.properties.type === WORK_TYPE_OTHER) {
         return "bg-cyan-1";
       }
-
       if (
-        this.entity.entity === ENTITY_WORKS &&
-        this.entity.properties.type === WORK_TYPE_SECONDARY
+        props.entity.entity === ENTITY_WORKS &&
+        props.entity.properties.type === WORK_TYPE_SECONDARY
       ) {
         return "bg-teal-1";
       }
-
       return "";
-    }
-  }
-};
+    });
+
+    return {
+      route,
+      name,
+      subtitle,
+      backgroundColorClass,
+      truncate,
+      openInNewTab,
+    };
+  },
+});
 </script>
 
 <style scoped>

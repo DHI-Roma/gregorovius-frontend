@@ -1,0 +1,28 @@
+// App global styles
+@import './quasar.variables.scss';
+
+// Shared styles
+.g-card-list {
+  height: 5.5em;
+}
+
+// Remove separator line above QTable pagination
+.q-table__bottom,
+.q-table__bottom:not(.q-table__bottom--nodata) {
+  border-top: none;
+}
+
+// Photo zoom styles (for vue-image-zoomer replacement)
+.vue-image-zoomer {
+  &.magnifier-rotation-90 .zoomer-image {
+    transform: rotate(90deg);
+  }
+
+  &.magnifier-rotation-180 .zoomer-image {
+    transform: rotate(180deg);
+  }
+
+  &.magnifier-rotation-270 .zoomer-image {
+    transform: rotate(270deg);
+  }
+}

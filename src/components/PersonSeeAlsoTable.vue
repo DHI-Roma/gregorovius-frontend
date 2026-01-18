@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import beaconService from "@/services/beacon-service";
+import beaconService from "src/services/beacon-service";
 export default {
   name: "PersonSeeAlsoTable",
   props: {

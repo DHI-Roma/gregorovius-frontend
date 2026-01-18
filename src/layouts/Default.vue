@@ -4,7 +4,7 @@
       <q-tabs inline-label indicator-color="positive" align="left" class="g-route-tabs">
         <img
           class="gt-sm logo-signature cursor-pointer q-mx-md q-pa-md"
-          src="../statics/img/gregorovius_signature.svg"
+          src="/img/gregorovius_signature.svg"
           @click="$router.push({ path: '/' })"
         />
         <q-icon
@@ -12,7 +12,7 @@
           name="home"
           style="font-size: 1.3em"
           @click="$router.push({ path: '/' })"
-        ></q-icon>
+        />
         <q-route-tab :to="$router.resolve({ path: '/letters', query: $route.query }).href" label="BRIEFEDITION" class="tab-small" />
         <q-route-tab to="/persons" label="PERSONEN" class="tab-small" />
         <q-route-tab to="/places" label="ORTE" class="tab-small" />
@@ -44,26 +44,26 @@
           <div class="row q-pa-md">
             <div class="col-md-6 col-10 q-pa-md self-center">
               <a href="http://dhi-roma.it">
-                <img src="../statics/img/logo_dhi.png" />
+                <img src="/img/logo_dhi.png" />
               </a>
             </div>
             <div class="col-md-3 col-10 q-pa-md">
               <div class="text-caption">gefördert durch</div>
               <div class="row q-py-md">
                 <a href="https://www.dfg.de/">
-                  <img src="../statics/img/logo_dfg.png" />
+                  <img src="/img/logo_dfg.png" />
                 </a>
               </div>
               <div class="row">
                 <a href="https://www.gerda-henkel-stiftung.de/">
-                  <img src="../statics/img/logo_henkel.png" />
+                  <img src="/img/logo_henkel.png" />
                 </a>
               </div>
             </div>
             <div class="col-md-3 col-10 q-pa-md">
               <div class="text-caption">in Kooperation mit</div>
               <a href="http://www.bbaw.de">
-                <img src="../statics/img/logo_bbaw.png" />
+                <img src="/img/logo_bbaw.png" />
               </a>
             </div>
           </div>
@@ -75,7 +75,7 @@
               </div>
               <div class="col-md-3 col-10 text-caption">
                 <a href="https://creativecommons.org/licenses/by/4.0/deed.de">
-                  <img src="../statics/img/badge_cc_by.png" alt="" />
+                  <img src="/img/badge_cc_by.png" alt="" />
                 </a>
               </div>
             </div>
@@ -92,7 +92,7 @@
             <div class="col-md-1 col-10 cursor-pointer">
               <q-icon name="photo_camera" :class="$route.path === '/' ? '' : 'hidden'">
                 <q-popup-proxy>
-                  <q-banner class="text-subtitle" content-style="font-size: 12px">
+                  <q-banner class="text-subtitle">
                     <b>Hintergrundbild:</b>
                     Gregorovius am Schreibtisch, Aquarell von K. Lindemann-Frommel, BSB München,
                     Nachlass F. Gregorovius, Gregoroviusiana 30.a.9,
@@ -111,22 +111,26 @@
 </template>
 
 <script>
-export default {
-  name: "DefaultLayout",
-  computed: {
-    appVersion() {
-      return require("../../package.json").version;
-    }
+import { defineComponent } from 'vue';
+import { version } from '../../package.json';
+
+export default defineComponent({
+  name: 'DefaultLayout',
+
+  setup() {
+    const openUrl = (url) => {
+      if (url) window.open(url);
+    };
+
+    return {
+      appVersion: version,
+      openUrl,
+    };
   },
-  methods: {
-    openUrl(url) {
-      url ? window.open(url) : null;
-    }
-  }
-};
+});
 </script>
 
-<style>
+<style lang="scss">
 .landing-page-bg {
   color: none;
 }

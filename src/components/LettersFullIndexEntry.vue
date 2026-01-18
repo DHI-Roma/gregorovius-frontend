@@ -118,18 +118,13 @@
 </template>
 
 <script>
-import { QMenu, QBtn, QChip, QAvatar } from "quasar";
 import LettersFullIndexEntryPersonContextMenu
-  from "@/components/LettersFullIndexEntryPersonContextMenu.vue";
-import ContextMenu from "@/components/ContextMenu.vue";
+  from "src/components/LettersFullIndexEntryPersonContextMenu.vue";
+import ContextMenu from "src/components/ContextMenu.vue";
 export default {
   name: "LettersFullIndexEntry",
   components: {
     LettersFullIndexEntryPersonContextMenu,
-    QAvatar,
-    QChip,
-    QMenu,
-    QBtn,
     ContextMenu,
   },
   props: {
@@ -242,11 +237,13 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
-.text-wrap
-  white-space: initial
-  padding-right: 1rem
+<style lang="scss" scoped>
+.text-wrap {
+  white-space: initial;
+  padding-right: 1rem;
+}
 
-.text-bigger
-  font-size: 1.3em
+.text-bigger {
+  font-size: 1.3em;
+}
 </style>

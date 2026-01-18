@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import { openInNewTabMixin } from "@/mixins/openInNewTabMixin";
-import ContextMenu from "@/components/ContextMenu.vue";
+import { openInNewTabMixin } from "src/mixins/openInNewTabMixin";
+import ContextMenu from "src/components/ContextMenu.vue";
 export default {
   name: "BrowseEntitiesButton",
   components: { ContextMenu },

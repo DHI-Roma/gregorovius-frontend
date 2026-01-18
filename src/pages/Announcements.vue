@@ -1,0 +1,78 @@
+<template>
+  <q-page padding>
+    <div class="row justify-center">
+      <div class="col-md-8 col-12 q-py-xl q-gutter-y-lg">
+        <q-card class="q-pa-md" flat>
+          <q-card-section>
+            <div class="text-h6">Aktuelles</div>
+          </q-card-section>
+        </q-card>
+
+        <q-card v-for="announcement in announcements" :key="announcement.id" class="q-pa-md" flat>
+          <q-card-section>
+            <div class="row announcement-title">
+              {{ announcement.title }}
+            </div>
+            <div class="row q-mt-sm">
+              <div class="col-12">
+                <q-icon name="schedule" color="primary" size="md" left></q-icon>
+                <span class="text-primary">
+                  {{ announcement.date }}
+                </span>
+              </div>
+              <div class="col-12">
+                <q-icon name="room" color="primary" size="md" left></q-icon>
+                <span class="text-primary text-small">
+                  {{ announcement.location }}
+                </span>
+              </div>
+            </div>
+          </q-card-section>
+          <q-card-section class="text-body1">
+            <div v-html="announcement.description"></div>
+          </q-card-section>
+        </q-card>
+
+        <q-card class="q-pa-md" flat>
+          <q-card-section>
+            <div class="text-h6">Publikationen zur ferneren Lektüre</div>
+          </q-card-section>
+          <q-card-section
+            v-for="(literatureEntry, index) in additionalLiteratureEntries"
+            :key="index"
+            class="text-body1 text-small"
+          >
+            <div v-html="literatureEntry"></div>
+          </q-card-section>
+        </q-card>
+      </div>
+
+    </div>
+  </q-page>
+</template>
+
+<script>
+import { announcements } from "src/shared/announcements";
+import { additionalLiterature } from "src/shared/additional-literature";
+
+export default {
+  name: "Announcements",
+  data() {
+    return {
+      announcements,
+      additionalLiteratureEntries: additionalLiterature
+    };
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+.announcement-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.text-small {
+  font-size: 0.85rem;
+}
+</style>
