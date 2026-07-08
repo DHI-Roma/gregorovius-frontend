@@ -72,7 +72,7 @@ export default {
       team: [
         {
           id: "steinsiek",
-          img: require("../statics/img/steinsiek.jpg"),
+          img: "/img/steinsiek.jpg",
           name: "Dr. Angela Steinsiek",
           role: "Projekt- und Editionsleitung",
           tel: "",
@@ -81,7 +81,7 @@ export default {
         },
         {
           id: "pohl",
-          img: require("../statics/img/pohl.jpg"),
+          img: "/img/pohl.jpg",
           name: "Oliver Pohl, M. A.",
           role: "Werkauftrag",
           tel: "",
