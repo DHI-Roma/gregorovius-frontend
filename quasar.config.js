@@ -1,14 +1,9 @@
 /* eslint-env node */
 
-const { configure } = require('quasar/wrappers');
+import { defineConfig } from '#q-app/wrappers';
 
-module.exports = configure(function (/* ctx */) {
+export default defineConfig(function (/* ctx */) {
   return {
-    eslint: {
-      warnings: true,
-      errors: true
-    },
-
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#sourcefiles
     sourceFiles: {
       rootComponent: 'src/App.vue',
@@ -26,8 +21,6 @@ module.exports = configure(function (/* ctx */) {
       'app.scss'
     ],
 
-    sassVariables: 'src/css/quasar.variables.scss',
-
     extras: [
       'material-icons'
     ],
@@ -35,7 +28,7 @@ module.exports = configure(function (/* ctx */) {
     build: {
       target: {
         browser: ['es2019', 'edge88', 'firefox78', 'chrome87', 'safari13.1'],
-        node: 'node20'
+        node: 'node22'
       },
 
       vueRouterMode: 'history',
@@ -74,7 +67,7 @@ module.exports = configure(function (/* ctx */) {
     },
 
     pwa: {
-      workboxMode: 'generateSW'
+      workboxMode: 'GenerateSW'
     },
 
     capacitor: {

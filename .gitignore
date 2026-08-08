@@ -2,6 +2,8 @@
 node_modules
 /dist
 .tmp
+.quasar
+quasar.config.*.temporary.compiled*
 
 # local env files
 .env.local
