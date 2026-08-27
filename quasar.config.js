@@ -44,7 +44,9 @@ export default defineConfig(function (/* ctx */) {
     },
 
     devServer: {
-      open: true
+      open: true,
+      // served behind the traefik router as gregorovius.local in the docker env
+      allowedHosts: ['gregorovius.local']
     },
 
     framework: {

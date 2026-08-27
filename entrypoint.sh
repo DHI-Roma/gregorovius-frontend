@@ -1,3 +1,3 @@
 #!/bin/bash
 
-PORT=8070 npm run serve
+exec npx quasar dev -H 0.0.0.0 -p 8070
