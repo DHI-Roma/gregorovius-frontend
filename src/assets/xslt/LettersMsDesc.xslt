@@ -1,3 +1,5 @@
+<xsl:output method="html" omit-xml-declaration="yes" />
+
 <xsl:strip-space elements="*" />
 
 <!-- Select source description element -->

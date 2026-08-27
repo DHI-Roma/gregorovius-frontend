@@ -138,8 +138,11 @@ const XSLTransform = async function (path, xsltName) {
     if (response.data === '') {
       return '';
     }
+    // the result is compiled as a vue template, and the html parser rejects
+    // the xml declaration a stylesheet without xsl:output would emit
+    const result = response.data.replace(/^\s*<\?xml[^>]*\?>\s*/, '');
     return `<div xmlns:v-bind="https://vuejs.org/v2/api/#v-bind"
-          xmlns:v-on="https://vuejs.org/v2/api/#v-on">${response.data}</div>`;
+          xmlns:v-on="https://vuejs.org/v2/api/#v-on">${result}</div>`;
   } catch (error) {
     console.error(error);
     return '';

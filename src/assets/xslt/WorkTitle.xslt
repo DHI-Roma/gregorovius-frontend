@@ -1,3 +1,5 @@
+<xsl:output method="html" omit-xml-declaration="yes" />
+
 <xsl:template match="/tei:bibl/tei:title">
     <xsl:apply-templates/>
 </xsl:template> 
