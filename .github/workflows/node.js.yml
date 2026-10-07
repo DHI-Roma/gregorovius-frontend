@@ -6,8 +6,8 @@ name: Node.js CI
 on:
   push:
     branches: [ master ]
+  # all pull requests, including stacked PRs that target another feature branch
   pull_request:
-    branches: [ master ]
 
 jobs:
   unit:
