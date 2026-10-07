@@ -32,7 +32,9 @@
           <q-btn
             flat
             label="EDITIONSRICHTLINIEN"
-            @click="openUrl('http://gregorovius-edition.dhi-roma.it/richtlinien/')"
+            icon-right="open_in_new"
+            href="http://gregorovius-edition.dhi-roma.it/richtlinien/"
+            target="_blank"
           />
         </q-tabs>
       </nav>
@@ -124,17 +126,12 @@ export default defineComponent({
   name: 'DefaultLayout',
 
   setup() {
-    const openUrl = (url) => {
-      if (url) window.open(url);
-    };
-
     function focusMainContent() {
       document.getElementById('main-content')?.focus();
     }
 
     return {
       appVersion: version,
-      openUrl,
       focusMainContent,
     };
   },

@@ -60,9 +60,11 @@ EN
               label="TEI XML"
               flat
               icon="arrow_right_alt"
+              icon-right="open_in_new"
               color="primary"
               size="md"
-              @click="openUrl(`https://gregorovius-edition.dhi-roma.it/api/letters/${letterId}`)"
+              :href="`https://gregorovius-edition.dhi-roma.it/api/letters/${letterId}`"
+              target="_blank"
             />
           </div>
           <div class="row">
@@ -568,10 +570,6 @@ export default defineComponent({
       if (targetRef === "msDesc") msDesc.value = result;
     }
 
-    function openUrl(url) {
-      if (url) window.open(url);
-    }
-
     function updateCommentPosition() {
       if (!activeComment.value.id) return;
 
@@ -927,7 +925,6 @@ export default defineComponent({
       hasAbstracts,
       getAbstractForLanguage,
       getAbstractCount,
-      openUrl,
       onSeparatorChange,
       copyCitation: copyCitationHandler,
       openPreviousLetter,
