@@ -4,7 +4,7 @@
 
 <script>
 /* eslint-disable vue/no-unused-components */
-import { defineComponent, ref, computed, watch, onMounted } from "vue";
+import { defineComponent, ref, computed, watch, onMounted, nextTick } from "vue";
 import { useMainStore } from "src/stores/main";
 import { useRoute, useRouter } from "vue-router";
 import VRuntimeTemplate from "vue3-runtime-template";
@@ -21,7 +21,9 @@ export default defineComponent({
     ContextMenu,
   },
 
-  setup() {
+  emits: ["rendered"],
+
+  setup(props, { emit }) {
     const store = useMainStore();
     const route = useRoute();
     const router = useRouter();
@@ -41,6 +43,9 @@ export default defineComponent({
       } catch (error) {
         console.error(error);
       }
+      // the parent reads comments and entity links from the rendered text
+      await nextTick();
+      emit("rendered");
     }
 
     function activateComment(event, commentId) {
