@@ -28,3 +28,40 @@ test('main navigation reaches every section', async ({ page }) => {
   await banner.getByRole('tab', { name: 'BRIEFEDITION' }).click();
   await expect(page).toHaveURL(/\/letters$/);
 });
+
+test('skip link moves the focus to the main content', async ({ page, browserName }) => {
+  await page.goto('/letters');
+  await expect(page.getByRole('combobox', { name: 'Empfänger' })).toBeVisible();
+  // Safari/WebKit only tabs to links with Alt+Tab (default macOS setting)
+  await page.keyboard.press(browserName === 'webkit' ? 'Alt+Tab' : 'Tab');
+  const skip = page.getByRole('link', { name: 'Zum Inhalt springen' });
+  await expect(skip).toBeFocused();
+  await expect(skip).toBeInViewport();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#main-content')).toBeFocused();
+  // the next Tab lands in the page content, not in the navigation
+  await page.keyboard.press('Tab');
+  await expect(page.getByRole('textbox', { name: 'Volltextsuche' })).toBeFocused();
+});
+
+test('main navigation is a named landmark with real links', async ({ page }) => {
+  await page.goto('/letters');
+  const nav = page.getByRole('navigation', { name: 'Hauptnavigation' });
+  await expect(nav).toBeVisible();
+  for (const [name, path] of [
+    ['PROJEKT', '/project'],
+    ['AKTUELLES', '/announcements'],
+    ['TEAM', '/team'],
+  ]) {
+    await expect(nav.getByRole('link', { name })).toHaveAttribute('href', path);
+  }
+  await nav.getByRole('link', { name: 'Ferdinand Gregorovius – Startseite' }).click();
+  await expect(page).toHaveURL(/\/$/);
+});
+
+test('home link on small screens', async ({ page }) => {
+  await page.setViewportSize({ width: 500, height: 800 });
+  await page.goto('/letters');
+  await page.getByRole('navigation').getByRole('link', { name: 'Startseite', exact: true }).click();
+  await expect(page).toHaveURL(/\/$/);
+});

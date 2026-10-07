@@ -1,41 +1,47 @@
 <template>
   <q-layout>
+    <a href="#main-content" class="g-skip-link" @click.prevent="focusMainContent">Zum Inhalt springen</a>
     <q-header :class="$route.path === '/' ? 'transparent' : 'bg-primary'">
-      <q-tabs inline-label indicator-color="positive" align="left" class="g-route-tabs">
-        <img
-          class="gt-sm logo-signature cursor-pointer q-mx-md q-pa-md"
-          src="/img/gregorovius_signature.svg"
-          @click="$router.push({ path: '/' })"
-        />
-        <q-icon
-          class="lt-sm q-mr-md cursor-pointer"
-          name="home"
-          style="font-size: 1.3em"
-          @click="$router.push({ path: '/' })"
-        />
-        <q-route-tab :to="$router.resolve({ path: '/letters', query: $route.query }).href" label="BRIEFEDITION" class="tab-small" />
-        <q-route-tab to="/persons" label="PERSONEN" class="tab-small" />
-        <q-route-tab to="/places" label="ORTE" class="tab-small" />
-        <q-route-tab to="/works" label="WERKE" class="tab-small" />
-        <q-space />
-        <q-route-tab to="/letters/full-index">
-          <div class="flex-block">
-            <div>Gesamtdatenbank</div>
-            <div>der Korrespondenz</div>
-          </div>
-        </q-route-tab>
-        <q-space />
-        <q-btn flat label="PROJEKT" @click="$router.push({ name: 'Projekt' })" />
-        <q-btn flat label="AKTUELLES" @click="$router.push({ name: 'announcements' })" />
-        <q-btn flat label="TEAM" @click="$router.push({ name: 'Team' })" />
-        <q-btn
-          flat
-          label="EDITIONSRICHTLINIEN"
-          @click="openUrl('http://gregorovius-edition.dhi-roma.it/richtlinien/')"
-        />
-      </q-tabs>
+      <nav aria-label="Hauptnavigation">
+        <q-tabs inline-label indicator-color="positive" align="left" class="g-route-tabs">
+          <router-link to="/" class="gt-sm">
+            <img
+              class="logo-signature cursor-pointer q-mx-md q-pa-md"
+              src="/img/gregorovius_signature.svg"
+              alt="Ferdinand Gregorovius – Startseite"
+            />
+          </router-link>
+          <router-link to="/" class="lt-sm q-mr-md text-white" aria-label="Startseite">
+            <q-icon name="home" style="font-size: 1.3em" />
+          </router-link>
+          <q-route-tab :to="$router.resolve({ path: '/letters', query: $route.query }).href" label="BRIEFEDITION" class="tab-small" />
+          <q-route-tab to="/persons" label="PERSONEN" class="tab-small" />
+          <q-route-tab to="/places" label="ORTE" class="tab-small" />
+          <q-route-tab to="/works" label="WERKE" class="tab-small" />
+          <q-space />
+          <q-route-tab to="/letters/full-index">
+            <div class="flex-block">
+              <div>Gesamtdatenbank</div>
+              <div>der Korrespondenz</div>
+            </div>
+          </q-route-tab>
+          <q-space />
+          <q-btn flat label="PROJEKT" :to="{ name: 'Projekt' }" />
+          <q-btn flat label="AKTUELLES" :to="{ name: 'announcements' }" />
+          <q-btn flat label="TEAM" :to="{ name: 'Team' }" />
+          <q-btn
+            flat
+            label="EDITIONSRICHTLINIEN"
+            @click="openUrl('http://gregorovius-edition.dhi-roma.it/richtlinien/')"
+          />
+        </q-tabs>
+      </nav>
     </q-header>
-    <q-page-container :class="$route.path === '/' ? 'bg-none' : 'bg-grey-2'">
+    <q-page-container
+      id="main-content"
+      tabindex="-1"
+      :class="$route.path === '/' ? 'bg-none' : 'bg-grey-2'"
+    >
       <router-view />
     </q-page-container>
     <q-footer :class="$route.path === '/' ? 'transparent' : 'bg-secondary'" class="text-white">
@@ -80,12 +86,12 @@
               </div>
             </div>
             <div class="col-md-3 col-10">
-              <q-btn flat class="text-caption bg-none" @click="$router.push({ name: 'Impressum' })">
+              <q-btn flat class="text-caption bg-none" :to="{ name: 'Impressum' }">
                 Impressum
               </q-btn>
             </div>
             <div class="col-md-3 col-10">
-              <q-btn flat class="text-caption bg-none" @click="$router.push({ name: 'Datenschutzerklärung' })">
+              <q-btn flat class="text-caption bg-none" :to="{ name: 'Datenschutzerklärung' }">
                 Datenschutz
               </q-btn>
             </div>
@@ -122,9 +128,14 @@ export default defineComponent({
       if (url) window.open(url);
     };
 
+    function focusMainContent() {
+      document.getElementById('main-content')?.focus();
+    }
+
     return {
       appVersion: version,
       openUrl,
+      focusMainContent,
     };
   },
 });
@@ -147,5 +158,25 @@ export default defineComponent({
 
 .tab-small {
   max-width: 120px;
+}
+
+// Visible only when focused with the keyboard (spec 002)
+.g-skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 8px;
+  z-index: 3000;
+  padding: 8px 16px;
+  background: #fff;
+  color: #000;
+  outline: 2px solid $primary;
+
+  &:focus {
+    left: 16px;
+  }
+}
+
+#main-content:focus {
+  outline: none;
 }
 </style>
