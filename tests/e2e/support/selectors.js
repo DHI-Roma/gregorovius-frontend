@@ -13,7 +13,6 @@ export function iconButton(scope, iconName) {
 
 export const SEL = {
   editionText: '.g-edition-text',
-  entityLink: '.g-edition-text a.g-entity-link', // TODO(spec-002): native links
   commentOrig: '.g-comment-orig', // TODO(spec-003): comment trigger buttons
   commentIcon: '.comment-icon', // TODO(spec-003)
   commentPanel: '.g-edition-comment-container', // TODO(spec-003): named comment region

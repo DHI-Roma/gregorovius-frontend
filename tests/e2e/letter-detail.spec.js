@@ -5,7 +5,7 @@ import { SEL, iconButton } from './support/selectors.js';
 const { rich } = LETTERS;
 const editionText = (page) => page.locator(SEL.editionText);
 const entityLink = (page, label) =>
-  page.locator(SEL.entityLink).filter({ hasText: label, visible: true }).first();
+  editionText(page).getByRole('link', { name: label, exact: true }).first();
 
 async function openLetter(page, id) {
   await page.goto(`/letters/${id}`);
@@ -76,13 +76,35 @@ test.describe('entity links in the letter text', () => {
     await expect(page.getByRole('main')).toContainText(rich.work.titleSnippet);
   });
 
+  test('entity links are keyboard accessible', async ({ page }) => {
+    const link = entityLink(page, rich.person.label);
+    await expect(link).toHaveAttribute('href', `/persons/${rich.person.id}`);
+    await link.focus();
+    await expect(link).toBeFocused();
+    await page.keyboard.press('Enter');
+    await expect(page).toHaveURL(new RegExp(`/persons/${rich.person.id}$`));
+  });
+
+  test('modified click opens the entity in a new tab', async ({ page, context }) => {
+    // "Staat" (Preußischer Staat, G000541) is not inside a commented passage,
+    // so the click does not also open a commentary
+    const popup = context.waitForEvent('page');
+    await entityLink(page, 'Staat').click({ modifiers: ['ControlOrMeta'] });
+    const tab = await popup;
+    await expect(tab).toHaveURL(/\/persons\/G000541$/);
+    await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}$`));
+  });
+
   test('cross reference to another letter inside a commentary', async ({ page }) => {
     // cross references only occur in commentaries; the panel renders them as plain links
     await page.locator(SEL.commentIcon).first().click();
     const panel = page.locator(SEL.commentPanel);
-    await panel.locator('a', { hasText: rich.letterRef.label }).first().click();
+    // links inside the commentary are routed without a full page reload
+    await page.evaluate(() => (window.__noReload = true));
+    await panel.getByRole('link', { name: rich.letterRef.label }).first().click();
     await expect(page).toHaveURL(new RegExp(`/letters/${rich.letterRef.id}$`));
     await expect(editionText(page)).toBeVisible();
+    expect(await page.evaluate(() => window.__noReload)).toBe(true);
   });
 });
 

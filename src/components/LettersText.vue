@@ -141,6 +141,11 @@ a.g-entity-link {
   text-decoration: none;
 }
 
+.g-entity-link:focus-visible {
+  outline: 2px solid $primary;
+  outline-offset: 2px;
+}
+
 .g-entity-link.start-offset {
   box-shadow: inset 0 -2.5rem 0 0 hsla(144.9, 100%, 82.5%, 1);
 }

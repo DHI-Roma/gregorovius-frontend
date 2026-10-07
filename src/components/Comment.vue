@@ -11,7 +11,7 @@
     </div>
     <q-separator />
 
-    <div class="g-edition-comment" v-html="commentWithLinks"></div>
+    <div class="g-edition-comment" @click="onCommentClick" v-html="commentWithLinks"></div>
 
     <q-separator class="q-mt-sm" />
 
@@ -35,12 +35,14 @@
 import { defineComponent, ref, watch } from "vue";
 import { useMainStore } from "src/stores/main";
 import { storeToRefs } from "pinia";
+import { useRouter } from "vue-router";
 
 export default defineComponent({
   name: "Comment",
 
   setup() {
     const store = useMainStore();
+    const router = useRouter();
     const { activeComment } = storeToRefs(store);
 
     const commentWithLinks = ref("");
@@ -56,10 +58,25 @@ export default defineComponent({
       store.unselectComment();
     }
 
+    // The comment is plain HTML copied from the letter text, so its links have no
+    // Vue handlers. Route internal links through the router to avoid a full reload;
+    // modified clicks (new tab/window) keep the browser behaviour.
+    function onCommentClick(event) {
+      if (event.defaultPrevented || event.button !== 0) return;
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      const link = event.target.closest("a[href]");
+      if (!link || link.target === "_blank") return;
+      const url = new URL(link.href, window.location.href);
+      if (url.origin !== window.location.origin) return;
+      event.preventDefault();
+      router.push(url.pathname + url.search + url.hash);
+    }
+
     return {
       activeComment,
       commentWithLinks,
       close,
+      onCommentClick,
     };
   },
 });
