@@ -11,7 +11,6 @@
             label="Brief öffnen"
             :to="{ name: 'Brief', params: { id: entry.xml_id } }"
           >
-            <context-menu :route-to-open="$router.resolve({ name: 'Brief', params: { id: entry.xml_id } }).href"/>
           </q-btn>
           <q-icon
             :name="entry.status === 'ED' ? 'check_circle' : 'cancel'"
@@ -120,12 +119,10 @@
 <script>
 import LettersFullIndexEntryPersonContextMenu
   from "src/components/LettersFullIndexEntryPersonContextMenu.vue";
-import ContextMenu from "src/components/ContextMenu.vue";
 export default {
   name: "LettersFullIndexEntry",
   components: {
     LettersFullIndexEntryPersonContextMenu,
-    ContextMenu,
   },
   props: {
     entry: {

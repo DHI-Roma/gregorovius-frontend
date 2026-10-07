@@ -69,15 +69,8 @@
               :props="props"
               class="cursor-pointer"
               :class="searchInput ? 'cursor-pointer g-searchrow' : 'cursor-pointer'"
-              @click="openItem('default', props.row.id)"
+              @click="openLetter(props.row.id)"
             >
-              <q-menu touch-position context-menu>
-                <q-list dense style="min-width: 100px">
-                  <q-item v-close-popup clickable @click="openItem('tab', props.row.id)">
-                    <q-item-section>In neuem Tab öffnen</q-item-section>
-                  </q-item>
-                </q-list>
-              </q-menu>
 
               <q-td key="desc" :props="props">
                 {{ props.row.name }}
@@ -484,17 +477,8 @@ export default defineComponent({
       return { name: 'Brief', params: { id }, query: queryParams.value };
     }
 
-    function openItem(target, id) {
-      const route = letterRoute(id);
-      switch (target) {
-        case 'default':
-          router.push(route);
-          break;
-        case 'tab':
-        case 'window':
-          window.open(router.resolve(route).href, '_blank');
-          break;
-      }
+    function openLetter(id) {
+      router.push(letterRoute(id));
     }
 
     onMounted(async () => {
@@ -529,7 +513,7 @@ export default defineComponent({
       getSearchResults,
       applyRouteParams,
       filterLetters,
-      openItem,
+      openLetter,
     };
   },
 });

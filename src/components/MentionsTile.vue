@@ -8,13 +8,11 @@
         {{ subtitle }}
       </q-item-label>
     </q-item>
-    <ContextMenu :route-to-open="route"></ContextMenu>
   </q-list>
 </template>
 
 <script>
 import { defineComponent, computed } from "vue";
-import { useRouter } from "vue-router";
 import {
   ENTITY_PERSON,
   ENTITY_PLACE,
@@ -24,11 +22,9 @@ import {
   WORK_TYPE_OTHER,
   WORK_TYPE_SECONDARY,
 } from "src/shared/constants";
-import ContextMenu from "src/components/ContextMenu.vue";
 
 export default defineComponent({
   name: "MentionsTile",
-  components: { ContextMenu },
 
   props: {
     entity: {
@@ -38,7 +34,6 @@ export default defineComponent({
   },
 
   setup(props) {
-    const router = useRouter();
 
     function truncate(text) {
       const characterLimit = 90;
@@ -46,11 +41,6 @@ export default defineComponent({
         return text;
       }
       return text.substr(0, characterLimit) + "...";
-    }
-
-    function openInNewTab(route) {
-      const resolved = router.resolve(route);
-      window.open(resolved.href, "_blank");
     }
 
     const route = computed(() => {
@@ -134,7 +124,6 @@ export default defineComponent({
       subtitle,
       backgroundColorClass,
       truncate,
-      openInNewTab,
     };
   },
 });

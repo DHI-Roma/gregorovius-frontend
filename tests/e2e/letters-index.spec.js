@@ -39,6 +39,16 @@ test('modified click on a letter opens it in a new tab only', async ({ page, con
   await expect(page).toHaveURL(/\/letters$/);
 });
 
+test('middle click on a letter opens exactly one new tab', async ({ page, context, browserName }) => {
+  test.skip(browserName === 'webkit', 'WebKit in Playwright does not open tabs on middle click');
+  const popup = context.waitForEvent('page');
+  await rows(page).first().getByRole('link').click({ button: 'middle' });
+  await expect(await popup).toHaveURL(new RegExp(`/letters/${firstLetter.id}$`));
+  await page.waitForTimeout(500);
+  expect(context.pages()).toHaveLength(2);
+  await expect(page).toHaveURL(/\/letters$/);
+});
+
 test('full text search shows keyword in context and filters the list', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Volltextsuche' }).fill('Bleimännchen');
 

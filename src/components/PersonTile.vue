@@ -32,8 +32,6 @@
     >
       {{ formatPersonRole(person.properties.role) }}
     </q-chip>
-
-    <context-menu :route-to-open="router.resolve(route).href"></context-menu>
   </q-item>
 </template>
 
@@ -41,13 +39,9 @@
 import { defineComponent, computed } from "vue";
 import { useRouter } from "vue-router";
 import personService from "src/services/person-service";
-import ContextMenu from "./ContextMenu.vue";
 
 export default defineComponent({
   name: "PersonTile",
-  components: {
-    ContextMenu,
-  },
   props: {
     person: {
       type: [Object, Promise],
@@ -60,10 +54,6 @@ export default defineComponent({
     const router = useRouter();
 
     const route = computed(() => ({ path: `/persons/${props.person.id}` }));
-
-    function openInNewTab(routeObj) {
-      window.open(router.resolve(routeObj).href, "_blank");
-    }
 
     function isPerson(rawType) {
       return rawType === "person";
@@ -100,7 +90,6 @@ export default defineComponent({
     return {
       router,
       route,
-      openInNewTab,
       isPerson,
       isOrganisation,
       getRoleClass,

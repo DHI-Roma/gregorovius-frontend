@@ -96,6 +96,21 @@ test.describe('entity links in the letter text', () => {
     await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}$`));
   });
 
+  test('right click shows the browser menu, not a custom one', async ({ page }) => {
+    await entityLink(page, 'Staat').click({ button: 'right' });
+    await expect(page.getByText('In neuem Tab öffnen')).toHaveCount(0);
+  });
+
+  test('middle click opens exactly one new tab', async ({ page, context, browserName }) => {
+    test.skip(browserName === 'webkit', 'WebKit in Playwright does not open tabs on middle click');
+    const popup = context.waitForEvent('page');
+    await entityLink(page, 'Staat').click({ button: 'middle' });
+    await expect(await popup).toHaveURL(/\/persons\/G000541$/);
+    await page.waitForTimeout(500);
+    expect(context.pages()).toHaveLength(2);
+    await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}$`));
+  });
+
   test('cross reference to another letter inside a commentary', async ({ page }) => {
     // cross references only occur in commentaries; the panel renders them as plain links
     await page.locator(SEL.commentIcon).first().click();

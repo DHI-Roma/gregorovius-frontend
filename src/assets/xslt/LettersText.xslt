@@ -116,9 +116,6 @@
                 v-on:click.exact.prevent="$router.push({{ name: 'Brief', params: {{ id: '{@target}' }} }})"
                 v-bind:href="$router.resolve({{ name: 'Brief', params: {{ id: '{@target}' }} }}).href"
             >
-                <context-menu
-                    v-bind:route-to-open="$router.resolve({{ name: 'Brief', params: {{ id: '{@target}' }} }}).href"
-                ></context-menu>
                 <xsl:apply-templates/>
             </a>
         </xsl:when>
@@ -163,9 +160,6 @@
                         entity-id="{@key}"
                         v-on:click.exact.prevent="$router.push({{ name: 'Personen (mehrfach)', query: {{ ids: '{@key}'.split(' ').join(',') }} }})"
                         v-bind:href="$router.resolve({{ name: 'Personen (mehrfach)', query: {{ ids: '{@key}'.split(' ').join(',') }} }}).href">
-                        <context-menu
-                            v-bind:route-to-open="$router.resolve({{ name: 'Personen (mehrfach)', query: {{ ids: '{@key}'.split(' ').join(',') }} }}).href"
-                        ></context-menu>
                         <xsl:apply-templates/>
                     </a>
                 </xsl:when>
@@ -174,9 +168,6 @@
                        entity-id="{@key}"
                        v-on:click.exact.prevent="$router.push({{ name: 'Person', params: {{ id: '{@key}' }} }})"
                        v-bind:href="$router.resolve({{ name: 'Person', params: {{ id: '{@key}' }} }}).href">
-                        <context-menu
-                            v-bind:route-to-open="$router.resolve({{ name: 'Person', params: {{ id: '{@key}' }} }}).href"
-                        ></context-menu>
                         <xsl:apply-templates/>
                     </a>
                 </xsl:otherwise>
@@ -196,9 +187,6 @@
                v-on:click.exact.prevent="$router.push({{ name: 'Ort', params: {{ id: '{@key}' }} }})"
                v-bind:href="$router.resolve({{ name: 'Ort', params: {{ id: '{@key}' }} }}).href"
                 >
-                <context-menu
-                    v-bind:route-to-open="$router.resolve({{ name: 'Ort', params: {{ id: '{@key}' }} }}).href"
-                ></context-menu>
                 <xsl:apply-templates/>
             </a>
         </xsl:when>
@@ -224,9 +212,6 @@
             entity-id="{@sameAs}"
             v-on:click.exact.prevent="$router.push({{ name: 'Werk', params: {{ id: '{@sameAs}' }} }})"
             v-bind:href="$router.resolve({{ name: 'Werk', params: {{ id: '{@sameAs}' }} }}).href">
-                <context-menu
-                    v-bind:route-to-open="$router.resolve({{ name: 'Werk', params: {{ id: '{@sameAs}' }} }}).href"
-                ></context-menu>
                 <xsl:apply-templates/>
             </a>
         </xsl:when>
@@ -237,9 +222,6 @@
                 entity-id="{@corresp}"
                 v-on:click.exact.prevent="$router.push({{ name: 'Werk (mehrfach)', query: {{ ids: '{@corresp}'.split(' ').join(',') }} }})"
                 v-bind:href="$router.resolve({{ name: 'Werk (mehrfach)', query: {{ ids: '{@corresp}'.split(' ').join(',') }} }}).href">
-                <context-menu
-                    v-bind:route-to-open="$router.resolve({{ name: 'Werk (mehrfach)', query: {{ ids: '{@corresp}'.split(' ').join(',') }} }}).href"
-                ></context-menu>
                 <xsl:apply-templates/>
             </a>
         </xsl:when>
