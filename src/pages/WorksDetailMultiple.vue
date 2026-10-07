@@ -63,7 +63,7 @@ export default defineComponent({
 
     async function getXSLT(fileName, id) {
       try {
-        const result = await dataService.XSLTransform(`works/${id}`, fileName);
+        const result = await dataService.XSLTransform(`/works/${id}`, fileName);
         titles.value.push(result);
       } catch (error) {
         console.error(error);
