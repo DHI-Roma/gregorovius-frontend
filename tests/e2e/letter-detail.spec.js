@@ -1,5 +1,5 @@
 import { test, expect } from './support/test.js';
-import { LETTERS, letters, sortedLetters } from './support/data.js';
+import { LETTERS, sortedLetters } from './support/data.js';
 import { SEL, iconButton } from './support/selectors.js';
 
 const { rich } = LETTERS;
@@ -87,9 +87,7 @@ test.describe('entity links in the letter text', () => {
 });
 
 test.describe('navigation between letters', () => {
-  // The buttons are labelled "chronologisch" but follow the API order of
-  // store.letters, which is not sorted by date (bug in LettersDetail.vue).
-  const apiIndex = letters.findIndex((l) => l.id === rich.id);
+  const index = sortedLetters.findIndex((l) => l.id === rich.id);
   const main = (page) => page.getByRole('main');
 
   async function openWithNavigation(page, id) {
@@ -98,28 +96,22 @@ test.describe('navigation between letters', () => {
     await expect(iconButton(main(page), 'arrow_forward').or(iconButton(main(page), 'arrow_back')).first()).toBeVisible();
   }
 
-  test('next and previous letter follow the order of the letter list', async ({ page }) => {
+  test('next and previous letter follow the chronological order', async ({ page }) => {
     await openWithNavigation(page, rich.id);
     await iconButton(main(page), 'arrow_forward').click();
-    await expect(page).toHaveURL(new RegExp(`/letters/${letters[apiIndex + 1].id}$`));
-    await iconButton(page.getByRole('main'), 'arrow_back').click();
+    await expect(page).toHaveURL(new RegExp(`/letters/${sortedLetters[index + 1].id}$`));
+    await iconButton(main(page), 'arrow_back').click();
     await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}$`));
+    await iconButton(main(page), 'arrow_back').click();
+    await expect(page).toHaveURL(new RegExp(`/letters/${sortedLetters[index - 1].id}$`));
   });
 
-  test('next letter is the chronologically next one', async ({ page }) => {
-    test.fail(true, 'Known bug: navigation uses unsorted API order instead of date order');
-    const index = sortedLetters.findIndex((l) => l.id === rich.id);
-    await openWithNavigation(page, rich.id);
-    await iconButton(main(page), 'arrow_forward').click();
-    await expect(page).toHaveURL(new RegExp(`/letters/${sortedLetters[index + 1].id}$`), { timeout: 3000 });
-  });
-
-  test('first and last letter of the list have only one direction', async ({ page }) => {
-    await openWithNavigation(page, letters[0].id);
+  test('first and last letter have only one direction', async ({ page }) => {
+    await openWithNavigation(page, sortedLetters[0].id);
     await expect(iconButton(page.getByRole('main'), 'arrow_back')).toHaveCount(0);
     await expect(iconButton(page.getByRole('main'), 'arrow_forward')).toHaveCount(1);
 
-    await openWithNavigation(page, letters[letters.length - 1].id);
+    await openWithNavigation(page, sortedLetters[sortedLetters.length - 1].id);
     await expect(iconButton(page.getByRole('main'), 'arrow_forward')).toHaveCount(0);
     await expect(iconButton(page.getByRole('main'), 'arrow_back')).toHaveCount(1);
   });
