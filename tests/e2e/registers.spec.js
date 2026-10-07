@@ -110,8 +110,8 @@ test.describe('works', () => {
   });
 
   test('multiple works page shows the work titles', async ({ page }) => {
-    test.fail(true, 'Known bug: WorksDetailMultiple requests `works/<id>` without leading slash (…/apiworks/…)');
     await page.goto('/works-multiple?ids=G003831,G003832');
-    await expect(main(page)).toContainText('Das Dominicanerkloster San-Marco in Florenz', { timeout: 3000 });
+    await expect(main(page)).toContainText('Das Dominicanerkloster San-Marco in Florenz und seine Reactionen gegen den Realismus. I.');
+    await expect(main(page)).toContainText('Das Dominicanerkloster San-Marco in Florenz und seine Reactionen gegen den Realismus. II.');
   });
 });
