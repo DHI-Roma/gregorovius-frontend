@@ -1,6 +1,6 @@
 import { test, expect } from './support/test.js';
 import { LETTERS, letters, sortedLetters } from './support/data.js';
-import { SEL, chooseOption } from './support/selectors.js';
+import { SEL, chooseOption, chooseYear } from './support/selectors.js';
 
 const rows = (page) => page.locator('main').locator(SEL.tableRow);
 const firstLetter = sortedLetters[0];
@@ -76,8 +76,6 @@ test('filters by place received', async ({ page }) => {
 
 test('filters by year', async ({ page }) => {
   const count = letters.filter((l) => l.properties.date?.startsWith('1860')).length;
-  await page.getByRole('combobox', { name: 'Jahre' }).click();
-  await page.getByRole('option', { name: '1860' }).click();
-  await page.keyboard.press('Escape');
+  await chooseYear(page, '1860');
   await expect(page.getByText(`1–${count} von ${count}`)).toBeVisible();
 });

@@ -1,6 +1,6 @@
 import { test, expect } from './support/test.js';
 import { fullIndex } from './support/data.js';
-import { SEL, chooseOption } from './support/selectors.js';
+import { SEL, chooseOption, chooseYear } from './support/selectors.js';
 
 const entries = fullIndex.letters;
 const total = entries.length;
@@ -45,9 +45,7 @@ test('rejects an invalid date', async ({ page }) => {
 
 test('filters by year', async ({ page }) => {
   const expected = entries.filter((e) => e.relevant_years.includes('1860')).length;
-  await page.getByRole('combobox', { name: 'Jahre' }).click();
-  await page.getByRole('option', { name: '1860' }).click();
-  await page.keyboard.press('Escape');
+  await chooseYear(page, '1860');
   await expect(pageInfo(page)).toHaveText(countText(expected));
 });
 
