@@ -28,13 +28,27 @@ test('searches the metadata', async ({ page }) => {
 });
 
 test('filters by date range', async ({ page }) => {
-  test.fail(true, 'Known bug: DatePickerInput listens to Vue 2 `@input` events, the filter never updates');
   const expected = entries.filter(
     (e) => e.date_index >= '1860-01-01' && e.date_index <= '1860-12-31',
   ).length;
   await page.getByRole('textbox', { name: 'von' }).fill('01.01.1860');
   await page.getByRole('textbox', { name: 'bis' }).fill('31.12.1860');
-  await expect(pageInfo(page)).toHaveText(countText(expected), { timeout: 3000 });
+  await expect(pageInfo(page)).toHaveText(countText(expected));
+});
+
+test('filters by date picked in the calendar', async ({ page }) => {
+  const expected = entries.filter((e) => e.date_index >= '1860-01-15' && /^1/.test(e.date_index)).length;
+  const input = page.getByRole('textbox', { name: 'von' });
+  await input.fill('01.01.1860');
+  await page.locator('label', { has: input }).locator('i.q-icon', { hasText: /^event$/ }).click();
+  await page.locator('.q-date').getByRole('button', { name: '15', exact: true }).click();
+  await expect(input).toHaveValue('15.01.1860');
+  await expect(pageInfo(page)).toHaveText(countText(expected));
+});
+
+test('incomplete dates do not filter', async ({ page }) => {
+  await page.getByRole('textbox', { name: 'von' }).fill('01.01.186');
+  await expect(pageInfo(page)).toHaveText(countText(entries.length));
 });
 
 test('rejects an invalid date', async ({ page }) => {
