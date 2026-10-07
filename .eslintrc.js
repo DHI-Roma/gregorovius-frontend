@@ -22,9 +22,9 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
-      env: {
-        jest: true
+      files: ['tests/**/*.{js,mjs}', 'playwright.config.js', 'vitest.config.js'],
+      parserOptions: {
+        ecmaVersion: 2022
       }
     }
   ]
