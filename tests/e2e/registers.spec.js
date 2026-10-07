@@ -64,7 +64,7 @@ test.describe('persons', () => {
 
   test('multiple persons referenced at one place', async ({ page }) => {
     await page.goto('/letters/ed_v5m_lrp_dsb');
-    await page.locator(SEL.entityLink).filter({ hasText: 'Erharts', visible: true }).first().click();
+    await page.locator(SEL.editionText).getByRole('link', { name: 'Erharts' }).first().click();
     await expect(page).toHaveURL(/\/persons-multiple\?ids=G001115,G001116$/);
     await expect(main(page)).toContainText('Mehrfache Indizierung von Personen');
     await expect(main(page)).toContainText('Erhardt, Sophie');
@@ -103,7 +103,7 @@ test.describe('works', () => {
 
   test('multiple works referenced at one place', async ({ page }) => {
     await page.goto('/letters/G000003');
-    await page.locator(SEL.entityLink).filter({ hasText: 'Einige Bemerkungen', visible: true }).first().click();
+    await page.locator(SEL.editionText).getByRole('link', { name: /^Einige Bemerkungen/ }).first().click();
     await expect(page).toHaveURL(/\/works-multiple\?ids=G003831,G003832$/);
     await expect(main(page)).toContainText('Mehrfache Indizierung von Werken');
     await expect(main(page).getByRole('cell', { name: /Morgenblatt/ })).toBeVisible();
