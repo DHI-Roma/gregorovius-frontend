@@ -1,0 +1,10 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_onw_cld_rlb",
+  "orgName": {
+   "@type": "reg",
+   "#text": "Vatikan (Kirchenstaat)"
+  }
+ }
+}

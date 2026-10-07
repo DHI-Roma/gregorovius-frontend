@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004737",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118558323"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Johnson",
+   "forename": "Ben"
+  },
+  "birth": "1572",
+  "death": "1637"
+ }
+}

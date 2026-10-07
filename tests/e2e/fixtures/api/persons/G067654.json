@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067654",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118530127"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Emerson",
+   "forename": "Ralph Waldo"
+  },
+  "birth": "1803",
+  "death": "1882"
+ }
+}

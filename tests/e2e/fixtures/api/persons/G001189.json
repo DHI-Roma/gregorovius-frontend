@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001189",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118541234"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Graefe",
+   "forename": "Albrecht von"
+  },
+  "birth": "1828",
+  "death": "1870"
+ }
+}

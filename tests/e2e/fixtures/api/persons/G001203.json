@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001203",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116830050"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Gregorovius",
+   "forename": "Julius"
+  },
+  "birth": "1819",
+  "death": "1891"
+ }
+}

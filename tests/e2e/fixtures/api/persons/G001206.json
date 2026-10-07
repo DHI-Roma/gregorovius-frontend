@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001206",
+  "persName": {
+   "@type": "reg",
+   "surname": "Gregorovius",
+   "forename": "Rudolf"
+  },
+  "birth": "1808",
+  "death": "1866"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001301",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118554700"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Humboldt",
+   "forename": "Alexander von"
+  },
+  "birth": "1769",
+  "death": "1859"
+ }
+}

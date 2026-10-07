@@ -1,0 +1,160 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Heinrich Brockhaus in Leipzig. Rom, 11. Dezember\n                    1855",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "Sächsisches Staatsarchiv Leipzig",
+      "collection": "Bestand 21083",
+      "idno": [
+       "Archivalnummer 224 (22)",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000056/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": {
+       "hi": [
+        {
+         "@rendition": "#aq",
+         "#text": "Rom"
+        },
+        {
+         "@rendition": "#aq",
+         "#text": "Dec"
+        },
+        {
+         "@rendition": "#aq",
+         "#text": "Gregorovius"
+        }
+       ],
+       "#text": "1 Dbl., 4°, 4 S. – 2v alR, Bl. um 90° gedreht, Eingangs- und Beantwortungsvermerk: 1855. / , 11./18. . / . / B. 19/XII."
+      }
+     }
+    },
+    "listWit": {
+     "witness": {
+      "msDesc": {
+       "@type": "copy",
+       "msIdentifier": {
+        "institution": "GhStA Berlin",
+        "collection": "VI. HA, NL Waldemar Kampf",
+        "idno": "Karton 59, Mappe 347 (nach H)"
+       }
+      }
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Das Formular für die englischen Übersetzungsrechte seiner „Figuren. Geschichte, Leben und Scenerie aus Italien“ (1856) bei Thomas Constable in Edinburgh und die weiteren Druckfahnen des deutschen Bandes hat er erhalten. Wegen der vom Verlag nicht befolgten eigenen Orthographie verlangt er eine auf der letzten Seite einzurückende Rechtfertigung. Er bittet um Übersendung eines Rezensionsexemplars an August Joseph Altenhöfer von der „Allgemeinen Zeitung“. Er bedauert die Ablehnung des Manuskripts seiner „Lieder des Giovanni Meli von Palermo“ (1856) und das jetzt geäußerte Desinteresse an seinen kulturhistorischen Studien Siziliens. Trotz finanzieller Not ist er an die Erarbeitung der „Chronik der Stadt Rom im Mittelalter“ gegangen."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He received the form for the rights to the English translation of his „Figuren. Geschichte, Leben und Scenerie aus Italien“ (1856) with Thomas Constable in Edinburgh and the other proofs of the German volume. Due to the publisher not following his orthography, he demands a justification to be inserted on the last page. He requests that a review copy be sent to August Joseph Altenhöfer of the „Allgemeine Zeitung“. He regrets the rejection of the manuscript of his „Lieder des Giovanni Meli von Palermo“ (1856) and the disinterest in his cultural history studies in Sicily, expressed only now. Despite financial hardship, he went to work on the „Chronik der Stadt Rom im Mittelalter“."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1855-12-11",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G000996",
+       "#text": "Brockhaus, Heinrich (1804–1874)"
+      },
+      "placeName": {
+       "@key": "G000712",
+       "#text": "Leipzig"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": [
+      {
+       "@type": "prev",
+       "#text": "1. Dezember 1855"
+      },
+      {
+       "@type": "next",
+       "#text": "18. Dezember 1855"
+      },
+      {
+       "@type": "next",
+       "#text": "19. Dezember 1855"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

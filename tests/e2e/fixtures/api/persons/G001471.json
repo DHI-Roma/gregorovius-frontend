@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001471",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118739336"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Parker",
+   "forename": "Theodor"
+  },
+  "birth": "1810",
+  "death": "1860"
+ }
+}

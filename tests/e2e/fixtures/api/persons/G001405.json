@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001405",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1176978969"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Marstaller",
+   "forename": "Anton"
+  },
+  "birth": "1815",
+  "death": "1865"
+ }
+}

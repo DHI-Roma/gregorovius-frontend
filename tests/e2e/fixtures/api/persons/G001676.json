@@ -1,0 +1,15 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001676",
+  "@role": "mythological",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118804316"
+  },
+  "persName": {
+   "@type": "reg",
+   "name": "Vesta"
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_nfl_yj2_rlb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1055213775"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Guerrieri Gonzaga",
+   "forename": "Anselmo"
+  },
+  "birth": "1819",
+  "death": "1879"
+ }
+}

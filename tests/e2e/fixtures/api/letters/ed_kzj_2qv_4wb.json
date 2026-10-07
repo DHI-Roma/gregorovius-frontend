@@ -1,0 +1,128 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Christian Karl Josias Freiherr von Bunsen in Bonn. Danzig, 5. August 1860",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    },
+    "respStmt": {
+     "persName": {
+      "surname": "Ramazzotti",
+      "forename": "Mariana"
+     },
+     "resp": {
+      "note": {
+       "@type": "remarkResponsibility",
+       "#text": "Mitarbeit"
+      }
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "GhStA Berlin",
+      "collection": "I. HA, Rep. 92, Dep. Bunsen, v., Karl Josias",
+      "idno": [
+       "B Nr. 50c, Paket 2, Beantwortete Briefe 1860",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/ed_kzj_2qv_4wb/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": "1 Dbl., 8°, 2 ¼ S."
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Auf seiner Reise nach Deutschland hat er Hermann von Thile in Heiden besucht, der ihn informierte, dass auch Bunsen sich beim preußischen Kultusministerium für die Gewährung seines Stipendiums verwendet habe. Er ist hierfür umso dankbarer, weil Bunsen selbst über viele Jahre ein führender Wissenschaftler war. Seine und Thiles Bemühungen waren erfolgreich, und die preußische Regierung gewährt ihm für zwei Jahre ein jährliches Stipendium von 400 Talern für die Fortführung seiner „Geschichte der Stadt Rom im Mittelalter“ (1859–1872). Der dritte Band (1860) wird im September ausgegeben; er wird ihm mit seiner Erlaubnis ein Exemplar zusenden. Der Verlagsleiter Georg Cotta von Cottendorf ist mit dem Absatz der ersten beiden Bände (1859) zufrieden, die auch in Frankreich gut aufgenommen wurden. Das Manuskript des vierten Bandes wird er im Oktober beginnen, nachdem er sich in Königsberg mit Wilhelm von Giesebrecht besprochen hat. Georg Heinrich Pertz hat er in Berlin nicht angetroffen, hofft aber, ihn dort im Oktober zu sehen. Die Königliche Bibliothek in Berlin verfügt über einen umfangreichen Katalog römischer Spezialliteratur, der wohl auf Bunsen zurückzuführen ist."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "On his trip to Germany, he visited Hermann von Thile in Heiden, who informed him that Bunsen had also advocated for the Prussian Ministry of Culture to grant him a scholarship. He is all the more grateful for this, because Bunsen himself was a leading academic for many years. His and Thile’s efforts were successful, and the Prussian government granted him an annual stipend of 400 thalers for two years to continue his „Geschichte der Stadt Rom im Mittelalter“ (1859–1872). The third volume (1860) will be issued in September; he will send him a copy with his permission. The publishing director Georg Cotta von Cottendorf is satisfied with the sales of the first two volumes (1859), which were also well received in France. He will begin the manuscript of the fourth volume in October, after having discussed it with Wilhelm von Giesebrecht in Königsberg. He has not met Georg Heinrich Pertz in Berlin, but hopes to see him there in October. The Royal Library in Berlin has an extensive catalog of literature on Rome, which is probably due to Bunsen."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000663",
+       "#text": "Danzig"
+      },
+      "date": {
+       "@when": "1860-08-05",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001001",
+       "#text": "Bunsen, Christian Karl Josias Freiherr von (1791–1860)"
+      },
+      "placeName": {
+       "@key": "G00067498",
+       "#text": "Bonn"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

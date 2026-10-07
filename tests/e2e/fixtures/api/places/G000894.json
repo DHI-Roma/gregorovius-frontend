@@ -1,0 +1,60 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000894",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3164603"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Venedig"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "ediarum_atx_wq5_5lb",
+     "@type": "district",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Arsenal (Venedig)"
+     },
+     "listPlace": {
+      "place": {
+       "@xml:id": "ediarum_wv5_rj2_ynb",
+       "@type": "monument",
+       "placeName": {
+        "@type": "reg",
+        "#text": "Piräus-Löwe (Arsenal Venedig)"
+       }
+      }
+     }
+    },
+    {
+     "@xml:id": "ediarum_vnw_3fn_r5b",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Riva degli Schiavoni (Venedig)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ik2_sfd_2vb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Casa Petrarca (Venedig)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_amx_bgd_2vb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "San Giorgio Maggiore (Venedig)"
+     }
+    }
+   ]
+  }
+ }
+}

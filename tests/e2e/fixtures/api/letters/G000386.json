@@ -1,0 +1,121 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Giovanni Bizio in Venedig. München, 7. Dezember 1884",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    },
+    "respStmt": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1230930191",
+      "surname": "Weiger",
+      "forename": "Katharina"
+     },
+     "resp": {
+      "note": {
+       "@type": "remarkResponsibility",
+       "#text": "Mitarbeit"
+      }
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "listWit": {
+     "witness": {
+      "bibl": {
+       "@type": "print",
+       "#text": "Appendice all’Atto verbale 30 novembre 1884: Condoglianze per la morte dei membri effettivi prof. Carlo Combi e ab. prof. Rinaldo Fulin. In: Atti del Reale Istituto Veneto Di Scienze, Lettere Ed Arti. Ser. 6. Bd. 3 (November 1884–October 1885). Venedig: Antonelli 1885. S. 16"
+      }
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Kondolenzbrief zum Tode von Rinaldo Fulin, der ein herausragendes Mitglied des Reale Istituto Veneto di Scienze, Lettere ed Arti war. Er bittet, sein Beileid auch dem Präsidenten Fedele Lampertico sowie den in Venedig lebenden Mitgliedern des Istituto zu übermitteln."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "Letter of condolence on the death of Rinaldo Fulin, who was an outstanding member of the Reale Istituto Veneto di Scienze, Lettere ed Arti. He asks that his condolences also be given to President Fedele Lampertico and to the members of the Istituto living in Venice."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000734",
+       "#text": "München"
+      },
+      "date": {
+       "@when": "1884-12-07",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G000970",
+       "#text": "Bizio, Giovanni"
+      },
+      "placeName": {
+       "@key": "G000894",
+       "#text": "Venedig"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

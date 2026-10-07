@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001414",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/12991181X"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Mebold",
+   "forename": "Karl August"
+  },
+  "birth": "1798",
+  "death": "1854"
+ }
+}

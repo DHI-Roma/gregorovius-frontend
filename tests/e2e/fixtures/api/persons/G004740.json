@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004740",
+  "persName": {
+   "@type": "reg",
+   "surname": "Del Furia",
+   "forename": "Pietro"
+  },
+  "birth": "1806",
+  "death": "1896"
+ }
+}

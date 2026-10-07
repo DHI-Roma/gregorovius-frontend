@@ -1,0 +1,172 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an den F. A. Brockhaus Verlag und Heinrich Brockhaus in Leipzig. Rom, 28. April 1855",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "Sächsisches Staatsarchiv Leipzig",
+      "collection": "Bestand 21083",
+      "idno": [
+       "Archivalnummer 224 (14)",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000061/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": [
+       {
+        "hi": [
+         {
+          "@rendition": "#aq",
+          "hi": {
+           "@rendition": "#aq",
+           "#text": "Rom"
+          }
+         },
+         {
+          "@rendition": "#aq",
+          "hi": {
+           "@rendition": "#aq",
+           "#text": "April"
+          }
+         },
+         {
+          "@rendition": "#aq",
+          "hi": {
+           "@rendition": "#aq",
+           "#text": "Mai"
+          }
+         },
+         {
+          "@rendition": "#aq",
+          "hi": {
+           "@rendition": "#aq",
+           "#text": "Gregorovius"
+          }
+         }
+        ],
+        "gap": {
+         "@unit": "chars",
+         "@quantity": "5",
+         "@reason": "illegible"
+        },
+        "#text": "1 Bl., 4°, 1 S. – 1v aoR Eingangs- und Beantwortungsvermerk: 1855. / , 28. . /6. . / . / B. … (Bl. auf einem zweiten Bl. montiert, auf 1r scheint der Beantwortungsvermerk von 1v unleserlich durch)"
+       },
+       "Der letzte Teil des Manuskripts „Das Königreich beider Sicilien in seinen gegenwärtigen Zuständen“"
+      ]
+     }
+    },
+    "listWit": {
+     "witness": {
+      "msDesc": {
+       "@type": "copy",
+       "msIdentifier": {
+        "institution": "GhStA Berlin",
+        "collection": "VI. HA, NL Waldemar Kampf",
+        "idno": "Karton 59, Mappe 347 (nach H)"
+       }
+      }
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er übersendet das Manuskript des zweiten Teils seines Artikels „Das Königreich beider Sicilien in seinen gegenwärtigen Zuständen“ zum Abdruck in „Die Gegenwart“, stimmt aber möglichen Änderungswünschen zu. Ende Mai will er möglicherweise für Studien nach Neapel reisen. Später will er einen Beitrag über die geschichtlichen oder literarischen Verhältnisse in Italien schreiben."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He sends the manuscript of the second part of his article „Das Königreich beider Sicilien in seinen gegenwärtigen Zuständen“ to be printed in „Die Gegenwart“, but agrees to possible changes. He wants to possibly travel to Naples at the end of May to do a few studies. Later he wants to write an article about the historical or literary situation in Italy."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1855-04-28",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G000996",
+       "#text": "Brockhaus, Heinrich (1804–1874)"
+      },
+      "orgName": {
+       "@key": "G000480",
+       "#text": "F. A. Brockhaus Verlag"
+      },
+      "placeName": {
+       "@key": "G000712",
+       "#text": "Leipzig"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

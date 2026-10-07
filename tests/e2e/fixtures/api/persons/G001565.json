@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001565",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116713356"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Sabatier",
+   "forename": "François"
+  },
+  "birth": "1818",
+  "death": "1891"
+ }
+}

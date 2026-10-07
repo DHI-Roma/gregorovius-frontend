@@ -1,0 +1,15 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001594",
+  "@role": "mythological",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/7674426-7"
+  },
+  "persName": {
+   "@type": "reg",
+   "name": "Sebulon"
+  }
+ }
+}

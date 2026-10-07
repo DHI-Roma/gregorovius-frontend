@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001432",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/13402995X"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Muhr",
+   "forename": "Julius"
+  },
+  "birth": "1819",
+  "death": "1865"
+ }
+}

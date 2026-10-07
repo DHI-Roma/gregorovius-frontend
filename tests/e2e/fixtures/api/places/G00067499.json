@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G00067499",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2925533"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Frankfurt am Main"
+  }
+ }
+}

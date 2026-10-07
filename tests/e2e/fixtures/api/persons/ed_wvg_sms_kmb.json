@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_wvg_sms_kmb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/119426307"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Lampertico",
+   "forename": "Fedele"
+  },
+  "birth": "1833",
+  "death": "1906"
+ }
+}

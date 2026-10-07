@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000480",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/65191-6"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "F. A. Brockhaus Verlag"
+  }
+ }
+}

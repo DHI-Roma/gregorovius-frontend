@@ -1,0 +1,10 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000467",
+  "orgName": {
+   "@type": "reg",
+   "#text": "Archivio della Società romana di storia patria"
+  }
+ }
+}

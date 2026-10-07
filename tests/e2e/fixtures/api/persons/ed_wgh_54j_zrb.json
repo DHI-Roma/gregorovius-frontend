@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_wgh_54j_zrb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117437115"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Visconti",
+   "forename": "Carlo Lodovico"
+  },
+  "birth": "1818",
+  "death": "1894"
+ }
+}

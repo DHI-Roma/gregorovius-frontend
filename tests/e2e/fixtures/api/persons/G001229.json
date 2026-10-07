@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001229",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117162965"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Mühler",
+   "forename": "Heinrich von"
+  },
+  "birth": "1813",
+  "death": "1874"
+ }
+}

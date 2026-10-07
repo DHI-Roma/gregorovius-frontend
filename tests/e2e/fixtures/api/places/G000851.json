@@ -1,0 +1,15 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000851",
+  "@type": "river",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/4401696"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Ohio"
+  }
+ }
+}

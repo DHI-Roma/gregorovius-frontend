@@ -1,0 +1,136 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Johann Georg Freiherr Cotta von Cottendorf in Stuttgart. Rom, 25. Mai 1854",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "DLA Marbach",
+      "collection": "Cotta-Archiv",
+      "idno": [
+       "Cotta-Briefe (4)",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000016/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": "1 Dbl., 4°, 1 ½ S. – 1r aoR in einer Vignette geprägt: BATH – 2v, Bl. um 180° gedreht, Adr.: Dem hochwolgeborenen Herrn / Freiherrn von Cotta."
+     }
+    },
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 59, Mappe 347 (nach D1)"
+        }
+       }
+      },
+      {
+       "bibl": {
+        "@type": "print",
+        "#text": "Johannes Hönig: Ferdinand Gregorovius der Geschichtschreiber der Stadt Rom. Stuttgart, Berlin 1921. S. 205–206"
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "In Rom ist sein soeben erschienenes „Corsica“ (1854) eingetroffen. Er dankt für die Aufnahme im Cotta-Verlag. Er fürchtet keine Kritik, auch wenn er heute manches mit mehr Kenntnis geschrieben hätte. Als erstes hat ihm Karl Rosenkranz seine Anerkennung ausgesprochen. Auf die von ihm übersetzten korsischen Totenklagen (Voceros) ist er besonders stolz."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "His recently published „Corsica“ (1854) has arrived in Rome. He is grateful that the Cotta publishing house accepted his work. He is not afraid of any criticism, even if he would have written some things with more knowledge today. Karl Rosenkranz was the first person to compliment his book. He is particularly proud of the Corsican lamentations (Voceros) he translated."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1854-05-25",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001055",
+       "#text": "Cotta von Cottendorf, Johann Georg\n                        (1796–1863)"
+      },
+      "placeName": {
+       "@key": "G000879",
+       "#text": "Stuttgart"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

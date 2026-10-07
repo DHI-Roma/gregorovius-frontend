@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004719",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/11876439X"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Washington",
+   "forename": "George"
+  },
+  "birth": "1732",
+  "death": "1799"
+ }
+}

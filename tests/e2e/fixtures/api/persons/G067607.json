@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067607",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118574450"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Lorrain",
+   "forename": "Claude"
+  },
+  "birth": "1600",
+  "death": "1682"
+ }
+}

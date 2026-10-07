@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001398",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1061006174"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Maraini",
+   "forename": "Clemente"
+  },
+  "birth": "1838",
+  "death": "1905"
+ }
+}

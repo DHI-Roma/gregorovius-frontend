@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_ujn_cxw_gpb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118750267"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Rühl",
+   "forename": "Alfred"
+  },
+  "birth": "1882",
+  "death": "1935"
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000833",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2951839"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Bayern"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "ediarum_k4x_vz4_nnb",
+     "@type": "forest",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/2951845"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Bayerischer Wald"
+     }
+    },
+    {
+     "@xml:id": "ediarum_lyy_qbt_y4b",
+     "@type": "mountains",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Bayerische Alpen"
+     }
+    }
+   ]
+  }
+ }
+}

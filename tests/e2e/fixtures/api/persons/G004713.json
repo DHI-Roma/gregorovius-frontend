@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004713",
+  "persName": {
+   "@type": "reg",
+   "surname": "Cotta",
+   "forename": "Erlembaldus"
+  },
+  "birth": null,
+  "death": "1075"
+ }
+}

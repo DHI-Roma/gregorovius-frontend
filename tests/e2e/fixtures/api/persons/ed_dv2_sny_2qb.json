@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_dv2_sny_2qb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116766557"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Curtius",
+   "forename": "Ernst"
+  },
+  "birth": "1814",
+  "death": "1896"
+ }
+}

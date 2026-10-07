@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004682",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2800866"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Brüssel"
+  }
+ }
+}

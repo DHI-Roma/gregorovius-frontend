@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_zwl_dt2_qtb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116674296"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Heinz",
+    "forename": "Constanze von"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "von Bülow"
+   }
+  ],
+  "birth": "1832",
+  "death": "1920"
+ }
+}

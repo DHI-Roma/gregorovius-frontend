@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_l31_t5y_2qb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118524283"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Defregger",
+   "forename": "Franz (ab 1883 Ritter von)"
+  },
+  "birth": "1835",
+  "death": "1921"
+ }
+}

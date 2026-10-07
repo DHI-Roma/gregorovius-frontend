@@ -1,0 +1,134 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Moritz August Freiherr von Bethmann-Hollweg in Berlin. Königsberg, 19. August 1860",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    },
+    "respStmt": {
+     "persName": {
+      "surname": "Ramazzotti",
+      "forename": "Mariana"
+     },
+     "resp": {
+      "note": {
+       "@type": "remarkResponsibility",
+       "#text": "Mitarbeit"
+      }
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "GhStA Berlin",
+      "collection": "I. HA, Rep. 76, Vf. Lit. G, Nr. 25",
+      "idno": [
+       "Bl. 10",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/ed_stv_wxl_qwb/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": "1 Bl., 4°, 1 ¾ S. – 1r aoR diverse Empfangs-, Bearbeitungs- und Archivvermerke [in unsicherer Transkription]: ZU. / Pr. d. 21/8. 60. / NB Gregorovius / ist / gegenwärtig / in Königsberg i. Pr.) – ver. 16. Dez. – Di / Herrn G. RRt Dr Olshausen – 19.139 / 1339.12– Di. 24647 bo / 1947-W. – factum / e Dg / 22/8 – D. / An die Ges. Calculatur nebst den Acten / z. gef. Rückspr. / Kind s. t. / 25/8 – D. / Ad acta. / Berlin 28 Aug. 1860 / p. A. – 1r auR Bearbeitungs- und Archivvermerke: 22/8 – 25/8 – 3659 – Pers. G. 107. 23/7 60. 14547."
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Über die römische Gesandtschaft erreichte ihn das Bewilligungsschreiben über die Gewährung eines Stipendiums von 400 Talern jährlich auf zwei Jahre für die Fortsetzung seiner „Geschichte der Stadt Rom im Mittelalter“ (1859–1872), das vom preußischen Kultusministerium beim Prinzregenten Wilhelm von Preußen beantragt worden war. Die finanzielle Sicherheit beruhigt ihn; zugleich verpflichtet sie ihn, seine ganzen Kräfte an sein großes Werk zu wenden, um der Wissenschaft einen Dienst zu erweisen und dem persönlichen Engagement von Christian Karl Josias von Bunsen würdig zu sein. Er wird Bethmann-Hollweg die ersten drei Bände des Werkes übersenden, sobald der dritte Band Ende September erschienen ist."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "Through the Roman embassy, he received a letter of approval for the grant of a scholarship of 400 thalers annually for two years to continue his „Geschichte der Stadt Rom im Mittelalter“ (1859–1872), which had been applied for by the Prussian Ministry of Culture with Prince Regent Wilhelm of Prussia. Financial security reassures him; at the same time, it obliges him to devote all his energies to his great work in order to render a service to science and to be worthy of the personal commitment of Christian Karl Josias von Bunsen. He will send the first three volumes of the work to Bethmann-Hollweg as soon as the third volume is published at the end of September."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000699",
+       "#text": "Königsberg"
+      },
+      "date": {
+       "@when": "1860-08-19",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G000967",
+       "#text": "Bethmann-Hollweg, Moritz August Freiherr von (1795–1877)"
+      },
+      "placeName": {
+       "@key": "G000636",
+       "#text": "Berlin"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": {
+      "@type": "prev",
+      "#text": "23. Juli 1860 (h: GhStA Berlin, I. HA, Rep. 76, Vf. Lit. G, Nr. 25, Bl. 8)"
+     }
+    }
+   }
+  }
+ }
+}

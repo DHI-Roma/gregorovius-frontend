@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000644",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3028808"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Cannes"
+  }
+ }
+}

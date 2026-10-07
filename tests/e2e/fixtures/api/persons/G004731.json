@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004731",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118590766"
+  },
+  "persName": {
+   "@type": "reg",
+   "name": "Otto III.",
+   "roleName": "Kaiser des römisch-deutschen Reiches"
+  },
+  "birth": "980",
+  "death": "1002"
+ }
+}

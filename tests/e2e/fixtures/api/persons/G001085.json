@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001085",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/119120852"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "De Rossi",
+   "forename": "Giovanni Battista"
+  },
+  "birth": "1822",
+  "death": "1894"
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001188",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/129499749"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Gozzadini Zucchini",
+    "forename": "Gozzadina, Contessa"
+   },
+   {
+    "@type": "alt",
+    "surname": "Gozzadini",
+    "forename": "Gozzadina, Contessa (bis 1865)"
+   }
+  ],
+  "birth": "1845",
+  "death": "1899"
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Christian Karl Josias Freiherr von Bunsen in Heidelberg. Rom, 6. April 1859",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    },
+    "respStmt": {
+     "persName": {
+      "surname": "Ramazzotti",
+      "forename": "Mariana"
+     },
+     "resp": {
+      "note": {
+       "@type": "remarkResponsibility",
+       "#text": "Mitarbeit"
+      }
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "GhStA Berlin",
+      "collection": "I. HA, Rep. 92, Dep. Bunsen, v., Karl Josias",
+      "idno": [
+       "B Nr. 50c, Paket 1, Verschiedene (meist unbeantwortete) Briefe 1859–1860, Bl. 229–230",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/ed_jyb_2h5_4wb/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": [
+       {
+        "hi": {
+         "@rendition": "#aq",
+         "hi": {
+          "@rendition": "#aq",
+          "#text": "Carlsberg – Heidelberg"
+         }
+        },
+        "#text": "1 Dbl., 8°, 2 ½ S. – 2v, um 180° gedreht, Adr.: Sr. Excellenz / Freiherrn von Bunsen. /  / nebst 1 Exemplar / Geschichte der Stadt Rom im Mittelalter / Band I."
+       },
+       "Band 1 von Gregorovius’ „Geschichte der Stadt Rom im Mittelalter“ (1859)"
+      ]
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er übersendet den ersten Band seiner „Geschichte der Stadt Rom im Mittelalter“ (1859) in der Hoffnung, dass Bunsen, als ein Mann, dessen Wissen und Beiträge über das Mittelalter in Rom so umfangreich sind, daran interessiert sein wird. Er bediente sich hierfür der von Bunsen als preußischer Gesandter beim Heiligen Stuhl angelegten Bibliothek römischer Lokalmonographien im Instituto di correspondenza archeologica in Rom. Der Schwierigkeit seines Projekts ist er sich bewusst. Seinem Verleger Freiherr Georg von Cotta ist es zu verdanken, dass er seine Arbeit fortsetzen kann. Der zweite Band (1859) ist im Druck, das Manuskript des dritten Bandes (1860) wird er im Herbst abschließen."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He sends the first volume of his „Geschichte der Stadt Rom im Mittelalter“ (1859), hoping that Bunsen, as a man whose knowledge of and writings on the Middle Ages in Rome are so extensive, will be interested in it. To this end, he made use of the library of Roman local monographs at the Instituto di correspondenza archeologica in Rome, which was established by Bunsen as the Prussian envoy to the Holy See. He is aware of the difficulty of his project. It is thanks to his publisher, Baron Georg von Cotta, that he is able to continue his work. The second volume (1859) is in print, he will complete the manuscript of the third volume (1860) in the fall."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1859-04-06",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001001",
+       "#text": "Bunsen, Christian Karl Josias Freiherr von (1791–1860)"
+      },
+      "placeName": {
+       "@key": "G000685",
+       "#text": "Heidelberg"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": {
+      "@type": "next",
+      "#text": "19. Dezember 1859 (BSB München, NL Gregorovius, Gregoroviusiana 21)"
+     }
+    }
+   }
+  }
+ }
+}

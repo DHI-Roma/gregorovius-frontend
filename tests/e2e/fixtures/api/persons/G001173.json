@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001173",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118717367"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Giesebrecht",
+   "forename": "Wilhelm von"
+  },
+  "birth": "1814",
+  "death": "1889"
+ }
+}

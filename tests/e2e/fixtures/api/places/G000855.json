@@ -1,0 +1,15 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000855",
+  "@type": "mountains",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2661786"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Alpen"
+  }
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000878",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2973783"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Straßburg"
+  },
+  "listPlace": {
+   "place": {
+    "@xml:id": "G067591",
+    "@type": "building",
+    "idno": {
+     "@type": "uri",
+     "#text": "http://www.geonames.org/7521416"
+    },
+    "placeName": {
+     "@type": "reg",
+     "#text": "Straßburger Münster (Straßburg)"
+    }
+   }
+  }
+ }
+}

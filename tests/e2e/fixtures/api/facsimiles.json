@@ -1,0 +1,526 @@
+{
+ "G000001": {
+  "0": {
+   "name": "G000001_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000001_1v.webp",
+   "label": "1v"
+  }
+ },
+ "G000002": {
+  "0": {
+   "name": "G000002_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000002_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "G000002_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "G000002_2v.webp",
+   "label": "2v"
+  }
+ },
+ "G000003": {
+  "0": {
+   "name": "G000003_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000003_1v.webp",
+   "label": "1v"
+  }
+ },
+ "G000004": {
+  "0": {
+   "name": "G000004_1r.webp",
+   "label": "1r"
+  }
+ },
+ "G000005": {
+  "0": {
+   "name": "G000005_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000005_1v.webp",
+   "label": "1v"
+  }
+ },
+ "G000006": {
+  "0": {
+   "name": "G000006_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000006_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "G000006_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "G000006_2v.webp",
+   "label": "2v"
+  }
+ },
+ "G000016": {
+  "0": {
+   "name": "G000016_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000016_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "G000016_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "G000016_2v.webp",
+   "label": "2v"
+  }
+ },
+ "G000025": {
+  "0": {
+   "name": "G000025_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000025_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "G000025_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "G000025_2v.webp",
+   "label": "2v"
+  }
+ },
+ "G000038": {
+  "0": {
+   "name": "G000038_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000038_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "G000038_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "G000038_2v.webp",
+   "label": "2v"
+  }
+ },
+ "G000056": {
+  "0": {
+   "name": "G000056_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000056_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "G000056_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "G000056_2v.webp",
+   "label": "2v"
+  }
+ },
+ "G000060": {
+  "0": {
+   "name": "G000060_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000060_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "G000060_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "G000060_2v.webp",
+   "label": "2v"
+  }
+ },
+ "G000061": {
+  "0": {
+   "name": "G000061_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000061_1v.webp",
+   "label": "1v"
+  }
+ },
+ "G000066": {
+  "0": {
+   "name": "G000066_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000066_1v.webp",
+   "label": "1v"
+  }
+ },
+ "G000087": {
+  "0": {
+   "name": "G000087_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000087_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "G000087_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "G000087_2v.webp",
+   "label": "2v"
+  }
+ },
+ "G000090": {
+  "0": {
+   "name": "G000090_1.webp",
+   "label": "1"
+  },
+  "1": {
+   "name": "G000090_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "G000090_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "G000090_2v.webp",
+   "label": "2v"
+  }
+ },
+ "G000099": {
+  "0": {
+   "name": "G000099_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000099_1v.webp",
+   "label": "1v"
+  }
+ },
+ "G000113": {
+  "0": {
+   "name": "G000113_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000113_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "G000113_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "G000113_2v.webp",
+   "label": "2v"
+  }
+ },
+ "G000141": {
+  "0": {
+   "name": "G000141_1.webp",
+   "label": "1"
+  },
+  "1": {
+   "name": "G000141_2.webp",
+   "label": "2"
+  },
+  "2": {
+   "name": "G000141_3.webp",
+   "label": "3"
+  },
+  "3": {
+   "name": "G000141_4.webp",
+   "label": "4"
+  }
+ },
+ "G000143": {
+  "0": {
+   "name": "G000143_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000143_1v.webp",
+   "label": "1v"
+  }
+ },
+ "G000214": {
+  "0": {
+   "name": "G000214_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000214_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "G000214_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "G000214_2v.webp",
+   "label": "2v"
+  }
+ },
+ "G000231": {
+  "0": {
+   "name": "G000231_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000231_1v.webp",
+   "label": "1v"
+  }
+ },
+ "G000247": {
+  "0": {
+   "name": "G000247_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "G000247_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "G000247_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "G000247_2v.webp",
+   "label": "2v"
+  },
+  "4": {
+   "name": "G000247_3r.webp",
+   "label": "3r"
+  },
+  "5": {
+   "name": "G000247_3v.webp",
+   "label": "3v"
+  }
+ },
+ "G067718": {
+  "0": {
+   "name": "G067718_1.webp",
+   "label": "1"
+  },
+  "1": {
+   "name": "G067718_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "G067718_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "G067718_2v.webp",
+   "label": "2v"
+  }
+ },
+ "G067797": {
+  "0": {
+   "name": "G067797_1.webp",
+   "label": "1"
+  },
+  "1": {
+   "name": "G067797_2.webp",
+   "label": "2"
+  },
+  "2": {
+   "name": "G067797_3.webp",
+   "label": "3"
+  },
+  "3": {
+   "name": "G067797_4.webp",
+   "label": "4"
+  }
+ },
+ "ed_bhl_y5j_zrb": {
+  "0": {
+   "name": "ed_bhl_y5j_zrb_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "ed_bhl_y5j_zrb_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "ed_bhl_y5j_zrb_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "ed_bhl_y5j_zrb_2v.webp",
+   "label": "2v"
+  }
+ },
+ "ed_fpn_wyx_gxb": {
+  "0": {
+   "name": "ed_fpn_wyx_gxb_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "ed_fpn_wyx_gxb_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "ed_fpn_wyx_gxb_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "ed_fpn_wyx_gxb_2v.webp",
+   "label": "2v"
+  }
+ },
+ "ed_jyb_2h5_4wb": {
+  "0": {
+   "name": "ed_jyb_2h5_4wb_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "ed_jyb_2h5_4wb_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "ed_jyb_2h5_4wb_2r.webp",
+   "label": "2r"
+  }
+ },
+ "ed_jyl_wjx_3xb": {
+  "0": {
+   "name": "ed_jyl_wjx_3xb_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "ed_jyl_wjx_3xb_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "ed_jyl_wjx_3xb_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "ed_jyl_wjx_3xb_2v.webp",
+   "label": "2v"
+  },
+  "4": {
+   "name": "ed_jyl_wjx_3xb_Umschlag r.webp",
+   "label": "Umschlag r"
+  },
+  "5": {
+   "name": "ed_jyl_wjx_3xb_Umschlag v.webp",
+   "label": "Umschlag v"
+  }
+ },
+ "ed_krm_s3y_3xb": {
+  "0": {
+   "name": "ed_krm_s3y_3xb_quer_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "ed_krm_s3y_3xb_quer_1v.webp",
+   "label": "1v"
+  }
+ },
+ "ed_kzj_2qv_4wb": {
+  "0": {
+   "name": "ed_kzj_2qv_4wb_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "ed_kzj_2qv_4wb_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "ed_kzj_2qv_4wb_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "ed_kzj_2qv_4wb_2v.webp",
+   "label": "2v"
+  }
+ },
+ "ed_rzn_ycy_2qb": {
+  "0": {
+   "name": "ed_rzn_ycy_2qb_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "ed_rzn_ycy_2qb_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "ed_rzn_ycy_2qb_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "ed_rzn_ycy_2qb_2v.webp",
+   "label": "2v"
+  }
+ },
+ "ed_stv_wxl_qwb": {
+  "0": {
+   "name": "ed_stv_wxl_qwb_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "ed_stv_wxl_qwb_1v.webp",
+   "label": "1v"
+  }
+ },
+ "ed_wt1_4n4_5nb": {
+  "0": {
+   "name": "ed_wt1_4n4_5nb_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "ed_wt1_4n4_5nb_1v.webp",
+   "label": "1v"
+  }
+ },
+ "ed_yns_ct5_4wb": {
+  "0": {
+   "name": "ed_yns_ct5_4wb_1r.webp",
+   "label": "1r"
+  },
+  "1": {
+   "name": "ed_yns_ct5_4wb_1v.webp",
+   "label": "1v"
+  },
+  "2": {
+   "name": "ed_yns_ct5_4wb_2r.webp",
+   "label": "2r"
+  },
+  "3": {
+   "name": "ed_yns_ct5_4wb_2v.webp",
+   "label": "2v"
+  }
+ }
+}

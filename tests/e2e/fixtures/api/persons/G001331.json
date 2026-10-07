@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001331",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/11952239X"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Kaulbach",
+   "forename": "Hermann"
+  },
+  "birth": "1846",
+  "death": "1909"
+ }
+}

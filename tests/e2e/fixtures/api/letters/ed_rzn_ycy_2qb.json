@@ -1,0 +1,119 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Jean Bourdeau in Paris. Rom, 3. April 1883",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "BSB München",
+      "collection": "Autogr.",
+      "idno": [
+       "Gregorovius, Ferdinand, 30 (6)",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/ed_rzn_ycy_2qb/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": [
+       "1 Dbl., 4°, 4 S.",
+       "Empfehlungskarte von Gregorovius zum Besuch bei Ignaz von Döllinger"
+      ]
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Auf seiner geplanten Deutschlandreise wird Bourdeau sich überzeugen können, dass auch Deutschland eine Kulturnation ist. In der Philosophie ist Arthur Schopenhauer der letzte große Autor gewesen. Nach dem Tod Hermann Lotzes empfiehlt er ihm, den Philosophiehistoriker Kuno Fischer in Heidelberg zu besuchen. Theodor Mommsen ist der namhafteste Historiker für die römische Geschichte, Ernst Curtius der für die griechische Geschichte. Leopold von Ranke beschließt seine lange Karriere mit seiner „Weltgeschichte“ (1881–1888) wie Alexander von Humboldt es mit seinem „Kosmos“ (1845–1862) getan hatte. Wilhelm von Giesebrecht ist als Autor der „Geschichte der deutschen Kaiserzeit“ (1855–1880) der namhafteste Historiker deutscher Nationalgeschichte. Für den Besuch bei Ignaz von Döllinger legt er eine Empfehlungskarte bei. Der schönen Literatur ist er selbst durch seine historischen Studien entfremdet, doch ist Deutschland hierin nicht führend. In München lebt aber der talentierte Paul Heyse und Adolf Friedrich von Schack, dessen Gemälde-Galerie er empfiehlt. Er wird den Besuch Bourdeaus auch dem Kulturhistoriker Wilhelm Heinrich Riehl melden und dem Historienmaler Herman Kaulbach schreiben, der ihn mit Franz Defregger und anderen Künstlern bekannt machen kann. Carl Theodor von Piloty ist aus gesundheitlichen Gründen wenig kontaktfreudig. Seine Geschwister Julius und Ottilie Elgnowski werden Bourdeau gern behilflich sein."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "On his upcoming trip to Germany, Bourdeau will be able to see for himself that Germany is also nation of culture. In philosophy, Arthur Schopenhauer was the last great author. After Hermann Lotze’s death, he recommends that he visit the philosophy historian Kuno Fischer in Heidelberg. Theodor Mommsen is the most renowned historian for Roman history, Ernst Curtius for Greek history. Leopold von Ranke concluded his long career with his „Weltgeschichte“ (1881–1888) as Alexander von Humboldt had done with his „Kosmos (1845–1862). Wilhelm von Giesebrecht, author of the „Geschichte der deutschen Kaiserzeit“ (1855–1880), is the most renowned historian of German national history. He encloses a recommendation card for the visit to Ignaz von Döllinger. He himself is alienated from fine literature through his historical studies, but Germany is not a leader in this. However, the talented Paul Heyse lives in Munich as well as Adolf Friedrich von Schack, whose art gallery he recommends. He will also tell the cultural historian Wilhelm Heinrich Rieh about Bourdeau’s visit and write to the historical painter Herman Kaulbach, who can introduce him to Franz Defregger and other artists. Carl Theodor von Piloty is not very sociable due to health reasons. His siblings Julius and Ottilie Elgnowski will be happy to assist Bourdeau."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1883-04-03",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "ed_js2_4mf_fpb",
+       "#text": "Bourdeau, Jean (1848–1928)"
+      },
+      "placeName": {
+       "@key": "G000749",
+       "#text": "Paris"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

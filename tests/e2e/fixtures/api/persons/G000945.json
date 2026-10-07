@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000945",
+  "persName": {
+   "@type": "reg",
+   "surname": "Aretin",
+   "forename": "Maria Freifrau von"
+  },
+  "birth": "1806",
+  "death": "1891"
+ }
+}

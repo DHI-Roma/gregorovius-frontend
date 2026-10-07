@@ -1,0 +1,12 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067611",
+  "persName": {
+   "@type": "reg",
+   "name": "Alberich II. von Spoleto"
+  },
+  "birth": "vor 915",
+  "death": "954"
+ }
+}

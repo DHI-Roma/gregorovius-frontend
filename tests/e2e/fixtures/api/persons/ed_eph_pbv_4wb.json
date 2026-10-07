@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_eph_pbv_4wb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117157007"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Bunsen",
+    "forename": "Frances Freifrau von"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Waddington"
+   }
+  ],
+  "birth": "1791",
+  "death": "1876"
+ }
+}

@@ -1,0 +1,129 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Hermann von Thile in Heiden. Danzig, 9. August\n                    1860",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "GSA Weimar",
+      "idno": "96/937 (14)"
+     },
+     "physDesc": {
+      "p": "1 Dbl., 1 Bl., 8°, 5 S."
+     }
+    },
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 59, Mappe 346 (nach D) und Karton\n                                        59, Mappe 346 (Ergänzungen nach H)"
+        }
+       }
+      },
+      {
+       "bibl": {
+        "@type": "print",
+        "#text": "Briefe von Ferdinand Gregorovius an den Staatssekretär Hermann von Thile. Hrsg. von Herman von Petersdorff. Berlin 1894. S. 29–32 (gekürzt)"
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Nach seiner Abreise aus Heiden über Stuttgart und Augsburg hat er in Nürnberg und Leipzig, wo er mit Heinrich Brockhaus zusammentraf, und in Berlin Halt gemacht. Hier besuchte er Albrecht von Gräfe in seiner Augenklinik und wurde von ihm zu einem Empfang geladen. In der Königlichen Bibliothek traf er Georg Heinrich Pertz. Justus von Olshausen war verreist; Moritz August von Bethmann Hollweg hat ihn kühl empfangen, bis er seinen Fürsprecher Thile erwähnte. Er gab sich erstaunt, dass das Bewilligungsschreiben seiner jährlichen Zuwendung durch die preußische Regierung noch nicht eingegangen war. Johann Georg von Cotta ist mit dem Absatz der ersten beiden Bände seiner „Geschichte der Stadt Rom im Mittelalter“ (1859) sehr zufrieden. In der französischen Presse wurde sie positiv besprochen. In Danzig lebt er mit seinen Brüdern Rudolf und Julius. In fünf Tagen will er Familienangehörige und Freunde in Königsberg und der ostpreußischen Provinz besuchen, darunter seine kürzlich verwitwete Schwester Ottilie Elgnowski. Karl Josias Freiherr von Bunsen bittet er zu grüßen. Ob es eine Veröffentlichung der Briefe von Johann Caspar Goethe gibt, wird er noch mitteilen. Im Danziger Stadttheater hat er Richard Wagners „Tannhäuser“ ohne Genuss gesehen."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "After leaving Heiden via Stuttgart and Augsburg he stopped in Nuremberg and Leipzig, where he met Heinrich Brockhaus, and in Berlin. Here he visited Albrecht von Gräfe in his eye clinic and was invited to a reception. In the Königliche Bibliothek he ran into Georg Heinrich Pertz. Justus von Olshausen was away; Moritz August von Bethmann Hollweg gave him a cool reception until he mentioned his advocate Thile. He was surprised that the letter of approval of his annual allowance by the Prussian government had not yet been received. Johann Georg von Cotta is very satisfied with the sales of the first two volumes of his „Geschichte der Stadt Rom im Mittelalter“ (1859). It was positively reviewed in the French press. In Danzig he is living with his brothers Rudolf and Julius. In five days he wants to visit family members and friends in Königsberg and the East Prussian Province, including his recently widowed sister Ottilie Elgnowski. He asks to give his regards to Karl Josias Baron of Bunsen. Whether there will be a publication of the letters of Johann Caspar Goethe, he will say at a later point. At the Danziger Stadttheater he saw Richard Wagner’s „Tannhäuser“, but didn’t enjoy it."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000663",
+       "#text": "Danzig"
+      },
+      "date": {
+       "@when": "1860-08-09",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001644",
+       "#text": "Thile, Hermann von (1812–1889)"
+      },
+      "placeName": {
+       "@key": "G000686",
+       "#text": "Heiden"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

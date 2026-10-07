@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001266",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118639218"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Herzen",
+   "forename": "Alexander"
+  },
+  "birth": "1839",
+  "death": "1906"
+ }
+}

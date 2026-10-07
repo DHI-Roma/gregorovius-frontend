@@ -1,0 +1,78 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:telota="http://www.telota.de" telota:doctype="letter_fgbe" xml:id="ed_fpn_wyx_gxb">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt><title>Ferdinand Gregorovius an die J. G. Cotta’sche Buchhandlung Nachfolger in Stuttgart. München, 8. September 1890</title>
+<editor> <persName ref="http://d-nb.info/gnd/1127895559"><surname>Steinsiek</surname> <forename>Angela</forename> </persName> </editor>
+</titleStmt>
+            <editionStmt>
+                <edition>
+                    <title>Fredinand Gregorovius, gesammelte Briefe</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName xml:lang="de">Deutsches Historisches Institut in Rom</orgName>
+                    <orgName xml:lang="it">Istituto Storico Germanico di Roma</orgName>
+                    <orgName xml:lang="en">German Historical Institute in Rome</orgName>
+                    <address>
+                        <addrLine>Via Aurelia Antica, 00165 Rom, Italien</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace ref="http://www.geonames.org/3169070">Rom</pubPlace>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution 4.0 International (CC BY 4.0)
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc><msIdentifier><institution>DLA Marbach</institution><collection>Cotta-Archiv</collection><idno>Cotta-Briefe, 488</idno><idno type="URLImages">https://gregorovius-edition.dhi-roma.it/api/facsimiles/ed_fpn_wyx_gxb/</idno></msIdentifier>
+<physDesc>
+<p>1 Dbl., 8°, 4 S.</p>
+</physDesc>
+</msDesc>
+                <listWit>
+                    <witness> <bibl type="print">Johannes Hönig: Ferdinand Gregorovius der Geschichtschreiber der Stadt Rom. Stuttgart, Berlin 1921. S. 524 (stark gekürzt) </bibl> </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <abstract>
+                <p xml:lang="de">Nach der Rückkehr von seiner Rhein- und Moselreise hat er den Brief des Verlagshauses vorgefunden, dass ihn erneut auffordert, an dem geplanten „Cotta’schen Musen-Almanach“ mitzuwirken. Die Herausgeberschaft Otto Brauns macht ihm dies unmöglich. Die überzähligen, weil doppelt vorhandenen Druckfahnen der vierten Auflage des vierten Bandes seiner „Geschichte der Stadt Rom im Mittelalter“ (1890) schickt er zurück. Er hat jetzt ein komplettes Exemplar in Druckfahnen bezogen. Über seine übrigen Freiexemplare wird er nach dem Erscheinen verfügen. Die Revisionsmanuskripte für die vierte Auflage der Bände 5–8 liegen bereit. Nach seinem Tod werden diese an den Verlag gesandt und Franz Rühl wird den Neudruck überwachen. Mit dem Verkauf eines Drittels der Auflage seiner „Geschichte der Stadt Athen im Mittelalter“ (1889) ist er zufrieden. Demnach sind hiervon in einem Jahr so viele Exemplare verkauft worden wie von seiner „Geschichte der Stadt Rom im Mittelalter“ in acht Jahren. Er hat sich gefreut, die Nachfolger des berühmten Verlagshauses Cotta persönlich getroffen zu haben, mit dem er seit so vielen Jahren verbunden ist. Er bittet den von ihm geschätzten, langjährigen Prokuristen Heinrich Mögling zu grüßen, nach dem zu fragen er bei seinem Stuttgarter Aufenthalt er leider versäumt hat. </p>
+                <p xml:lang="en">After returning from his trip to the Rhine and Moselle, he found a letter from the publishing house, in which he is again asked to participate in the planned „Cotta’schen Musen-Almanach“. The fact that Otto Braun is the editor makes this impossible for him. He sends back the surplus galley proofs, as there are duplicates, of the fourth edition of the fourth volume of his „Geschichte der Stadt Rom im Mittelalter“ (1890). He has now obtained a complete copy in galley proofs. He will decide on his remaining free copies after publication. The revision manuscripts for the fourth edition of volumes 5–8 are ready. After his death, these will be sent to the publisher and Franz Rühl will supervise the reprint. He is satisfied with the sale of a third of the print run of his „Geschichte der Stadt Athen im Mittelalter“ (1889). That means that it has sold as many copies in one year as his „Geschichte der Stadt Rom im Mittelalter“ has in eight years. He was pleased to have personally met the successors of the famous publishing house Cotta, with whom he has been affiliated for so many years. He asks to greet the long-time authorized signatory Heinrich Mögling, who he unfortunately forgot to ask about during his stay in Stuttgart. </p>
+            </abstract>
+            <correspDesc>
+                <correspAction type="sent">
+<persName key="G001200">Gregorovius, Ferdinand (1821–1891)</persName>
+<placeName key="G000734">München</placeName><date when="1890-09-08" cert="high"/>
+</correspAction>
+                <correspAction type="received"><orgName key="ed_icv_gll_swb">J. G. Cotta’sche Buchhandlung Nachfolger</orgName>
+<placeName key="G000879">Stuttgart</placeName>
+</correspAction>
+<correspContext>
+<ref type="prev">22. August 1890 (DLA Marbach, Cotta-Archiv, Autoren-Copierbuch 2 [3. Mai 1890 – 7. Februar 1891], 396) </ref>
+</correspContext>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body><pb n="1r"/>
+            <div type="writingSession">
+                <opener>
+                    <dateline rendition="#right">München, 8. <hi rendition="#aq">Sept<ex>em</ex>b<ex>e</ex>r</hi> 1890.</dateline>
+                    <salute rendition="#c">Hochgeehrte Herren,</salute>
+                </opener>
+<p><seg type="comment"><orig>bei meiner Rückkehr</orig><note xml:id="njbl_sby_gxb">Seit Anfang September 1890 war Gregorovius zurück in München: Er war am 12. August 1890 zu seiner letzten Reise über Stuttgart nach Köln, Aachen und Trier mit einem kurzen Aufenthalt in Maastricht und Antwerpen aufgebrochen. Auf der Rückreise hatte er seinen Bruder Julius (1819–1891) und beider Halbschwester Ottilie Elgnowski (1834–1907) in Jugenheim (nahe Darmstadt) abgeholt, mit ihnen Worms besucht. Auf dem Rückweg nach München hatten sie in Mainz und Wiesbaden Halt gemacht (siehe den Brief von Gregorovius an Mathilde von Humboldt vom <ref target="ed_tsq_mfz_gxb">12.10.1890</ref>).</note></seg> habe ich Ihr geschätztes Schreiben vom 22. Aug<ex>ust</ex> vorgefunden, dessen Empfang ich demnach ergebenst bestätige.</p>
+<p>In Bezug auf den gewünschten Beitrag zu Ihrem projectirten Musenalmanach hat Ihnen mein eigenes Verlangen nach einem möglichen Modus dazu dargethan, wie gern ich Ihrer freundlichen Aufforderung entsprechen mögte; <seg type="comment"><orig>allein ruhige Überlegung dieser Sache verbietet mir schließlich doch, mich an einer Schrift zu beteiligen, als deren Herausgeber sich <persName key="G000994">Herr B<ex>raun</ex></persName> zeichnen wird.</orig><note xml:id="ne5j_xby_gxb">Die J. G. Cotta’sche Buchhandlung Nachfolger plante in Herausgeberschaft von Otto Braun (1824–1900) einen illustrierten „Cotta’schen Musen-Almanach“, der erstmals im Jahr 1891 (bis 1900) erschien. Für diesen hatte der Verlag Gregorovius bereits in einem vertraulichen Schreiben vom 12. Juli 1890 zu gewinnen gesucht: Gregorovius hatte in seinem Antwortschreiben vom 15. Juli 1890 eine Teilnahme entschieden abgelehnt, weil er mit Braun „aus den Ihnen [dem Verlag] bereits bekannten Ursachen keine persönliche oder geschäftliche Verbindung mehr haben“ wolle (DLA Marbach, Cotta-Archiv, Cotta-Briefe, 486). – Zu dem von 1869 bis 1889 als Herausgeber und Schriftleiter der Cotta’schen „Allgemeinen Zeitung“ tätigen Journalisten und Schriftsteller Otto Braun hatte Gregorovius bereits im Jahre 1877 den Kontakt abgebrochen. Die Gründe dafür waren Brauns ausbleibende Antwort auf Gregorovius’ Empfehlung, seinen Freund Raffaele Mariano (1840–1912) als gelegentlichen Korrespondenten für kirchlich-politische Fragen in Italien in die „Allgemeine Zeitung“ aufzunehmen, sowie eine von Braun zum Abdruck gebrachte Notiz von Karl Gutzkow (1811–1878) (siehe den Brief von Gregorovius an Cotta vom <ref target="ed_itt_btq_qmb">10.6.1877</ref>).</note></seg> <pb n="1v"/>Ich bin überzeugt, daß Sie die Gründe meines Verzichts als maßgebend anerkennen.</p>
+<p><seg type="comment"><orig>Gleichzeitig mit Ihrem Briefe fand ich die Aushängebogen des <bibl sameAs="G003465">IV. Bandes</bibl> der Gesch<ex>ichte</ex> Roms vor,</orig><note xml:id="no5b_1cy_gxb">Gregorovius hatte die Druckfahnen der vierten Auflage des vierten Bandes seiner „Geschichte der Stadt Rom im Mittelalter“ (1890) durchzusehen.</note></seg> von Bogen 31 ab. Da ich nicht wußte, daß mir dieselben nach München geschickt worden waren, nahm ich letzthin aus Ihrer Officin dieselben Bogen mit mir. Ich schicke Sie heute wieder zurück. Somit habe ich von meinen Freiexemplaren jenes Bandes eins complet in Empfang genommen. Über die andern werde ich mir später eine Bestimmung erlauben, <seg type="comment"><orig>sobald der Band zur Ausgabe gelangt.</orig><note xml:id="nbg2_bcy_gxb">Der Band erschien, zurückdatiert auf das Jahr 1890, im Februar 1891 (nach dem letzten Brief von Gregorovius an die J. G. Cotta’sche Buchhandlung Nachfolger vom 5.2.1891, DLA Marbach, Cotta-Archiv, Cotta-Briefe, 494). Zum Versand der Freiexemplare des Bandes kam es vor dem Tode von Gregorovius am 1. Mai 1891 nicht mehr.</note></seg> </p>
+<p>Der revidirte Text des <bibl sameAs="G003458">Bandes V</bibl>, wie der <bibl corresp="G003437 G003444 G003451">folgenden</bibl> liegt bei mir bereit. <seg type="comment"><orig>Ich wiederhole die Bemerkung, daß ich für meinen Todesfall die Anordnung getroffen habe, daß Ihnen alle diese durchgesehenen <pb n="2r"/>Bände zugestellt werden.</orig><note xml:id="nnjq_dcy_gxb">Die vierte Auflage seiner „Geschichte der Stadt Rom im Mittelalter“ wurde mit dem achten Band erst posthum, aber noch von ihm selbst revidiert, im Jahr 1896 abgeschlossen.</note></seg> <seg type="comment"><orig>Professor <persName key="G001562">Franz Rühl</persName> in <placeName key="G000699">Königsberg</placeName>, welcher den Index des Werkes mit so großer Gewissenhaftigkeit gemacht hat, wird dann gerne die Revision des Neu-Drucks übernehmen.</orig><note xml:id="ncl2_lcy_gxb">Noch für die ersten beiden Bände der fünften Auflage seiner „Geschichte der Stadt Rom im Mittelalter“ (1903) konnte der Verlag nach den von Gregorovius revidierten Manuskripten drucken (siehe Waldemar Kampf: Editorische Hinweise. In: Ferdinand Gregorovius: Geschichte der Stadt Rom im Mittelalter. Hrsg. von dems. 4 Bde. Bd. 4. München 1988. S. 5–63, hier S. 57–58).</note></seg> </p>
+<p><seg type="comment"><orig>Aus Ihren gefälligen Mitteilungen entnahm ich, daß von der <bibl sameAs="G003534">Geschichte der Stadt Athen</bibl> im ersten Jahre etwas mehr als ein Drittel der Auflage von 3000 Ex<ex>emplaren</ex> abgesetzt worden ist,</orig><note xml:id="nrcg_ncy_gxb">Von Gregorovius’ „Geschichte der Stadt Athen im Mittelalter“ (2 Bde. Stuttgart: J. G. Cotta’sche Buchhandlung Nachfolger 1889) waren insgesamt 3.000 Exemplare für den Verkauf gedruckt worden, die zu jeweils 1.000 Stück, ausgewiesen als erste bis dritte (unveränderte) Auflage mit dem Erscheinungsjahr 1889 in den Handel kamen (siehe zum Brief von Gregorovius an Eduard Brockhaus vom <ref target="ed_d23_g11_rwb">10.2.1889</ref>).</note></seg> während der Verkauf des Werkes einen regelmäßigen Fortgang erkennen läßt. <seg type="comment"><orig>Wenn dies Resultat auch nicht glänzend ist, so scheint es mir doch nicht ungünstig zu sein, da von der Geschichte Athens in <hi rendition="#u" hand="">einem</hi> Jahre so viel abgesetzt worden ist, als von der Geschichte Roms in <hi rendition="#u" hand="">acht</hi> Jahren.</orig><note xml:id="ngry_pcy_gxb">Gregorovius bezieht sich hier wohl auf die Restbestände der Bände 5–8 seiner „Geschichte der Stadt Rom im Mittelalter“ (1878–1881) in der dritten Auflage, die ihm der Verlag im vorhergehenden Schreiben vom 22. August 1890 mitgeteilt hatte: Hiernach waren von der Gesamtauflage von je 1.000 Exemplaren vom fünften Band noch 150, vom sechsten Band noch 198, vom siebten Band noch 287 und vom achten Band noch 436 Exemplare auf Lager – mit dem Beginn des Drucks der vierten Auflage rechnete man für diese Bände in 2 bis 2 ¾ Jahren (DLA Marbach, Cotta-Archiv, Autoren-Copierbuch 2 [3. Mai 1890 – 7. Februar 1891], 396).</note></seg> In jedem Falle darf ich wol ohne Anmaßung behaupten, daß auch dies Seitenstück zur Geschichte Roms einen dauernden Platz in der Literatur gewinnen wird.</p>
+<p><seg type="comment"><orig>Es war mir eine wahrhafte Freude, Sie, meine Herren, in Stuttgart persönlich begrüßen <pb n="2v"/>zu können</orig><note xml:id="ng1g_rcy_gxb">Gregorovius hatte auf dem Hinweg seiner Rhein- und Moselreise am 12. August 1890 in Stuttgart Halt gemacht (siehe den Brief von Gregorovius an Raffaele Mariano vom <ref target="ed_kwx_v1c_kxb">11.8.1890</ref>).</note></seg> <seg type="comment"><orig>als Nachfolger der ruhmreichen <orgName key="G000523">Cotta’schen Buchhandlung</orgName>,</orig><note xml:id="nr4x_scy_gxb">Nach dem Tod des Seniorverlegers Carl Cotta von Cottendorf (1835–1888) war das Stuttgarter Verlagshaus am 1. Januar 1889 an den Leipziger Verleger Adolf Kröner (1836–1911) gegangen, der es dort unter dem Firmennamen „J. G. Cotta’sche Buchhandlung Nachfolger“ weiterführte. Geschäftsführer war Rudolf Koch (1844–1922), der bereits seit 1874 Prokurist im Hause Cotta war.</note></seg> mit welcher mich literarische Beziehungen, u<ex>nd</ex> zwar die für mich wichtigsten, während eines Menschenalters verbunden hielten. Ich bin froh, daß ich diese Beziehungen für den Rest meines Lebens mit Ihnen fortsetzen darf.</p>
+                <closer>
+                    <salute rendition="#c">In wahrhafter Hochachtung ergeben</salute>
+                    <signed rendition="#right"><hi rendition="#aq">Ferdin. Gregorovius.</hi></signed>
+                </closer><note type="postscript">Während meiner Anwesenheit in Stuttgart versäumte ich leider <seg type="comment"><orig>nach <persName key="ed_t3d_vdy_gxb">Herrn Mögling</persName> zu fragen, einem alten Beamten in dem Cotta’schen Institut,</orig><note xml:id="niyj_5cy_gxb">Heinrich Mögling (1827–1915) war zunächst langjähriger Buchhalter, seit dem Tod von Eduard Griesenbeck (†1873) zusammen mit Friedrich Cordier (†1882), ab 1874 zudem mit Rudolf Koch Prokurist des vormaligen Cotta-Verlags. Während der krankheitsbedingt häufigen Abwesenheiten Carl Cotta von Cottendorfs in den späten 1870er Jahren hatten Mögling und Koch die Verlagsgeschäfte verantwortet.</note></seg> von dem ich vor Jahren manche Liebenswürdigkeit erfahren habe. Ich bitte daher, diesem Herrn meine Grüße gütigst auszurichten. </note>
+            </div>
+        </body>
+    </text>
+</TEI>

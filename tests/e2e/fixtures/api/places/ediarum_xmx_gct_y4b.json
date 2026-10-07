@@ -1,0 +1,15 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ediarum_xmx_gct_y4b",
+  "@type": "sea",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2660647"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Genfer See"
+  }
+ }
+}

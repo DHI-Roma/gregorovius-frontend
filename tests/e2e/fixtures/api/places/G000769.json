@@ -1,0 +1,11 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000769",
+  "@type": "building",
+  "placeName": {
+   "@type": "reg",
+   "#text": "Villa Melini (Rom)"
+  }
+ }
+}

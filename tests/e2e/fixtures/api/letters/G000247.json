@@ -1,0 +1,128 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Raffaele Mariano in Rom. München, 29. November 1877",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    },
+    "respStmt": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1121508855",
+      "surname": "Neuber",
+      "forename": "Frederike"
+     },
+     "resp": {
+      "note": {
+       "@type": "remarkResponsibility",
+       "#text": "Mitarbeit"
+      }
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "repository": "Florenz, Privatarchiv Anrep",
+      "idno": {
+       "@type": "URLImages",
+       "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000247/"
+      }
+     },
+     "physDesc": {
+      "p": [
+       "1 Dbl., 1 Bl., 8°, 4 ¾ S. – 1v alR „Ich halte es für meine Pflicht […] Nachrichten zu haben.“ Absatzanstreichung vfrH",
+       "Der Artikel „Für ein Fröbel-Institut in Italien“ (aus Die Gartenlaube. H. 7. Leipzig 1876. S. 124) und ein Artikel von Alfred von Reumont aus der „Allgemeinen Zeitung“ über das „Archivio della Società romana di storia patria“ (29.11.1877)"
+      ]
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er hat einen Brief von Adelheid Grunelius aus Florenz erhalten. Er freut sich über ihre anhaltende Freundschaft mit Mariano und Karl Lindemann-Frommel. Bei Gertrud Gräfin von Werthern-Beichlingen hat er Cecil Pilar von Pilchau getroffen, die bald weiter nach Rom reisen will. Sie hat sich intensiv nach Mariano erkundigt. Am 1. Dezember 1877 hält er an der Akademie seinen Vortrag „Ein deutscher Bericht über die Eroberung Roms durch die kaiserliche Armee Carl’s V. im Jahr 1527“ (1877). Über Oreste Tommasinis Artikel „Della storia medievale di Roma e de’ più recenti raccontatori di essa“ (1877) ist er noch immer aufgebracht. Seine italienischen Bekannten haben ihn kaum unterstützt, vor allem von Ersilia Caetani Lovatelli ist er enttäuscht. Er legt dem Brief den Spendenaufruf „Für ein Fröbel-Institut in Italien“ (1876) von der Schwabeschen Schule und einen Aufsatz des wenig geschätzten Alfred von Reumont über das „Archivio della Società romana di storia patria“ (Das Archiv der historischen römischen Gesellschaft) bei. Er ist so enttäuscht von Rom und Italien, dass er seine Sammlung von Urkunden der Bayerischen Staatsbibliothek vermachen will. Er soll Augusto Nomis di Cossillas Adresse erfragen. Er wird Albrecht Wernich für seine übersandte Broschüre „Ueber Ausbreitung und Bedeutung der neuen Culturbestrebungen in Japan“ (1877) danken. Er fürchtet, dass manche Sonderdrucke seiner „Alcuni cenni storici sulla cittadinanza romana“ (1877) nicht zugestellt worden sind. Für Marianos „Cristianesimo, cattolicismo e civiltà“ (1879) schlägt er Zanichelli in Bologna vor. Ruggiero Bonghis „Pio IX e il papa futuro“ (1877) hält er für unwürdig."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He received a letter from Adelheid Grunelius from Florence. He is pleased about her lasting friendship with Mariano and Karl Lindemann-Frommel. At Gertrud Countess von Werthern-Beichlingen’s house, he met Cecil Pilar von Pilchau, who will soon be travelling on to Rome. She inquired about Mariano extensively. On December 1st, 1877, he is giving his lecture at the academy „Ein deutscher Bericht über die Eroberung Roms durch die kaiserliche Armee Carl’s V. im Jahr 1527“ (1877). He is still upset about Oreste Tommasini’s article „Della storia medievale di Roma e de’ più recenti raccontatori di essa“ (1877). His Italian acquaintances hardly supported him, and he is particularly disappointed in Ersilia Caetani Lovatelli. He encloses the fundraising appeal „Für ein Fröbel-Institut in Italien“ (1876) from the Schwabian school and an essay by the little-esteemed Alfred von Reumont on the „Archivio della Società romana di storia patria“ (Das Archiv der historischen römischen Gesellschaft). He is so disappointed in Rome and Italy that he wants to bequeath his collection of certificates to the Bayerische Staatsbibliothek. He is to ask for Augusto Nomis di Cossilla’s address. He will thank Albrecht Wernich for his brochure „Ueber Ausbreitung und Bedeutung der neuen Culturbestrebungen in Japan“ (1877). He fears that some special prints of his „Alcuni cenni storici sulla cittadinanza romana“ (1877) have not been delivered. For Mariano’s „Cristianesimo, cattolicismo e civiltà“ (1879) he proposes Zanichelli in Bologna. He considers Ruggiero Bonghi’s „Pio IX e il papa futuro“ (1877) to be undignified."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000734",
+       "#text": "München"
+      },
+      "date": {
+       "@when": "1877-11-29",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001401",
+       "#text": "Mariano, Raffaele (1840–1912)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

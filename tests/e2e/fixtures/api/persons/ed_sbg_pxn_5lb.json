@@ -1,0 +1,16 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_sbg_pxn_5lb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118739972"
+  },
+  "persName": {
+   "@type": "reg",
+   "name": "Perikles"
+  },
+  "birth": "ca. 490/95",
+  "death": "ca. 429 v. Chr."
+ }
+}

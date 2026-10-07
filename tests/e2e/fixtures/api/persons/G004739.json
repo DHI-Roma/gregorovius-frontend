@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004739",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116472987"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Ferrucci",
+   "forename": "Luigi Crisostomo"
+  },
+  "birth": "1797",
+  "death": "1877"
+ }
+}

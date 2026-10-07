@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001219",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116916508"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Guerrieri Gonzaga",
+   "forename": "Carlo"
+  },
+  "birth": "1827",
+  "death": "1913"
+ }
+}

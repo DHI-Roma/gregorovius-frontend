@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001440",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/12185471X"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Napier",
+   "forename": "Charles"
+  },
+  "birth": "1782",
+  "death": "1853"
+ }
+}

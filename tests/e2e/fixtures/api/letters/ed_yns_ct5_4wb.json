@@ -1,0 +1,134 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Christian Karl Josias Freiherr von Bunsen in Cannes. Rom, 5. Januar 1860",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    },
+    "respStmt": {
+     "persName": {
+      "surname": "Ramazzotti",
+      "forename": "Mariana"
+     },
+     "resp": {
+      "note": {
+       "@type": "remarkResponsibility",
+       "#text": "Mitarbeit"
+      }
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "GhStA Berlin",
+      "collection": "I. HA, Rep. 92, Dep. Bunsen, v., Karl Josias",
+      "idno": [
+       "B Nr. 50c, Paket 1, In Cannes (1859–1860) erhaltene Briefe, Bl. 176–177",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/ed_yns_ct5_4wb/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": "1 Dbl., 8°, 3 ¼ S."
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Für Bunsens Antwortschreiben aus Cannes ist er sehr dankbar. Er hatte Bunsen den Plan seiner „Geschichte der Stadt Rom im Mittelalter“ (1859–1872) auseinandergesetzt und ihm den ersten Band (1859) hiervon übersendet, weil er sicher annahm, dass Bunsen als Mitherausgeber der noch für sein eigenes Werk wichtigen „Beschreibung der Stadt Rom“ (Cotta 1829–1842) hieran Interesse haben würde. Nach sorgfältiger Erwägung aller Empfehlungen, die Bunsen ihm für die Fortsetzung seines Werks gegeben hat, will er seine Geschichtsdarstellung erst mit dem Sacco di Roma enden lassen, auch wenn er glaubt, dass das Mittelalter in Rom im Grunde mit Stefano Porcari endet. Die jüngere Geschichte Roms scheint ihm nur ein Moment in der Geschichte des Papsttums zu sein. Das Manuskript des dritten Bandes (1860) ist abgeschlossen: Es enthält zahlreiche Dokumente und behandelt die Zeit von Alberich II. und Crescentius bis zum Tod Ottos III., die mit „dramatischer Lebendigkeit“ geschildert wird. Insbesondere haben deutsche Wissenschaftler bislang keine lebendigen Geschichtswerke geschaffen. Sollte allein der Stil Theodor Mommsens beim deutschen Publikum ankommen, zieht er es vor, hierauf von vornherein zu verzichten. Dem Kultusminister Moritz August von Bethmann-Hollweg hat er sein Werk nicht zukommen lassen, um nicht den Eindruck zu erwecken, etwas zu fordern. Er hat stets nur um moralische Unterstützung nachgesucht, wie sie ihm Alexander von Humboldt hat zu Teil werden lassen. Allerdings hat sich Hermann von Thile an das Ministerium gewandt, um ein Stipendium der preußischen Regierung für ihn zu erwirken. Dem guten Honorar seines Verlegers Freiherr Georg von Cotta ist es zu verdanken, dass er seine Arbeit an der „Geschichte der Stadt Rom im Mittelalter“ fortsetzen kann. Peter von Cornelius erwidert Bunsens Gruß. Der Tod seiner Frau Geltruda hat ihn auch gesundheitlich getroffen, doch glaubt Gregorovius nicht, dass er Rom verlassen wird. In Rom tätig zu sein bedeutet, ständig mit einem Dämon zu kämpfen, was aber zugleich Stärke verleiht. In den sieben Jahren seines römischen Aufenthaltes war er produktiver als in seinem ganzen Leben vorher. Im nächsten Jahr will er Deutschland bereisen, deren Verhältnisse er nun aus der Distanz betrachten kann. In Rom hat er den amerikanischen Theologen Theodor Parker kennengelernt."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He is very grateful for Bunsen’s reply sent from Cannes. He had explained his plan for his „Geschichte der Stadt Rom im Mittelalter“ (1859–1872) to Bunsen and sent him the first volume (1859) of it, because he safely assumed that Bunsen would be interested in this as co-editor of the „Beschreibung der Stadt Rom“ (Cotta 1829–1842), which is important for his own work. After carefully considering all the recommendations that Bunsen gave him for the continuation of his work, he wants to let his presentation of history end only with the Sacco di Roma, even if he believes that the Middle Ages in Rome basically ended with Stefano Porcari. The recent history of Rome seems to him to be only a moment in the history of the papacy. The manuscript of the third volume (1860) has been completed: it contains numerous documents and deals with the period from Alberich II and Crescentius to the death of Otto III, which is described with „dramatic vividness“. German academics in particular have not yet created any vivid historical works. If Theodor Mommsen’s style alone is able reach the German audience, he would prefer not to do it at all. He did not send his work to the Minister of Culture, Moritz August von Bethmann-Hollweg, so as not to give the impression of demanding something. He has always solely sought moral support, as Alexander von Humboldt has allowed him to receive. However, Hermann von Thile approached the ministry to obtain a scholarship from the Prussian government for him. It is thanks to the good fee paid by his publisher Freiherr Georg von Cotta that he is able to continue his work on the „Geschichte der Stadt Rom im Mittelalter“. Peter von Cornelius returns Bunsen’s greetings. The death of his wife Geltruda also affected his health, but Gregorovius does not think that he will leave Rome. Working in Rome means constantly fighting with a demon, but at the same time it gives you strength. In his seven year long stay in Rome, he was more productive than in his whole life before. Next year he wants to travel to Germany, whose state of affairs he can now look at from a distance. In Rome he met the American theologian Theodor Parker."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1860-01-05",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001001",
+       "#text": "Bunsen, Christian Karl Josias Freiherr von (1791–1860)"
+      },
+      "placeName": {
+       "@key": "G000644",
+       "#text": "Cannes"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": {
+      "@type": "prev",
+      "#text": "19. Dezember 1859 (BSB München, NL Gregorovius, Gregoroviusiana 21, Bunsen, Christian Karl Josias von)"
+     }
+    }
+   }
+  }
+ }
+}

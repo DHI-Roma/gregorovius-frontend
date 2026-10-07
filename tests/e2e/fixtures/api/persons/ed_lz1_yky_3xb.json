@@ -1,0 +1,20 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_lz1_yky_3xb",
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Henle",
+    "forename": "Elise"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Egloff"
+   }
+  ],
+  "birth": "1821",
+  "death": "1848"
+ }
+}

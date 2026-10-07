@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_w51_cdv_4wb",
+  "persName": {
+   "@type": "reg",
+   "surname": "Bunsen",
+   "forename": "Emilie von"
+  },
+  "birth": "1827",
+  "death": "1911"
+ }
+}

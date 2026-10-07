@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_rvn_p3h_ynb",
+  "persName": {
+   "@type": "reg",
+   "surname": "Rühl",
+   "forename": "Paul"
+  },
+  "birth": "1878",
+  "death": "1916"
+ }
+}

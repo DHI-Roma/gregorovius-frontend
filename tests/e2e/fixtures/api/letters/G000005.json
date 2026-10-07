@@ -1,0 +1,114 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an die Redaktion der Allgemeinen Zeitung in Augsburg. Rom, 19. Mai 1853",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "DLA Marbach",
+      "collection": "Cotta-Archiv",
+      "idno": [
+       "Cotta-Briefe (2c)",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000005/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": [
+       "1 Bl., 4°, 1 S. – 1r aoR in einer Vignette geprägt: BATH – 1v auR, Bl. um 180° gedreht, Adr.: Der sehr geehrten Redaction / der Allg. Zeitg.",
+       "Manuskript seines Artikels „Der Ghetto und die Juden in Rom“"
+      ]
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er übersendet den vorliegenden Brief mit dem Manuskript seines Artikels „Der Ghetto und die Juden in Rom“ als Beischluss zum Brief an Johann Georg Freiherr Cotta von Cottendorf (20. Mai 1853). Er fragt, ob das am 25. April 1853 abgesandte Manuskript seiner „Römischen Figuren“ angekommen ist. Er möchte wissen, ob der Numismatiker Heinrich Hirsch einen Beitrag über die Juden in Livorno als Seitenstück zu seinem eigenen Artikel einsenden soll. Er bittet um Abzüge aller seiner Beiträge aus der „Allgemeinen Zeitung“."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He encloses this letter as well as the manuscript of his article „Der Ghetto und die Juden in Rom“ with the letter to Johann Georg Baron Cotta von Cottendorf (May 20th, 1853). He asks whether the manuscript of his „Römische Figuren“, sent on April 25th, 1853, has arrived. He would like to know whether the numismatist Heinrich Hirsch should send a contribution about the Jews in Livorno as a companion piece to his own article. He asks for copies of all his contributions to the „Allgemeine Zeitung“."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1853-05-19",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "orgName": {
+       "@key": "G000462",
+       "#text": "Allgemeine Zeitung"
+      },
+      "placeName": {
+       "@key": "G000620",
+       "#text": "Augsburg"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

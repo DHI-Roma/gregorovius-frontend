@@ -1,0 +1,86 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000737",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3172394"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Neapel"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "G000738",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Chiesa dei Santi Severino e Sossio (Neapel)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_jrt_mcf_hpb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Albergo di Ginevra (Neapel)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ld5_hdf_hpb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Hotel Washington (Neapel)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_jxz_pnh_dqb",
+     "@type": "mountains",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/3164481"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Vesuv (Neapel)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_bnj_ngj_5tb",
+     "@type": "district",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/12023131"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Mergellina (Neapel)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_axy_tgj_5tb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Santa Lucia (Neapel)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_rvp_mvk_swb",
+     "@type": "mountain",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/3170053"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Posillipo (Neapel)"
+     }
+    }
+   ]
+  }
+ }
+}

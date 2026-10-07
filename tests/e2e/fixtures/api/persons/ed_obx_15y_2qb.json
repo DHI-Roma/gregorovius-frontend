@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_obx_15y_2qb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118600850"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Riehl",
+   "forename": "Wilhelm Heinrich (ab 1883 von)"
+  },
+  "birth": "1823",
+  "death": "1897"
+ }
+}

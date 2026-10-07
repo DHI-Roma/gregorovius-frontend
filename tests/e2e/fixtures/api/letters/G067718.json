@@ -1,0 +1,117 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Karl Ritter von Scherzer in Wien. Rom, 15. und 27. Dezember 1862",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "Kantonsbibliothek Vadiana St. Gallen",
+      "collection": "Slg. Robert Alther",
+      "idno": [
+       "VadSlg NL 202 : 83 : 76q",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G067718/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": "1 Dbl., 8°, 4 S."
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Durch Scherzers Brief hat er sich lebhaft an ihr Kennenlernen in St. Moritz erinnert. Sein Brief kam verspätet an, so dass der erwünschte Dispens der S. Maria dell’Anima von Pater Michael Gaßner erst jetzt auf den Weg gebracht werden konnte. Er ist erfreut, dass er der Bibliothek der Deutschen im Palast Caffarelli seine „Reise der österreichischen Fregatte Novara um die Erde, beschreibender Teil“ (3 Bde. 1861–1862) spenden will. Er würde ihm auch den vierten Band seiner „Geschichte der Stadt Rom im Mittelalter“ (1862) übersenden, hat aber kein Exemplar mehr. Er erkundigt sich nach der in Wien lebenden Theresia Schurz, der Schwester von Nikolaus Lenau. Der Brief wurde erst am 27. Dezember 1862 abgesandt."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "Through Scherzer’s letter he vividly recalls their meeting in St. Moritz. His letter arrived late, so he was only now able to initiate the desired dispensation of S. Maria dell’Anima from Father Michael Gaßner. He is delighted that he will donate his „Reise der österreichischen Fregatte Novara um die Erde, beschreibender Teil“ (3 vols., 1861–1862) to the Bibliothek der Deutschen in the Caffarelli Palace. He would also like to send him the fourth volume of his „Geschichte der Stadt Rom im Mittelalter“ (1862), but he no longer has a copy. He inquires about Theresia Schurz, the sister of Nikolaus Lenau, who lives in Vienna. The letter was not sent until December 27th, 1862."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@from": "1862-12-15",
+       "@to": "1862-12-27",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001577",
+       "#text": "Scherzer, Karl Ritter von (1821–1903)"
+      },
+      "placeName": {
+       "@key": "G000897",
+       "#text": "Wien"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

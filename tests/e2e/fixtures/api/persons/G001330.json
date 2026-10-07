@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001330",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118560034"
+  },
+  "persName": {
+   "@type": "reg",
+   "name": "Karl der Große",
+   "roleName": "Römischer Kaiser"
+  },
+  "birth": "747/748",
+  "death": "814"
+ }
+}

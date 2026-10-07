@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000603",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3171709"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Paestum"
+  }
+ }
+}

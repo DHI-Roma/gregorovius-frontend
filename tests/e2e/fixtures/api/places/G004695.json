@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004695",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3172287"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Nettuno"
+  }
+ }
+}

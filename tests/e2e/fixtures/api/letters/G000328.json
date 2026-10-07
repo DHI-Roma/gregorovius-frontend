@@ -1,0 +1,138 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Johann Georg Freiherr Cotta von Cottendorf an Ferdinand Gregorovius in Florenz. Stuttgart, 18. August 1858",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "listWit": {
+     "witness": [
+      {
+       "@select": "#this",
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "DLA Marbach",
+         "collection": "Cotta-Archiv",
+         "idno": "Cotta-Briefe, 18a (von Schreiberhand)"
+        }
+       }
+      },
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 82, Mappe 4 und Karton 59, Mappe 347 (nach h1, gekürzt)"
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Zurück in Stuttgart, hat er das Manuskript der ersten zwei Bände der „Geschichte der Stadt Rom im Mittelalter“ (1859–1872) gelesen. Er gratuliert zu der „imponierenden“ Leistung, der Stil erinnert ihn an Leopold von Ranke, ohne an ihn heranzureichen. Er findet die katholische Kirche nicht beleidigt; der Absatz in katholischen Ländern dürfte aber geringer ausfallen, sollten die weiteren Bände diesen Eindruck nicht bestätigen. Er bietet ihm die Übernahme des Verlags an. Einen Auszug aus Giovanni Paolo Limperani di Orezzas „Istoria della Corsica“ (1779–1780) über seinen Vorfahr Gianantonio Cotta erwartet er mit Interesse. Auch würde er sich freuen, wenn sein Vorfahr Herlembaldus Cotta in der „Geschichte der Stadt Rom im Mittelalter“ kurze Erwähnung fände. Wenn Caroline Ungher-Sabatier die einstige Verlobte seines Freundes Nicolaus Lenau aus Frankfurt ist, wäre er für weitere Informationen dankbar."
+     },
+     "Italienisch:",
+     {
+      "@xml:lang": "en",
+      "#text": "Back in Stuttgart, he read the manuscript of the first two volumes of the „Geschichte der Stadt Rom im Mittelalter“ (1859–1872). He congratulates on the „impressive“ performance, the style reminds him of Leopold von Ranke, without quite reaching him. He does not find the Catholic Church insulted; but sales in Catholic countries are likely to be lower, should the other volumes not confirm this impression. He offers to publish the work. He awaits an excerpt from Giovanni Paolo Limperani di Orezza’s „Istoria della Corsica“ (1779–1780) about his ancestor Gianantonio Cotta with great interest. He would also be pleased if his ancestor Herlembaldus Cotta was briefly mentioned in the „Geschichte der Stadt Rom im Mittelalter“. If Caroline Ungher-Sabatier is the former fiancée of his friend Nicolaus Lenau from Frankfurt, he would be grateful for further information."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001055",
+       "#text": "Cotta von Cottendorf, Johann Georg Freiherr (1796–1863)"
+      },
+      "placeName": {
+       "@key": "G000879",
+       "#text": "Stuttgart"
+      },
+      "date": {
+       "@when": "1858-08-18",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000671",
+       "#text": "Florenz"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": [
+      {
+       "@type": "prev",
+       "#text": "20. Juli 1858 (DLA Marbach, Cotta-Archiv, Cotta-Briefe, 16)"
+      },
+      {
+       "@type": "next",
+       "#text": "25. August 1858 (DLA Marbach, Cotta-Archiv, Cotta-Briefe, 18)"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_rz2_ps4_5nb",
+  "persName": {
+   "@type": "reg",
+   "surname": "Gemmel",
+   "forename": "Minna"
+  }
+ }
+}

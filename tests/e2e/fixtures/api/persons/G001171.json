@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001171",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118717286"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Gibbon",
+   "forename": "Edward"
+  },
+  "birth": "1737",
+  "death": "1794"
+ }
+}

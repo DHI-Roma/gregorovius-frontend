@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001275",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116796014"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Heyse",
+   "forename": "Theodor"
+  },
+  "birth": "1803",
+  "death": "1884"
+ }
+}

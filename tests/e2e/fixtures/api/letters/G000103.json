@@ -1,0 +1,129 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 11. April\n                    1859",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "GSA Weimar",
+      "idno": "96/937 (6)"
+     },
+     "physDesc": {
+      "p": "1 Dbl., 1 Bl., 8°, 6 S."
+     }
+    },
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 59, Mappe 347 (nach D) und Karton 59, Mappe 346 (Ergänzungen nach H)"
+        }
+       }
+      },
+      {
+       "bibl": {
+        "@type": "print",
+        "#text": "Briefe von Ferdinand Gregorovius an den Staatssekretär Hermann von Thile. Hrsg. von Herman von Petersdorff. Berlin 1894. S. 9–12 (gekürzt)"
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Die Rückkehr Thiles nach Rom, nachdem sich der gesundheitliche Zustand des Sohnes Hans gebessert hat, würde ihn sehr erfreuen. Den ersten Band seiner „Geschichte der Stadt Rom im Mittelalter“ (1859) lässt er ihm durch Cotta zusenden und bittet um ein unumwundenes Urteil. Der zweite Band (1859) erscheint in Kürze, für den dritten Band (1860) will er im Mai für Archivarbeiten nach Montecassino. Er fürchtet Kritik am ersten Band, weil er die jüngst von Constantin von Höfler aus dem Nachlass von Felix von Papencordt herausgegebene „Geschichte der Stadt Rom im Mittelalter“ (1857) erst zu spät einsehen konnte. Sein von Thile gewürdigtes Gedicht „Hermus. Eine Nacht auf dem Mittelmeer“ will er noch einmal überarbeiten. Er begrüßt Thiles Bemühungen um eine finanzielle Unterstützung seitens der preußischen Regierung, doch ist sie nach dem Vertragsabschluss mit Cotta nicht mehr existenziell. Über die von Camillo Benso di Cavour in Sardinien begonnenen politischen Reformen und die bevorstehende militärische Konfrontation mit Österreich. Clemens August Alertz ist wohlauf, Peter von Cornelius hat Besuch von seiner Tochter Maria Marcelli."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "Thile’s return to Rome, after the health of his son Hans improves, would give him great pleasure. The first volume of his „Geschichte der Stadt Rom im Mittelalter“ (1859) will be sent to him by Cotta and he asks for candid judgement. The second volume (1859) will appear shortly, for the third volume (1860) he wants to go to Montecassino in May for archival work. He fears criticism of the first volume because he was only able to view the „Geschichte der Stadt Rom im Mittelalter“ (1857), recently published by Constantin von Höfler from the estate of Felix von Papencordt, when it was too late. He wants to revise his poem „Hermus. Eine Nacht auf dem Mittelmeer“. He welcomes Thile’s efforts to obtain financial support from the Prussian government, but it is no longer vital after the conclusion of the contract with Cotta. About the political reforms begun by Camillo Benso di Cavour in Sardinia and the imminent military confrontation with Austria. Clemens August Alertz is well, Peter von Cornelius has a visit from his daughter Maria Marcelli."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1859-04-11",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001644",
+       "#text": "Thile, Hermann von (1812–1889)"
+      },
+      "placeName": {
+       "@key": "G000636",
+       "#text": "Berlin"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

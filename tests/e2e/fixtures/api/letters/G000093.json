@@ -1,0 +1,141 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 11. Januar\n                    1860",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "GSA Weimar",
+      "idno": "96/937 (10)"
+     },
+     "physDesc": {
+      "p": "1 Dbl., 1 Bl., 8°, 5 ¼ S."
+     }
+    },
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 59, Mappe 346 (nach D) und Karton\n                                        59, Mappe 346 (Ergänzungen nach H)"
+        }
+       }
+      },
+      {
+       "bibl": {
+        "@type": "print",
+        "#text": "Briefe von Ferdinand Gregorovius an den Staatssekretär Hermann von Thile. Hrsg. von Herman von Petersdorff. Berlin 1894. S. 20–23 (gekürzt)"
+       }
+      },
+      {
+       "bibl": {
+        "@type": "print",
+        "#text": "Deutsche Briefe aus Italien. Von Winckelmann bis Gregorovius. Hrsg. von Eberhard Haufe. Leipzig: Köhler & Amelang 1965. S. 401–402. 2. Aufl. 1971. S. 407–408. 3. Aufl. 1987. S. 411–412 (Auszug)"
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er dankt für ein neuerlich übersandtes Darlehen, das er im Falle der Bewilligung eines Stipendiums zurückzahlen will. Beileid zum Tod von Thiles Mutter Auguste von Thile. Er hofft vor allem, dass der Sohn Hans bald ganz gesundet. Die gegen die weltliche Macht des Papstes gerichtete Broschüre „Le Pape et le Congrès“ (1859) wird die Loslösung der Romagna vom Kirchenstaat zur Folge haben. Noch sind der Papst und sein Kardinalstaatssekretär Giacomo Antonelli im Amt. Die Rezension der ersten beiden Bände seiner „Geschichte der Stadt Rom im Mittelalter“ (1859) von Franz Dorotheus Gerlach in der „Allgemeinen Zeitung“ ist kenntnislos. Wilhelm von Giesebrecht will eine Besprechung für die „Historische Zeitung“ schreiben. Cotta ist mit dem Absatz seiner „Geschichte der Stadt Rom im Mittelalter“ zufrieden und will gleich den dritten Band drucken (1860). Er hat das Manuskript der ersten zwei Akte seines Dramas „Otto III.“ abgeschlossen – poetologische Reflektionen über den Stoff. Er hat den amerikanischen Theologen Theodor Parker kennengelernt; Ralph Waldo Emerson soll bedeutender sein. Karl Friedrich Freiherr von Canitz und Dallwitz wird doch die Engländerin Helen Giorgeana Knight heiraten. Julius Elsasser ist gestorben, Peter Cornelius und Clemens August Alertz sind wohlauf. Mit Frau von Skripizin unterhält er sich über alte Zeiten. Frau Meier und ihre Schwägerin sind in Rom eingetroffen."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He thanks him for the recently sent loan, which he intends to repay if he is granted a scholarship. Condolences on the death of Thile’s mother Auguste von Thile. Above all, he hopes that his son Hans will soon recover completely. The pamphlet „Le Pape et le Congrès“ (1859), directed against the secular power of the Pope, will lead to the detachment of Romagna from the Papal States. The Pope and his Cardinal Secretary of State Giacomo Antonelli are still in office. The review of the first two volumes of his „Geschichte der Stadt Rom im Mittelalter“ (1859) by Franz Dorotheus Gerlach in the „Allgemeine Zeitung“ is ignorant. Wilhelm von Giesebrecht wants to write a review for the „Historische Zeitung“. Cotta is satisfied with the sales of his „Geschichte der Stadt Rom im Mittelalter“ and wants to print the third volume (1860). He has completed the manuscript of the first two acts of his drama „Otto III.“ – poetological reflections on the subject. He met the American theologian Theodor Parker; Ralph Waldo Emerson is said to be more important. Karl Friedrich Baron of Canitz and Dallwitz is to marry the English woman Helen Giorgeana Knight. Julius Elsasser has died, Peter Cornelius and Clemens August Alertz are well.With Frau von Skripizin he talks about old times. Frau Meier and her sister-in-law have arrived in Rome."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1860-01-11",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001644",
+       "#text": "Thile, Hermann von (1812–1889)"
+      },
+      "placeName": {
+       "@key": "G000636",
+       "#text": "Berlin"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": {
+      "@type": "prev",
+      "#text": "24. Dezember 1859"
+     }
+    }
+   }
+  }
+ }
+}

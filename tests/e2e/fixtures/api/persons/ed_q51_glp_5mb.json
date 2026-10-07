@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_q51_glp_5mb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116675578"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Rühl",
+    "forename": "Elise"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Henle"
+   }
+  ],
+  "birth": "1848",
+  "death": "1923"
+ }
+}

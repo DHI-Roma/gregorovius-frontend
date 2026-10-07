@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_ifm_bmy_3xb",
+  "persName": {
+   "@type": "reg",
+   "surname": "Bujack",
+   "forename": "Anna"
+  },
+  "birth": "1871",
+  "death": "1936"
+ }
+}

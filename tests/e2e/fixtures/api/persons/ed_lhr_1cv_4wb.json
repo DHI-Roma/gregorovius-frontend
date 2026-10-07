@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_lhr_1cv_4wb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117156957"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Bunsen",
+   "forename": "Ernst von"
+  },
+  "birth": "1819",
+  "death": "1903"
+ }
+}

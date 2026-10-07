@@ -1,0 +1,24 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000712",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2879139"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Leipzig"
+  },
+  "listPlace": {
+   "place": {
+    "@xml:id": "G067555",
+    "@type": "building",
+    "placeName": {
+     "@type": "reg",
+     "#text": "Hôtel de Rome (Leipzig)"
+    }
+   }
+  }
+ }
+}

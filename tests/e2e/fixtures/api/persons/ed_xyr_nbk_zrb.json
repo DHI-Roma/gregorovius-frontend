@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_xyr_nbk_zrb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1156487234"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Kaiserlich-Königliches Münz- und Antiken-Kabinett (Wien)"
+  }
+ }
+}

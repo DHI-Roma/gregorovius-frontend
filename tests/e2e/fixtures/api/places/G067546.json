@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067546",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2996944"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Lyon"
+  }
+ }
+}

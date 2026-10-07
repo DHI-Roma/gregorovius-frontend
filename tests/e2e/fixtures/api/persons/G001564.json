@@ -1,0 +1,25 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001564",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118737937"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "name": "Rutilius"
+   },
+   {
+    "@type": "alt",
+    "name": "Claudius Rutilius Namatianus"
+   }
+  ],
+  "floruit": {
+   "@notBefore": "0300",
+   "@notAfter": "0500",
+   "#text": "um 415"
+  }
+ }
+}

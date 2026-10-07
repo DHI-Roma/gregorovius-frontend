@@ -1,0 +1,149 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Theodor Heyse in Florenz. Rom, 28. Oktober\n                    1858",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "BBAW",
+      "collection": "Archiv",
+      "idno": [
+       "NL Theodor Heyse, Bl. 18–19",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000087/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": [
+       "1 Dbl., 8°, 4 S.",
+       "zwei Briefe"
+      ]
+     }
+    },
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 84, Mappe 6 (Alfred Löckle nach H)"
+        }
+       }
+      },
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 59, Mappe 347 (nach D)"
+        }
+       }
+      },
+      {
+       "bibl": {
+        "@type": "print",
+        "#text": "Briefe von Ferdinand Gregorovius an Theodor Heyse. In: Mittheilungen aus dem Litteraturarchive in Berlin 1899. Berlin: Litteraturarchiv-Gesellschaft 1899. S. 195–199"
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Nach Florenz kommt ihm Rom sehr provinziell vor. Er vermisst ihn und die gemeinsamen Unternehmungen. Heyse soll seine lyrischen Arbeiten weiter verfolgen, die sehr gut auf seine Übersetzung von „Catull’s Buch der Lieder“ (1855) folgen. Über die Havarie des Dampfers Hermus auf seiner Überfahrt von Livorno nach Civitavecchia hat er ein Gedicht „Hermus“ geschrieben. Der dritte Band seiner „Geschichte der Stadt Rom im Mittelalter“ (1860) ist weit fortgeschritten. In Rom trifft er jetzt nur Clemens August Alertz und Jean-Jacques Ampère; seine Abende verbringt er mit der Lektüre von Pietro Collettas „Storia del reame di Napoli dal 1734 sino al 1825“ (1834), Lope de Vega und den klassischen Autoren des elisabethanischen Theaters. Sollte Alfred von Reumont mit den erkrankten Friedrich Wilhelm IV. nach Rom kommen, soll auch Heyse nach Rom kommen. Als er Wilhelm Henzen besucht hat, war Heinrich von Brunn noch nicht aus Perugia zurück. Er will sich um den Verkauf von Heyses Büchern kümmern. Auch Clemens August Alertz will seine Bibliothek versteigern lassen, ist aber mental sehr angeschlagen. Der Florentiner Korrespondent der „Allgemeinen Zeitung“ ist offenkundig kenntnislos. Er bittet die Bibliothekare der Laurenziana Luigi Crisostomo Ferrucci und Abbate Pietro Del Furia zu grüßen. Seine „Grabmäler der Päpste“ (1859) erscheinen in der französischen Übersetzung von François Sabatier (1858), wegen einer englischen Übersetzung seiner „Geschichte der Stadt Rom“ (1859–1872) ist er in Verhandlung. Er schreibt alle zwei Wochen Korrespondenzen für die Londoner „Continental Review“ und für die „New Yorker Criminal-Zeitung und belletristisches Journal“, deren Erlös aber sein Bruder Gustav bekommt. Über Gustavo Strafforello richtet er Grüße von Niccolò Tommaseo aus, der für Paul Heyses Übersetzungsproben der Gedichte von Giuseppe Giusti im „Deutschen Literaturblatt“ dankbar ist. Er freut sich über die Unterstützung durch Christian Karl Josias von Bunsen."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "After Florence, Rome seems very provincial to him. He misses him and their adventures. Heyse should continue his lyrical work, which is a great follow-up to his translation of „Catull’s Buch der Lieder“ (1855). He wrote a poem „Hermus“ about the accident of the steamer Hermus on its passage from Livorno to Civitavecchia. The third volume of his „Geschichte der Stadt Rom im Mittelalter“ (1860) is well advanced. In Rome he now only meets up with Clemens August Alertz and Jean-Jacques Ampère; he spends his evenings reading Pietro Colletta’s „Storia del reame di Napoli dal 1734 sino al 1825“ (1834), Lope de Vega and the classical authors of Elizabethan theatre. Should Alfred von Reumont come to Rome with the ill Friedrich Wilhelm IV, Heyse should also come to Rome. When he visited Wilhelm Henzen, Heinrich von Brunn had not yet returned from Perugia. He wants to take care of the sale of Heyse’s books. Clemens August Alertz also wants to have his library auctioned off, but is very depressed. The Florentine correspondent of the „Allgemeine Zeitung“ is obviously ignorant. He asks to give his regards the librarians of the Laurenziana Luigi Crisostomo Ferrucci and Abbate Pietro Del Furia. The French translation of his „Grabmäler der Päpste“ (1859) is being published by François Sabatier (1858), and he is in negotiations for an English translation of his „Geschichte der Stadt Rom“ (1859–1872). Every two weeks he writes correspondence for the London „Continental Review“ and for the „New Yorker Criminal-Zeitung und belletristisches Journal“, the proceeds of which go to his brother Gustav. Through Gustavo Strafforello he sends regards from Niccolò Tommaseo, who is grateful for Paul Heyse’s translation samples of Giuseppe Giusti’s poems in the „Deutsches Literaturblatt“. He is pleased about the support from Christian Karl Josias von Bunsen."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1858-10-28",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001275",
+       "#text": "Heyse, Theodor (1803–1884)"
+      },
+      "placeName": {
+       "@key": "G000671",
+       "#text": "Florenz"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

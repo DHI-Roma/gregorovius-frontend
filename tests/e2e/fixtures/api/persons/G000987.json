@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000987",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/143199706"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Bornträger",
+   "forename": "Ludwig"
+  },
+  "birth": "1828",
+  "death": "1852"
+ }
+}

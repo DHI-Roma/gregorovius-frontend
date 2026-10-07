@@ -1,0 +1,34 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000721",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3173435"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Mailand"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "ediarum_egy_dff_hpb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Albergo del Rebecchino (Mailand)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_zpr_5qt_sxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Dom (Mailand)"
+     }
+    }
+   ]
+  }
+ }
+}

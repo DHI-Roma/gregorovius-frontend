@@ -1,0 +1,11 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ediarum_lmm_slx_qlb",
+  "@type": "street",
+  "placeName": {
+   "@type": "reg",
+   "#text": "Via Gregoriana (Rom)"
+  }
+ }
+}

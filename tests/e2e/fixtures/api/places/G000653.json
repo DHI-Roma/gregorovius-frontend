@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000653",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3180630"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Capri"
+  }
+ }
+}

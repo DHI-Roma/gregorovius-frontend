@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001445",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118738615"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Neuhoff",
+   "forename": "Theodor Freiherr von"
+  },
+  "birth": "1694",
+  "death": "1756"
+ }
+}

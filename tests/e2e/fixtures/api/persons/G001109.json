@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001109",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/129692379"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Elgnowski",
+   "forename": "Hermann"
+  },
+  "birth": "1860",
+  "death": "1936"
+ }
+}

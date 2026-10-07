@@ -1,0 +1,6948 @@
+[
+ {
+  "id": "ed_pr2_hfy_dbc",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Preußische Gesandschaft (Hessen)",
+    "fullName": "Preußische Gesandschaft (Hessen)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_dhn_fvy_2qb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/1022060-4",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Akademie der Bildenden Künste (München)",
+    "fullName": "Akademie der Bildenden Künste (München)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000462",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/4141947-9",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Allgemeine Zeitung",
+    "fullName": "Allgemeine Zeitung",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000467",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Archivio della Società romana di storia patria",
+    "fullName": "Archivio della Società romana di storia patria",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000563",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/1000291-1",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Archivio di Stato (Florenz)",
+    "fullName": "Archivio di Stato (Florenz)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000560",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/1229144-4",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Archivio Storico Capitolino",
+    "fullName": "Archivio Storico Capitolino",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000494",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/2005521-3",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Bayerische Akademie der Wissenschaften (München)",
+    "fullName": "Bayerische Akademie der Wissenschaften (München)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004653",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/1169216587",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Biblioteca Magliabechiana (Florenz)",
+    "fullName": "Biblioteca Magliabechiana (Florenz)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000460",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Bibliothek der Deutschen in Rom (Palazzo Caffarelli)",
+    "fullName": "Bibliothek der Deutschen in Rom (Palazzo Caffarelli)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000469",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/4145798-5",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Blätter für literarische Unterhaltung",
+    "fullName": "Blätter für literarische Unterhaltung",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_xcp_4ms_kmb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/36568-3",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Reale Istituto Veneto di Scienze, Lettere ed Arti",
+    "fullName": "Reale Istituto Veneto di Scienze, Lettere ed Arti",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_jcl_dck_zrb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Museo Civico Archeologico. Collezione Numismatica (Bologna)",
+    "fullName": "Museo Civico Archeologico. Collezione Numismatica (Bologna)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004668",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/013010417",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Das Ausland. Eine Wochenschrift für Kunde des geistigen und sittlichen Lebens der Völker (Cotta 1828–1893)",
+    "fullName": "Das Ausland. Eine Wochenschrift für Kunde des geistigen und sittlichen Lebens der Völker (Cotta 1828–1893)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067531",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Dataria apostolica",
+    "fullName": "Dataria apostolica",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_xtw_kbk_zrb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/1013012-3",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Bibliothèque Nationale de France. Département des Monnaies, Medailles et Antiques",
+    "fullName": "Bibliothèque Nationale de France. Département des Monnaies, Medailles et Antiques",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_w5h_3bk_zrb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/1090635-6",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "British Museum. Department of Coins and Medals (London)",
+    "fullName": "British Museum. Department of Coins and Medals (London)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000545",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/1073019063",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Deutsche Buchhandlung Josef Spithöver (Turin, Rom)",
+    "fullName": "Deutsche Buchhandlung Josef Spithöver (Turin, Rom)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067532",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/35363-2",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Istituto di corrispondenza archeologica / Deutsches Archäologisches Institut in Rom",
+    "fullName": "Istituto di corrispondenza archeologica / Deutsches Archäologisches Institut in Rom",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000546",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/4149312-6",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Deutsches Museum. Zeitschrift für Literatur, Kunst und öffentliches Leben (Leipzig: Brockhaus 1851–1867)",
+    "fullName": "Deutsches Museum. Zeitschrift für Literatur, Kunst und öffentliches Leben (Leipzig: Brockhaus 1851–1867)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000480",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/65191-6",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "F. A. Brockhaus Verlag",
+    "fullName": "F. A. Brockhaus Verlag",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_t43_ym5_lzb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/012846686",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Die Gegenwart. Eine encyklopädische Darstellung der neuesten Zeitgeschichte für alle Stände (Leipzig 1848–1856)",
+    "fullName": "Die Gegenwart. Eine encyklopädische Darstellung der neuesten Zeitgeschichte für alle Stände (Leipzig 1848–1856)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004652",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/4274390-4",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Historische Zeitschrift (München, Berlin 1859–)",
+    "fullName": "Historische Zeitschrift (München, Berlin 1859–)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000510",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/2015908-0",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Königliche Hof- und Staatsbibliothek zu München",
+    "fullName": "Königliche Hof- und Staatsbibliothek zu München",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000543",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Il Cimento. Rivista di scienze, lettere ed arti (Turin 1852–1855)",
+    "fullName": "Il Cimento. Rivista di scienze, lettere ed arti (Turin 1852–1855)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_dg2_lpg_p4b",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Istituto Froebeliano (Neapel)",
+    "fullName": "Istituto Froebeliano (Neapel)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000523",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/5056474-2",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "J. G. Cotta’sche Buchhandlung",
+    "fullName": "J. G. Cotta’sche Buchhandlung",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_icv_gll_swb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/2036169-5",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "J. G. Cotta’sche Buchhandlung Nachfolger",
+    "fullName": "J. G. Cotta’sche Buchhandlung Nachfolger ",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067524",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/37101-4",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Königliche Bibliothek zu Berlin",
+    "fullName": "Königliche Bibliothek zu Berlin",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000533",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/4345483-5",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Morgenblatt für gebildete Leser",
+    "fullName": "Morgenblatt für gebildete Leser",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004659",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "New Yorker Criminal-Zeitung und belletristisches Journal (1852–1864)",
+    "fullName": "New Yorker Criminal-Zeitung und belletristisches Journal (1852–1864)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000541",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Preußisches Kultusministerium",
+    "fullName": "Preußisches Kultusministerium",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_dff_kyv_gmb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/4177951-4",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Revue des deux mondes (Paris 1829–)",
+    "fullName": "Revue des deux mondes (Paris 1829–)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000559",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Römischer Senat",
+    "fullName": "Römischer Senat",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067526",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/5332729-9",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "S. Hirzel Verlag (Leipzig)",
+    "fullName": "S. Hirzel Verlag (Leipzig)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_oc5_sl2_rlb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Sitzungsberichte der Bayerischen Akademie der Wissenschaften zu München",
+    "fullName": "Sitzungsberichte der Bayerischen Akademie der Wissenschaften zu München",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004658",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "The Continental Review (London 1858–1859)",
+    "fullName": "The Continental Review (London 1858–1859)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000471",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/16059404-2",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Thomas Constable & Company",
+    "fullName": "Thomas Constable & Company",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_onw_cld_rlb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Vatikan (Kirchenstaat)",
+    "fullName": "Vatikan (Kirchenstaat)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_bgv_xbk_zrb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/5029841-0",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Biblioteca Apostolica Vaticana. Medagliere",
+    "fullName": "Biblioteca Apostolica Vaticana. Medagliere ",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_xyr_nbk_zrb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/1156487234",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Kaiserlich-Königliches Münz- und Antiken-Kabinett (Wien)",
+    "fullName": "Kaiserlich-Königliches Münz- und Antiken-Kabinett (Wien)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000909",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118500856",
+   "role": "",
+   "birth": "525 v. Chr.",
+   "death": "456 v. Chr.",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Aischylos",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Aischylos",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067611",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "vor 915",
+   "death": "954",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Alberich II. von Spoleto",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Alberich II. von Spoleto",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000913",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/103106677",
+   "role": "",
+   "birth": "1800",
+   "death": "1866",
+   "name": {
+    "surname": "Alertz",
+    "forename": "Clemens August",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Alertz, Clemens August",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000914",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118501844",
+   "role": "",
+   "birth": "1431",
+   "death": "1503",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Alexander VI.",
+    "roleName": "Papst",
+    "orgName": null,
+    "fullName": "Alexander VI., Papst",
+    "altNameSubtype": "",
+    "altSurname": "Borgia",
+    "altForename": "Rodrigo",
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000918",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116293748",
+   "role": "",
+   "birth": "1804",
+   "death": "1876",
+   "name": {
+    "surname": "Altenhöfer",
+    "forename": "August Joseph",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Altenhöfer, August Joseph",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000920",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116010436",
+   "role": "",
+   "birth": "1829",
+   "death": "1897",
+   "name": {
+    "surname": "Althaus",
+    "forename": "Friedrich",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Althaus, Friedrich",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000927",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/11850262X",
+   "role": "mythological",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Amor",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Amor",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000928",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/100009670",
+   "role": "",
+   "birth": "1800",
+   "death": "1864",
+   "name": {
+    "surname": "Ampère",
+    "forename": "Jean-Jacques Antoine",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Ampère, Jean-Jacques Antoine",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000938",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118622110",
+   "role": "",
+   "birth": "1224/1225",
+   "death": "1274",
+   "name": {
+    "surname": "Aquin",
+    "forename": "Thomas von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Aquin, Thomas von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000945",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1806",
+   "death": "1891",
+   "name": {
+    "surname": "Aretin",
+    "forename": "Maria Freifrau von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Aretin, Maria Freifrau von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_ufl_rp2_rlb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "mythological",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Astraea",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Astraea",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067650",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1404",
+   "death": "1444",
+   "name": {
+    "surname": "Beaufort",
+    "forename": "John",
+    "simpleName": null,
+    "roleName": "1. Duke of Somerset",
+    "orgName": null,
+    "fullName": "Beaufort, John, 1. Duke of Somerset",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000967",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118510339",
+   "role": "",
+   "birth": "1795",
+   "death": "1877",
+   "name": {
+    "surname": "Bethmann-Hollweg",
+    "forename": "Moritz August Freiherr von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bethmann-Hollweg, Moritz August Freiherr von",
+    "altNameSubtype": "",
+    "altSurname": "Bethmann-Hollweg",
+    "altForename": "Moritz August",
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_bwx_jrp_gqb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118663313",
+   "role": "",
+   "birth": "1801",
+   "death": "1891",
+   "name": {
+    "surname": "Binzer",
+    "forename": "Emilie Freifrau von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Binzer, Emilie Freifrau von",
+    "altNameSubtype": "pseudonym",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Ernst Ritter"
+   }
+  }
+ },
+ {
+  "id": "G000970",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1191842525",
+   "role": "",
+   "birth": "1823",
+   "death": "1891",
+   "name": {
+    "surname": "Bizio",
+    "forename": "Giovanni",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bizio, Giovanni",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000972",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/11851282X",
+   "role": "",
+   "birth": "um 480/485",
+   "death": "zw. 524 und 526",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Boethius",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Boethius",
+    "altNameSubtype": "",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Anicius Manlius Severinus Boethius"
+   }
+  }
+ },
+ {
+  "id": "G000979",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/119427060",
+   "role": "",
+   "birth": "1826",
+   "death": "1895",
+   "name": {
+    "surname": "Bonghi",
+    "forename": "Ruggiero",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bonghi, Ruggiero",
+    "altNameSubtype": "",
+    "altSurname": "Bonghi",
+    "altForename": "Ruggero",
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000983",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118513559",
+   "role": "",
+   "birth": "1475",
+   "death": "1507",
+   "name": {
+    "surname": "Borgia",
+    "forename": "Cesare",
+    "simpleName": null,
+    "roleName": "duca di Romagna und Valentino",
+    "orgName": null,
+    "fullName": "Borgia, Cesare, duca di Romagna und Valentino",
+    "altNameSubtype": "",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "il Valentino"
+   }
+  }
+ },
+ {
+  "id": "G000985",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1158910460",
+   "role": "",
+   "birth": "1480",
+   "death": "1519",
+   "name": {
+    "surname": "Borgia",
+    "forename": "Lucrezia",
+    "simpleName": null,
+    "roleName": "duchessa di Ferrara",
+    "orgName": null,
+    "fullName": "Borgia, Lucrezia, duchessa di Ferrara",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000987",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/143199706",
+   "role": "",
+   "birth": "1828",
+   "death": "1852",
+   "name": {
+    "surname": "Bornträger",
+    "forename": "Ludwig",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bornträger, Ludwig",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_js2_4mf_fpb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/10173770X",
+   "role": "",
+   "birth": "1848",
+   "death": "1928",
+   "name": {
+    "surname": "Bourdeau",
+    "forename": "Jean",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bourdeau, Jean",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000992",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1033380121",
+   "role": "",
+   "birth": "1220",
+   "death": "1258",
+   "name": {
+    "surname": "Brancaleone",
+    "forename": "Andalò",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Brancaleone, Andalò",
+    "altNameSubtype": "",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Brancaleone degli Andalò"
+   }
+  }
+ },
+ {
+  "id": "G000994",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116422211",
+   "role": "",
+   "birth": "1824",
+   "death": "1900",
+   "name": {
+    "surname": "Braun",
+    "forename": "Otto",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Braun, Otto",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000995",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116552115",
+   "role": "",
+   "birth": "1829",
+   "death": "1914",
+   "name": {
+    "surname": "Brockhaus",
+    "forename": "Eduard",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Brockhaus, Eduard",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000996",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116552433",
+   "role": "",
+   "birth": "1804",
+   "death": "1874",
+   "name": {
+    "surname": "Brockhaus",
+    "forename": "Heinrich",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Brockhaus, Heinrich",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004709",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116777273",
+   "role": "",
+   "birth": "1822",
+   "death": "1894",
+   "name": {
+    "surname": "Brunn",
+    "forename": "Heinrich",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Brunn, Heinrich",
+    "altNameSubtype": "",
+    "altSurname": "Brunn",
+    "altForename": "Heinrich Ritter von (ab 1882)",
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G000999",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118516361",
+   "role": "",
+   "birth": "85 v. Chr.",
+   "death": "42 v. Chr.",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Brutus",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Brutus",
+    "altNameSubtype": "",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Gaius Iunius Brutus"
+   }
+  }
+ },
+ {
+  "id": "G001410",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/139552782",
+   "role": "",
+   "birth": "1801",
+   "death": "1845",
+   "name": {
+    "surname": "Buch",
+    "forename": "Ludwig August von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Buch, Ludwig August von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_ifm_bmy_3xb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1871",
+   "death": "1936",
+   "name": {
+    "surname": "Bujack",
+    "forename": "Anna",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bujack, Anna",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_bws_lly_3xb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/14105736X",
+   "role": "",
+   "birth": "1835",
+   "death": "1891",
+   "name": {
+    "surname": "Bujack",
+    "forename": "Georg",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bujack, Georg",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_nzl_3my_3xb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": "Bujack",
+    "forename": "Hans",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bujack, Hans",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001001",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118668005",
+   "role": "",
+   "birth": "1791",
+   "death": "1860",
+   "name": {
+    "surname": "Bunsen",
+    "forename": "Christian Karl Josias Freiherr von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bunsen, Christian Karl Josias Freiherr von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_w51_cdv_4wb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1827",
+   "death": "1911",
+   "name": {
+    "surname": "Bunsen",
+    "forename": "Emilie von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bunsen, Emilie von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_lhr_1cv_4wb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117156957",
+   "role": "",
+   "birth": "1819",
+   "death": "1903",
+   "name": {
+    "surname": "Bunsen",
+    "forename": "Ernst von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bunsen, Ernst von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_eph_pbv_4wb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117157007",
+   "role": "",
+   "birth": "1791",
+   "death": "1876",
+   "name": {
+    "surname": "Bunsen",
+    "forename": "Frances Freifrau von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bunsen, Frances Freifrau von",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Waddington"
+   }
+  }
+ },
+ {
+  "id": "ed_lmn_ncv_4wb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/108157223X",
+   "role": "",
+   "birth": "1826",
+   "death": "1894",
+   "name": {
+    "surname": "Bunsen",
+    "forename": "Franziska (Frances) von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bunsen, Franziska (Frances) von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_vwn_vcv_4wb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117157074",
+   "role": "",
+   "birth": "1824",
+   "death": "1896",
+   "name": {
+    "surname": "Bunsen",
+    "forename": "Georg von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bunsen, Georg von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067681",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117157244",
+   "role": "",
+   "birth": "1821",
+   "death": "1887",
+   "name": {
+    "surname": "Bunsen",
+    "forename": "Karl von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bunsen, Karl von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_lmn_5dv_4wb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1837",
+   "death": "1867",
+   "name": {
+    "surname": "Bunsen",
+    "forename": "Mathilde",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bunsen, Mathilde",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_jy4_4dv_4wb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1832",
+   "death": "1862",
+   "name": {
+    "surname": "Bunsen",
+    "forename": "Theodora von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bunsen, Theodora von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_yzv_3dv_4wb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117640824",
+   "role": "",
+   "birth": "1832",
+   "death": "1892",
+   "name": {
+    "surname": "Bunsen",
+    "forename": "Theodor von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Bunsen, Theodor von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001004",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116400617",
+   "role": "",
+   "birth": "1804",
+   "death": "1882",
+   "name": {
+    "surname": "Caetani",
+    "forename": "Michelangelo",
+    "simpleName": null,
+    "roleName": "duca di Sermoneta, principe di Teano",
+    "orgName": null,
+    "fullName": "Caetani, Michelangelo, duca di Sermoneta, principe di Teano",
+    "altNameSubtype": "",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Gaetani"
+   }
+  }
+ },
+ {
+  "id": "G001011",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/11640065X",
+   "role": "",
+   "birth": "1840",
+   "death": "1925",
+   "name": {
+    "surname": "Caetani Lovatelli",
+    "forename": "Ersilia, Contessa",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Caetani Lovatelli, Ersilia, Contessa",
+    "altNameSubtype": "",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Gaetani Lovatelli"
+   }
+  }
+ },
+ {
+  "id": "G001012",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/129356298",
+   "role": "",
+   "birth": "1821",
+   "death": "1896",
+   "name": {
+    "surname": "Cagiati",
+    "forename": "Filippo",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Cagiati, Filippo",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004720",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116443073",
+   "role": "",
+   "birth": "1812",
+   "death": "1894",
+   "name": {
+    "surname": "Canitz und Dallwitz",
+    "forename": "Karl Friedrich Freiherr von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Canitz und Dallwitz, Karl Friedrich Freiherr von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001020",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1801",
+   "death": "1870",
+   "name": {
+    "surname": "Caraffa",
+    "forename": "Filippo",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Caraffa, Filippo",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001022",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1205760865",
+   "role": "",
+   "birth": "1818",
+   "death": "1901",
+   "name": {
+    "surname": "Carl Alexander",
+    "forename": "Großherzog von Sachsen-Weimar-Eisenach",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Carl Alexander, Großherzog von Sachsen-Weimar-Eisenach",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067682",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118519514",
+   "role": "",
+   "birth": "um 485",
+   "death": "um 580",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Cassiodor",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Cassiodor",
+    "altNameSubtype": "",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Flavius Magnus Aurelius Cassiodorus"
+   }
+  }
+ },
+ {
+  "id": "G067684",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/11851993X",
+   "role": "",
+   "birth": "1547",
+   "death": "1616",
+   "name": {
+    "surname": "Cervantes",
+    "forename": "Miguel de",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Cervantes, Miguel de",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004700",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/13043387X",
+   "role": "",
+   "birth": "",
+   "death": "1859",
+   "name": {
+    "surname": "Cornelius",
+    "forename": "Geltruda von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Cornelius, Geltruda von",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Ferretinti (oder: Fervantini)"
+   }
+  }
+ },
+ {
+  "id": "G001049",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118676903",
+   "role": "",
+   "birth": "1783",
+   "death": "1867",
+   "name": {
+    "surname": "Cornelius",
+    "forename": "Peter von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Cornelius, Peter von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004713",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "",
+   "death": "1075",
+   "name": {
+    "surname": "Cotta",
+    "forename": "Erlembaldus",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Cotta, Erlembaldus",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004725",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": "Cotta",
+    "forename": "Gianantonio",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Cotta, Gianantonio",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001055",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/11879972X",
+   "role": "",
+   "birth": "1796",
+   "death": "1863",
+   "name": {
+    "surname": "Cotta von Cottendorf",
+    "forename": "Johann Georg Freiherr",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Cotta von Cottendorf, Johann Georg Freiherr",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067676",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "",
+   "death": "998",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Crescentius I. Nomentanus",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Crescentius I. Nomentanus",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_dv2_sny_2qb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116766557",
+   "role": "",
+   "birth": "1814",
+   "death": "1896",
+   "name": {
+    "surname": "Curtius",
+    "forename": "Ernst",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Curtius, Ernst",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_zcg_fc2_2sb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1847",
+   "death": "1947",
+   "name": {
+    "surname": "Davidsohn",
+    "forename": "Philippine",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Davidsohn, Philippine",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Collot"
+   }
+  }
+ },
+ {
+  "id": "G001070",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116038179",
+   "role": "",
+   "birth": "1853",
+   "death": "1937",
+   "name": {
+    "surname": "Davidsohn",
+    "forename": "Robert",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Davidsohn, Robert",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_l31_t5y_2qb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118524283",
+   "role": "",
+   "birth": "1835",
+   "death": "1921",
+   "name": {
+    "surname": "Defregger",
+    "forename": "Franz (ab 1883 Ritter von)",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Defregger, Franz (ab 1883 Ritter von)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004740",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1806",
+   "death": "1896",
+   "name": {
+    "surname": "Del Furia",
+    "forename": "Pietro",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Del Furia, Pietro",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001080",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118988166",
+   "role": "",
+   "birth": "1804",
+   "death": "1886",
+   "name": {
+    "surname": "Demmler",
+    "forename": "Georg Adolf",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Demmler, Georg Adolf",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001085",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/119120852",
+   "role": "",
+   "birth": "1822",
+   "death": "1894",
+   "name": {
+    "surname": "De Rossi",
+    "forename": "Giovanni Battista",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "De Rossi, Giovanni Battista",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_hk5_554_5nb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "",
+   "death": "1855",
+   "name": {
+    "surname": "Dietrichs",
+    "forename": "Karl von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Dietrichs, Karl von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001094",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118526243",
+   "role": "",
+   "birth": "1799",
+   "death": "1890",
+   "name": {
+    "surname": "Döllinger",
+    "forename": "Ignaz Ritter von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Döllinger, Ignaz Ritter von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001102",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/11852786X",
+   "role": "",
+   "birth": "1471",
+   "death": "1528",
+   "name": {
+    "surname": "Dürer",
+    "forename": "Albrecht",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Dürer, Albrecht",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_agg_jqj_zrb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118913298",
+   "role": "",
+   "birth": "1798",
+   "death": "1866",
+   "name": {
+    "surname": "D’Azeglio",
+    "forename": "Massimo",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "D’Azeglio, Massimo",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001109",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/129692379",
+   "role": "",
+   "birth": "1860",
+   "death": "1936",
+   "name": {
+    "surname": "Elgnowski",
+    "forename": "Hermann",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Elgnowski, Hermann",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001110",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1828",
+   "death": "1860",
+   "name": {
+    "surname": "Elgnowski",
+    "forename": "Ludwig Rudolph Emil (Louis)",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Elgnowski, Ludwig Rudolph Emil (Louis)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001111",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116447591",
+   "role": "",
+   "birth": "1834",
+   "death": "1907",
+   "name": {
+    "surname": "Elgnowski",
+    "forename": "Ottilie",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Elgnowski, Ottilie",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Gregorovius (bis 1855)"
+   }
+  }
+ },
+ {
+  "id": "G067655",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/135905524",
+   "role": "",
+   "birth": "1810",
+   "death": "1845",
+   "name": {
+    "surname": "Elsasser",
+    "forename": "Friedrich August",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Elsasser, Friedrich August",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067654",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118530127",
+   "role": "",
+   "birth": "1803",
+   "death": "1882",
+   "name": {
+    "surname": "Emerson",
+    "forename": "Ralph Waldo",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Emerson, Ralph Waldo",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_xfy_fnp_znb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1866",
+   "death": "1965",
+   "name": {
+    "surname": "Erhardt",
+    "forename": "Alexandrine",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Erhardt, Alexandrine",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001114",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://gregorovius-edition.dhi-roma.it/persons/G001114",
+   "role": "",
+   "birth": "1858",
+   "death": "1920",
+   "name": {
+    "surname": "Erhardt",
+    "forename": "Gabriella",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Erhardt, Gabriella",
+    "altNameSubtype": "",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Jella"
+   }
+  }
+ },
+ {
+  "id": "G001115",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1025667980",
+   "role": "",
+   "birth": "1826",
+   "death": "1914",
+   "name": {
+    "surname": "Erhardt",
+    "forename": "Sophie",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Erhardt, Sophie",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Meisrimmel"
+   }
+  }
+ },
+ {
+  "id": "G001116",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116537167",
+   "role": "",
+   "birth": "1819",
+   "death": "1906",
+   "name": {
+    "surname": "Erhardt",
+    "forename": "Wolfgang",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Erhardt, Wolfgang",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067688",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/134222350",
+   "role": "",
+   "birth": "1576",
+   "death": "1622",
+   "name": {
+    "surname": "Fernández de Castro y Andrade",
+    "forename": "Pedro",
+    "simpleName": null,
+    "roleName": "Conde de Lemos",
+    "orgName": null,
+    "fullName": "Fernández de Castro y Andrade, Pedro, Conde de Lemos",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004739",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116472987",
+   "role": "",
+   "birth": "1797",
+   "death": "1877",
+   "name": {
+    "surname": "Ferrucci",
+    "forename": "Luigi Crisostomo",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Ferrucci, Luigi Crisostomo",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001132",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118533401",
+   "role": "",
+   "birth": "1824",
+   "death": "1907",
+   "name": {
+    "surname": "Fischer",
+    "forename": "Kuno",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Fischer, Kuno",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004736",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118691767",
+   "role": "",
+   "birth": "1579",
+   "death": "1625",
+   "name": {
+    "surname": "Fletcher",
+    "forename": "John",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Fletcher, John",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001147",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118535668",
+   "role": "",
+   "birth": "1831",
+   "death": "1888",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Friedrich III.",
+    "roleName": "Kaiser (1888) des Deutschen Reiches",
+    "orgName": null,
+    "fullName": "Friedrich III., Kaiser (1888) des Deutschen Reiches",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004746",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118535994",
+   "role": "",
+   "birth": "1795",
+   "death": "1861",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Friedrich Wilhelm IV.",
+    "roleName": "König von Preußen",
+    "orgName": null,
+    "fullName": "Friedrich Wilhelm IV., König von Preußen",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001151",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116871504",
+   "role": "",
+   "birth": "1824",
+   "death": "1884",
+   "name": {
+    "surname": "Fulin",
+    "forename": "Rinaldo",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Fulin, Rinaldo",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067645",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/143831062",
+   "role": "",
+   "birth": "1810",
+   "death": "1883",
+   "name": {
+    "surname": "Gaßner",
+    "forename": "Michael",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Gaßner, Michael",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_od1_ls4_5nb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/136365906",
+   "role": "",
+   "birth": "1813",
+   "death": "1868",
+   "name": {
+    "surname": "Gemmel",
+    "forename": "Hermann",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Gemmel, Hermann",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_rz2_ps4_5nb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": "Gemmel",
+    "forename": "Minna",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Gemmel, Minna",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067602",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116586842",
+   "role": "",
+   "birth": "1793",
+   "death": "1876",
+   "name": {
+    "surname": "Gerlach",
+    "forename": "Franz Dorotheus",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Gerlach, Franz Dorotheus",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001171",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118717286",
+   "role": "",
+   "birth": "1737",
+   "death": "1794",
+   "name": {
+    "surname": "Gibbon",
+    "forename": "Edward",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Gibbon, Edward",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001173",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118717367",
+   "role": "",
+   "birth": "1814",
+   "death": "1889",
+   "name": {
+    "surname": "Giesebrecht",
+    "forename": "Wilhelm von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Giesebrecht, Wilhelm von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001174",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/11928474X",
+   "role": "",
+   "birth": "1594",
+   "death": "1671",
+   "name": {
+    "surname": "Gigli",
+    "forename": "Giacinto",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Gigli, Giacinto",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004743",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118939408",
+   "role": "",
+   "birth": "1809",
+   "death": "1850",
+   "name": {
+    "surname": "Giusti",
+    "forename": "Giuseppe",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Giusti, Giuseppe",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001183",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116760370",
+   "role": "",
+   "birth": "1821",
+   "death": "1872",
+   "name": {
+    "surname": "Goldstücker",
+    "forename": "Theodor",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Goldstücker, Theodor",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001187",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116798688",
+   "role": "",
+   "birth": "1810",
+   "death": "1887",
+   "name": {
+    "surname": "Gozzadini",
+    "forename": "Giovanni, Conte",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Gozzadini, Giovanni, Conte",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001188",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/129499749",
+   "role": "",
+   "birth": "1845",
+   "death": "1899",
+   "name": {
+    "surname": "Gozzadini Zucchini",
+    "forename": "Gozzadina, Contessa",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Gozzadini Zucchini, Gozzadina, Contessa",
+    "altNameSubtype": "",
+    "altSurname": "Gozzadini",
+    "altForename": "Gozzadina, Contessa (bis 1865)",
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001189",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118541234",
+   "role": "",
+   "birth": "1828",
+   "death": "1870",
+   "name": {
+    "surname": "Graefe",
+    "forename": "Albrecht von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Graefe, Albrecht von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001198",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/129692433",
+   "role": "",
+   "birth": "1797",
+   "death": "1866",
+   "name": {
+    "surname": "Gregorovius",
+    "forename": "Auguste Emilie",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Gregorovius, Auguste Emilie",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Dressler"
+   }
+  }
+ },
+ {
+  "id": "G001200",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118541951",
+   "role": "",
+   "birth": "1821",
+   "death": "1891",
+   "name": {
+    "surname": "Gregorovius",
+    "forename": "Ferdinand",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Gregorovius, Ferdinand",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001202",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/129692581",
+   "role": "",
+   "birth": "1810",
+   "death": "1862",
+   "name": {
+    "surname": "Gregorovius",
+    "forename": "Gustav",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Gregorovius, Gustav",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001203",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116830050",
+   "role": "",
+   "birth": "1819",
+   "death": "1891",
+   "name": {
+    "surname": "Gregorovius",
+    "forename": "Julius",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Gregorovius, Julius",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001206",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1808",
+   "death": "1866",
+   "name": {
+    "surname": "Gregorovius",
+    "forename": "Rudolf",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Gregorovius, Rudolf",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001207",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/129692409",
+   "role": "",
+   "birth": "1783",
+   "death": "1831",
+   "name": {
+    "surname": "Gregorovius",
+    "forename": "Wilhelmine Charlotte Dorothea",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Gregorovius, Wilhelmine Charlotte Dorothea",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Kausch"
+   }
+  }
+ },
+ {
+  "id": "ed_dbv_xc2_2sb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118718983",
+   "role": "",
+   "birth": "1828",
+   "death": "1902",
+   "name": {
+    "surname": "Grosse",
+    "forename": "Julius",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Grosse, Julius",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001215",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/11689508X",
+   "role": "",
+   "birth": "1813",
+   "death": "1887",
+   "name": {
+    "surname": "Grunelius",
+    "forename": "Adelheid",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Grunelius, Adelheid",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Fecht"
+   }
+  }
+ },
+ {
+  "id": "ed_nfl_yj2_rlb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1055213775",
+   "role": "",
+   "birth": "1819",
+   "death": "1879",
+   "name": {
+    "surname": "Guerrieri Gonzaga",
+    "forename": "Anselmo",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Guerrieri Gonzaga, Anselmo",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001219",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116916508",
+   "role": "",
+   "birth": "1827",
+   "death": "1913",
+   "name": {
+    "surname": "Guerrieri Gonzaga",
+    "forename": "Carlo",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Guerrieri Gonzaga, Carlo",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001235",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://gregorovius-edition.dhi-roma.it/persons/G001235",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": "Harder",
+    "forename": "Emilie",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Harder, Emilie",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Götz"
+   }
+  }
+ },
+ {
+  "id": "G001236",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1269841343",
+   "role": "",
+   "birth": "1821",
+   "death": "1899 oder 1900",
+   "name": {
+    "surname": "Harder",
+    "forename": "Louis",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Harder, Louis",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067661",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Haus Cotta (Familie)",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Haus Cotta (Familie)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001257",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/140540520",
+   "role": "",
+   "birth": "1230",
+   "death": "1304",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Heinrich",
+    "roleName": "Infant von Kastilien",
+    "orgName": null,
+    "fullName": "Heinrich, Infant von Kastilien",
+    "altNameSubtype": "",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "El Senador"
+   }
+  }
+ },
+ {
+  "id": "ed_zwl_dt2_qtb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116674296",
+   "role": "",
+   "birth": "1832",
+   "death": "1920",
+   "name": {
+    "surname": "Heinz",
+    "forename": "Constanze von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Heinz, Constanze von",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "von Bülow"
+   }
+  }
+ },
+ {
+  "id": "ed_lz1_yky_3xb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1821",
+   "death": "1848",
+   "name": {
+    "surname": "Henle",
+    "forename": "Elise",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Henle, Elise",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Egloff"
+   }
+  }
+ },
+ {
+  "id": "G001263",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118710605",
+   "role": "",
+   "birth": "1816",
+   "death": "1887",
+   "name": {
+    "surname": "Henzen",
+    "forename": "Wilhelm",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Henzen, Wilhelm",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001266",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118639218",
+   "role": "",
+   "birth": "1839",
+   "death": "1906",
+   "name": {
+    "surname": "Herzen",
+    "forename": "Alexander",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Herzen, Alexander",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001274",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118550772",
+   "role": "",
+   "birth": "1830",
+   "death": "1914",
+   "name": {
+    "surname": "Heyse",
+    "forename": "Paul",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Heyse, Paul",
+    "altNameSubtype": "pseudonym",
+    "altSurname": "Florentin",
+    "altForename": "Theodor",
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001275",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116796014",
+   "role": "",
+   "birth": "1803",
+   "death": "1884",
+   "name": {
+    "surname": "Heyse",
+    "forename": "Theodor",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Heyse, Theodor",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001282",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116904488",
+   "role": "",
+   "birth": "1820",
+   "death": "1886",
+   "name": {
+    "surname": "Hirsch",
+    "forename": "Heinrich",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Hirsch, Heinrich",
+    "altNameSubtype": "",
+    "altSurname": "Hirsch",
+    "altForename": "Enrico",
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001301",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118554700",
+   "role": "",
+   "birth": "1769",
+   "death": "1859",
+   "name": {
+    "surname": "Humboldt",
+    "forename": "Alexander von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Humboldt, Alexander von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001304",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/129499722",
+   "role": "",
+   "birth": "1830",
+   "death": "1897",
+   "name": {
+    "surname": "Humboldt",
+    "forename": "Mathilde von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Humboldt, Mathilde von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001302",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118554727",
+   "role": "",
+   "birth": "1767",
+   "death": "1835",
+   "name": {
+    "surname": "Humboldt",
+    "forename": "Wilhelm von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Humboldt, Wilhelm von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001411",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "mythological",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Hybris",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Hybris",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001312",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "mythological",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Issachar",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Issachar",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004737",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118558323",
+   "role": "",
+   "birth": "1572",
+   "death": "1637",
+   "name": {
+    "surname": "Johnson",
+    "forename": "Ben",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Johnson, Ben",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001319",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117175684",
+   "role": "",
+   "birth": "1822",
+   "death": "1888",
+   "name": {
+    "surname": "Jonas",
+    "forename": "Rudolf",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Jonas, Rudolf",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001330",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118560034",
+   "role": "",
+   "birth": "747/748",
+   "death": "814",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Karl der Große",
+    "roleName": "Römischer Kaiser",
+    "orgName": null,
+    "fullName": "Karl der Große, Römischer Kaiser",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001331",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/11952239X",
+   "role": "",
+   "birth": "1846",
+   "death": "1909",
+   "name": {
+    "surname": "Kaulbach",
+    "forename": "Hermann",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Kaulbach, Hermann",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001333",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118560751",
+   "role": "",
+   "birth": "1804",
+   "death": "1874",
+   "name": {
+    "surname": "Kaulbach",
+    "forename": "Wilhelm von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Kaulbach, Wilhelm von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001336",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/11856224X",
+   "role": "",
+   "birth": "1815",
+   "death": "1882",
+   "name": {
+    "surname": "Kinkel",
+    "forename": "Gottfried",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Kinkel, Gottfried",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001341",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1820",
+   "death": "1893",
+   "name": {
+    "surname": "Knight",
+    "forename": "Helen Giorgiana",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Knight, Helen Giorgiana",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001343",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116285036",
+   "role": "",
+   "birth": "1820",
+   "death": "1886",
+   "name": {
+    "surname": "Köhler",
+    "forename": "Louis",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Köhler, Louis",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001344",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116310790",
+   "role": "",
+   "birth": "1798",
+   "death": "1865",
+   "name": {
+    "surname": "Kolb",
+    "forename": "Gustav",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Kolb, Gustav",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_wvg_sms_kmb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/119426307",
+   "role": "",
+   "birth": "1833",
+   "death": "1906",
+   "name": {
+    "surname": "Lampertico",
+    "forename": "Fedele",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Lampertico, Fedele",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001355",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118570080",
+   "role": "",
+   "birth": "1806",
+   "death": "1884",
+   "name": {
+    "surname": "Laube",
+    "forename": "Heinrich",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Laube, Heinrich",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001359",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118571508",
+   "role": "",
+   "birth": "1802",
+   "death": "1850",
+   "name": {
+    "surname": "Lenau",
+    "forename": "Nikolaus",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Lenau, Nikolaus",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004741",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/119014416",
+   "role": "",
+   "birth": "1821",
+   "death": "1875",
+   "name": {
+    "surname": "Lévy",
+    "forename": "Michel",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Lévy, Michel",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001375",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/119511940",
+   "role": "",
+   "birth": "1819",
+   "death": "1891",
+   "name": {
+    "surname": "Lindemann-Frommel",
+    "forename": "Karl",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Lindemann-Frommel, Karl",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001376",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/129692425",
+   "role": "",
+   "birth": "1852",
+   "death": "1939",
+   "name": {
+    "surname": "Lindemann-Frommel",
+    "forename": "Manfred",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Lindemann-Frommel, Manfred",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067607",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118574450",
+   "role": "",
+   "birth": "1600",
+   "death": "1682",
+   "name": {
+    "surname": "Lorrain",
+    "forename": "Claude",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Lorrain, Claude",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_qqs_1ny_2qb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118574574",
+   "role": "",
+   "birth": "1817",
+   "death": "1881",
+   "name": {
+    "surname": "Lotze",
+    "forename": "Hermann",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Lotze, Hermann",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067652",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/11857566X",
+   "role": "",
+   "birth": "1800",
+   "death": "1859",
+   "name": {
+    "surname": "Macaulay",
+    "forename": "Thomas",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Macaulay, Thomas",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001397",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/129452572",
+   "role": "mythological",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Manasse",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Manasse",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001398",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1061006174",
+   "role": "",
+   "birth": "1838",
+   "death": "1905",
+   "name": {
+    "surname": "Maraini",
+    "forename": "Clemente",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Maraini, Clemente",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004701",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116680172",
+   "role": "",
+   "birth": "1815",
+   "death": "1860",
+   "name": {
+    "surname": "Marcelli",
+    "forename": "Maria",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Marcelli, Maria",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Cornelius"
+   }
+  }
+ },
+ {
+  "id": "ed_ezy_g42_rlb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1847",
+   "death": "1896",
+   "name": {
+    "surname": "Mariano",
+    "forename": "Cäcilie (Cecil)",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Mariano, Cäcilie (Cecil)",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Pilar von Pilchau"
+   }
+  }
+ },
+ {
+  "id": "G001401",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116771992",
+   "role": "",
+   "birth": "1840",
+   "death": "1912",
+   "name": {
+    "surname": "Mariano",
+    "forename": "Raffaele",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Mariano, Raffaele",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001405",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1176978969",
+   "role": "",
+   "birth": "1815",
+   "death": "1865",
+   "name": {
+    "surname": "Marstaller",
+    "forename": "Anton",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Marstaller, Anton",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004738",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118782487",
+   "role": "",
+   "birth": "1584",
+   "death": "1640",
+   "name": {
+    "surname": "Massinger",
+    "forename": "Philipp",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Massinger, Philipp",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001408",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118579347",
+   "role": "",
+   "birth": "1811",
+   "death": "1864",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Maximilian II.",
+    "roleName": "König von Bayern",
+    "orgName": null,
+    "fullName": "Maximilian II., König von Bayern",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001412",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117557897",
+   "role": "",
+   "birth": "1812",
+   "death": "1881",
+   "name": {
+    "surname": "Mayer",
+    "forename": "Eduard",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Mayer, Eduard",
+    "altNameSubtype": "",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Meier"
+   }
+  }
+ },
+ {
+  "id": "G001413",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "",
+   "death": "1887",
+   "name": {
+    "surname": "Mayer",
+    "forename": "Elisabeth",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Mayer, Elisabeth",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Sasse"
+   }
+  }
+ },
+ {
+  "id": "G001414",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/12991181X",
+   "role": "",
+   "birth": "1798",
+   "death": "1854",
+   "name": {
+    "surname": "Mebold",
+    "forename": "Karl August",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Mebold, Karl August",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_twp_rx1_rsb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/131880659",
+   "role": "mythological",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Methusalem",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Methusalem",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_t3d_vdy_gxb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1073420736",
+   "role": "",
+   "birth": "1827",
+   "death": "1915",
+   "name": {
+    "surname": "Mögling",
+    "forename": "Heinrich",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Mögling, Heinrich",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001429",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118583425",
+   "role": "",
+   "birth": "1808",
+   "death": "1903",
+   "name": {
+    "surname": "Mommsen",
+    "forename": "Theodor",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Mommsen, Theodor",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_mrz_4v4_wsb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117197262",
+   "role": "",
+   "birth": "1827",
+   "death": "1894",
+   "name": {
+    "surname": "Moy de Sons",
+    "forename": "Karl Graf von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Moy de Sons, Karl Graf von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001229",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117162965",
+   "role": "",
+   "birth": "1813",
+   "death": "1874",
+   "name": {
+    "surname": "Mühler",
+    "forename": "Heinrich von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Mühler, Heinrich von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001432",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/13402995X",
+   "role": "",
+   "birth": "1819",
+   "death": "1865",
+   "name": {
+    "surname": "Muhr",
+    "forename": "Julius",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Muhr, Julius",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001440",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/12185471X",
+   "role": "",
+   "birth": "1782",
+   "death": "1853",
+   "name": {
+    "surname": "Napier",
+    "forename": "Charles",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Napier, Charles",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001441",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118586408",
+   "role": "",
+   "birth": "1769",
+   "death": "1821",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Napoléon I.",
+    "roleName": "Kaiser von Frankreich",
+    "orgName": null,
+    "fullName": "Napoléon I., Kaiser von Frankreich",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001442",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118586416",
+   "role": "",
+   "birth": "1808",
+   "death": "1873",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Napoléon III.",
+    "roleName": "Kaiser von Frankreich",
+    "orgName": null,
+    "fullName": "Napoléon III., Kaiser von Frankreich",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001363",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118924850",
+   "role": "mythological",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Nemesis",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Nemesis",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001445",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118738615",
+   "role": "",
+   "birth": "1694",
+   "death": "1756",
+   "name": {
+    "surname": "Neuhoff",
+    "forename": "Theodor Freiherr von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Neuhoff, Theodor Freiherr von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001447",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118587773",
+   "role": "",
+   "birth": "1776",
+   "death": "1831",
+   "name": {
+    "surname": "Niebuhr",
+    "forename": "Barthold Georg",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Niebuhr, Barthold Georg",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067608",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1033639818",
+   "role": "",
+   "birth": "1772",
+   "death": "1801",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Novalis",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Novalis",
+    "altNameSubtype": "",
+    "altSurname": "Hardenberg",
+    "altForename": "Georg Philipp Friedrich von",
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001461",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1157638139",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": "Olivieri",
+    "forename": "Luigi Pompili",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Olivieri, Luigi Pompili",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067683",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117123323",
+   "role": "",
+   "birth": "1800",
+   "death": "1882",
+   "name": {
+    "surname": "Olshausen",
+    "forename": "Justus",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Olshausen, Justus",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004731",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118590766",
+   "role": "",
+   "birth": "980",
+   "death": "1002",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Otto III.",
+    "roleName": "Kaiser des römisch-deutschen Reiches",
+    "orgName": null,
+    "fullName": "Otto III., Kaiser des römisch-deutschen Reiches",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001466",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1818",
+   "death": "1863",
+   "name": {
+    "surname": "Pancritius",
+    "forename": "Albrecht",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Pancritius, Albrecht",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001468",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118789554",
+   "role": "",
+   "birth": "1725",
+   "death": "1807",
+   "name": {
+    "surname": "Paoli",
+    "forename": "Pasquale",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Paoli, Pasquale",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001469",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116030674",
+   "role": "",
+   "birth": "1811",
+   "death": "1841",
+   "name": {
+    "surname": "Papencordt",
+    "forename": "Felix",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Papencordt, Felix",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001471",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118739336",
+   "role": "",
+   "birth": "1810",
+   "death": "1860",
+   "name": {
+    "surname": "Parker",
+    "forename": "Theodor",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Parker, Theodor",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067677",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": "Pellicani",
+    "forename": "Marzia",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Pellicani, Marzia",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001483",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1025796071",
+   "role": "",
+   "birth": "1822",
+   "death": "1879",
+   "name": {
+    "surname": "Perez",
+    "forename": "Paolo, Conte",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Perez, Paolo, Conte",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_sbg_pxn_5lb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118739972",
+   "role": "",
+   "birth": "ca. 490/95",
+   "death": "ca. 429 v. Chr.",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Perikles",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Perikles",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001484",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118592858",
+   "role": "",
+   "birth": "1795",
+   "death": "1878",
+   "name": {
+    "surname": "Pertz",
+    "forename": "Georg Heinrich",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Pertz, Georg Heinrich",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067678",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1794",
+   "death": "1865",
+   "name": {
+    "surname": "Pianka",
+    "forename": "Charlotte",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Pianka, Charlotte",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Gregorovius"
+   }
+  }
+ },
+ {
+  "id": "ed_u3y_h5p_lnb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1201040647",
+   "role": "",
+   "birth": "1826",
+   "death": "1903",
+   "name": {
+    "surname": "Pilar von Pilchau",
+    "forename": "Bertha Baronin",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Pilar von Pilchau, Bertha Baronin",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Freifrau von Ungern-Sternberg aus dem Hause Grossenhof"
+   }
+  }
+ },
+ {
+  "id": "G001495",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118641662",
+   "role": "",
+   "birth": "1826",
+   "death": "1886",
+   "name": {
+    "surname": "Piloty",
+    "forename": "Carl Theodor von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Piloty, Carl Theodor von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001497",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118594729",
+   "role": "",
+   "birth": "1792",
+   "death": "1878",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Pius IX.",
+    "roleName": "Papst",
+    "orgName": null,
+    "fullName": "Pius IX., Papst",
+    "altNameSubtype": "",
+    "altSurname": "Mastai-Ferretti",
+    "altForename": "Giovanni Maria",
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001506",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1047082527",
+   "role": "",
+   "birth": "1400",
+   "death": "1453",
+   "name": {
+    "surname": "Porcari",
+    "forename": "Stefano",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Porcari, Stefano",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001511",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116305991",
+   "role": "",
+   "birth": "1843",
+   "death": "1929",
+   "name": {
+    "surname": "Prutz",
+    "forename": "Hans",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Prutz, Hans",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001512",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/11859687X",
+   "role": "",
+   "birth": "1816",
+   "death": "1872",
+   "name": {
+    "surname": "Prutz",
+    "forename": "Robert Eduard",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Prutz, Robert Eduard",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001515",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/119362503",
+   "role": "mythological",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Psyche",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Psyche",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001525",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118598279",
+   "role": "",
+   "birth": "1795",
+   "death": "1886",
+   "name": {
+    "surname": "Ranke",
+    "forename": "Leopold von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Ranke, Leopold von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001545",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116450932",
+   "role": "",
+   "birth": "1808",
+   "death": "1887",
+   "name": {
+    "surname": "Reumont",
+    "forename": "Alfred von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Reumont, Alfred von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_y32_stc_fmb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1826",
+   "death": "1896",
+   "name": {
+    "surname": "Ricci",
+    "forename": "Matteo",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Ricci, Matteo",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_obx_15y_2qb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118600850",
+   "role": "",
+   "birth": "1823",
+   "death": "1897",
+   "name": {
+    "surname": "Riehl",
+    "forename": "Wilhelm Heinrich (ab 1883 von)",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Riehl, Wilhelm Heinrich (ab 1883 von)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001548",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118992759",
+   "role": "",
+   "birth": "1784",
+   "death": "1860",
+   "name": {
+    "surname": "Riepenhausen",
+    "forename": "Johannes",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Riepenhausen, Johannes",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004718",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118601563",
+   "role": "",
+   "birth": "1758",
+   "death": "1794",
+   "name": {
+    "surname": "Robespierre",
+    "forename": "Maximilien de",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Robespierre, Maximilien de",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001557",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118602721",
+   "role": "",
+   "birth": "1805",
+   "death": "1879",
+   "name": {
+    "surname": "Rosenkranz",
+    "forename": "Karl",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Rosenkranz, Karl",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_ujn_cxw_gpb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118750267",
+   "role": "",
+   "birth": "1882",
+   "death": "1935",
+   "name": {
+    "surname": "Rühl",
+    "forename": "Alfred",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Rühl, Alfred",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_q51_glp_5mb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116675578",
+   "role": "",
+   "birth": "1848",
+   "death": "1923",
+   "name": {
+    "surname": "Rühl",
+    "forename": "Elise",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Rühl, Elise",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Henle"
+   }
+  }
+ },
+ {
+  "id": "G001562",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116675586",
+   "role": "",
+   "birth": "1845",
+   "death": "1915",
+   "name": {
+    "surname": "Rühl",
+    "forename": "Franz",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Rühl, Franz",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_rvn_p3h_ynb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1878",
+   "death": "1916",
+   "name": {
+    "surname": "Rühl",
+    "forename": "Paul",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Rühl, Paul",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001564",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118737937",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Rutilius",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Rutilius",
+    "altNameSubtype": "",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Claudius Rutilius Namatianus"
+   }
+  }
+ },
+ {
+  "id": "G001565",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/116713356",
+   "role": "",
+   "birth": "1818",
+   "death": "1891",
+   "name": {
+    "surname": "Sabatier",
+    "forename": "François",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Sabatier, François",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001569",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118751336",
+   "role": "",
+   "birth": "1552",
+   "death": "1623",
+   "name": {
+    "surname": "Sarpi",
+    "forename": "Paolo",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Sarpi, Paolo",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001571",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118605933",
+   "role": "",
+   "birth": "1452",
+   "death": "1498",
+   "name": {
+    "surname": "Savonarola",
+    "forename": "Girolamo",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Savonarola, Girolamo",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001573",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118606042",
+   "role": "",
+   "birth": "1815",
+   "death": "1894",
+   "name": {
+    "surname": "Schack",
+    "forename": "Adolf Friedrich von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Schack, Adolf Friedrich von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001577",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117222364",
+   "role": "",
+   "birth": "1821",
+   "death": "1903",
+   "name": {
+    "surname": "Scherzer",
+    "forename": "Karl Ritter von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Scherzer, Karl Ritter von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001583",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118795147",
+   "role": "",
+   "birth": "1822",
+   "death": "1894",
+   "name": {
+    "surname": "Schlözer",
+    "forename": "Kurd von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Schlözer, Kurd von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_jm1_ngk_rlb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118610465",
+   "role": "",
+   "birth": "1788",
+   "death": "1860",
+   "name": {
+    "surname": "Schopenhauer",
+    "forename": "Arthur",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Schopenhauer, Arthur",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004729",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117316261",
+   "role": "",
+   "birth": "1794",
+   "death": "1859",
+   "name": {
+    "surname": "Schurz",
+    "forename": "Anton Xaver",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Schurz, Anton Xaver",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001589",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118611720",
+   "role": "",
+   "birth": "1829",
+   "death": "1906",
+   "name": {
+    "surname": "Schurz",
+    "forename": "Carl",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Schurz, Carl",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067624",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1025507908",
+   "role": "",
+   "birth": "1801",
+   "death": "1878",
+   "name": {
+    "surname": "Schurz",
+    "forename": "Theresia Anna",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Schurz, Theresia Anna",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Niembsch"
+   }
+  }
+ },
+ {
+  "id": "G001594",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/7674426-7",
+   "role": "mythological",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Sebulon",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Sebulon",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001092",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1154629392",
+   "role": "",
+   "birth": "1812",
+   "death": "1881",
+   "name": {
+    "surname": "Serego Alighieri Gozzadini",
+    "forename": "Maria Teresa Contessa",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Serego Alighieri Gozzadini, Maria Teresa Contessa",
+    "altNameSubtype": "",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Serego Allighieri Gozzadini, Maria Teresa"
+   }
+  }
+ },
+ {
+  "id": "G001613",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118615688",
+   "role": "",
+   "birth": "497/496 v. Chr.",
+   "death": "406 v. Chr.",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Sophokles",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Sophokles",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067653",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Stephania",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Stephania",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001625",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/172641365",
+   "role": "",
+   "birth": "1820",
+   "death": "1903",
+   "name": {
+    "surname": "Strafforello",
+    "forename": "Gustavo",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Strafforello, Gustavo",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_hzm_b52_qtb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/139947922",
+   "role": "",
+   "birth": "1863",
+   "death": "1953",
+   "name": {
+    "surname": "Sydow",
+    "forename": "Anna von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Sydow, Anna von",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "von Heinz"
+   }
+  }
+ },
+ {
+  "id": "ed_kfk_krp_gmb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117200336",
+   "role": "",
+   "birth": "1829",
+   "death": "1905",
+   "name": {
+    "surname": "Tann",
+    "forename": "Anna Freifrau von der",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Tann, Anna Freifrau von der",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "von Voß"
+   }
+  }
+ },
+ {
+  "id": "G001637",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/102727252",
+   "role": "",
+   "birth": "1807",
+   "death": "1875",
+   "name": {
+    "surname": "Taussig",
+    "forename": "Gabriel",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Taussig, Gabriel",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001640",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/11862167X",
+   "role": "",
+   "birth": "453",
+   "death": "526",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Theoderich der Große",
+    "roleName": "König der Ostgoten",
+    "orgName": null,
+    "fullName": "Theoderich der Große, König der Ostgoten",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067651",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1788",
+   "death": "1859",
+   "name": {
+    "surname": "Thile",
+    "forename": "Auguste von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Thile, Auguste von",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "von Schöning"
+   }
+  }
+ },
+ {
+  "id": "G001643",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1848",
+   "death": "1869",
+   "name": {
+    "surname": "Thile",
+    "forename": "Hans von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Thile, Hans von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001644",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117340995",
+   "role": "",
+   "birth": "1812",
+   "death": "1889",
+   "name": {
+    "surname": "Thile",
+    "forename": "Hermann von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Thile, Hermann von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001645",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117341053",
+   "role": "",
+   "birth": "1816",
+   "death": "1898",
+   "name": {
+    "surname": "Thile",
+    "forename": "Ottilie von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Thile, Ottilie von",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Graefe"
+   }
+  }
+ },
+ {
+  "id": "G067658",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "",
+   "birth": "1826",
+   "death": "1893",
+   "name": {
+    "surname": "Thile",
+    "forename": "Rudolf von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Thile, Rudolf von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_hrz_11y_3xb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": null,
+   "role": "mythological",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Tithonos",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Tithonos",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001649",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118802518",
+   "role": "",
+   "birth": "1802",
+   "death": "1874",
+   "name": {
+    "surname": "Tommaseo",
+    "forename": "Niccolò",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Tommaseo, Niccolò",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001663",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117282898",
+   "role": "",
+   "birth": "1813",
+   "death": "1891",
+   "name": {
+    "surname": "Ullrich",
+    "forename": "Titus",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Ullrich, Titus",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001665",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/11729392X",
+   "role": "",
+   "birth": "1803",
+   "death": "1877",
+   "name": {
+    "surname": "Ungher-Sabatier",
+    "forename": "Caroline",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Ungher-Sabatier, Caroline",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Unger"
+   }
+  }
+ },
+ {
+  "id": "G004735",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118626353",
+   "role": "",
+   "birth": "1562",
+   "death": "1635",
+   "name": {
+    "surname": "Vega",
+    "forename": "Lope de",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Vega, Lope de",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001671",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1055148108",
+   "role": "",
+   "birth": "1704",
+   "death": "1781",
+   "name": {
+    "surname": "Vendettini",
+    "forename": "Antonio",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Vendettini, Antonio",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001676",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118804316",
+   "role": "mythological",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Vesta",
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Vesta",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001678",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117396850",
+   "role": "",
+   "birth": "1787",
+   "death": "1861",
+   "name": {
+    "surname": "Viale",
+    "forename": "Salvatore",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Viale, Salvatore",
+    "altNameSubtype": "",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "Viale Prelà"
+   }
+  }
+ },
+ {
+  "id": "ed_wgh_54j_zrb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117437115",
+   "role": "",
+   "birth": "1818",
+   "death": "1894",
+   "name": {
+    "surname": "Visconti",
+    "forename": "Carlo Lodovico",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Visconti, Carlo Lodovico",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001691",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/1055148116",
+   "role": "",
+   "birth": "1724",
+   "death": "1803",
+   "name": {
+    "surname": "Vitale",
+    "forename": "Francesco Antonio",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Vitale, Francesco Antonio",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G004719",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/11876439X",
+   "role": "",
+   "birth": "1732",
+   "death": "1799",
+   "name": {
+    "surname": "Washington",
+    "forename": "George",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Washington, George",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001700",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117572721",
+   "role": "",
+   "birth": "1843",
+   "death": "1896",
+   "name": {
+    "surname": "Wernich",
+    "forename": "Albrecht",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Wernich, Albrecht",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_l5j_rhk_qmb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://gregorovius-edition.dhi-roma.it/persons/ed_l5j_rhk_qmb",
+   "role": "",
+   "birth": "1866",
+   "death": "1941",
+   "name": {
+    "surname": "Werthern-Beichlingen",
+    "forename": "Elisabeth von",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Werthern-Beichlingen, Elisabeth von",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001702",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117307610",
+   "role": "",
+   "birth": "1816",
+   "death": "1895",
+   "name": {
+    "surname": "Werthern-Beichlingen",
+    "forename": "Georg Freiherr von (ab 1878 Graf von)",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Werthern-Beichlingen, Georg Freiherr von (ab 1878 Graf von)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G001703",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/132484803",
+   "role": "",
+   "birth": "1841",
+   "death": "1919",
+   "name": {
+    "surname": "Werthern-Beichlingen",
+    "forename": "Gertrud Freifrau (ab 1878 Gräfin von)",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Werthern-Beichlingen, Gertrud Freifrau (ab 1878 Gräfin von)",
+    "altNameSubtype": "birthname",
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": "von Bülow"
+   }
+  }
+ },
+ {
+  "id": "ed_qqb_mky_1lb",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/118632884",
+   "role": "",
+   "birth": "1797",
+   "death": "1888",
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": "Wilhelm I.",
+    "roleName": "Kaiser des Deutschen Reiches",
+    "orgName": null,
+    "fullName": "Wilhelm I., Kaiser des Deutschen Reiches",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "G067606",
+  "entity": "persons",
+  "properties": {
+   "type": "person",
+   "gnd": "http://d-nb.info/gnd/117424668",
+   "role": "",
+   "birth": "1823",
+   "death": "1893",
+   "name": {
+    "surname": "Wittig",
+    "forename": "August",
+    "simpleName": null,
+    "roleName": null,
+    "orgName": null,
+    "fullName": "Wittig, August",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_wvj_dkb_dqb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Preußische Gesandtschaft (Bayern)",
+    "fullName": "Preußische Gesandtschaft (Bayern)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_kxx_qwj_ybc",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/026111403",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Kladderadatsch (Berlin 1848–1944)",
+    "fullName": "Kladderadatsch (Berlin 1848–1944)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_jfq_jpk_w1c",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Unsere Zeit. Jahrbuch zum Conversations-Lexikon (Leipzig 1857–1864)",
+    "fullName": "Unsere Zeit. Jahrbuch zum Conversations-Lexikon (Leipzig 1857–1864)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_htj_bc3_v1c",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Lo Spettatore. Rassegna letteraria, artistica, scientifica e industriale (Florenz 1855–1859)",
+    "fullName": "Lo Spettatore. Rassegna letteraria, artistica, scientifica e industriale (Florenz 1855–1859)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_ocm_cxv_vzb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "North British Review (Edinburgh 1844–1871)",
+    "fullName": "North British Review (Edinburgh 1844–1871)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_p5m_jnv_jzb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Accademia di Belle Arti di Brera (Mailand)",
+    "fullName": "Accademia di Belle Arti di Brera (Mailand)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_kwt_vsw_txb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Akropolis (Athen)",
+    "fullName": "Akropolis (Athen)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_byq_rxx_gqb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Revue internationale. Hrsg. von Angelo De Gubernatis (Florenz 1883/1884–1891)",
+    "fullName": "Revue internationale. Hrsg. von Angelo De Gubernatis (Florenz 1883/1884–1891)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_tmk_cqj_gqb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Ordine della Corona d’Italia",
+    "fullName": "Ordine della Corona d’Italia",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_omf_vtk_g5b",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/1211840-0",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Accademia di Belle Arti (Florenz)",
+    "fullName": "Accademia di Belle Arti (Florenz)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_z2j_5fm_cqb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/1085075-2",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Buchhandlung Theodor Ackermann (München)",
+    "fullName": "Buchhandlung Theodor Ackermann (München)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_dzx_dfr_pvb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/2161235-3",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Deutscher Schriftsteller-Verband",
+    "fullName": "Deutscher Schriftsteller-Verband",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_l4z_2tj_3xb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/10126193-7",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Deutscher Künstlerverein (Rom 1845–1926)",
+    "fullName": "Deutscher Künstlerverein (Rom 1845–1926)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_lw4_fwk_cnb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/1021663-7",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Societé des sciences historiques et naturelles de la Corse (Bastia)",
+    "fullName": "Societé des sciences historiques et naturelles de la Corse (Bastia)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_ftp_nr1_35b",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/1010064-7",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Società romana di storia patria",
+    "fullName": "Società romana di storia patria",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_g3s_sx3_35b",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/4166297-0",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "La Domenica Letteraria (Rom 1882–1885)",
+    "fullName": "La Domenica Letteraria (Rom 1882–1885)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_ghg_btb_35b",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Il Pungolo. Giornale politico letterario (Mailand)",
+    "fullName": "Il Pungolo. Giornale politico letterario (Mailand)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_db4_k12_1qb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Ostpreußisches Fuß-Artillerie-Regiment Nr. 1",
+    "fullName": "Ostpreußisches Fuß-Artillerie-Regiment Nr. 1",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_u24_fr2_4nb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/2011004-2",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Friedrich Arnold Ackermanns Kunstverlag (München)",
+    "fullName": "Friedrich Arnold Ackermanns Kunstverlag (München)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_qch_xc2_rlb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/35038-2",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Accademia Nazionale dei Lincei (Rom)",
+    "fullName": "Accademia Nazionale dei Lincei (Rom)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_e1j_dkz_5zb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "The Chronicle (London)",
+    "fullName": "The Chronicle (London)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_b5g_w15_4tb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/2024349-2",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Ruprecht-Karls-Universität Heidelberg",
+    "fullName": "Ruprecht-Karls-Universität Heidelberg",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_drp_4b5_4tb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/2002498-8",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Universitätsbibliothek Heidelberg",
+    "fullName": "Universitätsbibliothek Heidelberg",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_c2h_zfs_ssb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/016034708",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Münchener Bunte Mappe (1884–1885)",
+    "fullName": "Münchener Bunte Mappe (1884–1885)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_twr_3fd_xrb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/1003239-3",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Reale Accademia Lucchese di Scienze, Lettere ed Arti (Lucca)",
+    "fullName": "Reale Accademia Lucchese di Scienze, Lettere ed Arti (Lucca)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_j52_s5n_ywb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/39272-8",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Royal Society (London)",
+    "fullName": "Royal Society (London)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_ctq_gl2_tmb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": "http://d-nb.info/gnd/4441635-0",
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Deutsche Rundschau (Berlin 1874–1964)",
+    "fullName": "Deutsche Rundschau (Berlin 1874–1964)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ },
+ {
+  "id": "ed_kbs_3l2_tmb",
+  "entity": "persons",
+  "properties": {
+   "type": "org",
+   "gnd": null,
+   "role": "",
+   "birth": null,
+   "death": null,
+   "name": {
+    "surname": null,
+    "forename": null,
+    "simpleName": null,
+    "roleName": null,
+    "orgName": "Deutsche Revue über das gesamte nationale Leben der Gegenwart (Stuttgart, Leipzig 1877–1900)",
+    "fullName": "Deutsche Revue über das gesamte nationale Leben der Gegenwart (Stuttgart, Leipzig 1877–1900)",
+    "altNameSubtype": null,
+    "altSurname": null,
+    "altForename": null,
+    "altSimpleName": null
+   }
+  }
+ }
+]

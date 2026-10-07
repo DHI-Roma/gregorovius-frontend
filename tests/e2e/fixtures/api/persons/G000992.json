@@ -1,0 +1,23 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000992",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1033380121"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Brancaleone",
+    "forename": "Andalò"
+   },
+   {
+    "@type": "alt",
+    "name": "Brancaleone degli Andalò"
+   }
+  ],
+  "birth": "1220",
+  "death": "1258"
+ }
+}

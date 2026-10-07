@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001207",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/129692409"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Gregorovius",
+    "forename": "Wilhelmine Charlotte Dorothea"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Kausch"
+   }
+  ],
+  "birth": "1783",
+  "death": "1831"
+ }
+}

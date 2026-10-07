@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001497",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118594729"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "name": "Pius IX.",
+    "roleName": "Papst"
+   },
+   {
+    "@type": "alt",
+    "surname": "Mastai-Ferretti",
+    "forename": "Giovanni Maria"
+   }
+  ],
+  "birth": "1792",
+  "death": "1878"
+ }
+}

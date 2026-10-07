@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_y32_stc_fmb",
+  "persName": {
+   "@type": "reg",
+   "surname": "Ricci",
+   "forename": "Matteo"
+  },
+  "birth": "1826",
+  "death": "1896"
+ }
+}

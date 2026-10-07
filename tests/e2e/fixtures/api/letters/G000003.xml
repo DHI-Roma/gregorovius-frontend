@@ -1,0 +1,79 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:telota="http://www.telota.de" telota:doctype="letter_fgbe" xml:id="G000003">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ferdinand Gregorovius an die Redaktion des Morgenblatts für gebildete Leser
+                    in Stuttgart. Rom, 4. Januar 1853 </title>
+                <editor><persName ref="http://d-nb.info/gnd/1127895559"><surname>Steinsiek</surname> <forename>Angela</forename> </persName> </editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <title>Fredinand Gregorovius, gesammelte Briefe</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName xml:lang="de">Deutsches Historisches Institut in Rom</orgName>
+                    <orgName xml:lang="it">Istituto Storico Germanico di Roma</orgName>
+                    <orgName xml:lang="en">German Historical Institute in Rome</orgName>
+                    <address>
+                        <addrLine>Via Aurelia Antica, 00165 Rom, Italien</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace ref="http://www.geonames.org/3169070">Rom</pubPlace>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution 4.0 International (CC BY 4.0)
+                    </licence>
+                </availability>
+                </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <institution>DLA Marbach</institution>
+                        <collection>A: Hauff-Kölle (Morgenblatt)</collection>
+                        <idno>34801</idno>
+                    <idno type="URLImages">https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000003/</idno></msIdentifier>
+                    <physDesc>
+                        <p>1 Bl., 4°, 1 S. </p>
+<p>Manuskript seines Artikels „Einige Bemerkungen zur Geschichte des Klosters San Marco in Florenz und zu seinen Reactionen gegen die Kunst der Naturalisten“</p>
+                    </physDesc>
+                </msDesc>
+                <listWit>
+                    <witness>
+                        <msDesc type="copy"><msIdentifier><institution>GhStA Berlin</institution><collection>VI. HA, NL Waldemar Kampf</collection><idno>Karton 84, Mappe 5 (Alfred Löckle nach H)</idno></msIdentifier>
+</msDesc>
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <abstract>
+                <p xml:lang="de">Er übersendet das Manuskript seines Aufsatzes „Einige Bemerkungen zur Geschichte des Klosters San Marco in Florenz und zu seinen Reactionen gegen die Kunst der Naturalisten“ zum Abdruck im „Morgenblatt für gebildete Leser“ und bietet einen weiteren Beitrag, „Die öffentlichen Werke der Florentiner Bildhauerei“, an.</p>
+                <p xml:lang="en">He sends the manuscript of his essay „Einige Bemerkungen zur Geschichte des Klosters San Marco in Florenz und zu seinen Reactionen gegen die Kunst der Naturalisten“ to be printed in the „Morgenblatt für gebildete Leser“ and offers another article, „Die öffentlichen Werke der Florentiner Bildhauerei“.</p>
+            </abstract>
+            <correspDesc>
+                <correspAction type="sent"><persName key="G001200">Gregorovius, Ferdinand (1821–1891)</persName>
+                    <placeName key="G000763">Rom</placeName><date cert="high" when="1853-01-04"/></correspAction>
+                <correspAction type="received"><orgName key="G000533">Morgenblatt für gebildete Leser</orgName>
+                    <placeName key="G000879">Stuttgart</placeName></correspAction>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body><pb n="1r"/>
+            <div type="writingSession">
+                <opener>
+                    <salute rendition="#c">Einer sehr geehrten Redaction des Morgenblattes in Stuttgart</salute>
+                </opener>
+                <p>nehme ich mir die Ehre <seg type="comment"><orig>beikommende Abhandlung „<bibl corresp="G003831 G003832">Einige Bemerkungen zur Geschichte des Klosters San Marco in Florenz u<ex>nd</ex> zu seinen Reactionen gegen die Kunst der Naturalisten</bibl>“ zu übersenden und zur geneigten Aufnahme anzutragen.</orig><note xml:id="nvqn_qmz_51c">Der Beitrag von Gregorovius wurde nicht angenommen. Er erschien unter dem Titel „Das Dominicanerkloster San Marco in Florenz und seine Reactionen gegen den Realismus“ erst 1855 in zwei Folgen im „Deutschen Museum“ (Jg. 5. Nr. 31–32. Leipzig: Brockhaus 2. und 9.8.1855. S. 153–163 und S. 199–209; siehe den Brief von Gregorovius an Brockhaus vom <ref target="G000057">27.6.1855</ref>).</note></seg> Vielleicht dürfte der Inhalt, namentlich was <hi rendition="#aq"><persName key="G001571">Savonarola</persName></hi> betrifft, Ihren Lesern nicht ohne Interesse sein.</p>
+                <p>Neben diesem Aufsatze schrieb ich <seg type="comment"><orig>eine zweite Skizze, welche betitelt ist: <supplied cert="high">„</supplied><bibl sameAs="G003839">D<ex>ie</ex> öffentlichen Werke der Florentiner Bildhauerei</bibl>“,</orig><note xml:id="nodt_5mz_51c">Auch dieser Beitrag wurde nicht angenommen. Er erschien erst 1856 unter dem Titel „Die öffentlichen Monumente von Florenz“ (in Hausblätter. Bd. 2. Stuttgart: Krabbe 1856. S. 54–62 und S. 138–160).</note></seg> u<ex>nd</ex> welche <seg type="comment"><orig>eine Anschauung von dem Charakter der auf Markt, Straße u<ex>nd</ex> Kirche aufgestellten alten u<ex>nd</ex> <hi rendition="#u">neuesten</hi> Marmorwerke geben soll, zumal sie im Zusammenhange mit Geschichte u<ex>nd</ex> Leben des florentinischen Volkes stehen, u<ex>nd</ex> die öffentliche marmorne Chronik der Stadt sind.</orig><note xml:id="nsfd_zmz_51c">Auf Initiative des Florentiner Verleger Vincenzo Batelli (1786–1858) war in den 1830er Jahren begonnen worden, in den 28 leeren Pfeilernischen der Erdgeschoss-Arkaden der von Giorgio Vasari (1511–1574) und nach dessen Tod Bernardo Buontalenti (1531–1608) errichteten Uffizien, Statuen berühmter Persönlichkeiten der Toskana aufzustellen. Die ersten Statuen waren 1852 eingeweiht worden, 1856 die letzten. Siehe hierzu die diesbezügliche Anfrage von Gregorovius an Theodor Heyse in Florenz vom <ref target="G000027">20. Dezember 1855</ref> und seinen Dankesbrief vom <ref target="G000034">6. Januar 1856</ref>, in dem er sich für dessen Auskünfte und die übersandten Zeichnungen von der Hand Heyses bedankt.</note></seg> Wenn Sie demnach eine solche Skizze für geeignet halten, in Ihrem Blatte zu stehen und solche neben der obigen aufnehmen wollen, so würde ich Sie ersuchen in diesem Falle über beifolgenden Aufsatz zu schreiben: Florentiner Studien I., dies aber hinwegzulaßen, wenn Sie nur den einen Aufsatz aufnehmen mögen, von dem ich ja auch noch nicht weiß, ob er Ihnen genehm sein wird oder nicht.</p>
+                <p>Eine geneigte Benachrichtigung bin ich so frei zu erbitten.</p>
+                <closer><salute rendition="#c">Hochachtungsvoll u<ex>nd</ex> ganz ergebenst gezeichnet </salute>
+<signed rendition="#right"><hi rendition="#aq">Ferdinand Gregorovius</hi>. </signed>
+                    <dateline><hi rendition="#aq">Rom</hi>, <placeName key="G00076555">Café Greco</placeName>, <hi rendition="#aq"><placeName key="ediarum_acs_lqj_qpb">Via Condotti</placeName></hi>. <lb/>den 4. Januar 1853.</dateline>
+</closer>
+            </div>
+        </body>
+    </text>
+</TEI>

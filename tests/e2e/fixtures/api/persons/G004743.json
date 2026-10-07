@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004743",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118939408"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Giusti",
+   "forename": "Giuseppe"
+  },
+  "birth": "1809",
+  "death": "1850"
+ }
+}

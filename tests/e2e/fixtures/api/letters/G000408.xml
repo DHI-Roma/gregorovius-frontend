@@ -1,0 +1,54 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:telota="http://www.telota.de" telota:doctype="letter_fgbe" xml:id="G000408">
+    <teiHeader>
+        <fileDesc>
+<titleStmt><title>Ferdinand Gregorovius an Giovanni Battista De Rossi in Rom. Rom, 26. Dezember 1859</title>
+<editor>S<persName ref="http://d-nb.info/gnd/1127895559"><surname>teinsiek</surname> <forename>Angela</forename> </persName> </editor>
+<respStmt><persName ref="http://d-nb.info/gnd/1230930191"><surname>Weiger</surname> <forename>Katharina</forename> </persName><resp><note type="remarkResponsibility">Mitarbeit</note></resp>
+</respStmt>
+</titleStmt><editionStmt><edition> <title>Fredinand Gregorovius, gesammelte Briefe</title> </edition></editionStmt>
+<publicationStmt><publisher> <orgName xml:lang="de">Deutsches Historisches Institut in Rom</orgName> <orgName xml:lang="it">Istituto Storico Germanico di Roma</orgName> <orgName xml:lang="en">German Historical Institute in Rome</orgName> <address><addrLine>Via Aurelia Antica, 00165 Rom, Italien</addrLine></address> </publisher><pubPlace ref="http://www.geonames.org/3169070">Rom</pubPlace><availability status="free"><licence target="http://creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 International (CC BY 4.0) </licence></availability>
+</publicationStmt>
+<sourceDesc>
+<msDesc><msIdentifier><institution>Rom, Biblioteca Apostolica Vaticana</institution><collection>Vat. Lat. 14241, Carteggio Giovanni Battista De Rossi 1858–1859</collection><idno>fol. 783, Nr. 171</idno></msIdentifier>
+<physDesc>
+<p>1 Bl., 8°, 1 S.</p>
+</physDesc>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+        <profileDesc>
+            <abstract>
+                <p xml:lang="de">Er sendet ihm den zweiten Band seiner „Geschichte der Stadt Rom im Mittelalter“ (1859). Aufgrund einer verlorenen Buchsendung kann er den ersten Band (1859) nicht beilegen. Der dritte Band (1860) soll im kommenden Frühjahr erscheinen.</p>
+                <p xml:lang="en">He sends him the second volume of his „Geschichte der Stadt Rom im Mittelalter“ (1859). Due to a lost shipment of books he cannot enclose the first volume (1859). The third volume (1860) is to be published next spring.</p>
+            </abstract>
+            <correspDesc>
+                <correspAction type="sent">
+<persName key="G001200">Gregorovius, Ferdinand (1821–1891)</persName>
+<placeName key="G000763">Rom</placeName><date when="1859-12-26" cert="high"/>
+</correspAction>
+                <correspAction type="received">
+<persName key="G001085">De Rossi, Giovanni Battista (1822–1894)</persName>
+<placeName key="G000763">Rom</placeName>
+</correspAction>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body><pb n="1r"/>
+            <div type="writingSession">
+<opener>
+<salute rendition="#c">Chiarissimo <seg type="comment"><orig>Signor,</orig><note xml:id="nerk_jw4_cfc">Der Archäologe Giovanni Battista De Rossi (1822–1894) war ein Pionier in der Erforschung der römischen Katakomben; er entdeckte unter anderem die Calixtus-Katakomben an der Via Appia Antica (siehe Gregorovius: Die Grabdenkmäler der Päpste. Leipzig 1881. S. 12). Nach der Entdeckung der Papstkrypta in den Calixtus-Katakomben (1854) ernannte Papst Pius IX. (1792–1878) De Rossi mit der Überreichung des Piusordens zum Ritter. Von 1843 bis zu seinem Tod war er Scriptor latinus der Vaticana, ab 1878 Direktor des Museo Sacro della Biblioteca Apostolica Vaticana. Von 1871 bis 1894 war er Präsident der Pontificia Accademia Romana di Archeologia. 1875 wurde er zum auswärtigen Mitglied der Preußischen Akademie der Wissenschaften ernannt, 1886 erhielt er den Orden Pour le Mérite. Zu den wichtigsten seiner zahlreichen Veröffentlichungen zählen die „Inscriptiones Christianae Urbis Romae septimo saeculo antiquiores“ (2 Bde. Rom 1861–1888) und „La Roma sotterranea cristiana“ (3 Bde. Rom 1864–1877). <p>Gregorovius schätzte De Rossi sehr: „Kurz zuvor war de Rossi zu mir gekommen. Er ist der größte Gelehrte in Rom, in den Katakomben gleichsam aufgewachsen und von staunenswertem Wissen in der christlichen Archäologie.“ (RT 31.12.1858, S. 77) Ihn bat er um Zugang zu den römischen Archiven (siehe den Brief von Gregorovius an De Rossi vom <ref target="G000410">28.4.1863</ref>). Auch nach seinem Weggang aus Rom schrieb er De Rossi regelmäßig. Die Themen der Briefe reichen von Bitten um Einlass in Bibliotheken, Archive oder Katakomben, entweder für sich selbst oder andere, über Forschungsfragen und Publikationen, bis hin zum aktuellen Geschehen in Kultur, Wissenschaft und im römischen Leben. Der Ton der Korrespondenz ist stets ein höflich-freundschaftlicher. 27 Briefe, davon viele Visitenkarten mit oder ohne Kurznachrichten von Gregorovius an De Rossi und ein Schreiben von De Rossi an Gregorovius vom 23. Februar 1885 (BSB München, Gregoroviusiana 21) sind nachweisbar. Die Briefe von Gregorovius haben sich in der Biblioteca Apostolica Vaticana in Rom erhalten. Sie gingen dort wahrscheinlich in den Jahren 1894 bis 1896 durch die Witwe De Rossis, Contessa Costanza, geb. Tornafort Bruno di San Giorgio Scarampi (1843–1922) und seinen Bruder, den Geologen und Seismologen Michele Stefano De Rossi (1834–1898), ein. Zu diesem Zeitpunkt waren die Briefe bereits von De Rossi selbst geordnet worden, im Falle der undatierten Billets und Visitenkarten allerdings nicht immer zuverlässig. In der Vaticana kümmerte sich nach dem Tode De Rossis hauptsächlich sein Kollege und Freund Orazio Marucchi (1852–1931), Professor für christliche Archäologie an der römischen Sapienza Università und Direktor des christlichen und ägyptischen Abteilung der Vatikanischen Museen, um dessen nachgelassene Korrespondenz. Unser Dank gilt Claudia Montuschi, Scriptor latinus und Direktorin der Handschriftenabteilung in der Vatikanischen Bibliothek, für Ihre Hilfe bei der Rekonstruktion der Materiallage.</p></note></seg></salute>
+</opener>
+                <p><seg type="comment"><orig>eccovi la <bibl sameAs="G003476">seconda parte dell’opera mia</bibl>,</orig><note xml:id="ne5z_g13_vlb">Der zweite Band seiner „Geschichte der Stadt Rom im Mittelalter“ war im August 1859 in Stuttgart bei Cotta erschienen (siehe die Verlagsanzeige in der Allgemeinen Zeitung. 20.9.1859. S. 4290).</note></seg> la quale mi permetto di offrire all’indulgenza sua – <seg type="comment"><orig><foreign xml:lang="Lat">paucitatem meam eheu</foreign>!</orig><note xml:id="nhs5_b43_hzb">Lat. sinngemäß für: Oh, meine Wenigkeit!</note></seg> Intanto si sta scritto: <seg type="comment"><orig><foreign xml:lang="Lat">est quadam prodire tenus, si non datur ultra.</foreign></orig> <note xml:id="nxck_v5h_cbc">Lat.: Horaz, Epist. (I 1, 32 – dt.: Man geht soweit man kann, wenn weiter zu gehen nicht möglich ist).</note></seg>Il <bibl sameAs="G003485">primo tomo</bibl> non ho potuto più portarle – <seg type="comment"><orig>se ne sono perdute tre copie per viaggio.</orig><note xml:id="nk4g_m13_vlb">Gregorovius hatte diesen Verlust in seinem Brief vom <ref target="G000099">22. September 1859</ref> an die J. G. Cottasche Buchhandlung beklagt.</note></seg> <seg type="comment"><orig>Il <bibl sameAs="G003469">terzo</bibl> verra fuora dentro la primavera.</orig><note xml:id="noz4_n13_vlb">Den letzten Manuskriptteil des dritten Bandes seiner „Geschichte der Stadt Rom im Mittelalter“ schickte Gregorovius vor dem 17. März 1860 nach Stuttgart (siehe den Brief von Gregorovius an Ottilie Elgnowski und Emilie Auguste Gregorovius vom <ref target="G000090">17.3.1860</ref>). Im Spätherbst 1860 erschien der Band (siehe die Verlagsanzeige in der Allgemeinen Zeitung. 16.11.1860. S. 5318).</note></seg> </p>
+<p>Mi farebbe una esimia grazia, se mi volesse communicar con una righa, qual giorno di sera io pot<subst><del rendition="#ow">ess</del><add place="across">re</add></subst>i trovarla precisamente, senza esserle molesto; vorrei per più punti sentir il suo giudizio – e certe materie, per esempio di chiese, <seg type="comment"><orig>e di rioni del secolo IX, e X, potrebbero far pure per gli suoi studj.</orig><note xml:id="nfyh_jvh_cbc">In den Jahren 1857 bis 1861 arbeitete De Rossi am ersten Band seiner „Inscriptiones Christianae Urbis Romae septimo saeculo antiquiores“ (Rom 1861).</note></seg></p>
+<closer>
+<salute xml:id="s1" next="#s2" rendition="#c">Mi segno</salute>
+<salute xml:id="s2" prev="#s1" rendition="#right">Il suo servitor divoto</salute>
+<signed rendition="#right">F. Gregorovius</signed>
+<dateline>Roma 26 D<ex>i</ex>c<ex>em</ex>br<ex>e</ex> 59.</dateline>
+</closer>
+                <note><placeName key="ediarum_tcc_4nv_slb">Via della Purificazione</placeName><lb/>63. piano 3.</note>
+</div>
+        </body>
+    </text>
+</TEI>

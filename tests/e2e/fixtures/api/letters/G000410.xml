@@ -1,0 +1,73 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:telota="http://www.telota.de" telota:doctype="letter_fgbe" xml:id="G000410">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt><title>Ferdinand Gregorovius an Giovanni Battista De Rossi in Rom. Rom, 28. April 1863 </title>
+<editor><persName ref="http://d-nb.info/gnd/1127895559"><surname>Steinsiek</surname> <forename>Angela</forename> </persName> </editor>
+                <respStmt><persName ref="http://d-nb.info/gnd/1230930191"><surname>Weiger</surname> <forename>Katharina</forename> </persName><resp><note type="remarkResponsibility">Mitarbeit</note></resp></respStmt>
+</titleStmt>
+            <editionStmt>
+                <edition>
+                    <title>Fredinand Gregorovius, gesammelte Briefe</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName xml:lang="de">Deutsches Historisches Institut in Rom</orgName>
+                    <orgName xml:lang="it">Istituto Storico Germanico di Roma</orgName>
+                    <orgName xml:lang="en">German Historical Institute in Rome</orgName>
+                    <address>
+                        <addrLine>Via Aurelia Antica, 00165 Rom, Italien</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace ref="http://www.geonames.org/3169070">Rom</pubPlace>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution 4.0 International (CC BY 4.0)
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+<msDesc><msIdentifier><institution>Rom, Biblioteca Apostolica Vaticana</institution><collection>Vat. Lat. 14243, Carteggio Giovanni Battista De Rossi 1862–1863</collection><idno>fol. 706, Nr. 132</idno></msIdentifier>
+<physDesc>
+<p>1 Bl., 8°, 2 S.</p>
+</physDesc>
+</msDesc>
+</sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <abstract>
+                <p xml:lang="de">Er bittet um Fürsprache beim Zugang zum Archivio Capitolino. Zur Datierung der ältesten römischen Statuten will er die Aufzeichnungen des Geschichtsschreibers Giacinto Gigli einsehen. Für den fünften Band seiner „Geschichte der Stadt Rom im Mittelalter“ (1865) forscht er zu Brancaleone degli Andalò und Heinrich von Kastilien. Vermutlich enthält das Archivio Capitolino hierzu Dokumente, die von Francesco Antonio Vitale, Antonio Vendettini und Luigi Pompili Olivieri noch nicht genutzt wurden.</p>
+                <p xml:lang="en">He asks him to be his advocate for access to the Archivio Capitolino. He wants to consult the records of the historian Giacinto Gigl in order to date the oldest Roman statutes. For the fifth volume of his „Geschichte der Stadt Rom im Mittelalter“ (1865) he is researching Brancaleone degli Andalò and Henry of Castile. It is likely that the Archivio Capitolino contains documents on this subject that have not yet been used by Francesco Antonio Vitale, Antonio Vendettini an Luigi Pompili Olivieri. </p>
+            </abstract>
+            <correspDesc>
+                <correspAction type="sent">
+<persName key="G001200">Gregorovius, Ferdinand (1821–1891)</persName>
+<placeName key="G000763">Rom</placeName><date when="1863-04-28" cert="high"/>
+</correspAction>
+                <correspAction type="received">
+<persName key="G001085">De Rossi, Giovanni Battista (1822–1894)</persName>
+<placeName key="G000763">Rom</placeName>
+</correspAction>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body><pb n="1r"/>
+            <div type="writingSession">
+                <opener>
+<salute rendition="#c">Illustrissimo <seg type="comment"><orig>Signor Cavaliere,</orig><note xml:id="njjn_kw4_cfc">Der Archäologe Giovanni Battista De Rossi (1822–1894) war ein Pionier in der Erforschung der römischen Katakomben; er entdeckte unter anderem die Calixtus-Katakomben an der Via Appia Antica (siehe Gregorovius: Die Grabdenkmäler der Päpste. Leipzig 1881. S. 12). Nach der Entdeckung der Papstkrypta in den Calixtus-Katakomben (1854) ernannte Papst Pius IX. (1792–1878) De Rossi mit der Überreichung des Piusordens zum Ritter. Von 1843 bis zu seinem Tod war er Scriptor latinus der Vaticana, ab 1878 Direktor des Museo Sacro della Biblioteca Apostolica Vaticana. Von 1871 bis 1894 war er Präsident der Pontificia Accademia Romana di Archeologia. 1875 wurde er zum auswärtigen Mitglied der Preußischen Akademie der Wissenschaften ernannt, 1886 erhielt er den Orden Pour le Mérite. Zu den wichtigsten seiner zahlreichen Veröffentlichungen zählen die „Inscriptiones Christianae Urbis Romae septimo saeculo antiquiores“ (2 Bde. Rom 1861–1888) und „La Roma sotterranea cristiana“ (3 Bde. Rom 1864–1877). <p>Gregorovius schätzte De Rossi sehr: „Kurz zuvor war de Rossi zu mir gekommen. Er ist der größte Gelehrte in Rom, in den Katakomben gleichsam aufgewachsen und von staunenswertem Wissen in der christlichen Archäologie.“ (RT 31.12.1858, S. 77) Ihn bat er um Zugang zu den römischen Archiven (siehe den Brief von Gregorovius an De Rossi vom <ref target="G000410">28.4.1863</ref>). Auch nach seinem Weggang aus Rom schrieb er De Rossi regelmäßig. Die Themen der Briefe reichen von Bitten um Einlass in Bibliotheken, Archive oder Katakomben, entweder für sich selbst oder andere, über Forschungsfragen und Publikationen, bis hin zum aktuellen Geschehen in Kultur, Wissenschaft und im römischen Leben. Der Ton der Korrespondenz ist stets ein höflich-freundschaftlicher. 27 Briefe, davon viele Visitenkarten mit oder ohne Kurznachrichten von Gregorovius an De Rossi und ein Schreiben von De Rossi an Gregorovius vom 23. Februar 1885 (BSB München, Gregoroviusiana 21) sind nachweisbar. Die Briefe von Gregorovius haben sich in der Biblioteca Apostolica Vaticana in Rom erhalten. Sie gingen dort wahrscheinlich in den Jahren 1894 bis 1896 durch die Witwe De Rossis, Contessa Costanza, geb. Tornafort Bruno di San Giorgio Scarampi (1843–1922) und seinen Bruder, den Geologen und Seismologen Michele Stefano De Rossi (1834–1898), ein. Zu diesem Zeitpunkt waren die Briefe bereits von De Rossi selbst geordnet worden, im Falle der undatierten Billets und Visitenkarten allerdings nicht immer zuverlässig. In der Vaticana kümmerte sich nach dem Tode De Rossis hauptsächlich sein Kollege und Freund Orazio Marucchi (1852–1931), Professor für christliche Archäologie an der römischen Sapienza Università und Direktor des christlichen und ägyptischen Abteilung der Vatikanischen Museen, um dessen nachgelassene Korrespondenz. Unser Dank gilt Claudia Montuschi, Scriptor latinus und Direktorin der Handschriftenabteilung in der Vatikanischen Bibliothek, für Ihre Hilfe bei der Rekonstruktion der Materiallage.</p></note></seg></salute>
+</opener>
+<p><seg type="comment"><orig>per <bibl corresp="G003434 G003441 G003448 G003455 G003462 G003469 G003476 G003485">la mia storia del medio Evo</bibl> ho fatto, come Ella sà bene, molte ricerche negli archivj di Roma;</orig><note xml:id="nkg4_45f_2bc">Bislang waren die ersten vier Bände seiner „Geschichte der Stadt Rom im Mittelalter“ (Stuttgart: Cotta 1859–1862) erschienen.</note></seg> <seg type="comment"><orig>vorrei dare un’ occhiata alle carte dell’ <orgName key="G000560">archivio Capitolino</orgName>; speravo e spero, che un tal favore per buona intercessione di Lei, mi potra esser concesso dagli illustri Magistrati, che ne hanno la sorveglianza.</orig><note xml:id="nbg1_cvf_2bc">De Rossi war von 1858 bis 1870 als ‚consigliere di seconda classe‘ Mitglied im römischen Gemeinderat. Er setzte sich vorrangig für archäologische Grabungen und den Erhalt von Monumenten in Rom ein. Für Gregorovius war er somit nicht nur ein wichtiger Vermittler im Vatikan (siehe die Briefe von Gregorovius an De Rossi vom <ref target="G000398">18.4.1858</ref> und <ref target="G000404">20.5.1859</ref>), sondern auch auf dem Kapitol. Gregorovius recherchierte in dieser Zeit für den fünften Band der „Geschichte der Stadt Rom im Mittelalter“ (1865; RT 1.11.1863, S. 173). </note></seg> Acciochè Ella possa intender meglio quello, che desidero, mi prendo la libertá di formarvi certe domande.</p>
+<p>Vorrei sapere di qual’epoca siano gli <hi rendition="#u" hand="">statuti i più antichi</hi> di Roma, che si conservino al <placeName key="ediarum_egt_1tn_y4b">Campidoglio</placeName>. <seg type="comment"><orig><bibl sameAs="G004302">Il Vitale</bibl> (p<ex>agina</ex> 75) parla di antichi statuti di Roma manoscritti del 1246,</orig><note xml:id="nn2c_nvf_2bc">Von dem Abt und Historiker Francesco Antonio Vitales (1727–1803) die „Storia diplomatica de’ senatori di Roma dalla decadenza dell’Impero Romano fino ai nostri tempi“ (2 Bde. Rom: Salomoni 1791, hier Bd. 1. S. 75). Gregorovius bezieht sich im fünften Band seiner „Geschichte der Stadt Rom im Mittelalter“ mehrfach, durchaus auch kritisch, auf Vitales Forschungsergebnisse. </note></seg> <seg type="comment"><orig>e questa notizia egli vuol ricavare dal Gigli. Potrei vedere le carte <hi rendition="#u" hand="">del <persName key="G001174">Gigli</persName></hi>, che probabilmente si conservano al Campidoglio?</orig><note xml:id="nc5q_5wf_2bc">Giacinto Giglis (1594–1671) handschriftlich überlieferte „Cronologia dei Consoli, Priori, e Magistrati di Roma, e statuti propri“ (1640–1671; heute: Rom, Biblioteca Nazionale Centrale Vittorio Emanuele II, Sessoriano, Sess. 334).</note></seg> </p>
+<p>Avvi dei monumenti spettanti all’epoca del <seg type="comment"><orig>famoso <hi rendition="#u" hand=""><persName key="G000992">Brancaleone</persName></hi>?</orig><note xml:id="nmqb_mmp_cmb">Der Bologneser Brancaleone degli Andalò (1220–1258) war ab 1252 und nach seiner Befreiung aus der Gefangenschaft durch den Adel (1256) ab 1257 römischer Senator (siehe in Gregorovius’ Geschichte der Stadt Rom im Mittelalter. Bd. 5. 1865. S. 277–326). </note></seg> Avvi i patti del <seg type="comment"><orig>Senatore <hi rendition="#u" hand=""><persName key="G001257">Don Enrico di Castiglia</persName></hi>,</orig><note xml:id="ncwb_qmp_cmb">Heinrich von Kastilien (1230–1304) kam 1266 nach Italien, um seinen Cousin Karl I. von Anjou (1227–1285) darin zu unterstützen, den Thron von Sizilien einzunehmen. Daraufhin wurde er 1267 bis 1268 Senator von Rom (siehe in Gregorovius’ Geschichte der Stadt Rom im Mittelalter. Bd. 5. 1865. S. 394–415).</note></seg> collà città di <placeName key="G000671">Firenze,</placeName> di cui qualche scritto è rimasto nell’<orgName key="G000563">archivio centrale</orgName> di codesta citta?</p>
+<p>Sonovi rimasti almeno in parte <pb n="1v"/>Fasti o Annali del Senato del medio Evo?</p>
+                <p>Avvi una specie di codice diplomatico registrato di quella illustre Magistratura. Avendo studiato gli scrittori, che trattano del <orgName key="G000559">Senato Romano</orgName>, non posso credere, che in quell’insigne Archivio non siano riposti altri documenti fuori di quelli, di cui servironsi il <persName key="G001691">Vitale</persName>, <seg type="comment"><orig>il <persName key="G001461">Oliveri</persName>,</orig><note xml:id="nlsj_smp_cmb">Der römische Beamte Luigi Pompili Olivieri hatte eine Geschichte des römischen Senats verfasst (Il Senato romano nelle sette epoche di svariato governo da Romolo fino a noi. Rom 1840, <ref target="https://archive.org/details/bub_gb_6aX8KtgW2fMC">https://archive.org/details/bub_gb_6aX8KtgW2fMC</ref>). Gregorovius begegnete dem Sekretär des kapitolinischen Archivs bei seinen Forschungen auf dem Kapitol (siehe RT, 24.6.1863, S. 162).</note></seg> e <seg type="comment"><orig>il <persName key="G001671">Vendettini</persName>.</orig><note xml:id="nlcx_tmp_cmb">Der Historiker Antonio Vendettini (1704–1781) hatte 1778 eine Chronologie der römischen Senatoren veröffentlicht (Serie cronologica de’ senatori di Roma illustrata con documenti dal conte Antonio Vendettini conservatore dedicata a sua eccellenza il signor d. Abondio Rezzonico Principe Assistente al soglio Ponticifio e Senatore di Roma. Rom: Salomoni). Nach seinem Tod wurde eine weitere Arbeit von ihm zur Geschichte Roms publiziert, „Del Senato Romano“ (Rom: Salomoni 1782).</note></seg></p>
+<p>Io dunque, caro Signor cavaliere, ricorro alla di Lei ben conosciuta e già più volte da me provata gentilezza, affinchè, avendo Lei communicata la mia umile domanda agli Illustri Magistrati Capitolini, io possa aver il bene, <seg type="comment"><orig>di vedere qualche carta di quello Archivio, e di avvalermene per studj,</orig><note xml:id="nar5_mbg_2bc">Die Recherche im Archiv des Kapitols lieferte Gregorovius wenig Material (siehe ebd., 24.6.1863, S. 162). Gregorovius bemerkt in seiner „Geschichte der Stadt Rom im Mittelalter“ in einer Fußnote zu den archivalischen Beständen im Archivio Capitolino: „Der Sacco di Roma hat nach den Aussagen römischer Archivare das Capitolinische Archiv durchaus zerstört. Der Commendatore Visconti versichert mich, daß in das ehemalige Geheimarchiv S. Angelo nur einige ökonomische Acten aus dem Capitol gekommen sind. Vitale und Vendettini, die Geschichtschreiber des Senats, haben keine im Geheimarchiv des Vatican befindliche capitolinische Acten gekannt.. Sie zu sehen, wenn sie denn da waren, besaß namentlich Vendettini volle Freiheit.“ (Bd. 5. 1865. S. 602, FN 1)</note></seg> che per quanto siano mediocri di forza, almeno, come Ella lo sà, non mancano di essere seri e coscenziosi.</p>
+                <closer><salute xml:id="s1" next="#s2">Coi sentimenti di profonda stima, mi creda, caro Cavaliere, di cuore</salute><salute xml:id="s2" prev="#s1" rendition="#right">il suo dev<ex>o</ex>to servitor</salute>
+<signed rendition="#c">Fr. Gregorovius.</signed>
+<dateline>Roma 28. Aprile.</dateline><note type="postscript" rendition="#right">Via Gregoriana 13</note>
+            </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

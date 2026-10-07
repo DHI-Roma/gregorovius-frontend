@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001001",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118668005"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Bunsen",
+   "forename": "Christian Karl Josias Freiherr von"
+  },
+  "birth": "1791",
+  "death": "1860"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067684",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/11851993X"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Cervantes",
+   "forename": "Miguel de"
+  },
+  "birth": "1547",
+  "death": "1616"
+ }
+}

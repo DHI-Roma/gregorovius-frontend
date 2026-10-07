@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_qqb_mky_1lb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118632884"
+  },
+  "persName": {
+   "@type": "reg",
+   "name": "Wilhelm I.",
+   "roleName": "Kaiser des Deutschen Reiches"
+  },
+  "birth": "1797",
+  "death": "1888"
+ }
+}

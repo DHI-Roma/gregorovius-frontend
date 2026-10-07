@@ -1,0 +1,3069 @@
+[
+ {
+  "id": "ed_yns_ct5_4wb",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "ndrj_gnh_cfc",
+    "ncpl_fw5_4wb",
+    "novf_3w5_4wb",
+    "nbfk_kw5_4wb",
+    "nbz5_lw5_4wb",
+    "ndsf_vw5_4wb",
+    "nkm2_rw5_4wb",
+    "ndkr_tw5_4wb",
+    "nqtx_ww5_4wb",
+    "niv5_yw5_4wb",
+    "ncjs_zw5_4wb",
+    "ntmg_cx5_4wb",
+    "ns2r_hx5_4wb",
+    "nzhf_nx5_4wb",
+    "nerh_rx5_4wb",
+    "nzg1_5x5_4wb",
+    "nuh5_yx5_4wb",
+    "nhpn_ny5_4wb",
+    "npvw_4y5_4wb",
+    "ncgp_ry5_4wb",
+    "nxxv_ty5_4wb",
+    "nb1y_5y5_4wb",
+    "nusw_xy5_4wb",
+    "ne3v_zy5_4wb"
+   ],
+   "title": "Ferdinand Gregorovius an Christian Karl Josias Freiherr von Bunsen in Cannes. Rom, 5. Januar 1860",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001001"
+   ],
+   "date": "1860-01-05",
+   "place": {
+    "sent": "G000763",
+    "received": "G000644"
+   },
+   "incipit": "Ew. ExcellenzDer Diplomat Christian Karl Josias (seit 1858) Freiherr von Bunsen (1791–1860) stammt a",
+   "resp": [
+    "Steinsiek",
+    "Ramazzotti"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001506",
+     "G004731",
+     "G067611",
+     "G067676",
+     "G001429",
+     "G000967",
+     "G001301",
+     "G001644",
+     "G001055",
+     "G001049",
+     "G004700",
+     "G001471",
+     "ed_w51_cdv_4wb ed_lhr_1cv_4wb ed_eph_pbv_4wb ed_lmn_ncv_4wb ed_vwn_vcv_4wb G067681 ed_lmn_5dv_4wb ed_yzv_3dv_4wb ed_jy4_4dv_4wb",
+     "G000541"
+    ],
+    "places": [
+     "G000664"
+    ],
+    "works": [
+     "G003485",
+     "G004764",
+     "G003469"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000093",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nfkn_ggx_cfc",
+    "nczb_dlm_ylb",
+    "nalr_3nm_ylb",
+    "nq51_kpm_ylb",
+    "ntnt_mpm_ylb",
+    "nt12_kxn_cbc",
+    "ncnh_f3x_bvb",
+    "nusv_qpm_ylb",
+    "nsqx_wpm_ylb",
+    "nb2f_bqm_ylb",
+    "noky_3qm_ylb",
+    "nkpx_tyn_cbc",
+    "njzk_bzn_cbc",
+    "nvkf_wqm_ylb",
+    "ngxp_crm_ylb",
+    "nmlj_2rm_ylb",
+    "nocg_kzn_cbc",
+    "nj3c_tzn_cbc",
+    "nsmx_jrm_ylb",
+    "nzlk_b14_cbc",
+    "nytz_214_cbc",
+    "nkk5_j14_cbc",
+    "ntkw_5rm_ylb",
+    "nk2m_xrm_ylb",
+    "nkjk_1b4_cbc",
+    "nfnn_1sm_ylb",
+    "nrh3_csm_ylb"
+   ],
+   "title": "Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 11. Januar 1860",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001644"
+   ],
+   "date": "1860-01-11",
+   "place": {
+    "sent": "G000763",
+    "received": "G000636"
+   },
+   "incipit": "Ihr Brief vom 24. December, mein hochverehrter und teurer Herr,Der Diplomat Hermann von Thile (1812–",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G067651",
+     "G001645",
+     "G001643",
+     "G001055",
+     "G067602",
+     "G067652",
+     "G001173",
+     "G004731",
+     "G067676",
+     "G067653",
+     "G004720",
+     "G001471",
+     "G067654",
+     "G001341",
+     "G067655",
+     "G001049",
+     "G000913",
+     "G001189",
+     "G000523",
+     "ed_onw_cld_rlb",
+     "G004652"
+    ],
+    "places": [
+     "G000646",
+     "ed_onw_cld_rlb",
+     "ed_hqc_lrv_gmb",
+     "G000879",
+     "G004679",
+     "G004693",
+     "G067538",
+     "G000749",
+     "ediarum_egt_1tn_y4b"
+    ],
+    "works": [
+     "G004289",
+     "G003476",
+     "G002623 G002624 G002625",
+     "G003469",
+     "G067691"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000410",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "njjn_kw4_cfc",
+    "nkg4_45f_2bc",
+    "nbg1_cvf_2bc",
+    "nn2c_nvf_2bc",
+    "nc5q_5wf_2bc",
+    "nmqb_mmp_cmb",
+    "ncwb_qmp_cmb",
+    "nlsj_smp_cmb",
+    "nlcx_tmp_cmb",
+    "nar5_mbg_2bc"
+   ],
+   "title": "Ferdinand Gregorovius an Giovanni Battista De Rossi in Rom. Rom, 28. April 1863",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001085"
+   ],
+   "date": "1863-04-28",
+   "place": {
+    "sent": "G000763",
+    "received": "G000763"
+   },
+   "incipit": "per la mia storia del medio Evo ho fatto, come Ella sà bene, molte ricerche negli archivj di Roma;Bi",
+   "resp": [
+    "Steinsiek",
+    "Weiger"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001174",
+     "G000992",
+     "G001257",
+     "G001691",
+     "G001461",
+     "G001671",
+     "G000560",
+     "G000563",
+     "G000559"
+    ],
+    "places": [
+     "ediarum_egt_1tn_y4b",
+     "G000671"
+    ],
+    "works": [
+     "G003434 G003441 G003448 G003455 G003462 G003469 G003476 G003485",
+     "G004302"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000097",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nkpx_hgx_cfc",
+    "ntqn_td2_ylb",
+    "nobh_zqb_1bc",
+    "ndpr_brb_1bc",
+    "nqc2_b22_ylb",
+    "nugh_krb_1bc",
+    "nqb3_f22_ylb",
+    "ntny_k22_ylb",
+    "nbbj_fg2_ylb",
+    "ntzr_lg2_ylb",
+    "nq1r_4g2_ylb",
+    "nsvz_3g2_ylb",
+    "na24_wsb_1bc",
+    "njwk_5g2_ylb",
+    "nhb4_zsb_1bc",
+    "ndjd_ctb_1bc",
+    "noyh_yg2_ylb",
+    "nhdg_1h2_ylb",
+    "nhkd_ptb_1bc",
+    "nts5_qtb_1bc",
+    "nugv_2h2_ylb",
+    "no54_hh2_ylb",
+    "ni21_25b_1bc",
+    "natc_r5b_1bc"
+   ],
+   "title": "Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 28. September 1859",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001644"
+   ],
+   "date": "1859-09-28",
+   "place": {
+    "sent": "G000763",
+    "received": "G000636"
+   },
+   "incipit": "im Begriff nach Monte Casino abzureisen, wo ich ein paar Wochen zu arbeiten gedenke,Auf Einladung vo",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001643",
+     "G004718",
+     "G004719",
+     "G001640",
+     "G001049",
+     "G000913",
+     "G004701",
+     "G004720",
+     "G001645",
+     "G001189",
+     "G001643"
+    ],
+    "places": [
+     "G000730",
+     "G000664",
+     "G000690",
+     "G004679",
+     "G000794",
+     "G000675",
+     "G000653",
+     "G000678",
+     "G004695",
+     "G004696",
+     "G004697",
+     "G000755",
+     "G000771"
+    ],
+    "works": [
+     "G003485",
+     "G003476",
+     "G003469"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000328",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "ndxl_nzz_w1c",
+    "ntcb_gs5_5lb",
+    "noyz_ms5_5lb",
+    "nazh_rs5_5lb",
+    "nrbn_5s5_5lb",
+    "ndnr_zs5_5lb",
+    "nbfn_gt5_5lb",
+    "nzts_3t5_5lb",
+    "ne54_l11_x1c",
+    "nl4r_mt5_5lb"
+   ],
+   "title": "Johann Georg Freiherr Cotta von Cottendorf an Ferdinand Gregorovius in Florenz. Stuttgart, 18. August 1858",
+   "sender": [
+    "G001055"
+   ],
+   "recipient": [
+    "G001200"
+   ],
+   "date": "1858-08-18",
+   "place": {
+    "sent": "G000879",
+    "received": "G000671"
+   },
+   "incipit": "ich bin vor wenigen Tagen wieder in die Heimat zurückgekehrt.",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001525",
+     "G004725",
+     "G004713",
+     "G001665",
+     "G001359",
+     "G000523"
+    ],
+    "places": [
+     "G000710",
+     "G000855",
+     "G000671",
+     "G00067499"
+    ],
+    "works": [
+     "G003434 G003441 G003448 G003455 G003462 G003469 G003476 G003485",
+     "G004765",
+     "G004785"
+    ]
+   }
+  }
+ },
+ {
+  "id": "ed_jyb_2h5_4wb",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nthh_m35_4wb",
+    "nkgj_r35_4wb",
+    "nrxy_t35_4wb",
+    "nkfn_x35_4wb",
+    "nxym_y35_4wb",
+    "ncpc_1j5_4wb",
+    "ngyn_jj5_4wb",
+    "nm5r_mj5_4wb",
+    "nkrt_nj5_4wb",
+    "nijg_pj5_4wb"
+   ],
+   "title": "Ferdinand Gregorovius an Christian Karl Josias Freiherr von Bunsen in Heidelberg. Rom, 6. April 1859",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001001"
+   ],
+   "date": "1859-04-06",
+   "place": {
+    "sent": "G000763",
+    "received": "G000685"
+   },
+   "incipit": "wenn ich mir die Freiheit herausnehme, Ihnen beikommenden Band einer Geschichte Rom’s im Mittelalter",
+   "resp": [
+    "Steinsiek",
+    "Ramazzotti"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001055",
+     "G001330",
+     "G004731",
+     "G067532"
+    ],
+    "places": [],
+    "works": [
+     "G003485",
+     "G003476",
+     "G003469",
+     "ed_kzw_ml5_4wb"
+    ]
+   }
+  }
+ },
+ {
+  "id": "ed_v5m_lrp_dsb",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nu3l_25p_dsb",
+    "nppb_1v4_cfc",
+    "nggh_35p_dsb",
+    "nr2m_qc2_2sb",
+    "nctm_tnd_p1c",
+    "nz3k_dvp_dsb",
+    "ntpc_nvp_dsb",
+    "njtq_pvp_dsb",
+    "nq3w_wwp_dsb",
+    "nkts_5xp_dsb",
+    "nwbb_5sd_2sb",
+    "nekj_kxd_2sb",
+    "ny5g_yzd_2sb",
+    "ndfz_m12_2sb",
+    "nw3j_w12_2sb",
+    "nx2g_cb2_2sb"
+   ],
+   "title": "Ferdinand Gregorovius an Robert Davidsohn in Mont Fleuri sur Territet. München, 28. Oktober 1884",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001070"
+   ],
+   "date": "1884-10-28",
+   "place": {
+    "sent": "G000734",
+    "received": "ed_acl_1tp_dsb"
+   },
+   "incipit": "ich habe gestern Ihre lang erwarteten Nachrichten erhalten und danke Ihnen lebhaft dafür. Erharts ha",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G000914",
+     "G001115 G001116",
+     "ed_zcg_fc2_2sb",
+     "ed_xfy_fnp_znb G001114",
+     "ed_dbv_xc2_2sb",
+     "G000985",
+     "G000983"
+    ],
+    "places": [
+     "ediarum_xmx_gct_y4b",
+     "G000664",
+     "G000888",
+     "G000690",
+     "G000763",
+     "ed_gxl_l3y_2sb"
+    ],
+    "works": [
+     "G003509",
+     "ed_tmy_hhy_2sb",
+     "G003443"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000122",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nnyj_gfs_ylb",
+    "nl4m_s2x_cfc",
+    "nltm_hfs_ylb",
+    "nrny_3fs_ylb",
+    "nszs_kfs_ylb",
+    "nfj4_zjv_cbc",
+    "ncbp_sfs_ylb",
+    "nepp_mkv_cbc",
+    "nzs2_wkv_cbc",
+    "nhr2_yfs_ylb",
+    "nmzz_1gs_ylb",
+    "ny1w_p1f_lwb",
+    "nlkc_4lv_cbc",
+    "nkw1_fgs_ylb",
+    "nik4_r52_tpb",
+    "nghq_sgs_ylb",
+    "ngkz_vsn_hzb",
+    "neft_bmv_cbc",
+    "nw1y_l3s_ylb",
+    "nftq_fmv_cbc",
+    "nzjt_slx_bvb",
+    "nxlb_r3s_ylb",
+    "ndxw_5mv_cbc",
+    "nhtm_v3s_ylb",
+    "nu2f_dnv_cbc",
+    "nchy_fnv_cbc",
+    "nakb_jnv_cbc",
+    "nvzq_b4v_cbc",
+    "nwvj_vlx_bvb",
+    "nult_l4v_cbc",
+    "nyjj_p4v_cbc",
+    "nnmg_w4v_cbc"
+   ],
+   "title": "Ferdinand Gregorovius an Hermann von Thile in Heiden. Danzig, 9. August 1860",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001644"
+   ],
+   "date": "1860-08-09",
+   "place": {
+    "sent": "G000663",
+    "received": "G000686"
+   },
+   "incipit": "Aus dieser alten und prächtigen ReichsstadtGregorovius war am 3. August 1860 in Danzig eingetroffen ",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001189",
+     "G001484",
+     "G067683",
+     "G000967",
+     "G067684",
+     "G067688",
+     "G001055",
+     "G001645",
+     "G001206",
+     "G001203",
+     "G001111",
+     "G001643",
+     "G001001",
+     "G067524",
+     "ed_dff_kyv_gmb"
+    ],
+    "places": [
+     "G000636",
+     "G000664",
+     "G000879",
+     "G000743",
+     "G000620",
+     "G067555",
+     "G000712",
+     "G067541",
+     "G067543",
+     "G000699",
+     "ediarum_cpc_c4z_sxb",
+     "G067544",
+     "G000646"
+    ],
+    "works": [
+     "G003476 G003485",
+     "G002618",
+     "G067697",
+     "ed_xyl_fv2_tpb"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000094",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nlby_ggx_cfc",
+    "np4h_bvn_cbc",
+    "nmjb_zjm_ylb",
+    "nafr_pvn_cbc"
+   ],
+   "title": "Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 7. Januar 1860",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001644"
+   ],
+   "date": "1860-01-07",
+   "place": {
+    "sent": "G000763",
+    "received": "G000636"
+   },
+   "incipit": "diese wenigen Zeilen sind rein irdisch elender und geschäftlicher Natur, wie man zu sagen pflegt. Au",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G067650",
+     "G001235"
+    ],
+    "places": [
+     "G000699"
+    ],
+    "works": [
+     "G067690"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000061",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "ndwy_zk3_cfc",
+    "nhyr_jlh_v1c",
+    "najc_plh_v1c",
+    "nbrq_slh_v1c"
+   ],
+   "title": "Ferdinand Gregorovius an den F. A. Brockhaus Verlag und Heinrich Brockhaus in Leipzig. Rom, 28. April 1855",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G000996",
+    "G000480"
+   ],
+   "date": "1855-04-28",
+   "place": {
+    "sent": "G000763",
+    "received": "G000712"
+   },
+   "incipit": "in großer Eile übersende ich, hochverehrter Herr,Der Verleger Heinrich Brockhaus (1804–1874) war ein",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [],
+    "places": [
+     "G000737"
+    ],
+    "works": [
+     "G003836",
+     "G003825"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000087",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "njyn_kpv_cfc",
+    "nh2m_zvw_y1c",
+    "nxcj_2ww_y1c",
+    "njsl_fw1_vlb",
+    "nybf_rww_y1c",
+    "nwyr_sww_y1c",
+    "nwr5_lw1_vlb",
+    "ntvs_5ww_y1c",
+    "nbs3_2xw_y1c",
+    "nsfs_tw1_vlb",
+    "nsbs_mxw_y1c",
+    "npfj_qxw_y1c",
+    "nkxw_yw1_vlb",
+    "npjg_d2f_nzb",
+    "niyl_2yw_y1c",
+    "nkqz_h2f_nzb",
+    "nvbm_j2f_nzb",
+    "natw_k2f_nzb",
+    "nnhv_m2f_nzb",
+    "nlvc_lx1_vlb",
+    "nt3x_mx1_vlb",
+    "nd2r_nx1_vlb",
+    "nngr_s2f_nzb",
+    "nglf_hzw_y1c",
+    "nhbk_lzw_y1c",
+    "nch2_1y1_vlb",
+    "nojg_rzw_y1c",
+    "nnvs_dy1_vlb",
+    "ncdg_fy1_vlb",
+    "nkch_jy1_vlb",
+    "nk2n_g1x_y1c",
+    "nujz_jz1_vlb",
+    "no4l_t1x_y1c",
+    "nggn_pz1_vlb",
+    "nm4h_y1x_y1c",
+    "nvkx_cbx_y1c",
+    "nvdg_vbx_y1c",
+    "nudl_ps1_x1c",
+    "nvby_ms1_x1c",
+    "nzn3_lcx_y1c",
+    "nfwb_51b_vlb",
+    "nmvj_xcx_y1c"
+   ],
+   "title": "Ferdinand Gregorovius an Theodor Heyse in Florenz. Rom, 28. Oktober 1858",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001275"
+   ],
+   "date": "1858-10-28",
+   "place": {
+    "sent": "G000763",
+    "received": "G000671"
+   },
+   "incipit": "überhäuft von einer großen Corrispondenz, (da kein Tag vergeht, an dem ich nicht einen Brief schreib",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G000913",
+     "G000928",
+     "G004735",
+     "G004736",
+     "G004737",
+     "G004738",
+     "G004746",
+     "G001545",
+     "G004709",
+     "G001263",
+     "G000913",
+     "G004739",
+     "G004740",
+     "G004741",
+     "G001202",
+     "G001274",
+     "G001649",
+     "G001625",
+     "G004743",
+     "G001001",
+     "G000533",
+     "G000563",
+     "G000462",
+     "G004658",
+     "G004659"
+    ],
+    "places": [
+     "ediarum_mkb_dvt_sxb",
+     "ediarum_lkh_3vt_sxb",
+     "ediarum_vvl_mvt_sxb",
+     "G000751",
+     "G000715",
+     "G000749",
+     "G004682",
+     "G000599",
+     "G000893",
+     "G000664"
+    ],
+    "works": [
+     "G004273",
+     "G004791",
+     "G003872",
+     "G003469",
+     "G004792",
+     "G004428",
+     "G003434 G003441 G003448 G003455 G003462 G003469 G003476 G003485",
+     "G004787"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000015",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nrtm_3j1_cfc",
+    "nmhc_s43_hzb",
+    "nivs_cc1_v1c",
+    "nv42_kc1_v1c",
+    "nm5q_g5g_llb",
+    "nxxt_pc1_v1c",
+    "nflh_yc1_v1c",
+    "nxgr_bd1_v1c",
+    "nfcj_wd1_v1c",
+    "nc4y_121_v1c",
+    "nibb_zqf_nlb",
+    "njqt_lzg_llb",
+    "nusf_rzg_llb",
+    "nkht_m1h_llb",
+    "nptc_x2q_5qb",
+    "ntcq_s1h_llb",
+    "nupc_dbh_llb",
+    "nkz5_1kz_kzb",
+    "nj13_h1h_llb",
+    "nrzg_z21_v1c",
+    "nfyg_gf1_v1c",
+    "ngw1_wch_llb",
+    "nf4s_yzg_llb",
+    "nep2_bdh_llb",
+    "nawq_bgw_bvb"
+   ],
+   "title": "Ferdinand Gregorovius an Friedrich Althaus in London. Rom, 21. April 1854",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G000920"
+   ],
+   "date": "1854-04-21",
+   "place": {
+    "sent": "G000763",
+    "received": "G000716"
+   },
+   "incipit": "Richtig ist Dein Brief durch MarstallerDer seit 1840 in Rom als Bankier und preußischer Konsul ansäs",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G000999",
+     "G001405",
+     "G001676",
+     "G001080",
+     "G001442",
+     "G001266",
+     "G001336",
+     "G001440",
+     "G001468",
+     "G001441",
+     "G001663",
+     "ed_r45_mld_r3b ed_v3y_vrd_r3b",
+     "G001183"
+    ],
+    "places": [
+     "G000607",
+     "G000860",
+     "G000647",
+     "G000646",
+     "G000592",
+     "G000674",
+     "G000850",
+     "G000851",
+     "G000599",
+     "G000894",
+     "G000648",
+     "G000852",
+     "G000870",
+     "G000873",
+     "G000636",
+     "G000606",
+     "G000699",
+     "G000769",
+     "ediarum_hqf_fjn_y4b",
+     "ediarum_vhj_1ws_y4b"
+    ],
+    "works": [
+     "G004223",
+     "G004254",
+     "G003816",
+     "G003114",
+     "G003106",
+     "ed_umm_dcq_5qb"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000003",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nvqn_qmz_51c",
+    "nodt_5mz_51c",
+    "nsfd_zmz_51c"
+   ],
+   "title": "Ferdinand Gregorovius an die Redaktion des Morgenblatts für gebildete Leser in Stuttgart. Rom, 4. Januar 1853",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G000533"
+   ],
+   "date": "1853-01-04",
+   "place": {
+    "sent": "G000763",
+    "received": "G000879"
+   },
+   "incipit": "nehme ich mir die Ehre beikommende Abhandlung „Einige Bemerkungen zur Geschichte des Klosters San Ma",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001571"
+    ],
+    "places": [
+     "G00076555",
+     "ediarum_acs_lqj_qpb"
+    ],
+    "works": [
+     "G003831 G003832",
+     "G003839"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000006",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nmv4_fh1_cfc",
+    "nr4p_g5z_51c",
+    "nbry_rgb_llb",
+    "nv2k_1r1_llb",
+    "nf4r_r5z_51c",
+    "nztx_3s1_llb",
+    "nsvt_v5z_51c"
+   ],
+   "title": "Ferdinand Gregorovius an Johann Georg Freiherr Cotta von Cottendorf in Stuttgart. Rom, 20. Mai 1853",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001055"
+   ],
+   "date": "1853-05-20",
+   "place": {
+    "sent": "G000763",
+    "received": "G000879"
+   },
+   "incipit": "ich habe Ihr geneigtes Schreiben nebst Anlagen richtig erhalten, und es drängt mich Ihnen für Ihre f",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G000523",
+     "G000543",
+     "ed_dff_kyv_gmb",
+     "G000462"
+    ],
+    "places": [
+     "G000674",
+     "G000599"
+    ],
+    "works": [
+     "G003106",
+     "G002367"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000002",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nhxp_ycc_pzb",
+    "nynl_mrz_51c",
+    "nc4s_prz_51c",
+    "nefl_l43_hzb",
+    "njfj_3pp_jlb",
+    "nebj_mpp_jlb",
+    "nc5d_xrz_51c",
+    "nydg_bsz_51c",
+    "ngvv_gsz_51c"
+   ],
+   "title": "Ferdinand Gregorovius an die J. G. Cotta’sche Buchhandlung und Johann Georg Freiherr Cotta von Cottendorf in Stuttgart. Rom, 9. April 1853",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001055",
+    "G000523"
+   ],
+   "date": "1853-04-09",
+   "place": {
+    "sent": "G000763",
+    "received": "G000879"
+   },
+   "incipit": "Ew. HochwolgeborenDer Verleger Johann Georg Freiherr Cotta von Cottendorf (1796–1863) war der einzig",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001441",
+     "G001468",
+     "G001445",
+     "G000462"
+    ],
+    "places": [
+     "G000664",
+     "G000710",
+     "G00076555",
+     "ediarum_acs_lqj_qpb"
+    ],
+    "works": [
+     "G003106",
+     "G003764 G003765 G003766 G003767 G003768 G003769 G003770 G003771 G003772 G003773 G003774 G003775 G003776 G003777 G003778",
+     "ed_umm_dcq_5qb"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000001",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "ncgf_gmz_51c",
+    "nkl2_cmz_51c"
+   ],
+   "title": "Ferdinand Gregorovius an die Redaktion der Allgemeinen Zeitung in Augsburg. Rom, 4. Januar 1853",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G000462"
+   ],
+   "date": "1853-01-04",
+   "place": {
+    "sent": "G000763",
+    "received": "G000620"
+   },
+   "incipit": "erlaube ich mir nunmehr beikommenden Aufsatz „Ein Besuch auf Elba“ „Ein Besuch auf Elba“ erschien in",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [],
+    "places": [
+     "G00076555",
+     "ediarum_acs_lqj_qpb",
+     "G000862"
+    ],
+    "works": [
+     "G003779 G003780 G003781 G003782 G003783 G003784",
+     "G003779 G003780 G003781 G003782 G003783 G003784",
+     "G003764 G003765 G003766 G003767 G003768 G003769 G003770 G003771 G003772 G003773 G003774 G003775 G003776 G003777 G003778"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000025",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nqbv_cs4_slb",
+    "nllf_3pv_cfc",
+    "nnzv_3s4_slb",
+    "nnrz_ks4_slb",
+    "nogq_qs4_slb",
+    "ns3t_ts4_slb",
+    "ndxg_ws4_slb",
+    "nn21_tv2_w1c",
+    "nb5r_clw_bvb",
+    "nwgl_ft4_slb",
+    "nodc_bw2_w1c",
+    "nzfs_2w2_w1c",
+    "njdp_nt4_slb",
+    "nxqf_nw2_w1c",
+    "nsgy_dv4_slb",
+    "nbjk_hv4_slb",
+    "nss4_gw4_slb",
+    "nckz_c1j_hzb",
+    "niqh_wz4_slb",
+    "nlkx_bx2_w1c",
+    "novr_1z4_slb",
+    "nd5y_mz4_slb",
+    "nrt2_b1p_slb",
+    "nmxd_h1p_slb",
+    "nhtd_4y2_w1c",
+    "nn1x_z1p_slb",
+    "npy3_vy2_w1c",
+    "npyh_31j_hzb",
+    "npy4_1z2_w1c",
+    "nqgw_zxf_lzb",
+    "ndqz_fz2_w1c",
+    "ntkd_dyf_lzb",
+    "nnrt_2yf_lzb",
+    "nmpl_nz2_w1c",
+    "nvl5_gyf_lzb",
+    "nnjf_3yf_lzb",
+    "nb4x_4cp_slb"
+   ],
+   "title": "Ferdinand Gregorovius an Theodor Heyse in Florenz. Rom, 24. Dezember 1856",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001275"
+   ],
+   "date": "1856-12-24",
+   "place": {
+    "sent": "G000763",
+    "received": "G000671"
+   },
+   "incipit": "herzlichen Dank für Ihren Brief, der mich lange Zeit zum Nachdenken und Erinnern belebt hat. Es ist ",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G000972",
+     "G001483",
+     "G001092",
+     "G000938",
+     "G001301",
+     "G001319",
+     "G001545",
+     "G001565",
+     "G001312",
+     "G001594",
+     "G001665",
+     "G001359",
+     "G000913",
+     "G001432",
+     "G001548",
+     "G001637",
+     "G001397",
+     "G000480",
+     "G000545"
+    ],
+    "places": [
+     "G000734",
+     "G000842",
+     "G000664",
+     "G000710",
+     "G000734"
+    ],
+    "works": [
+     "G003430",
+     "G003574",
+     "G003434 G003441 G003448 G003455 G003462 G003469 G003476 G003485",
+     "G004324",
+     "G004251",
+     "G004257"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000113",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nugn_td1_x1c",
+    "nan5_5w5_5lb",
+    "nbrw_d21_x1c",
+    "nwvf_h21_x1c",
+    "njzx_bx5_5lb",
+    "nbf3_l21_x1c",
+    "nlgd_421_x1c",
+    "nzf1_t21_x1c",
+    "nwyn_n1f_nzb",
+    "nbjy_vx5_5lb"
+   ],
+   "title": "Ferdinand Gregorovius an die J. G. Cotta’sche Buchhandlung in Stuttgart. Florenz, 5. September 1858",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G000523"
+   ],
+   "date": "1858-09-05",
+   "place": {
+    "sent": "G000671",
+    "received": "G000879"
+   },
+   "incipit": "beikommend übersende ich das von mir unterzeichnete Exemplar des Contracts betreffend den Verlag „De",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001055",
+     "G004725",
+     "G001055",
+     "G001678",
+     "G001020",
+     "G000563",
+     "G004653"
+    ],
+    "places": [
+     "G000710",
+     "G000763"
+    ],
+    "works": [
+     "G003434 G003441 G003448 G003455 G003462 G003469 G003476 G003485",
+     "G004785"
+    ]
+   }
+  }
+ },
+ {
+  "id": "ed_fpn_wyx_gxb",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "njbl_sby_gxb",
+    "ne5j_xby_gxb",
+    "no5b_1cy_gxb",
+    "nbg2_bcy_gxb",
+    "nnjq_dcy_gxb",
+    "ncl2_lcy_gxb",
+    "nrcg_ncy_gxb",
+    "ngry_pcy_gxb",
+    "ng1g_rcy_gxb",
+    "nr4x_scy_gxb",
+    "niyj_5cy_gxb"
+   ],
+   "title": "Ferdinand Gregorovius an die J. G. Cotta’sche Buchhandlung Nachfolger in Stuttgart. München, 8. September 1890",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "ed_icv_gll_swb"
+   ],
+   "date": "1890-09-08",
+   "place": {
+    "sent": "G000734",
+    "received": "G000879"
+   },
+   "incipit": "bei meiner RückkehrSeit Anfang September 1890 war Gregorovius zurück in München: Er war am 12. Augus",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G000994",
+     "G001562",
+     "ed_t3d_vdy_gxb",
+     "G000523"
+    ],
+    "places": [
+     "G000699"
+    ],
+    "works": [
+     "G003465",
+     "G003458",
+     "G003437 G003444 G003451",
+     "G003534"
+    ]
+   }
+  }
+ },
+ {
+  "id": "ed_kzj_2qv_4wb",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nrhr_prg_cfc",
+    "na1g_1sv_4wb",
+    "nv2n_bsv_4wb",
+    "nklm_nsv_4wb",
+    "nexw_psv_4wb",
+    "nej4_ssv_4wb",
+    "nikg_vsv_4wb",
+    "nuc2_wsv_4wb",
+    "npbq_btv_4wb",
+    "nalh_ctv_4wb",
+    "ne1r_dtv_4wb",
+    "nmml_2tv_4wb",
+    "nvr5_htv_4wb"
+   ],
+   "title": "Ferdinand Gregorovius an Christian Karl Josias Freiherr von Bunsen in Bonn. Danzig, 5. August 1860",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001001"
+   ],
+   "date": "1860-08-05",
+   "place": {
+    "sent": "G000663",
+    "received": "G00067498"
+   },
+   "incipit": "als ich auf meiner Reise nach Deutschland den Freiherrn von Thile in Heiden im Canton Appenzell besu",
+   "resp": [
+    "Steinsiek",
+    "Ramazzotti"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001644",
+     "G001203",
+     "G000967",
+     "G001055",
+     "G001173",
+     "G001484",
+     "G000541",
+     "G067524"
+    ],
+    "places": [
+     "G000664",
+     "G067582",
+     "G000686",
+     "G000636",
+     "G000674",
+     "G000699"
+    ],
+    "works": [
+     "G003469",
+     "G003476 G003485",
+     "G003462"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000060",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "ne3f_yk3_cfc",
+    "nxjw_zh1_nlb",
+    "ntrx_d31_nlb",
+    "nwgx_cm1_nlb",
+    "nivd_k31_nlb",
+    "nnyw_p31_nlb",
+    "nrvz_sfh_v1c",
+    "njqb_lyg_xzb"
+   ],
+   "title": "Ferdinand Gregorovius an den F. A. Brockhaus Verlag und Heinrich Brockhaus in Leipzig. Rom, 2. März 1855",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G000996",
+    "G000480"
+   ],
+   "date": "1855-03-02",
+   "place": {
+    "sent": "G000763",
+    "received": "G000712"
+   },
+   "incipit": "Ihr geneigtes Schreiben datiert den 1. Februar diesen Jahres habe ich, sehr verehrter Herr,Der Verle",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001512",
+     "G000545"
+    ],
+    "places": [],
+    "works": [
+     "G003825",
+     "G002403",
+     "G003836"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000106",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "ntht_3gx_cfc",
+    "nkgy_rkb_vlb",
+    "nhpq_5kb_vlb",
+    "ntpp_wkb_vlb",
+    "nwm3_ykb_vlb",
+    "nzp1_blb_vlb",
+    "nz4j_dlb_vlb",
+    "nkp2_5xx_y1c",
+    "ng2g_glb_vlb",
+    "npwx_mlb_vlb",
+    "nsry_4lb_vlb",
+    "nlqx_dyx_y1c",
+    "ns3m_rlb_vlb",
+    "nqsc_xlb_vlb",
+    "nc5w_nyx_y1c",
+    "nt42_ryx_y1c",
+    "ny1c_fmb_vlb"
+   ],
+   "title": "Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 22. Dezember 1858",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001644"
+   ],
+   "date": "1858-12-22",
+   "place": {
+    "sent": "G000763",
+    "received": "G000636"
+   },
+   "incipit": "an der Neige dieses Jahres erlauben Sie mir diese wenigen Zeilen; wenn ich an dasselbe zurückdenke, ",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001645",
+     "G001643",
+     "G000913",
+     "G004746",
+     "G001049",
+     "G004701",
+     "G004700",
+     "G001640",
+     "G001189",
+     "G000523",
+     "G000541"
+    ],
+    "places": [
+     "G000671",
+     "G000730",
+     "G000617",
+     "G000599",
+     "G004688",
+     "ediarum_egt_1tn_y4b"
+    ],
+    "works": [
+     "G003485",
+     "G003469"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000014",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "njsh_djn_5kb",
+    "nisz_hjn_5kb",
+    "ngn2_mjn_5kb",
+    "naxn_pjn_5kb",
+    "ngzz_x11_v1c",
+    "nknj_czz_51c",
+    "nc5f_yjn_5kb",
+    "nidw_1kn_5kb",
+    "npzj_ckn_5kb",
+    "ncjh_jzz_51c",
+    "nk35_rln_5kb",
+    "nipc_nzz_51c",
+    "nscj_4kz_kzb",
+    "nasd_qzz_51c",
+    "nalj_5kn_5kb",
+    "nany_vkn_5kb",
+    "nnq5_211_v1c",
+    "nsnj_bln_5kb",
+    "ndfg_3mn_5kb"
+   ],
+   "title": "Ferdinand Gregorovius an Friedrich Althaus in London. Rom, 8. Januar 1854",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G000920"
+   ],
+   "date": "1854-01-08",
+   "place": {
+    "sent": "G000763",
+    "received": "G000716"
+   },
+   "incipit": "es ist vielleicht ominös, daß der erste Brief, den ich in diesem Jahre an eine Menschenseele schreib",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G000909",
+     "G001080",
+     "G000927",
+     "G001515",
+     "G001589",
+     "G001405",
+     "G001147",
+     "G001497",
+     "ed_onw_cld_rlb",
+     "G000523",
+     "ed_onw_cld_rlb"
+    ],
+    "places": [
+     "G000794",
+     "G000607",
+     "G000604",
+     "G000600",
+     "G000605",
+     "G000653",
+     "G000748",
+     "G000575",
+     "G000690",
+     "G000601",
+     "G000602",
+     "G000848",
+     "G000737",
+     "G000575",
+     "G000603",
+     "ed_rsv_4kd_r3b",
+     "G000606",
+     "G000864",
+     "G000664",
+     "G000608"
+    ],
+    "works": [
+     "G003106"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000066",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nsyv_cgc_pzb",
+    "nkhq_1xg_v1c",
+    "nqd4_xxg_v1c",
+    "njzx_mxg_v1c",
+    "noxs_lvb_gsb",
+    "nwmq_dyg_v1c",
+    "nr31_pfy_mlb",
+    "ntmr_d5z_kzb",
+    "npyb_jgy_mlb",
+    "nu2c_zyg_v1c",
+    "nfzy_t5b_gsb",
+    "nfrl_w5b_gsb"
+   ],
+   "title": "Ferdinand Gregorovius an Heinrich Brockhaus in Leipzig. Rom, 6. Januar 1855",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G000996"
+   ],
+   "date": "1855-01-06",
+   "place": {
+    "sent": "G000763",
+    "received": "G000712"
+   },
+   "incipit": "Ich habe Ihr geneigtes Schreiben vom 7. December 54, geehrtester Herr,Der Verleger Heinrich Brockhau",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001512",
+     "G001359",
+     "G001203",
+     "ed_t43_ym5_lzb",
+     "G000469",
+     "G000546",
+     "G000480"
+    ],
+    "places": [
+     "G000737",
+     "G000699"
+    ],
+    "works": [
+     "G003836",
+     "G003834 G003835 G003839",
+     "G003825",
+     "G004308",
+     "G004255",
+     "G004258"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000005",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nc22_ftz_51c",
+    "napn_jtz_51c",
+    "nrnw_ptz_51c"
+   ],
+   "title": "Ferdinand Gregorovius an die Redaktion der Allgemeinen Zeitung in Augsburg. Rom, 19. Mai 1853",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G000462"
+   ],
+   "date": "1853-05-19",
+   "place": {
+    "sent": "G000763",
+    "received": "G000620"
+   },
+   "incipit": "übersende ich ganz ergebenst beikommende Abhandlung „Der Ghetto und die Juden in Rom“ welche ich Ihn",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001282",
+     "G000523"
+    ],
+    "places": [
+     "G000715",
+     "G000690",
+     "G000620",
+     "G000598"
+    ],
+    "works": [
+     "G003799 G003800 G003801 G003805 G003806",
+     "G003791 G003792 G003793 G003794 G003795 G003796 G003797 G003798"
+    ]
+   }
+  }
+ },
+ {
+  "id": "ed_wt1_4n4_5nb",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nvcf_kp4_5nb",
+    "nc1d_nbh_v1c",
+    "nb4g_sp4_5nb",
+    "npjb_bch_v1c",
+    "nzws_fch_v1c",
+    "nmdj_zp4_5nb",
+    "npnh_bq4_5nb",
+    "nazp_cq4_5nb",
+    "ns5j_dq4_5nb",
+    "nuxy_xdh_v1c",
+    "nalk_fq4_5nb",
+    "nitq_gq4_5nb",
+    "nnsm_h2h_v1c"
+   ],
+   "title": "Ferdinand Gregorovius an Louis Harder in Königsberg. Rom, 4. Februar 1855",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001236"
+   ],
+   "date": "1855-02-04",
+   "place": {
+    "sent": "G000763",
+    "received": "G000699"
+   },
+   "incipit": "Mein teurer Freund, nur mit wenigen Worten kann ich Dir heute für Deinen Brief danken, der mich nach",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "ed_od1_ls4_5nb",
+     "ed_rz2_ps4_5nb",
+     "G001466",
+     "G001343",
+     "G000987",
+     "ed_hk5_554_5nb"
+    ],
+    "places": [
+     "ed_mxp_tt4_5nb"
+    ],
+    "works": [
+     "G003106",
+     "G003574"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000086",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nfkd_ggx_cfc",
+    "nolv_frr_ylb",
+    "neh2_x2p_cbc",
+    "nxcm_hcs_ylb",
+    "nxvf_zv2_lwb",
+    "nqpk_ncs_ylb",
+    "nd1l_qfp_cbc",
+    "nfg1_tcs_ylb",
+    "nvjs_xfp_cbc",
+    "nf3k_1ds_ylb",
+    "nanf_2gp_cbc",
+    "nq5m_fds_ylb",
+    "nrtp_gds_ylb",
+    "njcw_hds_ylb",
+    "nykc_sgp_cbc"
+   ],
+   "title": "Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 28. März 1860",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001644"
+   ],
+   "date": "1860-03-28",
+   "place": {
+    "sent": "G000763",
+    "received": "G000636"
+   },
+   "incipit": "Sie werden sich wundern, daß ich mit einem Briefe komme, ohne erst durch eine Antwort auf mein letzt",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G067681",
+     "G001001",
+     "G000967",
+     "G001545",
+     "G067682",
+     "G000913",
+     "G001645",
+     "G001643"
+    ],
+    "places": [
+     "G000893",
+     "G000870"
+    ],
+    "works": [
+     "G003434 G003441 G003448 G003455 G003462 G003469 G003476 G003485"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000231",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "ncw2_hnw_cfc",
+    "nvlw_wwj_wbc",
+    "ncxx_zjl_31c",
+    "naby_lkl_31c",
+    "nzc4_xnl_31c",
+    "nclz_24l_31c",
+    "nac1_4bk_wbc",
+    "nsdt_kbj_1mb",
+    "nsqg_lpl_31c",
+    "nmy1_nbj_1mb",
+    "nmxm_5ql_31c"
+   ],
+   "title": "Ferdinand Gregorovius an Raffaele Mariano in Rom. München, 6. November 1877",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001401"
+   ],
+   "date": "1877-11-06",
+   "place": {
+    "sent": "G000734",
+    "received": "G000763"
+   },
+   "incipit": "Sie sind also doch länger in Florenz geblieben, und haben daran sehr recht gethan, denn immer kommen",
+   "resp": [
+    "Steinsiek",
+    "Neuber"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001375",
+     "G001700",
+     "G001012",
+     "ed_8s1_n17_lm4",
+     "G001011",
+     "G001004",
+     "G001203 G001111 G001109",
+     "G001215",
+     "G001412 G001413",
+     "G001116 G001115 G001114",
+     "G001219 ed_nfl_yj2_rlb",
+     "G001398",
+     "G001375"
+    ],
+    "places": [
+     "G000763",
+     "ediarum_egt_1tn_y4b",
+     "G000882",
+     "G000671",
+     "G000737"
+    ],
+    "works": [
+     "G003523"
+    ]
+   }
+  }
+ },
+ {
+  "id": "ed_rzn_ycy_2qb",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nisq_crg_cfc",
+    "nghs_qfy_2qb",
+    "nvbb_5fy_2qb",
+    "neyq_zfy_2qb",
+    "nlt1_2gy_2qb",
+    "nzlv_fgy_2qb",
+    "nptv_3gy_2qb",
+    "ndvv_jgy_2qb",
+    "nkc3_lgy_2qb",
+    "nypl_mgy_2qb",
+    "ndbx_rgy_2qb",
+    "nd3l_tgy_2qb",
+    "notn_xgy_2qb",
+    "npnk_chy_2qb",
+    "nwzg_fhy_2qb",
+    "nbm5_ghy_2qb",
+    "nn2b_jhy_2qb",
+    "namr_wcp_41c",
+    "ngcj_yhy_2qb",
+    "ntkl_bdp_41c",
+    "nll2_f3y_2qb"
+   ],
+   "title": "Ferdinand Gregorovius an Jean Bourdeau in Paris. Rom, 3. April 1883",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "ed_js2_4mf_fpb"
+   ],
+   "date": "1883-04-03",
+   "place": {
+    "sent": "G000763",
+    "received": "G000749"
+   },
+   "incipit": "Ihre Reise nach DeutschlandBourdeau reiste im Frühjahr 1883 nach Deutschland, während Gregorovius si",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "ed_jm1_ngk_rlb",
+     "ed_qqs_1ny_2qb",
+     "G001132",
+     "G001429",
+     "ed_dv2_sny_2qb",
+     "G001525",
+     "G001301",
+     "G001173",
+     "G001094",
+     "G001274",
+     "G001573",
+     "ed_obx_15y_2qb",
+     "G001331",
+     "G001333",
+     "ed_l31_t5y_2qb",
+     "G001495",
+     "G001111",
+     "G001203",
+     "ed_dhn_fvy_2qb"
+    ],
+    "places": [
+     "G000674",
+     "G000664",
+     "G000685",
+     "G000636",
+     "G000683",
+     "G000748",
+     "ediarum_tg2_4ty_2qb",
+     "ediarum_v5g_vty_2qb",
+     "ediarum_kyj_rty_2qb",
+     "ediarum_ycc_p5y_2qb"
+    ],
+    "works": [
+     "ed_yx3_c4y_2qb",
+     "ed_v11_d1p_nnb",
+     "G004286",
+     "G004226"
+    ]
+   }
+  }
+ },
+ {
+  "id": "ed_jyl_wjx_3xb",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nqtj_prv_cfc",
+    "nsrc_fwx_3xb",
+    "nwm4_gwx_3xb",
+    "nnl5_hwx_3xb",
+    "nzwj_jwx_3xb",
+    "nqdc_nwx_3xb",
+    "nd5j_4wx_3xb",
+    "nwvh_d1c_t1c",
+    "ns3b_twx_3xb",
+    "ngrp_wwx_3xb",
+    "np21_zwx_3xb"
+   ],
+   "title": "Ferdinand Gregorovius an Mathilde von Humboldt in Rom. München, 1. März 1891",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001304"
+   ],
+   "date": "1891-03-01",
+   "place": {
+    "sent": "G000734",
+    "received": "G000763"
+   },
+   "incipit": "es ist eine längere Zeit, als erlaubt war, hingegangen, ohne daß ich Ihnen wieder geschrieben habe. ",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "ed_twp_rx1_rsb",
+     "ed_hrz_11y_3xb",
+     "G001203",
+     "G001111",
+     "G001703",
+     "ed_kfk_krp_gmb",
+     "ed_l5j_rhk_qmb",
+     "G001702",
+     "ed_bwx_jrp_gqb",
+     "G000945",
+     "ed_mrz_4v4_wsb",
+     "ed_zwl_dt2_qtb",
+     "ed_hzm_b52_qtb"
+    ],
+    "places": [
+     "G000726",
+     "G000690"
+    ],
+    "works": []
+   }
+  }
+ },
+ {
+  "id": "G000141",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nug1_c31_cfc",
+    "nk1g_xkq_1mb",
+    "nxch_mfy_dbc",
+    "nnd3_rlq_1mb",
+    "npxk_tlq_1mb",
+    "nfrf_plq_1mb",
+    "nkms_nnx_cmb",
+    "njk4_wgy_dbc",
+    "ng1y_pgy_dbc",
+    "nwpw_3hy_dbc"
+   ],
+   "title": "Ferdinand Gregorovius an Johann Georg Freiherr Cotta von Cottendorf in Stuttgart. Rom, 14. Januar 1862",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001055"
+   ],
+   "date": "1862-01-14",
+   "place": {
+    "sent": "G000763",
+    "received": "G000879"
+   },
+   "incipit": "ich erlaube mir Ihnen anzuzeigen, daß am 13. Januar die erste Hälfte des Bandes IV von hier nach Fra",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G004713",
+     "G067661",
+     "ed_pr2_hfy_dbc",
+     "G004668",
+     "G000462"
+    ],
+    "places": [
+     "G00067499",
+     "G000721",
+     "G000599",
+     "G000664"
+    ],
+    "works": [
+     "G003462",
+     "G003106",
+     "G004435",
+     "G003905 G003906 G003907"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000214",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nc1r_v2x_cfc",
+    "nth2_4v2_gbc",
+    "nttj_swf_lwb",
+    "numk_vv2_gbc",
+    "nrzt_qb3_gmb",
+    "nehv_gw2_gbc",
+    "nv33_mw2_gbc",
+    "nvkm_hc3_gmb",
+    "nllz_fpm_xvb",
+    "ner5_3c3_gmb",
+    "nr3w_jc3_gmb",
+    "np2m_lc3_gmb",
+    "ndbd_4c3_gmb",
+    "nptq_nx2_gbc",
+    "nndv_tc3_gmb",
+    "nvjf_cd3_gmb",
+    "nxs5_cd3_gmb"
+   ],
+   "title": "Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 9. April 1866",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001644"
+   ],
+   "date": "1866-04-09",
+   "place": {
+    "sent": "G000763",
+    "received": "G000636"
+   },
+   "incipit": "Die freundliche Nachricht von Ihrer aller Wolergehen hat mich innig erfreut. Ich danke Ihnen herzlic",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001583",
+     "G001229",
+     "G001408",
+     "G001447",
+     "G001302",
+     "G001410",
+     "G001001",
+     "G001411",
+     "G001363",
+     "G000541",
+     "G000510",
+     "G000494"
+    ],
+    "places": [
+     "G000690",
+     "G000646",
+     "G000833",
+     "G000734",
+     "G000735"
+    ],
+    "works": [
+     "G003434 G003441 G003448 G003455 G003462 G003469 G003476 G003485",
+     "G003455"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G067797",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nt5t_b3p_jlb",
+    "ncnk_xbr_wzb",
+    "nad2_2jp_jlb",
+    "nskl_tw4_5qb"
+   ],
+   "title": "Ferdinand Gregorovius an Heinrich Laube in Wien. Königsberg, 4. Februar 1851",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001355"
+   ],
+   "date": "1851-02-04",
+   "place": {
+    "sent": "G000699",
+    "received": "G000897"
+   },
+   "incipit": "Herr Anton Schurz reichte Ihnen mein dreiactiges Trauerspiel „Der Tod des Tiberius“ zur geneigten Be",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G004729"
+    ],
+    "places": [
+     "G067533"
+    ],
+    "works": [
+     "G003105"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000090",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "njwt_vlp_cfc",
+    "nekg_ns4_cbc",
+    "njjh_2t4_cbc",
+    "nxmj_tym_ylb",
+    "nexj_pt4_cbc",
+    "ng5q_yym_ylb",
+    "nlcr_zym_ylb",
+    "ncc5_zt4_cbc",
+    "nwk3_dzm_ylb",
+    "nlr1_j54_cbc",
+    "nnck_jzm_ylb",
+    "nszk_n54_cbc",
+    "ni2j_r54_cbc",
+    "nwx3_rzm_ylb"
+   ],
+   "title": "Ferdinand Gregorovius an Ottilie Elgnowski und Emilie Auguste Gregorovius in Insterburg. Rom, 17. März 1860",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001111",
+    "G001198"
+   ],
+   "date": "1860-03-17",
+   "place": {
+    "sent": "G000763",
+    "received": "G000689"
+   },
+   "incipit": "erst heute – an dem Todestage meiner Mutter,Wilhelmine Gregorovius, geb. Kausch (*1783) war am 17. M",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001203",
+     "G001109",
+     "G001207",
+     "G001198",
+     "G000913",
+     "G067677",
+     "G001171",
+     "G001110",
+     "G067678"
+    ],
+    "places": [
+     "G000690",
+     "ed_onw_cld_rlb"
+    ],
+    "works": [
+     "G003469",
+     "G003462",
+     "ed_e5c_gzc_rlb"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000004",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nx1w_mkq_jlb",
+    "nxqw_1mp_jlb",
+    "nygs_j4z_51c",
+    "ns1t_44z_51c",
+    "nm1k_2xg_wtb",
+    "nrdz_bpz_51c",
+    "nxj3_nnp_jlb",
+    "nmvt_3pz_51c"
+   ],
+   "title": "Ferdinand Gregorovius an Gustav Kolb in Augsburg. Rom, 5. Februar 1853",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001344"
+   ],
+   "date": "1853-02-05",
+   "place": {
+    "sent": "G000763",
+    "received": "G000620"
+   },
+   "incipit": "gestatten Sie mir, daß ich Ihnen für die Freundlichkeit Ihres Schreibens vom 14. Januar persönlich d",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001414",
+     "G000918",
+     "G000462",
+     "G000523"
+    ],
+    "places": [
+     "G000664"
+    ],
+    "works": [
+     "G003785 G003786 G003787 G003788 G003789 G003790",
+     "G003764 G003765 G003766 G003767 G003768 G003769 G003770 G003771 G003772 G003773 G003774 G003775 G003776 G003777 G003778",
+     "G003771 G003772 G003773 G003774"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000247",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nhp3_gnw_cfc",
+    "njjl_cjm_31c",
+    "nbn2_1cj_1mb",
+    "ni3m_kjm_31c",
+    "nx1c_2cj_1mb",
+    "ncbv_pjm_31c",
+    "ny35_k3k_1mb",
+    "nctg_33k_1mb",
+    "ngxw_1jk_wbc",
+    "nkmh_clm_31c",
+    "nk1c_vjk_wbc",
+    "nrvq_tnm_31c",
+    "ngxs_24m_31c",
+    "ndqw_4dj_1mb",
+    "nkdh_x4m_31c",
+    "naks_sdj_1mb",
+    "nlj3_qkk_wbc",
+    "nubm_wpm_31c",
+    "npgl_vkk_wbc",
+    "nxcg_gfz_z5b",
+    "noks_m3k_1mb",
+    "nc1v_vqm_31c",
+    "ndrk_mrm_31c",
+    "nxd5_1tm_31c",
+    "nss4_hsm_31c",
+    "nkfz_zdj_1mb",
+    "nflg_zq5_f5b"
+   ],
+   "title": "Ferdinand Gregorovius an Raffaele Mariano in Rom. München, 29. November 1877",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001401"
+   ],
+   "date": "1877-11-29",
+   "place": {
+    "sent": "G000734",
+    "received": "G000763"
+   },
+   "incipit": "ich freue mich, daß ich von Ihnen Nachrichten habe und vernehme, daß es Ihnen in meiner alten Via Gr",
+   "resp": [
+    "Steinsiek",
+    "Neuber"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001203 G001111",
+     "G001102",
+     "G001375",
+     "G001215",
+     "ed_ezy_g42_rlb",
+     "ed_u3y_h5p_lnb",
+     "G001703",
+     "G001011",
+     "G001569",
+     "G001545",
+     "ed_ufl_rp2_rlb",
+     "ed_ow5_jx4_bgb",
+     "G001012",
+     "G001376",
+     "G001700",
+     "G000979",
+     "G000494",
+     "G000510",
+     "ed_oc5_sl2_rlb",
+     "G000467",
+     "ed_dg2_lpg_p4b",
+     "G000467",
+     "G000510"
+    ],
+    "places": [
+     "ediarum_lmm_slx_qlb",
+     "ediarum_s5l_b42_rlb",
+     "G000894",
+     "G000671",
+     "G000690",
+     "G000638"
+    ],
+    "works": [
+     "G004018",
+     "G002309",
+     "G004234 G004309 G004311 G004312",
+     "ed_ed5_mhk_cqb",
+     "ed_fst_swd_rmb",
+     "G004017",
+     "ed_dgj_3nr_31c",
+     "ed_yr4_nvd_rlb",
+     "ed_rsm_hq2_rlb"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000143",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nasn_d31_cfc",
+    "nycw_dh2_nxb",
+    "nx4f_2mq_1mb",
+    "nw5p_k3y_dbc",
+    "njhw_lmq_1mb",
+    "nr33_qmq_1mb",
+    "nrkr_s3y_dbc"
+   ],
+   "title": "Ferdinand Gregorovius an Johann Georg Freiherr Cotta von Cottendorf in Stuttgart. Rom, nach dem 14. Januar 1862",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001055"
+   ],
+   "date": "1862-01-15",
+   "place": {
+    "sent": "G000763",
+    "received": "G000879"
+   },
+   "incipit": "Ihr freundliches Schreiben erhielt ich gestern,Vorliegendes, undatiertes Schreiben steht inhaltlich ",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G067661",
+     "G000523"
+    ],
+    "places": [
+     "G000721",
+     "G000664"
+    ],
+    "works": [
+     "G067698",
+     "G003434 G003441 G003448 G003455 G003462 G003469 G003476 G003485"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000016",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nowc_nh1_cfc",
+    "nocq_yf1_v1c",
+    "nwrd_lwn_llb",
+    "ntj5_5wn_llb"
+   ],
+   "title": "Ferdinand Gregorovius an Johann Georg Freiherr Cotta von Cottendorf in Stuttgart. Rom, 25. Mai 1854",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001055"
+   ],
+   "date": "1854-05-25",
+   "place": {
+    "sent": "G000763",
+    "received": "G000879"
+   },
+   "incipit": "ich habe, hochgeehrter Herr, in diesen Tagen eines der Exemplare des „Corsica“, welche an die deutsc",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001557",
+     "G000545"
+    ],
+    "places": [
+     "G000690",
+     "G000699"
+    ],
+    "works": [
+     "G003106"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000038",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nugc_zk3_cfc",
+    "ncc4_jkh_v1c",
+    "nghs_vkh_v1c"
+   ],
+   "title": "Ferdinand Gregorovius an den F. A. Brockhaus Verlag und Heinrich Brockhaus in Leipzig. Rom, 22. April 1855",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G000996",
+    "G000480"
+   ],
+   "date": "1855-04-22",
+   "place": {
+    "sent": "G000763",
+    "received": "G000712"
+   },
+   "incipit": "ich übersende Ihnen, geehrtester Herr,Der Verleger Heinrich Brockhaus (1804–1874) war ein Sohn des V",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [],
+    "places": [
+     "G000737"
+    ],
+    "works": [
+     "G003836"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000386",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nvwd_vx2_t4b",
+    "njgb_ys1_5rb",
+    "nshl_1sd_p1c",
+    "nwbj_fsd_p1c"
+   ],
+   "title": "Ferdinand Gregorovius an Giovanni Bizio in Venedig. München, 7. Dezember 1884",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G000970"
+   ],
+   "date": "1884-12-07",
+   "place": {
+    "sent": "G000734",
+    "received": "G000894"
+   },
+   "incipit": "La morte del compianto abate Rinaldo Fulin,Der von Gregorovius sehr geschätzte venezianische Histori",
+   "resp": [
+    "Steinsiek",
+    "Weiger"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001151",
+     "ed_wvg_sms_kmb",
+     "ed_xcp_4ms_kmb"
+    ],
+    "places": [
+     "G000664"
+    ],
+    "works": []
+   }
+  }
+ },
+ {
+  "id": "ed_mnf_xjj_zrb",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "njxt_443_cfc",
+    "nevk_ppd_p1c",
+    "nfbv_rpd_p1c",
+    "nczv_tdl_dcc",
+    "nall_ypd_p1c",
+    "nyfv_f2l_dcc",
+    "niyn_1mj_zrb",
+    "nim4_dmj_zrb",
+    "nm1l_nqd_p1c",
+    "njsj_5mj_zrb",
+    "nczn_5qd_p1c",
+    "nuc2_zqd_p1c"
+   ],
+   "title": "Ferdinand Gregorovius an Contessa Ersilia Caetani Lovatelli in Rom. München, 30. November 1884",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001011"
+   ],
+   "date": "1884-11-30",
+   "place": {
+    "sent": "G000734",
+    "received": "G000763"
+   },
+   "incipit": "ich bin Ihnen gegenüber länger, als ich selbst geglaubt hätte, im Rückstande geblieben, denn es ist ",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001203 G001111",
+     "ed_sbg_pxn_5lb",
+     "G001613",
+     "ed_wgh_54j_zrb",
+     "G067611",
+     "ed_y32_stc_fmb",
+     "ed_agg_jqj_zrb",
+     "ed_bgv_xbk_zrb"
+    ],
+    "places": [
+     "G000619",
+     "G067585"
+    ],
+    "works": [
+     "G004049",
+     "G003434 G003441 G003448 G003455 G003462 G003469 G003476 G003485",
+     "ed_pht_kpj_zrb"
+    ]
+   }
+  }
+ },
+ {
+  "id": "ed_bhl_y5j_zrb",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nzfb_vcq_cfc",
+    "ntrc_rsd_p1c",
+    "nsvc_xxj_zrb",
+    "nyph_1td_p1c",
+    "nwcc_ftd_p1c",
+    "nfsp_4td_p1c",
+    "nazs_41k_zrb",
+    "nfgk_q1k_zrb",
+    "nogk_s1k_zrb"
+   ],
+   "title": "Ferdinand Gregorovius an Conte Giovanni Gozzadini in Bologna. München, 22. Dezember 1884",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001187"
+   ],
+   "date": "1884-12-22",
+   "place": {
+    "sent": "G000734",
+    "received": "G000638"
+   },
+   "incipit": "ora che l’anno volge alla sua fine, penso più del solito ai cari amici, piangendo gli uni, che non s",
+   "resp": [
+    "Steinsiek",
+    "Voci"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001188",
+     "G067611",
+     "G000494",
+     "ed_bgv_xbk_zrb",
+     "ed_jcl_dck_zrb",
+     "ed_w5h_3bk_zrb",
+     "ed_xtw_kbk_zrb",
+     "ed_xyr_nbk_zrb"
+    ],
+    "places": [
+     "G000690",
+     "G000664",
+     "G000619",
+     "G067585"
+    ],
+    "works": [
+     "G004048"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000103",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nsn3_3gx_cfc",
+    "nrcm_hqs_wlb",
+    "nnjp_cb2_z1c",
+    "nlzj_gb2_z1c",
+    "nuhs_jb2_z1c",
+    "ns3k_rb2_z1c",
+    "ne5g_vb2_z1c",
+    "nspv_zb2_z1c",
+    "nijn_kml_nzb",
+    "nvq5_4d2_z1c",
+    "na2f_b22_z1c",
+    "nw1k_mrs_wlb",
+    "ns5f_nrs_wlb",
+    "nm2v_vrs_wlb",
+    "new2_5rs_wlb",
+    "nrtv_l22_z1c",
+    "nk11_hf2_z1c",
+    "nofp_4ss_wlb",
+    "npbr_5ss_wlb",
+    "nod1_l2q_2mb",
+    "nodh_yf2_z1c"
+   ],
+   "title": "Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 11. April 1859",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001644"
+   ],
+   "date": "1859-04-11",
+   "place": {
+    "sent": "G000763",
+    "received": "G000636"
+   },
+   "incipit": "mit einer wahrhaften Freude habe ich Ihr freundliches Schreiben vom Januar erhalten und daraus geseh",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001645",
+     "G001643",
+     "G001469",
+     "G004731",
+     "G000913",
+     "G001049",
+     "G004701",
+     "G001564",
+     "G067658",
+     "G000523",
+     "G000541"
+    ],
+    "places": [
+     "G000730",
+     "ediarum_qkw_lhn_y4b",
+     "ediarum_egt_1tn_y4b"
+    ],
+    "works": [
+     "G003476",
+     "G003485",
+     "G004218",
+     "G003469",
+     "G003872"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000127",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "ntxv_2gx_cfc",
+    "nu24_gdx_cbc",
+    "nlkr_3dx_cbc",
+    "np1j_kdx_cbc",
+    "nfq5_5qb_dbc",
+    "nrx3_gmn_hzb",
+    "nqgh_prb_dbc",
+    "ntyp_zrb_dbc",
+    "nj4y_jsb_dbc",
+    "ngcv_3sb_dbc",
+    "nhp1_msb_dbc",
+    "na5h_5rz_ylb",
+    "nmsx_vsb_dbc",
+    "nuyz_m5b_dbc",
+    "nxgx_1tz_ylb",
+    "na34_w5b_dbc",
+    "naff_zvb_dbc",
+    "nxzx_xvb_dbc",
+    "noh3_swb_dbc",
+    "nqrb_c5z_ylb",
+    "nx1x_bxb_dbc",
+    "nkl3_pyb_dbc",
+    "nbty_jzb_dbc",
+    "nymx_k5z_ylb",
+    "nt3s_rzb_dbc",
+    "nbcv_b1c_dbc",
+    "nawt_x5z_ylb",
+    "np1d_fbc_dbc"
+   ],
+   "title": "Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 16. und 22. Dezember 1860",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001644"
+   ],
+   "date": "1860-12-16",
+   "place": {
+    "sent": "G000763",
+    "received": "G000636"
+   },
+   "incipit": "Haben Sie herzlichen Dank, mein hochverehrter Herr,Der Diplomat Hermann von Thile (1812–1889) war En",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001643 G001644",
+     "G067606",
+     "G001049",
+     "G000995",
+     "G067607",
+     "G001412",
+     "G000913",
+     "G000967",
+     "G067608",
+     "G001049",
+     "G004700",
+     "G001545",
+     "G000913",
+     "G001643",
+     "G001645",
+     "G001189",
+     "G067526",
+     "ed_onw_cld_rlb"
+    ],
+    "places": [
+     "ediarum_lmm_slx_qlb",
+     "ediarum_x4c_ybf_lwb",
+     "G000674",
+     "G067535",
+     "G067536",
+     "G000677",
+     "G000725",
+     "G000671",
+     "G000685",
+     "G000878",
+     "G067546",
+     "G000795",
+     "G067534",
+     "G067537",
+     "G004672",
+     "G000690",
+     "G067572",
+     "G000674",
+     "G000647",
+     "G000664",
+     "G000839",
+     "G000807"
+    ],
+    "works": [
+     "G067697",
+     "G003469",
+     "G003476 G003485",
+     "G003462",
+     "G003435 G003442 G003449 G003456 G003463 G003470 G003477 G003489",
+     "G067693"
+    ]
+   }
+  }
+ },
+ {
+  "id": "ed_stv_wxl_qwb",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nhmm_4zl_qwb",
+    "njdc_szl_qwb",
+    "npcb_zzl_qwb",
+    "ngms_11m_qwb",
+    "nddr_m1m_qwb",
+    "ndyv_q1m_qwb"
+   ],
+   "title": "Ferdinand Gregorovius an Moritz August Freiherr von Bethmann-Hollweg in Berlin. Königsberg, 19. August 1860",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G000967"
+   ],
+   "date": "1860-08-19",
+   "place": {
+    "sent": "G000699",
+    "received": "G000636"
+   },
+   "incipit": "Hoher Erlaß vom 23. Juli dieses Jahres ist mir durch die Königliche Legation von Rom aus so eben zug",
+   "resp": [
+    "Steinsiek",
+    "Ramazzotti"
+   ],
+   "mentioned": {
+    "persons": [
+     "ed_qqb_mky_1lb"
+    ],
+    "places": [
+     "G000763",
+     "G000646"
+    ],
+    "works": [
+     "G003469 G003476 G003485"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000056",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nqbf_kl3_cfc",
+    "nujb_vcf_plb",
+    "njjh_ncj_v1c",
+    "ne55_tcj_v1c",
+    "nc5n_tff_plb",
+    "nrvh_xcj_v1c",
+    "nrkd_1dj_v1c",
+    "nqx1_w54_qlb",
+    "nrx2_2dj_v1c",
+    "nexv_3dj_v1c",
+    "nhqf_bx4_qlb",
+    "nshl_wx4_qlb",
+    "nglm_tdj_v1c",
+    "nlff_jx4_qlb",
+    "nqqd_wdj_v1c",
+    "ntgx_hz4_qlb",
+    "nm2k_m1p_qlb",
+    "nopm_cbp_qlb"
+   ],
+   "title": "Ferdinand Gregorovius an Heinrich Brockhaus in Leipzig. Rom, 11. Dezember 1855",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G000996"
+   ],
+   "date": "1855-12-11",
+   "place": {
+    "sent": "G000763",
+    "received": "G000712"
+   },
+   "incipit": "Ihr Schreiben vom 1. December dieses ist mir heute zugegangen, nebst dem Formular für Constable et C",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G000918",
+     "G001511",
+     "G000471",
+     "G000462"
+    ],
+    "places": [
+     "G000650",
+     "G000664"
+    ],
+    "works": [
+     "G003114",
+     "G003106",
+     "G002439",
+     "G004072",
+     "G003838",
+     "G003434 G003441 G003448 G003455 G003462 G003469 G003476 G003485"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000408",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nerk_jw4_cfc",
+    "ne5z_g13_vlb",
+    "nhs5_b43_hzb",
+    "nxck_v5h_cbc",
+    "nk4g_m13_vlb",
+    "noz4_n13_vlb",
+    "nfyh_jvh_cbc"
+   ],
+   "title": "Ferdinand Gregorovius an Giovanni Battista De Rossi in Rom. Rom, 26. Dezember 1859",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001085"
+   ],
+   "date": "1859-12-26",
+   "place": {
+    "sent": "G000763",
+    "received": "G000763"
+   },
+   "incipit": "eccovi la seconda parte dell’opera mia,Der zweite Band seiner „Geschichte der Stadt Rom im Mittelalt",
+   "resp": [
+    "teinsiek",
+    "Weiger"
+   ],
+   "mentioned": {
+    "persons": [],
+    "places": [
+     "ediarum_tcc_4nv_slb"
+    ],
+    "works": [
+     "G003485",
+     "G003476",
+     "G003469"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G000099",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nzvy_th3_xlb",
+    "nwpc_1nb_1bc",
+    "np1v_cnb_1bc",
+    "nvvd_fnb_1bc",
+    "nhqp_lnb_1bc",
+    "ndmg_4nb_1bc",
+    "nqcx_c33_xlb",
+    "nstd_233_xlb",
+    "ngcc_5nb_1bc",
+    "npkg_333_xlb",
+    "nqdn_24b_1bc"
+   ],
+   "title": "Ferdinand Gregorovius an die J. G. Cotta’sche Buchhandlung in Stuttgart. Rom, 22. September 1859",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G000523"
+   ],
+   "date": "1859-09-22",
+   "place": {
+    "sent": "G000763",
+    "received": "G000879"
+   },
+   "incipit": "eben aus der Campagna zurückgekehrt,Im August / September 1859 hatte Gregorovius mehrfach Ausflüge i",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G001203",
+     "G001022",
+     "G001055",
+     "G000533",
+     "G000545"
+    ],
+    "places": [
+     "ed_hqc_lrv_gmb",
+     "G000663",
+     "G004694",
+     "G000730",
+     "G000712"
+    ],
+    "works": [
+     "G003877 G003878",
+     "G003476",
+     "G003485",
+     "G002619",
+     "G004794"
+    ]
+   }
+  }
+ },
+ {
+  "id": "ed_krm_s3y_3xb",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nemq_s1x_cfc",
+    "nlrk_gky_3xb",
+    "niw1_3ky_3xb",
+    "nk2p_jky_3xb",
+    "nq3l_lky_3xb",
+    "nkxr_mky_3xb",
+    "nf4z_nky_3xb",
+    "nm2g_pky_3xb",
+    "nzqv_qky_3xb"
+   ],
+   "title": "Ferdinand Gregorovius an Franz Rühl in Königsberg. München, 22. März 1891",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001562"
+   ],
+   "date": "1891-03-22",
+   "place": {
+    "sent": "G000734",
+    "received": "G000699"
+   },
+   "incipit": "ich habe die Kunde von dem schweren Verlust erhalten, welcher Sie und vor allem Ihre Frau betroffen ",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "ed_q51_glp_5mb",
+     "ed_lz1_yky_3xb",
+     "ed_bws_lly_3xb",
+     "ed_ifm_bmy_3xb ed_nzl_3my_3xb",
+     "G001111",
+     "G001203",
+     "ed_ujn_cxw_gpb ed_rvn_p3h_ynb"
+    ],
+    "places": [],
+    "works": [
+     "G003465",
+     "G003437 G003444 G003451 G003458"
+    ]
+   }
+  }
+ },
+ {
+  "id": "G067718",
+  "entity": "letters",
+  "properties": {
+   "comments": [
+    "nwj1_vgy_1mb",
+    "nipw_r11_2bc",
+    "njrn_wgy_1mb",
+    "nnbm_xgy_1mb",
+    "nkgk_ygy_1mb",
+    "nuh1_zgy_1mb",
+    "nz42_chy_1mb",
+    "ngfd_rb1_2bc",
+    "nu3q_5b1_2bc",
+    "nkdp_wb1_2bc",
+    "nyqn_1c1_2bc",
+    "nxsk_hc1_2bc"
+   ],
+   "title": "Ferdinand Gregorovius an Karl Ritter von Scherzer in Wien. Rom, 15. und 27. Dezember 1862",
+   "sender": [
+    "G001200"
+   ],
+   "recipient": [
+    "G001577"
+   ],
+   "date": "1862-12-15",
+   "place": {
+    "sent": "G000763",
+    "received": "G000897"
+   },
+   "incipit": "mit wahrhafter Freude empfing ich Ihre Zeilen, welche mich augenblicklich in jene Engadinische Welt ",
+   "resp": [
+    "Steinsiek"
+   ],
+   "mentioned": {
+    "persons": [
+     "G067645",
+     "G067624",
+     "G004729",
+     "ed_hwr_qzp_lkb ed_l4k_4zp_lkb ed_vv3_41q_lkb ed_avv_l1q_lkb ed_vf5_b1q_lkb",
+     "G001359",
+     "G067531",
+     "G000460",
+     "G067532"
+    ],
+    "places": [
+     "ediarum_lmm_slx_qlb",
+     "G067579",
+     "G067578",
+     "G000771",
+     "ediarum_egt_1tn_y4b",
+     "G000716",
+     "G067598",
+     "G000664"
+    ],
+    "works": [
+     "G067700",
+     "G003462",
+     "G003469 G003476 G003485"
+    ]
+   }
+  }
+ }
+]

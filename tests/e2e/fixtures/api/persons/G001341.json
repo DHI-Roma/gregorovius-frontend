@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001341",
+  "persName": {
+   "@type": "reg",
+   "surname": "Knight",
+   "forename": "Helen Giorgiana"
+  },
+  "birth": "1820",
+  "death": "1893"
+ }
+}

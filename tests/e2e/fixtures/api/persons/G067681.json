@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067681",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117157244"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Bunsen",
+   "forename": "Karl von"
+  },
+  "birth": "1821",
+  "death": "1887"
+ }
+}

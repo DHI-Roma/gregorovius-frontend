@@ -29,3 +29,8 @@ cypress/screenshots
 env.js
 UPGRADE_TODOS.md
 UPGRADE_PLAN.md
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/

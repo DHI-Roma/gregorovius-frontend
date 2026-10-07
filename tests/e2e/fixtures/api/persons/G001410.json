@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001410",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/139552782"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Buch",
+   "forename": "Ludwig August von"
+  },
+  "birth": "1801",
+  "death": "1845"
+ }
+}

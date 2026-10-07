@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_qqs_1ny_2qb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118574574"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Lotze",
+   "forename": "Hermann"
+  },
+  "birth": "1817",
+  "death": "1881"
+ }
+}

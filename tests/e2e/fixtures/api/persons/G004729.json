@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004729",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117316261"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Schurz",
+   "forename": "Anton Xaver"
+  },
+  "birth": "1794",
+  "death": "1859"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ediarum_egt_1tn_y4b",
+  "@type": "mountain",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3180706"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Kapitol (Rom)"
+  }
+ }
+}

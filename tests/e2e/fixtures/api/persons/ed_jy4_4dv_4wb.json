@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_jy4_4dv_4wb",
+  "persName": {
+   "@type": "reg",
+   "surname": "Bunsen",
+   "forename": "Theodora von"
+  },
+  "birth": "1832",
+  "death": "1862"
+ }
+}

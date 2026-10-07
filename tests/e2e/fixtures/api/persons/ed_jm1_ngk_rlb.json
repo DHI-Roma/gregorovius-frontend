@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_jm1_ngk_rlb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118610465"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Schopenhauer",
+   "forename": "Arthur"
+  },
+  "birth": "1788",
+  "death": "1860"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_xtw_kbk_zrb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1013012-3"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Bibliothèque Nationale de France. Département des Monnaies, Medailles et Antiques"
+  }
+ }
+}

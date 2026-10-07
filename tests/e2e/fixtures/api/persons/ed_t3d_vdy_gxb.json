@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_t3d_vdy_gxb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1073420736"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Mögling",
+   "forename": "Heinrich"
+  },
+  "birth": "1827",
+  "death": "1915"
+ }
+}

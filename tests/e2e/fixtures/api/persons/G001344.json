@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001344",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116310790"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Kolb",
+   "forename": "Gustav"
+  },
+  "birth": "1798",
+  "death": "1865"
+ }
+}

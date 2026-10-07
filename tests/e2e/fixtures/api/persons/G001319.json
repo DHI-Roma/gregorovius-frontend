@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001319",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117175684"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Jonas",
+   "forename": "Rudolf"
+  },
+  "birth": "1822",
+  "death": "1888"
+ }
+}

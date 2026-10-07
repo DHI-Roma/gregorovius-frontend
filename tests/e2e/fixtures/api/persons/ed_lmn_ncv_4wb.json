@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_lmn_ncv_4wb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/108157223X"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Bunsen",
+   "forename": "Franziska (Frances) von"
+  },
+  "birth": "1826",
+  "death": "1894"
+ }
+}

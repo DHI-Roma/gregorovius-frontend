@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001589",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118611720"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Schurz",
+   "forename": "Carl"
+  },
+  "birth": "1829",
+  "death": "1906"
+ }
+}

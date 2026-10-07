@@ -1,0 +1,130 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an die J. G. Cotta’sche Buchhandlung Nachfolger in Stuttgart. München, 8. September 1890",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "DLA Marbach",
+      "collection": "Cotta-Archiv",
+      "idno": [
+       "Cotta-Briefe, 488",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/ed_fpn_wyx_gxb/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": "1 Dbl., 8°, 4 S."
+     }
+    },
+    "listWit": {
+     "witness": {
+      "bibl": {
+       "@type": "print",
+       "#text": "Johannes Hönig: Ferdinand Gregorovius der Geschichtschreiber der Stadt Rom. Stuttgart, Berlin 1921. S. 524 (stark gekürzt)"
+      }
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Nach der Rückkehr von seiner Rhein- und Moselreise hat er den Brief des Verlagshauses vorgefunden, dass ihn erneut auffordert, an dem geplanten „Cotta’schen Musen-Almanach“ mitzuwirken. Die Herausgeberschaft Otto Brauns macht ihm dies unmöglich. Die überzähligen, weil doppelt vorhandenen Druckfahnen der vierten Auflage des vierten Bandes seiner „Geschichte der Stadt Rom im Mittelalter“ (1890) schickt er zurück. Er hat jetzt ein komplettes Exemplar in Druckfahnen bezogen. Über seine übrigen Freiexemplare wird er nach dem Erscheinen verfügen. Die Revisionsmanuskripte für die vierte Auflage der Bände 5–8 liegen bereit. Nach seinem Tod werden diese an den Verlag gesandt und Franz Rühl wird den Neudruck überwachen. Mit dem Verkauf eines Drittels der Auflage seiner „Geschichte der Stadt Athen im Mittelalter“ (1889) ist er zufrieden. Demnach sind hiervon in einem Jahr so viele Exemplare verkauft worden wie von seiner „Geschichte der Stadt Rom im Mittelalter“ in acht Jahren. Er hat sich gefreut, die Nachfolger des berühmten Verlagshauses Cotta persönlich getroffen zu haben, mit dem er seit so vielen Jahren verbunden ist. Er bittet den von ihm geschätzten, langjährigen Prokuristen Heinrich Mögling zu grüßen, nach dem zu fragen er bei seinem Stuttgarter Aufenthalt er leider versäumt hat."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "After returning from his trip to the Rhine and Moselle, he found a letter from the publishing house, in which he is again asked to participate in the planned „Cotta’schen Musen-Almanach“. The fact that Otto Braun is the editor makes this impossible for him. He sends back the surplus galley proofs, as there are duplicates, of the fourth edition of the fourth volume of his „Geschichte der Stadt Rom im Mittelalter“ (1890). He has now obtained a complete copy in galley proofs. He will decide on his remaining free copies after publication. The revision manuscripts for the fourth edition of volumes 5–8 are ready. After his death, these will be sent to the publisher and Franz Rühl will supervise the reprint. He is satisfied with the sale of a third of the print run of his „Geschichte der Stadt Athen im Mittelalter“ (1889). That means that it has sold as many copies in one year as his „Geschichte der Stadt Rom im Mittelalter“ has in eight years. He was pleased to have personally met the successors of the famous publishing house Cotta, with whom he has been affiliated for so many years. He asks to greet the long-time authorized signatory Heinrich Mögling, who he unfortunately forgot to ask about during his stay in Stuttgart."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000734",
+       "#text": "München"
+      },
+      "date": {
+       "@when": "1890-09-08",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "orgName": {
+       "@key": "ed_icv_gll_swb",
+       "#text": "J. G. Cotta’sche Buchhandlung Nachfolger"
+      },
+      "placeName": {
+       "@key": "G000879",
+       "#text": "Stuttgart"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": {
+      "@type": "prev",
+      "#text": "22. August 1890 (DLA Marbach, Cotta-Archiv, Autoren-Copierbuch 2 [3. Mai 1890 – 7. Februar 1891], 396)"
+     }
+    }
+   }
+  }
+ }
+}

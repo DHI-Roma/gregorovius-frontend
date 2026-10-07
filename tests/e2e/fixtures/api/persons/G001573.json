@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001573",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118606042"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Schack",
+   "forename": "Adolf Friedrich von"
+  },
+  "birth": "1815",
+  "death": "1894"
+ }
+}

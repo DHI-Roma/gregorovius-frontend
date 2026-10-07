@@ -1,0 +1,10 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000541",
+  "orgName": {
+   "@type": "reg",
+   "#text": "Preußisches Kultusministerium"
+  }
+ }
+}

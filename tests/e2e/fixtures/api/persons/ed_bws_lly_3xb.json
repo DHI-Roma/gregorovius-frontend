@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_bws_lly_3xb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/14105736X"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Bujack",
+   "forename": "Georg"
+  },
+  "birth": "1835",
+  "death": "1891"
+ }
+}

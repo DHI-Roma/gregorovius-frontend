@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001080",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118988166"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Demmler",
+   "forename": "Georg Adolf"
+  },
+  "birth": "1804",
+  "death": "1886"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001376",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/129692425"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Lindemann-Frommel",
+   "forename": "Manfred"
+  },
+  "birth": "1852",
+  "death": "1939"
+ }
+}

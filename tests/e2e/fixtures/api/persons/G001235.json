@@ -1,0 +1,23 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001235",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://gregorovius-edition.dhi-roma.it/persons/G001235"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Harder",
+    "forename": "Emilie"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Götz"
+   }
+  ],
+  "note": "Ehefrau von Louis Harder"
+ }
+}

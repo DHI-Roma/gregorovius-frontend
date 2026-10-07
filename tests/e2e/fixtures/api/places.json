@@ -1,0 +1,1696 @@
+[
+ {
+  "id": "G000807",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Aachen"
+   },
+   "geonamesUri": "http://www.geonames.org/3247449",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000848",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Aetna"
+   },
+   "geonamesUri": "http://www.geonames.org/2524810",
+   "type": "mountains"
+  }
+ },
+ {
+  "id": "G000601",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Agrigent"
+   },
+   "geonamesUri": "http://www.geonames.org/2525764",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000855",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Alpen"
+   },
+   "geonamesUri": "http://www.geonames.org/2661786",
+   "type": "mountains"
+  }
+ },
+ {
+  "id": "G000605",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Amalfi"
+   },
+   "geonamesUri": "http://www.geonames.org/3183130",
+   "type": ""
+  }
+ },
+ {
+  "id": "G067582",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Appenzell"
+   },
+   "geonamesUri": "http://www.geonames.org/2661740",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000619",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Athen"
+   },
+   "geonamesUri": "http://www.geonames.org/264371",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000620",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Augsburg"
+   },
+   "geonamesUri": "http://www.geonames.org/2954172",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000795",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Avignon"
+   },
+   "geonamesUri": "http://www.geonames.org/3035681",
+   "type": ""
+  }
+ },
+ {
+  "id": "G067534",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Papstpalast (Avignon)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "G000604",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Baia"
+   },
+   "geonamesUri": "http://www.geonames.org/3182488",
+   "type": ""
+  }
+ },
+ {
+  "id": "G067538",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Basel"
+   },
+   "geonamesUri": "http://www.geonames.org/2661604",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000833",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Bayern"
+   },
+   "geonamesUri": "http://www.geonames.org/2951839",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000636",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Berlin"
+   },
+   "geonamesUri": "http://www.geonames.org/2950159",
+   "type": ""
+  }
+ },
+ {
+  "id": "G067541",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Hôtel de Rome (Berlin)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "ediarum_x4c_ybf_lwb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Wilhelmsplatz (Berlin)"
+   },
+   "geonamesUri": null,
+   "type": "street"
+  }
+ },
+ {
+  "id": "G000638",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Bologna"
+   },
+   "geonamesUri": "http://www.geonames.org/3181928",
+   "type": ""
+  }
+ },
+ {
+  "id": "G00067498",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Bonn"
+   },
+   "geonamesUri": "http://www.geonames.org/6553048",
+   "type": ""
+  }
+ },
+ {
+  "id": "ed_gxl_l3y_2sb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Braunschweig"
+   },
+   "geonamesUri": "http://www.geonames.org/2945024",
+   "type": ""
+  }
+ },
+ {
+  "id": "G004682",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Brüssel"
+   },
+   "geonamesUri": "http://www.geonames.org/2800866",
+   "type": ""
+  }
+ },
+ {
+  "id": "ed_hqc_lrv_gmb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Campagna Romana"
+   },
+   "geonamesUri": "http://www.geonames.org/3181063",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000644",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Cannes"
+   },
+   "geonamesUri": "http://www.geonames.org/3028808",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000653",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Capri"
+   },
+   "geonamesUri": "http://www.geonames.org/3180630",
+   "type": ""
+  }
+ },
+ {
+  "id": "G004672",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Civitavecchia"
+   },
+   "geonamesUri": "http://www.geonames.org/3178587",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000663",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Danzig"
+   },
+   "geonamesUri": "http://www.geonames.org/3099434",
+   "type": ""
+  }
+ },
+ {
+  "id": "G067544",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Stadttheater (Danzig)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "G000664",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Deutschland"
+   },
+   "geonamesUri": "http://www.geonames.org/2921044",
+   "type": ""
+  }
+ },
+ {
+  "id": "G067543",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Weichselbrücke (Dirschau)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "G000650",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Edinburgh"
+   },
+   "geonamesUri": "http://www.geonames.org/2650225",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000617",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Elba"
+   },
+   "geonamesUri": "http://www.geonames.org/3177426",
+   "type": ""
+  }
+ },
+ {
+  "id": "G067579",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Engadin"
+   },
+   "geonamesUri": "http://www.geonames.org/2660904",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000599",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "England"
+   },
+   "geonamesUri": "http://www.geonames.org/6269131",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000794",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Europa"
+   },
+   "geonamesUri": "http://www.geonames.org/6255148",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000671",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Florenz"
+   },
+   "geonamesUri": "http://www.geonames.org/3176959",
+   "type": ""
+  }
+ },
+ {
+  "id": "ediarum_mkb_dvt_sxb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Ristorante Stella d'Italia (Florenz)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "ediarum_lkh_3vt_sxb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Caffè Landini (Florenz)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "ediarum_vvl_mvt_sxb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Caffè Galileo (Florenz)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "G00067499",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Frankfurt am Main"
+   },
+   "geonamesUri": "http://www.geonames.org/2925533",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000674",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Frankreich"
+   },
+   "geonamesUri": "http://www.geonames.org/3017382",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000675",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Frascati"
+   },
+   "geonamesUri": "http://www.geonames.org/3176589",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000678",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Genazzano"
+   },
+   "geonamesUri": "http://www.geonames.org/3176203",
+   "type": ""
+  }
+ },
+ {
+  "id": "ediarum_xmx_gct_y4b",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Genfer See"
+   },
+   "geonamesUri": "http://www.geonames.org/2660647",
+   "type": "sea"
+  }
+ },
+ {
+  "id": "G000677",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Genua"
+   },
+   "geonamesUri": "http://www.geonames.org/3176219",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000606",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Genzano"
+   },
+   "geonamesUri": "http://www.geonames.org/3176203",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000683",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Griechenland"
+   },
+   "geonamesUri": "http://www.geonames.org/390903",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000685",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Heidelberg"
+   },
+   "geonamesUri": "http://www.geonames.org/2907911",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000686",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Heiden"
+   },
+   "geonamesUri": "http://www.geonames.org/2660392",
+   "type": ""
+  }
+ },
+ {
+  "id": "ediarum_cpc_c4z_sxb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Gast- und Kurhaus Zum Freihof (Heiden)"
+   },
+   "geonamesUri": "http://d-nb.info/gnd/1125392010",
+   "type": "building"
+  }
+ },
+ {
+  "id": "G067533",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Hyperborea"
+   },
+   "geonamesUri": null,
+   "type": "mythological"
+  }
+ },
+ {
+  "id": "G000689",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Insterburg"
+   },
+   "geonamesUri": "http://www.geonames.org/568595",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000600",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Ischia"
+   },
+   "geonamesUri": "http://www.geonames.org/3175458",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000690",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Italien"
+   },
+   "geonamesUri": "http://www.geonames.org/3175395",
+   "type": ""
+  }
+ },
+ {
+  "id": "G004694",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Königreich Neapel"
+   },
+   "geonamesUri": null,
+   "type": ""
+  }
+ },
+ {
+  "id": "G000699",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Königsberg"
+   },
+   "geonamesUri": "http://www.geonames.org/554234",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000710",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Korsika"
+   },
+   "geonamesUri": "http://www.geonames.org/3023518",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000598",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Kriegshaber"
+   },
+   "geonamesUri": "http://www.geonames.org/2883960",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000712",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Leipzig"
+   },
+   "geonamesUri": "http://www.geonames.org/2879139",
+   "type": ""
+  }
+ },
+ {
+  "id": "G067555",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Hôtel de Rome (Leipzig)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "G000715",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Livorno"
+   },
+   "geonamesUri": "http://www.geonames.org/3174659",
+   "type": ""
+  }
+ },
+ {
+  "id": "G004679",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Lombardei"
+   },
+   "geonamesUri": "http://www.geonames.org/3174618",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000716",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "London"
+   },
+   "geonamesUri": "http://www.geonames.org/2643743",
+   "type": ""
+  }
+ },
+ {
+  "id": "ediarum_vhj_1ws_y4b",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Oxford Street (London)"
+   },
+   "geonamesUri": null,
+   "type": "street"
+  }
+ },
+ {
+  "id": "G067546",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Lyon"
+   },
+   "geonamesUri": "http://www.geonames.org/2996944",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000721",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Mailand"
+   },
+   "geonamesUri": "http://www.geonames.org/3173435",
+   "type": ""
+  }
+ },
+ {
+  "id": "G067537",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Maremma"
+   },
+   "geonamesUri": "http://www.geonames.org/3173975",
+   "type": ""
+  }
+ },
+ {
+  "id": "ed_mxp_tt4_5nb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Marienwerder"
+   },
+   "geonamesUri": "http://www.geonames.org/6547553",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000725",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Marseille"
+   },
+   "geonamesUri": "http://www.geonames.org/2995469",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000852",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Mecklenburg"
+   },
+   "geonamesUri": "http://www.geonames.org/2872570",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000726",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Meran"
+   },
+   "geonamesUri": "http://www.geonames.org/3173577",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000850",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Mississippi"
+   },
+   "geonamesUri": null,
+   "type": "river"
+  }
+ },
+ {
+  "id": "G000730",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Montecassino"
+   },
+   "geonamesUri": "http://www.geonames.org/3173005",
+   "type": ""
+  }
+ },
+ {
+  "id": "ed_acl_1tp_dsb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Mont Fleuri sur Territet"
+   },
+   "geonamesUri": null,
+   "type": ""
+  }
+ },
+ {
+  "id": "G004696",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Monti Lepini"
+   },
+   "geonamesUri": "http://www.geonames.org/3174867",
+   "type": "mountains"
+  }
+ },
+ {
+  "id": "G000734",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "München"
+   },
+   "geonamesUri": "http://www.geonames.org/2867714",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000735",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Schloss Nymphenburg (München)"
+   },
+   "geonamesUri": "http://www.geonames.org/6324592",
+   "type": "building"
+  }
+ },
+ {
+  "id": "ediarum_s5l_b42_rlb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Barerstraße (München)"
+   },
+   "geonamesUri": null,
+   "type": "street"
+  }
+ },
+ {
+  "id": "ediarum_tg2_4ty_2qb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Schack-Galerie (München)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "ediarum_kyj_rty_2qb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Gartenstraße (München)"
+   },
+   "geonamesUri": null,
+   "type": "street"
+  }
+ },
+ {
+  "id": "ediarum_v5g_vty_2qb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Brienner Straße (München)"
+   },
+   "geonamesUri": null,
+   "type": "street"
+  }
+ },
+ {
+  "id": "ediarum_ycc_p5y_2qb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Kaulbach-Villa (München)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "G000737",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Neapel"
+   },
+   "geonamesUri": "http://www.geonames.org/3172394",
+   "type": ""
+  }
+ },
+ {
+  "id": "G004695",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Nettuno"
+   },
+   "geonamesUri": "http://www.geonames.org/3172287",
+   "type": ""
+  }
+ },
+ {
+  "id": "G004697",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Norma"
+   },
+   "geonamesUri": "http://www.geonames.org/3172204",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000743",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Nürnberg"
+   },
+   "geonamesUri": "http://www.geonames.org/2861650",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000851",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Ohio"
+   },
+   "geonamesUri": "http://www.geonames.org/4401696",
+   "type": "river"
+  }
+ },
+ {
+  "id": "G000648",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Orvieto"
+   },
+   "geonamesUri": "http://www.geonames.org/3171874",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000647",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Österreich"
+   },
+   "geonamesUri": "http://www.geonames.org/2782113",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000603",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Paestum"
+   },
+   "geonamesUri": "http://www.geonames.org/3171709",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000748",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Palermo"
+   },
+   "geonamesUri": "http://www.geonames.org/2523920",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000842",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Palestrina"
+   },
+   "geonamesUri": "http://www.geonames.org/3171606",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000749",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Paris"
+   },
+   "geonamesUri": "http://www.geonames.org/2988507",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000751",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Perugia"
+   },
+   "geonamesUri": "http://www.geonames.org/3171180",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000839",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Piemont"
+   },
+   "geonamesUri": "http://www.geonames.org/3170831",
+   "type": "settlement"
+  }
+ },
+ {
+  "id": "G000755",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Pompei"
+   },
+   "geonamesUri": "http://www.geonames.org/3170336",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000646",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Preußen"
+   },
+   "geonamesUri": null,
+   "type": ""
+  }
+ },
+ {
+  "id": "G067535",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Rhône"
+   },
+   "geonamesUri": "http://www.geonames.org/2983752",
+   "type": "river"
+  }
+ },
+ {
+  "id": "G000763",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Rom"
+   },
+   "geonamesUri": "http://www.geonames.org/3169070",
+   "type": ""
+  }
+ },
+ {
+  "id": "G00076555",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Café Greco (Rom)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "G000769",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Villa Melini (Rom)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "G000771",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Palazzo Caffarelli (Rom)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "G004688",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Forum Romanum (Rom)"
+   },
+   "geonamesUri": "http://www.geonames.org/6269259",
+   "type": "monument"
+  }
+ },
+ {
+  "id": "G067572",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Kolosseum (Rom)"
+   },
+   "geonamesUri": "http://www.geonames.org/6269248",
+   "type": "building"
+  }
+ },
+ {
+  "id": "G067578",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Santa Maria dell’Anima (Rom)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "ediarum_lmm_slx_qlb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Via Gregoriana (Rom)"
+   },
+   "geonamesUri": null,
+   "type": "street"
+  }
+ },
+ {
+  "id": "ediarum_tcc_4nv_slb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Via Purificazione (Rom)"
+   },
+   "geonamesUri": null,
+   "type": "street"
+  }
+ },
+ {
+  "id": "ediarum_qkw_lhn_y4b",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Monte Pincio (Rom)"
+   },
+   "geonamesUri": "http://www.geonames.org/8015111",
+   "type": "mountain"
+  }
+ },
+ {
+  "id": "ediarum_hqf_fjn_y4b",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Monte Mario (Rom)"
+   },
+   "geonamesUri": "http://www.geonames.org/3173911",
+   "type": "mountain"
+  }
+ },
+ {
+  "id": "ediarum_egt_1tn_y4b",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Kapitol (Rom)"
+   },
+   "geonamesUri": "http://www.geonames.org/3180706",
+   "type": "mountain"
+  }
+ },
+ {
+  "id": "ediarum_acs_lqj_qpb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Via Condotti (Rom)"
+   },
+   "geonamesUri": null,
+   "type": "street"
+  }
+ },
+ {
+  "id": "G000592",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Russland"
+   },
+   "geonamesUri": "http://www.geonames.org/2017370",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000864",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Salerno"
+   },
+   "geonamesUri": "http://www.geonames.org/3168673",
+   "type": ""
+  }
+ },
+ {
+  "id": "G067536",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Saône"
+   },
+   "geonamesUri": "http://www.geonames.org/2976083",
+   "type": "river"
+  }
+ },
+ {
+  "id": "G000862",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Sardinien"
+   },
+   "geonamesUri": "http://www.geonames.org/2523228",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000870",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Schweiz"
+   },
+   "geonamesUri": "http://www.geonames.org/2658434",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000575",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Sizilien"
+   },
+   "geonamesUri": "http://www.geonames.org/2523119",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000873",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Sorrent"
+   },
+   "geonamesUri": "http://www.geonames.org/3166350",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000878",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Straßburg"
+   },
+   "geonamesUri": "http://www.geonames.org/2973783",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000879",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Stuttgart"
+   },
+   "geonamesUri": "http://www.geonames.org/2825297",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000602",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Syrakus"
+   },
+   "geonamesUri": "http://www.geonames.org/2523083",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000882",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Tarent"
+   },
+   "geonamesUri": "http://www.geonames.org/3165926",
+   "type": ""
+  }
+ },
+ {
+  "id": "G067585",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Tiber"
+   },
+   "geonamesUri": "http://www.geonames.org/3165709",
+   "type": "river"
+  }
+ },
+ {
+  "id": "G000888",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Traunstein"
+   },
+   "geonamesUri": "http://www.geonames.org/2821515",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000893",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Turin"
+   },
+   "geonamesUri": "http://www.geonames.org/3165524",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000608",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Türkei"
+   },
+   "geonamesUri": "http://www.geonames.org/298795",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000860",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Vatikan (Rom)"
+   },
+   "geonamesUri": "http://www.geonames.org/3164670",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000894",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Venedig"
+   },
+   "geonamesUri": "http://www.geonames.org/3164603",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000607",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Vereinigte Staaten von Amerika"
+   },
+   "geonamesUri": "http://www.geonames.org/6252001",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000897",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Wien"
+   },
+   "geonamesUri": "http://www.geonames.org/2761369",
+   "type": ""
+  }
+ },
+ {
+  "id": "G067598",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Schwarzspanierhaus (Wien)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "G004690",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Abruzzen"
+   },
+   "geonamesUri": "http://www.geonames.org/3183560",
+   "type": ""
+  }
+ },
+ {
+  "id": "ed_bsz_2jf_fsb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Achaia"
+   },
+   "geonamesUri": "http://www.geonames.org/265491",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000609",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Acireale"
+   },
+   "geonamesUri": "http://www.geonames.org/6540849",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000792",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Adriatisches Meer (Mittelmeer)"
+   },
+   "geonamesUri": "http://www.geonames.org/3183462",
+   "type": "sea"
+  }
+ },
+ {
+  "id": "ed_g1g_5cy_1lb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Afrika"
+   },
+   "geonamesUri": "http://www.geonames.org/6255146",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000610",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Ägypten"
+   },
+   "geonamesUri": "http://www.geonames.org/357994",
+   "type": ""
+  }
+ },
+ {
+  "id": "ediarum_qt2_4cr_2nb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Lybische Wüste"
+   },
+   "geonamesUri": "http://www.geonames.org/353306",
+   "type": ""
+  }
+ },
+ {
+  "id": "ediarum_o4k_d5x_bpb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Luxor"
+   },
+   "geonamesUri": "http://www.geonames.org/7603259",
+   "type": "monument"
+  }
+ },
+ {
+  "id": "G000611",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Airolo"
+   },
+   "geonamesUri": "http://www.geonames.org/2661830",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000612",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Ajaccio"
+   },
+   "geonamesUri": "http://www.geonames.org/3038334",
+   "type": ""
+  }
+ },
+ {
+  "id": "G004684",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Albano"
+   },
+   "geonamesUri": "http://www.geonames.org/3183356",
+   "type": ""
+  }
+ },
+ {
+  "id": "ed_ds2_vrq_2nb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Alexandria"
+   },
+   "geonamesUri": "http://www.geonames.org/361058",
+   "type": ""
+  }
+ },
+ {
+  "id": "ediarum_blq_ypr_3xb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Hotel Abbat (Alexandria)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "ediarum_is4_y1t_y4b",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Mariutsee (Alexandria)"
+   },
+   "geonamesUri": "http://www.geonames.org/352723",
+   "type": "sea"
+  }
+ },
+ {
+  "id": "ediarum_fzs_y5v_y4b",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Pharos (Alexandria)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ },
+ {
+  "id": "ed_kbp_wfj_4pb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Allgäu"
+   },
+   "geonamesUri": "http://www.geonames.org/2958342",
+   "type": ""
+  }
+ },
+ {
+  "id": "ediarum_mkc_wwc_zrb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Sonthofen (Allgäu)"
+   },
+   "geonamesUri": "http://www.geonames.org/2831088",
+   "type": ""
+  }
+ },
+ {
+  "id": "ediarum_bzj_mxc_zrb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Isny (Allgäu)"
+   },
+   "geonamesUri": "http://www.geonames.org/2895638",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000613",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Amiens"
+   },
+   "geonamesUri": "http://www.geonames.org/3037854",
+   "type": ""
+  }
+ },
+ {
+  "id": "G067780",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Anagni"
+   },
+   "geonamesUri": "http://www.geonames.org/6540534",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000703",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Ancona"
+   },
+   "geonamesUri": "http://www.geonames.org/3183089",
+   "type": ""
+  }
+ },
+ {
+  "id": "G000614",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Andermatt"
+   },
+   "geonamesUri": "http://www.geonames.org/7285077",
+   "type": ""
+  }
+ },
+ {
+  "id": "ed_ujj_sgh_zkb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Andria"
+   },
+   "geonamesUri": "http://www.geonames.org/6541937",
+   "type": ""
+  }
+ },
+ {
+  "id": "ediarum_tfv_5gh_zkb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Castel del Monte (Andria)"
+   },
+   "geonamesUri": "http://www.geonames.org/3173050",
+   "type": "building"
+  }
+ },
+ {
+  "id": "ediarum_shy_xdx_qlb",
+  "entity": "places",
+  "properties": {
+   "name": {
+    "toponym": "Rathaus (Andria)"
+   },
+   "geonamesUri": null,
+   "type": "building"
+  }
+ }
+]

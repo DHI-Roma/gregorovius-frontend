@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001022",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1205760865"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Carl Alexander",
+   "forename": "Großherzog von Sachsen-Weimar-Eisenach"
+  },
+  "birth": "1818",
+  "death": "1901"
+ }
+}

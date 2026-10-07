@@ -1,0 +1,218 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000734",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2867714"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "München"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "G000735",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/6324592"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Schloss Nymphenburg (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_qhl_ppd_cqb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Hotel Leinfelder (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_s5l_b42_rlb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Barerstraße (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_y4y_5zn_5lb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Propyläen (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_obk_fst_5lb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Königlicher Hirschgarten (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_qgl_sns_ylb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Glückstraße (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_uqx_zzn_zlb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Maximilianstraße (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_yzc_fbf_hpb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Hotel Augsburger Hof (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_akh_wcf_hpb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Hotel Marienbad (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_arf_wnd_cqb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Frühlingsstraße (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_yff_chh_dqb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Glaspalast (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_tg2_4ty_2qb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Schack-Galerie (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_kyj_rty_2qb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Gartenstraße (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_v5g_vty_2qb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Brienner Straße (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ycc_p5y_2qb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Kaulbach-Villa (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_kwp_g32_hqb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Heßstraße (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_dbd_gwf_hqb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Neue Pinakothek (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_dms_33j_zrb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Hauptbahnhof (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_c5y_zwq_pvb",
+     "@type": "others",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Karlsplatz (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_o4t_1fr_pvb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Haus der Centralsäle (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_fky_1pc_gxb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Schellingstraße (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_zgd_1w1_kxb",
+     "@type": "park",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/6544568"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Theresienwiese (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_l3d_lt4_kxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Odeon (München)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_xlp_pt4_kxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Hotel Vier Jahreszeiten (München)"
+     }
+    }
+   ]
+  }
+ }
+}

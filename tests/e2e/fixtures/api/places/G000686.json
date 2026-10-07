@@ -1,0 +1,28 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000686",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2660392"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Heiden"
+  },
+  "listPlace": {
+   "place": {
+    "@xml:id": "ediarum_cpc_c4z_sxb",
+    "@type": "building",
+    "idno": {
+     "@type": "uri",
+     "#text": "http://d-nb.info/gnd/1125392010"
+    },
+    "placeName": {
+     "@type": "reg",
+     "#text": "Gast- und Kurhaus Zum Freihof (Heiden)"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001643",
+  "persName": {
+   "@type": "reg",
+   "surname": "Thile",
+   "forename": "Hans von"
+  },
+  "birth": "1848",
+  "death": "1869"
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004697",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3172204"
+  },
+  "placeName": [
+   {
+    "@type": "reg",
+    "#text": "Norma"
+   },
+   {
+    "@type": "alt",
+    "#text": "Norba (antik)"
+   }
+  ]
+ }
+}

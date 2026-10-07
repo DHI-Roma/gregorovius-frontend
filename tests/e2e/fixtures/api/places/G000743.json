@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000743",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2861650"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Nürnberg"
+  }
+ }
+}

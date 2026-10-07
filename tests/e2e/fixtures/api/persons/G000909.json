@@ -1,0 +1,16 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000909",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118500856"
+  },
+  "persName": {
+   "@type": "reg",
+   "name": "Aischylos"
+  },
+  "birth": "525 v. Chr.",
+  "death": "456 v. Chr."
+ }
+}

@@ -1,0 +1,1582 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000763",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3169070"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Rom"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "G000764",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/9412877"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "San Quattro Coronati (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ul2_nzp_qmb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/8015088"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Porta Maggiore (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_jzj_pzp_qmb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/6954112"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Maria Maggiore (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_l2z_h5k_g5b",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Maria in Cosmedin (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_e3j_3wb_g5b",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Maria della Concezione in Campo Marzio (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_awf_5zp_qmb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Villa Madama (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ajx_dbq_qmb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Ponte Milvio (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_tjp_jtw_qmb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Ponte Sisto (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_gwr_lbq_qmb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/8015113"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Maria del Popolo (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_uys_4bq_qmb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/6954118"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Farnesina (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_bnq_5d2_mnb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Casa della Farnesina (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_gvm_122_mnb",
+     "@type": "district",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Prati (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_lmn_rbq_qmb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/6954115"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Maria in Trastevere (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_whk_vbq_qmb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Portico d’Ottavia (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000765",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Poli (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G00076555",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Café Greco (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000766",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/10303138"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Quirinalspalast (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000767",
+     "@type": "monument",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/8644072"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Pompeiustheater (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000768",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/6269268"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "San Pietro in Vaticano (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000769",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Villa Melini (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000770",
+     "@type": "monument",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/8015133"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Pyramide des Caius Cestius (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000771",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Caffarelli (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000772",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/8015142"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Maria sopra Minerva (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000773",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/9412874"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Sant’Andrea delle Fratte (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000774",
+     "@type": "monument",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/12022197"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Calixtus-Katakombe (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000775",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/12022197"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "San Callisto (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000776",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/3167899"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "San Paolo fuori le mura (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_dfy_2fz_2sb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/9412867"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Maria della Vittoria (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000777",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/8015110"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Villa Borghese (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000778",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/8015087"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Croce in Gerusalemme (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000779",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Salviati (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_kgy_44j_xrb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Monumento Nazionale a Vittorio Emanuele II (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000780",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Ponte dei Fiorentini (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000781",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "San Giovanni dei Fiorentini (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000782",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/8015149"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Maria in Aracoeli (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_phs_krc_ltb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/9610138"
+     },
+     "placeName": [
+      {
+       "@type": "reg",
+       "#text": "Santa Maria in Vallicella (Rom)"
+      },
+      {
+       "@type": "alt",
+       "#text": "Chiesa Nuova"
+      }
+     ]
+    },
+    {
+     "@xml:id": "ediarum_pkr_kyj_qmb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Mario de' Fiori (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000783",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "San Saba (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000784",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/11856393"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Chigi (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000785",
+     "@type": "monument",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/9973296"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Ponte Cestio (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000786",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Marforio (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G000787",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Pasquino (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G004688",
+     "@type": "monument",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/6269259"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Forum Romanum (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G067569",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Aurelianische Mauer (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G067570",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Porto di Ripetta (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G067571",
+     "@type": "district",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/11822324"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Jüdisches Ghetto (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G067572",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/6269248"
+     },
+     "placeName": [
+      {
+       "@type": "reg",
+       "#text": "Kolosseum (Rom)"
+      },
+      {
+       "@type": "alt",
+       "#text": "Colosseo"
+      }
+     ]
+    },
+    {
+     "@xml:id": "G067573",
+     "@type": "street",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/6954110"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Piazza di Spagna (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G067574",
+     "@type": "street",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/6954102"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Piazza del Popolo (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G067575",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/8378877"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Colonna (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_hxj_4ld_ltb",
+     "@type": "district",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/6545146"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Regola (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G067576",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Basilika San Crisogono (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G067577",
+     "@type": "district",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/3165306"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Trastevere (Rom)"
+     }
+    },
+    {
+     "@xml:id": "G067578",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Maria dell’Anima (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_c23_sn4_qlb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Caetani Lovatelli (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ohw_g2x_qlb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Tarpejischer Felsen (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_njc_s3x_qlb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Ripetta (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_pvn_ktv_hbc",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via del Tritone (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_lmm_slx_qlb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Gregoriana (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_t5c_vlx_qlb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Sistina (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_tcc_4nv_slb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Purificazione (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_rbx_ypq_vlb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Cloaca Maxima (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_o24_dd5_zlb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via del Babuino (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_g1v_sg5_zlb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Laurina (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_v44_fqw_2mb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "San Cosimato (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_bc4_gqw_2mb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Casa della Fornarina (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_kff_mqw_2mb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Convento di Santa Rufina (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_imk_nqw_2mb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Torre dell’Anguillara (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_omr_qqw_2mb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Casa de Marchis (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_jnb_lrw_2mb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via San Francesco (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_p3t_mrw_2mb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "San Pasquale Baylon (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_zcm_4rw_2mb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Porto di Ripa Grande (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_vt3_qrw_2mb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Cecilia (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_acm_trw_2mb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Piazza di Sidney Sonnino (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ddf_vrw_2mb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Maria in Cappella (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_t3t_wrw_2mb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Giardini di Donna Olimpia (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ipq_yrw_2mb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Maria di Ponte Rotto (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_sfk_1sw_2mb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Castellani (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_xrq_csw_2mb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via della Lungaretta (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_lby_2sw_2mb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Piscinula (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_nrq_gtw_2mb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Piazza Molara (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_gtv_3tw_2mb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Piazza delle Gensole (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_sqw_ktw_2mb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Tolomei (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_utx_ptw_2mb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via di Pescheria (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_mgp_rtw_2mb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Portico di Ottavia (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_es3_c5w_2mb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Castel Sant'Angelo (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ffv_f5w_2mb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Engelsbrücke (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ucc_h5w_2mb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Altoviti (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_mhr_jvw_2mb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Nazionale (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_q13_lvw_2mb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Capranica (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_mnh_nvw_2mb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Maria in Aquiro (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_hb5_4vw_2mb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Porta del Popolo (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_qvk_rvw_2mb",
+     "@type": "district",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Borghetto Flaminio (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_wxx_4xw_2mb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Piazza Capranica (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_b4g_kyc_fmb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo dei Conservatori (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_n4j_5yc_fmb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Templum Gentis Flaviae (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_nsn_j5n_fmb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo delle Finanze (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_h5x_k1p_nnb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Casa di Spoturnis (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_pws_xyp_qmb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Villa Ludovisi (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_rby_2zp_qmb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/11856566"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Villa Wolkonsky (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_zq5_wfq_qmb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/7602857"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "San Giovanni in Laterano (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ndq_rn2_tmb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/8015092"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Diokletiansthermen (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ynk_lq2_tmb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Salara (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_nt4_mq2_tmb",
+     "@type": "park",
+     "placeName": [
+      {
+       "@type": "reg",
+       "#text": "Horti Sallustani (Rom)"
+      },
+      {
+       "@type": "alt",
+       "#text": "Gärten des Sallust"
+      }
+     ]
+    },
+    {
+     "@xml:id": "ediarum_c53_wq2_tmb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Maria in Via Lata (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_smg_zq2_tmb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Maria degli Angeli (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_lqv_hd2_mnb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Ponte Rotto (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_bqk_4jl_vnb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Villa Malta (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_k5h_p4p_znb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Trajanssäule (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_qkk_m2x_znb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Ponte dei Quattro Capi (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ifx_t2n_14b",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Hotel Molaro (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_bkk_hdc_54b",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Gasthaus Falcone (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ers_q1y_54b",
+     "@type": "building",
+     "placeName": [
+      {
+       "@type": "reg",
+       "#text": "Villa Hüffer (Rom)"
+      },
+      {
+       "@type": "alt",
+       "#text": "Villa Huffero"
+      }
+     ]
+    },
+    {
+     "@xml:id": "ediarum_tq2_12n_y4b",
+     "@type": "district",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Campo Marzo (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_fhw_m2n_y4b",
+     "@type": "district",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Tiberinsel (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_qkw_lhn_y4b",
+     "@type": "mountain",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/8015111"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Monte Pincio (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_x5p_g3n_y4b",
+     "@type": "mountain",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Aventin (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_pyt_s3n_y4b",
+     "@type": "mountain",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/3176150"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Gianicolo (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_hqf_fjn_y4b",
+     "@type": "mountain",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/3173911"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Monte Mario (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_dq5_pjn_y4b",
+     "@type": "mountain",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/8224820"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Monte Testaccio (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_eqg_zjn_y4b",
+     "@type": "mountain",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/3177341"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Esquilin (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_wdl_hkn_y4b",
+     "@type": "mountain",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/3164081"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Viminal (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_kdp_2ln_y4b",
+     "@type": "mountain",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/3179211"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Monte Caelius (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_y1x_1mn_y4b",
+     "@type": "district",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Lateran (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_egt_1tn_y4b",
+     "@type": "mountain",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/3180706"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Kapitol (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_e2z_bcf_hpb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Hotel Cesari (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_zkn_v2f_hpb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Albergo del Sole (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_acs_lqj_qpb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Condotti (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_hcb_2xt_cqb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Caetani (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_yp5_jjb_dqb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Hotel Quirinale (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_jmm_vhg_dqb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Madama (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_bjn_vb3_3qb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Corsini (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_uhh_zt1_nqb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via del Corso (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_wpj_4k3_wrb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Alessandrina (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_uxl_vs2_tsb",
+     "@type": "building",
+     "placeName": [
+      {
+       "@type": "reg",
+       "#text": "Casa dei Crescenzi (Rom)"
+      },
+      {
+       "@type": "alt",
+       "#text": "Casa di Pilato, Casa di Cola di Rienzo"
+      }
+     ]
+    },
+    {
+     "@xml:id": "ediarum_b5g_gt2_tsb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Villa Patrizi (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_lbm_rt2_tsb",
+     "@type": "building",
+     "placeName": [
+      {
+       "@type": "reg",
+       "#text": "Villa Giustiniani al Laterano (Rom)"
+      },
+      {
+       "@type": "alt",
+       "#text": "Casino Massimo Lancellotti"
+      }
+     ]
+    },
+    {
+     "@xml:id": "ediarum_ydk_yv2_tsb",
+     "@type": "building",
+     "placeName": [
+      {
+       "@type": "reg",
+       "#text": "Villa Paolina (Rom)"
+      },
+      {
+       "@type": "alt",
+       "#text": "Villa Bonaparte"
+      }
+     ]
+    },
+    {
+     "@xml:id": "ediarum_rzx_gw2_tsb",
+     "@type": "building",
+     "placeName": [
+      {
+       "@type": "reg",
+       "#text": "Porta Salaria (Rom)"
+      },
+      {
+       "@type": "alt",
+       "#text": "Porta Salara"
+      }
+     ]
+    },
+    {
+     "@xml:id": "ediarum_sph_hx2_tsb",
+     "@type": "mountain",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palatin (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_lny_tw2_tsb",
+     "@type": "park",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Gärten Colonna (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_cvc_x2p_wsb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Margutta (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_xmp_ldv_r5b",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Villa Lante al Gianicolo (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_z1j_wng_fvb",
+     "@type": "street",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/8015045"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Appia (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_sc5_1x3_nvb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Frattina (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_usp_4nb_rvb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Trionfale (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_krp_bwh_tvb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via dell’Angelo Custode (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_frg_x5k_swb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/7778930"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Sixtinische Kapelle (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_vps_ns4_ywb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Via Vantaggio (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_s5c_l22_2xb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Senatorio (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_yfh_r4c_gxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Familien-Pension Tellenbach (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_dhl_dmj_gxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Große Synagoge (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_jls_wbk_gxb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/6619450"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Pantheon (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_nwl_jmz_gxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Venezia (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ttm_1pr_3xb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Hotel Hassler (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_fjl_y51_kxb",
+     "@type": "monument",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/6619448"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Trevi-Brunnen (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_yqq_ft1_mxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Tripizon (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_wsz_nt1_mxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Ponte Nomentano (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_rxq_451_mxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Ponte Salario (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_u2s_y51_mxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Scalinata dell’Ara Coeli (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_kpt_jv1_mxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Amphitheatrum Castrense (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_aqf_4v1_mxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "San Sebastiano fuori le mura (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_gkd_yv1_mxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "San Lorenzo fuori le mura (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_fnr_3w1_mxb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Mausoleo di Augusto (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_awc_tw1_mxb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Meta Sudans (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_hmb_314_mxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Sant’Anna dei Falegnami (Rom)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_o2z_l14_mxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Bonosa (Rom)"
+     }
+    }
+   ]
+  }
+ }
+}

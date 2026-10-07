@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001645",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117341053"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Thile",
+    "forename": "Ottilie von"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Graefe"
+   }
+  ],
+  "birth": "1816",
+  "death": "1898"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_dff_kyv_gmb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/4177951-4"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Revue des deux mondes (Paris 1829–)"
+  }
+ }
+}

@@ -1,0 +1,140 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 9. April 1866",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "Konzept: BSB München",
+      "collection": "NL Gregorovius",
+      "idno": [
+       "Gregoroviusiana 20, Unbekannt, 1",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000214/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": "1 Dbl., 4°, 3 ½ S. – geringer Textverlust durch Brandspuren auR 1r–2v"
+     }
+    },
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 84, Mappe 6 (Alfred Löckle nach K)"
+        }
+       }
+      },
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 82, Mappe 8 (nach h1)"
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Kurd von Schlözer hat ihm in Thiles Auftrag mitgeteilt, dass das seit Herbst 1860 durch Thile vermittelte Stipendium der preußischen Regierung für die Fertigstellung seiner „Geschichte der Stadt Rom im Mittelalter“ (1859–1872) künftig auf die Hälfte reduziert werden soll. Der Kultusminister Heinrich von Mühler hatte noch bei Gelegenheit der Übersendung seines fünften Bandes (1865) seine Wertschätzung ausgedrückt. Er hat sich der staatlichen Unterstützung seines wissenschaftlichen Wirkens durch die preußische Regierung in der Tradition von Wilhelm von Humboldt, Barthold Georg Niebuhr, Christian Karl Josias Freiherr von Bunsen und Ludwig August von Buch sicher gefühlt; jetzt sieht er sich getäuscht. Auch bereut er, dass er 1863 das Angebot einer Professur in München durch König Maximilian II. von Bayern ausgeschlagen hat. Sein Stolz erlaubt ihm nicht, die so geschmälerte Summe weiter zu beziehen und er bittet, dem Heinrich von Mühler seinen gänzlichen Verzicht mitzuteilen."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "Kurd von Schlözer informed him on behalf of Thile that the scholarship of the Prussian government for the completion of his „Geschichte der Stadt Rom im Mittelalter“ (1859–1872), which had been arranged by Thile in the fall of 1860, is to be reduced by half in the future. The Minister of Culture Heinrich von Mühler had expressed his appreciation when he received its fifth volume (1865). He felt secure in the support of the Prussian government for his scientific work following in the footsteps of Wilhelm von Humboldt, Barthold Georg Niebuhr, Christian Karl Josias Baron of Bunsen and Ludwig August von Buch; now he feels he has been deceived. He also regretted that he turned down the offer of a professorship in Munich by King Maximilian II of Bavaria in 1863. His pride will not allow him to continue on with sum thus reduced and he asks to inform Heinrich von Mühler that he will forgo it completely."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1866-04-09",
+       "@cert": "low"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001644",
+       "#text": "Thile, Hermann von (1812–1889)"
+      },
+      "placeName": {
+       "@key": "G000636",
+       "#text": "Berlin"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000897",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2761369"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Wien"
+  },
+  "listPlace": {
+   "place": {
+    "@xml:id": "G067598",
+    "@type": "building",
+    "placeName": {
+     "@type": "reg",
+     "#text": "Schwarzspanierhaus (Wien)"
+    }
+   }
+  }
+ }
+}

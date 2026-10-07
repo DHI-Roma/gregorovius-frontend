@@ -1,0 +1,152 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an den F. A. Brockhaus Verlag und Heinrich Brockhaus in Leipzig. Rom, 22. April 1855",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "Sächsisches Staatsarchiv Leipzig",
+      "collection": "Bestand 21083",
+      "idno": [
+       "Archivalnummer 224 (13)",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000038/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": [
+       {
+        "hi": [
+         {
+          "@rendition": "#aq",
+          "#text": "Rom"
+         },
+         {
+          "@rendition": "#aq",
+          "#text": "April"
+         },
+         {
+          "@rendition": "#aq",
+          "#text": "Gregorovius"
+         }
+        ],
+        "#text": "1 Dbl., 8°, 2 ¼ S. – 1r aoR in einer Vignette geprägt: BATH – 2v alR, Bl. um 90° gedreht, Eingangs- und Beantwortungsvermerk: 1855. / , 22./30. . / . / B. 19/V"
+       },
+       "Der erste Teil des Manuskripts seines Artikels „Das Königreich beider Sicilien in seinen gegenwärtigen Zuständen“"
+      ]
+     }
+    },
+    "listWit": {
+     "witness": {
+      "msDesc": {
+       "@type": "copy",
+       "msIdentifier": {
+        "institution": "GhStA Berlin",
+        "collection": "VI. HA, NL Waldemar Kampf",
+        "idno": "Karton 59, Mappe 347 (nach H)"
+       }
+      }
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er übersendet den ersten Teil des Manuskripts seines Artikels „Das Königreich beider Sicilien in seinen gegenwärtigen Zuständen“; das restliche Manuskript folgt in vier Tagen. Der Artikel bereitete ihm mehr Mühe als erwartet. Er erläutert die Konzeption beider Teile seines Artikels. Der dankt für die Übersendung der Zeitschrift „Die Gegenwart“; bereits erschienene Artikel über Neapel sollen nach Ermessen der Redaktion mit seiner Arbeit in Beziehung gesetzt und statistische Daten ergänzt werden."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He sends the first part of the manuscript of his article „Das Königreich beider Sicilien in seinen gegenwärtigen Zuständen“; the rest of the manuscript will follow in four days. He struggled with the article more than he had expected. He explains the conception of both parts of his article. He thanks them for sending the magazine „Die Gegenwart“; at their own discretion, the editors may reference articles about Naples that have already been published and add statistical data."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1855-04-22",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G000996",
+       "#text": "Brockhaus, Heinrich (1804–1874)"
+      },
+      "orgName": {
+       "@key": "G000480",
+       "#text": "F. A. Brockhaus Verlag"
+      },
+      "placeName": {
+       "@key": "G000712",
+       "#text": "Leipzig"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": {
+      "@type": "next",
+      "#text": "19. Mai. 1855"
+     }
+    }
+   }
+  }
+ }
+}

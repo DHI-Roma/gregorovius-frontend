@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000967",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118510339"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Bethmann-Hollweg",
+    "forename": "Moritz August Freiherr von"
+   },
+   {
+    "@type": "alt",
+    "surname": "Bethmann-Hollweg",
+    "forename": "Moritz August"
+   }
+  ],
+  "birth": "1795",
+  "death": "1877"
+ }
+}

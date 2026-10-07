@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004720",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116443073"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Canitz und Dallwitz",
+   "forename": "Karl Friedrich Freiherr von"
+  },
+  "birth": "1812",
+  "death": "1894"
+ }
+}

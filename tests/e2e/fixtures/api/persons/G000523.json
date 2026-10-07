@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000523",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/5056474-2"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "J. G. Cotta’sche Buchhandlung"
+  }
+ }
+}

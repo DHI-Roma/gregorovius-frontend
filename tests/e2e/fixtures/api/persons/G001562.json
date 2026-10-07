@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001562",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116675586"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Rühl",
+   "forename": "Franz"
+  },
+  "birth": "1845",
+  "death": "1915"
+ }
+}

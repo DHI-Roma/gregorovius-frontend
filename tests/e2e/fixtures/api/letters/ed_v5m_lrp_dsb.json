@@ -1,0 +1,121 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Robert Davidsohn in Mont Fleuri sur Territet. München, 28. Oktober 1884",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 81, Mappe 1 (nach D)"
+        }
+       }
+      },
+      {
+       "@select": "#this",
+       "bibl": {
+        "@type": "print",
+        "#text": "Johannes Hönig: Der Geschichtschreiber der Stadt Rom an den Geschichtschreiber von Florenz. Briefe von Ferdinand Gregorovius an Robert Davidsohn. In: Deutsche Rundschau. Bd. 196. Berlin: Gebrüder Paetel (Aug.) 1923. S. 149–150"
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er schreibt am Tag der Reichtagswahl, die in München für viel Aufregung sorgt. Die Familie Erhardt will Davidsohn noch Anfang Oktober in Traunstein gesehen haben. Er freut sich, dass Davisdsohn und seine Frau Philippine jetzt in milderem Klima am Genfer See sind. Seine Pläne, in das von der Cholera-Epidemie schwer getroffene Italien zu reisen, sind sicher nur aufgeschoben. Er selbst hat Sophie Erhardt und ihre Töchter Gabriella und Alexandrine neidisch nach Rom abfahren sehen, Wolfgang Erhardt war längst voraus gefahren. Es hat ihn erheitert, dass Julius Grosse Lucrezia Borgia in seinem Trauerspiel „Die Herzogin von Ferrara“ (1884) zur titelgebenden Figur gemacht hat. In den Pressemeldungen zu diesem Stück musste er ein Mal mehr lesen, dass er selbst seine Biographie „Lucrezia Borgia“ (1874) um die Ehrenrettung der Tochter des spanischen Papstes Alexanders VI. geschrieben habe. Ihm ist das rätselhaft, denn für ihn war sie immer nur ein Spielball des Vaters und des Halbbruders Cesare Borgia. Auch Ferdinando Petruccelli della Gattina macht den Papst in seiner „Histoire Diplomatique des Conclaves“ (1864) absurderweise zu einem Vorkämpfer der italienischen Unabhängigkeit. Er hat sich dazu im siebten Band seiner „Geschichte der Stadt Rom im Mittelalter“ (3. Aufl. 1880) geäußert. Nach dem Tod des kinderlosen Herzog Wilhelms von Braunschweig ist die Erbnachfolge ungewiss."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He is writing on the day of the Reichstag election, which is causing a lot of excitement in Munich. The Erhardt family claims to have seen Davidsohn in Traunstein as late as the beginning of October. He is pleased that Davisdsohn and his wife, Philippine, are now in a milder climate on Lake Geneva. His plans to travel to Italy, which has been hit hard by the cholera epidemic, are certainly merely postponed. He himself had enviously watched Sophie Erhardt and her daughters Gabriella and Alexandrine depart for Rome; Wolfgang Erhardt had long since gone ahead. He was amused that Julius Grosse made Lucrezia Borgia the title character in his tragedy „Die Herzogin von Ferrara“ (1884). In the press reports about this play he had to read yet again that he had written his biography „Lucrezia Borgia“ (1874) in order to save the honor of the daughter of the Spanish Pope Alexander VI. He finds this puzzling, because to him she was always just a pawn of her father and half-brother Cesare Borgia. Ferdinando Petruccelli della Gattina also absurdly makes the Pope a champion of Italian independence in his „Histoire Diplomatique des Conclaves“ (1864). He wrote about this in the seventh volume of his „Geschichte der Stadt Rom im Mittelalter“ (3rd ed. 1880). After the death of the childless Duke Wilhelm of Brunswick, the line succession is uncertain."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000734",
+       "#text": "München"
+      },
+      "date": {
+       "@when": "1884-10-28",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001070",
+       "#text": "Davidsohn, Robert (1853–1937)"
+      },
+      "placeName": {
+       "@key": "ed_acl_1tp_dsb",
+       "#text": "Mont Fleuri sur Territet"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

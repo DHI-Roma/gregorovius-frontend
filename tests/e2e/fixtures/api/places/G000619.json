@@ -1,0 +1,100 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000619",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/264371"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Athen"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "ediarum_ql1_j5n_5lb",
+     "@type": "monument",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/265409"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Akropolis (Athen)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_l3x_gvl_swb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/8354432"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Parthenon (Athen)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_igs_yrg_wnb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Asklepieion (Athen)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_xtm_1sg_wnb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Olympieion (Athen)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ffh_4h2_ynb",
+     "@type": "monument",
+     "placeName": [
+      {
+       "@type": "reg",
+       "#text": "Lysikrates Denkmal (Athen)"
+      },
+      {
+       "@type": "alt",
+       "#text": "Laterne des Demosthenes"
+      }
+     ]
+    },
+    {
+     "@xml:id": "ediarum_dtl_nc3_3qb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Akademie Sinea (Athen)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_yyx_nng_fvb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Akademiestraße (gr. Οδός Ακαδημίας) (Athen)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_qgg_ppg_fvb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/9782015"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Dipylon (Athen)"
+     }
+    }
+   ]
+  }
+ }
+}

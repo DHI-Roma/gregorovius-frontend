@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001665",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/11729392X"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Ungher-Sabatier",
+    "forename": "Caroline"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Unger"
+   }
+  ],
+  "birth": "1803",
+  "death": "1877"
+ }
+}

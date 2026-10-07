@@ -1,0 +1,129 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 22. Dezember\n                    1858",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "GSA Weimar",
+      "idno": "96/937 (5)"
+     },
+     "physDesc": {
+      "p": "1 Dbl., 4°, 3 ½ S."
+     }
+    },
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 59, Mappe 347 (nach D) und Karton\n                                        59, Mappe 346 (Ergänzungen nach H)"
+        }
+       }
+      },
+      {
+       "bibl": {
+        "@type": "print",
+        "#text": "Briefe von Ferdinand Gregorovius an den Staatssekretär Hermann von Thile. Hrsg. von Herman von Petersdorff. Berlin 1894. S. 7–9 (gekürzt)"
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Erleichtert hat er von der gesundheitlichen Stabilisierung des Sohnes Hans gehört. Der erkrankte Friedrich Wilhelm IV. soll morgen in Rom eintreffen. Clemens August Alertz sieht er seltener. Peter von Cornelius und seine kränkelnde Frau Geltruda erwarten den Besuch seiner Tochter Maria Marcelli. Er mit der Ausstattung des Drucks seiner „Geschichte der Stadt Rom im Mittelalter“ (1859) hochzufrieden und möchte Thile das erste gedruckte Exemplar zukommen lassen. Das Manuskript des dritten Bandes (1860) ist zur Hälfte abgeschlossen, doch braucht es noch Archivrecherchen in Montecassino. Aus Florenz über Livorno nach Rom zurückkehrend war er auf dem Dampfer Hermus, der den Dampfer Aventin gerammt und versenkt hat. Das Gefühl der Todesgefahr hat ihn bestärkt, sein „Leben den Ideen zu widmen“. Die in Aussicht gestellte finanzielle Unterstützung der preußischen Regierung hat nach Vertragsabschluss mit Cotta keine Dringlichkeit; er kann jetzt auch an die Rückzahlung seiner Schulden bei Thile denken. Albrecht von Graefe bittet er zu grüßen."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He is relieved to hear that the health of his son Hans has stabilized. The ill Friedrich William IV is due to arrive in Rome tomorrow. He sees Clemens August Alertz less frequently. Peter von Cornelius and his ailing wife Geltruda are expecting the visit of his daughter Maria Marcelli. He is highly satisfied with the layout of the print of his „Geschichte der Stadt Rom im Mittelalter“ (1859) and would like to send Thile the first printed copy. The manuscript of the third volume (1860) is half finished, but he still needs to do archival research in Montecassino. Returning from Florence via Livorno to Rome, he was on the steamer Hermus, which rammed and sank the steamer Aventine. The feeling of being in mortal danger reinforced the sense that he should „dedicate his life to ideas“. The promised financial support of the Prussian government is not urgent after the conclusion of the contract with Cotta; he can now also think of repaying his debts to Thile. He asks to send Albrecht von Graefe his regards."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1858-12-22",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001644",
+       "#text": "Thile, Hermann von (1812–1889)"
+      },
+      "placeName": {
+       "@key": "G000636",
+       "#text": "Berlin"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

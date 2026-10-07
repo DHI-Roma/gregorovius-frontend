@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001236",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1269841343"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Harder",
+   "forename": "Louis"
+  },
+  "birth": "1821",
+  "death": "1899 oder 1900"
+ }
+}

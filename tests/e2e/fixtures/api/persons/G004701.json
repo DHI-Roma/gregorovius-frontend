@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004701",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116680172"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Marcelli",
+    "forename": "Maria"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Cornelius"
+   }
+  ],
+  "birth": "1815",
+  "death": "1860"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_l5j_rhk_qmb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://gregorovius-edition.dhi-roma.it/persons/ed_l5j_rhk_qmb"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Werthern-Beichlingen",
+   "forename": "Elisabeth von"
+  },
+  "birth": "1866",
+  "death": "1941"
+ }
+}

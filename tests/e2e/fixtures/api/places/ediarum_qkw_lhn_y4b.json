@@ -1,0 +1,15 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ediarum_qkw_lhn_y4b",
+  "@type": "mountain",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/8015111"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Monte Pincio (Rom)"
+  }
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000699",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/554234"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Königsberg"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "ediarum_xcz_5jl_vnb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Trinitatis-Kirche (Königsberg)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_prm_tnz_sxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Gaststätte Böttchershöfchen (Königsberg)"
+     }
+    }
+   ]
+  }
+ }
+}

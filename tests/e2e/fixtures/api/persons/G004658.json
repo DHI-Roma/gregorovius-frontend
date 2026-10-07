@@ -1,0 +1,10 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004658",
+  "orgName": {
+   "@type": "reg",
+   "#text": "The Continental Review (London 1858–1859)"
+  }
+ }
+}

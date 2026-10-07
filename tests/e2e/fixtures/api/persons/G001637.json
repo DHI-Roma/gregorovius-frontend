@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001637",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/102727252"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Taussig",
+   "forename": "Gabriel"
+  },
+  "birth": "1807",
+  "death": "1875"
+ }
+}

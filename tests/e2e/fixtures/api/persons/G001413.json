@@ -1,0 +1,21 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001413",
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Mayer",
+    "forename": "Elisabeth"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Sasse"
+   }
+  ],
+  "birth": null,
+  "death": "1887",
+  "note": "Ehefrau von Eduard Mayer (1812-1881)"
+ }
+}

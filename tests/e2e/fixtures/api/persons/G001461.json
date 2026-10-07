@@ -1,0 +1,15 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001461",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1157638139"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Olivieri",
+   "forename": "Luigi Pompili"
+  }
+ }
+}

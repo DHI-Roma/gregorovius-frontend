@@ -1,0 +1,10 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_jcl_dck_zrb",
+  "orgName": {
+   "@type": "reg",
+   "#text": "Museo Civico Archeologico. Collezione Numismatica (Bologna)"
+  }
+ }
+}

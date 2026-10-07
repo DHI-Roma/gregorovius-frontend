@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000994",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116422211"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Braun",
+   "forename": "Otto"
+  },
+  "birth": "1824",
+  "death": "1900"
+ }
+}

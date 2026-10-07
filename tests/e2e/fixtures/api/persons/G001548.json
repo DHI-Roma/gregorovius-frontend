@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001548",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118992759"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Riepenhausen",
+   "forename": "Johannes"
+  },
+  "birth": "1784",
+  "death": "1860"
+ }
+}

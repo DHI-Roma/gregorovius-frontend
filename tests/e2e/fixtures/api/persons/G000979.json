@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000979",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/119427060"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Bonghi",
+    "forename": "Ruggiero"
+   },
+   {
+    "@type": "alt",
+    "surname": "Bonghi",
+    "forename": "Ruggero"
+   }
+  ],
+  "birth": "1826",
+  "death": "1895"
+ }
+}

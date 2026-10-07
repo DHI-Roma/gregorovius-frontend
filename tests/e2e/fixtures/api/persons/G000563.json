@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000563",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1000291-1"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Archivio di Stato (Florenz)"
+  }
+ }
+}

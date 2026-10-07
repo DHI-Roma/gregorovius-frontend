@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001111",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116447591"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Elgnowski",
+    "forename": "Ottilie"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Gregorovius (bis 1855)"
+   }
+  ],
+  "birth": "1834",
+  "death": "1907"
+ }
+}

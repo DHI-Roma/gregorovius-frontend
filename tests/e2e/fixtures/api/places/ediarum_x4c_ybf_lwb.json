@@ -1,0 +1,11 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ediarum_x4c_ybf_lwb",
+  "@type": "street",
+  "placeName": {
+   "@type": "reg",
+   "#text": "Wilhelmsplatz (Berlin)"
+  }
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067624",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1025507908"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Schurz",
+    "forename": "Theresia Anna"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Niembsch"
+   }
+  ],
+  "birth": "1801",
+  "death": "1878"
+ }
+}

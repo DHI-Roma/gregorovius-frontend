@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000545",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1073019063"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Deutsche Buchhandlung Josef Spithöver (Turin, Rom)"
+  }
+ }
+}

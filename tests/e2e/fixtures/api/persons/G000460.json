@@ -1,0 +1,10 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000460",
+  "orgName": {
+   "@type": "reg",
+   "#text": "Bibliothek der Deutschen in Rom (Palazzo Caffarelli)"
+  }
+ }
+}

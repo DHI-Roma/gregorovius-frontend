@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_hzm_b52_qtb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/139947922"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Sydow",
+    "forename": "Anna von"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "von Heinz"
+   }
+  ],
+  "birth": "1863",
+  "death": "1953"
+ }
+}

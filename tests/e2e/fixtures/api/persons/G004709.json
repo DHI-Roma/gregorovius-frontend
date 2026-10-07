@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004709",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116777273"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Brunn",
+    "forename": "Heinrich"
+   },
+   {
+    "@type": "alt",
+    "surname": "Brunn",
+    "forename": "Heinrich Ritter von (ab 1882)"
+   }
+  ],
+  "birth": "1822",
+  "death": "1894"
+ }
+}

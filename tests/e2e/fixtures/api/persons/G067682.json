@@ -1,0 +1,22 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067682",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118519514"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "name": "Cassiodor"
+   },
+   {
+    "@type": "alt",
+    "name": "Flavius Magnus Aurelius Cassiodorus"
+   }
+  ],
+  "birth": "um 485",
+  "death": "um 580"
+ }
+}

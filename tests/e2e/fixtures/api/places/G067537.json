@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067537",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3173975"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Maremma"
+  }
+ }
+}

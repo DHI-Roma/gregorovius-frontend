@@ -1,0 +1,86 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000636",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2950159"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Berlin"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "G067541",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Hôtel de Rome (Berlin)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_u3h_rwk_qmb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Denkmal Alexander von Humboldt (Friedrich-Wilhelms-Universität zu Berlin)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_a1t_tt5_gmb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Französische Straße (Berlin)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_dtp_ds5_gmb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/6944096/schloss-tegel.html"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Schloss Tegel (Berlin)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_hfk_ywk_qmb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Denkmal Wilhelm von Humboldt (Friedrich-Wilhelms-Universität zu Berlin)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_pvy_bwt_rqb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Viktoria-Straße (Berlin)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_nmm_g4c_55b",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Maaßenstraße (Berlin)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_x4c_ybf_lwb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Wilhelmsplatz (Berlin)"
+     }
+    }
+   ]
+  }
+ }
+}

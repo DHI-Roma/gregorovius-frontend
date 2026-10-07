@@ -1,0 +1,52 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000683",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/390903"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Griechenland"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "ediarum_i3l_qd4_gmb",
+     "@type": "settlement",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://d-nb.info/gnd/4051661-1"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santorin"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ppg_31g_dpb",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/259288"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Kanal von Korinth"
+     }
+    },
+    {
+     "@xml:id": "ediarum_mff_w1g_dpb",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/260311"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Kefalonia"
+     }
+    }
+   ]
+  }
+ }
+}

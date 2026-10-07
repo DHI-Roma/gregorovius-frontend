@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_t43_ym5_lzb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/012846686"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Die Gegenwart. Eine encyklopädische Darstellung der neuesten Zeitgeschichte für alle Stände (Leipzig 1848–1856)"
+  }
+ }
+}

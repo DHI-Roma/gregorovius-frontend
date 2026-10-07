@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001055",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/11879972X"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Cotta von Cottendorf",
+   "forename": "Johann Georg Freiherr"
+  },
+  "birth": "1796",
+  "death": "1863"
+ }
+}

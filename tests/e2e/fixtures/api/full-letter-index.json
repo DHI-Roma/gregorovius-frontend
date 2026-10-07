@@ -1,0 +1,5331 @@
+{
+ "letters": [
+  {
+   "index": 80,
+   "xml_id": "G067797",
+   "date_index": "1851-02-04",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Heinrich Laube",
+     "gnd_name": "Laube, Heinrich",
+     "gnd": "118570080",
+     "birth": "1806",
+     "death": "1884",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Heinrich Laube",
+    "Laube, Heinrich"
+   ],
+   "placename_sent": "Königsberg",
+   "placename_received": "Wien",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1851-02-04",
+   "relevant_years": [
+    "1851"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 1 S.",
+   "reference": "H: Österreichische Nationalbibliothek, Teilnachlass Laube, Autogr. 156/1–1 HAN MAG",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Österreichische Nationalbibliothek"
+   ]
+  },
+  {
+   "index": 85,
+   "xml_id": "G000001",
+   "date_index": "1853-01-04",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Allgemeine Zeitung (Redaktion)",
+     "gnd_name": "Allgemeine Zeitung",
+     "gnd": "4141947-9",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Allgemeine Zeitung (Redaktion)",
+    "Allgemeine Zeitung"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Augsburg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1853-01-04",
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 4°, ¾ S.",
+   "reference": "H: SBB – PK, Slg. Darmstaedter 2f 1857: Gregorovius, Ferdinand, Bl. 1 ",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 86,
+   "xml_id": "G000003",
+   "date_index": "1853-01-04",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Morgenblatt für gebildete Leser",
+     "gnd_name": "Morgenblatt für gebildete Leser",
+     "gnd": "4345483-5",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Morgenblatt für gebildete Leser",
+    "Morgenblatt für gebildete Leser"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Stuttgart",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1853-01-04",
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 4°, 1 S.",
+   "reference": "H: DLA Marbach, Handschriftenabteilung, A: Hauff-Kölle (Morgenblatt), 34801",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 89,
+   "xml_id": "G000004",
+   "date_index": "1853-02-05",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Gustav Kolb",
+     "gnd_name": "Kolb, Gustav",
+     "gnd": "116310790",
+     "birth": "1798",
+     "death": "1865",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Gustav Kolb",
+    "Kolb, Gustav"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Augsburg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1853-02-05",
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 4°, 1 S.",
+   "reference": "H: Biblioteka Jagiellońska Krakau, Hs.A.36.55",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Biblioteka Jagiellońska Krakau"
+   ]
+  },
+  {
+   "index": 90,
+   "xml_id": "G000002",
+   "date_index": "1853-04-09",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "J. G. Cotta’sche Buchhandlung",
+     "gnd_name": "J. G. Cotta’sche Buchhandlung",
+     "gnd": "5056474-2",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    },
+    {
+     "name": "Johann Georg Freiherr Cotta von Cottendorf",
+     "gnd_name": "Cotta von Cottendorf, Johann Georg Freiherr",
+     "gnd": "11879972X",
+     "birth": "1796",
+     "death": "1863",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "J. G. Cotta’sche Buchhandlung",
+    "J. G. Cotta’sche Buchhandlung",
+    "Johann Georg Freiherr Cotta von Cottendorf",
+    "Cotta von Cottendorf, Johann Georg Freiherr"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Stuttgart",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1853-04-09",
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 3 S.",
+   "reference": "H: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 2",
+   "print_reference": "Johannes Hönig: Ferdinand Gregorovius der Geschichtschreiber der Stadt Rom. Stuttgart, Berlin 1921. S. 200–203 (gekürzt)",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 93,
+   "xml_id": "G000005",
+   "date_index": "1853-05-19",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Allgemeine Zeitung (Redaktion)",
+     "gnd_name": "Allgemeine Zeitung",
+     "gnd": "4141947-9",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Allgemeine Zeitung (Redaktion)",
+    "Allgemeine Zeitung"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Augsburg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1853-05-19",
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 4°, 1 S.",
+   "reference": "H: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 2c",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 94,
+   "xml_id": "G000006",
+   "date_index": "1853-05-20",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Johann Georg Freiherr Cotta von Cottendorf",
+     "gnd_name": "Cotta von Cottendorf, Johann Georg Freiherr",
+     "gnd": "11879972X",
+     "birth": "1796",
+     "death": "1863",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Johann Georg Freiherr Cotta von Cottendorf",
+    "Cotta von Cottendorf, Johann Georg Freiherr"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Stuttgart",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1853-05-20",
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 2 ½ S.",
+   "reference": "H: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 3",
+   "print_reference": "Johannes Hönig: Ferdinand Gregorovius der Geschichtschreiber der Stadt Rom. Stuttgart, Berlin 1921. S. 203–205 (stark gekürzt)",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 99,
+   "xml_id": "G000014",
+   "date_index": "1854-01-08",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Friedrich Althaus",
+     "gnd_name": "Althaus, Friedrich",
+     "gnd": "116010436 ",
+     "birth": "1829",
+     "death": "1897",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Friedrich Althaus",
+    "Althaus, Friedrich"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "London",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1854-01-08",
+   "relevant_years": [
+    "1854"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "Friedrich Althaus: Ungedruckte Briefe von Ferdinand Gregorovius. In: Deutsche Revue über das gesamte nationale Leben der Gegenwart. Jg. 19. Bd. 2. Stuttgart [u. a.] 1894. S. 242–245",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 103,
+   "xml_id": "G000015",
+   "date_index": "1854-04-21",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Friedrich Althaus",
+     "gnd_name": "Althaus, Friedrich",
+     "gnd": "116010436 ",
+     "birth": "1829",
+     "death": "1897",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Friedrich Althaus",
+    "Althaus, Friedrich"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "London",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1854-04-21",
+   "relevant_years": [
+    "1854"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "Friedrich Althaus: Ungedruckte Briefe von Ferdinand Gregorovius. In: Deutsche Revue über das gesamte nationale Leben der Gegenwart. Jg. 19. Bd. 2. Stuttgart [u. a.] 1894. S. 245–248",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 106,
+   "xml_id": "G000016",
+   "date_index": "1854-05-25",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Johann Georg Freiherr Cotta von Cottendorf",
+     "gnd_name": "Cotta von Cottendorf, Johann Georg Freiherr",
+     "gnd": "11879972X",
+     "birth": "1796",
+     "death": "1863",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Johann Georg Freiherr Cotta von Cottendorf",
+    "Cotta von Cottendorf, Johann Georg Freiherr"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Stuttgart",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1854-05-25",
+   "relevant_years": [
+    "1854"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 1 ½ S.",
+   "reference": "H: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 4",
+   "print_reference": "Johannes Hönig: Ferdinand Gregorovius der Geschichtschreiber der Stadt Rom. Stuttgart, Berlin 1921. S. 205–206",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 119,
+   "xml_id": "G000066",
+   "date_index": "1855-01-06",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Heinrich Brockhaus",
+     "gnd_name": "Brockhaus, Heinrich",
+     "gnd": "116552433",
+     "birth": "1804",
+     "death": "1874",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Heinrich Brockhaus",
+    "Brockhaus, Heinrich"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Leipzig",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1855-01-06",
+   "relevant_years": [
+    "1855"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 4°, 2 S.",
+   "reference": "H: Sächsisches Staatsarchiv Leipzig, Bestand 21083, Archivalnummer 224, 11",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Sächsisches Staatsarchiv Leipzig"
+   ]
+  },
+  {
+   "index": 123,
+   "xml_id": "ed_wt1_4n4_5nb",
+   "date_index": "1855-02-04",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Louis Harder",
+     "gnd_name": "Harder, Louis",
+     "gnd": "1269841343",
+     "birth": "1821",
+     "death": "1899 oder 1900",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Louis Harder",
+    "Harder, Louis"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1855-02-04",
+   "relevant_years": [
+    "1855"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 4°, 2 S.",
+   "reference": "H: Bochum, Heimatstube der Kreisgemeinschaft Neidenburg",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Bochum, Heimatstube der Kreisgemeinschaft Neidenburg"
+   ]
+  },
+  {
+   "index": 125,
+   "xml_id": "G000060",
+   "date_index": "1855-03-02",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "F. A. Brockhaus Verlag",
+     "gnd_name": "F. A. Brockhaus Verlag",
+     "gnd": "65191-6",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    },
+    {
+     "name": "Heinrich Brockhaus",
+     "gnd_name": "Brockhaus, Heinrich",
+     "gnd": "116552433",
+     "birth": "1804",
+     "death": "1874",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "F. A. Brockhaus Verlag",
+    "F. A. Brockhaus Verlag",
+    "Heinrich Brockhaus",
+    "Brockhaus, Heinrich"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Leipzig",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1855-03-02",
+   "relevant_years": [
+    "1855"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 1 ¾ S.",
+   "reference": "H: Sächsisches Staatsarchiv Leipzig, Bestand 21083, Archivalnummer 224, 12",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Sächsisches Staatsarchiv Leipzig"
+   ]
+  },
+  {
+   "index": 128,
+   "xml_id": "G000038",
+   "date_index": "1855-04-22",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "F. A. Brockhaus Verlag",
+     "gnd_name": "F. A. Brockhaus Verlag",
+     "gnd": "65191-6",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    },
+    {
+     "name": "Heinrich Brockhaus",
+     "gnd_name": "Brockhaus, Heinrich",
+     "gnd": "116552433",
+     "birth": "1804",
+     "death": "1874",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "F. A. Brockhaus Verlag",
+    "F. A. Brockhaus Verlag",
+    "Heinrich Brockhaus",
+    "Brockhaus, Heinrich"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Leipzig",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1855-04-22",
+   "relevant_years": [
+    "1855"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 8°, 2 ¼ S.",
+   "reference": "H: Sächsisches Staatsarchiv Leipzig, Bestand 21083, Archivalnummer 224, 13",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Sächsisches Staatsarchiv Leipzig"
+   ]
+  },
+  {
+   "index": 129,
+   "xml_id": "G000061",
+   "date_index": "1855-04-28",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "F. A. Brockhaus Verlag",
+     "gnd_name": "F. A. Brockhaus Verlag",
+     "gnd": "65191-6",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    },
+    {
+     "name": "Heinrich Brockhaus",
+     "gnd_name": "Brockhaus, Heinrich",
+     "gnd": "116552433",
+     "birth": "1804",
+     "death": "1874",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "F. A. Brockhaus Verlag",
+    "F. A. Brockhaus Verlag",
+    "Heinrich Brockhaus",
+    "Brockhaus, Heinrich"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Leipzig",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1855-04-28",
+   "relevant_years": [
+    "1855"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 4°, 1 S.",
+   "reference": "H: Sächsisches Staatsarchiv Leipzig, Bestand 21083, Archivalnummer 224, 14",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Sächsisches Staatsarchiv Leipzig"
+   ]
+  },
+  {
+   "index": 149,
+   "xml_id": "G000056",
+   "date_index": "1855-12-11",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Heinrich Brockhaus",
+     "gnd_name": "Brockhaus, Heinrich",
+     "gnd": "116552433",
+     "birth": "1804",
+     "death": "1874",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Heinrich Brockhaus",
+    "Brockhaus, Heinrich"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Leipzig",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1855-12-11",
+   "relevant_years": [
+    "1855"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 4 S.",
+   "reference": "H: Sächsisches Staatsarchiv Leipzig, Bestand 21083, Archivalnummer 224, 22",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Sächsisches Staatsarchiv Leipzig"
+   ]
+  },
+  {
+   "index": 187,
+   "xml_id": "G000025",
+   "date_index": "1856-12-24",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Theodor Heyse",
+     "gnd_name": "Heyse, Theodor",
+     "gnd": "116796014",
+     "birth": "1803",
+     "death": "1884",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Theodor Heyse",
+    "Heyse, Theodor"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Florenz",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1856-12-24",
+   "relevant_years": [
+    "1856"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 3 ¼ S.",
+   "reference": "H: BBAW, Archiv, NL Theodor Heyse, Bl. 9–10",
+   "print_reference": "Briefe von Ferdinand Gregorovius an Theodor Heyse. In: Mittheilungen aus dem Litteraturarchive in Berlin 1899. Berlin 1899. S. 188–191",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 249,
+   "xml_id": "G000328",
+   "date_index": "1858-08-18",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Johann Georg Freiherr Cotta von Cottendorf",
+     "gnd_name": "Cotta von Cottendorf, Johann Georg Freiherr",
+     "gnd": "11879972X",
+     "birth": "1796",
+     "death": "1863",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Johann Georg Freiherr Cotta von Cottendorf",
+    "Cotta von Cottendorf, Johann Georg Freiherr"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Stuttgart",
+   "placename_received": "Florenz",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1858-08-18",
+   "relevant_years": [
+    "1858"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 1 ¾ S. (von Schreiberhand)",
+   "reference": "h: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 18a",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 253,
+   "xml_id": "G000113",
+   "date_index": "1858-09-05",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "J. G. Cotta’sche Buchhandlung",
+     "gnd_name": "J. G. Cotta’sche Buchhandlung",
+     "gnd": "5056474-2",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "J. G. Cotta’sche Buchhandlung",
+    "J. G. Cotta’sche Buchhandlung"
+   ],
+   "placename_sent": "Florenz",
+   "placename_received": "Stuttgart",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1858-09-05",
+   "relevant_years": [
+    "1858"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 8°, 2 ¼ S.",
+   "reference": "H: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 19",
+   "print_reference": "Johannes Hönig: Ferdinand Gregorovius der Geschichtschreiber der Stadt Rom. Stuttgart, Berlin 1921. S. 225–226 (gekürzt)",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 263,
+   "xml_id": "G000087",
+   "date_index": "1858-10-28",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Theodor Heyse",
+     "gnd_name": "Heyse, Theodor",
+     "gnd": "116796014",
+     "birth": "1803",
+     "death": "1884",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Theodor Heyse",
+    "Heyse, Theodor"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Florenz",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1858-10-28",
+   "relevant_years": [
+    "1858"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 8°, 4 S.",
+   "reference": "H: BBAW, Archiv, NL Theodor Heyse, Bl. 18–19",
+   "print_reference": "Briefe von Ferdinand Gregorovius an Theodor Heyse. In: Mittheilungen aus dem Litteraturarchive in Berlin 1899. Berlin 1899. S. 195–199",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 274,
+   "xml_id": "G000106",
+   "date_index": "1858-12-22",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Hermann von Thile",
+     "gnd_name": "Thile, Hermann von",
+     "gnd": "117340995",
+     "birth": "1812",
+     "death": "1889",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Hermann von Thile",
+    "Thile, Hermann von"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Berlin",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1858-12-22",
+   "relevant_years": [
+    "1858"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 3 ½ S.",
+   "reference": "H: GSA Weimar, 96/937, 5",
+   "print_reference": "Briefe von Ferdinand Gregorovius an den Staatssekretär Hermann von Thile. Hrsg. von Herman von Petersdorff. Berlin 1894. S. 7–9 (gekürzt)",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 278,
+   "xml_id": "ed_jyb_2h5_4wb",
+   "date_index": "1859-04-06",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Christian Karl Josias Freiherr von Bunsen",
+     "gnd_name": "Bunsen, Christian Karl Josias Freiherr von",
+     "gnd": "118668005",
+     "birth": "1791",
+     "death": "1860",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Christian Karl Josias Freiherr von Bunsen",
+    "Bunsen, Christian Karl Josias Freiherr von"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Heidelberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1859-04-06",
+   "relevant_years": [
+    "1859"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 8°, 2 ½ S.",
+   "reference": "H: GhStA Berlin, I. HA, Rep. 92, Dep. Bunsen, v., Karl Josias, B Nr. 50c, Paket 1, Verschiedene (meist unbeantwortete) Briefe 1859–1860, Bl. 229–230",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 279,
+   "xml_id": "G000103",
+   "date_index": "1859-04-11",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Hermann von Thile",
+     "gnd_name": "Thile, Hermann von",
+     "gnd": "117340995",
+     "birth": "1812",
+     "death": "1889",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Hermann von Thile",
+    "Thile, Hermann von"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Berlin",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1859-04-11",
+   "relevant_years": [
+    "1859"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 1 Bl., 8°, 6 S.",
+   "reference": "H: GSA Weimar, 96/937, 6",
+   "print_reference": "Briefe von Ferdinand Gregorovius an den Staatssekretär Hermann von Thile. Hrsg. von Herman von Petersdorff. Berlin 1894. S. 9–12 (gekürzt)",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 295,
+   "xml_id": "G000099",
+   "date_index": "1859-09-22",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "J. G. Cotta’sche Buchhandlung",
+     "gnd_name": "J. G. Cotta’sche Buchhandlung",
+     "gnd": "5056474-2",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "J. G. Cotta’sche Buchhandlung",
+    "J. G. Cotta’sche Buchhandlung"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Stuttgart",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1859-09-22",
+   "relevant_years": [
+    "1859"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 8°, 2 S.",
+   "reference": "H: DLA Marbach, Cotta-Archiv, 34804",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 299,
+   "xml_id": "G000097",
+   "date_index": "1859-09-28",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Hermann von Thile",
+     "gnd_name": "Thile, Hermann von",
+     "gnd": "117340995",
+     "birth": "1812",
+     "death": "1889",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Hermann von Thile",
+    "Thile, Hermann von"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Berlin",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1859-09-28",
+   "relevant_years": [
+    "1859"
+   ],
+   "incipit": "",
+   "scope": "2 Dbl., 8°, 6 ¾ S.",
+   "reference": "H: GSA Weimar, 96/937, 7",
+   "print_reference": "Briefe von Ferdinand Gregorovius an den Staatssekretär Hermann von Thile. Hrsg. von Herman von Petersdorff. Berlin 1894. S. 12–17 (leicht gekürzt)",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 312,
+   "xml_id": "G000408",
+   "date_index": "1859-12-26",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Giovanni Battista De Rossi",
+     "gnd_name": "De Rossi, Giovanni Battista",
+     "gnd": "119120852",
+     "birth": "1822",
+     "death": "1894",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Giovanni Battista De Rossi",
+    "De Rossi, Giovanni Battista"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Rom",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1859-12-26",
+   "relevant_years": [
+    "1859"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 8°, 1 S.",
+   "reference": "H: Rom, Biblioteca Apostolica Vaticana, Vat. Lat. 14241, Carteggio Giovanni Battista De Rossi 1858–1859, fol. 783, Nr. 171",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Rom, Biblioteca Apostolica Vaticana"
+   ]
+  },
+  {
+   "index": 313,
+   "xml_id": "ed_yns_ct5_4wb",
+   "date_index": "1860-01-05",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Christian Karl Josias Freiherr von Bunsen",
+     "gnd_name": "Bunsen, Christian Karl Josias Freiherr von",
+     "gnd": "118668005",
+     "birth": "1791",
+     "death": "1860",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Christian Karl Josias Freiherr von Bunsen",
+    "Bunsen, Christian Karl Josias Freiherr von"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Cannes",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1860-01-05",
+   "relevant_years": [
+    "1860"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 8°, 3 ¼ S.",
+   "reference": "H: GhStA Berlin, I. HA, Rep. 92, Dep. Bunsen, v., Karl Josias, B Nr. 50c, Paket 1, In Cannes (1859–1860) erhaltene Briefe, Bl. 176–177",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 315,
+   "xml_id": "G000094",
+   "date_index": "1860-01-07",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Hermann von Thile",
+     "gnd_name": "Thile, Hermann von",
+     "gnd": "117340995",
+     "birth": "1812",
+     "death": "1889",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Hermann von Thile",
+    "Thile, Hermann von"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Berlin",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1860-01-07",
+   "relevant_years": [
+    "1860"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 8°, 1 S.",
+   "reference": "H: GSA Weimar, 96/937, 9",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 317,
+   "xml_id": "G000093",
+   "date_index": "1860-01-11",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Hermann von Thile",
+     "gnd_name": "Thile, Hermann von",
+     "gnd": "117340995",
+     "birth": "1812",
+     "death": "1889",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Hermann von Thile",
+    "Thile, Hermann von"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Berlin",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1860-01-11",
+   "relevant_years": [
+    "1860"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 1 Bl., 8°, 5 ¼ S.",
+   "reference": "H: GSA Weimar, 96/937, 10",
+   "print_reference": "Briefe von Ferdinand Gregorovius an den Staatssekretär Hermann von Thile. Hrsg. von Herman von Petersdorff. Berlin 1894. S. 20–23 (gekürzt)",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 325,
+   "xml_id": "G000090",
+   "date_index": "1860-03-17",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ottilie Elgnowski",
+     "gnd_name": "Elgnowski, Ottilie",
+     "gnd": "116447591",
+     "birth": "1834",
+     "death": "1907",
+     "date_special": null
+    },
+    {
+     "name": "Emilie Auguste Gregorovius",
+     "gnd_name": "Gregorovius, Emilie",
+     "gnd": "129692433",
+     "birth": "1797",
+     "death": "1866",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Ottilie Elgnowski",
+    "Elgnowski, Ottilie",
+    "Emilie Auguste Gregorovius",
+    "Gregorovius, Emilie"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Insterburg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1860-03-17",
+   "relevant_years": [
+    "1860"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 8°, 4 S.",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 20, Elgnowski, Ottilie, 1b",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 330,
+   "xml_id": "G000086",
+   "date_index": "1860-03-28",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Hermann von Thile",
+     "gnd_name": "Thile, Hermann von",
+     "gnd": "117340995",
+     "birth": "1812",
+     "death": "1889",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Hermann von Thile",
+    "Thile, Hermann von"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Berlin",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1860-03-28",
+   "relevant_years": [
+    "1860"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 8°, 2 ¾ S.",
+   "reference": "H: GSA Weimar, 96/937, 11",
+   "print_reference": "Briefe von Ferdinand Gregorovius an den Staatssekretär Hermann von Thile. Hrsg. von Herman von Petersdorff. Berlin 1894. S. 23–25 (gekürzt)",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 344,
+   "xml_id": "ed_kzj_2qv_4wb",
+   "date_index": "1860-08-05",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Christian Karl Josias Freiherr von Bunsen",
+     "gnd_name": "Bunsen, Christian Karl Josias Freiherr von",
+     "gnd": "118668005",
+     "birth": "1791",
+     "death": "1860",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Christian Karl Josias Freiherr von Bunsen",
+    "Bunsen, Christian Karl Josias Freiherr von"
+   ],
+   "placename_sent": "Danzig",
+   "placename_received": "Bonn",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1860-08-05",
+   "relevant_years": [
+    "1860"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 8°, 2 ¼ S.",
+   "reference": "H: GhStA Berlin, I. HA, Rep. 92, Dep. Bunsen, v., Karl Josias, B Nr. 50c, Paket 2, Beantwortete Briefe 1860",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 345,
+   "xml_id": "G000122",
+   "date_index": "1860-08-09",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Hermann von Thile",
+     "gnd_name": "Thile, Hermann von",
+     "gnd": "117340995",
+     "birth": "1812",
+     "death": "1889",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Hermann von Thile",
+    "Thile, Hermann von"
+   ],
+   "placename_sent": "Danzig",
+   "placename_received": "Heiden",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1860-08-09",
+   "relevant_years": [
+    "1860"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 1 Bl., 8°, 5 S.",
+   "reference": "H: GSA Weimar, 96/937, 14",
+   "print_reference": "Briefe von Ferdinand Gregorovius an den Staatssekretär Hermann von Thile. Hrsg. von Herman von Petersdorff. Berlin 1894. S. 29–32 (gekürzt)",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 346,
+   "xml_id": "ed_stv_wxl_qwb",
+   "date_index": "1860-08-19",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Moritz August Freiherr von Bethmann-Hollweg",
+     "gnd_name": "Bethmann-Hollweg, Moritz August Freiherr von",
+     "gnd": "118510339",
+     "birth": "1795",
+     "death": "1877",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Moritz August Freiherr von Bethmann-Hollweg",
+    "Bethmann-Hollweg, Moritz August Freiherr von"
+   ],
+   "placename_sent": "Königsberg",
+   "placename_received": "Berlin",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1860-08-19",
+   "relevant_years": [
+    "1860"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 4º, 1 ¾ S.",
+   "reference": "H: GhStA Berlin, I. HA, Rep. 76, Vf. Lit. G, Nr. 25, Bl. 10",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 1,
+   "xml_id": "G000127",
+   "date_index": "1860-12-22",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Hermann von Thile",
+     "gnd_name": "Thile, Hermann von",
+     "gnd": "117340995",
+     "birth": "1812",
+     "death": "1889",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Hermann von Thile",
+    "Thile, Hermann von"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Berlin",
+   "date_cert": "high",
+   "date_from": "1860-12-16",
+   "date_to": "1860-12-22",
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": null,
+   "relevant_years": [
+    "1860"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 1 Bl., 8°, 5 S.",
+   "reference": "H: GSA Weimar, 96/937, 16",
+   "print_reference": "Briefe von Ferdinand Gregorovius an den Staatssekretär Hermann von Thile. Hrsg. von Herman von Petersdorff. Berlin 1894. S. 33–37 (gekürzt)",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 373,
+   "xml_id": "G000141",
+   "date_index": "1862-01-14",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Johann Georg Freiherr Cotta von Cottendorf",
+     "gnd_name": "Cotta von Cottendorf, Johann Georg Freiherr",
+     "gnd": "11879972X",
+     "birth": "1796",
+     "death": "1863",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Johann Georg Freiherr Cotta von Cottendorf",
+    "Cotta von Cottendorf, Johann Georg Freiherr"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Stuttgart",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1862-01-14",
+   "relevant_years": [
+    "1862"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 12°, 4 S.",
+   "reference": "H: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 42",
+   "print_reference": "Johannes Hönig: Ferdinand Gregorovius der Geschichtschreiber der Stadt Rom. Stuttgart, Berlin 1921. S. 244–245",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 3285,
+   "xml_id": "G000143",
+   "date_index": "1862-01-15",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Johann Georg Freiherr Cotta von Cottendorf",
+     "gnd_name": "Cotta von Cottendorf, Johann Georg Freiherr",
+     "gnd": "11879972X",
+     "birth": "1796",
+     "death": "1863",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Johann Georg Freiherr Cotta von Cottendorf",
+    "Cotta von Cottendorf, Johann Georg Freiherr"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Stuttgart",
+   "date_cert": "low",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": "1862-01-15",
+   "date_not_after": null,
+   "date_when": null,
+   "relevant_years": [
+    "1862"
+   ],
+   "incipit": "Ihr freundliches Schreiben erhielt ich gestern",
+   "scope": "1 Dbl., 8°, 2 S.",
+   "reference": "H: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 41",
+   "print_reference": "Johannes Hönig: Ferdinand Gregorovius der Geschichtschreiber der Stadt Rom. Stuttgart, Berlin 1921. S. 246",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 3,
+   "xml_id": "G067718",
+   "date_index": "1862-12-27",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Karl Ritter von Scherzer",
+     "gnd_name": "Scherzer, Karl Ritter von",
+     "gnd": "117222364",
+     "birth": "1821",
+     "death": "1903",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Karl Ritter von Scherzer",
+    "Scherzer, Karl Ritter von"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Wien",
+   "date_cert": "high",
+   "date_from": "1862-12-15",
+   "date_to": "1862-12-27",
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": null,
+   "relevant_years": [
+    "1862"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 8°, 4 S.",
+   "reference": "H: Kantonsbibliothek Vadiana St. Gallen, Slg. Robert Alther, VadSlg NL 202 : 83 : 76q",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Kantonsbibliothek Vadiana St. Gallen"
+   ]
+  },
+  {
+   "index": 418,
+   "xml_id": "G000410",
+   "date_index": "1863-04-28",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Giovanni Battista De Rossi",
+     "gnd_name": "De Rossi, Giovanni Battista",
+     "gnd": "119120852",
+     "birth": "1822",
+     "death": "1894",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Giovanni Battista De Rossi",
+    "De Rossi, Giovanni Battista"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Rom",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1863-04-28",
+   "relevant_years": [
+    "1863"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 8°, 2 S.",
+   "reference": "H: Rom, Biblioteca Apostolica Vaticana, Vat. Lat. 14243, Carteggio Giovanni Battista De Rossi 1862–1863, fol. 706, Nr. 132",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Rom, Biblioteca Apostolica Vaticana"
+   ]
+  },
+  {
+   "index": 3301,
+   "xml_id": "G000214",
+   "date_index": "1866-04-09",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Hermann von Thile",
+     "gnd_name": "Thile, Hermann von",
+     "gnd": "117340995",
+     "birth": "1812",
+     "death": "1889",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Hermann von Thile",
+    "Thile, Hermann von"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Berlin",
+   "date_cert": "low",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1866-04-09",
+   "relevant_years": [
+    "1866"
+   ],
+   "incipit": "Die freundliche Nachricht von Ihrer aller Wolergehen hat mich innig erfreut",
+   "scope": "1 Dbl., 4°, 3 ½ S.",
+   "reference": "K: BSB München, NL Gregorovius, Gregoroviusiana 20, Unbekannt, 1",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 1612,
+   "xml_id": "G000231",
+   "date_index": "1877-11-06",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Raffaele Mariano",
+     "gnd_name": "Mariano, Raffaele",
+     "gnd": "116771992",
+     "birth": "1840",
+     "death": "1912",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Raffaele Mariano",
+    "Mariano, Raffaele"
+   ],
+   "placename_sent": "München",
+   "placename_received": "Rom",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1877-11-06",
+   "relevant_years": [
+    "1877"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 8°, 2 S.",
+   "reference": "H: Florenz, Privatarchiv Anrep",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Florenz, Privatarchiv Anrep"
+   ]
+  },
+  {
+   "index": 1617,
+   "xml_id": "G000247",
+   "date_index": "1877-11-29",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Raffaele Mariano",
+     "gnd_name": "Mariano, Raffaele",
+     "gnd": "116771992",
+     "birth": "1840",
+     "death": "1912",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Raffaele Mariano",
+    "Mariano, Raffaele"
+   ],
+   "placename_sent": "München",
+   "placename_received": "Rom",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1877-11-29",
+   "relevant_years": [
+    "1877"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 1 Bl., 8°, 4 ¾ S. ",
+   "reference": "H: Florenz, Privatarchiv Anrep",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Florenz, Privatarchiv Anrep"
+   ]
+  },
+  {
+   "index": 2282,
+   "xml_id": "ed_rzn_ycy_2qb",
+   "date_index": "1883-04-03",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Jean Bourdeau",
+     "gnd_name": "Bourdeau, Jean",
+     "gnd": "10173770X",
+     "birth": "1848",
+     "death": "1928",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Jean Bourdeau",
+    "Bourdeau, Jean"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Paris",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1883-04-03",
+   "relevant_years": [
+    "1883"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 4 S.",
+   "reference": "H: BSB München, Autogr., Gregorovius, Ferdinand, 30, 6",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 2467,
+   "xml_id": "ed_v5m_lrp_dsb",
+   "date_index": "1884-10-28",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Robert Davidsohn",
+     "gnd_name": "Davidsohn, Robert",
+     "gnd": "116038179",
+     "birth": "1853",
+     "death": "1937",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Robert Davidsohn",
+    "Davidsohn, Robert"
+   ],
+   "placename_sent": "München",
+   "placename_received": "Mont Fleuri sur Territet",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1884-10-28",
+   "relevant_years": [
+    "1884"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "Johannes Hönig: Der Geschichtschreiber der Stadt Rom an den Geschichtschreiber von Florenz. Briefe von Ferdinand Gregorovius an Robert Davidsohn. In: Deutsche Rundschau. Bd. 196. Berlin 1923. S. 149–150",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 2473,
+   "xml_id": "ed_mnf_xjj_zrb",
+   "date_index": "1884-11-30",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Contessa Ersilia Caetani Lovatelli",
+     "gnd_name": "Caetani Lovatelli, Ersilia, Contessa",
+     "gnd": "11640065X",
+     "birth": "1840",
+     "death": "1925",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Contessa Ersilia Caetani Lovatelli",
+    "Caetani Lovatelli, Ersilia, Contessa"
+   ],
+   "placename_sent": "München",
+   "placename_received": "Rom",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1884-11-30",
+   "relevant_years": [
+    "1884"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "Ferdinand Gregorovius und seine Briefe an Gräfin Ersilia Caetani Lovatelli. Hrsg. von Sigmund Münz. Berlin 1896. S. 131–132",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 2474,
+   "xml_id": "G000386",
+   "date_index": "1884-12-07",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Giovanni Bizio",
+     "gnd_name": "Bizio, Giovanni",
+     "gnd": "1191842525",
+     "birth": "1823",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Giovanni Bizio",
+    "Bizio, Giovanni"
+   ],
+   "placename_sent": "München",
+   "placename_received": "Venedig",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1884-12-07",
+   "relevant_years": [
+    "1884"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "Appendice all’Atto verbale 30 novembre 1884: Condoglianze per la morte dei membri effettivi prof. Carlo Combi e ab. prof. Rinaldo Fulin. In: Atti del Reale Istituto Veneto Di Scienze, Lettere Ed Arti. Ser. 6. Bd. 3 (November 1884–October 1885). Venedig 1885. S. 16",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 2478,
+   "xml_id": "ed_bhl_y5j_zrb",
+   "date_index": "1884-12-22",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Conte Giovanni Gozzadini",
+     "gnd_name": "Gozzadini, Giovanni, Conte",
+     "gnd": "116798688",
+     "birth": "1810",
+     "death": "1887",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Conte Giovanni Gozzadini",
+    "Gozzadini, Giovanni, Conte"
+   ],
+   "placename_sent": "München",
+   "placename_received": "Bologna",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1884-12-22",
+   "relevant_years": [
+    "1884"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 1 ¾ S. (1r, 2r)",
+   "reference": "h: Bologna, Biblioteca dell’Archiginnasio, Ms. Gozzadini 442, 49",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Bologna, Biblioteca dell’Archiginnasio"
+   ]
+  },
+  {
+   "index": 3174,
+   "xml_id": "ed_fpn_wyx_gxb",
+   "date_index": "1890-09-08",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "J. G. Cotta’sche Buchhandlung Nachfolger",
+     "gnd_name": "J. G. Cotta’sche Buchhandlung Nachfolger",
+     "gnd": "2036169-5",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "J. G. Cotta’sche Buchhandlung Nachfolger",
+    "J. G. Cotta’sche Buchhandlung Nachfolger"
+   ],
+   "placename_sent": "München",
+   "placename_received": "Stuttgart",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1890-09-08",
+   "relevant_years": [
+    "1890"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 8°, 4 S.",
+   "reference": "H: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 488",
+   "print_reference": "Johannes Hönig: Ferdinand Gregorovius der Geschichtschreiber der Stadt Rom. Stuttgart, Berlin 1921. S. 524 (stark gekürzt)",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 3229,
+   "xml_id": "ed_jyl_wjx_3xb",
+   "date_index": "1891-03-01",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Mathilde von Humboldt",
+     "gnd_name": "Humboldt, Mathilde von",
+     "gnd": "117061999",
+     "birth": "1830",
+     "death": "1897",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Mathilde von Humboldt",
+    "Humboldt, Mathilde von"
+   ],
+   "placename_sent": "München",
+   "placename_received": "Rom",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1891-03-01",
+   "relevant_years": [
+    "1891"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 8°, 4 S. + Umschlag",
+   "reference": "H: Biblioteka Jagiellońska Krakau",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Biblioteka Jagiellońska Krakau"
+   ]
+  },
+  {
+   "index": 3231,
+   "xml_id": "ed_krm_s3y_3xb",
+   "date_index": "1891-03-22",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Franz Rühl",
+     "gnd_name": "Rühl, Franz",
+     "gnd": "116675586",
+     "birth": "1845",
+     "death": "1915",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Franz Rühl",
+    "Rühl, Franz"
+   ],
+   "placename_sent": "München",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1891-03-22",
+   "relevant_years": [
+    "1891"
+   ],
+   "incipit": "",
+   "scope": "BK, 2 S.",
+   "reference": "H: Universitäts- und Landesbibliothek Bonn, NL Franz Rühl, S 2606, 75",
+   "print_reference": "Johannes Hönig: Ferdinand Gregorovius der Geschichtschreiber der Stadt Rom. Stuttgart, Berlin 1921. S. 526–527 (gekürzt)",
+   "relevant_holding_locations": [
+    "Universitäts- und Landesbibliothek Bonn"
+   ]
+  },
+  {
+   "index": 58,
+   "xml_id": "",
+   "date_index": "1837-07-17",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Timotheus Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand Timotheus",
+     "gnd": "129692565",
+     "birth": "1780",
+     "death": "1848",
+     "date_special": null
+    },
+    {
+     "name": "Julius Pianka, Ferdinand Gregorovius, Leopold Pianka, Gustav Gregorovius",
+     "gnd_name": "Pianka, Julius; Gregorovius, Ferdinand; Pianka, Leopold; Gregorovius, Gustav",
+     "gnd": null,
+     "birth": "",
+     "death": "",
+     "date_special": "1818–1892, 1821–1891, 1820–1870, 1810–1862 "
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Julius Gregorovius",
+     "gnd_name": "Gregorovius, Julius",
+     "gnd": "116830050",
+     "birth": "1819",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Timotheus Gregorovius",
+    "Gregorovius, Ferdinand Timotheus",
+    "Julius Pianka, Ferdinand Gregorovius, Leopold Pianka, Gustav Gregorovius",
+    "Pianka, Julius; Gregorovius, Ferdinand; Pianka, Leopold; Gregorovius, Gustav"
+   ],
+   "recipient_names": [
+    "Julius Gregorovius",
+    "Gregorovius, Julius"
+   ],
+   "placename_sent": "Neidenburg",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1837-07-17",
+   "relevant_years": [
+    "1837"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, ½ S. (1r Ferdinand Timotheus Gregorovius) + ½ S. (1r Julius Pianka) + ½ (1v Ferdinand Gregorovius) + 1 S. (1v–2r Leopold Pianka) + ¼ S. (2r Gustav Gregorovius)",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 20, Gregorovius, Julius, 1",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 59,
+   "xml_id": "",
+   "date_index": "1838-09-25",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Timotheus Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand Timotheus",
+     "gnd": "129692565",
+     "birth": "1780",
+     "death": "1848",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Timotheus Gregorovius",
+    "Gregorovius, Ferdinand Timotheus"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Neidenburg",
+   "placename_received": "Gumbinnen",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1838-09-25",
+   "relevant_years": [
+    "1838"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 2°, 4 S.",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 21, Gregorovius, Ferdinand Timotheus, 1",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 60,
+   "xml_id": "",
+   "date_index": "1838-10-12",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Timotheus Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand Timotheus",
+     "gnd": "129692565",
+     "birth": "1780",
+     "death": "1848",
+     "date_special": null
+    },
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Julius Gregorovius",
+     "gnd_name": "Gregorovius, Julius",
+     "gnd": "116830050",
+     "birth": "1819",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Timotheus Gregorovius",
+    "Gregorovius, Ferdinand Timotheus",
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Julius Gregorovius",
+    "Gregorovius, Julius"
+   ],
+   "placename_sent": "Neidenburg",
+   "placename_received": "Berlin",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1838-10-12",
+   "relevant_years": [
+    "1838"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 1 ¼ S. (1r–v Ferdinand Timotheus Gregorovius) + 1 ½ S. (1v–2r Ferdinand Gregorovius)",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 20, Gregorovius, Julius, 2",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 61,
+   "xml_id": "",
+   "date_index": "1840-04-26",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    },
+    {
+     "name": "Ferdinand Timotheus Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand Timotheus",
+     "gnd": "129692565",
+     "birth": "1780",
+     "death": "1848",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Julius Gregorovius",
+     "gnd_name": "Gregorovius, Julius",
+     "gnd": "116830050",
+     "birth": "1819",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand",
+    "Ferdinand Timotheus Gregorovius",
+    "Gregorovius, Ferdinand Timotheus"
+   ],
+   "recipient_names": [
+    "Julius Gregorovius",
+    "Gregorovius, Julius"
+   ],
+   "placename_sent": "Neidenburg",
+   "placename_received": "",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1840-04-26",
+   "relevant_years": [
+    "1840"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 2 S. (1r–v Ferdinand Gregorovius) + 2 S. (2r–v Ferdinand Timotheus Gregorovius)",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 20, Gregorovius, Julius, 3",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 62,
+   "xml_id": "",
+   "date_index": "1841-11-25",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Timotheus Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand Timotheus",
+     "gnd": "129692565",
+     "birth": "1780",
+     "death": "1848",
+     "date_special": null
+    },
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Julius Gregorovius",
+     "gnd_name": "Gregorovius, Julius",
+     "gnd": "116830050",
+     "birth": "1819",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Timotheus Gregorovius",
+    "Gregorovius, Ferdinand Timotheus",
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Julius Gregorovius",
+    "Gregorovius, Julius"
+   ],
+   "placename_sent": "Neidenburg",
+   "placename_received": "Graudenz",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1841-11-25",
+   "relevant_years": [
+    "1841"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 2 S. (1r–v Ferdinand Timotheus Gregorovius) + 1 S. (2r Ferdinand Gregorovius)",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 20, Gregorovius, Julius, 4",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 63,
+   "xml_id": "",
+   "date_index": "1842-02-20",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Emilie Auguste Gregorovius",
+     "gnd_name": "Gregorovius, Emilie",
+     "gnd": "129692433",
+     "birth": "1797",
+     "death": "1866",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Emilie Auguste Gregorovius",
+    "Gregorovius, Emilie"
+   ],
+   "placename_sent": "Königsberg",
+   "placename_received": "Neidenburg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1842-02-20",
+   "relevant_years": [
+    "1842"
+   ],
+   "incipit": "[Briefgedicht]",
+   "scope": "1 Dbl., 8°, 4 S.",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 20, Gregorovius, Emilie",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 64,
+   "xml_id": "",
+   "date_index": "1842-11-13",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Karl Rosenkranz",
+     "gnd_name": "Rosenkranz, Karl",
+     "gnd": "118602721",
+     "birth": "1805",
+     "death": "1879",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Karl Rosenkranz",
+    "Rosenkranz, Karl"
+   ],
+   "placename_sent": "Neidenburg",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1842-11-13",
+   "relevant_years": [
+    "1842"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "D1: Max Jacobson: Ungedruckte Briefe von Ferdinand Gregorovius. In: Deutsche Revue über das gesamte nationale Leben der Gegenwart. Jg. 19. Stuttgart [u. a.] 1894. Bd. 2. S. 349 (gekürzt) – D2: Ferdinand Gregorovius: Briefe nach Königsberg. Hrsg. von Dominik Fugger und Nina Schlüter. München 2013. S. 170 ",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 65,
+   "xml_id": "",
+   "date_index": "1843-01-21",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Karl Rosenkranz",
+     "gnd_name": "Rosenkranz, Karl",
+     "gnd": "118602721",
+     "birth": "1805",
+     "death": "1879",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Karl Rosenkranz",
+    "Rosenkranz, Karl"
+   ],
+   "placename_sent": "Neidenburg",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1843-01-21",
+   "relevant_years": [
+    "1843"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "D1: Max Jacobson: Ungedruckte Briefe von Ferdinand Gregorovius. In: Deutsche Revue über das gesamte nationale Leben der Gegenwart. Jg. 19. Stuttgart [u. a.] 1894. Bd. 2. S. 350 (gekürzt) – D2: Ferdinand Gregorovius: Briefe nach Königsberg. Hrsg. von Dominik Fugger und Nina Schlüter. München 2013. S. 171",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 66,
+   "xml_id": "",
+   "date_index": "1844-01-19",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Rudolf Gregorovius",
+     "gnd_name": "Gregorovius, Rudolf",
+     "gnd": null,
+     "birth": "1808",
+     "death": "1866",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Rudolf Gregorovius",
+    "Gregorovius, Rudolf"
+   ],
+   "placename_sent": "Soldau",
+   "placename_received": "Schaken",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1844-01-19",
+   "relevant_years": [
+    "1844"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "Wanderjahre in Italien. Auswahl in zwei Bänden hrsg. von Heinrich Hubert Houben. Bd. 2. Leipzig 1912 (gekürzt) + ergänzend Kurt Getzuhn: Aus dem Briefwechsel von Ferdinand Gregorovius. I. Briefe von Karl Rosenkranz. In: Altpreußische Monatsschrift. Bd. 49. H. 1. Königsberg 1912. S. 166, Anm. 7",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 68,
+   "xml_id": "",
+   "date_index": "1845-03-16",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Karl Rosenkranz",
+     "gnd_name": "Rosenkranz, Karl",
+     "gnd": "118602721",
+     "birth": "1805",
+     "death": "1879",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Karl Rosenkranz",
+    "Rosenkranz, Karl"
+   ],
+   "placename_sent": "Soldau",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1845-03-16",
+   "relevant_years": [
+    "1845"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "D1: Max Jacobson: Ungedruckte Briefe von Ferdinand Gregorovius. In: Deutsche Revue über das gesamte nationale Leben der Gegenwart. Jg. 19. Stuttgart [u. a.] 1894. Bd. 2. S. 350–351 (gekürzt) – D2: Ferdinand Gregorovius: Briefe nach Königsberg. Hrsg. von Dominik Fugger und Nina Schlüter. München 2013. S. 171–172",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 67,
+   "xml_id": "",
+   "date_index": "1845-08-14",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Julius Fröbel",
+     "gnd_name": "Fröbel, Julius",
+     "gnd": "118536303",
+     "birth": "1805",
+     "death": "1893",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Julius Fröbel",
+    "Fröbel, Julius"
+   ],
+   "placename_sent": "Königsberg",
+   "placename_received": "Zürich",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1845-08-14",
+   "relevant_years": [
+    "1845"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 4°, 1 S.",
+   "reference": "H: Zentralbibliothek Zürich, NL Julius Fröbel, Ms Z II 85.39",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Zentralbibliothek Zürich"
+   ]
+  },
+  {
+   "index": 3332,
+   "xml_id": "",
+   "date_index": "1846-04-10",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Karl Rosenkranz",
+     "gnd_name": "Rosenkranz, Karl",
+     "gnd": "118602721",
+     "birth": "1805",
+     "death": "1879",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Karl Rosenkranz",
+    "Rosenkranz, Karl"
+   ],
+   "placename_sent": "",
+   "placename_received": "Königsberg",
+   "date_cert": "low",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": "1846-04-10",
+   "date_when": null,
+   "relevant_years": [
+    "1846"
+   ],
+   "incipit": "[...] Ich treffe dort ein, kurz vorher expedius in jeder Hinsicht",
+   "scope": "",
+   "reference": "",
+   "print_reference": "D1: Max Jacobson: Ungedruckte Briefe von Ferdinand Gregorovius. In: Deutsche Revue über das gesamte nationale Leben der Gegenwart. Jg. 19. Stuttgart [u. a.] 1894. Bd. 2. S. 348 (Auszug) – D2: Ferdinand Gregorovius: Briefe nach Königsberg. Hrsg. von Dominik Fugger und Nina Schlüter. München 2013. S. 172",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 69,
+   "xml_id": "",
+   "date_index": "1846-08-25",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Timotheus Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand Timotheus",
+     "gnd": "129692565",
+     "birth": "1780",
+     "death": "1848",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Timotheus Gregorovius",
+    "Gregorovius, Ferdinand Timotheus"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Neidenburg",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1846-08-25",
+   "relevant_years": [
+    "1846"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 2 ¼ S.",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 21, Gregorovius, Ferdinand Timotheus, 3",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 70,
+   "xml_id": "",
+   "date_index": "1847-04-27",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Timotheus Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand Timotheus",
+     "gnd": "129692565",
+     "birth": "1780",
+     "death": "1848",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Timotheus Gregorovius",
+    "Gregorovius, Ferdinand Timotheus"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Neidenburg",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1847-04-27",
+   "relevant_years": [
+    "1847"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 3 S.",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 21, Gregorovius, Ferdinand Timotheus, 5",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 71,
+   "xml_id": "",
+   "date_index": "1847-06-19",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Timotheus Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand Timotheus",
+     "gnd": "129692565",
+     "birth": "1780",
+     "death": "1848",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Timotheus Gregorovius",
+    "Gregorovius, Ferdinand Timotheus"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Neidenburg",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1847-06-19",
+   "relevant_years": [
+    "1847"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 2 ¼ S.",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 21, Gregorovius, Ferdinand Timotheus, 4",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 72,
+   "xml_id": "",
+   "date_index": "1847-08-25",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Timotheus Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand Timotheus",
+     "gnd": "129692565",
+     "birth": "1780",
+     "death": "1848",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Timotheus Gregorovius",
+    "Gregorovius, Ferdinand Timotheus"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Neidenburg",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1847-08-25",
+   "relevant_years": [
+    "1847"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 1 ½ S.",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 21, Gregorovius, Ferdinand Timotheus, 2",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 73,
+   "xml_id": "",
+   "date_index": "1847-08-28",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Timotheus Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand Timotheus",
+     "gnd": "129692565",
+     "birth": "1780",
+     "death": "1848",
+     "date_special": null
+    },
+    {
+     "name": "Ottilie Gregorovius",
+     "gnd_name": "Gregorovius, Ottilie",
+     "gnd": "116447591",
+     "birth": "1834",
+     "death": "1907",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Timotheus Gregorovius",
+    "Gregorovius, Ferdinand Timotheus",
+    "Ottilie Gregorovius",
+    "Gregorovius, Ottilie"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Neidenburg",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1847-08-28",
+   "relevant_years": [
+    "1847"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 1 ¼ S. (vdH von Ottilie Gregorovius mit eigenh. Unterschrift, Nachschrift von Ottilie Gregorovius)",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 21, Gregorovius, Ferdinand Timotheus, 6",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 74,
+   "xml_id": "",
+   "date_index": "1847-12-04",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Wilhelm Drumann",
+     "gnd_name": "Drumann, Wilhelm",
+     "gnd": "100113842",
+     "birth": "1786",
+     "death": "1861",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Wilhelm Drumann",
+    "Drumann, Wilhelm"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Königsberg",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1847-12-04",
+   "relevant_years": [
+    "1847"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 4°, ¾ S.",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 21, Drumann, Wilhelm Karl August",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 75,
+   "xml_id": "",
+   "date_index": "1848-12-11",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    },
+    {
+     "name": "Louis Köhler",
+     "gnd_name": "Köhler, Louis",
+     "gnd": "116285036",
+     "birth": "1820",
+     "death": "1886",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Johann Peter Eckermann",
+     "gnd_name": "Eckermann, Johann Peter",
+     "gnd": "118528777 ",
+     "birth": "1792",
+     "death": "1854",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand",
+    "Louis Köhler",
+    "Köhler, Louis"
+   ],
+   "recipient_names": [
+    "Johann Peter Eckermann",
+    "Eckermann, Johann Peter"
+   ],
+   "placename_sent": "Königsberg",
+   "placename_received": "Weimar",
+   "date_cert": "high",
+   "date_from": "1848-12-10",
+   "date_to": "1848-12-11",
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": null,
+   "relevant_years": [
+    "1848"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "Arthur Warda: Ein Brief von Ferdinand Gregorovius an Johann Peter Eckermann. In: Euphorion. Zeitschrift für Literaturgeschichte. Bd. 24. Leipzig, Wien: Fromme 1922. S. 134–137",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 76,
+   "xml_id": "",
+   "date_index": "1849-05-10",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ottilie Elgnowski",
+     "gnd_name": "Elgnowski, Ottilie",
+     "gnd": "116447591",
+     "birth": "1834",
+     "death": "1907",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Ottilie Elgnowski",
+    "Elgnowski, Ottilie"
+   ],
+   "placename_sent": "Königsberg",
+   "placename_received": "Neidenburg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1849-05-10",
+   "relevant_years": [
+    "1849"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, ½ S.",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 42a, Elgnowski, Ottilie, 1",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 77,
+   "xml_id": "",
+   "date_index": "1849-09-10",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Alexander Jung",
+     "gnd_name": "Jung, Alexander",
+     "gnd": "117233447",
+     "birth": "1799",
+     "death": "1884",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Alexander Jung",
+    "Jung, Alexander"
+   ],
+   "placename_sent": "Königsberg",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1849-09-10",
+   "relevant_years": [
+    "1849"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "D1: Heinrich Hubert Houben: Ferdinand Gregorovius als Journalist. In: Deutsche Rundschau. Bd. 171. Berlin 1917. S. 224–225 – D2: Heinrich Hubert Houben: Kleine Blumen, kleine Blätter aus Biedermeier und Vormärz. Ein Strauß zu meinem 50. Geburtstag. Dessau 1925. S. 154–155 – D3: Ferdinand Gregorovius: Briefe nach Königsberg. Hrsg. von Dominik Fugger und Nina Schlüter. München 2013. S. 182–183",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 78,
+   "xml_id": "",
+   "date_index": "1850-02-05",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Emilie Auguste Gregorovius",
+     "gnd_name": "Gregorovius, Emilie",
+     "gnd": "129692433",
+     "birth": "1797",
+     "death": "1866",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Emilie Auguste Gregorovius",
+    "Gregorovius, Emilie"
+   ],
+   "placename_sent": "Königsberg",
+   "placename_received": "Neidenburg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1850-02-05",
+   "relevant_years": [
+    "1850"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "Johannes Hönig: Ferdinand Gregorovius. Eine Biographie. Stuttgart 1944. S. 453 (gekürzt)",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 79,
+   "xml_id": "",
+   "date_index": "1850-10-22",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Weidmannsche Buchhandlung",
+     "gnd_name": "Weidmannsche Buchhandlung",
+     "gnd": "814693-7",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Weidmannsche Buchhandlung",
+    "Weidmannsche Buchhandlung"
+   ],
+   "placename_sent": "Königsberg",
+   "placename_received": "Leipzig",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1850-10-22",
+   "relevant_years": [
+    "1850"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 3 ½ S.",
+   "reference": "H: BSB München, Autogr., Gregorovius, Ferdinand, 1",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 81,
+   "xml_id": "",
+   "date_index": "1851-02-20",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Blätter für literarische Unterhaltung",
+     "gnd_name": "Blätter für literarische Unterhaltung",
+     "gnd": "4145798-5",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Blätter für literarische Unterhaltung",
+    "Blätter für literarische Unterhaltung"
+   ],
+   "placename_sent": "Königsberg",
+   "placename_received": "Leipzig",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1851-02-20",
+   "relevant_years": [
+    "1851"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, ½ S.",
+   "reference": "H: Sächsisches Staatsarchiv Leipzig, Bestand 21083, Archivalnummer 224, 9",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Sächsisches Staatsarchiv Leipzig"
+   ]
+  },
+  {
+   "index": 3299,
+   "xml_id": "",
+   "date_index": "1851-03-14",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Heinrich Laube",
+     "gnd_name": "Laube, Heinrich",
+     "gnd": "118570080",
+     "birth": "1806",
+     "death": "1884",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Heinrich Laube",
+    "Laube, Heinrich"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Wien",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": "1851-03-14",
+   "date_not_after": null,
+   "date_when": null,
+   "relevant_years": [
+    "1851"
+   ],
+   "incipit": "Die Direction des K. K. Hof und Nationaltheaters in der Burg dankt ergebenst für Zusendung des Manuskriptes",
+   "scope": "1 Dbl., 4°, 2 S.",
+   "reference": "H: SBB – PK, Slg. Darmstaedter 2m 1840: Laube, Heinrich, Bl. 1–2",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 3330,
+   "xml_id": "",
+   "date_index": "1851-12-02",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ludwig Bornträger",
+     "gnd_name": "Bornträger, Ludwig",
+     "gnd": "143199706",
+     "birth": "1828",
+     "death": "1852",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Ludwig Bornträger",
+    "Bornträger, Ludwig"
+   ],
+   "placename_sent": "Königsberg",
+   "placename_received": "",
+   "date_cert": "high",
+   "date_from": "1851-11-30",
+   "date_to": "1851-12-02",
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": null,
+   "relevant_years": [
+    "1851"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "D1: Johannes Hönig: Ferdinand Gregorovius und Ludwig Bornträger. V. In: Königsberger Hartungsche Zeitung. Nr. 595. Königsberg 19.12.1920. [S. 2.] (gekürzt) – [und öfter] – D4: Ferdinand Gregorovius: Briefe nach Königsberg. Hrsg. von Dominik Fugger und Nina Schlüter. München 2013. S. 185–187",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 82,
+   "xml_id": "",
+   "date_index": "1852-04-24",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Klara Faltin",
+     "gnd_name": "Faltin, Klara",
+     "gnd": "130057436",
+     "birth": "1834",
+     "death": "1914",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Klara Faltin",
+    "Faltin, Klara"
+   ],
+   "placename_sent": "Venedig",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1852-04-24",
+   "relevant_years": [
+    "1852"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "D1: Johannes Hönig: Ferdinand Gregorovius der Geschichtschreiber der Stadt Rom. Stuttgart, Berlin 1921. S. 197–200 (gekürzt) – [und öfter] – D3: Ferdinand Gregorovius: Briefe nach Königsberg. Hrsg. von Dominik Fugger und Nina Schlüter. München 2013. S. 188–190",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 83,
+   "xml_id": "",
+   "date_index": "1852-09-14",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Albrecht Pancritius",
+     "gnd_name": "Pancritius, Albrecht",
+     "gnd": "101682239",
+     "birth": "1818",
+     "death": "1862",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Albrecht Pancritius",
+    "Pancritius, Albrecht"
+   ],
+   "placename_sent": "Livorno",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1852-09-14",
+   "relevant_years": [
+    "1852"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 8°, 1 ½ S.",
+   "reference": "H: Sächsisches Staatsarchiv Leipzig, Bestand 21083, Archivalnummer 224, 1",
+   "print_reference": "D1: Heinrich Hubert Houben: Ferdinand Gregorovius als Journalist. In: Deutsche Rundschau. Bd. 171. Berlin (Mai) 1917. S. 241–242 – D2: Ferdinand Gregorovius: Briefe nach Königsberg. Hrsg. von Dominik Fugger und Nina Schlüter. München 2013. S. 39–40",
+   "relevant_holding_locations": [
+    "Sächsisches Staatsarchiv Leipzig"
+   ]
+  },
+  {
+   "index": 3331,
+   "xml_id": "",
+   "date_index": "1852-10-02",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Albrecht Pancritius",
+     "gnd_name": "Pancritius, Albrecht",
+     "gnd": "101682239",
+     "birth": "1818",
+     "death": "1862",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Albrecht Pancritius",
+    "Pancritius, Albrecht"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Königsberg",
+   "date_cert": "low",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": "1852-10-02",
+   "date_not_after": null,
+   "date_when": null,
+   "relevant_years": [
+    "1852"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 4°, 2 S.",
+   "reference": "H: Sächsisches Staatsarchiv Leipzig, Bestand 21083, Archivalnummer 224, 2",
+   "print_reference": "D1: Heinrich Hubert Houben: Freundesbriefe von Ferdinand Gregorovius. In: Deutsche Rundschau. Bd. 167. Berlin 1916. S. 44–48 – D2: Ferdinand Gregorovius: Briefe nach Königsberg. Hrsg. von Dominik Fugger und Nina Schlüter. München 2013. S. 40–43",
+   "relevant_holding_locations": [
+    "Sächsisches Staatsarchiv Leipzig"
+   ]
+  },
+  {
+   "index": 87,
+   "xml_id": "",
+   "date_index": "1853-01-15",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "J. G. Cotta’sche Buchhandlung",
+     "gnd_name": "J. G. Cotta’sche Buchhandlung",
+     "gnd": "5056474-2",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "J. G. Cotta’sche Buchhandlung",
+    "J. G. Cotta’sche Buchhandlung"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Stuttgart",
+   "placename_received": "Rom",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1853-01-15",
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "[Honoraranweisung]",
+   "scope": "",
+   "reference": "h: DLA Marbach, Cotta-Archiv, Gelehrten-Copierbuch IV, 28",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 88,
+   "xml_id": "",
+   "date_index": "1853-02-05",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "J. G. Cotta’sche Buchhandlung",
+     "gnd_name": "J. G. Cotta’sche Buchhandlung",
+     "gnd": "5056474-2",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "J. G. Cotta’sche Buchhandlung",
+    "J. G. Cotta’sche Buchhandlung"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Stuttgart",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1853-02-05",
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 4°, ½ S.",
+   "reference": "H: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 1",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 91,
+   "xml_id": "",
+   "date_index": "1853-04-26",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "J. G. Cotta’sche Buchhandlung",
+     "gnd_name": "J. G. Cotta’sche Buchhandlung",
+     "gnd": "5056474-2",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "J. G. Cotta’sche Buchhandlung",
+    "J. G. Cotta’sche Buchhandlung"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Stuttgart",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1853-04-26",
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 4°, ½ S.",
+   "reference": "H: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 2b",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 92,
+   "xml_id": "",
+   "date_index": "1853-05-10",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Johann Georg Freiherr Cotta von Cottendorf",
+     "gnd_name": "Cotta von Cottendorf, Johann Georg Freiherr",
+     "gnd": "11879972X",
+     "birth": "1796",
+     "death": "1863",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Johann Georg Freiherr Cotta von Cottendorf",
+    "Cotta von Cottendorf, Johann Georg Freiherr"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Stuttgart",
+   "placename_received": "Rom",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1853-05-10",
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 1 ¾ S. (von Schreiberhand mit eigh. Grußformel und Unterschrift)",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 26a (K: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 2a)",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 95,
+   "xml_id": "",
+   "date_index": "1853-05-31",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "J. G. Cotta’sche Buchhandlung",
+     "gnd_name": "J. G. Cotta’sche Buchhandlung",
+     "gnd": "5056474-2",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "J. G. Cotta’sche Buchhandlung",
+    "J. G. Cotta’sche Buchhandlung"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Stuttgart",
+   "placename_received": "Rom",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1853-05-31",
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 2 S.",
+   "reference": "K: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 3a",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 96,
+   "xml_id": "",
+   "date_index": "1853-06-26",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "J. G. Cotta’sche Buchhandlung",
+     "gnd_name": "J. G. Cotta’sche Buchhandlung",
+     "gnd": "5056474-2",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "J. G. Cotta’sche Buchhandlung",
+    "J. G. Cotta’sche Buchhandlung"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Stuttgart",
+   "placename_received": "Neapel",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1853-06-26",
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "h: DLA Marbach, Cotta-Archiv, Gelehrten-Copierbuch IV, 74",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 97,
+   "xml_id": "",
+   "date_index": "1853-08-21",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Karl Rosenkranz",
+     "gnd_name": "Rosenkranz, Karl",
+     "gnd": "118602721",
+     "birth": "1805",
+     "death": "1879",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Karl Rosenkranz",
+    "Rosenkranz, Karl"
+   ],
+   "placename_sent": "Capri",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1853-08-21",
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "D1: Max Jacobson: Ungedruckte Briefe von Ferdinand Gregorovius. In: Deutsche Revue über das gesamte nationale Leben der Gegenwart. Jg. 19. Stuttgart [u. a.] 1894. Bd. 2. S. 351–352 (gekürzt) – D2: Ferdinand Gregorovius: Briefe nach Königsberg. Hrsg. von Dominik Fugger und Nina Schlüter. München 2013. S. 172–173",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 3329,
+   "xml_id": "",
+   "date_index": "1853-08-27",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ludwig Walesrode",
+     "gnd_name": "Walesrode, Ludwig",
+     "gnd": "116653396",
+     "birth": "1810",
+     "death": "1889",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Ludwig Walesrode",
+    "Walesrode, Ludwig"
+   ],
+   "placename_sent": "Capri",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": "1853-08-21",
+   "date_to": "1853-08-27",
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": null,
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "h (Hermann Elgnowski): BSB München, NL Gregorovius, Gregoroviusiana 20, Walesrode, Ludwig",
+   "print_reference": "D1: Ferdinand Gregorovius: Briefe nach Königsberg. Hrsg. von Dominik Fugger und Nina Schlüter. München 2013. S. 44–45",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 98,
+   "xml_id": "",
+   "date_index": "1853-10-06",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Louis Köhler",
+     "gnd_name": "Köhler, Louis",
+     "gnd": "116285036",
+     "birth": "1820",
+     "death": "1886",
+     "date_special": null
+    },
+    {
+     "name": "Johanna Köhler",
+     "gnd_name": "Köhler, Johanna",
+     "gnd": "129692417",
+     "birth": "1821",
+     "death": "1886",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Louis Köhler",
+    "Köhler, Louis",
+    "Johanna Köhler",
+    "Köhler, Johanna"
+   ],
+   "placename_sent": "Genzano",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1853-10-06",
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "h (Hermann Elgnowski): BSB München, NL Gregorovius, Gregoroviusiana 20, Köhler, Louis",
+   "print_reference": "Ferdinand Gregorovius: Briefe nach Königsberg. Hrsg. von Dominik Fugger und Nina Schlüter. München 2013. S. 45–47",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 84,
+   "xml_id": "",
+   "date_index": "1853-12-16",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Unbekannt (Herr, wohnhaft in Neapel)",
+     "gnd_name": "Unbekannt (Herr, wohnhaft in Neapel)",
+     "gnd": null,
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Unbekannt (Herr, wohnhaft in Neapel)",
+    "Unbekannt (Herr, wohnhaft in Neapel)"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Neapel",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1853-12-16",
+   "relevant_years": [
+    "1853"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 3 S.",
+   "reference": "H: Los Angeles (CA), Getty Research Institute, Research Library, 860353",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Los Angeles (CA), Getty Research Institute"
+   ]
+  },
+  {
+   "index": 100,
+   "xml_id": "",
+   "date_index": "1854-02-10",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "J. G. Cotta’sche Buchhandlung",
+     "gnd_name": "J. G. Cotta’sche Buchhandlung",
+     "gnd": "5056474-2",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "J. G. Cotta’sche Buchhandlung",
+    "J. G. Cotta’sche Buchhandlung"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Stuttgart",
+   "placename_received": "Rom",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1854-02-10",
+   "relevant_years": [
+    "1854"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "h: DLA Marbach, Cotta-Archiv, Gelehrten-Copierbuch IV, 140",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 101,
+   "xml_id": "",
+   "date_index": "1854-04-06",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Louis Köhler",
+     "gnd_name": "Köhler, Louis",
+     "gnd": "116285036",
+     "birth": "1820",
+     "death": "1886",
+     "date_special": null
+    },
+    {
+     "name": "Johanna Köhler",
+     "gnd_name": "Köhler, Johanna",
+     "gnd": "129692417",
+     "birth": "1821",
+     "death": "1886",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Louis Köhler",
+    "Köhler, Louis",
+    "Johanna Köhler",
+    "Köhler, Johanna"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1854-04-06",
+   "relevant_years": [
+    "1854"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "h (Hermann Elgnowski): BSB München, NL Gregorovius, Gregoroviusiana 20, Köhler, Louis",
+   "print_reference": "Ferdinand Gregorovius: Briefe nach Königsberg. Hrsg. von Dominik Fugger und Nina Schlüter. München 2013. S. 48–49",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 102,
+   "xml_id": "",
+   "date_index": "1854-04-06",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Karl Rosenkranz",
+     "gnd_name": "Rosenkranz, Karl",
+     "gnd": "118602721",
+     "birth": "1805",
+     "death": "1879",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Karl Rosenkranz",
+    "Rosenkranz, Karl"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Königsberg",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1854-04-06",
+   "relevant_years": [
+    "1854"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "",
+   "print_reference": "D1: Max Jacobson: Ungedruckte Briefe von Ferdinand Gregorovius. In: Deutsche Revue über das gesamte nationale Leben der Gegenwart. Jg. 19. Stuttgart [u. a.] 1894. Bd. 2. S. 352 (gekürzt) – D2: Ferdinand Gregorovius: Briefe nach Königsberg. Hrsg. von Dominik Fugger und Nina Schlüter. München 2013. S. 173–174",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 104,
+   "xml_id": "",
+   "date_index": "1854-05-10",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "J. G. Cotta’sche Buchhandlung",
+     "gnd_name": "J. G. Cotta’sche Buchhandlung",
+     "gnd": "5056474-2",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "J. G. Cotta’sche Buchhandlung",
+    "J. G. Cotta’sche Buchhandlung"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Stuttgart",
+   "placename_received": "Rom",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1854-05-10",
+   "relevant_years": [
+    "1854"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "h: DLA Marbach, Cotta-Archiv, Gelehrten-Copierbuch IV, 166",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 105,
+   "xml_id": "",
+   "date_index": "1854-05-20",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "J. G. Cotta’sche Buchhandlung",
+     "gnd_name": "J. G. Cotta’sche Buchhandlung",
+     "gnd": "5056474-2",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "J. G. Cotta’sche Buchhandlung",
+    "J. G. Cotta’sche Buchhandlung"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Stuttgart",
+   "placename_received": "Rom",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1854-05-20",
+   "relevant_years": [
+    "1854"
+   ],
+   "incipit": "",
+   "scope": "",
+   "reference": "h: DLA Marbach, Cotta-Archiv, Gelehrten-Copierbuch IV, 167",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 107,
+   "xml_id": "G000007",
+   "date_index": "1854-05-30",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Blätter für literarische Unterhaltung",
+     "gnd_name": "Blätter für literarische Unterhaltung",
+     "gnd": "4145798-5",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Blätter für literarische Unterhaltung",
+    "Blätter für literarische Unterhaltung"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Leipzig",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1854-05-30",
+   "relevant_years": [
+    "1854"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 4°, 1 S.",
+   "reference": "H: Sächsisches Staatsarchiv Leipzig, Bestand 21083, Archivalnummer 224",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Sächsisches Staatsarchiv Leipzig"
+   ]
+  },
+  {
+   "index": 108,
+   "xml_id": "G000017",
+   "date_index": "1854-06-19",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Alfred von Reumont",
+     "gnd_name": "Reumont, Alfred von",
+     "gnd": "116450932",
+     "birth": "1808",
+     "death": "1887",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Alfred von Reumont",
+    "Reumont, Alfred von"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Florenz",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1854-06-19",
+   "relevant_years": [
+    "1854"
+   ],
+   "incipit": "",
+   "scope": "1 Bl., 4°, 1 S.",
+   "reference": "H: Universitäts- und Landesbibliothek Bonn, NL Reumont, S 1061, 287",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Universitäts- und Landesbibliothek Bonn"
+   ]
+  },
+  {
+   "index": 109,
+   "xml_id": "G000018",
+   "date_index": "1854-06-20",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Blätter für literarische Unterhaltung",
+     "gnd_name": "Blätter für literarische Unterhaltung",
+     "gnd": "4145798-5",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "Blätter für literarische Unterhaltung",
+    "Blätter für literarische Unterhaltung"
+   ],
+   "placename_sent": "Rom",
+   "placename_received": "Leipzig",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1854-06-20",
+   "relevant_years": [
+    "1854"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 1 S.",
+   "reference": "H: Sächsisches Staatsarchiv Leipzig, Bestand 21083, Archivalnummer 224, 10",
+   "print_reference": "",
+   "relevant_holding_locations": [
+    "Sächsisches Staatsarchiv Leipzig"
+   ]
+  },
+  {
+   "index": 110,
+   "xml_id": "",
+   "date_index": "1854-07-15",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "J. G. Cotta’sche Buchhandlung",
+     "gnd_name": "J. G. Cotta’sche Buchhandlung",
+     "gnd": "5056474-2",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "J. G. Cotta’sche Buchhandlung",
+    "J. G. Cotta’sche Buchhandlung"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Stuttgart",
+   "placename_received": "Rom",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1854-07-15",
+   "relevant_years": [
+    "1854"
+   ],
+   "incipit": "[Honoraranweisung]",
+   "scope": "",
+   "reference": "h: DLA Marbach, Cotta-Archiv, Gelehrten-Copierbuch IV, 190",
+   "print_reference": "",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 111,
+   "xml_id": "",
+   "date_index": "1854-09-06",
+   "status": "UN",
+   "senders": [
+    {
+     "name": "Karl Rosenkranz",
+     "gnd_name": "Rosenkranz, Karl",
+     "gnd": "118602721",
+     "birth": "1805",
+     "death": "1879",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Karl Rosenkranz",
+    "Rosenkranz, Karl"
+   ],
+   "recipient_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "placename_sent": "Königsberg",
+   "placename_received": "Genazzano",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1854-09-06",
+   "relevant_years": [
+    "1854"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 8°, 3 ½ S. + Umschlag",
+   "reference": "H: BSB München, NL Gregorovius, Gregoroviusiana 21, Rosenkranz, Karl, 1",
+   "print_reference": "D1: Kurt Getzuhn: Briefe von Karl Rosenkranz. In: Altpreußische Monatsschrift. Bd. 49. H. 1. Königsberg 1912. S. 170–173 – D2: Ferdinand Gregorovius: Briefe nach Königsberg. Hrsg. von Dominik Fugger und Nina Schlüter. München 2013. S. 50–51",
+   "relevant_holding_locations": []
+  },
+  {
+   "index": 112,
+   "xml_id": "G000040",
+   "date_index": "1854-09-14",
+   "status": "ED",
+   "senders": [
+    {
+     "name": "Ferdinand Gregorovius",
+     "gnd_name": "Gregorovius, Ferdinand",
+     "gnd": "118541951",
+     "birth": "1821",
+     "death": "1891",
+     "date_special": null
+    }
+   ],
+   "recipients": [
+    {
+     "name": "J. G. Cotta’sche Buchhandlung",
+     "gnd_name": "J. G. Cotta’sche Buchhandlung",
+     "gnd": "5056474-2",
+     "birth": "",
+     "death": "",
+     "date_special": null
+    }
+   ],
+   "sender_names": [
+    "Ferdinand Gregorovius",
+    "Gregorovius, Ferdinand"
+   ],
+   "recipient_names": [
+    "J. G. Cotta’sche Buchhandlung",
+    "J. G. Cotta’sche Buchhandlung"
+   ],
+   "placename_sent": "Genazzano",
+   "placename_received": "Stuttgart",
+   "date_cert": "high",
+   "date_from": null,
+   "date_to": null,
+   "date_not_before": null,
+   "date_not_after": null,
+   "date_when": "1854-09-14",
+   "relevant_years": [
+    "1854"
+   ],
+   "incipit": "",
+   "scope": "1 Dbl., 4°, 2 S.",
+   "reference": "H: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 5",
+   "print_reference": "Johannes Hönig: Ferdinand Gregorovius der Geschichtschreiber der Stadt Rom. Stuttgart, Berlin 1921. S. 207–208 (gekürzt)",
+   "relevant_holding_locations": []
+  }
+ ],
+ "unique_senders": [
+  "Cotta von Cottendorf, Johann Georg Freiherr",
+  "Drumann, Wilhelm",
+  "Gregorovius, Ferdinand",
+  "Gregorovius, Ferdinand Timotheus",
+  "Gregorovius, Ottilie",
+  "J. G. Cotta’sche Buchhandlung",
+  "Köhler, Louis",
+  "Laube, Heinrich",
+  "Pianka, Julius; Gregorovius, Ferdinand; Pianka, Leopold; Gregorovius, Gustav",
+  "Rosenkranz, Karl"
+ ],
+ "unique_recipients": [
+  "Allgemeine Zeitung",
+  "Althaus, Friedrich",
+  "Bethmann-Hollweg, Moritz August Freiherr von",
+  "Bizio, Giovanni",
+  "Blätter für literarische Unterhaltung",
+  "Bornträger, Ludwig",
+  "Bourdeau, Jean",
+  "Brockhaus, Heinrich",
+  "Bunsen, Christian Karl Josias Freiherr von",
+  "Caetani Lovatelli, Ersilia, Contessa",
+  "Cotta von Cottendorf, Johann Georg Freiherr",
+  "Davidsohn, Robert",
+  "De Rossi, Giovanni Battista",
+  "Eckermann, Johann Peter",
+  "Elgnowski, Ottilie",
+  "F. A. Brockhaus Verlag",
+  "Faltin, Klara",
+  "Fröbel, Julius",
+  "Gozzadini, Giovanni, Conte",
+  "Gregorovius, Emilie",
+  "Gregorovius, Ferdinand",
+  "Gregorovius, Julius",
+  "Gregorovius, Rudolf",
+  "Harder, Louis",
+  "Heyse, Theodor",
+  "Humboldt, Mathilde von",
+  "J. G. Cotta’sche Buchhandlung",
+  "J. G. Cotta’sche Buchhandlung Nachfolger",
+  "Jung, Alexander",
+  "Kolb, Gustav",
+  "Köhler, Johanna",
+  "Köhler, Louis",
+  "Laube, Heinrich",
+  "Mariano, Raffaele",
+  "Morgenblatt für gebildete Leser",
+  "Pancritius, Albrecht",
+  "Reumont, Alfred von",
+  "Rosenkranz, Karl",
+  "Rühl, Franz",
+  "Scherzer, Karl Ritter von",
+  "Thile, Hermann von",
+  "Unbekannt (Herr, wohnhaft in Neapel)",
+  "Walesrode, Ludwig",
+  "Weidmannsche Buchhandlung"
+ ],
+ "unique_sender_places": [
+  "Capri",
+  "Danzig",
+  "Florenz",
+  "Genazzano",
+  "Genzano",
+  "Königsberg",
+  "Livorno",
+  "München",
+  "Neidenburg",
+  "Rom",
+  "Soldau",
+  "Stuttgart",
+  "Venedig",
+  "Wien"
+ ],
+ "unique_recipient_places": [
+  "Augsburg",
+  "Berlin",
+  "Bologna",
+  "Bonn",
+  "Cannes",
+  "Florenz",
+  "Genazzano",
+  "Graudenz",
+  "Gumbinnen",
+  "Heidelberg",
+  "Heiden",
+  "Insterburg",
+  "Königsberg",
+  "Leipzig",
+  "London",
+  "Mont Fleuri sur Territet",
+  "Neapel",
+  "Neidenburg",
+  "Paris",
+  "Rom",
+  "Schaken",
+  "Stuttgart",
+  "Venedig",
+  "Weimar",
+  "Wien",
+  "Zürich"
+ ],
+ "unique_years": [
+  "1837",
+  "1838",
+  "1840",
+  "1841",
+  "1842",
+  "1843",
+  "1844",
+  "1845",
+  "1846",
+  "1847",
+  "1848",
+  "1849",
+  "1850",
+  "1851",
+  "1852",
+  "1853",
+  "1854",
+  "1855",
+  "1856",
+  "1858",
+  "1859",
+  "1860",
+  "1862",
+  "1863",
+  "1866",
+  "1877",
+  "1883",
+  "1884",
+  "1890",
+  "1891"
+ ],
+ "aufbewahrungsorte_short": [
+  "Bochum, Heimatstube der Kreisgemeinschaft Neidenburg",
+  "Bologna, Biblioteca dell’Archiginnasio",
+  "Universitäts- und Landesbibliothek Bonn",
+  "Florenz, Privatarchiv Anrep",
+  "Biblioteka Jagiellońska Krakau",
+  "Sächsisches Staatsarchiv Leipzig",
+  "Los Angeles (CA), Getty Research Institute",
+  "Rom, Biblioteca Apostolica Vaticana",
+  "Kantonsbibliothek Vadiana St. Gallen",
+  "Österreichische Nationalbibliothek",
+  "Zentralbibliothek Zürich"
+ ],
+ "date_earliest": "1837-07-17",
+ "date_latest": "1891-05-02"
+}

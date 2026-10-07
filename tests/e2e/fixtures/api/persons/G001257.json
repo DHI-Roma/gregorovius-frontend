@@ -1,0 +1,23 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001257",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/140540520"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "name": "Heinrich",
+    "roleName": "Infant von Kastilien"
+   },
+   {
+    "@type": "alt",
+    "name": "El Senador"
+   }
+  ],
+  "birth": "1230",
+  "death": "1304"
+ }
+}

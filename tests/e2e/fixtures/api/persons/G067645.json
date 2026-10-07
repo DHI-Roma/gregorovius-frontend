@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067645",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/143831062"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Gaßner",
+   "forename": "Michael"
+  },
+  "birth": "1810",
+  "death": "1883"
+ }
+}

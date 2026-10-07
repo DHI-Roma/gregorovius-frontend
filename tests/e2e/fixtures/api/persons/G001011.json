@@ -1,0 +1,23 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001011",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/11640065X"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Caetani Lovatelli",
+    "forename": "Ersilia, Contessa"
+   },
+   {
+    "@type": "alt",
+    "name": "Gaetani Lovatelli"
+   }
+  ],
+  "birth": "1840",
+  "death": "1925"
+ }
+}
