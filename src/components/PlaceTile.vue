@@ -1,10 +1,5 @@
 <template>
-  <q-item
-    clickable
-    class="cursor-pointer g-card"
-    @click="router.push(route)"
-    @click.middle="openInNewTab(route)"
-  >
+  <q-item :to="route" class="g-card">
     <q-item-section>
       <q-item-label>{{ name }}</q-item-label>
     </q-item-section>

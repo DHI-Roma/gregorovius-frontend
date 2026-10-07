@@ -18,8 +18,7 @@ export const SEL = {
   commentPanel: '.g-edition-comment-container', // TODO(spec-003): named comment region
   kwicResult: '.g-searchresult',
   facsimileLabel: '.facsimile-label',
-  mentionTile: '.mention', // TODO(spec-002): links in entity tiles
-  tableRow: 'tbody tr', // TODO(spec-002): links in table rows
+  tableRow: 'tbody tr',
   statusIcon: (name) => `i.q-icon:text-is("${name}")`, // TODO(spec-006): status as text
 };
 

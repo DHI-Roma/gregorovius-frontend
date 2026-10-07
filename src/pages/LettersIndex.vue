@@ -70,7 +70,6 @@
               class="cursor-pointer"
               :class="searchInput ? 'cursor-pointer g-searchrow' : 'cursor-pointer'"
               @click="openItem('default', props.row.id)"
-              @click.middle="openItem('tab', props.row.id)"
             >
               <q-menu touch-position context-menu>
                 <q-list dense style="min-width: 100px">
@@ -90,7 +89,15 @@
                   @click.stop="props.expand = !props.expand"
                 />
               </q-td>
-              <q-td key="date" :props="props">{{ formatDate(props.row.properties.date) }}</q-td>
+              <q-td key="date" :props="props">
+                <router-link
+                  :to="letterRoute(props.row.id)"
+                  :aria-label="props.row.properties.title"
+                  class="g-row-link"
+                  @click.stop
+                  >{{ formatDate(props.row.properties.date) }}</router-link
+                >
+              </q-td>
               <q-td key="recipient" :props="props">{{
                 getFullNameArray(props.row.properties.recipient).join("; ")
               }}</q-td>
@@ -464,32 +471,28 @@ export default defineComponent({
       return filteredRows;
     }
 
-    function openItem(target, id) {
+    /** Route of a letter in the list; a full text hit in a commentary opens that commentary. */
+    function letterRoute(id) {
       const kwicEntry = getKwic(id)[0];
-      let name = 'Brief';
-      let params = { id };
-
       if (kwicEntry && kwicEntry.type === 'comment') {
-        name = 'Brief und Kommentar';
-        params = {
-          id: kwicEntry.entity_related_id,
-          commentId: kwicEntry.entity_id,
+        return {
+          name: 'Brief und Kommentar',
+          params: { id: kwicEntry.entity_related_id, commentId: kwicEntry.entity_id },
+          query: queryParams.value,
         };
       }
+      return { name: 'Brief', params: { id }, query: queryParams.value };
+    }
 
-      const routeData = router.resolve({
-        name,
-        params,
-        query: queryParams.value,
-      });
-
+    function openItem(target, id) {
+      const route = letterRoute(id);
       switch (target) {
         case 'default':
-          router.push({ name, params, query: queryParams.value });
+          router.push(route);
           break;
         case 'tab':
         case 'window':
-          window.open(routeData.href, '_blank');
+          window.open(router.resolve(route).href, '_blank');
           break;
       }
     }
@@ -522,6 +525,7 @@ export default defineComponent({
       getFullName,
       getFullNameArray,
       getKwic,
+      letterRoute,
       getSearchResults,
       applyRouteParams,
       filterLetters,

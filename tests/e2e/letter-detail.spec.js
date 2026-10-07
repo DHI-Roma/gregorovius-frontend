@@ -35,10 +35,11 @@ test.describe('letter text and metadata', () => {
   });
 
   test('lists the mentioned entities and opens one', async ({ page }) => {
-    const tiles = page.locator(SEL.mentionTile);
     await expect(page.getByText('In diesem Brief erwähnte Entitäten')).toBeVisible();
-    await expect(tiles.filter({ hasText: rich.person.name })).toHaveCount(1);
-    await tiles.filter({ hasText: rich.person.name }).click();
+    const tile = page.getByRole('main').getByRole('link', { name: new RegExp(`^${rich.person.name}`) });
+    await expect(tile).toHaveCount(1);
+    await expect(tile).toHaveAttribute('href', `/persons/${rich.person.id}`);
+    await tile.click();
     await expect(page).toHaveURL(new RegExp(`/persons/${rich.person.id}$`));
   });
 

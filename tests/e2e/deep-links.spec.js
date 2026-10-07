@@ -33,7 +33,9 @@ test('full text hit in a commentary opens the letter with that commentary', asyn
   await page.getByRole('textbox', { name: 'Volltextsuche' }).fill('Finnur');
   // the same biographical commentary on Bunsen occurs in three letters
   await expect(page.locator(SEL.kwicResult)).toHaveCount(3);
-  await page.locator('main').locator(SEL.tableRow).filter({ hasText: '5. Januar 1860' }).click();
+  const hit = page.getByRole('link', { name: rich.title });
+  await expect(hit).toHaveAttribute('href', `/letters/${rich.id}/${rich.comment.id}`);
+  await hit.click();
   await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}/${rich.comment.id}$`));
   await expect(page.locator(SEL.commentPanel)).toContainText('Finnur', { timeout: 5000 });
 });

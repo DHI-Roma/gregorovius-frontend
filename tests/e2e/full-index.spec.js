@@ -9,7 +9,7 @@ const pageInfo = (page) => page.locator('.q-table__bottom-item').last();
 
 test.beforeEach(async ({ page }) => {
   await page.goto('/letters/full-index');
-  await expect(page.getByRole('button', { name: 'Brief öffnen' }).first()).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Brief öffnen' }).first()).toBeVisible();
 });
 
 test('lists all entries of the full letter index', async ({ page }) => {
@@ -84,7 +84,10 @@ test('filters by edition status and opens an edited letter', async ({ page }) =>
   await expect(pageInfo(page)).toHaveText(countText(edited.length));
   await expect(page.getByRole('table').locator(SEL.statusIcon('cancel'))).toHaveCount(0);
 
-  await page.getByRole('button', { name: 'Brief öffnen' }).first().click();
-  await expect(page).toHaveURL(/\/letters\/[^/]+$/);
+  const open = page.getByRole('link', { name: 'Brief öffnen' }).first();
+  const href = await open.getAttribute('href');
+  expect(href).toMatch(/^\/letters\/[^/]+$/);
+  await open.click();
+  await expect(page).toHaveURL(new RegExp(`${href}$`));
   await expect(page.locator(SEL.editionText)).toBeVisible();
 });
