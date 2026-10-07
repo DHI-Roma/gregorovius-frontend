@@ -15,7 +15,6 @@ async function delayLetterText(context, ms) {
 }
 
 test('letter with commentary opens the commentary', async ({ page }) => {
-  test.fixme(true, 'Flaky because of the race documented below; enable once it is fixed');
   await page.goto(`/letters/${rich.id}/${rich.comment.id}`);
   const panel = page.locator(SEL.commentPanel);
   await expect(panel).toBeVisible();
@@ -23,17 +22,12 @@ test('letter with commentary opens the commentary', async ({ page }) => {
 });
 
 test('commentary deep link works when the letter text loads late', async ({ page, context }) => {
-  test.fail(
-    true,
-    'Known bug: LettersDetail initializeActiveComment() reads the comment from the DOM before the letter text is rendered',
-  );
   await delayLetterText(context, 1500);
   await page.goto(`/letters/${rich.id}/${rich.comment.id}`);
   await expect(page.locator(SEL.commentPanel)).toBeVisible({ timeout: 5000 });
 });
 
 test('full text hit in a commentary opens the letter with that commentary', async ({ page, context }) => {
-  test.fail(true, 'Known bug: same race as below; the letter page then shows the loading spinner forever');
   await delayLetterText(context, 1500);
   await page.goto('/letters');
   await page.getByRole('textbox', { name: 'Volltextsuche' }).fill('Finnur');

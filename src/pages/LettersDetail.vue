@@ -75,7 +75,7 @@ EN
               @input="onSeparatorChange"
             >
               <template v-slot:before>
-                <LettersText />
+                <LettersText @rendered="onLetterTextRendered" />
               </template>
               <template v-slot:after>
                 <Comment />
@@ -774,13 +774,34 @@ export default defineComponent({
       }
     }
 
+    // The letter text is loaded by LettersText independently; everything that reads it
+    // from the DOM has to wait until it is rendered.
+    const letterTextRendered = ref(false);
+
+    function onLetterTextRendered() {
+      letterTextRendered.value = true;
+    }
+
+    function waitForLetterText() {
+      if (letterTextRendered.value) return Promise.resolve();
+      return new Promise((resolve) => {
+        const stop = watch(letterTextRendered, (rendered) => {
+          if (!rendered) return;
+          stop();
+          resolve();
+        });
+      });
+    }
+
     async function initializeActiveComment() {
       const commentReference = document.querySelector(`.g-comment-orig[commentId="${route.params.commentId}"]`);
       const commentHtml = document.querySelector(`#comment-${route.params.commentId}`);
+      if (!commentReference || !commentHtml) return;
+
       const comment = {
         id: commentReference.getAttribute("commentId"),
         text: commentHtml.innerHTML,
-        offset: 0,
+        offsetTop: 0,
       };
 
       store.setActiveComment(comment);
@@ -788,6 +809,7 @@ export default defineComponent({
       setTimeout(() => {
         const commentRef = document.querySelector(`.g-comment-orig[commentId="${route.params.commentId}"]`);
         const commentEl = document.querySelector(`#comment-${route.params.commentId}`);
+        if (!commentRef || !commentEl) return;
         comment.offsetTop = commentRef.offsetTop;
         comment.text = commentEl.innerHTML;
         store.setActiveComment(comment);
@@ -821,17 +843,19 @@ export default defineComponent({
       // metaService.setMetaAuthors([editor.value, ...letterService.getResponsibleList(data.value)]);
       // metaService.refreshZotero();
 
+      loading.value = false;
+
+      await waitForLetterText();
       if (route.params.commentId) {
         await initializeActiveComment();
       }
       setMentionedEntityIdsInOrder();
-
-      loading.value = false;
     }
 
     // Watchers
     watch(() => route.params.id, (newId, oldId) => {
       if (newId !== oldId) {
+        letterTextRendered.value = false;
         initializeComponent();
       }
     });
@@ -898,6 +922,7 @@ export default defineComponent({
       selectedFacsimileLabel,
       facsimileZoomScale,
       // Methods
+      onLetterTextRendered,
       hasAbstracts,
       getAbstractForLanguage,
       getAbstractCount,
