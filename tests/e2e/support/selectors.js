@@ -1,3 +1,5 @@
+import { expect } from '@playwright/test';
+
 // Fallback selectors for elements that currently have no accessible role or name.
 // Each entry names the spec expected to make it reachable by role/name; replace
 // the fallback with getByRole/getByLabel once that spec is implemented.
@@ -28,5 +30,19 @@ export async function chooseOption(page, label, optionText) {
   await combobox.click();
   await combobox.fill(optionText);
   await page.getByRole('option', { name: optionText }).first().click();
+  await page.keyboard.press('Escape');
+}
+
+/** Selects a year in the SelectYears component (options contain a nested toggle, see spec 009). */
+export async function chooseYear(page, year) {
+  const combobox = page.getByRole('combobox', { name: 'Jahre' });
+  await combobox.click();
+  const option = page.getByRole('option', { name: year });
+  await expect(async () => {
+    if ((await option.getAttribute('aria-selected')) !== 'true') {
+      await option.getByText(year, { exact: true }).click();
+    }
+    await expect(option).toHaveAttribute('aria-selected', 'true', { timeout: 1000 });
+  }).toPass();
   await page.keyboard.press('Escape');
 }
