@@ -23,7 +23,7 @@
           <div class="q-pa-xs col-xs-12 col-sm-6 col-md-4 col-lg-3">
             <q-card>
               <q-separator />
-              <q-list class="g-card-list">
+              <q-list class="g-card-list" role="none">
                 <PersonTile :person="props.row" />
               </q-list>
             </q-card>

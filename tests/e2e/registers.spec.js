@@ -9,11 +9,11 @@ const main = (page) => page.getByRole('main');
 test.describe('persons', () => {
   test('searches the register and opens a person', async ({ page }) => {
     await page.goto('/persons');
-    await expect(main(page).getByRole('button').first()).toBeVisible();
+    await expect(main(page).getByRole('link').first()).toBeVisible();
     await expect(page.getByText(`1–32 von ${persons.length}`)).toBeVisible();
 
     await search(page).fill('Bunsen, Christian');
-    const tile = main(page).getByRole('button', { name: /^Bunsen, Christian Karl Josias/ });
+    const tile = main(page).getByRole('link', { name: /^Bunsen, Christian Karl Josias/ });
     await expect(tile).toHaveCount(1);
     await tile.click();
 
@@ -40,13 +40,21 @@ test.describe('persons', () => {
     await expect(main(page).getByText('Erwähnt in')).toBeVisible();
     await expect(tables.nth(1).locator(SEL.tableRow)).toHaveCount(mentions.length);
 
-    await tables.nth(0).getByRole('cell', { name: rich.title }).click();
+    // keyboard: the letter title is a link
+    const letterLink = tables.nth(0).getByRole('link', { name: rich.title });
+    await letterLink.focus();
+    await page.keyboard.press('Enter');
     await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}\\?recipient=${rich.recipient.id}$`));
   });
 
   test('opening a letter from "Erwähnt in" keeps the entity filter', async ({ page }) => {
     await page.goto(`/persons/${rich.person.id}`);
-    await main(page).getByRole('cell', { name: rich.title }).click();
+    await expect(main(page).getByRole('link', { name: rich.title })).toHaveAttribute(
+      'href',
+      `/letters/${rich.id}/filters/${rich.person.id}`,
+    );
+    // mouse users can still click anywhere in the cell
+    await main(page).getByRole('cell', { name: rich.title }).click({ position: { x: 5, y: 5 } });
     await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}/filters/${rich.person.id}$`));
     await expect(page.locator(SEL.editionText)).toBeVisible();
   });
@@ -76,7 +84,7 @@ test.describe('places', () => {
   test('searches the register and opens a place', async ({ page }) => {
     await page.goto('/places');
     await search(page).fill('Rom');
-    const tile = main(page).getByRole('button', { name: /^Rom\b/ }).first();
+    const tile = main(page).getByRole('link', { name: /^Rom\b/ }).first();
     await tile.click();
 
     await expect(page).toHaveURL(/\/places\/G000763$/);
@@ -93,7 +101,7 @@ test.describe('works', () => {
     await page.getByRole('tab', { name: 'Werke anderer Autoren' }).click();
     const panel = page.getByRole('tabpanel').filter({ visible: true }).last();
     await panel.getByPlaceholder('Suche').fill('Beschreibung der Stadt Rom');
-    await panel.getByRole('cell', { name: new RegExp(rich.work.titleSnippet) }).click();
+    await panel.getByRole('link', { name: new RegExp(rich.work.titleSnippet) }).click();
 
     await expect(page).toHaveURL(new RegExp(`/works/${rich.work.id}$`));
     await expect(main(page)).toContainText(rich.work.titleSnippet);

@@ -24,6 +24,21 @@ test('opens a letter from the list', async ({ page }) => {
   await expect(page.locator(SEL.editionText)).toBeVisible();
 });
 
+test('the date of each letter is a link labelled with the letter title', async ({ page }) => {
+  const link = rows(page).first().getByRole('link', { name: firstLetter.properties.title });
+  await expect(link).toHaveAttribute('href', `/letters/${firstLetter.id}`);
+  await link.focus();
+  await page.keyboard.press('Enter');
+  await expect(page).toHaveURL(new RegExp(`/letters/${firstLetter.id}$`));
+});
+
+test('modified click on a letter opens it in a new tab only', async ({ page, context }) => {
+  const popup = context.waitForEvent('page');
+  await rows(page).first().getByRole('link').click({ modifiers: ['ControlOrMeta'] });
+  await expect(await popup).toHaveURL(new RegExp(`/letters/${firstLetter.id}$`));
+  await expect(page).toHaveURL(/\/letters$/);
+});
+
 test('full text search shows keyword in context and filters the list', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Volltextsuche' }).fill('Bleimännchen');
 
@@ -58,6 +73,10 @@ test('filters by recipient and keeps the filter in the URL', async ({ page }) =>
   await expect(page.getByText(`1–${recipientLetters.length} von ${recipientLetters.length}`)).toBeVisible();
   await expect(page).toHaveURL(new RegExp(`recipient=${LETTERS.rich.recipient.id}`));
 
+  await expect(rows(page).first().getByRole('link')).toHaveAttribute(
+    'href',
+    new RegExp(`recipient=${LETTERS.rich.recipient.id}`),
+  );
   await rows(page).first().click();
   await expect(page).toHaveURL(new RegExp(`recipient=${LETTERS.rich.recipient.id}`));
 });

@@ -13,8 +13,9 @@
         :props="props"
         class="cursor-pointer"
         @click="router.push({ path: `/works/${props.row.id}` })"
-        @click.middle="openInNewTab({ path: `/works/${props.row.id}` })"
-        >{{ props.value }}</q-td
+        ><router-link :to="{ path: `/works/${props.row.id}` }" class="g-row-link" @click.stop>{{
+          props.value
+        }}</router-link></q-td
       >
       <context-menu
         :route-to-open="router.resolve({ path: `/works/${props.row.id}` }).href"

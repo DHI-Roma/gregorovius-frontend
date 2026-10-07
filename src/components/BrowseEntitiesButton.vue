@@ -4,8 +4,8 @@
     round
     icon="library_books"
     color="primary"
-    @click="$router.push(routeWithFilter)"
-    @click.middle="openInNewTab($router.resolve(routeWithFilter).href)"
+    :to="routeWithFilter"
+    :aria-label="title"
   >
     <q-tooltip :delay="delay">{{ title }}</q-tooltip>
     <ContextMenu :route-to-open="$router.resolve(routeWithFilter).href"></ContextMenu>

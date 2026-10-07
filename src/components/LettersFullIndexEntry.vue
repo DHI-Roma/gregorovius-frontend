@@ -9,7 +9,7 @@
             dense
             color="primary"
             label="Brief öffnen"
-            @click="$router.push({ name: 'Brief', params: { id: entry.xml_id } })"
+            :to="{ name: 'Brief', params: { id: entry.xml_id } }"
           >
             <context-menu :route-to-open="$router.resolve({ name: 'Brief', params: { id: entry.xml_id } }).href"/>
           </q-btn>

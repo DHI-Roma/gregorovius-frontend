@@ -1,11 +1,6 @@
 <template>
-  <q-list
-    class="cursor-pointer g-card-list mention"
-    :class="backgroundColorClass"
-    @click="$router.push(route)"
-    @click.middle="openInNewTab(route)"
-  >
-    <q-item class="g-card">
+  <q-list class="g-card-list mention" :class="backgroundColorClass" role="none">
+    <q-item :to="route" class="g-card">
       <q-item-label>
         {{ truncate(name) }}
       </q-item-label>

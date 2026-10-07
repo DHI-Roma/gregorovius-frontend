@@ -2,13 +2,9 @@
   <q-card v-if="properties" :class="wrapperClass" flat>
     <q-card-section>
       <div :class="titleClass">
-        <a
-          v-if="isList"
-          class="cursor-pointer"
-          @click="$router.push({ name: 'Person', params: { id: entity.id } })"
-        >
+        <router-link v-if="isList" :to="{ name: 'Person', params: { id: entity.id } }">
           {{ name }}
-        </a>
+        </router-link>
         <span v-else>{{ name }}</span>
       </div>
       <div v-if="person.birth || person.death" class="text-subtitle3 text-secondary">
