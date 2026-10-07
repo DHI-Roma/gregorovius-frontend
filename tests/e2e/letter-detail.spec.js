@@ -187,9 +187,9 @@ test('copies the citation', async ({ page, browserName }) => {
   }
 });
 
-test('TEI XML button links to the API', async ({ page, context }) => {
+test('TEI XML link opens the API in a new tab', async ({ page }) => {
   await openLetter(page, rich.id);
-  const popup = context.waitForEvent('page');
-  await page.getByRole('button', { name: 'TEI XML' }).click();
-  expect((await popup).url()).toContain(`/api/letters/${rich.id}`);
+  const link = page.getByRole('link', { name: /TEI XML.*\(öffnet in neuem Tab\)/ });
+  await expect(link).toHaveAttribute('href', `https://gregorovius-edition.dhi-roma.it/api/letters/${rich.id}`);
+  await expect(link).toHaveAttribute('target', '_blank');
 });

@@ -42,14 +42,19 @@ test('imprint and privacy notice from the footer', async ({ page }) => {
   await expect(main(page)).toContainText('Datenschutz');
 });
 
-test('editorial guidelines open in a new window', async ({ page, context }) => {
+test('editorial guidelines are a link announcing the new tab', async ({ page }) => {
   await page.goto('/');
-  // the guidelines are an external site; the mock blocks the request, only the target is checked
-  const request = context.waitForEvent('request', (r) => r.url().includes('/richtlinien'));
-  const popup = context.waitForEvent('page');
-  await page.getByRole('button', { name: 'EDITIONSRICHTLINIEN' }).click();
-  await popup;
-  expect((await request).url()).toBe('http://gregorovius-edition.dhi-roma.it/richtlinien/');
+  const link = page.getByRole('link', { name: 'EDITIONSRICHTLINIEN (öffnet in neuem Tab)' });
+  await expect(link).toHaveAttribute('href', 'http://gregorovius-edition.dhi-roma.it/richtlinien/');
+  await expect(link).toHaveAttribute('target', '_blank');
+});
+
+test('external links in page content announce the new tab', async ({ page }) => {
+  await page.goto('/announcements');
+  const external = page.getByRole('main').locator('a[target="_blank"]').first();
+  await expect(external).toBeVisible();
+  const name = await external.evaluate((a) => a.textContent.trim());
+  await expect(page.getByRole('link', { name: `${name} (öffnet in neuem Tab)` }).first()).toBeVisible();
 });
 
 test('unknown URL shows the 404 notice', async ({ page }) => {
