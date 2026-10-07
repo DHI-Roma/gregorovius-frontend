@@ -6,7 +6,7 @@
       :rules="[germanDateRule]"
       :label="label"
       clearable
-      @input="onDateInput"
+      @update:model-value="onDateInput"
       @clear="clearDateInput"
     >
       <template v-slot:append>
@@ -24,7 +24,7 @@
               :navigation-min-year-month="earliestMonth"
               :navigation-max-year-month="latestMonth"
               :default-year-month="earliestMonth"
-              @input="onDatePicked"
+              @update:model-value="onDatePicked"
             >
               <div class="row items-center justify-end">
                 <q-btn
@@ -90,27 +90,29 @@ export default {
 
       return regex.test(val) || 'Bitte Datum im Format TT.MM.JJJJ eingeben';
     },
-    onDateInput() {
-      if (!this.dateInput) {
+    onDateInput(value) {
+      if (!value) {
         this.clearDateInput();
         return;
       }
 
-      const [day, month, year] = this.dateInput.split('.');
-      if (!day || !month || !year) {
+      // only complete, valid dates are applied as filter
+      if (this.germanDateRule(value) !== true) {
         return;
       }
+
+      const [day, month, year] = value.split('.');
 
       this.datePickerSelection = `${year}/${month}/${day}`;
       const date = `${year}-${month}-${day}`;
       this.$emit('update-date', date);
     },
-    onDatePicked() {
-      if (!this.datePickerSelection) {
+    onDatePicked(value) {
+      if (!value) {
         return;
       }
 
-      const [year, month, day] = this.datePickerSelection.split('/');
+      const [year, month, day] = value.split('/');
       if (!day || !month || !year) {
         return;
       }
