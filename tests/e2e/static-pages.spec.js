@@ -4,7 +4,7 @@ const main = (page) => page.getByRole('main');
 
 test('project page with both tabs', async ({ page }) => {
   await page.goto('/');
-  await page.getByRole('button', { name: 'PROJEKT' }).click();
+  await page.getByRole('link', { name: 'PROJEKT' }).click();
   await expect(page).toHaveURL(/\/project$/);
   await expect(main(page)).toContainText('Das Projekt');
   await expect(main(page)).toContainText('Die Briefe des Historikers und Schriftstellers');
@@ -15,7 +15,7 @@ test('project page with both tabs', async ({ page }) => {
 
 test('team page', async ({ page }) => {
   await page.goto('/');
-  await page.getByRole('button', { name: 'TEAM' }).click();
+  await page.getByRole('link', { name: 'TEAM' }).click();
   await expect(page).toHaveURL(/\/team$/);
   await expect(main(page)).toContainText('Das Team');
   await expect(main(page)).toContainText('Dr. Angela Steinsiek');
@@ -24,7 +24,7 @@ test('team page', async ({ page }) => {
 
 test('announcements page', async ({ page }) => {
   await page.goto('/');
-  await page.getByRole('button', { name: 'AKTUELLES' }).click();
+  await page.getByRole('link', { name: 'AKTUELLES' }).click();
   await expect(page).toHaveURL(/\/announcements$/);
   await expect(main(page)).toContainText('Aktuelles');
   await expect(main(page)).toContainText('Publikationen zur ferneren Lektüre');
@@ -33,11 +33,11 @@ test('announcements page', async ({ page }) => {
 test('imprint and privacy notice from the footer', async ({ page }) => {
   await page.goto('/');
   const footer = page.getByRole('contentinfo');
-  await footer.getByRole('button', { name: 'Impressum' }).click();
+  await footer.getByRole('link', { name: 'Impressum' }).click();
   await expect(page).toHaveURL(/\/impressum$/);
   await expect(main(page)).toContainText('Deutsches Historisches Institut in Rom');
 
-  await footer.getByRole('button', { name: 'Datenschutz' }).click();
+  await footer.getByRole('link', { name: 'Datenschutz' }).click();
   await expect(page).toHaveURL(/\/privacy$/);
   await expect(main(page)).toContainText('Datenschutz');
 });
