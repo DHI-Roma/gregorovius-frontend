@@ -21,9 +21,6 @@
             >{{ props.value }}</router-link
           ></q-td
         >
-        <context-menu
-          :route-to-open="$router.resolve({ path: `/letters/${props.row.id}`, query: { recipient: recipientId } }).href"
-        ></context-menu>
       </template>
     </q-table>
   </q-card>
@@ -31,14 +28,9 @@
 
 <script>
 import { defineComponent, ref } from "vue";
-import { useRouter } from "vue-router";
-import ContextMenu from "src/components/ContextMenu.vue";
 
 export default defineComponent({
   name: "CorrespondenceTable",
-  components: {
-    ContextMenu,
-  },
 
   props: {
     letters: {
@@ -52,7 +44,6 @@ export default defineComponent({
   },
 
   setup() {
-    const router = useRouter();
 
     const pagination = ref({ rowsPerPage: 10 });
     const columns = [
@@ -64,15 +55,9 @@ export default defineComponent({
       },
     ];
 
-    function openInNewTab(route) {
-      const resolved = router.resolve(route);
-      window.open(resolved.href, "_blank");
-    }
-
     return {
       pagination,
       columns,
-      openInNewTab,
     };
   },
 });

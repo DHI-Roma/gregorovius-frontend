@@ -8,17 +8,12 @@
     :aria-label="title"
   >
     <q-tooltip :delay="delay">{{ title }}</q-tooltip>
-    <ContextMenu :route-to-open="$router.resolve(routeWithFilter).href"></ContextMenu>
   </q-btn>
 </template>
 
 <script>
-import { openInNewTabMixin } from "src/mixins/openInNewTabMixin";
-import ContextMenu from "src/components/ContextMenu.vue";
 export default {
   name: "BrowseEntitiesButton",
-  components: { ContextMenu },
-  mixins: [openInNewTabMixin],
   props: {
     route: {
       type: Object,

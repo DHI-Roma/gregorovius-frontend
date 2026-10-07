@@ -28,9 +28,6 @@
             >{{ props.value }}</router-link
           ></q-td
         >
-        <context-menu
-          :route-to-open="$router.resolve({ path: `/letters/${props.row.id}/filters/${entityId}` }).href"
-        ></context-menu>
       </template>
     </q-table>
     <q-banner
@@ -48,14 +45,11 @@
 import { defineComponent, ref, computed, onBeforeMount } from "vue";
 import { useMainStore } from "src/stores/main";
 import { storeToRefs } from "pinia";
-import { useRouter } from "vue-router";
-import ContextMenu from "./ContextMenu.vue";
 import BrowseEntitiesButton from "src/components/BrowseEntitiesButton.vue";
 
 export default defineComponent({
   name: "MentionsTable",
   components: {
-    ContextMenu,
     BrowseEntitiesButton,
   },
 
@@ -77,7 +71,6 @@ export default defineComponent({
 
   setup(props) {
     const store = useMainStore();
-    const router = useRouter();
     const { fullNameIndex, letters: storeLetters } = storeToRefs(store);
 
     const loading = ref(true);
@@ -90,11 +83,6 @@ export default defineComponent({
         field: (row) => row.properties.title,
       },
     ];
-
-    function openInNewTab(route) {
-      const resolved = router.resolve(route);
-      window.open(resolved.href, "_blank");
-    }
 
     function getMentioned(entityName) {
       const filtered = storeLetters.value.filter((letter) => {
@@ -127,7 +115,6 @@ export default defineComponent({
       pagination,
       columns,
       letters,
-      openInNewTab,
     };
   },
 });

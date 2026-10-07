@@ -6,19 +6,17 @@
 /* eslint-disable vue/no-unused-components */
 import { defineComponent, ref, computed, watch, onMounted, nextTick } from "vue";
 import { useMainStore } from "src/stores/main";
-import { useRoute, useRouter } from "vue-router";
+import { useRoute } from "vue-router";
 import VRuntimeTemplate from "vue3-runtime-template";
 import { dataService } from "src/shared";
 import { basePathLetters } from "../router";
 import CommentIcon from "src/components/CommentIcon.vue";
-import ContextMenu from "src/components/ContextMenu.vue";
 
 export default defineComponent({
   name: "LettersText",
   components: {
     VRuntimeTemplate,
     CommentIcon,
-    ContextMenu,
   },
 
   emits: ["rendered"],
@@ -26,7 +24,6 @@ export default defineComponent({
   setup(props, { emit }) {
     const store = useMainStore();
     const route = useRoute();
-    const router = useRouter();
 
     // Use computed to expose raw object for vue3-runtime-template compatibility
     const activeComment = computed(() => store.activeComment);
@@ -79,11 +76,6 @@ export default defineComponent({
       }
     }
 
-    function openInNewTab(routeObj) {
-      const resolved = router.resolve(routeObj);
-      window.open(resolved.href, "_blank");
-    }
-
     watch(
       () => route.params.id,
       (newId, oldId) => {
@@ -101,7 +93,6 @@ export default defineComponent({
       data,
       activeComment,
       activateComment,
-      openInNewTab,
     };
   },
 });

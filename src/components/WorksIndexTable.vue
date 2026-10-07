@@ -17,9 +17,6 @@
           props.value
         }}</router-link></q-td
       >
-      <context-menu
-        :route-to-open="router.resolve({ path: `/works/${props.row.id}` }).href"
-      ></context-menu>
     </template>
     <template #top-left>
       <q-input v-model="filter" borderless dense debounce="300" placeholder="Suche">
@@ -36,13 +33,9 @@ import { defineComponent, ref, computed } from "vue";
 import { useMainStore } from "src/stores/main";
 import { storeToRefs } from "pinia";
 import { useRouter } from "vue-router";
-import ContextMenu from "./ContextMenu.vue";
 
 export default defineComponent({
   name: "WorksIndexTable",
-  components: {
-    ContextMenu,
-  },
 
   props: {
     type: {
@@ -78,11 +71,6 @@ export default defineComponent({
       return allWorks.value.filter((w) => w.properties.type === props.type);
     });
 
-    function openInNewTab(route) {
-      const resolved = router.resolve(route);
-      window.open(resolved.href, "_blank");
-    }
-
     return {
       router,
       filter,
@@ -90,7 +78,6 @@ export default defineComponent({
       columns,
       works,
       storeLoading,
-      openInNewTab,
     };
   },
 });

@@ -1,7 +1,6 @@
 import { boot } from 'quasar/wrappers';
 import { QTooltip, QIcon, QBtn } from 'quasar';
 import CommentIcon from 'src/components/CommentIcon.vue';
-import ContextMenu from 'src/components/ContextMenu.vue';
 import { useMainStore } from 'src/stores/main';
 import { basePathLetters } from 'src/router';
 
@@ -9,7 +8,6 @@ import { basePathLetters } from 'src/router';
 export default boot(({ app, router }) => {
   // Custom components
   app.component('CommentIcon', CommentIcon);
-  app.component('context-menu', ContextMenu);
 
   // Quasar components used in XSLT templates
   app.component('q-tooltip', QTooltip);
@@ -54,10 +52,6 @@ export default boot(({ app, router }) => {
             store.setActiveComment(comment);
           }
         }, 50);
-      },
-      openInNewTab(routeObj) {
-        const resolved = router.resolve(routeObj);
-        window.open(resolved.href, "_blank");
       }
     }
   });

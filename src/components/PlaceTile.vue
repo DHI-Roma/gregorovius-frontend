@@ -10,7 +10,6 @@
     >
       {{ formatPlaceType(place.properties.type) }}
     </q-chip>
-    <context-menu :route-to-open="router.resolve(route).href"></context-menu>
   </q-item>
 </template>
 
@@ -20,13 +19,9 @@ import { useMainStore } from "src/stores/main";
 import { storeToRefs } from "pinia";
 import { useRouter } from "vue-router";
 import placeService from "src/services/place-service";
-import ContextMenu from "./ContextMenu.vue";
 
 export default defineComponent({
   name: "PlaceTile",
-  components: {
-    ContextMenu,
-  },
 
   props: {
     place: {
@@ -49,11 +44,6 @@ export default defineComponent({
       return placeService.getPlaceTypeClass(rawType);
     }
 
-    function openInNewTab(route) {
-      const resolved = router.resolve(route);
-      window.open(resolved.href, "_blank");
-    }
-
     const route = computed(() => {
       return { path: `/places/${props.place.id}` };
     });
@@ -70,7 +60,6 @@ export default defineComponent({
       name,
       formatPlaceType,
       getTypeChipColor,
-      openInNewTab,
     };
   },
 });
