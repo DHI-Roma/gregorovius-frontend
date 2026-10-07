@@ -1,0 +1,10 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_dg2_lpg_p4b",
+  "orgName": {
+   "@type": "reg",
+   "#text": "Istituto Froebeliano (Neapel)"
+  }
+ }
+}

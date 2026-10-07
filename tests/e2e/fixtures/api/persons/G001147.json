@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001147",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118535668"
+  },
+  "persName": {
+   "@type": "reg",
+   "name": "Friedrich III.",
+   "roleName": "Kaiser (1888) des Deutschen Reiches"
+  },
+  "birth": "1831",
+  "death": "1888"
+ }
+}

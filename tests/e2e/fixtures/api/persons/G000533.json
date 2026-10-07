@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000533",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/4345483-5"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Morgenblatt für gebildete Leser"
+  }
+ }
+}

@@ -1,0 +1,160 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Mathilde von Humboldt in Rom. München, 1. März 1891",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "Biblioteka Jagiellońska Krakau",
+      "idno": {
+       "@type": "URLImages",
+       "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/ed_jyl_wjx_3xb/"
+      }
+     },
+     "physDesc": {
+      "p": {
+       "hi": [
+        {
+         "@rendition": "#aq",
+         "#text": "Italien"
+        },
+        {
+         "@rendition": "#aq",
+         "#text": "Baronin"
+        },
+        {
+         "@rendition": "#aq",
+         "#text": "Mathilde v. Humboldt"
+        },
+        {
+         "@rendition": "#aq",
+         "#text": "Via del Tritone"
+        },
+        {
+         "@rendition": "#aq",
+         "#text": "Roma"
+        }
+       ],
+       "#text": "1 Dbl., 8°, 4 S. + Umschlag mit Adr.:  /  / . /  62 /  – rückseitig aoR vdH von Mathilde von Humboldt: Letzter Brief!"
+      }
+     }
+    },
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 84, Mappe 1 (Alfred Löckle nach H)"
+        }
+       }
+      },
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 84, Mappe 2–3 (nach h1)"
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Wegen der vielen Korrespondenz anlässlich seines 70. Geburtstages kommt er erst jetzt dazu, ihr zu schreiben. Abgesehen von seinem Alter und einer Erkältung geht es ihm leidlich gut. Auch sein Bruder Julius ist auf dem Wege der Besserung. Der Frühling scheint ihm zu Ehren des 57. Geburtstags seiner Halbschwester Ottilie Elgnowski Einzug gehalten zu haben. Die ersten Italienreisenden haben in München Halt gemacht. Bei Anna Freifrau von der Tann hat er gestern Gertrud von Werthern-Beichlingen angetroffen, die mit ihrer Tochter Elisabeth nach Meran will. Von dort soll sie Ende März mit ihrem Vater Georg von Werthern-Beichlingen nach Italien reisen – für ihren Rombesuch haben sie ganze acht Tage vorgesehen. In München ist die mit ihr befreundete Emilie von Binzer sanft entschlafen. Hochbetagt ist auch Maria von Aretin verstorben, die Schwiegermutter von Karl von Moy de Sons. In Rom wird Mathilde von Humboldt die Gesellschaft ihrer Cousine Constanze von Heinz und deren Tochter Anna genießen. Er bedauert, während ihres Rombesuchs nicht dort zu sein. Ottilie Elgnowski wird ihr das Weitere schreiben."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "ecause of the high amount of correspondence on the occasion of his 70th birthday, he is only now able to write to her. Apart from his age and a cold, he is doing reasonably well. His brother Julius is also on the mend. Spring seems to him to have arrived in honor of the 57th birthday of his half-sister Ottilie Elgnowski. The first travelers to Italy stopped in Munich on their way. Yesterday he met Gertrud von Werthern-Beichlingen at Anna Freifrau von der Tann’s, who wants to go to Merano with her daughter Elisabeth. From there she will travel to Italy with her father Georg von Werthern-Beichlingen at the end of March – they have planned a total of eight days for their visit to Rome. In Munich, her friend Emilie von Binzer passed gently. Maria von Aretin, the mother-in-law of Karl von Moy de Sons, also passed away at a very old age. In Rome, Mathilde von Humboldt will enjoy the company of her cousin Constanze von Heinz and her daughter Anna. He regrets not being there during her visit to Rome. Ottilie Elgnowski will write her all the rest."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000734",
+       "#text": "München"
+      },
+      "date": {
+       "@when": "1891-03-01",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001304",
+       "#text": "Humboldt, Mathilde von (1830–1897)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

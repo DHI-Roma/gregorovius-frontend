@@ -1,0 +1,24 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000675",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3176589"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Frascati"
+  },
+  "listPlace": {
+   "place": {
+    "@xml:id": "G067783",
+    "@type": "building",
+    "placeName": {
+     "@type": "reg",
+     "#text": "Villa Piccolomini (Frascati)"
+    }
+   }
+  }
+ }
+}

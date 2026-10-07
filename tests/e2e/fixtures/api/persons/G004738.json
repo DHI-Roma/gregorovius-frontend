@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004738",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118782487"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Massinger",
+   "forename": "Philipp"
+  },
+  "birth": "1584",
+  "death": "1640"
+ }
+}

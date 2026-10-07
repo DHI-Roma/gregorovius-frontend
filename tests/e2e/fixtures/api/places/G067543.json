@@ -1,0 +1,11 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067543",
+  "@type": "building",
+  "placeName": {
+   "@type": "reg",
+   "#text": "Weichselbrücke (Dirschau)"
+  }
+ }
+}

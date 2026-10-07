@@ -1,0 +1,133 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Contessa Ersilia Caetani Lovatelli in Rom. München, 30. November 1884",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 59, Mappe 348 (nach D)"
+        }
+       }
+      },
+      {
+       "@select": "#this",
+       "bibl": {
+        "@type": "print",
+        "#text": "Ferdinand Gregorovius und seine Briefe an Gräfin Ersilia Caetani Lovatelli. Hrsg. von Sigmund Münz. Berlin: Paetel 1896. S. 131–132"
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er antwortet verspätet, weil er unwohl war, doch tröstet ihn die häusliche Gemeinschaft mit seinem Bruder Julius und seiner Halbschwester Ottilie Elgnowski. Seine Studien über Athen im Mittelalter schreiten voran, sie werden den Wert seine „Geschichte der Stadt Rom im Mittelater“ nicht erreichen, aber eine würdige Ergänzung werden. Er bekam einen freundlichen Brief von Carlo Lodovico Visconti, dem neuen Direktor der Musei e delle Gallerie Pontificie und der Vatikanischen Sammlungen. Er hat ihm wertvolle Auskünfte über eine dort verwahrte Gedenkmünze Alberichs II. erteilt, die vor Jahren aus dem Tiber geborgen werden konnte. Er will ihm nicht weiter lästig fallen und bittet sie daher ihm in seinem Namen zu danken. Von seinen alten römischen Freunden hat ihm Matteo Ricci jüngst seine „Ritratti e profili politici e letterari“ (1882) übersandt. Von dem Tod seiner Frau Alessandra Ricci D’Azeglio wird sie gehört haben. Als Person war sie nicht nur dadurch bedeutsam, dass sie die Tochter des großen Massimo DʼAzeglio war."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "His reply to her letter is late because he was unwell, but he is comforted by the domestic companionship with his brother Julius and half-sister Ottilie Elgnowski. His studies on Athens in the Middle Ages are progressing, they will not reach the value of his „Geschichte der Stadt Rom im Mittelater“, but will become a worthy addition. He received a friendly letter from Carlo Lodovico Visconti, the new director of the Musei e delle Gallerie Pontificie and the Vatican Collections. He gave him valuable information about a commemorative coin of Alberich II kept there, which they were able to recover from the Tiber years ago. He does not want to inconvenience him further, so he asks her to thank him on his behalf. From his old Roman friends, Matteo Ricci has recently sent him his „Ritratti e profili politici e letterari“ (1882). She will have heard of the death of his wife Alessandra Ricci D’Azeglio. As a person she was important not only because she was the daughter of the great Massimo DʼAzeglio."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000734",
+       "#text": "München"
+      },
+      "date": {
+       "@when": "1884-11-30",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001011",
+       "#text": "Caetani Lovatelli, Ersilia, Contessa (1840–1925)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": [
+      {
+       "@type": "prev",
+       "#text": "28. Oktober 1884 (BSB München, NL Gregorovius, Gregoroviusiana 21, Caetani-Lovatelli, Ersilia, 5)"
+      },
+      {
+       "@type": "next",
+       "#text": "21. Dezember 1884 (BSB München, NL Gregorovius, Gregoroviusiana 21, Caetani-Lovatelli, Ersilia, 6)"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

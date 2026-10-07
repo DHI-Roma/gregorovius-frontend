@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001495",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118641662"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Piloty",
+   "forename": "Carl Theodor von"
+  },
+  "birth": "1826",
+  "death": "1886"
+ }
+}

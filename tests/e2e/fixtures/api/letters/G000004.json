@@ -1,0 +1,136 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Gustav Kolb in Augsburg. Rom, 5. Februar 1853",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "Biblioteka Jagiellońska Krakau",
+      "idno": [
+       "Hs.A.36.55",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000004/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": [
+       "1 Bl., 4°, 1 S.",
+       "Manuskript seines Artikels „Sampiero. Ein Heldenbild aus der Geschichte der Corsen“"
+      ]
+     }
+    },
+    "listWit": {
+     "witness": {
+      "msDesc": {
+       "@type": "copy",
+       "msIdentifier": {
+        "institution": "GhStA Berlin",
+        "collection": "VI. HA, NL Waldemar Kampf",
+        "idno": "Karton 84, Mappe 6 (Alfred Löckle nach H)"
+       }
+      }
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er übersendet das Manuskript seines Artikels „Sampiero. Ein Heldenbild aus der Geschichte der Corsen“ zum Abdruck in der „Allgemeinen Zeitung“ als Seitenstück zu seiner bereits abgedruckten Beitragsfolge „Wanderungen durch Corsica“ (1852). Gerne liefert er weitere Reisenotizen. Karl August Mebold und August Joseph Altenhöfer bittet er zu grüßen."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He sends the manuscript of his article „Sampiero. Ein Heldenbild aus der Geschichte der Corsen“ to be printed in the „Allgemeine Zeitung“ as a companion piece to his already printed series of articles „Wanderungen durch Corsica“ (1852). He would be happy to provide further travel notes. He asks to give his regards to Karl August Mebold and August Joseph Altenhöfer."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1853-02-05",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001344",
+       "#text": "Kolb, Gustav (1798–1865)"
+      },
+      "placeName": {
+       "@key": "G000620",
+       "#text": "Augsburg"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": {
+      "@type": "prev",
+      "#text": "14. Januar 1853"
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001263",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118710605"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Henzen",
+   "forename": "Wilhelm"
+  },
+  "birth": "1816",
+  "death": "1887"
+ }
+}

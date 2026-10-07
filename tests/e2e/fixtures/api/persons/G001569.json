@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001569",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118751336"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Sarpi",
+   "forename": "Paolo"
+  },
+  "birth": "1552",
+  "death": "1623"
+ }
+}

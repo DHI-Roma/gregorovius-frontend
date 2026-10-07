@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001343",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116285036"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Köhler",
+   "forename": "Louis"
+  },
+  "birth": "1820",
+  "death": "1886"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000677",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3176219"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Genua"
+  }
+ }
+}

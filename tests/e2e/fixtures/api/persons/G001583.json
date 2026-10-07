@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001583",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118795147"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Schlözer",
+   "forename": "Kurd von"
+  },
+  "birth": "1822",
+  "death": "1894"
+ }
+}

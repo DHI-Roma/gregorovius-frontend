@@ -1,0 +1,134 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Ottilie Elgnowski und Emilie Auguste Gregorovius in Insterburg. Rom, 17. März 1860",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "BSB München",
+      "collection": "NL Gregorovius",
+      "idno": [
+       "Gregoroviusiana 20, Elgnowski, Ottilie (1b)",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000090/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": "1 Dbl., 8°, 4 S. – zahlreiche Transkriptionsanmerkungen vfrH"
+     }
+    },
+    "listWit": {
+     "witness": {
+      "msDesc": {
+       "@type": "copy",
+       "msIdentifier": {
+        "institution": "GhStA Berlin",
+        "collection": "VI. HA, NL Waldemar Kampf",
+        "idno": "Karton 59, Mappe 347 (nach H)"
+       }
+      }
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er sendet Glückwünsche zur Entbindung des Sohnes Hermann, der ihr ein Trost für ihren erkrankten Ehemann Louis Elgnowski sein wird. Den Geburtstag seiner Stiefmutter Emilie Auguste Gregorovius hat er still gefeiert. Zum Karneval lag er krank im Bett, wurde aber von Clemens August Alertz und seiner Wirtin gut versorgt. In Rom ist große Aufregung, weil der Vatikan mit „Excommunication und Bannstral“ droht. Ob er die Familie in Ostpreußen besuchen kann, hängt vom Fortgang seiner Arbeiten am vierten Band seiner „Geschichte der Stadt Rom im Mittelalter“ (1860) ab. Sollte er dieses Werk zum Abschluss bringen, will er, wie einst Edward Gibbon beim Abschluss seines „Decline and Fall of the Roman Empire“ (1788), ein großes Fest begehen. Seine Verwandten und die Tante Charlotte Pianka lässt er grüßen."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He sends congratulations on the birth of her son Hermann, who will be a comfort to her husband Louis Elgnowski, who is ill. He quietly celebrated the birthday of his stepmother Emilie Auguste Gregorovius. At carnival he was ill in bed, but was well looked after by Clemens August Alertz and his landlady. There is great excitement in Rome because the Vatican is threatening „excommunication and anathema“. Whether he can visit the family in East Prussia depends on the progress of his work on the fourth volume of his „Geschichte der Stadt Rom im Mittelalter“ (1860). Should he complete this work, he intends to celebrate a great feast, as Edward Gibbon once did at the conclusion of his „Decline and Fall of the Roman Empire“ (1788). He sends his greetings to his relatives and aunt Charlotte Pianka."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1860-03-17",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": [
+       {
+        "@key": "G001111",
+        "#text": "Elgnowski, Ottilie (bis 1855 Gregorovius,\n                        Ottilie) (1834–1907)"
+       },
+       {
+        "@key": "G001198",
+        "#text": "Gregorovius, Auguste Emilie\n                        (1797–1866)"
+       }
+      ],
+      "placeName": {
+       "@key": "G000689",
+       "#text": "Insterburg"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

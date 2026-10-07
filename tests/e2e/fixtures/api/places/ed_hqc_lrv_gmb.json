@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_hqc_lrv_gmb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3181063"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Campagna Romana"
+  }
+ }
+}

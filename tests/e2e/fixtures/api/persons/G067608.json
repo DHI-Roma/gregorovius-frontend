@@ -1,0 +1,23 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067608",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1033639818"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "name": "Novalis"
+   },
+   {
+    "@type": "alt",
+    "surname": "Hardenberg",
+    "forename": "Georg Philipp Friedrich von"
+   }
+  ],
+  "birth": "1772",
+  "death": "1801"
+ }
+}

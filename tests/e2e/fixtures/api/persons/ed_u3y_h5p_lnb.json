@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_u3y_h5p_lnb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1201040647"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Pilar von Pilchau",
+    "forename": "Bertha Baronin"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Freifrau von Ungern-Sternberg aus dem Hause Grossenhof"
+   }
+  ],
+  "birth": "1826",
+  "death": "1903"
+ }
+}

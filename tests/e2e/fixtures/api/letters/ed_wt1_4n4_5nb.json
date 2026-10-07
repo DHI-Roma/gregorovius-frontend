@@ -1,0 +1,118 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Louis Harder in Königsberg. Rom, 4. Februar 1855",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "Bochum, Heimatstube der Kreisgemeinschaft Neidenburg",
+      "idno": {
+       "@type": "URLImages",
+       "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/ed_wt1_4n4_5nb/"
+      }
+     },
+     "physDesc": {
+      "p": [
+       "1 Bl., 4°, 2 S.",
+       "Brief von Gregorovius an Albrecht Pancritius vom 4. Februar 1855"
+      ]
+     }
+    },
+    "listWit": {
+     "witness": {
+      "bibl": {
+       "@type": "print",
+       "#text": "Herbert Kalwa: Gregorovius-Briefe für die Neidenburger Heimatstube. In: Neidenburger Heimatbrief. Nr. 113 (Weihnachten 1999). S. 59–60 (Auszug)"
+      }
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er freut sich über das Wohlergehen seiner Freunde. Nach schweren Zeiten hat ihm sein „Corsica“ (1854) zu Ansehen verholfen. Sein „Euphorion“ (1858) wird den Freunden in Königsberg gefallen. Heute war er mit Hermann Gemmel und seiner Schwester Minna verabredet. Fritz hat weder Begabung als Maler noch als Handwerker – auch in Rom halten sich unbegabte Menschen für Künstler. Seinem Bruder soll Harder Englisch beibringen. Er selbst beherrscht zehn Sprachen und zwei Dialekte, im kommenden Jahr will er Arabisch lernen. Seinen Brief an Albrecht Pancritius legt er bei. Er hofft, bald zu Geld zu kommen. Louis Köhler hat ihm über sein freundschaftliches Verhältnis mit Harder geschrieben. Schon Ludwig Bornträger hat die Briefe von Harder gerühmt. Den vorangehenden klugen Brief Harders hat er Karl von Dietrichs gezeigt."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He is glad that his friends are well. After hard times his „Corsica“ (1854) helped him to gain reputation. His „Euphorion“ (1858) will please the friends in Königsberg. Today he saw Hermann Gemmel and his sister Minna. Fritz has neither talent as a painter nor as a craftsman – in Rome, untalented people consider themselves artists, too. Harder is to teach his brother English. He himself speaks ten languages and two dialects, and next year he wants to learn Arabic. He encloses a letter to Albrecht Pancritius. He hopes to make money soon. He encloses his letter to Albrecht Pancritius. He hopes to make money soon. Louis Köhler has written about his close friendship with Harder. Even Ludwig Bornträger praised Harder’s letters. He showed Harder’s previous smart letter to Karl von Dietrich."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1855-02-04",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001236",
+       "#text": "Harder, Louis (1821–1899 oder 1900)"
+      },
+      "placeName": {
+       "@key": "G000699",
+       "#text": "Königsberg"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

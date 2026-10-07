@@ -1,0 +1,146 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Johann Georg Freiherr Cotta von Cottendorf in Stuttgart. Rom, 20. Mai 1853",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "DLA Marbach",
+      "collection": "Cotta-Archiv",
+      "idno": [
+       "Cotta-Briefe (3)",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000006/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": [
+       "1 Dbl., 4°, 2 ½ S. – 1r aoR in einer Vignette geprägt: BATH",
+       "Brief von Gregorovius an die Redaktion der Allgemeinen Zeitung vom 19. Mai 1853 (DLA Marbach, Cotta-Archiv, Cotta-Briefe, 2c) mit dem Manuskript seines Artikels „Der Ghetto und die Juden in Rom“"
+      ]
+     }
+    },
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 59, Mappe 347 (nach D1)"
+        }
+       }
+      },
+      {
+       "bibl": {
+        "@type": "print",
+        "#text": "Johannes Hönig: Ferdinand Gregorovius der Geschichtschreiber der Stadt Rom. Stuttgart, Berlin 1921. S. 203–205 (stark gekürzt)"
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er dankt für die Verlagsübernahme seines „Corsica“ (1854), möchte es aber nicht in der Reihe „Sammlung von Länder- und Reisebeschreibungen“ gedruckt sehen, verlangt eine größere Auflagenhöhe und mehr Honorar. Er erläutert die Anordnung der poetischen Teile. Die Turiner Zeitschrift „Il Cimento. Rivista di scienze, lettere ed arti“ wird „Corsica“ besprechen. Er legt einen Brief mit dem Manuskript seines Artikels „Der Ghetto und die Juden in Rom“ zur Weiterbeförderung an die Redaktion der „Allgemeinen Zeitung“ bei."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He is grateful for the acquisition of his „Corsica“ (1854), but does not want to see it printed in the series „Sammlung von Länder- und Reisebeschreibungen“. He requests a higher number of copies printed and a higher fee. He explains the arrangment of the poetic parts. The Turin magazine „Il Cimento. Rivista di scienze, lettere ed arti“ will review „Corsica“. He encloses a letter with the manuscript of his article „Der Ghetto und die Juden in Rom“ to be delivered to the editors of the „Allgemeine Zeitung“."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1853-05-20",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001055",
+       "#text": "Cotta von Cottendorf, Johann Georg\n                        (1796–1863)"
+      },
+      "placeName": {
+       "@key": "G000879",
+       "#text": "Stuttgart"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": [
+      {
+       "@type": "prev",
+       "#text": "10. Mai 1853 (BSB München, NL Gregorovius, Gregoroviusiana 26a, Beilage – K: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 2a)"
+      },
+      {
+       "@type": "next",
+       "#text": "31. Mai 1853 (K: DLA Marbach, Cotta-Archiv, Cotta-Briefe, 3a)"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

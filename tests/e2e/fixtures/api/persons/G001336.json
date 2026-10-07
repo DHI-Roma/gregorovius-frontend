@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001336",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/11856224X"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Kinkel",
+   "forename": "Gottfried"
+  },
+  "birth": "1815",
+  "death": "1882"
+ }
+}

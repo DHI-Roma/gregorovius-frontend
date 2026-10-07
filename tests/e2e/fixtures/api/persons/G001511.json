@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001511",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116305991"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Prutz",
+   "forename": "Hans"
+  },
+  "birth": "1843",
+  "death": "1929"
+ }
+}

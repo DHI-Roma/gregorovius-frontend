@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_gxl_l3y_2sb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2945024"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Braunschweig"
+  }
+ }
+}

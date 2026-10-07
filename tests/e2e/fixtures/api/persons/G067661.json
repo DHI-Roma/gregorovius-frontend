@@ -1,0 +1,10 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067661",
+  "persName": {
+   "@type": "reg",
+   "name": "Haus Cotta (Familie)"
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001132",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118533401"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Fischer",
+   "forename": "Kuno"
+  },
+  "birth": "1824",
+  "death": "1907"
+ }
+}

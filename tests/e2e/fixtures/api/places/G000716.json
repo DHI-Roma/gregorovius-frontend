@@ -1,0 +1,38 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000716",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2643743"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "London"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "ediarum_vhj_1ws_y4b",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Oxford Street (London)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_gmz_sdg_m5b",
+     "@type": "district",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/2636147"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Teddington (London)"
+     }
+    }
+   ]
+  }
+ }
+}

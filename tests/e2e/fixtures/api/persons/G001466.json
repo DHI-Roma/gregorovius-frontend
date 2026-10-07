@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001466",
+  "persName": {
+   "@type": "reg",
+   "surname": "Pancritius",
+   "forename": "Albrecht"
+  },
+  "birth": "1818",
+  "death": "1863"
+ }
+}

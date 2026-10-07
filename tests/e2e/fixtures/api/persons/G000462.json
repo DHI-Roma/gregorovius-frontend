@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000462",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/4141947-9"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Allgemeine Zeitung"
+  }
+ }
+}

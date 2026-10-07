@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000995",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116552115"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Brockhaus",
+   "forename": "Eduard"
+  },
+  "birth": "1829",
+  "death": "1914"
+ }
+}

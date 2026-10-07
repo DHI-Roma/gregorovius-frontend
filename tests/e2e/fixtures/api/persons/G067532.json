@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067532",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/35363-2"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Istituto di corrispondenza archeologica / Deutsches Archäologisches Institut in Rom"
+  }
+ }
+}

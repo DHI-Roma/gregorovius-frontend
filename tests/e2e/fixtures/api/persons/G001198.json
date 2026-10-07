@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001198",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/129692433"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Gregorovius",
+    "forename": "Auguste Emilie"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Dressler"
+   }
+  ],
+  "birth": "1797",
+  "death": "1866"
+ }
+}

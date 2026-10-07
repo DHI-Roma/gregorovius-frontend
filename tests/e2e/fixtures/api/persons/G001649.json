@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001649",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118802518"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Tommaseo",
+   "forename": "Niccolò"
+  },
+  "birth": "1802",
+  "death": "1874"
+ }
+}

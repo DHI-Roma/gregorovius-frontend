@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001070",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116038179"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Davidsohn",
+   "forename": "Robert"
+  },
+  "birth": "1853",
+  "death": "1937"
+ }
+}

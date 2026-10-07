@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000469",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/4145798-5"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Blätter für literarische Unterhaltung"
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067676",
+  "persName": {
+   "@type": "reg",
+   "name": "Crescentius I. Nomentanus"
+  },
+  "birth": null,
+  "death": "998"
+ }
+}

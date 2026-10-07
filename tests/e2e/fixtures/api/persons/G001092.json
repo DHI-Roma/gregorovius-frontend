@@ -1,0 +1,23 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001092",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1154629392"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Serego Alighieri Gozzadini",
+    "forename": "Maria Teresa Contessa"
+   },
+   {
+    "@type": "alt",
+    "name": "Serego Allighieri Gozzadini, Maria Teresa"
+   }
+  ],
+  "birth": "1812",
+  "death": "1881"
+ }
+}

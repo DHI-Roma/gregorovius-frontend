@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001200",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118541951"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Gregorovius",
+   "forename": "Ferdinand"
+  },
+  "birth": "1821",
+  "death": "1891"
+ }
+}

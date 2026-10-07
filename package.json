@@ -13,7 +13,10 @@
     "build": "quasar build",
     "lint": "eslint --ext .js,.vue ./src",
     "test": "vitest",
-    "test:unit": "vitest run"
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test",
+    "test:e2e:smoke": "E2E_SMOKE=1 playwright test",
+    "e2e:record": "node tests/e2e/scripts/record-fixtures.mjs"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.9",
@@ -27,7 +30,9 @@
     "vue3-runtime-template": "^1.0.2"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
     "@babel/eslint-parser": "^7.23.10",
+    "@playwright/test": "^1.63.0",
     "@quasar/app-vite": "^2.6.2",
     "@vue/test-utils": "^2.4.4",
     "autoprefixer": "^10.4.17",
@@ -36,7 +41,7 @@
     "eslint-plugin-vue": "^9.21.1",
     "prettier": "^3.2.5",
     "sass": "^1.70.0",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   },
   "engines": {
     "node": "^22.22.0 || ^24",

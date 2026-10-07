@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001020",
+  "persName": {
+   "@type": "reg",
+   "surname": "Caraffa",
+   "forename": "Filippo"
+  },
+  "birth": "1801",
+  "death": "1870"
+ }
+}

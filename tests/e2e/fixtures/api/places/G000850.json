@@ -1,0 +1,11 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000850",
+  "@type": "river",
+  "placeName": {
+   "@type": "reg",
+   "#text": "Mississippi"
+  }
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_bwx_jrp_gqb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118663313"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Binzer",
+    "forename": "Emilie Freifrau von"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "pseudonym",
+    "name": "Ernst Ritter"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "von Gerschau"
+   }
+  ],
+  "birth": "1801",
+  "death": "1891"
+ }
+}

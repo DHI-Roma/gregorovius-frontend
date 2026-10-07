@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001355",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118570080"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Laube",
+   "forename": "Heinrich"
+  },
+  "birth": "1806",
+  "death": "1884"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001187",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116798688"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Gozzadini",
+   "forename": "Giovanni, Conte"
+  },
+  "birth": "1810",
+  "death": "1887"
+ }
+}

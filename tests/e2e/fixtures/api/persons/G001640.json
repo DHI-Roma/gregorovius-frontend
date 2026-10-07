@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001640",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/11862167X"
+  },
+  "persName": {
+   "@type": "reg",
+   "name": "Theoderich der Große",
+   "roleName": "König der Ostgoten"
+  },
+  "birth": "453",
+  "death": "526"
+ }
+}

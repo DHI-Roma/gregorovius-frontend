@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000510",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/2015908-0"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Königliche Hof- und Staatsbibliothek zu München"
+  }
+ }
+}

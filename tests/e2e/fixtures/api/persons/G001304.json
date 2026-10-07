@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001304",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/129499722"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Humboldt",
+   "forename": "Mathilde von"
+  },
+  "birth": "1830",
+  "death": "1897"
+ }
+}

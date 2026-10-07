@@ -1,0 +1,140 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Conte Giovanni Gozzadini in Bologna. München, 22. Dezember 1884",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    },
+    "respStmt": {
+     "persName": {
+      "@ref": " http://d-nb.info/gnd/1089162758",
+      "surname": "Voci",
+      "forename": "Anna Maria"
+     },
+     "resp": {
+      "note": {
+       "@type": "remarkResponsibility",
+       "#text": "Mitarbeit"
+      }
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "listWit": {
+     "witness": {
+      "msDesc": {
+       "@type": "copy",
+       "msIdentifier": {
+        "institution": "Bologna, Biblioteca dell’Archiginnasio",
+        "collection": "Ms. Gozzadini 442",
+        "idno": [
+         "49",
+         {
+          "@type": "URLImages",
+          "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/ed_bhl_y5j_zrb/"
+         }
+        ]
+       },
+       "physDesc": {
+        "p": "1 Dbl., 1 ¾ S.  (1r, 2r) – Adr.: Illmo Signore / il signor Conte Giovanni Gozzadini / Senatore del Regno / Bologna"
+       }
+      }
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Am Jahresende möchte er seine Grüße an den Grafen und seine Tochter Gozzadina senden. Wegen der Cholera-Epidemie war das Jahr 1884 wenig günstig für Italien. In Deutschland sind die Zustände zufriedenstellend. Er ist mit Arbeiten beschäftigt, die die Geschichte der Stadt Athen im Mittelalter betreffen. Im kommenden Januar wird er einen Vortrag über eine Münze des Fürsten und römischen Senators Alberich II. halten, welche wenige Jahre davor im Tiber gefunden wurde und jetzt im Vatikanischen Münzkabinett aufbewahrt wird. Er fragt ihn, ob das Münzkabinett Bolognas etwa Münzen von Alberich II. besitzt. Sie sind so selten, dass nicht einmal die bedeutenden Münzsammlungen in London, Paris und Wien welche besitzen."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "At the end of the year he would like to send his greetings to the Count and his daughter Gozzadina. Because of the cholera epidemic, the year 1884 was not very favorable for Italy. In Germany, the conditions are satisfactory. He is engaged in work related to the history of the city of Athens in the Middle Ages. Next January he will give a lecture on a coin of the count and Roman senator Alberich II, which was found in the Tiber a few years prior and is now kept in the Vatican Numismatic Collection. He asks if the coin cabinet of Bologna has any coins of Alberich II. They are so rare that not even the important coin collections in London, Paris and Vienna have any."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000734",
+       "#text": "München"
+      },
+      "date": {
+       "@when": "1884-12-22",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001187",
+       "#text": "Gozzadini, Giovanni, Conte (1810–1887)"
+      },
+      "placeName": {
+       "@key": "G000638",
+       "#text": "Bologna"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": {
+      "@type": "next",
+      "#text": "28. Dezember 1884 (K: Bologna, Biblioteca dell’Archiginnasio, Fondo Carte Gozzadini e da Schio, busta 19, fasc. 42, 12)"
+     }
+    }
+   }
+  }
+ }
+}

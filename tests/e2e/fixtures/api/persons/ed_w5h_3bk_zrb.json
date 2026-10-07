@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_w5h_3bk_zrb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1090635-6"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "British Museum. Department of Coins and Medals (London)"
+  }
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Heinrich Laube in Wien. Königsberg, 4. Februar 1851",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons\n                        Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "Österreichische Nationalbibliothek",
+      "collection": "Teilnachlass Laube",
+      "idno": [
+       "Autogr. 156/1–1 HAN MAG",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G067797/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": "1 Dbl., 4°, 1 S."
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er bittet um Stellungnahme zu dem durch Anton Schurz überbrachten Manuskript seines „Der Tod des Tiberius“ (1851) zur Aufführung im Wiener K. K. Hof- und Nationaltheater nächst der Burg oder um Empfehlung an einen Verlag."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He asks for a comment on whether or not his „Der Tod des Tiberius“ (1851), the manuscript of which was delivered by Anton Schurz, might be performed in the Wiener K. K. Hof- und Nationaltheater nächst der Burg or if Laube could recommend it to a publisher."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000699",
+       "#text": "Königsberg"
+      },
+      "date": {
+       "@when": "1851-02-04",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001355",
+       "#text": "Laube, Heinrich (1806–1884)"
+      },
+      "placeName": {
+       "@key": "G000897",
+       "#text": "Wien"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": {
+      "@type": "next",
+      "#text": "nach dem 14. März 1851 (SBB – PK, Slg. Darmstaedter 2m 1840: Laube, Heinrich, Bl. 1–2)"
+     }
+    }
+   }
+  }
+ }
+}

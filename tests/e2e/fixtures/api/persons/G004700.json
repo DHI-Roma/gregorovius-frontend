@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004700",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/13043387X"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Cornelius",
+    "forename": "Geltruda von"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Ferretinti (oder: Fervantini)"
+   }
+  ],
+  "birth": null,
+  "death": "1859"
+ }
+}

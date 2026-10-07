@@ -1,0 +1,50 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000638",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3181928"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Bologna"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "ediarum_vcj_srk_rlb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/11127237/basilica-di-santo-stefano.html"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Basilica di Santo Stefano (Bologna)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_qwv_dsk_rlb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/10401461/palazzo-isolani.html"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Isolani (Bologna)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_qkx_vnv_xbc",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Villa Minghetti a Mezzaratta (Bologna)"
+     }
+    }
+   ]
+  }
+ }
+}

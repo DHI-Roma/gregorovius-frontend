@@ -1,0 +1,11 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_ufl_rp2_rlb",
+  "@role": "mythological",
+  "persName": {
+   "@type": "reg",
+   "name": "Astraea"
+  }
+ }
+}

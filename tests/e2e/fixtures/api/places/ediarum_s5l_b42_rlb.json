@@ -1,0 +1,11 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ediarum_s5l_b42_rlb",
+  "@type": "street",
+  "placeName": {
+   "@type": "reg",
+   "#text": "Barerstraße (München)"
+  }
+ }
+}

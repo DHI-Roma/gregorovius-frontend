@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067602",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116586842"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Gerlach",
+   "forename": "Franz Dorotheus"
+  },
+  "birth": "1793",
+  "death": "1876"
+ }
+}

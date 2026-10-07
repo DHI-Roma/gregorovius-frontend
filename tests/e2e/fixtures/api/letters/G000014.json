@@ -1,0 +1,121 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Friedrich Althaus in London. Rom, 8. Januar\n                    1854",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 59, Mappe 347 (nach D)"
+        }
+       }
+      },
+      {
+       "@select": "#this",
+       "bibl": {
+        "@type": "print",
+        "#text": "Friedrich Althaus: Ungedruckte Briefe von Ferdinand Gregorovius. In: Deutsche Revue über das gesamte nationale Leben der Gegenwart. Jg. 19. Bd. 2. Stuttgart [u. a.]: Deutsche Verlagsanstalt Mai 1894. S. 242–245"
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er entschuldigt sich für seine ausbleibende Antwort auf den Brief von Althaus nach Neapel. Althaus vermutet er in Amerika. Er erinnert an die im Juli 1853 gemeinsam mit Jacob Burckhardt und Georg Adolf Demmler unternommenen Wanderungen am Golf von Neapel und seine Überfahrt nach Capri mit Althaus. Er blieb dort noch einen Monat und besuchte Ischia. Von Neapel aus schiffte er sich nach Palermo ein. Sein einmonatiger Aufenthalt dort hat ihm nach Paestum die „ganze große Anschauung griechischer Kultur“ gewährt. Nach kurzem Aufenthalt in Genazzano ist er im November nach Rom zurückgekehrt, wo er gelegentlich mit Georg Adolf Demmler und einem Russen verkehrt. Seiner noch nicht bei Cotta erschienenen Reiseschilderung „Corsica“ (1854) kann Althaus möglicherweise in Amerika zu einer Übersetzung ins Englische verhelfen. Die Arbeit an seinem Drama „Eumeniden“ stockt; er plant eine poetische Arbeit über Amor und Psyche. In Amerika soll er Carl Schurz grüßen. Seinen Antwortbrief soll er an Konsul Anton Marstaller richten. Von dem in Rom weilenden Prinzen Friedrich Wilhelm von Preußen sind die Kardinäle und Papst Pius IX. entzückt."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He apologizes for his failure to reply to the letter from Althaus to Naples. He assumes Althaus is in America. He reminisces about the hikes he went on with Jacob Burckhardt and Georg Adolf Demmler at the Gulf of Naples in July 1853 and crossing over to Capri with Althaus. He stayed there for a month and visited Ischia. From Naples he made his way to Palermo. After Paestum, his one-month stay there gave him a „great overview of Greek culture“. After a short stay in Genazzano, he returned to Rome in November, where he now occasionally socializes with Georg Adolf Demmler and a Russian. If Althaus is in America, perhaps he might be able to procure an English translation of his travel report „Corsica“ (1854), which has not yet been published by Cotta. He has stopped working on his drama „Eumeniden“; he is planning some poetic work on Cupid and Psyche. In America, Althaus should give his regards to Carl Schurz. He should send his response letter to Consul Anton Marstaller. The Cardinals and Pope Pius IX are delighted by Prince Friedrich Wilhelm of Prussia, who is in Rome."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1854-01-08",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G000920",
+       "#text": "Althaus, Friedrich (1829–1897)"
+      },
+      "placeName": {
+       "@key": "G000716",
+       "#text": "London"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

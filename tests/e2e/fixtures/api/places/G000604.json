@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000604",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3182488"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Baia"
+  }
+ }
+}

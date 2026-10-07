@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000689",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/568595"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Insterburg"
+  }
+ }
+}

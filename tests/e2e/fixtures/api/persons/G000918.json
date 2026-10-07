@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000918",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116293748"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Altenhöfer",
+   "forename": "August Joseph"
+  },
+  "birth": "1804",
+  "death": "1876"
+ }
+}

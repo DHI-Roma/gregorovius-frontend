@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067606",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117424668"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Wittig",
+   "forename": "August"
+  },
+  "birth": "1823",
+  "death": "1893"
+ }
+}

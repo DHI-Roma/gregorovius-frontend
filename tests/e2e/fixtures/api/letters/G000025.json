@@ -1,0 +1,146 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Theodor Heyse in Florenz. Rom, 24. Dezember 1856",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "BBAW",
+      "collection": "Archiv",
+      "idno": [
+       "NL Theodor Heyse, Bl. 9–10",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000025/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": "1 Dbl., 4°, 3 ¼ S."
+     }
+    },
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 84, Mappe 6 (Alfred Löckle nach H)"
+        }
+       }
+      },
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 59, Mappe 347 (nach D)"
+        }
+       }
+      },
+      {
+       "bibl": {
+        "@type": "print",
+        "#text": "Briefe von Ferdinand Gregorovius an Theodor Heyse. In: Mittheilungen aus dem Litteraturarchive in Berlin 1899. Berlin: Litteraturarchiv-Gesellschaft 1899. S. 188–191"
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Heyse ist in den intellektuellen Kreisen Roms unvergessen. Weder er selbst noch Giovanni Gozzadini konnten Paolo Perez abhalten, ins Kloster der Rosminianer einzutreten. Seine „Die Grabmäler der Römischen Päpste“ (1857) sind im Druck, im Frühjahr soll sein Versgedicht „Euphorion“ (1858) erscheinen. Den ersten Band seiner „Geschichte der Stadt Rom im Mittelalter“ (1859) hofft er 1858 abzuschließen. Er arbeitet mit Mühe an einem Trauerspiel. Von Alexander von Humboldt hat er einen anerkennenden Brief zu seinem „Corsica“ (1854) erhalten; ihm hat er Rudolf Jonas und dessen auf Korsika entstandene Landschaftsbilder empfohlen. Über das Erscheinen seiner von Paolo Perez ins Italienische übersetzten „Storia dei Corsi“ hat er nichts gehört. Von Alfred von Reumont hat er „Ganganelli. Papst Clemens XIV., seine Briefe und seine Zeit“ (1847) und „Die Jugend Caterinas de’ Medici“ (1856) mit Unmut gelesen. In Rom ist das Ehepaar François Sabatier und Caroline Ungher-Sabatier sowie Gabriel Taussig. Clemens August Alertz, Julius Muhr und Johannes Riepenhausen lassen grüßen. Über den betrübten Ton in Heyses letztem Brief ist er besorgt und ermuntert ihn zu weiteren wissenschaftlichen Schriften."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "Heyse is unforgotten in the intellectual circles of Rome. Neither he himself nor Giovanni Gozzadini could prevent Paolo Perez from entering the Rosminian monastery. His „Die Grabmäler der Römischen Päpste“ (1857) is in print, and his poem „Euphorion“ (1858) is due to be published in the spring. He hopes to complete the first volume of his „Geschichte der Stadt Rom im Mittelalter“ (1859) in 1858. He’s working on a tragedy with great difficulty. He received an appreciative letter from Alexander von Humboldt about his „Corsica“ (1854); he recommended Rudolf Jonas and his landscape paintings created in Corsica to him. He has not heard anything about the publication of his „Storia dei Corsi“, translated into Italian by Paolo Perez. He read „Ganganelli. Papst Clemens XIV., seine Briefe und seine Zeit“ (1847) and „Die Jugend Caterinas de’ Medici“ (1856) by Alfred von Reumont with displeasure. The couple François Sabatier and Caroline Ungher-Sabatier as well as Gabriel Taussig are in Rome. Clemens August Alertz, Julius Muhr and Johannes Riepenhausen send their regards. He is concerned about the sorrowful tone in Heyse’s last letter and encourages him to continue his scientific writings."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1856-12-24",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001275",
+       "#text": "Heyse, Theodor (1803–1884)"
+      },
+      "placeName": {
+       "@key": "G000671",
+       "#text": "Florenz"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

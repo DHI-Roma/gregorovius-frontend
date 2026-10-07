@@ -1,0 +1,161 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an den F. A. Brockhaus Verlag und Heinrich Brockhaus in Leipzig. Rom, 2. März 1855",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "Sächsisches Staatsarchiv Leipzig",
+      "collection": "Bestand 21083",
+      "idno": [
+       "Archivalnummer 224 (12)",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000060/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": [
+       {
+        "hi": [
+         {
+          "@rendition": "#aq",
+          "hi": {
+           "@rendition": "#aq",
+           "#text": "Rom"
+          }
+         },
+         {
+          "@rendition": "#aq",
+          "hi": {
+           "@rendition": "#aq",
+           "#text": "März"
+          }
+         },
+         {
+          "@rendition": "#aq",
+          "hi": {
+           "@rendition": "#aq",
+           "#text": "Gregorovius"
+          }
+         }
+        ],
+        "#text": "1 Dbl., 4°, 1 ¾ S. – 1r aoR in einer Vignette geprägt: BATH – 2v alR, Bl. um 90° gedreht, Eingangsvermerk: 1855. / , 2/10. . / ."
+       },
+       "Brief von Gregorovius an Robert Prutz"
+      ]
+     }
+    },
+    "listWit": {
+     "witness": {
+      "msDesc": {
+       "@type": "copy",
+       "msIdentifier": {
+        "institution": "GhStA Berlin",
+        "collection": "VI. HA, NL Waldemar Kampf",
+        "idno": "Karton 59, Mappe 347 (nach H)"
+       }
+      }
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er dankt für die Abzüge seines Beitrags „Ein Blick in die romanische Literatur Siciliens“ (1855) aus den „Blättern für literarische Unterhaltung“ und für die Nummer des „Deutschen Museums“. Das Manuskript des von Brockhaus für die Zeitschrift „Die Gegenwart“ gewünschten Beitrags „Das Königreich beider Sicilien in seinen gegenwärtigen Zuständen“ wird er fristgerecht bis Ende April liefern und bittet um Abzüge des Drucks. Seine Wünsche betreffend des drei Jahre zuvor beim „Deutschen Museum“ eingereichten, nicht veröffentlichen Manuskripts „Don Juan, Faust und Ahasver, ein Fragment zur Charakteristik Lenaus“ hat er in beiliegendem Brief an Robert Prutz ausgesprochen, den er weiterzuleiten bittet. Prutz soll nach seinem Ermessen damit verfahren."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He thanks him for the copies of his article „Ein Blick in die romanische Literatur Siciliens“ (1855) from the „Blätter für literarische Unterhaltung“ and for the issue of the „Deutsches Museum“. He will provide the manuscript of his article „Das Königreich beider Sicilien in seinen gegenwärtigen Zuständen“ as requested by Brockhaus for the magazine „Die Gegenwart“ by the end of April, in due time, and asks for a printed copy. He expressed his wishes regarding the unpublished manuscript „Don Juan, Faust und Ahasver, ein Fragment zur Charakteristik Lenaus“, which had been submitted to the „Deutschen Museum“ three years earlier, in the attached letter to Robert Prutz, which he asks to forward. Prutz should proceed at his own discretion."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1855-03-02",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G000996",
+       "#text": "Brockhaus, Heinrich (1804–1874)"
+      },
+      "orgName": {
+       "@key": "G000480",
+       "#text": "F. A. Brockhaus Verlag"
+      },
+      "placeName": {
+       "@key": "G000712",
+       "#text": "Leipzig"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": {
+      "@type": "prev",
+      "#text": "1. Februar 1855"
+     }
+    }
+   }
+  }
+ }
+}

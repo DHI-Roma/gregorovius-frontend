@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000842",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3171606"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Palestrina"
+  }
+ }
+}

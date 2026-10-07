@@ -1,0 +1,11 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ediarum_vvl_mvt_sxb",
+  "@type": "building",
+  "placeName": {
+   "@type": "reg",
+   "#text": "Caffè Galileo (Florenz)"
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067650",
+  "persName": {
+   "@type": "reg",
+   "surname": "Beaufort",
+   "forename": "John",
+   "roleName": "1. Duke of Somerset"
+  },
+  "birth": "1404",
+  "death": "1444"
+ }
+}

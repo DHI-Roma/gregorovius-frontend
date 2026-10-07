@@ -1,0 +1,34 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000726",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3173577"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Meran"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "ediarum_ngd_hzw_3qb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Pension Rundegg (Meran)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_cfy_hzw_3qb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Hotel Belle Vue (Meran)"
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_dbv_xc2_2sb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118718983"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Grosse",
+   "forename": "Julius"
+  },
+  "birth": "1828",
+  "death": "1902"
+ }
+}

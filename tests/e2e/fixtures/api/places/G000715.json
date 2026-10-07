@@ -1,0 +1,24 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000715",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3174659"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Livorno"
+  },
+  "listPlace": {
+   "place": {
+    "@xml:id": "ediarum_dkb_ghf_jxb",
+    "@type": "street",
+    "placeName": {
+     "@type": "reg",
+     "#text": "Via Colonnella (Livorno)"
+    }
+   }
+  }
+ }
+}

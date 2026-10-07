@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001691",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1055148116"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Vitale",
+   "forename": "Francesco Antonio"
+  },
+  "birth": "1724",
+  "death": "1803"
+ }
+}

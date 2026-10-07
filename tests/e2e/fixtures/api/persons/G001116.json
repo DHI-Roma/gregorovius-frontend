@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001116",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116537167"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Erhardt",
+   "forename": "Wolfgang"
+  },
+  "birth": "1819",
+  "death": "1906"
+ }
+}

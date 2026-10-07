@@ -1,0 +1,165 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Heinrich Brockhaus in Leipzig. Rom, 6. Januar\n                    1855",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "Sächsisches Staatsarchiv Leipzig",
+      "collection": "Bestand 21083",
+      "idno": [
+       "Archivalnummer 224 (11)",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000066/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": {
+       "hi": [
+        {
+         "@rendition": "#aq",
+         "hi": {
+          "@rendition": "#aq",
+          "#text": "Rom"
+         }
+        },
+        {
+         "@rendition": "#aq",
+         "hi": {
+          "@rendition": "#aq",
+          "#text": "Jan"
+         }
+        },
+        {
+         "@rendition": "#aq",
+         "hi": {
+          "@rendition": "#aq",
+          "#text": "Gregorovius"
+         }
+        }
+       ],
+       "#text": "1 Bl., 4°, 2 S. – 1r aoR in einer Vignette geprägt: BATH – 1r aoR Eingangs- und Beantwortungsvermerk: 1855. / , 6/14. . / . / Be. /1/II."
+      }
+     }
+    },
+    "listWit": {
+     "witness": {
+      "msDesc": {
+       "@type": "copy",
+       "msIdentifier": {
+        "institution": "GhStA Berlin",
+        "collection": "VI. HA, NL Waldemar Kampf",
+        "idno": "Karton 59, Mappe 347 (nach H)"
+       }
+      }
+     }
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Den von Brockhaus gewünschten Beitrag „Das Königreich beider Sicilien in seinen gegenwärtigen Zuständen“ kann er bis Ende April liefern. Er wartet noch auf Materialien aus Neapel und bittet um Richtlinien zur Konzeption des Beitrags. Derzeit arbeitet er an seinen Artikeln „Briefe aus Neapel“ und „Die öffentlichen Monumente von Florenz“ für die „Hausblätter“. Er wünscht Abzüge seines Beitrags „Ein Blick in die romanische Literatur Siciliens“ (1855) aus den „Blättern für literarische Unterhaltung“. Er bittet um Rücksendung seines vor drei Jahre beim „Deutschen Museum“ eingereichten, nicht veröffentlichen Manuskripts „Don Juan, Faust und Ahasver, ein Fragment zur Charakteristik Lenaus“ an seinen Bruder Julius Gregorovius in Königsberg."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He can provide his article „Das Königreich beider Sicilien in seinen gegenwärtigen Zuständen“, requested by Brockhaus, by the end of April. He is still waiting for materials from Naples and asks for guidelines for the conception of the article. He is currently working on his articles „Briefe aus Neapel“ and „Die öffentlichen Monumente von Florenz“ for the „Hausblätter“. He asks for copies of his article „Ein Blick in die romanische Literatur Siciliens“ (1855) from the „Blätter für literarische Unterhaltung“. He asks that his unpublished manuscript „Don Juan, Faust und Ahasver, ein Fragment zur Charakteristik Lenaus“, submitted to the „Deutschen Museum“ three years ago, be returned to his brother Julius Gregorovius in Königsberg."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1855-01-06",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G000996",
+       "#text": "Brockhaus, Heinrich (1804–1874)"
+      },
+      "placeName": {
+       "@key": "G000712",
+       "#text": "Leipzig"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": [
+      {
+       "@type": "prev",
+       "#text": "7. Dezember 1854"
+      },
+      {
+       "@type": "next",
+       "#text": "1. Februar 1855"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

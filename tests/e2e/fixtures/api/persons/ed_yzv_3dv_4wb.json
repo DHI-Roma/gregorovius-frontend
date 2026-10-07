@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_yzv_3dv_4wb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117640824"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Bunsen",
+   "forename": "Theodor von"
+  },
+  "birth": "1832",
+  "death": "1892"
+ }
+}

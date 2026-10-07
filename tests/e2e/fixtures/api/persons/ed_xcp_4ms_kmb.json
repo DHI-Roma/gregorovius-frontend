@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_xcp_4ms_kmb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/36568-3"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Reale Istituto Veneto di Scienze, Lettere ed Arti"
+  }
+ }
+}

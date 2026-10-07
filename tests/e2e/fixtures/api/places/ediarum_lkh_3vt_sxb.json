@@ -1,0 +1,11 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ediarum_lkh_3vt_sxb",
+  "@type": "building",
+  "placeName": {
+   "@type": "reg",
+   "#text": "Caffè Landini (Florenz)"
+  }
+ }
+}

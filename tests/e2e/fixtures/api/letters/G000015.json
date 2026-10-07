@@ -1,0 +1,121 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Friedrich Althaus in London. Rom, 21. April\n                    1854",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 59, Mappe 347 (nach D1)"
+        }
+       }
+      },
+      {
+       "@select": "#this",
+       "bibl": {
+        "@type": "print",
+        "#text": "Friedrich Althaus: Ungedruckte Briefe von Ferdinand Gregorovius. In: Deutsche Revue über das gesamte nationale Leben der Gegenwart. Jg. 19. Bd. 2. Stuttgart [u. a.]: Deutsche Verlagsanstalt Mai 1894. S. 245–248"
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er ist erleichtert, ihn sicher in London zu wissen, dem „Zentrum der industriellen Menschheit“. Über den politischen Stillstand in Europa nach der Revolution und die Rolle von Louis Napoléon und Großbritannien als Verbündete des Osmanischen Reichs im Krimkrieg. Er bewundert die Geistesstärke des von vielen Schicksalsschlägen getroffenen Alexander Herzen; dessen „Vom andern Ufer“ (1850) hat er noch nicht gelesen. Er ist erstaunt, dass Gottfried Kinkel noch keine Anstellung in London hat. Für eine Übersiedlung nach Venedig hat er kein Geld. Seine Studie „Die Grabmäler der Päpste“ (1854) hat er vollendet. Zum Winter will er seine Zeitungs- und Zeitschriftenartikel in einem Band zusammenfassen und arbeitet an einer „Physiognomik der römischen Kaiserporträts“. Sein „Corsica“ (1854) ist bei Cotta erschienen, doch zieht der Krimkrieg derzeit alle Aufmerksamkeit auf sich. Die Engländer müssten sich schon wegen Pasquale Paoli dafür interessieren. Erinnerungen an gemeinsame Wandertage. Zu Ostern sind viele Engländer in Rom; aus Berlin kam Titus Ullrich. Er verkehrt viel mit Georg Adolf und Maria Henriette Demmler. Im Sommer will er nach Genazzano, um eine „Kultur-Naturnovelle“ zu schreiben. Grüße an den Königsberger Orientalisten Theodor Goldstücker."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He is relieved to know that he is safe in London, the „center of industrial society“. On the political standstill in Europe after the revolution and the role of Louis Napoleon and Great Britain as allies of the Ottoman Empire in the Crimean War. He admires the intellectual strength of Alexander Herz, who has suffered many hardships; he has not yet read his „Vom andern Ufer“ (1850). He is surprised that Gottfried Kinkel has not gotten a job in London yet. He doesn’t have the money to move to Venice. He has completed his study „Die Grabmäler der Päpste“ (1854). By the winter, he wants to collect his newspaper and magazine articles into one volume and he is working on „Physiognomik der römischen Kaiserporträts“. His „Corsica“ (1854) has been published by Cotta, but the Crimean War has currently captured everyone’s attention. The English should be interested in it for Pasquale Paoli alone. Memories of days spent hiking together. There are a lot of Englishmen in Rome for Easter, Titus Ullrich came from Berlin. He spends a lot of time with Georg Adolf and Maria Henriette Demmler. In the summer he wants to go to Genazzano to write a „culture and nature novella“. He asks to give his regards to the orientalist Theodor Goldstücker from Königsberg."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1854-04-21",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G000920",
+       "#text": "Althaus, Friedrich (1829–1897)"
+      },
+      "placeName": {
+       "@key": "G000716",
+       "#text": "London"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

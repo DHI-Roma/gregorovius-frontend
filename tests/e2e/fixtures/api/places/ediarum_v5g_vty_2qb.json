@@ -1,0 +1,11 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ediarum_v5g_vty_2qb",
+  "@type": "street",
+  "placeName": {
+   "@type": "reg",
+   "#text": "Brienner Straße (München)"
+  }
+ }
+}

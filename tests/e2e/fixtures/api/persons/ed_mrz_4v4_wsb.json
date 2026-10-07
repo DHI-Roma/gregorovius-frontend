@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_mrz_4v4_wsb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117197262"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Moy de Sons",
+   "forename": "Karl Graf von"
+  },
+  "birth": "1827",
+  "death": "1894"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004668",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/013010417"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Das Ausland. Eine Wochenschrift für Kunde des geistigen und sittlichen Lebens der Völker (Cotta 1828–1893)"
+  }
+ }
+}

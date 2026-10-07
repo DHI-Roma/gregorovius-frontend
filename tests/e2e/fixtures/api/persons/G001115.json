@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001115",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1025667980"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Erhardt",
+    "forename": "Sophie"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Meisrimmel"
+   }
+  ],
+  "birth": "1826",
+  "death": "1914"
+ }
+}

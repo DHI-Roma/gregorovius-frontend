@@ -1,0 +1,18 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067688",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/134222350"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Fernández de Castro y Andrade",
+   "forename": "Pedro",
+   "roleName": "Conde de Lemos"
+  },
+  "birth": "1576",
+  "death": "1622"
+ }
+}

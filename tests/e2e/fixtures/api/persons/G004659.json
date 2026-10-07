@@ -1,0 +1,10 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004659",
+  "orgName": {
+   "@type": "reg",
+   "#text": "New Yorker Criminal-Zeitung und belletristisches Journal (1852–1864)"
+  }
+ }
+}

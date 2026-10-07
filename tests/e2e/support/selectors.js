@@ -1,0 +1,32 @@
+// Fallback selectors for elements that currently have no accessible role or name.
+// Each entry names the spec expected to make it reachable by role/name; replace
+// the fallback with getByRole/getByLabel once that spec is implemented.
+
+/** Button that only shows a Material icon, e.g. iconButton(page, 'arrow_back') */
+export function iconButton(scope, iconName) {
+  // TODO(spec-004): accessible names for icon buttons
+  const page = typeof scope.page === 'function' ? scope.page() : scope;
+  return scope.locator('button').filter({ has: page.locator('i.q-icon', { hasText: new RegExp(`^${iconName}$`) }) });
+}
+
+export const SEL = {
+  editionText: '.g-edition-text',
+  entityLink: '.g-edition-text a.g-entity-link', // TODO(spec-002): native links
+  commentOrig: '.g-comment-orig', // TODO(spec-003): comment trigger buttons
+  commentIcon: '.comment-icon', // TODO(spec-003)
+  commentPanel: '.g-edition-comment-container', // TODO(spec-003): named comment region
+  kwicResult: '.g-searchresult',
+  facsimileLabel: '.facsimile-label',
+  mentionTile: '.mention', // TODO(spec-002): links in entity tiles
+  tableRow: 'tbody tr', // TODO(spec-002): links in table rows
+  statusIcon: (name) => `i.q-icon:text-is("${name}")`, // TODO(spec-006): status as text
+};
+
+/** Selects an option in a Quasar q-select by typing into it (filterable selects). */
+export async function chooseOption(page, label, optionText) {
+  const combobox = page.getByRole('combobox', { name: label });
+  await combobox.click();
+  await combobox.fill(optionText);
+  await page.getByRole('option', { name: optionText }).first().click();
+  await page.keyboard.press('Escape');
+}

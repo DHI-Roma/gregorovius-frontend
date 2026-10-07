@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000914",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118501844"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "name": "Alexander VI.",
+    "roleName": "Papst"
+   },
+   {
+    "@type": "alt",
+    "surname": "Borgia",
+    "forename": "Rodrigo"
+   }
+  ],
+  "birth": "1431",
+  "death": "1503"
+ }
+}

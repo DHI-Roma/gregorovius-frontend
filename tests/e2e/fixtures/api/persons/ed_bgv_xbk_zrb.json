@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_bgv_xbk_zrb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/5029841-0"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Biblioteca Apostolica Vaticana. Medagliere"
+  }
+ }
+}

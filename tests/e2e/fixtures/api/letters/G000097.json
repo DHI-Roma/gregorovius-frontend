@@ -1,0 +1,135 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 28. September 1859",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "GSA Weimar",
+      "idno": "96/937 (7)"
+     },
+     "physDesc": {
+      "p": "2 Dbl., 8°, 6 ¾ S."
+     }
+    },
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 59, Mappe 347 (nach D) und Karton\n                                        59, Mappe 346 (Ergänzungen nach H)"
+        }
+       }
+      },
+      {
+       "bibl": {
+        "@type": "print",
+        "#text": "Briefe von Ferdinand Gregorovius an den Staatssekretär Hermann von Thile. Hrsg. von Herman von Petersdorff. Berlin 1894. S. 12–17 (leicht gekürzt)"
+       }
+      },
+      {
+       "bibl": {
+        "@type": "print",
+        "#text": "Deutsche Briefe aus Italien. Von Winckelmann bis Gregorovius. Hrsg. von Eberhard Haufe. Leipzig: Köhler & Amelang 1965. S. 401. 2. Aufl. 1971. S. 407. 3. Aufl. 1987. S. 411 (Auszug)"
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er ist erleichtert, Nachrichten von Thile und von dem gebesserten Gesundheitszustand des Sohnes Hans zu haben. Der gegen Österreich gewonnene Krieg bringt Italien der Einheit näher, doch konnte der Sieg nur mit der Hilfe Napoléons III. errungen werden. Seine Bemerkungen zum ersten Band seiner „Geschichte der Stadt Rom im Mittelalter“ (1859) sind ihm wichtig, da er auch die poetisch inspirierte Seite seines Werks ermessen kann. Er wird den zweiten Band (1859) schnellstmöglich senden, das Manuskript des dritten Bandes (1860) ist bereits abgeschlossen, soll aber durch die bevorstehenden Archivarbeiten in Montecassino ergänzt werden. Eine finanzielle Unterstützung der preußischen Regierung würde ihm sehr helfen, dürfte in Zeiten hoher militärischer Ausgaben aber schwer durchzusetzen sein. Peter von Cornelius trägt den Tod seiner Frau Geltrude mit Fassung; im Winter erwartet er seine Tochter Maria Marcelli in Rom. Clemens August Alertz wollte ihn trotz großer Hitze weder nach Nettuno noch nach Genazzano begleiten. Karl Freiherr von Canitz und Dallwitz hat er noch nicht näher kennengelernt."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He is relieved to have news of Thile and of the improved health of his son Hans. The war won against Austria brought Italy closer to unity, but the victory could only be achieved with the help of Napoleon III. His comments on the first volume of his „Geschichte der Stadt Rom im Mittelalter“ (1859) are important to him, as he can also appreciate the poetically inspired side of his work. He will send the second volume (1859) as soon as possible, the manuscript of the third volume (1860) has already been completed, but is to be supplemented by the forthcoming archival work in Montecassino. Financial support from the Prussian government would help him a great deal, but would be difficult to obtain in times of high military expenditure. Peter von Cornelius is handling the death of his wife Geltrude with composure; he expects his daughter Maria Marcelli in Rome in the winter. Clemens August Alertz did not want to accompany him to Nettuno or Genazzano despite the heat. He has not yet met Karl Baron of Canitz and Dallwitz."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1859-09-28",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001644",
+       "#text": "Thile, Hermann von (1812–1889)"
+      },
+      "placeName": {
+       "@key": "G000636",
+       "#text": "Berlin"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

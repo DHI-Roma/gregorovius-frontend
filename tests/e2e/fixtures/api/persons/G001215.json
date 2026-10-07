@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001215",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/11689508X"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Grunelius",
+    "forename": "Adelheid"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Fecht"
+   }
+  ],
+  "birth": "1813",
+  "death": "1887"
+ }
+}

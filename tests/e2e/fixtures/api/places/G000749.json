@@ -1,0 +1,54 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000749",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2988507"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Paris"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "ediarum_xys_tq5_5mb",
+     "@type": "building",
+     "idno": {
+      "@type": "uri",
+      "#text": "http://www.geonames.org/6269274"
+     },
+     "placeName": {
+      "@type": "reg",
+      "#text": "Notre-Dame de Paris (Paris)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_tck_cr5_5mb",
+     "@type": "district",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Montmatre (Paris)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_gvq_gt5_5mb",
+     "@type": "sea",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Seine"
+     }
+    },
+    {
+     "@xml:id": "ediarum_yfd_jbf_2xb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Rue de Condé (Paris)"
+     }
+    }
+   ]
+  }
+ }
+}

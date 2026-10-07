@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001110",
+  "persName": {
+   "@type": "reg",
+   "surname": "Elgnowski",
+   "forename": "Ludwig Rudolph Emil (Louis)"
+  },
+  "birth": "1828",
+  "death": "1860"
+ }
+}

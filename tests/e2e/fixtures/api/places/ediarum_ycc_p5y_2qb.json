@@ -1,0 +1,11 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ediarum_ycc_p5y_2qb",
+  "@type": "building",
+  "placeName": {
+   "@type": "reg",
+   "#text": "Kaulbach-Villa (München)"
+  }
+ }
+}

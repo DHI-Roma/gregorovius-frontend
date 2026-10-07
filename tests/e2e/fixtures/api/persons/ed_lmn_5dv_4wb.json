@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_lmn_5dv_4wb",
+  "persName": {
+   "@type": "reg",
+   "surname": "Bunsen",
+   "forename": "Mathilde"
+  },
+  "birth": "1837",
+  "death": "1867"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067585",
+  "@type": "river",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3165709"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Tiber"
+  }
+ }
+}

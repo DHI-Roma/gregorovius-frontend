@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001525",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118598279"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Ranke",
+   "forename": "Leopold von"
+  },
+  "birth": "1795",
+  "death": "1886"
+ }
+}

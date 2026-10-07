@@ -1,0 +1,11 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_hrz_11y_3xb",
+  "@role": "mythological",
+  "persName": {
+   "@type": "reg",
+   "name": "Tithonos"
+  }
+ }
+}

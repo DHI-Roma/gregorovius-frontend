@@ -1,0 +1,142 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an die J. G. Cotta’sche Buchhandlung in Stuttgart. Rom, 22. September 1859",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "DLA Marbach",
+      "idno": [
+       "34804",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000099/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": [
+       "1 Bl., 8°, 2 S.",
+       "Manuskript seines Aufsatzes „Die Sicilianischen Volkslieder“ mit einem Begleitbrief vom 22. September 1859 an Hermann Hauff (DLA Marbach, 34803)"
+      ]
+     }
+    },
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 84, Mappe 5 (Alfred Löcke nach\n                                        H)"
+        }
+       }
+      },
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 84, Mappe 5 (nach h1,\n                                        gekürzt)"
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er übersendet das Manuskript seines Artikels „Die Sicilianischen Volkslieder“ mit einem Begleitbrief an Hermann Hauff. Bei Josef Spithöver hat er die fehlenden Aushängebogen des ersten und einige des zweiten Bandes seiner „Geschichte des Stadt Rom im Mittelalter“ (1859) vorgefunden; die verzeichneten, aber fehlenden drei Freiexemplare des ersten Bandes (1859) hat er sich von Spithöver geben lassen. Er bittet um Zusendung der Rezensionen, die neben der aus dem Menzelschen „Literaturblatt“ erschienen sind, und um die fehlenden Aushängebogen des zweiten Bandes. Freiexemplare sollen an seinen Bruder Julius nach Danzig und an den Großherzog Carl Alexander nach Weimar gehen. Er reist in acht Tagen nach Montecassino, wo er wohl bis Ende Oktober bleibt. Er bittet um Zusendung der „Regesta chronologico-diplomatica Karolorum“ (1833) von Johann Friedrich Böhmer."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He sends the manuscript of his article „Die Sicilianischen Volkslieder“ with an accompanying letter to Hermann Hauff. At Josef Spithöver’s place he found the missing galley proofs of the first and some of the second volume of his „Geschichte des Stadt Rom im Mittelalter“ (1859); the three complimentary copies of the first volume (1859), which were listed but missing, were given to him by Spithöver. He asks to be sent the reviews that have been published in addition to the one from Menzel’s „Literaturblatt“ and the missing galley proofs of the second volume. Complimentary copies are to go to his brother Julius in Danzig and to the Grand Duke Carl Alexander in Weimar. In eight days he will travel to Montecassino, where he will probably stay until the end of October. He asks to be sent the „Regesta chronologico-diplomatica Karolorum“  (1833) by Johann Friedrich Böhmer."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1859-09-22",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "orgName": {
+       "@key": "G000523",
+       "#text": "J. G. Cotta’sche Buchhandlung"
+      },
+      "placeName": {
+       "@key": "G000879",
+       "#text": "Stuttgart"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

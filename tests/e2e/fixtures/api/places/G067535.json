@@ -1,0 +1,15 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067535",
+  "@type": "river",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2983752"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Rhône"
+  }
+ }
+}

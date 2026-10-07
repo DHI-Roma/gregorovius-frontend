@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001447",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118587773"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Niebuhr",
+   "forename": "Barthold Georg"
+  },
+  "birth": "1776",
+  "death": "1831"
+ }
+}

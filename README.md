@@ -28,12 +28,44 @@ npm run serve
 
 ## Testing
 
-This project used [Jest](https://jestjs.io/) as its main testing framework.
-
-Run tests with:
+End-to-end tests ([Playwright](https://playwright.dev/)) cover the main user flows in Chromium and WebKit.
+They run against a production build and a mocked API that serves recorded fixtures from `tests/e2e/fixtures/api`,
+so no network access is needed. Letter texts are transformed by the mock with `xsltproc` (libxslt, the same engine
+as the API), which therefore has to be installed (preinstalled on macOS, `sudo apt-get install xsltproc` on Debian/Ubuntu).
 
 ```shell
-npm run test
+npx playwright install chromium webkit   # once
+
+npm run test:unit                        # unit tests (Vitest, tests/unit)
+npm run test:e2e                         # E2E tests (builds the app, Chromium + WebKit)
+npm run test:e2e -- --ui                 # interactive mode
+npx playwright show-report               # report of the last run
+```
+
+Every page is also scanned with [axe](https://github.com/dequelabs/axe-core). Known violations are listed in
+`tests/e2e/a11y/allowlist.json`; new violations fail the tests. After fixing accessibility issues, rewrite the
+baseline with
+
+```shell
+E2E_A11Y_UPDATE=1 npx playwright test a11y --project=chromium --workers=1
+```
+
+Tests marked with `test.fail` document known bugs; they start failing once the bug is fixed and should then be
+turned into regular tests.
+
+Fixtures are a reduced, consistent snapshot of the live API (read-only requests). To re-record them:
+
+```shell
+npm run e2e:record -- --dry-run   # show selection and size only
+npm run e2e:record
+```
+
+Smoke tests against a running stack (by default the local Docker setup at `http://gregorovius.local`), including a
+check that the mock's XSLT output equals the API's:
+
+```shell
+npm run test:e2e:smoke
+E2E_SMOKE_URL=https://example.org npm run test:e2e:smoke
 ```
 
 # Edition Guidelines

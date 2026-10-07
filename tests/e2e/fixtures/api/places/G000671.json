@@ -1,0 +1,130 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000671",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3176959"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Florenz"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "G004673",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Palazzo Sabatier-Ungher (Florenz)"
+     }
+    },
+    {
+     "@xml:id": "G004674",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Ponte delle Grazie (Florenz)"
+     }
+    },
+    {
+     "@xml:id": "G004675",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Stazione ferroviaria Maria Antonia (Florenz)"
+     }
+    },
+    {
+     "@xml:id": "G104676",
+     "@type": "river",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Arno (Florenz)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_dbq_hjk_rlb",
+     "@type": "monument",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Certosa San Lorenzo di Galluzzo (Florenz)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_w55_qnc_cqb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Albergo Bonciani (Florenz)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_q3f_1ff_1rb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Piazza Santa Maria Novella (Florenz)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_lfk_v1f_m5b",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Villa della Concezione (Florenz)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_js1_m2v_r5b",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Maria del Fiore (Florenz)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_unv_n2v_r5b",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Santa Croce ((Florenz)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_mkb_dvt_sxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Ristorante Stella d'Italia (Florenz)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_lkh_3vt_sxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Caffè Landini (Florenz)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_vvl_mvt_sxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Caffè Galileo (Florenz)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ep5_wvt_sxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Caffè della Minerva (Florenz)"
+     }
+    }
+   ]
+  }
+ }
+}

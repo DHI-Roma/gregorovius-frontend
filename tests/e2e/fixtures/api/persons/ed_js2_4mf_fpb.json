@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_js2_4mf_fpb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/10173770X"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Bourdeau",
+   "forename": "Jean"
+  },
+  "birth": "1848",
+  "death": "1928"
+ }
+}

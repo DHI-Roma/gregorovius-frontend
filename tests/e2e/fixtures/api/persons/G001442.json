@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001442",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118586416"
+  },
+  "persName": {
+   "@type": "reg",
+   "name": "Napoléon III.",
+   "roleName": "Kaiser von Frankreich"
+  },
+  "birth": "1808",
+  "death": "1873"
+ }
+}

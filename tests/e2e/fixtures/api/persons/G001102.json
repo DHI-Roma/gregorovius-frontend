@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001102",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/11852786X"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Dürer",
+   "forename": "Albrecht"
+  },
+  "birth": "1471",
+  "death": "1528"
+ }
+}

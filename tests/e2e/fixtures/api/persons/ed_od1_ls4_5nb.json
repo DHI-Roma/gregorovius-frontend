@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_od1_ls4_5nb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/136365906"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Gemmel",
+   "forename": "Hermann"
+  },
+  "birth": "1813",
+  "death": "1868"
+ }
+}

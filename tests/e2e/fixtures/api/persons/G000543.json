@@ -1,0 +1,10 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000543",
+  "orgName": {
+   "@type": "reg",
+   "#text": "Il Cimento. Rivista di scienze, lettere ed arti (Turin 1852–1855)"
+  }
+ }
+}

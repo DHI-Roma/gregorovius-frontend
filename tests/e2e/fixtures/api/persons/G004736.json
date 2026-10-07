@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004736",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118691767"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Fletcher",
+   "forename": "John"
+  },
+  "birth": "1579",
+  "death": "1625"
+ }
+}

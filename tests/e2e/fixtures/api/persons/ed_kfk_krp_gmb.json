@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_kfk_krp_gmb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117200336"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Tann",
+    "forename": "Anna Freifrau von der"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "von Voß"
+   }
+  ],
+  "birth": "1829",
+  "death": "1905"
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000559",
+  "orgName": {
+   "@type": "reg",
+   "#text": "Römischer Senat"
+  }
+ }
+}

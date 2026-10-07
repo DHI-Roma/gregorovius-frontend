@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000920",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116010436"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Althaus",
+   "forename": "Friedrich"
+  },
+  "birth": "1829",
+  "death": "1897"
+ }
+}

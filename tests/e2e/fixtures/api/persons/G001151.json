@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001151",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116871504"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Fulin",
+   "forename": "Rinaldo"
+  },
+  "birth": "1824",
+  "death": "1884"
+ }
+}

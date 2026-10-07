@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_icv_gll_swb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/2036169-5"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "J. G. Cotta’sche Buchhandlung Nachfolger"
+  }
+ }
+}

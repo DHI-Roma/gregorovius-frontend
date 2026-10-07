@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001700",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117572721"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Wernich",
+   "forename": "Albrecht"
+  },
+  "birth": "1843",
+  "death": "1896"
+ }
+}

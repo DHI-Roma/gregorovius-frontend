@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000546",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/4149312-6"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Deutsches Museum. Zeitschrift für Literatur, Kunst und öffentliches Leben (Leipzig: Brockhaus 1851–1867)"
+  }
+ }
+}

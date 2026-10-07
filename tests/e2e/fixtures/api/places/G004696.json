@@ -1,0 +1,15 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004696",
+  "@type": "mountains",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3174867"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Monti Lepini"
+  }
+ }
+}

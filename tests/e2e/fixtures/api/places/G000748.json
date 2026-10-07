@@ -1,0 +1,24 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000748",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2523920"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Palermo"
+  },
+  "listPlace": {
+   "place": {
+    "@xml:id": "ediarum_ulr_nxc_lpb",
+    "@type": "building",
+    "placeName": {
+     "@type": "reg",
+     "#text": "Hôtel de France (Palermo)"
+    }
+   }
+  }
+ }
+}

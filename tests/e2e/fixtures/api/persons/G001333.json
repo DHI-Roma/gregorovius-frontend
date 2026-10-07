@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001333",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118560751"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Kaulbach",
+   "forename": "Wilhelm von"
+  },
+  "birth": "1804",
+  "death": "1874"
+ }
+}

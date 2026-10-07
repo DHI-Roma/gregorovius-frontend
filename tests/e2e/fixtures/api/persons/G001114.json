@@ -1,0 +1,23 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001114",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://gregorovius-edition.dhi-roma.it/persons/G001114"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Erhardt",
+    "forename": "Gabriella"
+   },
+   {
+    "@type": "alt",
+    "name": "Jella"
+   }
+  ],
+  "birth": "1858",
+  "death": "1920"
+ }
+}

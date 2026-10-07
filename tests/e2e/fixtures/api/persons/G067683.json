@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067683",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117123323"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Olshausen",
+   "forename": "Justus"
+  },
+  "birth": "1800",
+  "death": "1882"
+ }
+}

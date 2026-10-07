@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001429",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118583425"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Mommsen",
+   "forename": "Theodor"
+  },
+  "birth": "1808",
+  "death": "1903"
+ }
+}

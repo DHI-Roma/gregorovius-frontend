@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001012",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/129356298"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Cagiati",
+   "forename": "Filippo"
+  },
+  "birth": "1821",
+  "death": "1896"
+ }
+}

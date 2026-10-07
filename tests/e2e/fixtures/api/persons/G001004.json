@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001004",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116400617"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Caetani",
+    "forename": "Michelangelo",
+    "roleName": "duca di Sermoneta, principe di Teano"
+   },
+   {
+    "@type": "alt",
+    "name": "Gaetani"
+   }
+  ],
+  "birth": "1804",
+  "death": "1882"
+ }
+}

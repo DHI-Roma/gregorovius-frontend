@@ -1,0 +1,25 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001274",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118550772"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Heyse",
+    "forename": "Paul"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "pseudonym",
+    "surname": "Florentin",
+    "forename": "Theodor"
+   }
+  ],
+  "birth": "1830",
+  "death": "1914"
+ }
+}

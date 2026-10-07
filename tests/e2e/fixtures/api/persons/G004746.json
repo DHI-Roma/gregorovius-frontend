@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004746",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118535994"
+  },
+  "persName": {
+   "@type": "reg",
+   "name": "Friedrich Wilhelm IV.",
+   "roleName": "König von Preußen"
+  },
+  "birth": "1795",
+  "death": "1861"
+ }
+}

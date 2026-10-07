@@ -1,0 +1,10 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_oc5_sl2_rlb",
+  "orgName": {
+   "@type": "reg",
+   "#text": "Sitzungsberichte der Bayerischen Akademie der Wissenschaften zu München"
+  }
+ }
+}

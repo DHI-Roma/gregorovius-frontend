@@ -1,0 +1,20 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_zcg_fc2_2sb",
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Davidsohn",
+    "forename": "Philippine"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Collot"
+   }
+  ],
+  "birth": "1847",
+  "death": "1947"
+ }
+}

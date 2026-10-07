@@ -1,0 +1,15 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001397",
+  "@role": "mythological",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/129452572"
+  },
+  "persName": {
+   "@type": "reg",
+   "name": "Manasse"
+  }
+ }
+}

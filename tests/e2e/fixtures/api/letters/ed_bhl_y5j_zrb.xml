@@ -1,0 +1,81 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:telota="http://www.telota.de" telota:doctype="letter_fgbe" xml:id="ed_bhl_y5j_zrb">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt><title>Ferdinand Gregorovius an Conte Giovanni Gozzadini in Bologna. München, 22. Dezember 1884</title>
+<editor> <persName ref="http://d-nb.info/gnd/1127895559"><surname>Steinsiek</surname> <forename>Angela</forename> </persName> </editor>
+<respStmt><persName ref=" http://d-nb.info/gnd/1089162758"> <surname>Voci</surname> <forename>Anna Maria</forename> </persName><resp><note type="remarkResponsibility">Mitarbeit</note></resp>
+</respStmt>
+</titleStmt>
+            <editionStmt>
+                <edition>
+                    <title>Fredinand Gregorovius, gesammelte Briefe</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName xml:lang="de">Deutsches Historisches Institut in Rom</orgName>
+                    <orgName xml:lang="it">Istituto Storico Germanico di Roma</orgName>
+                    <orgName xml:lang="en">German Historical Institute in Rome</orgName>
+                    <address>
+                        <addrLine>Via Aurelia Antica, 00165 Rom, Italien</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace ref="http://www.geonames.org/3169070">Rom</pubPlace>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution 4.0 International (CC BY 4.0)
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness>
+                        <msDesc type="copy"><msIdentifier><institution>Bologna, Biblioteca dell’Archiginnasio</institution><collection>Ms. Gozzadini 442</collection><idno>49</idno><idno type="URLImages">https://gregorovius-edition.dhi-roma.it/api/facsimiles/ed_bhl_y5j_zrb/</idno></msIdentifier>
+                            <physDesc>
+                                <p>1 Dbl., 1 ¾ S.  (1r, 2r) – Adr.: Illmo Signore / il signor Conte Giovanni Gozzadini / Senatore del Regno / Bologna</p>
+                            </physDesc>
+                        </msDesc>
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <abstract>
+                <p xml:lang="de">Am Jahresende möchte er seine Grüße an den Grafen und seine Tochter Gozzadina senden. Wegen der Cholera-Epidemie war das Jahr 1884 wenig günstig für Italien. In Deutschland sind die Zustände zufriedenstellend. Er ist mit Arbeiten beschäftigt, die die Geschichte der Stadt Athen im Mittelalter betreffen. Im kommenden Januar wird er einen Vortrag über eine Münze des Fürsten und römischen Senators Alberich II. halten, welche wenige Jahre davor im Tiber gefunden wurde und jetzt im Vatikanischen Münzkabinett aufbewahrt wird. Er fragt ihn, ob das Münzkabinett Bolognas etwa Münzen von Alberich II. besitzt. Sie sind so selten, dass nicht einmal die bedeutenden Münzsammlungen in London, Paris und Wien welche besitzen. </p>
+                <p xml:lang="en">At the end of the year he would like to send his greetings to the Count and his daughter Gozzadina. Because of the cholera epidemic, the year 1884 was not very favorable for Italy. In Germany, the conditions are satisfactory. He is engaged in work related to the history of the city of Athens in the Middle Ages. Next January he will give a lecture on a coin of the count and Roman senator Alberich II, which was found in the Tiber a few years prior and is now kept in the Vatican Numismatic Collection. He asks if the coin cabinet of Bologna has any coins of Alberich II. They are so rare that not even the important coin collections in London, Paris and Vienna have any. </p>
+            </abstract>
+            <correspDesc>
+                <correspAction type="sent">
+<persName key="G001200">Gregorovius, Ferdinand (1821–1891)</persName>
+<placeName key="G000734">München</placeName><date when="1884-12-22" cert="high"/>
+</correspAction>
+                <correspAction type="received">
+                    <persName key="G001187">Gozzadini, Giovanni, Conte (1810–1887)</persName>
+<placeName key="G000638">Bologna</placeName>
+</correspAction>
+<correspContext>
+<ref type="next">28. Dezember 1884 (K: Bologna, Biblioteca dell’Archiginnasio, Fondo Carte Gozzadini e da Schio, busta 19, fasc. 42, 12)</ref>
+</correspContext>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body><pb n="1r"/>
+            <div type="writingSession">
+                <opener>
+                    <dateline rendition="#right"> Monaco, 22. Xbre 84.</dateline>
+                    <salute rendition="#c">Illustre <seg type="comment"><orig>signor Conte,</orig><note xml:id="nzfb_vcq_cfc">Der Archäologe und Historiker Giovanni Gozzadini (1810–1887) stammte aus einer der ältesten Bologneser Familien. Er forschte zu antiken Nekropolen (siehe RT, 21.9.1867, S. 233 sowie den Brief von Gregorovius an Otto Ludwig von Klumpp vom <ref target="ed_etp_3k5_qwb">20.9.1867</ref>) und zur Lokalgeschichte Bolognas. 1840 heiratete er die Gräfin Maria Teresa Serego Alighieri (1812–1881). Ein 1842 geborener Sohn verstarb mit drei Monaten, 1845 kam die Tochter Gozzadina (†1899) zur Welt. Gozzadini wurde 1860 zum Senator des Königreichs und zum Präsidenten der Regia Deputazione di Storia Patria per le Provincie di Romagna ernannt. Ab 1878 war er Generaldirektor des Museo Civico di Bologna, ab 1881 Mitglied der Accademia dei Lincei. Er war Träger zahlreicher Ordenstitel. <p>Gregorovius war mit Gozzadini über seinen Freund, den Dante-Forscher Graf Paolo Perez (1822–1879), bekannt geworden, einem Cousin der Gräfin. In dem Grafen Gozzadini hatte Gregorovius einen lebenslangen Freund und Unterstützer, der ihm bei der Entstehung seiner „Geschichte der Stadt Rom im Mitterlalter“ (1859–1872) sowie der „Lucrezia Borgia“ (1874) sein Familienarchiv zur Verfügung stellte. Gregorovius war regelmäßiger Gast in der von Gozzadini 1848 erworbenen Villa Ronzano, einem Sommersitz oberhalb Bolognas, in der das Ehepaar auch einen von illustren Persönlichkeiten besuchten Salon unterhielt. Von ihrer Korrespondenz haben sich sechs nur im Druck überlieferte Briefe und 55 bislang unpublizierte Briefe von Gregorovius an die Gozzadini erhalten. Von letzteren sind drei Autographen, die übrigen sind nur abschriftlich von fremder Hand (mit einigen Transkriptionsfehlern) auf uns gekommen. Sie alle befinden sich in der Biblioteca dell’Archiginnasio in Bologna und datieren bis ins Jahr 1886. Lediglich ein erhaltenes Schreiben von Gozzadini an Gregorovoius steht dem gegenüber (13.3.1876, BSB München, NL Gregorovius, Gregoroviusiana 18). Thematisch reichen die Briefe von wissenschaftlichen Angelegenheiten über politische und gesellschaftliche Belange bis hin zu persönlichem Themen. Ihr Charakter spiegelt ihr freundschaftliche Verhältnis sowie Gregorovius’ Wertschätzung für Gozzadini (siehe auch Katharina Weiger: „Mentre loro godono le tiepide aure di Ronzano, noi altri …“ Ferdinand Gregorovius in seinen Briefen an Giovanni Gozzadini. In: Ferdinand Gregorovius in seinem Jahrhundert. Der Historiker und Schriftsteller neu gelesen. Aus Anlass der Edition der Briefe und des 200. Geburtstages. Hrsg. von Angela Steinsiek. Köln 2023. S. 229–244).</p></note></seg></salute>
+                </opener>
+<p>ora che l’anno volge alla sua fine, penso più del solito ai cari amici, piangendo gli uni, che non sono più, e godendo di salutare gli altri, che sono superstiti. Così vengo ad offrire anche a lei, caro signor Conte, i miei saluti, facendo voti ardenti per il benessere suo e per la felicità della signora Contessa sua <persName key="G001188">figliuola</persName>.</p>
+<p>L’anno che termina non fu propizio <placeName key="G000690">all’Italia</placeName>, anzi temo che <seg type="comment"><orig>le conseguenze del tristissimo morbo</orig><note xml:id="ntrc_rsd_p1c">Die insbesondere in Neapel und Sizilien grassierende Cholera-Epidemie (siehe auch den Brief von Gregorovius an Gozzadini vom <ref target="ed_mgb_fdd_zrb">6.9.1884</ref>).</note></seg> costì si faranno sentire per qualche tempo ancora.</p>
+<p>Quanto allo stato della <placeName key="G000664">Germania</placeName> ne possiamo andare contenti. L’inverno ha principiato, però con mitezza insolita.</p>
+                <p>Sto occupatissimo in certi lavori di poca importanza sì, ma che non sono privi di interesse, siccome <seg type="comment"><orig>riguardano la città di <placeName key="G000619">Atene</placeName> ne’ secoli oscuri.</orig><note xml:id="nsvc_xxj_zrb">Diese Studien mündeten schließlich in die von Gregorovius geplante, umfassende „Geschichte der Stadt Athen im Mittelalter“ (2 Bde. Stuttgart: Cotta 1889).</note></seg> <seg type="comment"><orig>Scrissi pure una <bibl sameAs="G004048">memoria</bibl>, che leggerò al principio del gennaro entrante <orgName key="G000494">nell’Accademia</orgName>; essa tratta una moneta <pb n="2r"/>singolare ripescata alcuni anni fa, nel <placeName key="G067585">Tevere</placeName>, ed ora appartenente al <orgName key="ed_bgv_xbk_zrb">gabinetto Vaticano</orgName>.</orig><note xml:id="nyph_1td_p1c">Sein Akademievortrag „Die Münzen Alberichs, des Fürsten und Senators der Römer“ erschien in den „Sitzungsberichten der philosophisch-philologischen und historischen Classe der k. b. Akademie der Wissenschaften zu München“ (Jg. 1885. Bd. 1. München 1886. S. 27–45 – aufgenommen in seine Kleinen Schriften zur Geschichte und Cultur. Bd. 1. Leipzig: Brockhaus 1887. S. 155–179 – in italienischer Übersetzung von Francesco Labruzzi di Nexima unter dem Titel „Le monete di Alberico. Principe e senatore di Romani [1885]“ wieder abgedruckt in Il Buonarroti. Scritti sopra le arti e le lettere. Ser. 3. Bd. 3. Quaderno 12. Rom 1890. S. 424–437). Siehe hierzu auch den Brief von Gregorovius an Ersilia Caetani Lovatelli vom <ref target="ed_mnf_xjj_zrb">30. November 1884</ref>.</note></seg> <seg type="comment"><orig>È di <persName key="G067611">Alberico</persName> famosissimo principe e senatore dei Romani (932–954 p. ch.).</orig><note xml:id="nwcc_ftd_p1c">Siehe hierzu auch in Gregorovius’ vierter Auflage des dritten Bandes seiner „Geschichte der Stadt Rom im Mittelalter“ die Fußnote (Stuttgart: Cotta 1890. S. 289): Hiernach war die Münze im Versteigerungskatalog „Catalogo delle monete italiane medioevali e moderne componenti la collezione del Cav. Giancarlo Rossi di Roma, la più completa in monete pontificie, con varie estere ed una serie di cedole, di cui vendita al pubblico incanto sarà fatta in Roma nelle sale di Dante per cura dal Signor Raffaele Dura assistito dal Sig. Cav. Giulio Sambon Numismatico, Lunedì 6 Dicembre 1880 e giorni consecutivi ad un’ ora pom.“ angeboten worden (Rom 1880. S. 287. Nr. 3746, <ref target="https://archive.org/details/catalogodellemo00rossgoog/page/n299/mode/2up">https://archive.org/details/catalogodellemo00rossgoog/page/n299/mode/2up</ref>). Die Münze wurde da unter Papst Giovanni IX. (etwa 840–900) aufgeführt und auf Tafel VII. abgebildet (<ref target="https://archive.org/details/catalogodellemo00rossgoog/page/n479/mode/2up">https://archive.org/details/catalogodellemo00rossgoog/page/n479/mode/2up</ref>). Nach einem handschriftlichen Vermerk war sie auf 750.– taxiert oder hierfür verkauft worden.</note></seg> <seg type="comment"><orig>Avvi forse delle monete da lui fatte coniare nel <orgName key="ed_jcl_dck_zrb">medagliere</orgName> di Bologna?</orig><note xml:id="nfsp_4td_p1c">Nach dem Konzept des Antwortschreibens von Gozzadini vom 28. Dezember 1884 konnte dieser Gregorovius keine weitere Auskunft geben, da die Recherchen im Münzkabinett von Bologna negativ ausgefallen waren: „Dal più accurato esame fatto nei medaglieri civico e universitario è risultato che <add place="superlinear">delle</add> monete d’Alberico principe e senatore dei Romani ch’ella sta illustrando non c’è alcun esemplare [...] Ben me ne duole perchè non posso materialmente e in misura minima contribuire ad uno dei suoi dottissimi studii l’abbondante continuazione dei quali è non meno meravigliosa che preziosa.“ (K: Bologna, Biblioteca dell’Archiginnasio, Fondo Carte Gozzadini e da Schio, busta 19, fasc. 42, 12) – Die Collezione Numismatica des Museo Civico Archeologico in Bologna gehört zu den bedeutendsten numismatischen Sammlungen Italiens. Das Museum hatte bei seiner Eröffnung am 25. September 1881 die Münzsammlungen der Universität und der Stadt zusammengeführt. Direktor der Sammlungen des Mittelalters und der Renaissance war Luigi Frati (1815–1902).</note></seg> Ella mi farebbe un insigne favore se volesse informarmene. Le monete di Alberico sono così rare, che nessuno dei più grandi gabinetti, come <seg type="comment"><orig>quelli di <orgName key="ed_w5h_3bk_zrb">Londra</orgName>,</orig><note xml:id="nazs_41k_zrb">Das 1753 mit der Sammlung von dem Mediziner und Botaniker Hans Sloane (1660–1753) gegründete „Department of Coins and Medals“ im British Museum in London.</note></seg> <seg type="comment"><orig><orgName key="ed_xtw_kbk_zrb">Parigi</orgName></orig><note xml:id="nfgk_q1k_zrb">Das „Département des Monnaies, Médailles et Antiques“ an der Bibliothèque nationale de France. An dessen langjährigen Direktor, Pierre-Marie-Anatole Chabouillet (1814–1899), hatte Gregorovius über Jean Bourdeau (1848–1928) eine diesbezügliche Anfrage mit seinem Brief an Bourdeau vom 11. Dezember 1884 gerichtet (Bl. 2r–v, BSB München, Autogr., Gregorovius, Ferdinand, 36, 12).</note></seg> e <seg type="comment"><orig><orgName key="ed_xyr_nbk_zrb">Vienna</orgName>,</orig><note xml:id="nogk_s1k_zrb">Das auf die kaiserlich-habsburgische Sammlung zurückgehende Wiener Münzkabinett war 1547 gegründet worden. Ab 1892 es im neu errichteten Kunsthistorischen Museums in Wien untergebracht.</note></seg> può vantarsi di possederne qualcheduna.</p>
+<p>Sperando che Ella goda la più perfetta salute e continui i suoi importanti studî, mi raccomando alla sua benevola memoria come devotissimo suo</p>
+                <closer>
+                    <salute rendition="#right">amico e veneratore</salute>
+                    <signed rendition="#right">Ferd. Gregorovius </signed>
+                </closer>
+            </div>
+        </body>
+    </text>
+</TEI>

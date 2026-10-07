@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000471",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/16059404-2"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Thomas Constable & Company"
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067677",
+  "persName": {
+   "@type": "reg",
+   "surname": "Pellicani",
+   "forename": "Marzia"
+  },
+  "note": "Gregorovius' römische Wirtin zwischen 1854-1860 in der Via della Purificazione 63"
+ }
+}

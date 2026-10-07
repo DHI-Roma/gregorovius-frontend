@@ -1,0 +1,14 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000494",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/2005521-3"
+  },
+  "orgName": {
+   "@type": "reg",
+   "#text": "Bayerische Akademie der Wissenschaften (München)"
+  }
+ }
+}

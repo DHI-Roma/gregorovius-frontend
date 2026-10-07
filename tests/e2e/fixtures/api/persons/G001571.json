@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001571",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118605933"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Savonarola",
+   "forename": "Girolamo"
+  },
+  "birth": "1452",
+  "death": "1498"
+ }
+}

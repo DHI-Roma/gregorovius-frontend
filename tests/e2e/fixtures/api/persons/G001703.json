@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001703",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/132484803"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Werthern-Beichlingen",
+    "forename": "Gertrud Freifrau (ab 1878 Gräfin von)"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "von Bülow"
+   }
+  ],
+  "birth": "1841",
+  "death": "1919"
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000972",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/11851282X"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "name": "Boethius"
+   },
+   {
+    "@type": "alt",
+    "name": "Anicius Manlius Severinus Boethius"
+   }
+  ],
+  "birth": "um 480/485",
+  "death": "zw. 524 und 526"
+ }
+}

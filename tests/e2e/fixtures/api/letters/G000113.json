@@ -1,0 +1,145 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an die J. G. Cotta’sche Buchhandlung in Stuttgart. Florenz, 5. September 1858",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "DLA Marbach",
+      "collection": "Cotta-Archiv",
+      "idno": [
+       "Cotta-Briefe (19)",
+       {
+        "@type": "URLImages",
+        "#text": "https://gregorovius-edition.dhi-roma.it/api/facsimiles/G000113/"
+       }
+      ]
+     },
+     "physDesc": {
+      "p": [
+       "1 Dbl., 8°, 2 ¼ S.",
+       "Verlagsvertrag zu Gregorovius’ „Geschichte der Stadt Rom im Mittelalter“ (DLA Marbach, Cotta-Archiv, Cotta-Verträge 1)"
+      ]
+     }
+    },
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 59, Mappe 347 (nach D) und Karton 55, Mappe 336–337 (Ergänzungen nach H)"
+        }
+       }
+      },
+      {
+       "bibl": {
+        "@type": "print",
+        "#text": "Johannes Hönig: Ferdinand Gregorovius der Geschichtschreiber der Stadt Rom. Stuttgart, Berlin 1921. S. 225–226 (gekürzt)"
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Er übersendet den unterzeichneten Verlagsvertrag für seine „Geschichte der Stadt Rom im Mittelalter“ (1859–1872). Druckfahnen würden ihn noch bis Ende September in Florenz erreichen, denn er hat bis dahin im Archivio di Stato und in der Biblioteca Magliabecchiana zu tun. Er will Johann Georg Freiherr von Cotta persönlich schreiben: Wegen des Exzerpts zu dessen Vorfahr Gianantonio Cotta aus Giovanni Paolo Limperani di Orezzas „Istoria della Corsica“ (1779–1780) musste er nach Bastia an Salvadore Viale und Filippo Caraffa schreiben. Er bestätigt den Eingang des Wechsels."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "He sends the signed publishing contract for his „Geschichte der Stadt Rom im Mittelalter“ (1859–1872). Galley proofs would still reach him in Florence until the end of September, as he has work to do until then at the Archivio di Stato and the Biblioteca Magliabecchiana. He wants to write to Johann Georg Baron of Cotta personally: For the excerpt on his ancestor Gianantonio Cotta from Giovanni Paolo Limperani di Orezza’s „Istoria della Corsica“ (1779–1780) he had to write to Salvadore Viale and Filippo Caraffa in Bastia. He confirms that he received the promissory note."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000671",
+       "#text": "Florenz"
+      },
+      "date": {
+       "@when": "1858-09-05",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "orgName": {
+       "@key": "G000523",
+       "#text": "J. G. Cotta’sche Buchhandlung"
+      },
+      "placeName": {
+       "@key": "G000879",
+       "#text": "Stuttgart"
+      }
+     }
+    ],
+    "correspContext": {
+     "ref": {
+      "@type": "prev",
+      "#text": "31. August 1858 (h: DLA Marbach, Cotta-Archiv, Cotta-Briefe 18b)"
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000685",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2907911"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Heidelberg"
+  },
+  "listPlace": {
+   "place": {
+    "@xml:id": "ediarum_c5z_jw5_5mb",
+    "@type": "building",
+    "idno": {
+     "@type": "uri",
+     "#text": "http://www.geonames.org/6324587"
+    },
+    "placeName": {
+     "@type": "reg",
+     "#text": "Schloss Heidelberg"
+    }
+   }
+  }
+ }
+}

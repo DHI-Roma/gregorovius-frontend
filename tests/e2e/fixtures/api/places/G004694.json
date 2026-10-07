@@ -1,0 +1,10 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004694",
+  "placeName": {
+   "@type": "reg",
+   "#text": "Königreich Neapel"
+  }
+ }
+}

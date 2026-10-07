@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000983",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118513559"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Borgia",
+    "forename": "Cesare",
+    "roleName": "duca di Romagna und Valentino"
+   },
+   {
+    "@type": "alt",
+    "name": "il Valentino"
+   }
+  ],
+  "birth": "1475",
+  "death": "1507"
+ }
+}

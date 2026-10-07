@@ -1,0 +1,20 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067678",
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Pianka",
+    "forename": "Charlotte"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Gregorovius"
+   }
+  ],
+  "birth": "1794",
+  "death": "1865"
+ }
+}

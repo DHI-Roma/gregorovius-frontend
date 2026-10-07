@@ -1,0 +1,476 @@
+{
+  "announcements": {
+    "aria-required-children": {
+      "maxNodes": 1,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "color-contrast": {
+      "maxNodes": 28,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  },
+  "full-index": {
+    "aria-required-children": {
+      "maxNodes": 1,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "button-name": {
+      "maxNodes": 11,
+      "spec": "004",
+      "reason": "Schaltflächen ohne zugänglichen Namen (Icon-Buttons)"
+    },
+    "color-contrast": {
+      "maxNodes": 50,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  },
+  "home": {
+    "aria-required-children": {
+      "maxNodes": 1,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "color-contrast": {
+      "maxNodes": 1,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    },
+    "role-img-alt": {
+      "maxNodes": 1,
+      "spec": "004",
+      "reason": "Icons mit role=img ohne Namen"
+    }
+  },
+  "impressum": {
+    "aria-required-children": {
+      "maxNodes": 1,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "color-contrast": {
+      "maxNodes": 15,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  },
+  "letter-detail": {
+    "aria-required-children": {
+      "maxNodes": 1,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "button-name": {
+      "maxNodes": 15,
+      "spec": "004",
+      "reason": "Schaltflächen ohne zugänglichen Namen (Icon-Buttons)"
+    },
+    "color-contrast": {
+      "maxNodes": 48,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  },
+  "letter-detail-commentary": {
+    "aria-required-children": {
+      "maxNodes": 1,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "button-name": {
+      "maxNodes": 15,
+      "spec": "004",
+      "reason": "Schaltflächen ohne zugänglichen Namen (Icon-Buttons)"
+    },
+    "color-contrast": {
+      "maxNodes": 50,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  },
+  "letters-index": {
+    "aria-required-children": {
+      "maxNodes": 1,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "color-contrast": {
+      "maxNodes": 15,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  },
+  "not-found": {
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  },
+  "person-detail": {
+    "aria-required-children": {
+      "maxNodes": 1,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "button-name": {
+      "maxNodes": 1,
+      "spec": "004",
+      "reason": "Schaltflächen ohne zugänglichen Namen (Icon-Buttons)"
+    },
+    "color-contrast": {
+      "maxNodes": 18,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  },
+  "persons": {
+    "aria-required-children": {
+      "maxNodes": 33,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "color-contrast": {
+      "maxNodes": 40,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  },
+  "place-detail": {
+    "aria-required-children": {
+      "maxNodes": 1,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "button-name": {
+      "maxNodes": 1,
+      "spec": "004",
+      "reason": "Schaltflächen ohne zugänglichen Namen (Icon-Buttons)"
+    },
+    "color-contrast": {
+      "maxNodes": 17,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  },
+  "places": {
+    "aria-required-children": {
+      "maxNodes": 51,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "color-contrast": {
+      "maxNodes": 15,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  },
+  "privacy": {
+    "aria-required-children": {
+      "maxNodes": 1,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "color-contrast": {
+      "maxNodes": 15,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  },
+  "project": {
+    "aria-required-children": {
+      "maxNodes": 1,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "color-contrast": {
+      "maxNodes": 17,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 6,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  },
+  "team": {
+    "aria-required-children": {
+      "maxNodes": 1,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "color-contrast": {
+      "maxNodes": 27,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 7,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  },
+  "work-detail": {
+    "aria-required-children": {
+      "maxNodes": 1,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "button-name": {
+      "maxNodes": 1,
+      "spec": "004",
+      "reason": "Schaltflächen ohne zugänglichen Namen (Icon-Buttons)"
+    },
+    "color-contrast": {
+      "maxNodes": 15,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  },
+  "works": {
+    "aria-required-children": {
+      "maxNodes": 1,
+      "spec": "002",
+      "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
+    },
+    "color-contrast": {
+      "maxNodes": 19,
+      "spec": "-",
+      "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
+    },
+    "image-alt": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Bilder ohne Alternativtext"
+    },
+    "link-name": {
+      "maxNodes": 5,
+      "spec": "004",
+      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
+    },
+    "meta-viewport": {
+      "maxNodes": 1,
+      "spec": "005",
+      "reason": "Zoom gesperrt"
+    }
+  }
+}

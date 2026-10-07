@@ -1,0 +1,24 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001282",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116904488"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Hirsch",
+    "forename": "Heinrich"
+   },
+   {
+    "@type": "alt",
+    "surname": "Hirsch",
+    "forename": "Enrico"
+   }
+  ],
+  "birth": "1820",
+  "death": "1886"
+ }
+}

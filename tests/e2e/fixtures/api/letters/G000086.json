@@ -1,0 +1,165 @@
+{
+ "teiHeader": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "fileDesc": {
+   "titleStmt": {
+    "title": "Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 28. März\n                    1860",
+    "editor": {
+     "persName": {
+      "@ref": "http://d-nb.info/gnd/1127895559",
+      "surname": "Steinsiek",
+      "forename": "Angela"
+     }
+    }
+   },
+   "editionStmt": {
+    "edition": {
+     "title": "Fredinand Gregorovius, gesammelte Briefe"
+    }
+   },
+   "publicationStmt": {
+    "publisher": {
+     "orgName": [
+      {
+       "@xml:lang": "de",
+       "#text": "Deutsches Historisches Institut in Rom"
+      },
+      {
+       "@xml:lang": "it",
+       "#text": "Istituto Storico Germanico di Roma"
+      },
+      {
+       "@xml:lang": "en",
+       "#text": "German Historical Institute in Rome"
+      }
+     ],
+     "address": {
+      "addrLine": "Via Aurelia Antica, 00165 Rom, Italien"
+     }
+    },
+    "pubPlace": {
+     "@ref": "http://www.geonames.org/3169070",
+     "#text": "Rom"
+    },
+    "availability": {
+     "@status": "free",
+     "licence": {
+      "@target": "http://creativecommons.org/licenses/by/4.0/",
+      "#text": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+     }
+    }
+   },
+   "sourceDesc": {
+    "msDesc": {
+     "msIdentifier": {
+      "institution": "GSA Weimar",
+      "idno": "96/937 (11)"
+     },
+     "physDesc": {
+      "p": {
+       "hi": [
+        {
+         "@rendition": "#aq",
+         "hi": [
+          {
+           "@rendition": "#u",
+           "@hand": "",
+           "#text": "Germania"
+          },
+          {
+           "@rendition": "#u",
+           "@hand": "",
+           "#text": "frontiera"
+          }
+         ],
+         "#text": "franca"
+        },
+        {
+         "@rendition": "#aq",
+         "#text": "H. von Thile"
+        },
+        {
+         "@rendition": "#aq",
+         "#text": "WilhelmsPlatz"
+        },
+        {
+         "@rendition": "#aq",
+         "hi": {
+          "@rendition": "#u",
+          "@hand": "",
+          "#text": "Berlin"
+         }
+        }
+       ],
+       "#text": "1 Dbl., 8°, 2 ¾ S. – 2v, Bl. um 90° gedreht, Adr.:  / Sr. Excellenz / Freiherrn  / Königl […] Legations-Rath / 3.  /  – Postvermerke, Poststempel"
+      }
+     }
+    },
+    "listWit": {
+     "witness": [
+      {
+       "msDesc": {
+        "@type": "copy",
+        "msIdentifier": {
+         "institution": "GhStA Berlin",
+         "collection": "VI. HA, NL Waldemar Kampf",
+         "idno": "Karton 59, Mappe 346 (nach D) und Karton\n                                        59, Mappe 346 (Ergänzungen nach H)"
+        }
+       }
+      },
+      {
+       "bibl": {
+        "@type": "print",
+        "#text": "Briefe von Ferdinand Gregorovius an den Staatssekretär Hermann von Thile. Hrsg. von Herman von Petersdorff. Berlin 1894. S. 23–25 (gekürzt)"
+       }
+      }
+     ]
+    }
+   }
+  },
+  "profileDesc": {
+   "abstract": {
+    "p": [
+     {
+      "@xml:lang": "de",
+      "#text": "Nach einem Gespräch mit Karl von Bunsen, fürchtet er, dass dessen Vater Christian Karl Josias Freiherr von Bunsen eigenmächtig an den Kultusminister Moritz August von Bethmann Hollweg geschrieben hat, um für ihn eine finanzielle Unterstützung der preußischen Regierung für seine „Geschichte der Stadt Rom im Mittelalter“ (1859–1872) zu erwirken. Er möchte allein Thile verpflichtet sein, der in gleicher Sache für ihn in Verhandlung steht. Nicht einmal Alfred von Reumont hat er von den Bemühungen Thiles erzählt. Die Chancen für eine Unterstützung scheinen ihm indes mäßig, weil derzeit eher für militärische Zwecke große Summen ausgegeben werden. Der von Thile empfohlene Jüngling hat ihn aufgesucht. Clemens August Alertz verkauft seinen Besitz. Er möchte wissen, ob und wann die Thiles in diesem Jahr in die Schweiz reisen werden."
+     },
+     {
+      "@xml:lang": "en",
+      "#text": "After a conversation with Karl von Bunsen, he fears that his father, Christian Karl Josias Baron of Bunsen, has autonomously written to the Minister of Culture, Moritz August von Bethmann Hollweg, to obtain financial support from the Prussian government for his „Geschichte der Stadt Rom im Mittelalter“ (1859–1872). He wishes to be indebted solely to Thile, who is negotiating on his behalf in the same matter. He did not even tell Alfred von Reumont about Thile’s efforts. However, he deems the chances of support to be slim, as large sums are currently being spent for military purposes. The young man recommended by Thile visited him. Clemens August Alertz is selling his property. He wants to know if and when the Thiles will travel to Switzerland this year."
+     }
+    ]
+   },
+   "correspDesc": {
+    "correspAction": [
+     {
+      "@type": "sent",
+      "persName": {
+       "@key": "G001200",
+       "#text": "Gregorovius, Ferdinand (1821–1891)"
+      },
+      "placeName": {
+       "@key": "G000763",
+       "#text": "Rom"
+      },
+      "date": {
+       "@when": "1860-03-28",
+       "@cert": "high"
+      }
+     },
+     {
+      "@type": "received",
+      "persName": {
+       "@key": "G001644",
+       "#text": "Thile, Hermann von (1812–1889)"
+      },
+      "placeName": {
+       "@key": "G000636",
+       "#text": "Berlin"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

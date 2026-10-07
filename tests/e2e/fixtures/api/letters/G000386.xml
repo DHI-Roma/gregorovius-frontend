@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:telota="http://www.telota.de" telota:doctype="letter_fgbe" xml:id="G000386">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt><title>Ferdinand Gregorovius an Giovanni Bizio in Venedig. München, 7. Dezember 1884 </title>
+<editor><persName ref="http://d-nb.info/gnd/1127895559"><surname>Steinsiek</surname> <forename>Angela</forename> </persName> </editor>
+                <respStmt><persName ref="http://d-nb.info/gnd/1230930191"><surname>Weiger</surname> <forename>Katharina</forename> </persName><resp><note type="remarkResponsibility">Mitarbeit</note></resp></respStmt>
+</titleStmt>
+            <editionStmt>
+                <edition>
+                    <title>Fredinand Gregorovius, gesammelte Briefe</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName xml:lang="de">Deutsches Historisches Institut in Rom</orgName>
+                    <orgName xml:lang="it">Istituto Storico Germanico di Roma</orgName>
+                    <orgName xml:lang="en">German Historical Institute in Rome</orgName>
+                    <address>
+                        <addrLine>Via Aurelia Antica, 00165 Rom, Italien</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace ref="http://www.geonames.org/3169070">Rom</pubPlace>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution 4.0 International (CC BY 4.0)
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+<witness><bibl type="print">Appendice all’Atto verbale 30 novembre 1884: Condoglianze per la morte dei membri effettivi prof. Carlo Combi e ab. prof. Rinaldo Fulin. In: Atti del Reale Istituto Veneto Di Scienze, Lettere Ed Arti. Ser. 6. Bd. 3 (November 1884–October 1885). Venedig: Antonelli 1885. S. 16</bibl></witness>
+</listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <abstract>
+                <p xml:lang="de">Kondolenzbrief zum Tode von Rinaldo Fulin, der ein herausragendes Mitglied des Reale Istituto Veneto di Scienze, Lettere ed Arti war. Er bittet, sein Beileid auch dem Präsidenten Fedele Lampertico sowie den in Venedig lebenden Mitgliedern des Istituto zu übermitteln. </p>
+               
+                <p xml:lang="en">Letter of condolence on the death of Rinaldo Fulin, who was an outstanding member of the Reale Istituto Veneto di Scienze, Lettere ed Arti. He asks that his condolences also be given to President Fedele Lampertico and to the members of the Istituto living in Venice. </p>
+            </abstract>
+            <correspDesc>
+                <correspAction type="sent">
+<persName key="G001200">Gregorovius, Ferdinand (1821–1891)</persName>
+<placeName key="G000734">München</placeName><date when="1884-12-07" cert="high"/>
+</correspAction>
+                <correspAction type="received">
+<persName key="G000970">Bizio, Giovanni</persName>
+<placeName key="G000894">Venedig</placeName>
+</correspAction>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body><pb n="16"/>
+            <div type="writingSession">
+<opener>
+<dateline rendition="#right">Monaco, 7 dicembre 1884.</dateline>
+<salute rendition="#c">Chiarissimo <seg type="comment"><orig>Signore,</orig><note xml:id="nvwd_vx2_t4b">Der venezianische Chemiker Giovanni Bizio (1823–1891) war Professor für Chemie und Mineralogie am Technischen Institut und an der Höheren Handelsschule, der heutigen Universität Ca’Foscari in Venedig. Am Reale Istituto Veneto di Scienze, Lettere ed Arti war er 1864 bis 1870 Vizesekretär und 1874 bis 1891 Sekretär, in dessen Funktion Gregorovius vorliegenden Brief an ihn adressierte. Bizio hatte 1847 an der Universität in Padua promoviert, wo er Assistent für Naturgeschichte wurde. 1858 bis 1862 studierte er in Wien, in München (bei Justus von Liebig) und in Heidelberg. </note></seg></salute>
+</opener>
+                <p><seg type="comment"><orig>La morte del compianto ab<ex>ate</ex><persName key="G001151"> Rinaldo Fulin</persName>,</orig><note xml:id="njgb_ys1_5rb">Der von Gregorovius sehr geschätzte venezianische Historiker Rinaldo Fulin (*1824) war Vizepräsident des Reale Istituto Veneto di Scienze, Lettere ed Arti. Am 24. November 1884 war er im Monastero dei Carmelitani Scalzi di Venezia verstorben. 1864 hatte er im Auftrag des venezianischen Verlags Giuseppe Antonelli das italienische Übersetzungsrecht für die „Geschichte der Stadt Rom im Mittelalter“ von Gregorovius angefragt (siehe den Brief von Gregorovius an Tommaso Gar vom <ref target="G000271">13.12.1864</ref>), die Renato Manzato (1847–1925) ab 1866 übernommen hatte. </note></seg> che fu ornamento e gloria del <orgName key="ed_xcp_4ms_kmb">Reale Istituto Veneto</orgName>, <seg type="comment"><orig>riempie anche me di vivo dolore, tanto più che sono in grado di apprezzare gli alti meriti del defunto non solo dalle sue pregevolissime opere, ma ancora per i lunghi rapporti di amicizia che me lo resero caro.</orig><note xml:id="nshl_1sd_p1c">Fulin war 1858 bis 1867 Professor für Geschichte am Königlichen Liceo di Santa Caterina in Venedig, bevor er ans Liceo Marco Polo wechselte und ab 1868 zugleich an der Scuola superiore di commercio di Ca’ Foscari unterrichtete. 1871 hatte Fulin das Archivio Veneto gegründet und war Mitbegründer der Zeitschrift „Archivio veneto“. Er war der Herausgeber der Bände 3, 7 und 11 der Tagebücher des venezianischen Chronisten und Schriftstellers Marin Sanuto dem Jüngeren (1466–1536) (58 Bände, 1879–1903; zu Fulin siehe auch <ref target="http://www.istitutoveneto.it/flex/cm/pages/ServeAttachment.php/L/IT/D/7%252Ff%252Fe%252FD.e8f68b6b8feb1d9e4495/P/BLOB%3AID%3D822/E/pdf">http://www.istitutoveneto.it/flex/cm/pages/ServeAttachment.php/L/IT/D/7%252Ff%252Fe%252FD.e8f68b6b8feb1d9e4495/P/BLOB%3AID%3D822/E/pdf</ref>).</note></seg> Lo piangono con me non pochi dotti in <placeName key="G000664">Germania</placeName>, che s’avvalsero dei consigli sempre pronti e delle cortesie mai venute meno dell’uomo insigne.</p>
+<p>Prego la S<ex>ignoria</ex> V<ex>ostra</ex> di compiacersi di rendersi presso <seg type="comment"><orig>l’illustre signor <persName key="ed_wvg_sms_kmb">Presidente</persName></orig><note xml:id="nwbj_fsd_p1c">Der Ökonom Fedele Lampertico (1833–1906), seit 1873 Mitglied des italienischen Senats, war seit April 1884 Präsident des Reale Istituto Veneto di Scienze, Lettere ed Arti.</note></seg> ed i chiarissimi membri dell’Istituto, residenti in Venezia, interprete dei sensi di condoglianza, con cui partecipo alla perdita cosi grave, e di quelli di venerazione ed affetto, che dedico alla memoria del nostro amato Rinaldo Fulin.</p>
+<closer>Mi raffermo con l’espressione della mia alta stima e considerazione<salute xml:id="s2" prev="#s1" rendition="#right">Suo Devotissimo</salute> <signed rendition="#right">firm<ex>ato </ex>Ferdinando Gregorovius.</signed></closer>
+                <note>Al chiarissimo<lb/>Sig<ex>nore</ex> Prof<ex>essore</ex> Comm<ex>endatore</ex> Giovanni Bizio <lb/>Segretario del R<ex>eale</ex> Istituto Ven<ex>eto</ex> ec<ex>etera</ex> <lb/>Venezia</note>
+</div>
+        </body>
+    </text>
+</TEI>

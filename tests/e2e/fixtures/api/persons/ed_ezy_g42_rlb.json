@@ -1,0 +1,21 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_ezy_g42_rlb",
+  "persName": [
+   {
+    "@type": "reg",
+    "surname": "Mariano",
+    "forename": "Cäcilie (Cecil)"
+   },
+   {
+    "@type": "alt",
+    "@subtype": "birthname",
+    "name": "Pilar von Pilchau"
+   }
+  ],
+  "birth": "1847",
+  "death": "1896",
+  "note": "ab 1879 die Ehefrau von Raffaele Mariano"
+ }
+}

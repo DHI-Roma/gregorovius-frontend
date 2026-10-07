@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_hk5_554_5nb",
+  "persName": {
+   "@type": "reg",
+   "surname": "Dietrichs",
+   "forename": "Karl von"
+  },
+  "birth": null,
+  "death": "1855"
+ }
+}

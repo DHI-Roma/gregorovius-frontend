@@ -1,0 +1,10 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_acl_1tp_dsb",
+  "placeName": {
+   "@type": "reg",
+   "#text": "Mont Fleuri sur Territet"
+  }
+ }
+}

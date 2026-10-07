@@ -1,0 +1,13 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_xfy_fnp_znb",
+  "persName": {
+   "@type": "reg",
+   "surname": "Erhardt",
+   "forename": "Alexandrine"
+  },
+  "birth": "1866",
+  "death": "1965"
+ }
+}

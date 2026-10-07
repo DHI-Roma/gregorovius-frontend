@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001484",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118592858"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Pertz",
+   "forename": "Georg Heinrich"
+  },
+  "birth": "1795",
+  "death": "1878"
+ }
+}

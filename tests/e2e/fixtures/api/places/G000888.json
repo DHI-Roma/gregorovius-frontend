@@ -1,0 +1,42 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000888",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/2821515"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Traunstein"
+  },
+  "listPlace": {
+   "place": [
+    {
+     "@xml:id": "ediarum_fbx_rqd_cqb",
+     "@type": "street",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Stadtplatz (Traunstein)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_anh_jpt_sxb",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "Zum goldenen Hirschen (Gasthof Wispauer) (Traunstein)"
+     }
+    },
+    {
+     "@xml:id": "ediarum_ojl_m22_b1c",
+     "@type": "building",
+     "placeName": {
+      "@type": "reg",
+      "#text": "St. Georg und St. Katharina (Traunstein)"
+     }
+    }
+   ]
+  }
+ }
+}

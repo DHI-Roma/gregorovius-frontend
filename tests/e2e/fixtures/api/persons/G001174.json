@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001174",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/11928474X"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Gigli",
+   "forename": "Giacinto"
+  },
+  "birth": "1594",
+  "death": "1671"
+ }
+}

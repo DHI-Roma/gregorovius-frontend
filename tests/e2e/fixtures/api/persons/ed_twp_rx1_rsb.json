@@ -1,0 +1,15 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_twp_rx1_rsb",
+  "@role": "mythological",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/131880659"
+  },
+  "persName": {
+   "@type": "reg",
+   "name": "Methusalem"
+  }
+ }
+}

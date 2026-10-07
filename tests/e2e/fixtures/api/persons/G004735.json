@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004735",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118626353"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Vega",
+   "forename": "Lope de"
+  },
+  "birth": "1562",
+  "death": "1635"
+ }
+}

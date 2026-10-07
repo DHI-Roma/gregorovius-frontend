@@ -1,0 +1,11 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ediarum_tg2_4ty_2qb",
+  "@type": "building",
+  "placeName": {
+   "@type": "reg",
+   "#text": "Schack-Galerie (München)"
+  }
+ }
+}

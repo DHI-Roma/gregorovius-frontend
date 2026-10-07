@@ -1,0 +1,10 @@
+{
+ "org": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_pr2_hfy_dbc",
+  "orgName": {
+   "@type": "reg",
+   "#text": "Preußische Gesandschaft (Hessen)"
+  }
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G004725",
+  "persName": {
+   "@type": "reg",
+   "surname": "Cotta",
+   "forename": "Gianantonio"
+  },
+  "floruit": {
+   "@notBefore": "1450",
+   "@notAfter": "1500",
+   "#text": "zweite Hälfte 15. Jh."
+  }
+ }
+}

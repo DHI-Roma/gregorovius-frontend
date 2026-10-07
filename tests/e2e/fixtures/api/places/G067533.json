@@ -1,0 +1,11 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G067533",
+  "@type": "mythological",
+  "placeName": {
+   "@type": "reg",
+   "#text": "Hyperborea"
+  }
+ }
+}

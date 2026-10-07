@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001663",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117282898"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Ullrich",
+   "forename": "Titus"
+  },
+  "birth": "1813",
+  "death": "1891"
+ }
+}

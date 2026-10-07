@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "ed_agg_jqj_zrb",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118913298"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "D’Azeglio",
+   "forename": "Massimo"
+  },
+  "birth": "1798",
+  "death": "1866"
+ }
+}

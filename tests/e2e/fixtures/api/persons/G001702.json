@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001702",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/117307610"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Werthern-Beichlingen",
+   "forename": "Georg Freiherr von (ab 1878 Graf von)"
+  },
+  "birth": "1816",
+  "death": "1895"
+ }
+}

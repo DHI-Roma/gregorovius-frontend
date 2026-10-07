@@ -1,0 +1,90 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:telota="http://www.telota.de" telota:doctype="letter_fgbe" xml:id="G000094">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ferdinand Gregorovius an Hermann von Thile in Berlin. Rom, 7. Januar
+                    1860</title>
+                <editor><persName ref="http://d-nb.info/gnd/1127895559"><surname>Steinsiek</surname> <forename>Angela</forename> </persName> </editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <title>Fredinand Gregorovius, gesammelte Briefe</title>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName xml:lang="de">Deutsches Historisches Institut in Rom</orgName>
+                    <orgName xml:lang="it">Istituto Storico Germanico di Roma</orgName>
+                    <orgName xml:lang="en">German Historical Institute in Rome</orgName>
+                    <address>
+                        <addrLine>Via Aurelia Antica, 00165 Rom, Italien</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace ref="http://www.geonames.org/3169070">Rom</pubPlace>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution 4.0 International (CC BY 4.0)
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc><msIdentifier><institution>GSA Weimar</institution><idno>96/937 (9)</idno></msIdentifier>
+<physDesc>
+<p>1 Bl., 8°, 1 S. – 1r aoR Empfängervermerk: pr. 23 g’.</p>
+</physDesc>
+</msDesc>
+                <listWit>
+                    <witness>
+                        <msDesc type="copy">
+                            <msIdentifier>
+                                <institution>GhStA Berlin</institution>
+                                <collection>VI. HA, NL Waldemar Kampf</collection>
+                                <idno>Karton 84, Mappe 6 (Alfred Löckle nach H)</idno>
+                            </msIdentifier>
+                        </msDesc>
+                    </witness>
+                    <witness>
+                        <msDesc type="copy"><msIdentifier><institution>GhStA Berlin</institution><collection>VI. HA, NL Waldemar Kampf</collection><idno>Karton 59, Mappe 346 (nach H, ungenau)</idno></msIdentifier>
+</msDesc>
+                    </witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <abstract>
+                <p xml:lang="de">Er kündigt seine erste Zahlungsanweisung von 150 Talern durch Louis Harder zur Tilgung seiner Schulden bei Thile an.</p>
+             
+                <p xml:lang="en">He announces his first payment order of 150 Taler through Louis Harder to pay off his debts to Thile.</p>
+            </abstract>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName key="G001200">Gregorovius, Ferdinand (1821–1891)</persName>
+                    <placeName key="G000763">Rom</placeName>
+                    <date when="1860-01-07" cert="high"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName key="G001644">Thile, Hermann von (1812–1889)</persName>
+                    <placeName key="G000636">Berlin</placeName>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body><pb n="1r"/>
+            <div type="writingSession">
+<opener>
+<dateline rendition="#c"><hi rendition="#aq">Rom</hi> 7. Januar 1860.</dateline>
+<salute>Mein hochverehrter <seg type="comment"><orig>Herr,</orig><note xml:id="nlby_ggx_cfc">Der Diplomat Hermann von Thile (1812–1889) war Ende 1837 bis November 1839 erstmals als Legationssekretär der preußischen Gesandtschaft in Rom stationiert. In den folgenden Jahren wurde er nach Bern, 1842 nach Wien und London entsandt, 1849 wurde er Legationsrat in Frankfurt am Main, 1849 Geschäftsträger in Kassel und 1852 Gesandter in Athen. Im Dezember 1854 bis Ende Juli 1858 war er erneut als preußischer Gesandter beim Heiligen Stuhl in Rom eingesetzt und dort zuletzt bevollmächtigter Minister Preußens. Thile war seit 1846 mit Ottilie, geb. von Graefe (1816–1898) verheiratet – einer Tochter des Mediziners Karl von Graefe (1787–1840) und Schwester des Augenarztes Albrecht von Graefe (1828–1870) –, mit der er den Sohn Hans (1848–1869) hatte. Dessen im Juni 1858 erstmals auftretende Epilepsie veranlassten ihn, im Juli 1858 erst ins schweizerische Heiden und dann ganz nach Deutschland zurückzukehren, wo er sich in den vorläufigen Ruhestand versetzen ließ. 1862 kehrte er als Unterstaatssekretär im Außenministerium in den Staatsdienst zurück. Im März 1871 wurde er unter Otto von Bismarck (1815–1898) erster Staatssekretär des Auswärtigen Amtes im neu gegründeten Deutschen Kaiserreich, trat Ende September 1872 wegen der Verleihung des Schwarzen Adlerordens an den russischen und den österreichischen Botschafter aber zurück.<p>Gregorovius hatte Hermann von Thile gleich nach dessen Ankunft in Rom kennengelernt. Zu ihm, dessen große „Kenntnis in vielen Literaturen“ (RT, 17.9.1857, S. 68) er bewunderte, und zu seiner Familie entwickelte sich schnell einen freundschaftlich-familiäres Verhältnis, das nach Thiles Weggang aus Rom brieflich und durch gelegentliche persönliche Begegnungen, wie gemeinsame Kuraufenthalte im schweizerischen Heiden, gepflegt wurde. Neben Christian Karl Josias von Bunsen (1791–1860) war es Thile, der Gregorovius 1860 beim Kultusministerium der preußischen Regierung ein Stipendium zur Fertigstellung seiner „Geschichte der Stadt Rom im Mittelalter“ (1859–1872) vermittelte (siehe den Brief von Gregorovius an Hermann von Thile vom <ref target="G000122">9.8.1860</ref>). Als Thile ihm im Frühjahr 1866 mitteilte, dass diese Unterstützung um die Hälfte gekürzt werden würde, nahm Gregorovius ihm das persönlich übel (siehe RT, 8.4.1866, S. 207 und den Brief-Entwurf von Gregorovius an Thile vom <ref target="G000214">9.4.1866</ref>) und ihr Briefwechsel ruhte bis 1870, als er die Familie Thile zufällig in München wiedertraf (siehe RT, 24.9.1869, S. 265). Die rund 135 Briefe von Gregorovius an Thile und seine Frau Ottilie sind 1898 von den Erben nahezu vollständig an das GSA in Weimar gegeben worden (Erstdruck, zumeist gekürzt, in Briefe von Ferdinand Gregorovius an den Staatssekretär Hermann von Thile. Hrsg. von Hermann von Petersdorff. Berlin 1894), während von Thiles nicht mehr nachweisbaren Gegenbriefen nur wenige späte Schreiben (1885–1889) von Johannes Hönig aus dem Besitz von Thiles Verwandten an entlegener Stelle herausgegeben wurden (1928 in Die Kultur. Wissenschaftliche Beilage der Schlesischen Volkszeitung). Demnach muss Gregorovius Thile mindestens diese Briefe vor seinem Tod zurückgegeben haben.</p></note></seg></salute>
+</opener>
+<p>diese wenigen Zeilen sind rein irdisch elender u<ex>nd</ex> geschäftlicher Natur, wie man zu sagen pflegt. <seg type="comment"><orig>Aus den wirklich sehr guten Einnahmen, die ich gehabt habe, wird es mir leicht, an die Tilgung meiner Schulden zu gehen,</orig><note xml:id="np4h_bvn_cbc">Gregorovius hatte sich von Thile Geld geliehen (siehe die Briefe von Gregorovius an Thile vom <ref target="G000106">22.12.1858</ref> und <ref target="G000103">11.4.1859</ref>). Noch bevor Thile den vorliegenden Brief erhielt, hatte er Gregorovius mit einem (nicht nachweisbaren) Brief vom 24. Dezember 1859 weitere 2.000 Franks zugesandt (siehe den Brief von Gregorovius an Thile vom <ref target="G000093">11.1.1860</ref>).</note></seg> wenn dies auch nur teilweise geschehen kann. Ich sage, wie der <persName key="G067650">Marquis Dorset</persName> in <bibl sameAs="G067690">König Richard</bibl>: </p>
+<p rendition="#c"><seg type="comment"><orig>In Weltgeschäften nennt man’s undankbar, <lb/>Mit trägem Widerwillen Schulden zahlen, <lb/>die eine milde Hand uns freundlich lieh;</orig><note xml:id="nmjb_zjm_ylb">William Shakespeares „Richard. III.“ (II/2 – hier nach der Übersetzung von August Wilhelm Schlegel).</note></seg></p>
+<p>und Ihr großmütiger Sinn wird mir beistimmen, wenn ich sage, daß es schön ist, sich des materiellen Gewichtes einer Schuld zu entledigen, die eine edle Hand uns lieh, das moralische aber dauernd als etwas Untilgbares zu behalten.</p>
+<p><seg type="comment"><orig>Ein <placeName key="G000699">Königsberger</placeName> Freund, der Kaufmann <hi rendition="#aq"><persName key="G001235">Louis Harder</persName></hi>, welcher hie u<ex>nd</ex> da meine buchhändlerischen Finanzen verwaltet,</orig><note xml:id="nafr_pvn_cbc">Louis Harder (1821–1899 oder 1900) war ein Jugendfreund von Gregorovius, der mit seiner Familie 1869 als Rentner nach Wiesbaden zog (siehe zum Brief von Gregorovius an Harder vom <ref target="ed_wt1_4n4_5nb">4.2.1855</ref>).</note></seg> hat von mir den Auftrag einliegende 150 Thaler an Sie zu senden; und ich verspreche Ihnen, mein teurer Herr, daß ich mir erlauben werde, mit der Tilgung der übrigen Summen nur gemächlich u<ex>nd</ex> teilweise fortzufahren, wie Sie es mir befohlen haben.</p>
+<closer>
+<salute>Ich segne Ihre Güte gegen mich alle Tage, u<ex>nd</ex> bitte den Himmel, Sie Alle wol und heiter zu erhalten.</salute>
+<signed rendition="#right">FGregorovius.</signed>
+</closer>
+</div>
+        </body>
+    </text>
+</TEI>

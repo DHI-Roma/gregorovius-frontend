@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001483",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/1025796071"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Perez",
+   "forename": "Paolo, Conte"
+  },
+  "birth": "1822",
+  "death": "1879"
+ }
+}

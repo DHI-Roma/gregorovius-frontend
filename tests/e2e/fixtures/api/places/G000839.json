@@ -1,0 +1,15 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000839",
+  "@type": "settlement",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3170831"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Piemont"
+  }
+ }
+}

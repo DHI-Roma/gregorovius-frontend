@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000794",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/6255148"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Europa"
+  }
+ }
+}

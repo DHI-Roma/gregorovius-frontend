@@ -1,0 +1,14 @@
+{
+ "place": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000678",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://www.geonames.org/3176203"
+  },
+  "placeName": {
+   "@type": "reg",
+   "#text": "Genazzano"
+  }
+ }
+}

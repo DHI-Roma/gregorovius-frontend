@@ -1,0 +1,22 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G000999",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/118516361"
+  },
+  "persName": [
+   {
+    "@type": "reg",
+    "name": "Brutus"
+   },
+   {
+    "@type": "alt",
+    "name": "Gaius Iunius Brutus"
+   }
+  ],
+  "birth": "85 v. Chr.",
+  "death": "42 v. Chr."
+ }
+}

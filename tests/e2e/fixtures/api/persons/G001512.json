@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001512",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/11859687X"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Prutz",
+   "forename": "Robert Eduard"
+  },
+  "birth": "1816",
+  "death": "1872"
+ }
+}

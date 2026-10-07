@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001401",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/116771992"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Mariano",
+   "forename": "Raffaele"
+  },
+  "birth": "1840",
+  "death": "1912"
+ }
+}

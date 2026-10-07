@@ -1,0 +1,17 @@
+{
+ "person": {
+  "@xmlns": "http://www.tei-c.org/ns/1.0",
+  "@xml:id": "G001625",
+  "idno": {
+   "@type": "uri",
+   "#text": "http://d-nb.info/gnd/172641365"
+  },
+  "persName": {
+   "@type": "reg",
+   "surname": "Strafforello",
+   "forename": "Gustavo"
+  },
+  "birth": "1820",
+  "death": "1903"
+ }
+}
