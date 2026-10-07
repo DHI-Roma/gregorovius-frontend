@@ -354,6 +354,7 @@ export default defineComponent({
     const {
       activeComment,
       letters,
+      sortedLetters,
       lettersFiltered,
       facsimiles,
       selectedRecipients,
@@ -463,17 +464,17 @@ export default defineComponent({
       });
     });
 
-    const currentLetterIndex = computed(() => letters.value.findIndex((l) => l.id === letterId.value));
+    const currentLetterIndex = computed(() => sortedLetters.value.findIndex((l) => l.id === letterId.value));
     const currentLetterIndexInSelection = computed(() => lettersFiltered.value.findIndex((l) => l.id === letterId.value));
 
     const nextLetter = computed(() => {
-      if (currentLetterIndex.value + 1 > letters.value.length - 1) return false;
-      return letters.value[currentLetterIndex.value + 1];
+      if (currentLetterIndex.value + 1 > sortedLetters.value.length - 1) return false;
+      return sortedLetters.value[currentLetterIndex.value + 1];
     });
 
     const previousLetter = computed(() => {
       if (currentLetterIndex.value - 1 < 0) return false;
-      return letters.value[currentLetterIndex.value - 1];
+      return sortedLetters.value[currentLetterIndex.value - 1];
     });
 
     const nextLetterInSelection = computed(() => {
@@ -705,7 +706,7 @@ export default defineComponent({
 
     async function filterLetterFromMentions() {
       const entityIds = route.params.entityIds.split(",");
-      const filteredLetters = letters.value.filter((letter) => {
+      const filteredLetters = sortedLetters.value.filter((letter) => {
         for (const entityId of entityIds) {
           const mentionedPersonEntityIds = letterService.flattenMentions(letter.properties.mentioned.persons);
           if (mentionedPersonEntityIds.includes(entityId)) return true;
@@ -726,7 +727,7 @@ export default defineComponent({
       if (lettersFiltered.value.length) return;
       if (!Object.entries(route.query).length) return;
 
-      let filteredLetters = letters.value;
+      let filteredLetters = sortedLetters.value;
 
       if (selectedRecipients.value.length) {
         filteredLetters = tableService.filterByRecipients(filteredLetters, selectedRecipients.value);
