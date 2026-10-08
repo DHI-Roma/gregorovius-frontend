@@ -1,11 +1,13 @@
 <template>
-  <div
+  <section
     v-if="activeComment.id"
     class="g-edition-comment-container"
     :style="{ top: activeComment.offsetTop + 'px' }"
+    aria-labelledby="comment-heading"
+    @keydown.esc="close"
   >
     <div class="row justify-between self-center q-pb-sm">
-      <span class="text-h6">
+      <span id="comment-heading" ref="heading" class="text-h6" tabindex="-1">
         Kommentar
       </span>
     </div>
@@ -28,11 +30,11 @@
     >
       Schließen
     </q-btn>
-  </div>
+  </section>
 </template>
 
 <script>
-import { defineComponent, ref, watch } from "vue";
+import { defineComponent, nextTick, ref, watch } from "vue";
 import { useMainStore } from "src/stores/main";
 import { storeToRefs } from "pinia";
 import { useRouter } from "vue-router";
@@ -46,16 +48,26 @@ export default defineComponent({
     const { activeComment } = storeToRefs(store);
 
     const commentWithLinks = ref("");
+    const heading = ref(null);
 
+    // Move the focus into the panel whenever a commentary is opened, so that
+    // keyboard and screen reader users land on its content
     watch(
       () => activeComment.value.id,
-      () => {
+      async (id) => {
         commentWithLinks.value = activeComment.value.text;
+        if (!id) return;
+        await nextTick();
+        heading.value?.focus();
       }
     );
 
-    function close() {
+    // Return the focus to the button that opened the commentary
+    async function close() {
+      const id = activeComment.value.id;
       store.unselectComment();
+      await nextTick();
+      document.querySelector(`button[data-comment-id="${id}"]`)?.focus();
     }
 
     // The comment is plain HTML copied from the letter text, so its links have no
@@ -75,6 +87,7 @@ export default defineComponent({
     return {
       activeComment,
       commentWithLinks,
+      heading,
       close,
       onCommentClick,
     };
@@ -87,6 +100,11 @@ export default defineComponent({
 
 h6 {
   color: $secondary;
+}
+
+#comment-heading:focus-visible {
+  outline: 2px solid $primary;
+  outline-offset: 2px;
 }
 
 .g-edition-comment-container {

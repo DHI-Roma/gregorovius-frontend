@@ -1,6 +1,6 @@
 import { test, expect } from './support/test.js';
 import { LETTERS, sortedLetters } from './support/data.js';
-import { SEL, commentTrigger, iconButton } from './support/selectors.js';
+import { SEL, commentPanel, commentTrigger, iconButton } from './support/selectors.js';
 
 const { rich } = LETTERS;
 const editionText = (page) => page.locator(SEL.editionText);
@@ -47,7 +47,7 @@ test.describe('letter text and metadata', () => {
     const trigger = commentTrigger(page, rich.comment.lemma);
     await expect(trigger).toHaveAttribute('aria-expanded', 'false');
     await trigger.click();
-    const panel = page.locator(SEL.commentPanel);
+    const panel = commentPanel(page);
     await expect(panel).toBeVisible();
     await expect(trigger).toHaveAttribute('aria-expanded', 'true');
     await expect(panel).toContainText('Kommentar');
@@ -63,15 +63,50 @@ test.describe('letter text and metadata', () => {
     const trigger = commentTrigger(page, rich.comment.lemma);
     await trigger.focus();
     await page.keyboard.press('Enter');
-    await expect(page.locator(SEL.commentPanel)).toContainText(rich.comment.textSnippet);
+    await expect(commentPanel(page)).toContainText(rich.comment.textSnippet);
     await expect(trigger).toHaveAttribute('aria-expanded', 'true');
     await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}/${rich.comment.id}$`));
+  });
+
+  test('keyboard users move into the commentary and back', async ({ page, browserName }) => {
+    // WebKit only tabs to links with Alt (macOS default)
+    const tabToLink = browserName === 'webkit' ? 'Alt+Tab' : 'Tab';
+    const trigger = commentTrigger(page, rich.comment.lemma);
+    await trigger.focus();
+    await page.keyboard.press('Enter');
+    const panel = commentPanel(page);
+    await expect(panel.getByText('Kommentar', { exact: true })).toBeFocused();
+
+    await page.keyboard.press(tabToLink);
+    await expect(panel.getByRole('link', { name: rich.letterRef.label }).first()).toBeFocused();
+
+    await page.keyboard.press('Escape');
+    await expect(panel).toBeHidden();
+    await expect(trigger).toBeFocused();
+    await expect(trigger).toHaveAttribute('aria-expanded', 'false');
+  });
+
+  test('closing the commentary returns the focus to its trigger', async ({ page }) => {
+    const trigger = commentTrigger(page, rich.comment.lemma);
+    await trigger.click();
+    await commentPanel(page).getByRole('button', { name: 'Schließen' }).click();
+    await expect(trigger).toBeFocused();
+  });
+
+  test('opening another commentary moves the focus again', async ({ page }) => {
+    await commentTrigger(page, rich.comment.lemma).click();
+    const panel = commentPanel(page);
+    await expect(panel).toContainText(rich.comment.textSnippet);
+    await commentTrigger(page, 'welcher zugleich längst die römische Toga abgelegt hat,').click();
+    await expect(panel).not.toContainText(rich.comment.textSnippet);
+    await expect(panel.getByText('Kommentar', { exact: true })).toBeFocused();
+    await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}/nbfk_kw5_4wb$`));
   });
 
   test('clicking the commented passage still opens the commentary', async ({ page }) => {
     await editionText(page).getByText('welcher zugleich längst die römische Toga').click();
     await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}/nbfk_kw5_4wb$`));
-    await expect(page.locator(SEL.commentPanel)).toBeVisible();
+    await expect(commentPanel(page)).toBeVisible();
   });
 
   test('long lemmas are shortened in the trigger name', async ({ page }) => {
@@ -98,7 +133,7 @@ test.describe('entity links in the letter text', () => {
     await page.goBack();
     await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}$`));
     await expect(editionText(page)).toBeVisible();
-    await expect(page.locator(SEL.commentPanel)).toBeHidden();
+    await expect(commentPanel(page)).toBeHidden();
   });
 
   test('place', async ({ page }) => {
@@ -150,7 +185,7 @@ test.describe('entity links in the letter text', () => {
   test('cross reference to another letter inside a commentary', async ({ page }) => {
     // cross references only occur in commentaries; the panel renders them as plain links
     await commentTrigger(page, rich.comment.lemma).click();
-    const panel = page.locator(SEL.commentPanel);
+    const panel = commentPanel(page);
     // links inside the commentary are routed without a full page reload
     await page.evaluate(() => (window.__noReload = true));
     await panel.getByRole('link', { name: rich.letterRef.label }).first().click();

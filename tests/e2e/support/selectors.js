@@ -16,9 +16,13 @@ export function commentTrigger(scope, lemma) {
   return scope.getByRole('button', { name: `Kommentar zu „${lemma}“ öffnen`, exact: true });
 }
 
+/** The commentary panel next to the letter text */
+export function commentPanel(page) {
+  return page.getByRole('region', { name: 'Kommentar' });
+}
+
 export const SEL = {
   editionText: '.g-edition-text',
-  commentPanel: '.g-edition-comment-container', // TODO(spec-003): named comment region
   kwicResult: '.g-searchresult',
   facsimileLabel: '.facsimile-label',
   tableRow: 'tbody tr',
