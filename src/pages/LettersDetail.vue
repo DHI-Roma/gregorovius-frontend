@@ -60,7 +60,6 @@ EN
               label="TEI XML"
               flat
               icon="arrow_right_alt"
-              icon-right="open_in_new"
               color="primary"
               size="md"
               :href="`https://gregorovius-edition.dhi-roma.it/api/letters/${letterId}`"

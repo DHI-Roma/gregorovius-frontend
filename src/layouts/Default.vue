@@ -32,7 +32,6 @@
           <q-btn
             flat
             label="EDITIONSRICHTLINIEN"
-            icon-right="open_in_new"
             href="http://gregorovius-edition.dhi-roma.it/richtlinien/"
             target="_blank"
           />
