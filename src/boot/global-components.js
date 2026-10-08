@@ -2,6 +2,7 @@ import { boot } from 'quasar/wrappers';
 import { QTooltip, QIcon, QBtn } from 'quasar';
 import CommentIcon from 'src/components/CommentIcon.vue';
 import MarginNote from 'src/components/MarginNote.vue';
+import HoverTooltip from 'src/components/HoverTooltip.vue';
 import { useMainStore } from 'src/stores/main';
 import { basePathLetters } from 'src/router';
 
@@ -10,6 +11,7 @@ export default boot(({ app, router }) => {
   // Custom components
   app.component('CommentIcon', CommentIcon);
   app.component('MarginNote', MarginNote);
+  app.component('HoverTooltip', HoverTooltip);
 
   // Quasar components used in XSLT templates
   app.component('q-tooltip', QTooltip);

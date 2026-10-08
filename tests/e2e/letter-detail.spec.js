@@ -237,6 +237,61 @@ test.describe('margin notes', () => {
   });
 });
 
+test.describe('hover previews', () => {
+  async function moveOnto(page, locator) {
+    const box = await locator.boundingBox();
+    await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2, { steps: 5 });
+  }
+
+  test('the commentary preview stays open while the pointer is on it', async ({ page }) => {
+    await openLetter(page, rich.id);
+    await editionText(page).getByText('welcher zugleich längst die römische Toga').hover();
+    const tooltip = page.getByRole('tooltip');
+    await expect(tooltip).toBeVisible();
+    await moveOnto(page, tooltip);
+    await page.waitForTimeout(600);
+    await expect(tooltip).toBeVisible();
+
+    await page.mouse.move(0, 0);
+    await expect(tooltip).toBeHidden();
+  });
+
+  test('Escape closes a preview without moving the focus', async ({ page }) => {
+    await openLetter(page, rich.id);
+    const tab = page.getByRole('tab', { name: 'Textgrundlage' });
+    await tab.focus();
+    await editionText(page).getByText('welcher zugleich längst die römische Toga').hover();
+    const tooltip = page.getByRole('tooltip');
+    await expect(tooltip).toBeVisible();
+    await page.keyboard.press('Escape');
+    await expect(tooltip).toBeHidden();
+    await expect(tab).toBeFocused();
+  });
+
+  test('the margin note preview stays open while the pointer is on it', async ({ page }) => {
+    await openLetter(page, LETTERS.marginNote.id);
+    await editionText(page).getByRole('button', { name: 'Anmerkung am linken Rand, von Hand des Empfängers', exact: true }).hover();
+    const tooltip = page.getByRole('tooltip');
+    await expect(tooltip).toBeVisible();
+    await moveOnto(page, tooltip);
+    await page.waitForTimeout(600);
+    await expect(tooltip).toContainText('Anmerkung am linken Rand');
+  });
+
+  test('the text basis hint stays open while the pointer is on it', async ({ page }) => {
+    // only letters with several witnesses mark the text basis
+    await openLetter(page, LETTERS.italian.id);
+    await page.getByRole('tab', { name: 'Textgrundlage' }).click();
+    // the print edition is the text basis of this letter
+    await page.locator('#panel-tgl b', { hasText: 'Friedrich Althaus' }).hover();
+    const tooltip = page.getByRole('tooltip', { name: /Textgrundlage/ });
+    await expect(tooltip).toBeVisible();
+    await moveOnto(page, tooltip);
+    await page.waitForTimeout(600);
+    await expect(tooltip).toBeVisible();
+  });
+});
+
 test.describe('navigation between letters', () => {
   const index = sortedLetters.findIndex((l) => l.id === rich.id);
   const main = (page) => page.getByRole('main');
