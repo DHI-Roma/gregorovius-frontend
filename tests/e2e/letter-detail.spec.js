@@ -1,6 +1,6 @@
 import { test, expect } from './support/test.js';
 import { LETTERS, sortedLetters } from './support/data.js';
-import { SEL, iconButton } from './support/selectors.js';
+import { SEL, commentTrigger, iconButton } from './support/selectors.js';
 
 const { rich } = LETTERS;
 const editionText = (page) => page.locator(SEL.editionText);
@@ -44,15 +44,41 @@ test.describe('letter text and metadata', () => {
   });
 
   test('opens and closes a commentary', async ({ page }) => {
-    await page.locator(SEL.commentIcon).first().click();
+    const trigger = commentTrigger(page, rich.comment.lemma);
+    await expect(trigger).toHaveAttribute('aria-expanded', 'false');
+    await trigger.click();
     const panel = page.locator(SEL.commentPanel);
     await expect(panel).toBeVisible();
+    await expect(trigger).toHaveAttribute('aria-expanded', 'true');
     await expect(panel).toContainText('Kommentar');
     await expect(panel).toContainText(rich.comment.textSnippet);
     await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}/${rich.comment.id}$`));
 
     await panel.getByRole('button', { name: 'Schließen' }).click();
     await expect(panel).toBeHidden();
+    await expect(trigger).toHaveAttribute('aria-expanded', 'false');
+  });
+
+  test('opens a commentary with the keyboard', async ({ page }) => {
+    const trigger = commentTrigger(page, rich.comment.lemma);
+    await trigger.focus();
+    await page.keyboard.press('Enter');
+    await expect(page.locator(SEL.commentPanel)).toContainText(rich.comment.textSnippet);
+    await expect(trigger).toHaveAttribute('aria-expanded', 'true');
+    await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}/${rich.comment.id}$`));
+  });
+
+  test('clicking the commented passage still opens the commentary', async ({ page }) => {
+    await editionText(page).getByText('welcher zugleich längst die römische Toga').click();
+    await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}/nbfk_kw5_4wb$`));
+    await expect(page.locator(SEL.commentPanel)).toBeVisible();
+  });
+
+  test('long lemmas are shortened in the trigger name', async ({ page }) => {
+    // the passage of this commentary is longer than 60 characters
+    await expect(
+      editionText(page).getByRole('button', { name: /^Kommentar zu „was Ew\. Excellenz mir in Bezug.{20,40}…“ öffnen$/ }),
+    ).toHaveCount(1);
   });
 });
 
@@ -63,6 +89,16 @@ test.describe('entity links in the letter text', () => {
     await entityLink(page, rich.person.label).click();
     await expect(page).toHaveURL(new RegExp(`/persons/${rich.person.id}$`));
     await expect(page.getByRole('main')).toContainText(rich.person.name);
+  });
+
+  test('entity link inside a commented passage does not open the commentary', async ({ page }) => {
+    // "Mommsen" lies inside a commented passage
+    await entityLink(page, rich.person.label).click();
+    await expect(page).toHaveURL(new RegExp(`/persons/${rich.person.id}$`));
+    await page.goBack();
+    await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}$`));
+    await expect(editionText(page)).toBeVisible();
+    await expect(page.locator(SEL.commentPanel)).toBeHidden();
   });
 
   test('place', async ({ page }) => {
@@ -113,7 +149,7 @@ test.describe('entity links in the letter text', () => {
 
   test('cross reference to another letter inside a commentary', async ({ page }) => {
     // cross references only occur in commentaries; the panel renders them as plain links
-    await page.locator(SEL.commentIcon).first().click();
+    await commentTrigger(page, rich.comment.lemma).click();
     const panel = page.locator(SEL.commentPanel);
     // links inside the commentary are routed without a full page reload
     await page.evaluate(() => (window.__noReload = true));

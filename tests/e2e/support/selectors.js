@@ -11,10 +11,13 @@ export function iconButton(scope, iconName) {
   return scope.locator('button').filter({ has: page.locator('i.q-icon', { hasText: new RegExp(`^${iconName}$`) }) });
 }
 
+/** Button that opens the commentary on a passage, by its lemma */
+export function commentTrigger(scope, lemma) {
+  return scope.getByRole('button', { name: `Kommentar zu „${lemma}“ öffnen`, exact: true });
+}
+
 export const SEL = {
   editionText: '.g-edition-text',
-  commentOrig: '.g-comment-orig', // TODO(spec-003): comment trigger buttons
-  commentIcon: '.comment-icon', // TODO(spec-003)
   commentPanel: '.g-edition-comment-container', // TODO(spec-003): named comment region
   kwicResult: '.g-searchresult',
   facsimileLabel: '.facsimile-label',

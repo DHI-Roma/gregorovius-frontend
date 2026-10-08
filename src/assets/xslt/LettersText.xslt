@@ -129,9 +129,8 @@
 <xsl:template match="tei:seg[@type='comment']/tei:orig">
     <span class="g-comment-orig"
           v-bind:class="['{../tei:note/@xml:id}' === activeComment.id ? 'active' : '' ]"
-          v-on:click="activateComment($event, `{../tei:note/@xml:id}`, `{../tei:note}`)"
+          v-on:click="activateComment($event, `{../tei:note/@xml:id}`)"
           v-bind:commentId="`{../tei:note/@xml:id}`"
-          v-bind:commentText="`{../tei:note}`"
           >
           <q-tooltip content-style="font-size: 12pt;">
             <xsl:choose>
@@ -144,10 +143,19 @@
             </xsl:choose>
           </q-tooltip>
         <xsl:apply-templates />
-        <CommentIcon
-        v-bind:commentId="`{../tei:note/@xml:id}`"
-        v-bind:commentText="`{../tei:note}`">
-    </CommentIcon>
+        <xsl:variable name="lemma" select="normalize-space(.)"/>
+        <CommentIcon v-bind:commentId="`{../tei:note/@xml:id}`">
+            <xsl:attribute name="lemma">
+                <xsl:choose>
+                    <xsl:when test="string-length($lemma) &gt; 60">
+                        <xsl:value-of select="concat(substring($lemma, 1, 60), '…')"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="$lemma"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+        </CommentIcon>
     </span>
 </xsl:template>
 

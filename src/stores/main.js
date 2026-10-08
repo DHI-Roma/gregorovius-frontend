@@ -203,6 +203,34 @@ export const useMainStore = defineStore('main', {
       this.activeComment = comment;
     },
 
+    // Opens the commentary with the given id from the rendered letter text and
+    // positions the panel next to the commented passage.
+    openComment(commentId) {
+      const commentHtml = document.querySelector(`#comment-${commentId}`);
+      const commentReference = document.querySelector(`.g-comment-orig[commentId="${commentId}"]`);
+      if (!commentHtml || !commentReference) return false;
+
+      const comment = {
+        id: commentId,
+        text: commentHtml.innerHTML,
+        offsetTop: commentReference.offsetTop,
+      };
+      this.activeComment = comment;
+
+      // Recalculate after the splitter has resized
+      setTimeout(() => {
+        const panel = document.querySelector('.comment-panel');
+        if (!panel || this.activeComment.id !== commentId) return;
+        const panelRect = panel.getBoundingClientRect();
+        const refRect = commentReference.getBoundingClientRect();
+        this.activeComment = {
+          ...comment,
+          offsetTop: refRect.top - panelRect.top + panel.scrollTop,
+        };
+      }, 50);
+      return true;
+    },
+
     unselectComment() {
       this.activeComment = {
         id: '',

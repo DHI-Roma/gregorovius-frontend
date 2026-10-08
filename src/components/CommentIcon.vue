@@ -1,21 +1,27 @@
 <template>
-  <span class="comment-icon-wrapper">
+  <button
+    type="button"
+    class="comment-icon-button"
+    :data-comment-id="commentId"
+    :aria-label="`Kommentar zu „${lemma}“ öffnen`"
+    :aria-expanded="isActive ? 'true' : 'false'"
+    @click="openComment(commentId)"
+  >
     <q-icon
       name="comment_bank"
       class="comment-icon"
       :class="{ active: isActive }"
-      @click.stop="activateComment"
+      aria-hidden="true"
     ></q-icon>
-  </span>
+  </button>
 </template>
 
 <script>
 import { defineComponent, computed } from "vue";
 import { useMainStore } from "src/stores/main";
 import { storeToRefs } from "pinia";
-import { useRoute } from "vue-router";
-import { basePathLetters } from "../router";
 
+// openComment comes from the global mixin in boot/global-components.js
 export default defineComponent({
   name: "CommentIcon",
 
@@ -24,7 +30,7 @@ export default defineComponent({
       type: String,
       required: true,
     },
-    commentText: {
+    lemma: {
       type: String,
       required: true,
     },
@@ -32,48 +38,14 @@ export default defineComponent({
 
   setup(props) {
     const store = useMainStore();
-    const route = useRoute();
     const { activeComment } = storeToRefs(store);
 
     const isActive = computed(() => {
       return activeComment.value.id === props.commentId;
     });
 
-    function activateComment() {
-      const commentHtml = document.querySelector(`#comment-${props.commentId}`);
-      const commentReference = document.querySelector(
-        `.g-comment-orig[commentId="${props.commentId}"]`
-      );
-
-      const comment = {
-        id: props.commentId,
-        text: commentHtml.innerHTML,
-        offsetTop: commentReference.offsetTop,
-      };
-      store.setActiveComment(comment);
-
-      /** We don't use vue router.push here to not trigger a refresh of the component */
-      history.pushState(
-        {},
-        null,
-        basePathLetters + "/" + route.params.id + "/" + props.commentId
-      );
-
-      // Recalculate after splitter resizes
-      setTimeout(() => {
-        const panel = document.querySelector('.comment-panel');
-        if (panel && commentReference) {
-          const panelRect = panel.getBoundingClientRect();
-          const refRect = commentReference.getBoundingClientRect();
-          comment.offsetTop = refRect.top - panelRect.top + panel.scrollTop;
-          store.setActiveComment(comment);
-        }
-      }, 50);
-    }
-
     return {
       isActive,
-      activateComment,
     };
   },
 });
@@ -82,8 +54,15 @@ export default defineComponent({
 <style lang="scss">
 @import '../css/quasar.variables.scss';
 
-.comment-icon-wrapper {
+.comment-icon-button {
+  all: unset;
   display: inline-block !important;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
 }
 
 .comment-icon {

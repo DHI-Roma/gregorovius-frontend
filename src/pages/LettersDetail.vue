@@ -791,29 +791,6 @@ export default defineComponent({
       });
     }
 
-    async function initializeActiveComment() {
-      const commentReference = document.querySelector(`.g-comment-orig[commentId="${route.params.commentId}"]`);
-      const commentHtml = document.querySelector(`#comment-${route.params.commentId}`);
-      if (!commentReference || !commentHtml) return;
-
-      const comment = {
-        id: commentReference.getAttribute("commentId"),
-        text: commentHtml.innerHTML,
-        offsetTop: 0,
-      };
-
-      store.setActiveComment(comment);
-
-      setTimeout(() => {
-        const commentRef = document.querySelector(`.g-comment-orig[commentId="${route.params.commentId}"]`);
-        const commentEl = document.querySelector(`#comment-${route.params.commentId}`);
-        if (!commentRef || !commentEl) return;
-        comment.offsetTop = commentRef.offsetTop;
-        comment.text = commentEl.innerHTML;
-        store.setActiveComment(comment);
-      }, 0);
-    }
-
     async function initializeComponent() {
       await Promise.allSettled([
         getItems(),
@@ -845,7 +822,7 @@ export default defineComponent({
 
       await waitForLetterText();
       if (route.params.commentId) {
-        await initializeActiveComment();
+        store.openComment(route.params.commentId);
       }
       setMentionedEntityIdsInOrder();
     }

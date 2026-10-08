@@ -23,36 +23,20 @@ export default boot(({ app, router }) => {
       }
     },
     methods: {
-      activateComment(event, commentId) {
+      openComment(commentId) {
         const store = useMainStore();
+        if (!store.openComment(commentId)) return;
         const route = router.currentRoute.value;
-
+        // no router.push, so that the letter text is not re-rendered
         history.pushState({}, null, basePathLetters + "/" + route.params.id + "/" + commentId);
+      },
 
-        const commentHtml = document.querySelector(`#comment-${commentId}`);
-        const commentReference = document.querySelector(
-          `.g-comment-orig[commentId="${commentId}"]`
-        );
-
-        // Initial position
-        const comment = {
-          id: commentId,
-          text: commentHtml.innerHTML,
-          offsetTop: commentReference.offsetTop,
-        };
-        store.setActiveComment(comment);
-
-        // Recalculate after splitter resizes
-        setTimeout(() => {
-          const panel = document.querySelector('.comment-panel');
-          if (panel && commentReference) {
-            const panelRect = panel.getBoundingClientRect();
-            const refRect = commentReference.getBoundingClientRect();
-            comment.offsetTop = refRect.top - panelRect.top + panel.scrollTop;
-            store.setActiveComment(comment);
-          }
-        }, 50);
-      }
+      // Click on a commented passage (mouse only; keyboard users use the CommentIcon button).
+      // Links and buttons inside the passage keep their own behaviour.
+      activateComment(event, commentId) {
+        if (event.target.closest('a, button')) return;
+        this.openComment(commentId);
+      },
     }
   });
 });
