@@ -45,37 +45,6 @@ export default defineComponent({
       emit("rendered");
     }
 
-    function activateComment(event, commentId) {
-      const hasActiveCommentFlag = store.activeComment.id ? true : false;
-      let offsetTop = event.layerY;
-
-      if (event.target.classList.contains("comment-icon")) {
-        offsetTop = event.target.parentElement.offsetTop;
-      }
-
-      // We don't use vue router.push here to not trigger a refresh of the component
-      history.pushState({}, null, basePathLetters + "/" + route.params.id + "/" + commentId);
-
-      const commentHtml = document.querySelector(`#comment-${commentId}`);
-
-      const comment = {
-        id: commentId,
-        text: commentHtml.innerHTML,
-        offsetTop: offsetTop,
-      };
-      store.setActiveComment(comment);
-
-      if (!hasActiveCommentFlag) {
-        setTimeout(() => {
-          const commentReference = document.querySelector(
-            `.g-comment-orig[commentId="${commentId}"]`
-          );
-          comment.offsetTop = commentReference.offsetTop;
-          store.setActiveComment(comment);
-        }, 0);
-      }
-    }
-
     watch(
       () => route.params.id,
       (newId, oldId) => {
@@ -92,7 +61,6 @@ export default defineComponent({
     return {
       data,
       activeComment,
-      activateComment,
     };
   },
 });
