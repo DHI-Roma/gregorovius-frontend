@@ -1,6 +1,6 @@
 import { test, expect } from './support/test.js';
 import { GND_PERSON, LETTERS, persons } from './support/data.js';
-import { SEL } from './support/selectors.js';
+import { SEL, commentPanel } from './support/selectors.js';
 
 const { rich } = LETTERS;
 
@@ -16,15 +16,16 @@ async function delayLetterText(context, ms) {
 
 test('letter with commentary opens the commentary', async ({ page }) => {
   await page.goto(`/letters/${rich.id}/${rich.comment.id}`);
-  const panel = page.locator(SEL.commentPanel);
+  const panel = commentPanel(page);
   await expect(panel).toBeVisible();
   await expect(panel).toContainText(rich.comment.textSnippet);
+  await expect(panel.getByText('Kommentar', { exact: true })).toBeFocused();
 });
 
 test('commentary deep link works when the letter text loads late', async ({ page, context }) => {
   await delayLetterText(context, 1500);
   await page.goto(`/letters/${rich.id}/${rich.comment.id}`);
-  await expect(page.locator(SEL.commentPanel)).toBeVisible({ timeout: 5000 });
+  await expect(commentPanel(page)).toBeVisible({ timeout: 5000 });
 });
 
 test('full text hit in a commentary opens the letter with that commentary', async ({ page, context }) => {
@@ -37,7 +38,7 @@ test('full text hit in a commentary opens the letter with that commentary', asyn
   await expect(hit).toHaveAttribute('href', `/letters/${rich.id}/${rich.comment.id}`);
   await hit.click();
   await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}/${rich.comment.id}$`));
-  await expect(page.locator(SEL.commentPanel)).toContainText('Finnur', { timeout: 5000 });
+  await expect(commentPanel(page)).toContainText('Finnur', { timeout: 5000 });
 });
 
 test('letter with entity filter', async ({ page }) => {

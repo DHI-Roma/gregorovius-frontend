@@ -1,7 +1,7 @@
 import { test, expect } from './support/test.js';
 import { expectNoNewA11yViolations } from './support/a11y.js';
 import { LETTERS } from './support/data.js';
-import { SEL, commentTrigger } from './support/selectors.js';
+import { commentPanel, commentTrigger } from './support/selectors.js';
 
 const { rich } = LETTERS;
 
@@ -41,6 +41,6 @@ for (const [key, url, ready] of PAGES) {
 test('a11y: letter-detail with open commentary', async ({ page }, testInfo) => {
   await page.goto(`/letters/${rich.id}`);
   await commentTrigger(page, rich.comment.lemma).click();
-  await expect(page.locator(SEL.commentPanel)).toBeVisible();
+  await expect(commentPanel(page)).toBeVisible();
   await expectNoNewA11yViolations(page, 'letter-detail-commentary', testInfo);
 });
