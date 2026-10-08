@@ -268,23 +268,18 @@
         </xsl:choose>
     </xsl:variable>
     <!-- TODO: Check material design icons -->
-    <q-btn
-        color="primary" flat="" outline="" icon="comment"
-        class="note metamark-{tei:metamark/@function} g-margin-right"
-    >
-        <q-tooltip
-            anchor="center left" self="center right"
-            v-bind:offset="[10, 10]" content-style="font-size: 15px"
-            content-class="bg-white shadow-24 text-black q-pa-md"
-        >
-            Anmerkung
-            am <xsl:value-of select="$place"/> Rand,
-            <xsl:value-of select="$hand"/>
-            <div class="g-edition-text text-center">
-                <xsl:value-of select="text()"/>
-            </div>
-        </q-tooltip>
-    </q-btn>
+    <MarginNote icon="comment" class="note metamark-{tei:metamark/@function} g-margin-right">
+        <xsl:attribute name="label">
+            <xsl:value-of select="normalize-space(concat('Anmerkung am ', $place, ' Rand'))"/>
+            <xsl:if test="string($hand)">, <xsl:value-of select="$hand"/></xsl:if>
+        </xsl:attribute>
+        Anmerkung
+        am <xsl:value-of select="$place"/> Rand,
+        <xsl:value-of select="$hand"/>
+        <div class="g-edition-text text-center">
+            <xsl:value-of select="text()"/>
+        </div>
+    </MarginNote>
 </xsl:template>
 
 <xsl:template match="tei:note[@place and tei:metamark[@function]]">
@@ -323,24 +318,20 @@
             <xsl:otherwise/>
         </xsl:choose>
     </xsl:variable>
-    <q-btn
-        color="primary" flat="" outline="" icon="{$icon-type}"
-        class="note metamark-{tei:metamark/@function} g-margin-right"
-    >
-        <q-tooltip
-            anchor="center left" self="center right"
-            v-bind:offset="[10, 10]" content-style="font-size: 15px"
-            content-class="bg-white shadow-24 text-black q-pa-md"
-        >
-            <xsl:value-of select="$metamark"/> mit Anmerkung
-            am <xsl:value-of select="$place"/> Rand,
-            <xsl:value-of select="$hand"/>
+    <MarginNote icon="{$icon-type}" class="note metamark-{tei:metamark/@function} g-margin-right">
+        <xsl:attribute name="label">
+            <xsl:value-of select="normalize-space(concat($metamark, ' mit Anmerkung am ', $place, ' Rand'))"/>
+            <xsl:if test="string($hand)">, <xsl:value-of select="$hand"/></xsl:if>
             <xsl:value-of select="$list"/>
-            <div class="g-edition-text text-center">
-                <xsl:value-of select="text()"/>
-            </div>
-        </q-tooltip>
-    </q-btn>
+        </xsl:attribute>
+        <xsl:value-of select="$metamark"/> mit Anmerkung
+        am <xsl:value-of select="$place"/> Rand,
+        <xsl:value-of select="$hand"/>
+        <xsl:value-of select="$list"/>
+        <div class="g-edition-text text-center">
+            <xsl:value-of select="text()"/>
+        </div>
+    </MarginNote>
 </xsl:template>
 
 <xsl:template match="tei:add[@place and tei:metamark[@function]]">
@@ -384,59 +375,11 @@
         color="primary" flat="" outline="" icon="{$icon-type}"
         class="metamark-{tei:metamark/@function} g-margin-right"
     >
-        <q-tooltip
-            anchor="center left" self="center right"
-            v-bind:offset="[10, 10]" content-style="font-size: 15px"
-            content-class="bg-white shadow-24 text-black q-pa-md"
-        >
-            <xsl:value-of select="$metamark"/>
-            am <xsl:value-of select="$place"/> Rand,
-            <xsl:value-of select="$hand"/>
+        <xsl:attribute name="aria-label">
+            <xsl:value-of select="normalize-space(concat($metamark, ' am ', $place, ' Rand'))"/>
+            <xsl:if test="string($hand)">, <xsl:value-of select="$hand"/></xsl:if>
             <xsl:value-of select="$list"/>
-        </q-tooltip>
-    </q-btn>
-</xsl:template>
-<xsl:template match="tei:add[@place and tei:metamark[@function]]">
-    <xsl:variable name="place">
-        <xsl:choose>
-            <xsl:when test="@place='left'"> linken </xsl:when>
-            <xsl:when test="@place='right'"> rechten </xsl:when>
-            <xsl:otherwise/>
-        </xsl:choose>
-    </xsl:variable>
-    <xsl:variable name="metamark">
-        <xsl:choose>
-            <xsl:when test="tei:metamark/@function='used'">Anstreichung</xsl:when>
-            <xsl:when test="tei:metamark/@function='done'">Erledigungsvermerk</xsl:when>
-            <xsl:otherwise/>
-        </xsl:choose>
-    </xsl:variable>
-    <xsl:variable name="hand">
-        <xsl:choose>
-            <xsl:when test="@hand='#author'">von Hand des Autors</xsl:when>
-            <xsl:when test="@hand='#addressee'">von Hand des Empfängers</xsl:when>
-            <xsl:when test="@hand='#unknown'">von unbekannter Hand</xsl:when>
-            <xsl:otherwise/>
-        </xsl:choose>
-    </xsl:variable>
-    <xsl:variable name="list">
-        <xsl:choose>
-            <xsl:when test="contains(tei:metamark/@target, 'list')">, zur gesamten Liste</xsl:when>
-            <xsl:otherwise/>
-        </xsl:choose>
-    </xsl:variable>
-    <xsl:variable name="icon-type">
-        <xsl:choose>
-            <xsl:when test="contains(tei:metamark/@function, 'done')">done</xsl:when>
-            <xsl:when test="contains(tei:metamark/@function, 'used')">format_line_spacing</xsl:when>
-            <xsl:otherwise/>
-        </xsl:choose>
-    </xsl:variable>
-
-    <q-btn
-        color="primary" flat="" outline="" icon="{$icon-type}"
-        class="metamark-{tei:metamark/@function} g-margin-right"
-    >
+        </xsl:attribute>
         <q-tooltip
             anchor="center left" self="center right"
             v-bind:offset="[10, 10]" content-style="font-size: 15px"
