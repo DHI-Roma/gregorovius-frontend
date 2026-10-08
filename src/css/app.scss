@@ -17,27 +17,9 @@
   }
 }
 
-// Links opening a new tab: icon plus a text alternative for screen readers (spec 002)
+// Links opening a new tab: text alternative for screen readers only, no visible change (spec 002)
 a[target='_blank']::after {
-  content: 'open_in_new' / ' (öffnet in neuem Tab)';
-  font-family: 'Material Icons';
-  font-size: 0.9em;
-  font-weight: normal;
-  font-feature-settings: 'liga';
-  text-transform: none;
-  line-height: 1;
-  margin-left: 0.2em;
-  text-decoration: none;
-  vertical-align: middle;
-  display: inline-block;
-}
-
-// Inside the edition text only the text alternative, no visible icon;
-// buttons show their icon via `icon-right`
-.g-edition-text a[target='_blank']::after,
-.q-btn[target='_blank']::after {
   content: '' / ' (öffnet in neuem Tab)';
-  margin-left: 0;
 }
 
 // Remove separator line above QTable pagination
