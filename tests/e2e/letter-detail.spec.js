@@ -195,6 +195,48 @@ test.describe('entity links in the letter text', () => {
   });
 });
 
+test.describe('margin notes', () => {
+  const noteName = 'Anmerkung am linken Rand, von Hand des Empfängers';
+
+  test('a margin note opens in a popover with the keyboard', async ({ page }) => {
+    await openLetter(page, LETTERS.marginNote.id);
+    const note = editionText(page).getByRole('button', { name: noteName, exact: true });
+    await expect(note).toHaveAttribute('aria-expanded', 'false');
+    await note.focus();
+    await page.keyboard.press('Enter');
+    const popover = page.getByRole('dialog', { name: noteName });
+    await expect(popover).toBeVisible();
+    await expect(popover).toContainText('=');
+    await expect(note).toHaveAttribute('aria-expanded', 'true');
+
+    await page.keyboard.press('Escape');
+    await expect(popover).toBeHidden();
+    await expect(note).toBeFocused();
+  });
+
+  test('a margin note opens on click and closes on a click outside', async ({ page }) => {
+    await openLetter(page, LETTERS.marginNote.id);
+    await editionText(page).getByRole('button', { name: noteName, exact: true }).click();
+    const popover = page.getByRole('dialog', { name: noteName });
+    await expect(popover).toBeVisible();
+    await page.getByRole('main').click({ position: { x: 5, y: 5 } });
+    await expect(popover).toBeHidden();
+  });
+
+  test('a margin note still shows its preview on hover', async ({ page }) => {
+    await openLetter(page, LETTERS.marginNote.id);
+    await editionText(page).getByRole('button', { name: noteName, exact: true }).hover();
+    await expect(page.getByRole('tooltip')).toContainText('Anmerkung am linken Rand');
+  });
+
+  test('marks in the margin have a descriptive name', async ({ page }) => {
+    await openLetter(page, rich.id);
+    await expect(
+      editionText(page).getByRole('button', { name: 'Anstreichung am linken Rand, von Hand des Empfängers', exact: true }),
+    ).toHaveCount(5);
+  });
+});
+
 test.describe('navigation between letters', () => {
   const index = sortedLetters.findIndex((l) => l.id === rich.id);
   const main = (page) => page.getByRole('main');

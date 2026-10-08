@@ -124,7 +124,7 @@
       "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
     },
     "button-name": {
-      "maxNodes": 16,
+      "maxNodes": 11,
       "spec": "004",
       "reason": "Schaltflächen ohne zugänglichen Namen (Icon-Buttons)"
     },
@@ -156,12 +156,12 @@
       "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
     },
     "button-name": {
-      "maxNodes": 16,
+      "maxNodes": 11,
       "spec": "004",
       "reason": "Schaltflächen ohne zugänglichen Namen (Icon-Buttons)"
     },
     "color-contrast": {
-      "maxNodes": 50,
+      "maxNodes": 49,
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
     },
