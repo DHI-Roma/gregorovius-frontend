@@ -9,7 +9,7 @@
     :aria-expanded="popoverOpen ? 'true' : 'false'"
   >
     <!-- mouse preview; hidden while the popover shows the same content -->
-    <q-tooltip
+    <HoverTooltip
       v-if="!popoverOpen"
       anchor="center left"
       self="center right"
@@ -18,7 +18,7 @@
       content-class="bg-white shadow-24 text-black q-pa-md"
     >
       <slot />
-    </q-tooltip>
+    </HoverTooltip>
     <q-menu
       v-model="popoverOpen"
       anchor="center left"

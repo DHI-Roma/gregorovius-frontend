@@ -132,7 +132,7 @@
           v-on:click="activateComment($event, `{../tei:note/@xml:id}`)"
           v-bind:commentId="`{../tei:note/@xml:id}`"
           >
-          <q-tooltip content-style="font-size: 12pt;">
+          <HoverTooltip content-style="font-size: 12pt;">
             <xsl:choose>
                 <xsl:when test="string-length(../tei:note) &gt; 50">
                     <xsl:value-of select="substring(../tei:note, 1, 50)" />...
@@ -141,7 +141,7 @@
                     <xsl:value-of select="../tei:note" />
                 </xsl:otherwise>
             </xsl:choose>
-          </q-tooltip>
+          </HoverTooltip>
         <xsl:apply-templates />
         <xsl:variable name="lemma" select="normalize-space(.)"/>
         <CommentIcon v-bind:commentId="`{../tei:note/@xml:id}`">
@@ -380,7 +380,7 @@
             <xsl:if test="string($hand)">, <xsl:value-of select="$hand"/></xsl:if>
             <xsl:value-of select="$list"/>
         </xsl:attribute>
-        <q-tooltip
+        <HoverTooltip
             anchor="center left" self="center right"
             v-bind:offset="[10, 10]" content-style="font-size: 15px"
             content-class="bg-white shadow-24 text-black q-pa-md"
@@ -389,7 +389,7 @@
             am <xsl:value-of select="$place"/> Rand,
             <xsl:value-of select="$hand"/>
             <xsl:value-of select="$list"/>
-        </q-tooltip>
+        </HoverTooltip>
     </q-btn>
 </xsl:template>
 
