@@ -51,3 +51,39 @@ export async function chooseYear(page, year) {
   }).toPass();
   await page.keyboard.press('Escape');
 }
+
+/** Whether `request` loads `url` in a tab other than `page`. */
+function isNewTabRequest(page, url, request) {
+  if (!request.isNavigationRequest() || !url.test(request.url())) return false;
+  try {
+    return request.frame().page() !== page;
+  } catch {
+    return true; // no frame yet: the request belongs to a tab that is just being created
+  }
+}
+
+/**
+ * Resolves once `url` is opened in a new tab from `page`. Start waiting before the click.
+ * Chromium requests the document of a tab opened by a modified or middle click before Playwright
+ * attaches to the tab; Playwright then may never report the tab, or report it with an empty URL.
+ * WebKit does not report that request. So wait for whichever comes first: the document request
+ * from another tab or a new page that reaches `url`.
+ */
+export function newTab(page, url) {
+  const context = page.context();
+  const request = context.waitForEvent('request', (req) => isNewTabRequest(page, url, req));
+  const loaded = context.waitForEvent('page').then((tab) => tab.waitForURL(url));
+  return Promise.race([request, loaded]);
+}
+
+/**
+ * Collects the requests that load `url` in tabs other than `page` (Chromium only, see newTab).
+ * Counts opened tabs without relying on Playwright noticing them.
+ */
+export function newTabRequests(page, url) {
+  const requests = [];
+  page.context().on('request', (req) => {
+    if (isNewTabRequest(page, url, req)) requests.push(req);
+  });
+  return requests;
+}

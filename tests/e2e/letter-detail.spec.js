@@ -1,6 +1,6 @@
 import { test, expect } from './support/test.js';
 import { LETTERS, sortedLetters } from './support/data.js';
-import { SEL, commentPanel, commentTrigger, iconButton } from './support/selectors.js';
+import { SEL, commentPanel, commentTrigger, iconButton, newTab, newTabRequests } from './support/selectors.js';
 
 const { rich } = LETTERS;
 const editionText = (page) => page.locator(SEL.editionText);
@@ -157,13 +157,12 @@ test.describe('entity links in the letter text', () => {
     await expect(page).toHaveURL(new RegExp(`/persons/${rich.person.id}$`));
   });
 
-  test('modified click opens the entity in a new tab', async ({ page, context }) => {
+  test('modified click opens the entity in a new tab', async ({ page }) => {
     // "Staat" (Preußischer Staat, G000541) is not inside a commented passage,
     // so the click does not also open a commentary
-    const popup = context.waitForEvent('page');
+    const opened = newTab(page, /\/persons\/G000541$/);
     await entityLink(page, 'Staat').click({ modifiers: ['ControlOrMeta'] });
-    const tab = await popup;
-    await expect(tab).toHaveURL(/\/persons\/G000541$/);
+    await opened;
     await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}$`));
   });
 
@@ -172,13 +171,14 @@ test.describe('entity links in the letter text', () => {
     await expect(page.getByText('In neuem Tab öffnen')).toHaveCount(0);
   });
 
-  test('middle click opens exactly one new tab', async ({ page, context, browserName }) => {
+  test('middle click opens exactly one new tab', async ({ page, browserName }) => {
     test.skip(browserName === 'webkit', 'WebKit in Playwright does not open tabs on middle click');
-    const popup = context.waitForEvent('page');
+    const opened = newTab(page, /\/persons\/G000541$/);
+    const tabs = newTabRequests(page, /\/persons\/G000541$/);
     await entityLink(page, 'Staat').click({ button: 'middle' });
-    await expect(await popup).toHaveURL(/\/persons\/G000541$/);
-    await page.waitForTimeout(500);
-    expect(context.pages()).toHaveLength(2);
+    await opened;
+    await page.waitForTimeout(500); // a second new tab would show up meanwhile
+    expect(tabs).toHaveLength(1);
     await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}$`));
   });
 
