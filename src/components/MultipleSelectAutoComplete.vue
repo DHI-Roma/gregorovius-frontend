@@ -17,6 +17,8 @@
       :label="label"
       @filter="filterOptions"
       @update:model-value="setSelected"
+      @popup-show="onPopupShow"
+      @popup-hide="onPopupHide"
     />
   </div>
 </template>
@@ -25,6 +27,7 @@
 import { defineComponent, ref, computed, watch, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { useMainStore } from 'src/stores/main';
+import { useMenuPosition } from 'src/composables/use-menu-position';
 
 export default defineComponent({
   name: 'MultipleSelectAutoComplete',
@@ -54,6 +57,8 @@ export default defineComponent({
   setup(props, { emit }) {
     const route = useRoute();
     const store = useMainStore();
+    const selector = ref(null);
+    const { onPopupShow, onPopupHide } = useMenuPosition(selector);
 
     const model = ref([]);
     const filteredOptions = ref([]);
@@ -142,6 +147,9 @@ export default defineComponent({
     });
 
     return {
+      selector,
+      onPopupShow,
+      onPopupHide,
       model,
       filteredOptions,
       filterOptions,

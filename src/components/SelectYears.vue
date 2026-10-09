@@ -1,6 +1,7 @@
 <template>
   <div class="q-pa-md">
     <q-select
+      ref="selector"
       v-model="selectedYears"
       filled
       bg-color="white"
@@ -10,6 +11,8 @@
       :options="options"
       :label="label"
       @update:model-value="onSelectedChange"
+      @popup-show="onPopupShow"
+      @popup-hide="onPopupHide"
     >
       <template #selected>
         {{ selectedYearsSorted }}
@@ -35,6 +38,7 @@
 import { defineComponent, ref, computed, watch, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { useMainStore } from 'src/stores/main';
+import { useMenuPosition } from 'src/composables/use-menu-position';
 
 export default defineComponent({
   name: 'SelectYears',
@@ -59,6 +63,8 @@ export default defineComponent({
   setup(props, { emit }) {
     const route = useRoute();
     const store = useMainStore();
+    const selector = ref(null);
+    const { onPopupShow, onPopupHide } = useMenuPosition(selector);
 
     const selectedYears = ref([]);
 
@@ -87,6 +93,9 @@ export default defineComponent({
     });
 
     return {
+      selector,
+      onPopupShow,
+      onPopupHide,
       selectedYears,
       selectedYearsSorted,
       onSelectedChange,
