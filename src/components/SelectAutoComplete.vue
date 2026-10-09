@@ -12,6 +12,8 @@
       :label="label"
       @filter="filterOptions"
       @update:model-value="setSelected"
+      @popup-show="onPopupShow"
+      @popup-hide="onPopupHide"
     >
       <template v-if="model.value" #append>
         <q-icon name="cancel" class="cursor-pointer" @click.stop="clearSelection()" />
@@ -24,6 +26,7 @@
 import { defineComponent, ref, computed, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { useMainStore } from 'src/stores/main';
+import { useMenuPosition } from 'src/composables/use-menu-position';
 
 export default defineComponent({
   name: 'SelectAutoComplete',
@@ -48,6 +51,8 @@ export default defineComponent({
   setup(props, { emit, expose }) {
     const route = useRoute();
     const store = useMainStore();
+    const selector = ref(null);
+    const { onPopupShow, onPopupHide } = useMenuPosition(selector);
 
     const model = ref({
       label: '',
@@ -108,6 +113,9 @@ export default defineComponent({
     expose({ setModel });
 
     return {
+      selector,
+      onPopupShow,
+      onPopupHide,
       model,
       filteredOptions,
       filterOptions,
