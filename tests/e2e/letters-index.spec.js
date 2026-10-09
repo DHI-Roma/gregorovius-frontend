@@ -1,6 +1,6 @@
 import { test, expect } from './support/test.js';
 import { LETTERS, letters, sortedLetters } from './support/data.js';
-import { SEL, chooseOption, chooseYear } from './support/selectors.js';
+import { SEL, chooseOption, chooseYear, newTab, newTabRequests } from './support/selectors.js';
 
 const rows = (page) => page.locator('main').locator(SEL.tableRow);
 const firstLetter = sortedLetters[0];
@@ -32,20 +32,22 @@ test('the date of each letter is a link labelled with the letter title', async (
   await expect(page).toHaveURL(new RegExp(`/letters/${firstLetter.id}$`));
 });
 
-test('modified click on a letter opens it in a new tab only', async ({ page, context }) => {
-  const popup = context.waitForEvent('page');
+test('modified click on a letter opens it in a new tab only', async ({ page }) => {
+  const opened = newTab(page, new RegExp(`/letters/${firstLetter.id}$`));
   await rows(page).first().getByRole('link').click({ modifiers: ['ControlOrMeta'] });
-  await expect(await popup).toHaveURL(new RegExp(`/letters/${firstLetter.id}$`));
+  await opened;
   await expect(page).toHaveURL(/\/letters$/);
 });
 
-test('middle click on a letter opens exactly one new tab', async ({ page, context, browserName }) => {
+test('middle click on a letter opens exactly one new tab', async ({ page, browserName }) => {
   test.skip(browserName === 'webkit', 'WebKit in Playwright does not open tabs on middle click');
-  const popup = context.waitForEvent('page');
+  const url = new RegExp(`/letters/${firstLetter.id}$`);
+  const opened = newTab(page, url);
+  const tabs = newTabRequests(page, url);
   await rows(page).first().getByRole('link').click({ button: 'middle' });
-  await expect(await popup).toHaveURL(new RegExp(`/letters/${firstLetter.id}$`));
-  await page.waitForTimeout(500);
-  expect(context.pages()).toHaveLength(2);
+  await opened;
+  await page.waitForTimeout(500); // a second new tab would show up meanwhile
+  expect(tabs).toHaveLength(1);
   await expect(page).toHaveURL(/\/letters$/);
 });
 
