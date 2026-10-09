@@ -16,7 +16,7 @@ export default defineConfig({
   fullyParallel: true,
   forbidOnly: CI,
   retries: CI ? 1 : 0,
-  workers: CI ? 2 : undefined,
+  workers: CI ? 4 : undefined,
   reporter: CI ? [['github'], ['html', { open: 'never' }]] : [['list'], ['html', { open: 'never' }]],
   expect: { timeout: 10_000 },
   use: { ...shared, baseURL: `http://localhost:${PORT}` },
