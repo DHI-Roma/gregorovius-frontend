@@ -1,5 +1,7 @@
 # Builds the frontend and runs unit and end-to-end tests.
 # E2E tests use recorded API fixtures (tests/e2e/fixtures/api) and never call the live API.
+# E2E jobs run in the official Playwright container (browsers and system packages preinstalled),
+# whose version is read from package-lock.json, with one job per browser.
 
 name: Node.js CI
 
@@ -8,6 +10,11 @@ on:
     branches: [ master ]
   # all pull requests, including stacked PRs that target another feature branch
   pull_request:
+
+# cancel superseded pull request runs; every push to master runs to completion
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.head_ref || github.sha }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   unit:
@@ -24,9 +31,34 @@ jobs:
     - run: npm ci
     - run: npm run test:unit
 
+  playwright-version:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Read the Playwright version from package-lock.json
+      id: version
+      run: |
+        version=$(jq -r '.packages["node_modules/@playwright/test"].version' package-lock.json)
+        if ! [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+          echo "::error::No valid @playwright/test version in package-lock.json: '$version'"
+          exit 1
+        fi
+        echo "version=$version" >> "$GITHUB_OUTPUT"
+
   e2e:
+    name: e2e (${{ matrix.project }})
+    needs: playwright-version
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    container:
+      image: mcr.microsoft.com/playwright:v${{ needs.playwright-version.outputs.version }}-noble
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [ chromium, webkit ]
 
     steps:
     - uses: actions/checkout@v4
@@ -36,15 +68,14 @@ jobs:
         node-version: 22.22.x
         cache: npm
     - name: Install xsltproc (used by the mock API, same libxslt engine as the API)
-      run: sudo apt-get update && sudo apt-get install -y xsltproc
+      run: apt-get update && apt-get install -y --no-install-recommends xsltproc
     - run: cp env.dist.js env.js
     - run: npm ci
-    - run: npx playwright install --with-deps chromium webkit
-    - run: npm run test:e2e
+    - run: npx playwright test --project=${{ matrix.project }}
     - uses: actions/upload-artifact@v4
       if: failure()
       with:
-        name: playwright-report
+        name: playwright-report-${{ matrix.project }}
         path: |
           playwright-report/
           test-results/
