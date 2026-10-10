@@ -51,26 +51,26 @@
           <div class="row q-pa-md">
             <div class="col-md-6 col-10 q-pa-md self-center">
               <a href="http://dhi-roma.it">
-                <img src="/img/logo_dhi.png" />
+                <img src="/img/logo_dhi.png" alt="Deutsches Historisches Institut in Rom" />
               </a>
             </div>
             <div class="col-md-3 col-10 q-pa-md">
               <div class="text-caption">gefördert durch</div>
               <div class="row q-py-md">
                 <a href="https://www.dfg.de/">
-                  <img src="/img/logo_dfg.png" />
+                  <img src="/img/logo_dfg.png" alt="Deutsche Forschungsgemeinschaft" />
                 </a>
               </div>
               <div class="row">
                 <a href="https://www.gerda-henkel-stiftung.de/">
-                  <img src="/img/logo_henkel.png" />
+                  <img src="/img/logo_henkel.png" alt="Gerda Henkel Stiftung" />
                 </a>
               </div>
             </div>
             <div class="col-md-3 col-10 q-pa-md">
               <div class="text-caption">in Kooperation mit</div>
               <a href="http://www.bbaw.de">
-                <img src="/img/logo_bbaw.png" />
+                <img src="/img/logo_bbaw.png" alt="Berlin-Brandenburgische Akademie der Wissenschaften" />
               </a>
             </div>
           </div>
@@ -82,7 +82,7 @@
               </div>
               <div class="col-md-3 col-10 text-caption">
                 <a href="https://creativecommons.org/licenses/by/4.0/deed.de">
-                  <img src="/img/badge_cc_by.png" alt="" />
+                  <img src="/img/badge_cc_by.png" alt="Lizenz CC BY 4.0" />
                 </a>
               </div>
             </div>

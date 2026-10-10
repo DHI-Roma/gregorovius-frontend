@@ -10,16 +10,6 @@
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
     },
-    "image-alt": {
-      "maxNodes": 4,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
-    },
     "meta-viewport": {
       "maxNodes": 1,
       "spec": "005",
@@ -36,16 +26,6 @@
       "maxNodes": 50,
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
-    },
-    "image-alt": {
-      "maxNodes": 4,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
     },
     "meta-viewport": {
       "maxNodes": 1,
@@ -64,25 +44,10 @@
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
     },
-    "image-alt": {
-      "maxNodes": 4,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
-    },
     "meta-viewport": {
       "maxNodes": 1,
       "spec": "005",
       "reason": "Zoom gesperrt"
-    },
-    "role-img-alt": {
-      "maxNodes": 1,
-      "spec": "004",
-      "reason": "Icons mit role=img ohne Namen"
     }
   },
   "impressum": {
@@ -95,16 +60,6 @@
       "maxNodes": 15,
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
-    },
-    "image-alt": {
-      "maxNodes": 4,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
     },
     "meta-viewport": {
       "maxNodes": 1,
@@ -123,16 +78,6 @@
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
     },
-    "image-alt": {
-      "maxNodes": 4,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
-    },
     "meta-viewport": {
       "maxNodes": 1,
       "spec": "005",
@@ -150,16 +95,6 @@
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
     },
-    "image-alt": {
-      "maxNodes": 4,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
-    },
     "meta-viewport": {
       "maxNodes": 1,
       "spec": "005",
@@ -176,16 +111,6 @@
       "maxNodes": 15,
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
-    },
-    "image-alt": {
-      "maxNodes": 4,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
     },
     "meta-viewport": {
       "maxNodes": 1,
@@ -211,16 +136,6 @@
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
     },
-    "image-alt": {
-      "maxNodes": 4,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
-    },
     "meta-viewport": {
       "maxNodes": 1,
       "spec": "005",
@@ -237,16 +152,6 @@
       "maxNodes": 40,
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
-    },
-    "image-alt": {
-      "maxNodes": 4,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
     },
     "meta-viewport": {
       "maxNodes": 1,
@@ -265,16 +170,6 @@
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
     },
-    "image-alt": {
-      "maxNodes": 4,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
-    },
     "meta-viewport": {
       "maxNodes": 1,
       "spec": "005",
@@ -291,16 +186,6 @@
       "maxNodes": 15,
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
-    },
-    "image-alt": {
-      "maxNodes": 4,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
     },
     "meta-viewport": {
       "maxNodes": 1,
@@ -319,16 +204,6 @@
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
     },
-    "image-alt": {
-      "maxNodes": 4,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
-    },
     "meta-viewport": {
       "maxNodes": 1,
       "spec": "005",
@@ -345,16 +220,6 @@
       "maxNodes": 17,
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
-    },
-    "image-alt": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
     },
     "meta-viewport": {
       "maxNodes": 1,
@@ -373,16 +238,6 @@
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
     },
-    "image-alt": {
-      "maxNodes": 6,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
-    },
     "meta-viewport": {
       "maxNodes": 1,
       "spec": "005",
@@ -400,16 +255,6 @@
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
     },
-    "image-alt": {
-      "maxNodes": 4,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
-    },
     "meta-viewport": {
       "maxNodes": 1,
       "spec": "005",
@@ -426,16 +271,6 @@
       "maxNodes": 19,
       "spec": "-",
       "reason": "Abgenommenes Farbschema, wird nicht geändert (dauerhafte Ausnahme)"
-    },
-    "image-alt": {
-      "maxNodes": 4,
-      "spec": "004",
-      "reason": "Bilder ohne Alternativtext"
-    },
-    "link-name": {
-      "maxNodes": 5,
-      "spec": "004",
-      "reason": "Links ohne zugänglichen Namen (Logos, Icons)"
     },
     "meta-viewport": {
       "maxNodes": 1,

@@ -15,7 +15,7 @@
         </div>
       </div>
     </div>
-    <q-img class="landing-page fullscreen" style="z-index: -1"> </q-img>
+    <q-img class="landing-page fullscreen" style="z-index: -1" aria-hidden="true"> </q-img>
   </div>
 </template>
 

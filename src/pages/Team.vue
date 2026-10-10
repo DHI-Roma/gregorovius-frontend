@@ -22,7 +22,9 @@
           <div class="row">
             <div class="self-center">
               <img
+                v-if="person.img"
                 :src="person.img"
+                alt=""
                 class="vertical-middle self-center q-pa-md"
                 style="border-radius: 50%; max-width: 80%;"
               />
