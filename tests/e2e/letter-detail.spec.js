@@ -1,6 +1,6 @@
 import { test, expect } from './support/test.js';
 import { LETTERS, sortedLetters } from './support/data.js';
-import { SEL, commentPanel, commentTrigger, iconButton, newTab, newTabRequests } from './support/selectors.js';
+import { SEL, commentPanel, commentTrigger, newTab, newTabRequests } from './support/selectors.js';
 
 const { rich } = LETTERS;
 const editionText = (page) => page.locator(SEL.editionText);
@@ -295,43 +295,77 @@ test.describe('hover previews', () => {
 test.describe('navigation between letters', () => {
   const index = sortedLetters.findIndex((l) => l.id === rich.id);
   const main = (page) => page.getByRole('main');
+  const next = (page) => main(page).getByRole('button', { name: /^Nächster Brief \(chronologisch\): / });
+  const previous = (page) => main(page).getByRole('button', { name: /^Vorheriger Brief \(chronologisch\): / });
 
   async function openWithNavigation(page, id) {
     await openLetter(page, id);
     // wait until the letter list is loaded and navigation is computed
-    await expect(iconButton(main(page), 'arrow_forward').or(iconButton(main(page), 'arrow_back')).first()).toBeVisible();
+    await expect(next(page).or(previous(page)).first()).toBeVisible();
   }
 
   test('next and previous letter follow the chronological order', async ({ page }) => {
     await openWithNavigation(page, rich.id);
-    await iconButton(main(page), 'arrow_forward').click();
+    await next(page).click();
     await expect(page).toHaveURL(new RegExp(`/letters/${sortedLetters[index + 1].id}$`));
-    await iconButton(main(page), 'arrow_back').click();
+    await previous(page).click();
     await expect(page).toHaveURL(new RegExp(`/letters/${rich.id}$`));
-    await iconButton(main(page), 'arrow_back').click();
+    await previous(page).click();
     await expect(page).toHaveURL(new RegExp(`/letters/${sortedLetters[index - 1].id}$`));
+  });
+
+  test('letter navigation names the target letter', async ({ page }) => {
+    await openWithNavigation(page, rich.id);
+    await expect(next(page)).toHaveAccessibleName(
+      `Nächster Brief (chronologisch): ${sortedLetters[index + 1].properties.title}`,
+    );
+    await expect(previous(page)).toHaveAccessibleName(
+      `Vorheriger Brief (chronologisch): ${sortedLetters[index - 1].properties.title}`,
+    );
   });
 
   test('first and last letter have only one direction', async ({ page }) => {
     await openWithNavigation(page, sortedLetters[0].id);
-    await expect(iconButton(page.getByRole('main'), 'arrow_back')).toHaveCount(0);
-    await expect(iconButton(page.getByRole('main'), 'arrow_forward')).toHaveCount(1);
+    await expect(previous(page)).toHaveCount(0);
+    await expect(next(page)).toHaveCount(1);
 
     await openWithNavigation(page, sortedLetters[sortedLetters.length - 1].id);
-    await expect(iconButton(page.getByRole('main'), 'arrow_forward')).toHaveCount(0);
-    await expect(iconButton(page.getByRole('main'), 'arrow_back')).toHaveCount(1);
+    await expect(next(page)).toHaveCount(0);
+    await expect(previous(page)).toHaveCount(1);
   });
 });
 
 test.describe('facsimiles', () => {
+  const button = (page, name) => page.getByRole('main').getByRole('button', { name, exact: true });
+
   test('pages through the facsimile images', async ({ page }) => {
     await openLetter(page, LETTERS.facsimile.id);
     const label = page.locator(SEL.facsimileLabel);
     await expect(label).toHaveText(LETTERS.facsimile.labels[0]);
-    await iconButton(page.getByRole('main'), 'navigate_next').click();
+    await button(page, 'Nächstes Faksimile').click();
     await expect(label).toHaveText(LETTERS.facsimile.labels[1]);
-    await iconButton(page.getByRole('main'), 'navigate_before').click();
+    await button(page, 'Vorheriges Faksimile').click();
     await expect(label).toHaveText(LETTERS.facsimile.labels[0]);
+  });
+
+  test('facsimile controls have German names', async ({ page }) => {
+    await openLetter(page, LETTERS.facsimile.id);
+    const [first, second] = LETTERS.facsimile.labels;
+    for (const name of ['Vorheriges Faksimile', 'Nächstes Faksimile', 'Faksimile nach links drehen', 'Faksimile nach rechts drehen']) {
+      await expect(button(page, name)).toBeVisible();
+    }
+    await expect(button(page, `Faksimile ${first}`)).toHaveAttribute('aria-current', 'true');
+    await button(page, `Faksimile ${second}`).click();
+    await expect(page.locator(SEL.facsimileLabel)).toHaveText(second);
+    await expect(button(page, `Faksimile ${second}`)).toHaveAttribute('aria-current', 'true');
+    await expect(button(page, `Faksimile ${first}`)).not.toHaveAttribute('aria-current');
+
+    const fullscreen = page.getByRole('button', { name: 'Vollbild', exact: true });
+    await expect(fullscreen).toHaveAttribute('aria-pressed', 'false');
+    await fullscreen.click();
+    await expect(fullscreen).toHaveAttribute('aria-pressed', 'true');
+    await fullscreen.click();
+    await expect(fullscreen).toHaveAttribute('aria-pressed', 'false');
   });
 
   test('letter without facsimile renders text only', async ({ page }) => {

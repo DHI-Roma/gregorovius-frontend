@@ -32,11 +32,6 @@
       "spec": "002",
       "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
     },
-    "button-name": {
-      "maxNodes": 11,
-      "spec": "004",
-      "reason": "Schaltflächen ohne zugänglichen Namen (Icon-Buttons)"
-    },
     "color-contrast": {
       "maxNodes": 50,
       "spec": "-",
@@ -123,11 +118,6 @@
       "spec": "002",
       "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
     },
-    "button-name": {
-      "maxNodes": 11,
-      "spec": "004",
-      "reason": "Schaltflächen ohne zugänglichen Namen (Icon-Buttons)"
-    },
     "color-contrast": {
       "maxNodes": 48,
       "spec": "-",
@@ -154,11 +144,6 @@
       "maxNodes": 1,
       "spec": "002",
       "reason": "Listen/Kacheln mit klickbaren Elementen ohne listitem-Struktur"
-    },
-    "button-name": {
-      "maxNodes": 11,
-      "spec": "004",
-      "reason": "Schaltflächen ohne zugänglichen Namen (Icon-Buttons)"
     },
     "color-contrast": {
       "maxNodes": 49,

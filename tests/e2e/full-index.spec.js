@@ -91,3 +91,14 @@ test('filters by edition status and opens an edited letter', async ({ page }) =>
   await expect(page).toHaveURL(new RegExp(`${href}$`));
   await expect(page.locator(SEL.editionText)).toBeVisible();
 });
+
+test('person details button names the person and exposes its state', async ({ page }) => {
+  const button = page.getByRole('button', { name: /^Weitere Angaben zu / }).first();
+  await expect(button).toHaveAttribute('aria-haspopup', 'menu');
+  await expect(button).toHaveAttribute('aria-expanded', 'false');
+  await button.click();
+  await expect(button).toHaveAttribute('aria-expanded', 'true');
+  await expect(page.getByRole('menu')).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(button).toHaveAttribute('aria-expanded', 'false');
+});

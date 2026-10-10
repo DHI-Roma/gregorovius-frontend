@@ -71,17 +71,6 @@
               :class="searchInput ? 'cursor-pointer g-searchrow' : 'cursor-pointer'"
               @click="openLetter(props.row.id)"
             >
-
-              <q-td key="desc" :props="props">
-                {{ props.row.name }}
-                <q-btn
-                  dense
-                  round
-                  flat
-                  :icon="props.expand ? 'arrow_drop_up' : 'arrow_drop_down'"
-                  @click.stop="props.expand = !props.expand"
-                />
-              </q-td>
               <q-td key="date" :props="props">
                 <router-link
                   :to="letterRoute(props.row.id)"

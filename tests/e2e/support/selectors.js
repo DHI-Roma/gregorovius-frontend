@@ -4,13 +4,6 @@ import { expect } from '@playwright/test';
 // Each entry names the spec expected to make it reachable by role/name; replace
 // the fallback with getByRole/getByLabel once that spec is implemented.
 
-/** Button that only shows a Material icon, e.g. iconButton(page, 'arrow_back') */
-export function iconButton(scope, iconName) {
-  // TODO(spec-004): accessible names for icon buttons
-  const page = typeof scope.page === 'function' ? scope.page() : scope;
-  return scope.locator('button').filter({ has: page.locator('i.q-icon', { hasText: new RegExp(`^${iconName}$`) }) });
-}
-
 /** Button that opens the commentary on a passage, by its lemma */
 export function commentTrigger(scope, lemma) {
   return scope.getByRole('button', { name: `Kommentar zu „${lemma}“ öffnen`, exact: true });
