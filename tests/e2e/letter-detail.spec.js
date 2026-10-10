@@ -348,6 +348,13 @@ test.describe('facsimiles', () => {
     await expect(label).toHaveText(LETTERS.facsimile.labels[0]);
   });
 
+  test('facsimile images have a text alternative', async ({ page }) => {
+    await openLetter(page, LETTERS.facsimile.id);
+    await expect(
+      page.getByRole('main').getByRole('img', { name: `Faksimile, ${LETTERS.facsimile.labels[0]}` }),
+    ).toBeVisible();
+  });
+
   test('facsimile controls have German names', async ({ page }) => {
     await openLetter(page, LETTERS.facsimile.id);
     const [first, second] = LETTERS.facsimile.labels;

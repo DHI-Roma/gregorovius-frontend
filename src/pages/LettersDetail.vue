@@ -251,7 +251,7 @@ EN
               </template>
 
               <q-carousel-slide
-                v-for="(img, imgPosition) in availableFacsimiles"
+                v-for="(_facsimile, imgPosition, slideIndex) in availableFacsimiles"
                 :key="imgPosition"
                 :name="imgPosition"
                 class="q-mb-xl q-mt-xl"
@@ -260,6 +260,7 @@ EN
                   <q-img
                     v-if="$q.screen.lt.md"
                     :src="getFacsimileSrc(imgPosition)"
+                    :alt="facsimileAlt(imgPosition, slideIndex)"
                     :width="isFacsimileCarouselFullscreen ? '75%' : '100%'"
                     contain
                   />
@@ -271,7 +272,7 @@ EN
                       :zoom-width="facsimileZoomWidth"
                       :img-id="'facsimile-img-' + imgPosition"
                       img-class="facsimile-img"
-                      :alt="img.label"
+                      :alt="facsimileAlt(imgPosition, slideIndex)"
                       @regular-loaded="applyZoomWidth"
                     />
                   </div>
@@ -679,6 +680,11 @@ export default defineComponent({
       return label ? `Faksimile ${label}` : `Faksimile, Seite ${index + 1}`;
     }
 
+    function facsimileAlt(name, index) {
+      const label = availableFacsimiles.value?.[name]?.label;
+      return label ? `Faksimile, ${label}` : `Faksimile, Seite ${index + 1}`;
+    }
+
     function toggleFacsimileFullscreen() {
       isFacsimileCarouselFullscreen.value = !isFacsimileCarouselFullscreen.value;
     }
@@ -933,6 +939,7 @@ export default defineComponent({
       openNextLetterInSelection,
       getFacsimileSrc,
       facsimileName,
+      facsimileAlt,
       toggleFacsimileFullscreen,
       applyRotation,
       applyZoomWidth,

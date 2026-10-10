@@ -67,3 +67,35 @@ test('footer shows the app version', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('contentinfo').getByRole('status')).toHaveText(/^v\d+\.\d+\.\d+$/);
 });
+
+test('footer logo links name their targets', async ({ page }) => {
+  await page.goto('/impressum');
+  const footer = page.getByRole('contentinfo');
+  const logos = [
+    ['Deutsches Historisches Institut in Rom', 'http://dhi-roma.it'],
+    ['Deutsche Forschungsgemeinschaft', 'https://www.dfg.de/'],
+    ['Gerda Henkel Stiftung', 'https://www.gerda-henkel-stiftung.de/'],
+    ['Berlin-Brandenburgische Akademie der Wissenschaften', 'http://www.bbaw.de'],
+    ['Lizenz CC BY 4.0', 'https://creativecommons.org/licenses/by/4.0/deed.de'],
+  ];
+  for (const [name, href] of logos) {
+    await expect(footer.getByRole('link', { name, exact: true })).toHaveAttribute('href', href);
+  }
+});
+
+test('team portraits are decorative, the project drawing has a text alternative', async ({ page }) => {
+  await page.goto('/team');
+  await expect(main(page)).toContainText('Dr. Angela Steinsiek');
+  const portraits = main(page).locator('img');
+  await expect(portraits.first()).toBeVisible();
+  for (const portrait of await portraits.all()) {
+    await expect(portrait).toHaveAttribute('alt', '');
+  }
+
+  await page.goto('/project');
+  await expect(
+    main(page).getByRole('img', {
+      name: 'Bleistiftzeichnung von F. Gregorovius: Rom aus dem Garten der Colonna',
+    }),
+  ).toBeVisible();
+});

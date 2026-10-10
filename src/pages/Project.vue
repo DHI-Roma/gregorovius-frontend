@@ -100,6 +100,7 @@
                     <img
                       class="g-project-img"
                       src="/img/colonna-bsb.jpg"
+                      alt="Bleistiftzeichnung von F. Gregorovius: Rom aus dem Garten der Colonna"
                     />
                   </picture>
                   <figcaption class="text-caption">
