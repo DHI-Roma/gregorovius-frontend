@@ -19,7 +19,7 @@
       >
     </template>
     <template #top-left>
-      <q-input v-model="filter" borderless dense debounce="300" placeholder="Suche">
+      <q-input v-model="filter" borderless dense debounce="300" label="Werke durchsuchen">
         <template #append>
           <q-icon name="search" />
         </template>

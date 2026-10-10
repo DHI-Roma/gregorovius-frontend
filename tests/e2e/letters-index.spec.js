@@ -99,6 +99,20 @@ test('filters by place sent', async ({ page }) => {
   await expect(page.getByText(new RegExp(`von ${count}$`))).toBeVisible();
 });
 
+test('clear selection is a named, keyboard reachable button', async ({ page }) => {
+  const count = letters.filter((l) => l.properties.place.sent === 'G000763').length;
+  await chooseOption(page, 'Schreibort', 'Rom');
+  await expect(page.getByText(new RegExp(`von ${count}$`))).toBeVisible();
+  const field = page.getByRole('combobox', { name: 'Schreibort' });
+  await field.focus();
+  await page.keyboard.press('Tab');
+  const clear = page.getByRole('button', { name: 'Auswahl löschen' });
+  await expect(clear).toBeFocused();
+  await page.keyboard.press('Enter');
+  await expect(page.getByText(new RegExp(`von ${letters.length}$`))).toBeVisible();
+  await expect(clear).toHaveCount(0);
+});
+
 test('filters by place received', async ({ page }) => {
   const count = letters.filter((l) => l.properties.place.received === 'G000716').length;
   await chooseOption(page, 'Empfangsort', 'London');

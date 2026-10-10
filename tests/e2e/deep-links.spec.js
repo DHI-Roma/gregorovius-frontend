@@ -62,5 +62,5 @@ test('GND link redirects to the person', async ({ page }) => {
 test('unknown GND shows the person register', async ({ page }) => {
   await page.goto('/gnd/0000000000');
   await expect(page).toHaveURL(/\/gnd\/0000000000$/);
-  await expect(page.getByPlaceholder('Suche')).toBeVisible();
+  await expect(page.getByRole('textbox', { name: 'Personen durchsuchen' })).toBeVisible();
 });
