@@ -40,7 +40,7 @@ test('filters by date picked in the calendar', async ({ page }) => {
   const expected = entries.filter((e) => e.date_index >= '1860-01-15' && /^1/.test(e.date_index)).length;
   const input = page.getByRole('textbox', { name: 'von' });
   await input.fill('01.01.1860');
-  await page.locator('label', { has: input }).locator('i.q-icon', { hasText: /^event$/ }).click();
+  await page.locator('label', { has: input }).getByRole('button', { name: 'Kalender öffnen' }).click();
   await page.locator('.q-date').getByRole('button', { name: '15', exact: true }).click();
   await expect(input).toHaveValue('15.01.1860');
   await expect(pageInfo(page)).toHaveText(countText(expected));
@@ -55,6 +55,32 @@ test('rejects an invalid date', async ({ page }) => {
   await page.getByRole('textbox', { name: 'von' }).fill('1860-01-01');
   await page.getByRole('textbox', { name: 'von' }).blur();
   await expect(page.getByText('Bitte Datum im Format TT.MM.JJJJ eingeben')).toBeVisible();
+});
+
+test('calendar button is keyboard reachable and closes with "Schließen"', async ({ page }) => {
+  const input = page.getByRole('textbox', { name: 'von' });
+  await input.focus();
+  await page.keyboard.press('Tab');
+  const calendar = page.locator('label', { has: input }).getByRole('button', { name: 'Kalender öffnen' });
+  await expect(calendar).toBeFocused();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('.q-date')).toBeVisible();
+  await page.getByRole('button', { name: 'Schließen', exact: true }).click();
+  await expect(page.locator('.q-date')).toBeHidden();
+});
+
+test('invalid date message is linked to the field', async ({ page }) => {
+  const input = page.getByRole('textbox', { name: 'von' });
+  await expect(input).not.toHaveAttribute('aria-invalid');
+  await input.fill('1860-01-01');
+  await input.blur();
+  await expect(input).toHaveAttribute('aria-invalid', 'true');
+  const id = await input.getAttribute('aria-describedby');
+  await expect(page.locator(`[id="${id}"]`)).toHaveText('Bitte Datum im Format TT.MM.JJJJ eingeben');
+  await expect(page.locator(`[id="${id}"]`)).toHaveAttribute('role', 'alert');
+  await input.fill('01.01.1860');
+  await expect(input).not.toHaveAttribute('aria-invalid');
+  await expect(input).not.toHaveAttribute('aria-describedby');
 });
 
 test('filters by year', async ({ page }) => {

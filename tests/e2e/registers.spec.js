@@ -3,7 +3,7 @@ import { GND_PERSON, LETTERS, letters, persons } from './support/data.js';
 import { SEL } from './support/selectors.js';
 
 const { rich } = LETTERS;
-const search = (page) => page.getByPlaceholder('Suche');
+const search = (page) => page.getByRole('textbox', { name: /^(Personen|Orte) durchsuchen$/ });
 const main = (page) => page.getByRole('main');
 
 test.describe('persons', () => {
@@ -100,7 +100,7 @@ test.describe('works', () => {
 
     await page.getByRole('tab', { name: 'Werke anderer Autoren' }).click();
     const panel = page.getByRole('tabpanel').filter({ visible: true }).last();
-    await panel.getByPlaceholder('Suche').fill('Beschreibung der Stadt Rom');
+    await panel.getByRole('textbox', { name: 'Werke durchsuchen' }).fill('Beschreibung der Stadt Rom');
     await panel.getByRole('link', { name: new RegExp(rich.work.titleSnippet) }).click();
 
     await expect(page).toHaveURL(new RegExp(`/works/${rich.work.id}$`));

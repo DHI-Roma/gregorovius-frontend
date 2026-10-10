@@ -3,16 +3,21 @@
     <q-input
       v-model="dateInput"
       filled
-      :rules="[germanDateRule]"
       :label="label"
+      :error="dateError !== null"
+      :aria-invalid="dateError !== null ? 'true' : undefined"
+      :aria-describedby="dateError !== null ? errorId : undefined"
       clearable
       @update:model-value="onDateInput"
       @clear="clearDateInput"
     >
       <template v-slot:append>
-        <q-icon
-          name="event"
-          class="cursor-pointer"
+        <q-btn
+          flat
+          dense
+          padding="none"
+          icon="event"
+          aria-label="Kalender öffnen"
         >
           <q-popup-proxy
             ref="qDateProxy"
@@ -29,14 +34,17 @@
               <div class="row items-center justify-end">
                 <q-btn
                   v-close-popup
-                  label="Close"
+                  label="Schließen"
                   color="primary"
                   flat
                 />
               </div>
             </q-date>
           </q-popup-proxy>
-        </q-icon>
+        </q-btn>
+      </template>
+      <template #error>
+        <div :id="errorId" role="alert">{{ dateError }}</div>
       </template>
     </q-input>
   </div>
@@ -70,6 +78,13 @@ export default {
     };
   },
   computed: {
+    dateError() {
+      const result = this.germanDateRule(this.dateInput);
+      return result === true ? null : result;
+    },
+    errorId() {
+      return `date-error-${this.$.uid}`;
+    },
     earliestMonth() {
       const [year, month] = this.minDate.split('-');
       return `${year}/${month}`;

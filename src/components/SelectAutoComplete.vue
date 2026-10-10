@@ -16,7 +16,14 @@
       @popup-hide="onPopupHide"
     >
       <template v-if="model.value" #append>
-        <q-icon name="cancel" class="cursor-pointer" @click.stop="clearSelection()" />
+        <q-btn
+          flat
+          dense
+          padding="none"
+          icon="cancel"
+          aria-label="Auswahl löschen"
+          @click.stop="clearSelection()"
+        />
       </template>
     </q-select>
   </div>
