@@ -65,3 +65,16 @@ test('home link on small screens', async ({ page }) => {
   await page.getByRole('navigation').getByRole('link', { name: 'Startseite', exact: true }).click();
   await expect(page).toHaveURL(/\/$/);
 });
+
+test('image credit is a keyboard reachable button', async ({ page }) => {
+  await page.goto('/');
+  const credit = page.getByRole('button', { name: 'Bildnachweis' });
+  await expect(credit).toHaveAttribute('aria-expanded', 'false');
+  await credit.focus();
+  await page.keyboard.press('Enter');
+  await expect(page.getByText('Hintergrundbild:')).toBeVisible();
+  await expect(credit).toHaveAttribute('aria-expanded', 'true');
+  await page.keyboard.press('Escape');
+  await expect(page.getByText('Hintergrundbild:')).toBeHidden();
+  await expect(credit).toHaveAttribute('aria-expanded', 'false');
+});

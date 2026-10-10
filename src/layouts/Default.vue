@@ -97,8 +97,18 @@
               </q-btn>
             </div>
             <div class="col-md-1 col-10 cursor-pointer">
-              <q-icon name="photo_camera" :class="$route.path === '/' ? '' : 'hidden'">
-                <q-popup-proxy>
+              <q-btn
+                flat
+                dense
+                padding="none"
+                size="11.7px"
+                icon="photo_camera"
+                aria-label="Bildnachweis"
+                aria-haspopup="dialog"
+                :aria-expanded="imageCreditOpen ? 'true' : 'false'"
+                :class="$route.path === '/' ? '' : 'hidden'"
+              >
+                <q-popup-proxy v-model="imageCreditOpen">
                   <q-banner class="text-subtitle">
                     <b>Hintergrundbild:</b>
                     Gregorovius am Schreibtisch, Aquarell von K. Lindemann-Frommel, BSB München,
@@ -108,7 +118,7 @@
                     </a>
                   </q-banner>
                 </q-popup-proxy>
-              </q-icon>
+              </q-btn>
             </div>
           </div>
         </q-toolbar-title>
@@ -118,19 +128,22 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
 import { version } from '../../package.json';
 
 export default defineComponent({
   name: 'DefaultLayout',
 
   setup() {
+    const imageCreditOpen = ref(false);
+
     function focusMainContent() {
       document.getElementById('main-content')?.focus();
     }
 
     return {
       appVersion: version,
+      imageCreditOpen,
       focusMainContent,
     };
   },

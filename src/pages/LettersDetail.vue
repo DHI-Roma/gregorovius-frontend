@@ -91,6 +91,7 @@ EN
               size="sm"
               color="primary"
               icon="arrow_back"
+              :aria-label="`Vorheriger Brief (chronologisch): ${previousLetter.properties.title}`"
               @click="openPreviousLetter()"
             >
               <q-tooltip>
@@ -105,6 +106,7 @@ EN
               size="sm"
               color="primary"
               icon="arrow_left"
+              :aria-label="`Vorheriger Brief (in Auswahl): ${previousLetterInSelection.properties.title}`"
               @click="openPreviousLetterInSelection()"
             >
               <q-tooltip>
@@ -120,6 +122,7 @@ EN
               size="sm"
               color="primary"
               icon="arrow_right"
+              :aria-label="`Nächster Brief (in Auswahl): ${nextLetterInSelection.properties.title}`"
               @click="openNextLetterInSelection()"
             >
               <q-tooltip>
@@ -135,6 +138,7 @@ EN
               size="sm"
               color="primary"
               icon="arrow_forward"
+              :aria-label="`Nächster Brief (chronologisch): ${nextLetter.properties.title}`"
               @click="openNextLetter()"
             >
               <q-tooltip>
@@ -165,6 +169,15 @@ EN
               transition-next="slide-left"
               @transition="onSlideChange"
             >
+              <template #navigation-icon="{ name, index, active, btnProps, onClick }">
+                <q-btn
+                  :class="`q-carousel__navigation-icon q-carousel__navigation-icon--${active ? '' : 'in'}active`"
+                  v-bind="btnProps"
+                  :aria-label="facsimileName(name, index)"
+                  :aria-current="active ? 'true' : undefined"
+                  @click="onClick"
+                />
+              </template>
               <template #control>
                 <q-carousel-control
                   position="top"
@@ -178,6 +191,7 @@ EN
                         color="primary"
                         text-color="white"
                         icon="navigate_before"
+                        aria-label="Vorheriges Faksimile"
                         class="q-mr-sm"
                         @click="openPreviousSlide"
                       />
@@ -187,6 +201,7 @@ EN
                         color="primary"
                         text-color="white"
                         icon="navigate_next"
+                        aria-label="Nächstes Faksimile"
                         class="q-mx-sm"
                         @click="openNextSlide"
                       />
@@ -204,6 +219,7 @@ EN
                         color="primary"
                         text-color="white"
                         icon="rotate_left"
+                        aria-label="Faksimile nach links drehen"
                         class="q-mr-sm"
                         @click="applyRotation(90)"
                       />
@@ -214,6 +230,7 @@ EN
                         color="primary"
                         text-color="white"
                         icon="rotate_right"
+                        aria-label="Faksimile nach rechts drehen"
                         class="q-mx-sm"
                         @click="applyRotation(-90)"
                       />
@@ -223,6 +240,8 @@ EN
                         color="primary"
                         text-color="white"
                         icon="fullscreen"
+                        aria-label="Vollbild"
+                        :aria-pressed="isFacsimileCarouselFullscreen ? 'true' : 'false'"
                         class="q-ml-sm"
                         @click="toggleFacsimileFullscreen"
                       />
@@ -655,6 +674,11 @@ export default defineComponent({
       return `${API}/facsimiles/${letterId.value}/${imgName}/${facsimileRotation.value}`;
     }
 
+    function facsimileName(name, index) {
+      const label = availableFacsimiles.value?.[name]?.label;
+      return label ? `Faksimile ${label}` : `Faksimile, Seite ${index + 1}`;
+    }
+
     function toggleFacsimileFullscreen() {
       isFacsimileCarouselFullscreen.value = !isFacsimileCarouselFullscreen.value;
     }
@@ -908,6 +932,7 @@ export default defineComponent({
       openPreviousLetterInSelection,
       openNextLetterInSelection,
       getFacsimileSrc,
+      facsimileName,
       toggleFacsimileFullscreen,
       applyRotation,
       applyZoomWidth,
