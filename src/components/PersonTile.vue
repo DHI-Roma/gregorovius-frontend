@@ -45,7 +45,6 @@ export default defineComponent({
   props: {
     person: {
       type: [Object, Promise],
-      required: true,
       default: null,
     },
   },

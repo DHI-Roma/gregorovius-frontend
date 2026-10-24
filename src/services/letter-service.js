@@ -40,7 +40,7 @@ const getResponsible = data => {
     return "";
   }
 
-  let editorName = "";
+  let editorName;
 
   if (Array.isArray(data.teiHeader.fileDesc.titleStmt.respStmt)) {
     const editors = data.teiHeader.fileDesc.titleStmt.respStmt.map(editor => getEditorName(editor));

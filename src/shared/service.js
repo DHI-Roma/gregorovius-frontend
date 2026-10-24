@@ -1,4 +1,3 @@
-/* eslint-disable func-names */
 import axios from 'axios';
 import { xslt } from '../mixins/xslt';
 
