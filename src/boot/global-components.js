@@ -1,4 +1,4 @@
-import { boot } from 'quasar/wrappers';
+import { defineBoot } from '#q-app';
 import { QTooltip, QIcon, QBtn } from 'quasar';
 import CommentIcon from 'src/components/CommentIcon.vue';
 import MarginNote from 'src/components/MarginNote.vue';
@@ -7,7 +7,7 @@ import { useMainStore } from 'src/stores/main';
 import { basePathLetters } from 'src/router';
 
 // Register components globally for use in vue3-runtime-template
-export default boot(({ app, router }) => {
+export default defineBoot(({ app, router }) => {
   // Custom components
   app.component('CommentIcon', CommentIcon);
   app.component('MarginNote', MarginNote);

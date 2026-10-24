@@ -1,6 +1,6 @@
-import { defineConfig } from '#q-app/wrappers';
+import { defineConfig } from '#q-app';
 
-export default defineConfig(function (/* ctx */) {
+export default defineConfig(function (ctx) {
   return {
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#sourcefiles
     sourceFiles: {
@@ -31,13 +31,20 @@ export default defineConfig(function (/* ctx */) {
 
       vueRouterMode: 'history',
 
+      // components use the Options API
+      vueOptionsAPI: true,
+
       vitePlugins: [
         // Vue compiler with runtime template support
       ],
 
-      // Alias for runtime template compiler
       alias: {
-        vue: 'vue/dist/vue.esm-bundler.js'
+        // Alias for runtime template compiler
+        vue: 'vue/dist/vue.esm-bundler.js',
+        // app-vite 3 only injects '@/', keep the old aliases working
+        src: ctx.appPaths.srcDir,
+        layouts: ctx.appPaths.resolve.src('layouts'),
+        pages: ctx.appPaths.resolve.src('pages')
       }
     },
 
