@@ -5,10 +5,8 @@
     size="xs"
     icon="arrow_drop_down"
     :aria-label="`Weitere Angaben zu ${person.name}`"
-    aria-haspopup="menu"
-    :aria-expanded="menuOpen ? 'true' : 'false'"
   >
-    <q-menu v-model="menuOpen">
+    <q-menu role="dialog" :aria-label="`Angaben zu ${person.name}`">
       <q-list>
         <q-item v-if="person.birth || person.death">
           <template>{{ person.birth }}</template>
@@ -48,9 +46,6 @@ export default {
       type: Object,
       required: true
     }
-  },
-  data() {
-    return { menuOpen: false };
   }
 }
 </script>

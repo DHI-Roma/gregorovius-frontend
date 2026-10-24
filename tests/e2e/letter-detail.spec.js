@@ -202,6 +202,7 @@ test.describe('margin notes', () => {
     await openLetter(page, LETTERS.marginNote.id);
     const note = editionText(page).getByRole('button', { name: noteName, exact: true });
     await expect(note).toHaveAttribute('aria-expanded', 'false');
+    await expect(note).toHaveAttribute('aria-haspopup', 'dialog');
     await note.focus();
     await page.keyboard.press('Enter');
     const popover = page.getByRole('dialog', { name: noteName });
@@ -361,11 +362,15 @@ test.describe('facsimiles', () => {
     for (const name of ['Vorheriges Faksimile', 'Nächstes Faksimile', 'Faksimile nach links drehen', 'Faksimile nach rechts drehen']) {
       await expect(button(page, name)).toBeVisible();
     }
-    await expect(button(page, `Faksimile ${first}`)).toHaveAttribute('aria-current', 'true');
-    await button(page, `Faksimile ${second}`).click();
+    const tab = (name) => page.getByRole('main').getByRole('tab', { name, exact: true });
+    await expect(tab(`Faksimile ${first}`)).toHaveAttribute('aria-selected', 'true');
+    await tab(`Faksimile ${second}`).click();
     await expect(page.locator(SEL.facsimileLabel)).toHaveText(second);
-    await expect(button(page, `Faksimile ${second}`)).toHaveAttribute('aria-current', 'true');
-    await expect(button(page, `Faksimile ${first}`)).not.toHaveAttribute('aria-current');
+    await expect(tab(`Faksimile ${second}`)).toHaveAttribute('aria-selected', 'true');
+    await expect(tab(`Faksimile ${first}`)).toHaveAttribute('aria-selected', 'false');
+    await page.keyboard.press('ArrowLeft');
+    await expect(page.locator(SEL.facsimileLabel)).toHaveText(first);
+    await expect(tab(`Faksimile ${first}`)).toBeFocused();
 
     const fullscreen = page.getByRole('button', { name: 'Vollbild', exact: true });
     await expect(fullscreen).toHaveAttribute('aria-pressed', 'false');

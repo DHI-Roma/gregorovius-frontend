@@ -41,7 +41,7 @@ test('filters by date picked in the calendar', async ({ page }) => {
   const input = page.getByRole('textbox', { name: 'von' });
   await input.fill('01.01.1860');
   await page.locator('label', { has: input }).getByRole('button', { name: 'Kalender öffnen' }).click();
-  await page.locator('.q-date').getByRole('button', { name: '15', exact: true }).click();
+  await page.locator('.q-date').getByRole('button', { name: '15 Januar 1860', exact: true }).click();
   await expect(input).toHaveValue('15.01.1860');
   await expect(pageInfo(page)).toHaveText(countText(expected));
 });
@@ -76,8 +76,8 @@ test('invalid date message is linked to the field', async ({ page }) => {
   await input.blur();
   await expect(input).toHaveAttribute('aria-invalid', 'true');
   const id = await input.getAttribute('aria-describedby');
-  await expect(page.locator(`[id="${id}"]`)).toHaveText('Bitte Datum im Format TT.MM.JJJJ eingeben');
-  await expect(page.locator(`[id="${id}"]`)).toHaveAttribute('role', 'alert');
+  await expect(page.locator(`[id="${id}"]`).getByRole('alert')).toHaveText('Bitte Datum im Format TT.MM.JJJJ eingeben');
+  await expect(input).toHaveAttribute('aria-errormessage', id);
   await input.fill('01.01.1860');
   await expect(input).not.toHaveAttribute('aria-invalid');
   await expect(input).not.toHaveAttribute('aria-describedby');
@@ -120,11 +120,12 @@ test('filters by edition status and opens an edited letter', async ({ page }) =>
 
 test('person details button names the person and exposes its state', async ({ page }) => {
   const button = page.getByRole('button', { name: /^Weitere Angaben zu / }).first();
-  await expect(button).toHaveAttribute('aria-haspopup', 'menu');
+  const name = (await button.getAttribute('aria-label')).replace(/^Weitere Angaben zu /, '');
+  await expect(button).toHaveAttribute('aria-haspopup', 'dialog');
   await expect(button).toHaveAttribute('aria-expanded', 'false');
   await button.click();
   await expect(button).toHaveAttribute('aria-expanded', 'true');
-  await expect(page.getByRole('menu')).toBeVisible();
+  await expect(page.getByRole('dialog', { name: `Angaben zu ${name}` })).toBeVisible();
   await page.keyboard.press('Escape');
   await expect(button).toHaveAttribute('aria-expanded', 'false');
 });

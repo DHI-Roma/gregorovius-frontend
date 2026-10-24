@@ -5,8 +5,7 @@
       filled
       :label="label"
       :error="dateError !== null"
-      :aria-invalid="dateError !== null ? 'true' : undefined"
-      :aria-describedby="dateError !== null ? errorId : undefined"
+      :error-message="dateError"
       clearable
       @update:model-value="onDateInput"
       @clear="clearDateInput"
@@ -43,9 +42,6 @@
           </q-popup-proxy>
         </q-btn>
       </template>
-      <template #error>
-        <div :id="errorId" role="alert">{{ dateError }}</div>
-      </template>
     </q-input>
   </div>
 </template>
@@ -81,9 +77,6 @@ export default {
     dateError() {
       const result = this.germanDateRule(this.dateInput);
       return result === true ? null : result;
-    },
-    errorId() {
-      return `date-error-${this.$.uid}`;
     },
     earliestMonth() {
       const [year, month] = this.minDate.split('-');
