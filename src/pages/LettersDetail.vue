@@ -174,7 +174,6 @@ EN
                   :class="`q-carousel__navigation-icon q-carousel__navigation-icon--${active ? '' : 'in'}active`"
                   v-bind="btnProps"
                   :aria-label="facsimileName(name, index)"
-                  :aria-current="active ? 'true' : undefined"
                   @click="onClick"
                 />
               </template>

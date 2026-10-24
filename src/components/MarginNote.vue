@@ -5,8 +5,6 @@
     outline
     :icon="icon"
     :aria-label="label"
-    aria-haspopup="dialog"
-    :aria-expanded="popoverOpen ? 'true' : 'false'"
   >
     <!-- mouse preview; hidden while the popover shows the same content -->
     <HoverTooltip

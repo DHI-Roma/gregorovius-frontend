@@ -36,6 +36,14 @@ export async function chooseYear(page, year) {
   const combobox = page.getByRole('combobox', { name: 'Jahre' });
   await combobox.click();
   const option = page.getByRole('option', { name: year });
+  // the listbox is virtually scrolled: scroll like a user until the option is rendered
+  await expect(async () => {
+    if ((await option.count()) === 0) {
+      await page.getByRole('listbox').hover();
+      await page.mouse.wheel(0, 200);
+    }
+    await expect(option).toBeVisible({ timeout: 500 });
+  }).toPass();
   await expect(async () => {
     if ((await option.getAttribute('aria-selected')) !== 'true') {
       await option.getByText(year, { exact: true }).click();

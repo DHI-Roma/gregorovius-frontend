@@ -3,8 +3,8 @@
     ref="tooltip"
     class="g-hover-tooltip"
     :hide-delay="hideDelay"
-    @mouseenter="keepOpen"
-    @mouseleave="release"
+    @pointerenter="keepOpen"
+    @pointerleave="release"
   >
     <slot />
   </q-tooltip>
@@ -39,13 +39,13 @@ export default defineComponent({
     });
 
     // QTooltip has a single timer for showing and hiding: replaying the anchor's
-    // mouse events cancels or restarts its pending hide
-    function keepOpen() {
-      anchor?.dispatchEvent(new MouseEvent("mouseenter"));
+    // pointer events cancels or restarts its pending hide
+    function keepOpen(evt) {
+      anchor?.dispatchEvent(new PointerEvent("pointerenter", { pointerType: evt.pointerType }));
     }
 
-    function release() {
-      anchor?.dispatchEvent(new MouseEvent("mouseleave"));
+    function release(evt) {
+      anchor?.dispatchEvent(new PointerEvent("pointerleave", { pointerType: evt.pointerType }));
     }
 
     return {
