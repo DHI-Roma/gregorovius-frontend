@@ -82,6 +82,6 @@ test('image credit is a keyboard reachable button', async ({ page }) => {
 test('background image is hidden from assistive technology', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('button', { name: 'Briefe' })).toBeVisible();
-  await expect(page.locator('.landing-page.q-img')).toHaveAttribute('aria-hidden', 'true');
+  await expect(page.locator('.landing-page')).toHaveAttribute('aria-hidden', 'true');
   await expect(page.getByRole('main').getByRole('img')).toHaveCount(0);
 });
