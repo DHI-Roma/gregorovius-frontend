@@ -1,5 +1,3 @@
-/* eslint-env node */
-
 import { defineConfig } from '#q-app/wrappers';
 
 export default defineConfig(function (/* ctx */) {

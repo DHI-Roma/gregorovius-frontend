@@ -221,7 +221,7 @@ export default {
             Date.parse(dateString)
           );
         }
-      } catch (e) {
+      } catch {
         return dateString;
       }
 

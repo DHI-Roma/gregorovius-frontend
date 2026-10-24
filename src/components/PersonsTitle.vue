@@ -63,7 +63,6 @@ export default defineComponent({
     },
     person: {
       type: [Object, Promise],
-      required: true,
       default: null,
     },
     isList: {

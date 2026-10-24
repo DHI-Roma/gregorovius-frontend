@@ -379,7 +379,7 @@ export default defineComponent({
         }));
 
         filter.value.searchResults = [...resultsLetters, ...resultsComments];
-      } catch (error) {
+      } catch {
         filter.value.searchResults = [];
       }
       loading.value = false;

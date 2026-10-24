@@ -26,7 +26,6 @@ export default defineComponent({
   props: {
     place: {
       type: [Object, Promise],
-      required: true,
       default: null,
     },
   },
